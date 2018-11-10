@@ -1,0 +1,39112 @@
+
+const foreignCityData = [{
+	cityName: "澳门",
+	citySpell: "AOMEN",
+	"code": "MFM",
+	"countryCode": "MO",
+	"countryName": "中国澳门",
+	cityFirstLetter: "A"
+}, {
+	cityName: "奥克兰(加利福尼亚州)",
+	citySpell: "AOKELAN",
+	"code": "OAK",
+	"countryCode": "US",
+	"countryName": "美国",
+	cityFirstLetter: "A"
+}, {
+	cityName: "奥克兰",
+	citySpell: "AOKELAN",
+	"code": "AKL",
+	"countryCode": "NZ",
+	"countryName": "新西兰",
+	cityFirstLetter: "A"
+}, {
+	cityName: "奥兰多",
+	citySpell: "AOLANDUO",
+	"code": "ORL",
+	"countryCode": "US",
+	"countryName": "美国",
+	cityFirstLetter: "A"
+}, {
+	cityName: "阿拉木图",
+	citySpell: "ALAMUTU",
+	"code": "ALA",
+	"countryCode": "KZ",
+	"countryName": "哈萨克斯坦",
+	cityFirstLetter: "A"
+}, {
+	cityName: "爱丁堡",
+	citySpell: "AIDINGBAO",
+	"code": "EDI",
+	"countryCode": "GB",
+	"countryName": "英国",
+	cityFirstLetter: "A"
+}, {
+	cityName: "阿姆斯特丹",
+	citySpell: "AMUSITEDAN",
+	"code": "AMS",
+	"countryCode": "NL",
+	"countryName": "荷兰",
+	cityFirstLetter: "A"
+}, {
+	cityName: "阿夫雷",
+	citySpell: "AFULEI",
+	"code": "HVR",
+	"countryCode": "US",
+	"countryName": "美国",
+	cityFirstLetter: "A"
+}, {
+	cityName: "阿德莱德",
+	citySpell: "ADELAIDE",
+	"code": "ADL",
+	"countryCode": "AU",
+	"countryName": "澳大利亚",
+	cityFirstLetter: "A"
+}, {
+	cityName: "阿布扎比",
+	citySpell: "ABUZHABI",
+	"code": "AUH",
+	"countryCode": "AE",
+	"countryName": "阿联酋",
+	cityFirstLetter: "A"
+}, {
+	cityName: "阿尔及尔",
+	citySpell: "AERJIER",
+	"code": "ALG",
+	"countryCode": "DZ",
+	"countryName": "阿尔及利亚",
+	cityFirstLetter: "A"
+}, {
+	cityName: "阿亚库乔",
+	citySpell: "AYAKUQIAO",
+	"code": "AYP",
+	"countryCode": "PE",
+	"countryName": "秘鲁",
+	cityFirstLetter: "A"
+}, {
+	cityName: "安提瓜",
+	citySpell: "ANTIGUA",
+	"code": "ANU",
+	"countryCode": "AG",
+	"countryName": "安提瓜和巴布达",
+	cityFirstLetter: "A"
+}, {
+	cityName: "奥旺多",
+	citySpell: "AOWANGDUO",
+	"code": "FTX",
+	"countryCode": "CG",
+	"countryName": "刚果",
+	cityFirstLetter: "A"
+}, {
+	cityName: "阿赫",
+	citySpell: "AHE",
+	"code": "AHE",
+	"countryCode": "PF",
+	"countryName": "法属波利尼西亚",
+	cityFirstLetter: "A"
+}, {
+	cityName: "安奈",
+	citySpell: "ANNAI",
+	"code": "NAI",
+	"countryCode": "GY",
+	"countryName": "圭亚那",
+	cityFirstLetter: "A"
+}, {
+	cityName: "阿什伯顿",
+	citySpell: "ASHIBODUN",
+	"code": "ASG",
+	"countryCode": "NZ",
+	"countryName": "新西兰",
+	cityFirstLetter: "A"
+}, {
+	cityName: "阿普里尔里弗",
+	citySpell: "APULIERLIFU",
+	"code": "APR",
+	"countryCode": "PG",
+	"countryName": "巴布亚新几内亚",
+	cityFirstLetter: "A"
+}, {
+	cityName: "阿雅克肖",
+	citySpell: "AYAKEXIAO",
+	"code": "AJA",
+	"countryCode": "FR",
+	"countryName": "法国",
+	cityFirstLetter: "A"
+}, {
+	cityName: "奥伦堡",
+	citySpell: "AOLUNBAO",
+	"code": "REN",
+	"countryCode": "RU",
+	"countryName": "俄罗斯",
+	cityFirstLetter: "A"
+}, {
+	cityName: "奥尔德城",
+	citySpell: "AOERDECHENG",
+	"code": "OLD",
+	"countryCode": "US",
+	"countryName": "美国",
+	cityFirstLetter: "A"
+}, {
+	cityName: "奥利安",
+	citySpell: "AOLIAN",
+	"code": "OLE",
+	"countryCode": "US",
+	"countryName": "美国",
+	cityFirstLetter: "A"
+}, {
+	cityName: "艾格瓦特",
+	citySpell: "AIGEWATE",
+	"code": "LOO",
+	"countryCode": "DZ",
+	"countryName": "阿尔及利亚",
+	cityFirstLetter: "A"
+}, {
+	cityName: "埃尔萨尔瓦多",
+	citySpell: "AIERSAERWADUO",
+	"code": "ESR",
+	"countryCode": "CL",
+	"countryName": "智利",
+	cityFirstLetter: "A"
+}, {
+	cityName: "阿皮亚",
+	citySpell: "APIYA",
+	"code": "APW",
+	"countryCode": "WS",
+	"countryName": "西萨摩亚（太平洋）",
+	cityFirstLetter: "A"
+}, {
+	cityName: "埃文斯维尔",
+	citySpell: "AIWENSIWEIER",
+	"code": "EVV",
+	"countryCode": "US",
+	"countryName": "美国",
+	cityFirstLetter: "A"
+}, {
+	cityName: "奥拉迪亚",
+	citySpell: "AOLADIYA",
+	"code": "OMR",
+	"countryCode": "RO",
+	"countryName": "罗马尼亚",
+	cityFirstLetter: "A"
+}, {
+	cityName: "奥卢",
+	citySpell: "AOLU",
+	"code": "OUL",
+	"countryCode": "FI",
+	"countryName": "芬兰",
+	cityFirstLetter: "A"
+}, {
+	cityName: "安塔利亚",
+	citySpell: "ANTALIYA",
+	"code": "AYT",
+	"countryCode": "TR",
+	"countryName": "土耳其",
+	cityFirstLetter: "A"
+}, {
+	cityName: "埃文帕克",
+	citySpell: "AIWENPAKE",
+	"code": "AVO",
+	"countryCode": "US",
+	"countryName": "美国",
+	cityFirstLetter: "A"
+}, {
+	cityName: "埃阿",
+	citySpell: "AIA",
+	"code": "EIA",
+	"countryCode": "PG",
+	"countryName": "巴布亚新几内亚",
+	cityFirstLetter: "A"
+}, {
+	cityName: "阿蒂乌岛",
+	citySpell: "ADIWUDAO",
+	"code": "AIU",
+	"countryCode": "CK",
+	"countryName": "库克群岛",
+	cityFirstLetter: "A"
+}, {
+	cityName: "阿拉卡基特",
+	citySpell: "ALAKAJITE",
+	"code": "AET",
+	"countryCode": "US",
+	"countryName": "美国",
+	cityFirstLetter: "A"
+}, {
+	cityName: "奥巴诺",
+	citySpell: "AOBANUO",
+	"code": "OBD",
+	"countryCode": "ID",
+	"countryName": "印度尼西亚",
+	cityFirstLetter: "A"
+}, {
+	cityName: "阿拉夏",
+	citySpell: "ALAXIA",
+	"code": "AAX",
+	"countryCode": "BR",
+	"countryName": "巴西",
+	cityFirstLetter: "A"
+}, {
+	cityName: "昂热",
+	citySpell: "ANGRE",
+	"code": "ANE",
+	"countryCode": "FR",
+	"countryName": "法国",
+	cityFirstLetter: "A"
+}, {
+	cityName: "阿瓦",
+	citySpell: "AWA",
+	"code": "AWR",
+	"countryCode": "PG",
+	"countryName": "巴布亚新几内亚",
+	cityFirstLetter: "A"
+}, {
+	cityName: "埃斯美拉达斯",
+	citySpell: "AISIMEILADASI",
+	"code": "ESM",
+	"countryCode": "EC",
+	"countryName": "厄瓜多尔",
+	cityFirstLetter: "A"
+}, {
+	cityName: "阿里什",
+	citySpell: "ALISHI",
+	"code": "AAC",
+	"countryCode": "EG",
+	"countryName": "埃及",
+	cityFirstLetter: "A"
+}, {
+	cityName: "埃米劳",
+	citySpell: "AIMILAO",
+	"code": "EMI",
+	"countryCode": "PG",
+	"countryName": "巴布亚新几内亚",
+	cityFirstLetter: "A"
+}, {
+	cityName: "埃尔巴格",
+	citySpell: "AIERBAGE",
+	"code": "EBG",
+	"countryCode": "CO",
+	"countryName": "哥伦比亚",
+	cityFirstLetter: "A"
+}, {
+	cityName: "阿格拉",
+	citySpell: "AGELA",
+	"code": "AGR",
+	"countryCode": "IN",
+	"countryName": "印度",
+	cityFirstLetter: "A"
+}, {
+	cityName: "阿雷纳斯角",
+	citySpell: "ALEINASIJIAO",
+	"code": "PUQ",
+	"countryCode": "CL",
+	"countryName": "智利",
+	cityFirstLetter: "A"
+}, {
+	cityName: "埃斯特维尔",
+	citySpell: "AISITEWEIER",
+	"code": "EST",
+	"countryCode": "US",
+	"countryName": "美国",
+	cityFirstLetter: "A"
+}, {
+	cityName: "艾尔",
+	citySpell: "AIER",
+	"code": "AYR",
+	"countryCode": "AU",
+	"countryName": "澳大利亚",
+	cityFirstLetter: "A"
+}, {
+	cityName: "奥鲁罗",
+	citySpell: "AOLULUO",
+	"code": "ORU",
+	"countryCode": "BO",
+	"countryName": "玻利维亚",
+	cityFirstLetter: "A"
+}, {
+	cityName: "埃里加博",
+	citySpell: "AILIJIABO",
+	"code": "ERA",
+	"countryCode": "SO",
+	"countryName": "索马里",
+	cityFirstLetter: "A"
+}, {
+	cityName: "奥西耶克",
+	citySpell: "AOXIYEKE",
+	"code": "OSI",
+	"countryCode": "HR",
+	"countryName": "克罗地亚",
+	cityFirstLetter: "A"
+}, {
+	cityName: "阿瓦雷",
+	citySpell: "AWALEI",
+	"code": "AWH",
+	"countryCode": "ET",
+	"countryName": "埃塞俄比亚",
+	cityFirstLetter: "A"
+}, {
+	cityName: "奥林杜伊克",
+	citySpell: "AOLINDUYIKE",
+	"code": "ORJ",
+	"countryCode": "GY",
+	"countryName": "圭亚那",
+	cityFirstLetter: "A"
+}, {
+	cityName: "阿拉克纳克",
+	citySpell: "ALAKENAKE",
+	"code": "AUK",
+	"countryCode": "US",
+	"countryName": "美国",
+	cityFirstLetter: "A"
+}, {
+	cityName: "艾因亚哈夫",
+	citySpell: "AIYINYAHAFU",
+	"code": "EIY",
+	"countryCode": "IL",
+	"countryName": "以色列",
+	cityFirstLetter: "A"
+}, {
+	cityName: "埃德纳贝",
+	citySpell: "AIDENABEI",
+	"code": "EDA",
+	"countryCode": "US",
+	"countryName": "美国",
+	cityFirstLetter: "A"
+}, {
+	cityName: "埃尔班科",
+	citySpell: "AIERBANKE",
+	"code": "ELB",
+	"countryCode": "CO",
+	"countryName": "哥伦比亚",
+	cityFirstLetter: "A"
+}, {
+	cityName: "阿纳科特斯",
+	citySpell: "ANAKETESI",
+	"code": "OTS",
+	"countryCode": "US",
+	"countryName": "美国",
+	cityFirstLetter: "A"
+}, {
+	cityName: "艾卜哈",
+	citySpell: "AIBUHA",
+	"code": "AHB",
+	"countryCode": "SA",
+	"countryName": "沙特阿垃伯",
+	cityFirstLetter: "A"
+}, {
+	cityName: "奥什科什",
+	citySpell: "AOSHIKESHI",
+	"code": "OSH",
+	"countryCode": "US",
+	"countryName": "美国",
+	cityFirstLetter: "A"
+}, {
+	cityName: "安卡祖阿布",
+	citySpell: "ANKAZUABU",
+	"code": "WAK",
+	"countryCode": "MG",
+	"countryName": "马达加斯加",
+	cityFirstLetter: "A"
+}, {
+	cityName: "埃尔科",
+	citySpell: "AIERKE",
+	"code": "EKO",
+	"countryCode": "US",
+	"countryName": "美国",
+	cityFirstLetter: "A"
+}, {
+	cityName: "安圭拉",
+	citySpell: "ANGUILA",
+	"code": "AXA",
+	"countryCode": "AI",
+	"countryName": "安圭拉",
+	cityFirstLetter: "A"
+}, {
+	cityName: "艾达克",
+	citySpell: "AIDAKE",
+	"code": "ADK",
+	"countryCode": "US",
+	"countryName": "美国",
+	cityFirstLetter: "A"
+}, {
+	cityName: "阿斯旺",
+	citySpell: "ASIWANG",
+	"code": "ASW",
+	"countryCode": "EG",
+	"countryName": "埃及",
+	cityFirstLetter: "A"
+}, {
+	cityName: "安戈谢",
+	citySpell: "ANGEXIE",
+	"code": "ANO",
+	"countryCode": "MZ",
+	"countryName": "莫桑比克",
+	cityFirstLetter: "A"
+}, {
+	cityName: "奥尻",
+	citySpell: "AOKAO",
+	"code": "OIR",
+	"countryCode": "JP",
+	"countryName": "日本",
+	cityFirstLetter: "A"
+}, {
+	cityName: "阿约拉斯",
+	citySpell: "AYUELASI",
+	"code": "AYO",
+	"countryCode": "PY",
+	"countryName": "巴拉圭",
+	cityFirstLetter: "A"
+}, {
+	cityName: "奥古斯塔港",
+	citySpell: "AOGUSITAGANG",
+	"code": "PUG",
+	"countryCode": "AU",
+	"countryName": "澳大利亚",
+	cityFirstLetter: "A"
+}, {
+	cityName: "阿勒颇",
+	citySpell: "ALEPO",
+	"code": "ALP",
+	"countryCode": "SY",
+	"countryName": "叙利亚",
+	cityFirstLetter: "A"
+}, {
+	cityName: "阿亚库乔港",
+	citySpell: "AYAKUQIAOGANG",
+	"code": "PYH",
+	"countryCode": "VE",
+	"countryName": "委内瑞拉",
+	cityFirstLetter: "A"
+}, {
+	cityName: "安德罗斯镇",
+	citySpell: "ANDELUOSIZHEN",
+	"code": "ASD",
+	"countryCode": "BS",
+	"countryName": "巴哈马",
+	cityFirstLetter: "A"
+}, {
+	cityName: "奥巴里",
+	citySpell: "AOBALI",
+	"code": "QUB",
+	"countryCode": "LY",
+	"countryName": "利比亚",
+	cityFirstLetter: "A"
+}, {
+	cityName: "阿什贾巴特",
+	citySpell: "ASHENJIABATE",
+	"code": "ASB",
+	"countryCode": "TM",
+	"countryName": "土库曼斯坦",
+	cityFirstLetter: "A"
+}, {
+	cityName: "埃斯卡纳巴",
+	citySpell: "AISIKANABA",
+	"code": "ESC",
+	"countryCode": "US",
+	"countryName": "美国",
+	cityFirstLetter: "A"
+}, {
+	cityName: "艾因",
+	citySpell: "AIYIN",
+	"code": "AAN",
+	"countryCode": "AE",
+	"countryName": "阿联酋",
+	cityFirstLetter: "A"
+}, {
+	cityName: "阿兰迪斯",
+	citySpell: "ALANDISI",
+	"code": "ADI",
+	"countryCode": "NA",
+	"countryName": "纳米比亚",
+	cityFirstLetter: "A"
+}, {
+	cityName: "艾莱",
+	citySpell: "AILAI",
+	"code": "ILY",
+	"countryCode": "GB",
+	"countryName": "英国",
+	cityFirstLetter: "A"
+}, {
+	cityName: "安集延",
+	citySpell: "ANJIYAN",
+	"code": "AZN",
+	"countryCode": "UZ",
+	"countryName": "乌兹别克斯坦",
+	cityFirstLetter: "A"
+}, {
+	cityName: "阿卡里瓜",
+	citySpell: "AKALIGUA",
+	"code": "AGV",
+	"countryCode": "VE",
+	"countryName": "委内瑞拉",
+	cityFirstLetter: "A"
+}, {
+	cityName: "阿克拉维克",
+	citySpell: "AKELAWEIKE",
+	"code": "LAK",
+	"countryCode": "CA",
+	"countryName": "加拿大",
+	cityFirstLetter: "A"
+}, {
+	cityName: "阿罗纳",
+	citySpell: "ALUONA",
+	"code": "RNA",
+	"countryCode": "SB",
+	"countryName": "所罗门群岛",
+	cityFirstLetter: "A"
+}, {
+	cityName: "阿拉蒂卡",
+	citySpell: "ALADIKA",
+	"code": "RKA",
+	"countryCode": "PF",
+	"countryName": "法属波利尼西亚",
+	cityFirstLetter: "A"
+}, {
+	cityName: "阿斯塔纳",
+	citySpell: "ASITANA",
+	"code": "TSE",
+	"countryCode": "KZ",
+	"countryName": "哈萨克斯坦",
+	cityFirstLetter: "A"
+}, {
+	cityName: "艾恩伍德",
+	citySpell: "AIENWUDE",
+	"code": "IWD",
+	"countryCode": "US",
+	"countryName": "美国",
+	cityFirstLetter: "A"
+}, {
+	cityName: "埃尔克哈特",
+	citySpell: "AIERKEHATE",
+	"code": "EKI",
+	"countryCode": "US",
+	"countryName": "美国",
+	cityFirstLetter: "A"
+}, {
+	cityName: "阿拉莫萨",
+	citySpell: "ALAMOSA",
+	"code": "ALS",
+	"countryCode": "US",
+	"countryName": "美国",
+	cityFirstLetter: "A"
+}, {
+	cityName: "安德里亚门纳",
+	citySpell: "ANDELIYAMENNA",
+	"code": "WAD",
+	"countryCode": "MG",
+	"countryName": "马达加斯加",
+	cityFirstLetter: "A"
+}, {
+	cityName: "埃里温",
+	citySpell: "AILIWEN",
+	"code": "EVN",
+	"countryCode": "AM",
+	"countryName": "亚美尼亚",
+	cityFirstLetter: "A"
+}, {
+	cityName: "奥尔塔",
+	citySpell: "AOERTA",
+	"code": "HOR",
+	"countryCode": "PT",
+	"countryName": "葡萄牙",
+	cityFirstLetter: "A"
+}, {
+	cityName: "奥尔杜吉桑",
+	citySpell: "AOERDUJISANG",
+	"code": "OGU",
+	"countryCode": "TR",
+	"countryName": "土耳其",
+	cityFirstLetter: "A"
+}, {
+	cityName: "阿瓜迪亚",
+	citySpell: "AGUADIYA",
+	"code": "BQN",
+	"countryCode": "PR",
+	"countryName": "波多黎各",
+	cityFirstLetter: "A"
+}, {
+	cityName: "阿布穆萨",
+	citySpell: "ABUMUSA",
+	"code": "AEU",
+	"countryCode": "IR",
+	"countryName": "伊朗",
+	cityFirstLetter: "A"
+}, {
+	cityName: "埃尔津詹",
+	citySpell: "AIERJINZHAN",
+	"code": "ERC",
+	"countryCode": "TR",
+	"countryName": "土耳其",
+	cityFirstLetter: "A"
+}, {
+	cityName: "阿尔梅里亚",
+	citySpell: "AERMEILIYA",
+	"code": "LEI",
+	"countryCode": "ES",
+	"countryName": "西班牙",
+	cityFirstLetter: "A"
+}, {
+	cityName: "埃尔迈顿",
+	citySpell: "AIERMAIDUN",
+	"code": "EMX",
+	"countryCode": "AR",
+	"countryName": "阿根廷",
+	cityFirstLetter: "A"
+}, {
+	cityName: "阿特巴拉",
+	citySpell: "ATEBALA",
+	"code": "ATB",
+	"countryCode": "SD",
+	"countryName": "苏丹",
+	cityFirstLetter: "A"
+}, {
+	cityName: "艾恩斯利",
+	citySpell: "AIENSILI",
+	"code": "EIH",
+	"countryCode": "AU",
+	"countryName": "澳大利亚",
+	cityFirstLetter: "A"
+}, {
+	cityName: "奥克斯纳德",
+	citySpell: "AOKESINADE",
+	"code": "OXR",
+	"countryCode": "US",
+	"countryName": "美国",
+	cityFirstLetter: "A"
+}, {
+	cityName: "艾德蒙顿",
+	citySpell: "AIDEMENGDUN",
+	"code": "YEK",
+	"countryCode": "CA",
+	"countryName": "加拿大",
+	cityFirstLetter: "A"
+}, {
+	cityName: "埃萨阿拉",
+	citySpell: "AISAALA",
+	"code": "ESA",
+	"countryCode": "PG",
+	"countryName": "巴布亚新几内亚",
+	cityFirstLetter: "A"
+}, {
+	cityName: "安齐拉贝",
+	citySpell: "ANQILABEI",
+	"code": "ATJ",
+	"countryCode": "MG",
+	"countryName": "马达加斯加",
+	cityFirstLetter: "A"
+}, {
+	cityName: "阿内加达",
+	citySpell: "ANEIJIADA",
+	"code": "NGD",
+	"countryCode": "VG",
+	"countryName": "维尔京群岛（英）",
+	cityFirstLetter: "A"
+}, {
+	cityName: "埃皮纳勒",
+	citySpell: "AIPINALE",
+	"code": "EPL",
+	"countryCode": "FR",
+	"countryName": "法国",
+	cityFirstLetter: "A"
+}, {
+	cityName: "奥尔比亚",
+	citySpell: "AOERBIYA",
+	"code": "OLB",
+	"countryCode": "IT",
+	"countryName": "意大利",
+	cityFirstLetter: "A"
+}, {
+	cityName: "阿克托别",
+	citySpell: "AKETUOBIE",
+	"code": "AKX",
+	"countryCode": "KZ",
+	"countryName": "哈萨克斯坦",
+	cityFirstLetter: "A"
+}, {
+	cityName: "奥三棉市",
+	citySpell: "AOSANMIANSHI",
+	"code": "OZC",
+	"countryCode": "PH",
+	"countryName": "菲律宾",
+	cityFirstLetter: "A"
+}, {
+	cityName: "阿尔塔",
+	citySpell: "AERTA",
+	"code": "ALF",
+	"countryCode": "NO",
+	"countryName": "挪威",
+	cityFirstLetter: "A"
+}, {
+	cityName: "埃吉尔斯塔第尔",
+	citySpell: "AIJIERSITADIER",
+	"code": "EGS",
+	"countryCode": "IS",
+	"countryName": "冰岛",
+	cityFirstLetter: "A"
+}, {
+	cityName: "阿那帕",
+	citySpell: "ANAPA",
+	"code": "AAQ",
+	"countryCode": "RU",
+	"countryName": "俄罗斯",
+	cityFirstLetter: "A"
+}, {
+	cityName: "埃农泰基厄",
+	citySpell: "AINONGTAIJIE",
+	"code": "ENF",
+	"countryCode": "FI",
+	"countryName": "芬兰",
+	cityFirstLetter: "A"
+}, {
+	cityName: "阿达那",
+	citySpell: "ADANA",
+	"code": "ADA",
+	"countryCode": "TR",
+	"countryName": "土耳其",
+	cityFirstLetter: "A"
+}, {
+	cityName: "奥瓦达",
+	citySpell: "AOWADA",
+	"code": "VDA",
+	"countryCode": "IL",
+	"countryName": "以色列",
+	cityFirstLetter: "A"
+}, {
+	cityName: "安戈拉姆",
+	citySpell: "ANGELAMU",
+	"code": "AGG",
+	"countryCode": "PG",
+	"countryName": "巴布亚新几内亚",
+	cityFirstLetter: "A"
+}, {
+	cityName: "阿尔塔米拉",
+	citySpell: "AERTAMILA",
+	"code": "ATM",
+	"countryCode": "BR",
+	"countryName": "巴西",
+	cityFirstLetter: "A"
+}, {
+	cityName: "奥兰奇托",
+	citySpell: "AOLANQITUO",
+	"code": "OAN",
+	"countryCode": "HN",
+	"countryName": "洪都拉斯",
+	cityFirstLetter: "A"
+}, {
+	cityName: "奥普霍伊斯群岛",
+	citySpell: "AOPUHUOYISIQUNDAO",
+	"code": "ORS",
+	"countryCode": "AU",
+	"countryName": "澳大利亚",
+	cityFirstLetter: "A"
+}, {
+	cityName: "阿罗赖岛",
+	citySpell: "ALUOLAIDAO",
+	"code": "AIS",
+	"countryCode": "KI",
+	"countryName": "基里巴斯",
+	cityFirstLetter: "A"
+}, {
+	cityName: "安汶",
+	citySpell: "ANWEN",
+	"code": "AMQ",
+	"countryCode": "ID",
+	"countryName": "印度尼西亚",
+	cityFirstLetter: "A"
+}, {
+	cityName: "埃夫勒",
+	citySpell: "AIFULE",
+	"code": "EVX",
+	"countryCode": "FR",
+	"countryName": "法国",
+	cityFirstLetter: "A"
+}, {
+	cityName: "阿乌基",
+	citySpell: "AWUJI",
+	"code": "AKS",
+	"countryCode": "SB",
+	"countryName": "所罗门群岛",
+	cityFirstLetter: "A"
+}, {
+	cityName: "埃奇伍德",
+	citySpell: "AIQIWUDE",
+	"code": "EDG",
+	"countryCode": "US",
+	"countryName": "美国",
+	cityFirstLetter: "A"
+}, {
+	cityName: "安塔拉哈",
+	citySpell: "ANTALAHA",
+	"code": "ANM",
+	"countryCode": "MG",
+	"countryName": "马达加斯加",
+	cityFirstLetter: "A"
+}, {
+	cityName: "阿博伊索",
+	citySpell: "ABOYISUO",
+	"code": "ABO",
+	"countryCode": "CI",
+	"countryName": "科特迪瓦",
+	cityFirstLetter: "A"
+}, {
+	cityName: "阿瑞梭莎",
+	citySpell: "ARUISUOSHA",
+	"code": "ASS",
+	"countryCode": "ZA",
+	"countryName": "南非",
+	cityFirstLetter: "A"
+}, {
+	cityName: "埃尔比勒",
+	citySpell: "AIERBILE",
+	"code": "EBL",
+	"countryCode": "IQ",
+	"countryName": "伊拉克",
+	cityFirstLetter: "A"
+}, {
+	cityName: "阿尔达比勒",
+	citySpell: "AERDABILE",
+	"code": "ADU",
+	"countryCode": "IR",
+	"countryName": "伊朗",
+	cityFirstLetter: "A"
+}, {
+	cityName: "安科纳",
+	citySpell: "ANKENA",
+	"code": "AOI",
+	"countryCode": "IT",
+	"countryName": "意大利",
+	cityFirstLetter: "A"
+}, {
+	cityName: "阿贝歇",
+	citySpell: "ABEIXIE",
+	"code": "AEH",
+	"countryCode": "TD",
+	"countryName": "乍得",
+	cityFirstLetter: "A"
+}, {
+	cityName: "阿塔格",
+	citySpell: "ATAGE",
+	"code": "AXK",
+	"countryCode": "YE",
+	"countryName": "也门",
+	cityFirstLetter: "A"
+}, {
+	cityName: "奥本(阿拉巴马州)",
+	citySpell: "AOBEN",
+	"code": "AUO",
+	"countryCode": "US",
+	"countryName": "美国",
+	cityFirstLetter: "A"
+}, {
+	cityName: "阿洛岛",
+	citySpell: "ALUODAO",
+	"code": "ARD",
+	"countryCode": "ID",
+	"countryName": "印度尼西亚",
+	cityFirstLetter: "A"
+}, {
+	cityName: "阿盖尔",
+	citySpell: "AGAIER",
+	"code": "GYL",
+	"countryCode": "AU",
+	"countryName": "澳大利亚",
+	cityFirstLetter: "A"
+}, {
+	cityName: "阿德亚曼",
+	citySpell: "ADEYAMAN",
+	"code": "ADF",
+	"countryCode": "TR",
+	"countryName": "土耳其",
+	cityFirstLetter: "A"
+}, {
+	cityName: "阿亚佩尔",
+	citySpell: "AYAPEIER",
+	"code": "AYA",
+	"countryCode": "CO",
+	"countryName": "哥伦比亚",
+	cityFirstLetter: "A"
+}, {
+	cityName: "奥孔贾",
+	citySpell: "AOKONGJIA",
+	"code": "OKN",
+	"countryCode": "GA",
+	"countryName": "加蓬",
+	cityFirstLetter: "A"
+}, {
+	cityName: "埃森",
+	citySpell: "AISEN",
+	"code": "ESS",
+	"countryCode": "DE",
+	"countryName": "德国",
+	cityFirstLetter: "A"
+}, {
+	cityName: "奥尔伯里",
+	citySpell: "AOERBOLI",
+	"code": "ABX",
+	"countryCode": "AU",
+	"countryName": "澳大利亚",
+	cityFirstLetter: "A"
+}, {
+	cityName: "奥玛鲁",
+	citySpell: "AOMALU",
+	"code": "OAM",
+	"countryCode": "NZ",
+	"countryName": "新西兰",
+	cityFirstLetter: "A"
+}, {
+	cityName: "阿鲁沙",
+	citySpell: "ALUSHA",
+	"code": "ARK",
+	"countryCode": "TZ",
+	"countryName": "坦桑尼亚",
+	cityFirstLetter: "A"
+}, {
+	cityName: "埃阿坎",
+	citySpell: "AIAKAN",
+	"code": "ECN",
+	"countryCode": "CY",
+	"countryName": "塞浦路斯",
+	cityFirstLetter: "A"
+}, {
+	cityName: "阿尔班加",
+	citySpell: "AERBANJIA",
+	"code": "ALL",
+	"countryCode": "IT",
+	"countryName": "意大利",
+	cityFirstLetter: "A"
+}, {
+	cityName: "埃沙尔登",
+	citySpell: "AISHAERDENG",
+	"code": "AHL",
+	"countryCode": "GY",
+	"countryName": "圭亚那",
+	cityFirstLetter: "A"
+}, {
+	cityName: "奥克萨普明",
+	citySpell: "AOKESAPUMING",
+	"code": "OKP",
+	"countryCode": "PG",
+	"countryName": "巴布亚新几内亚",
+	cityFirstLetter: "A"
+}, {
+	cityName: "阿拉萨图巴",
+	citySpell: "ALASATUBA",
+	"code": "ARU",
+	"countryCode": "BR",
+	"countryName": "巴西",
+	cityFirstLetter: "A"
+}, {
+	cityName: "阿萨帕",
+	citySpell: "ASAPA",
+	"code": "APP",
+	"countryCode": "PG",
+	"countryName": "巴布亚新几内亚",
+	cityFirstLetter: "A"
+}, {
+	cityName: "阿拉拉库拉",
+	citySpell: "ALALAKULA",
+	"code": "ACR",
+	"countryCode": "CO",
+	"countryName": "哥伦比亚",
+	cityFirstLetter: "A"
+}, {
+	cityName: "阿尔普迪埃",
+	citySpell: "AERPUDIAI",
+	"code": "AHZ",
+	"countryCode": "FR",
+	"countryName": "法国",
+	cityFirstLetter: "A"
+}, {
+	cityName: "奥克马尔吉",
+	citySpell: "AOKEMAERJI",
+	"code": "OKM",
+	"countryCode": "US",
+	"countryName": "美国",
+	cityFirstLetter: "A"
+}, {
+	cityName: "安特卫普",
+	citySpell: "ANTEWEIPU",
+	"code": "ANR",
+	"countryCode": "BE",
+	"countryName": "比利时",
+	cityFirstLetter: "A"
+}, {
+	cityName: "阿伯丁",
+	citySpell: "ABODING",
+	"code": "ABR",
+	"countryCode": "US",
+	"countryName": "美国",
+	cityFirstLetter: "A"
+}, {
+	cityName: "阿瓦巴",
+	citySpell: "AWABA",
+	"code": "AWB",
+	"countryCode": "PG",
+	"countryName": "巴布亚新几内亚",
+	cityFirstLetter: "A"
+}, {
+	cityName: "奥兰加巴德",
+	citySpell: "AOLANJIABADE",
+	"code": "IXU",
+	"countryCode": "IN",
+	"countryName": "印度",
+	cityFirstLetter: "A"
+}, {
+	cityName: "奥塔姆瓦",
+	citySpell: "AOTAMUWA",
+	"code": "OTM",
+	"countryCode": "US",
+	"countryName": "美国",
+	cityFirstLetter: "A"
+}, {
+	cityName: "阿拉吉普",
+	citySpell: "ALAJIPU",
+	"code": "ARP",
+	"countryCode": "PG",
+	"countryName": "巴布亚新几内亚",
+	cityFirstLetter: "A"
+}, {
+	cityName: "奥林匹克旦姆",
+	citySpell: "AOLINPIKEDANMU",
+	"code": "OLP",
+	"countryCode": "AU",
+	"countryName": "澳大利亚",
+	cityFirstLetter: "A"
+}, {
+	cityName: "安吉尔法厄",
+	citySpell: "ANJIERFAE",
+	"code": "AXX",
+	"countryCode": "US",
+	"countryName": "美国",
+	cityFirstLetter: "A"
+}, {
+	cityName: "奥亚波基",
+	citySpell: "AOYABOJI",
+	"code": "OYK",
+	"countryCode": "BR",
+	"countryName": "巴西",
+	cityFirstLetter: "A"
+}, {
+	cityName: "阿西斯",
+	citySpell: "AXISI",
+	"code": "AIF",
+	"countryCode": "BR",
+	"countryName": "巴西",
+	cityFirstLetter: "A"
+}, {
+	cityName: "埃代岛",
+	citySpell: "AIDAIDAO",
+	"code": "EOI",
+	"countryCode": "GB",
+	"countryName": "英国",
+	cityFirstLetter: "A"
+}, {
+	cityName: "阿雷基帕",
+	citySpell: "ALEIJIPA",
+	"code": "AQP",
+	"countryCode": "PE",
+	"countryName": "秘鲁",
+	cityFirstLetter: "A"
+}, {
+	cityName: "安班扎",
+	citySpell: "ANBANZHA",
+	"code": "IVA",
+	"countryCode": "MG",
+	"countryName": "马达加斯加",
+	cityFirstLetter: "A"
+}, {
+	cityName: "阿里卡",
+	citySpell: "ALIKA",
+	"code": "ARI",
+	"countryCode": "CL",
+	"countryName": "智利",
+	cityFirstLetter: "A"
+}, {
+	cityName: "阿克拉",
+	citySpell: "AKELA",
+	"code": "ACC",
+	"countryCode": "GH",
+	"countryName": "加纳",
+	cityFirstLetter: "A"
+}, {
+	cityName: "阿拉瓦",
+	citySpell: "ALAWA",
+	"code": "RAW",
+	"countryCode": "PG",
+	"countryName": "巴布亚新几内亚",
+	cityFirstLetter: "A"
+}, {
+	cityName: "奥斯汀(内华达州)",
+	citySpell: "AOSITING",
+	"code": "ASQ",
+	"countryCode": "US",
+	"countryName": "美国",
+	cityFirstLetter: "A"
+}, {
+	cityName: "奥尔巴尼堡",
+	citySpell: "AOERBANIBAO",
+	"code": "YFA",
+	"countryCode": "CA",
+	"countryName": "加拿大",
+	cityFirstLetter: "A"
+}, {
+	cityName: "艾丽斯",
+	citySpell: "AILISI",
+	"code": "ALI",
+	"countryCode": "US",
+	"countryName": "美国",
+	cityFirstLetter: "A"
+}, {
+	cityName: "阿拉马克",
+	citySpell: "ALAMAKE",
+	"code": "AXC",
+	"countryCode": "AU",
+	"countryName": "澳大利亚",
+	cityFirstLetter: "A"
+}, {
+	cityName: "安比卢贝",
+	citySpell: "ANBILUBEI",
+	"code": "AMB",
+	"countryCode": "MG",
+	"countryName": "马达加斯加",
+	cityFirstLetter: "A"
+}, {
+	cityName: "阿根内斯",
+	citySpell: "AGENNEISI",
+	"code": "AGZ",
+	"countryCode": "ZA",
+	"countryName": "南非",
+	cityFirstLetter: "A"
+}, {
+	cityName: "奥卡纳",
+	citySpell: "AOKANA",
+	"code": "OCV",
+	"countryCode": "CO",
+	"countryName": "哥伦比亚",
+	cityFirstLetter: "A"
+}, {
+	cityName: "埃尼巴",
+	citySpell: "AINIBA",
+	"code": "ENB",
+	"countryCode": "AU",
+	"countryName": "澳大利亚",
+	cityFirstLetter: "A"
+}, {
+	cityName: "埃利奥特莱克",
+	citySpell: "AILIAOTELAIKE",
+	"code": "YEL",
+	"countryCode": "CA",
+	"countryName": "加拿大",
+	cityFirstLetter: "A"
+}, {
+	cityName: "艾奥梅",
+	citySpell: "AIAOMEI",
+	"code": "AIE",
+	"countryCode": "PG",
+	"countryName": "巴布亚新几内亚",
+	cityFirstLetter: "A"
+}, {
+	cityName: "阿什维尔",
+	citySpell: "ASHENWEIER",
+	"code": "AVL",
+	"countryCode": "US",
+	"countryName": "美国",
+	cityFirstLetter: "A"
+}, {
+	cityName: "昂斯洛",
+	citySpell: "ANGSILUO",
+	"code": "ONS",
+	"countryCode": "AU",
+	"countryName": "澳大利亚",
+	cityFirstLetter: "A"
+}, {
+	cityName: "阿尔梅纳拉",
+	citySpell: "AERMEINALA",
+	"code": "AMJ",
+	"countryCode": "BR",
+	"countryName": "巴西",
+	cityFirstLetter: "A"
+}, {
+	cityName: "安朋蒂",
+	citySpell: "ANPENGDI",
+	"code": "AUJ",
+	"countryCode": "PG",
+	"countryName": "巴布亚新几内亚",
+	cityFirstLetter: "A"
+}, {
+	cityName: "阿基亚克",
+	citySpell: "AJIYAKE",
+	"code": "AKI",
+	"countryCode": "US",
+	"countryName": "美国",
+	cityFirstLetter: "A"
+}, {
+	cityName: "埃莫纳克",
+	citySpell: "AIMONAKE",
+	"code": "EMK",
+	"countryCode": "US",
+	"countryName": "美国",
+	cityFirstLetter: "A"
+}, {
+	cityName: "奥尼昂塔",
+	citySpell: "AONIANGTA",
+	"code": "ONH",
+	"countryCode": "US",
+	"countryName": "美国",
+	cityFirstLetter: "A"
+}, {
+	cityName: "奥克港",
+	citySpell: "AOKEGANG",
+	"code": "ODW",
+	"countryCode": "US",
+	"countryName": "美国",
+	cityFirstLetter: "A"
+}, {
+	cityName: "阿特卡什克",
+	citySpell: "ATEKASHIKE",
+	"code": "ATK",
+	"countryCode": "US",
+	"countryName": "美国",
+	cityFirstLetter: "A"
+}, {
+	cityName: "安格尔西岛",
+	citySpell: "ANGEERXIDAO",
+	"code": "VLY",
+	"countryCode": "GB",
+	"countryName": "英国",
+	cityFirstLetter: "A"
+}, {
+	cityName: "阿拉克",
+	citySpell: "ALAKE",
+	"code": "AJK",
+	"countryCode": "IR",
+	"countryName": "伊朗",
+	cityFirstLetter: "A"
+}, {
+	cityName: "阿普卡拉",
+	citySpell: "APUKALA",
+	"code": "APU",
+	"countryCode": "BR",
+	"countryName": "巴西",
+	cityFirstLetter: "A"
+}, {
+	cityName: "艾丽斯斯普林斯",
+	citySpell: "AILISISIPULINSI",
+	"code": "ASP",
+	"countryCode": "AU",
+	"countryName": "澳大利亚",
+	cityFirstLetter: "A"
+}, {
+	cityName: "阿布新比勒",
+	citySpell: "ABUXINBILE",
+	"code": "ABS",
+	"countryCode": "EG",
+	"countryName": "埃及",
+	cityFirstLetter: "A"
+}, {
+	cityName: "安布里什",
+	citySpell: "ANBULISHI",
+	"code": "AZZ",
+	"countryCode": "AO",
+	"countryName": "安哥拉",
+	cityFirstLetter: "A"
+}, {
+	cityName: "阿比林",
+	citySpell: "ABILIN",
+	"code": "ABI",
+	"countryCode": "US",
+	"countryName": "美国",
+	cityFirstLetter: "A"
+}, {
+	cityName: "阿比让",
+	citySpell: "ABIRANG",
+	"code": "ABJ",
+	"countryCode": "CI",
+	"countryName": "科特迪瓦",
+	cityFirstLetter: "A"
+}, {
+	cityName: "埃尔法舍尔",
+	citySpell: "AIERFASHEER",
+	"code": "ELF",
+	"countryCode": "SD",
+	"countryName": "苏丹",
+	cityFirstLetter: "A"
+}, {
+	cityName: "阿鲁图亚",
+	citySpell: "ALUTUYA",
+	"code": "AXR",
+	"countryCode": "PF",
+	"countryName": "法属波利尼西亚",
+	cityFirstLetter: "A"
+}, {
+	cityName: "阿德拉尔",
+	citySpell: "ADELAER",
+	"code": "AZR",
+	"countryCode": "DZ",
+	"countryName": "阿尔及利亚",
+	cityFirstLetter: "A"
+}, {
+	cityName: "阿马纳布",
+	citySpell: "AMANABU",
+	"code": "AMU",
+	"countryCode": "PG",
+	"countryName": "巴布亚新几内亚",
+	cityFirstLetter: "A"
+}, {
+	cityName: "安东尼奥港",
+	citySpell: "ANDONGNIAOGANG",
+	"code": "POT",
+	"countryCode": "JM",
+	"countryName": "牙买加",
+	cityFirstLetter: "A"
+}, {
+	cityName: "阿伦敦",
+	citySpell: "ALUNDUN",
+	"code": "ABE",
+	"countryCode": "US",
+	"countryName": "美国",
+	cityFirstLetter: "A"
+}, {
+	cityName: "阿斯特拉罕",
+	citySpell: "ASITELAHAN",
+	"code": "ASF",
+	"countryCode": "RU",
+	"countryName": "俄罗斯",
+	cityFirstLetter: "A"
+}, {
+	cityName: "埃弗莱斯",
+	citySpell: "AIFULAISI",
+	"code": "EVM",
+	"countryCode": "US",
+	"countryName": "美国",
+	cityFirstLetter: "A"
+}, {
+	cityName: "阿瓜斯卡连特斯",
+	citySpell: "AGUASIKALIANTESI",
+	"code": "AGU",
+	"countryCode": "MX",
+	"countryName": "墨西哥",
+	cityFirstLetter: "A"
+}, {
+	cityName: "安布勒",
+	citySpell: "ANBULE",
+	"code": "ABL",
+	"countryCode": "US",
+	"countryName": "美国",
+	cityFirstLetter: "A"
+}, {
+	cityName: "阿提劳",
+	citySpell: "ATILAO",
+	"code": "GUW",
+	"countryCode": "KZ",
+	"countryName": "哈萨克斯坦",
+	cityFirstLetter: "A"
+}, {
+	cityName: "奥什",
+	citySpell: "AOSHEN",
+	"code": "OSS",
+	"countryCode": "KG",
+	"countryName": "吉尔吉斯斯坦",
+	cityFirstLetter: "A"
+}, {
+	cityName: "埃斯基尔斯图纳",
+	citySpell: "AISIJIERSITUNA",
+	"code": "EKT",
+	"countryCode": "SE",
+	"countryName": "瑞典",
+	cityFirstLetter: "A"
+}, {
+	cityName: "奥本",
+	citySpell: "AOBEN",
+	"code": "OBA",
+	"countryCode": "AU",
+	"countryName": "澳大利亚",
+	cityFirstLetter: "A"
+}, {
+	cityName: "阿纳波利斯",
+	citySpell: "ANABOLISI",
+	"code": "APS",
+	"countryCode": "BR",
+	"countryName": "巴西",
+	cityFirstLetter: "A"
+}, {
+	cityName: "奥克斯特当斯",
+	citySpell: "AOKESITEDANGSI",
+	"code": "AUD",
+	"countryCode": "AU",
+	"countryName": "澳大利亚",
+	cityFirstLetter: "A"
+}, {
+	cityName: "阿拉拉夸拉",
+	citySpell: "ALALAKUALA",
+	"code": "AQA",
+	"countryCode": "BR",
+	"countryName": "巴西",
+	cityFirstLetter: "A"
+}, {
+	cityName: "阿马",
+	citySpell: "AMA",
+	"code": "AMF",
+	"countryCode": "PG",
+	"countryName": "巴布亚新几内亚",
+	cityFirstLetter: "A"
+}, {
+	cityName: "埃纳贝拉",
+	citySpell: "AINABEILA",
+	"code": "ERB",
+	"countryCode": "AU",
+	"countryName": "澳大利亚",
+	cityFirstLetter: "A"
+}, {
+	cityName: "艾兰湖/加登希尔",
+	citySpell: "AILANHU/JIADENGXIER",
+	"code": "YIV",
+	"countryCode": "CA",
+	"countryName": "加拿大",
+	cityFirstLetter: "A"
+}, {
+	cityName: "阿雷格里港",
+	citySpell: "ALEIGELIGANG",
+	"code": "POA",
+	"countryCode": "BR",
+	"countryName": "巴西",
+	cityFirstLetter: "A"
+}, {
+	cityName: "埃斯特城",
+	citySpell: "AISITECHENG",
+	"code": "AGT",
+	"countryCode": "PY",
+	"countryName": "巴拉圭",
+	cityFirstLetter: "A"
+}, {
+	cityName: "安吉利斯马布拉卡特",
+	citySpell: "ANJILISIMABULAKATE",
+	"code": "CRK",
+	"countryCode": "PH",
+	"countryName": "菲律宾",
+	cityFirstLetter: "A"
+}, {
+	cityName: "奥兹恩基",
+	citySpell: "AOZIENJI",
+	"code": "KOZ",
+	"countryCode": "US",
+	"countryName": "美国",
+	cityFirstLetter: "A"
+}, {
+	cityName: "安提曼",
+	citySpell: "ANTIMAN",
+	"code": "AMC",
+	"countryCode": "TD",
+	"countryName": "乍得",
+	cityFirstLetter: "A"
+}, {
+	cityName: "阿拉德",
+	citySpell: "ALADE",
+	"code": "ARW",
+	"countryCode": "RO",
+	"countryName": "罗马尼亚",
+	cityFirstLetter: "A"
+}, {
+	cityName: "阿萨巴",
+	citySpell: "ASABA",
+	"code": "ABB",
+	"countryCode": "NG",
+	"countryName": "尼日利亚",
+	cityFirstLetter: "A"
+}, {
+	cityName: "艾奥瓦城",
+	citySpell: "AIAOWACHENG",
+	"code": "IOW",
+	"countryCode": "US",
+	"countryName": "美国",
+	cityFirstLetter: "A"
+}, {
+	cityName: "阿那科",
+	citySpell: "ANAKE",
+	"code": "AAO",
+	"countryCode": "VE",
+	"countryName": "委内瑞拉",
+	cityFirstLetter: "A"
+}, {
+	cityName: "阿斯托里亚",
+	citySpell: "ASITUOLIYA",
+	"code": "AST",
+	"countryCode": "US",
+	"countryName": "美国",
+	cityFirstLetter: "A"
+}, {
+	cityName: "阿森斯(俄亥俄州)",
+	citySpell: "ASENSI",
+	"code": "ATO",
+	"countryCode": "US",
+	"countryName": "美国",
+	cityFirstLetter: "A"
+}, {
+	cityName: "奥尔波依",
+	citySpell: "AOERBOYI",
+	"code": "OLJ",
+	"countryCode": "VU",
+	"countryName": "瓦努阿图",
+	cityFirstLetter: "A"
+}, {
+	cityName: "埃德米特",
+	citySpell: "AIDEMITE",
+	"code": "EDO",
+	"countryCode": "TR",
+	"countryName": "土耳其",
+	cityFirstLetter: "A"
+}, {
+	cityName: "奥格登斯堡",
+	citySpell: "AOGEDENGSIBAO",
+	"code": "OGS",
+	"countryCode": "US",
+	"countryName": "美国",
+	cityFirstLetter: "A"
+}, {
+	cityName: "阿武阿武",
+	citySpell: "AWUAWU",
+	"code": "AVU",
+	"countryCode": "SB",
+	"countryName": "所罗门群岛",
+	cityFirstLetter: "A"
+}, {
+	cityName: "爱德华里弗",
+	citySpell: "AIDEHUALIFU",
+	"code": "EDR",
+	"countryCode": "AU",
+	"countryName": "澳大利亚",
+	cityFirstLetter: "A"
+}, {
+	cityName: "阿拉斯加特宾斯",
+	citySpell: "ALASIJIATEBINSI",
+	"code": "WBB",
+	"countryCode": "US",
+	"countryName": "美国",
+	cityFirstLetter: "A"
+}, {
+	cityName: "阿拉瓜依纳",
+	citySpell: "ALAGUAYINA",
+	"code": "AUX",
+	"countryCode": "BR",
+	"countryName": "巴西",
+	cityFirstLetter: "A"
+}, {
+	cityName: "阿尔盖罗",
+	citySpell: "AERGAILUO",
+	"code": "AHO",
+	"countryCode": "IT",
+	"countryName": "意大利",
+	cityFirstLetter: "A"
+}, {
+	cityName: "安察卢瓦",
+	citySpell: "ANCHALUWA",
+	"code": "WAQ",
+	"countryCode": "MG",
+	"countryName": "马达加斯加",
+	cityFirstLetter: "A"
+}, {
+	cityName: "艾肯",
+	citySpell: "AIKEN",
+	"code": "AIK",
+	"countryCode": "US",
+	"countryName": "美国",
+	cityFirstLetter: "A"
+}, {
+	cityName: "奥卡拉",
+	citySpell: "AOKALA",
+	"code": "OCF",
+	"countryCode": "US",
+	"countryName": "美国",
+	cityFirstLetter: "A"
+}, {
+	cityName: "埃尔果累阿",
+	citySpell: "AIERGUOLEIA",
+	"code": "ELG",
+	"countryCode": "DZ",
+	"countryName": "阿尔及利亚",
+	cityFirstLetter: "A"
+}, {
+	cityName: "阿萨卢耶",
+	citySpell: "ASALUYE",
+	"code": "PGU",
+	"countryCode": "IR",
+	"countryName": "伊朗",
+	cityFirstLetter: "A"
+}, {
+	cityName: "阿尔泰",
+	citySpell: "AERTAI",
+	"code": "LTI",
+	"countryCode": "MN",
+	"countryName": "蒙古",
+	cityFirstLetter: "A"
+}, {
+	cityName: "阿派鲁克",
+	citySpell: "APAILUKE",
+	"code": "YPJ",
+	"countryCode": "CA",
+	"countryName": "加拿大",
+	cityFirstLetter: "A"
+}, {
+	cityName: "安托法加斯塔",
+	citySpell: "ANTUOFAJIASITA",
+	"code": "ANF",
+	"countryCode": "CL",
+	"countryName": "智利",
+	cityFirstLetter: "A"
+}, {
+	cityName: "安卡拉",
+	citySpell: "ANKALA",
+	"code": "ANK",
+	"countryCode": "TR",
+	"countryName": "土耳其",
+	cityFirstLetter: "A"
+}, {
+	cityName: "艾尔奥克",
+	citySpell: "AIERAOKE",
+	"code": "AIC",
+	"countryCode": "MH",
+	"countryName": "马绍尔群岛",
+	cityFirstLetter: "A"
+}, {
+	cityName: "奥特黑瓦润格",
+	citySpell: "AOTEHEIWARUNGE",
+	"code": "OTJ",
+	"countryCode": "NA",
+	"countryName": "纳米比亚",
+	cityFirstLetter: "A"
+}, {
+	cityName: "奥哈克阿",
+	citySpell: "AOHAKEA",
+	"code": "OHA",
+	"countryCode": "NZ",
+	"countryName": "新西兰",
+	cityFirstLetter: "A"
+}, {
+	cityName: "埃尔迈拉",
+	citySpell: "AIERMAILA",
+	"code": "ELM",
+	"countryCode": "US",
+	"countryName": "美国",
+	cityFirstLetter: "A"
+}, {
+	cityName: "阿克苏姆",
+	citySpell: "AKESUMU",
+	"code": "AXU",
+	"countryCode": "ET",
+	"countryName": "埃塞俄比亚",
+	cityFirstLetter: "A"
+}, {
+	cityName: "阿尔布克",
+	citySpell: "AERBUKE",
+	"code": "BUK",
+	"countryCode": "YE",
+	"countryName": "也门",
+	cityFirstLetter: "A"
+}, {
+	cityName: "奥彭湾",
+	citySpell: "AOPENGWAN",
+	"code": "OPB",
+	"countryCode": "PG",
+	"countryName": "巴布亚新几内亚",
+	cityFirstLetter: "A"
+}, {
+	cityName: "艾丽斯港",
+	citySpell: "AILISIGANG",
+	"code": "PTC",
+	"countryCode": "US",
+	"countryName": "美国",
+	cityFirstLetter: "A"
+}, {
+	cityName: "埃尔卡拉法特",
+	citySpell: "AIERKALAFATE",
+	"code": "FTE",
+	"countryCode": "AR",
+	"countryName": "阿根廷",
+	cityFirstLetter: "A"
+}, {
+	cityName: "阿尔丹",
+	citySpell: "AERDAN",
+	"code": "ADH",
+	"countryCode": "RU",
+	"countryName": "俄罗斯",
+	cityFirstLetter: "A"
+}, {
+	cityName: "奥尔德尼",
+	citySpell: "AOERDENI",
+	"code": "ACI",
+	"countryCode": "GB",
+	"countryName": "英国",
+	cityFirstLetter: "A"
+}, {
+	cityName: "阿拉伯里",
+	citySpell: "ALABOLI",
+	"code": "AAB",
+	"countryCode": "AU",
+	"countryName": "澳大利亚",
+	cityFirstLetter: "A"
+}, {
+	cityName: "艾尤拉",
+	citySpell: "AIYOULA",
+	"code": "AYU",
+	"countryCode": "PG",
+	"countryName": "巴布亚新几内亚",
+	cityFirstLetter: "A"
+}, {
+	cityName: "奥尔巴尼",
+	citySpell: "AOERBANI",
+	"code": "ALB",
+	"countryCode": "US",
+	"countryName": "美国",
+	cityFirstLetter: "A"
+}, {
+	cityName: "昂儒昂",
+	citySpell: "ANGRUANG",
+	"code": "AJN",
+	"countryCode": "KM",
+	"countryName": "科摩罗",
+	cityFirstLetter: "A"
+}, {
+	cityName: "安塔",
+	citySpell: "ANTA",
+	"code": "ATA",
+	"countryCode": "PE",
+	"countryName": "秘鲁",
+	cityFirstLetter: "A"
+}, {
+	cityName: "阿拉",
+	citySpell: "ALA",
+	"code": "AAV",
+	"countryCode": "PH",
+	"countryName": "菲律宾",
+	cityFirstLetter: "A"
+}, {
+	cityName: "埃邦",
+	citySpell: "AIBANG",
+	"code": "EBO",
+	"countryCode": "MH",
+	"countryName": "马绍尔群岛",
+	cityFirstLetter: "A"
+}, {
+	cityName: "安德森",
+	citySpell: "ANDESEN",
+	"code": "AND",
+	"countryCode": "US",
+	"countryName": "美国",
+	cityFirstLetter: "A"
+}, {
+	cityName: "奥尔马拉",
+	citySpell: "AOERMALA",
+	"code": "ORW",
+	"countryCode": "PK",
+	"countryName": "巴基斯坦",
+	cityFirstLetter: "A"
+}, {
+	cityName: "奥林匹亚",
+	citySpell: "AOLINPIYA",
+	"code": "OLM",
+	"countryCode": "US",
+	"countryName": "美国",
+	cityFirstLetter: "A"
+}, {
+	cityName: "埃拉韦",
+	citySpell: "AILAWEI",
+	"code": "ERE",
+	"countryCode": "PG",
+	"countryName": "巴布亚新几内亚",
+	cityFirstLetter: "A"
+}, {
+	cityName: "爱德华",
+	citySpell: "AIDEHUA",
+	"code": "EDW",
+	"countryCode": "US",
+	"countryName": "美国",
+	cityFirstLetter: "A"
+}, {
+	cityName: "阿克套",
+	citySpell: "AKETAO",
+	"code": "SCO",
+	"countryCode": "KZ",
+	"countryName": "哈萨克斯坦",
+	cityFirstLetter: "A"
+}, {
+	cityName: "阿亚瓦西",
+	citySpell: "AYAWAXI",
+	"code": "AYW",
+	"countryCode": "ID",
+	"countryName": "印度尼西亚",
+	cityFirstLetter: "A"
+}, {
+	cityName: "奥兰",
+	citySpell: "AOLAN",
+	"code": "ORA",
+	"countryCode": "AR",
+	"countryName": "阿根廷",
+	cityFirstLetter: "A"
+}, {
+	cityName: "阿瓦兹",
+	citySpell: "AWAZI",
+	"code": "AWZ",
+	"countryCode": "IR",
+	"countryName": "伊朗",
+	cityFirstLetter: "A"
+}, {
+	cityName: "阿蒂西亚",
+	citySpell: "ADIXIYA",
+	"code": "ATS",
+	"countryCode": "US",
+	"countryName": "美国",
+	cityFirstLetter: "A"
+}, {
+	cityName: "埃德蒙顿",
+	citySpell: "AIDEMENGDUN",
+	"code": "YEA",
+	"countryCode": "CA",
+	"countryName": "加拿大",
+	cityFirstLetter: "A"
+}, {
+	cityName: "阿莱恩斯",
+	citySpell: "ALAIENSI",
+	"code": "AIA",
+	"countryCode": "US",
+	"countryName": "美国",
+	cityFirstLetter: "A"
+}, {
+	cityName: "奥延",
+	citySpell: "AOYAN",
+	"code": "OYN",
+	"countryCode": "AU",
+	"countryName": "澳大利亚",
+	cityFirstLetter: "A"
+}, {
+	cityName: "奥富岛",
+	citySpell: "AOFUDAO",
+	"code": "OFU",
+	"countryCode": "AS",
+	"countryName": "美属萨摩亚",
+	cityFirstLetter: "A"
+}, {
+	cityName: "奥基",
+	citySpell: "AOJI",
+	"code": "OKY",
+	"countryCode": "AU",
+	"countryName": "澳大利亚",
+	cityFirstLetter: "A"
+}, {
+	cityName: "奥诺托",
+	citySpell: "AONUOTUO",
+	"code": "OOT",
+	"countryCode": "KI",
+	"countryName": "基里巴斯",
+	cityFirstLetter: "A"
+}, {
+	cityName: "阿加迪尔",
+	citySpell: "AJIADIER",
+	"code": "AGA",
+	"countryCode": "MA",
+	"countryName": "摩洛哥",
+	cityFirstLetter: "A"
+}, {
+	cityName: "阿让",
+	citySpell: "ARANG",
+	"code": "AGF",
+	"countryCode": "FR",
+	"countryName": "法国",
+	cityFirstLetter: "A"
+}, {
+	cityName: "安巴托",
+	citySpell: "ANBATUO",
+	"code": "ATF",
+	"countryCode": "EC",
+	"countryName": "厄瓜多尔",
+	cityFirstLetter: "A"
+}, {
+	cityName: "阿斯图里亚斯",
+	citySpell: "ASITULIYASI",
+	"code": "OVD",
+	"countryCode": "ES",
+	"countryName": "西班牙",
+	cityFirstLetter: "A"
+}, {
+	cityName: "阿巴斯港",
+	citySpell: "ABASIGANG",
+	"code": "BND",
+	"countryCode": "IR",
+	"countryName": "伊朗",
+	cityFirstLetter: "A"
+}, {
+	cityName: "阿加德兹",
+	citySpell: "AJIADEZI",
+	"code": "AJY",
+	"countryCode": "NE",
+	"countryName": "尼日尔",
+	cityFirstLetter: "A"
+}, {
+	cityName: "阿鲁巴",
+	citySpell: "ALUBA",
+	"code": "AUA",
+	"countryCode": "AW",
+	"countryName": "阿鲁巴",
+	cityFirstLetter: "A"
+}, {
+	cityName: "奥兰治",
+	citySpell: "AOLANZHI",
+	"code": "OAG",
+	"countryCode": "AU",
+	"countryName": "澳大利亚",
+	cityFirstLetter: "A"
+}, {
+	cityName: "艾尔乌拉",
+	citySpell: "AIERWULA",
+	"code": "ULH",
+	"countryCode": "SA",
+	"countryName": "沙特阿垃伯",
+	cityFirstLetter: "A"
+}, {
+	cityName: "阿莱格雷蒂",
+	citySpell: "ALAIGELEIDI",
+	"code": "ALQ",
+	"countryCode": "BR",
+	"countryName": "巴西",
+	cityFirstLetter: "A"
+}, {
+	cityName: "奥勒松",
+	citySpell: "AOLESONG",
+	"code": "AES",
+	"countryCode": "NO",
+	"countryName": "挪威",
+	cityFirstLetter: "A"
+}, {
+	cityName: "奥瓦通纳",
+	citySpell: "AOWATONGNA",
+	"code": "OWA",
+	"countryCode": "US",
+	"countryName": "美国",
+	cityFirstLetter: "A"
+}, {
+	cityName: "安第斯",
+	citySpell: "ANDISI",
+	"code": "ADN",
+	"countryCode": "CO",
+	"countryName": "哥伦比亚",
+	cityFirstLetter: "A"
+}, {
+	cityName: "阿内西",
+	citySpell: "ANEIXI",
+	"code": "NCY",
+	"countryCode": "FR",
+	"countryName": "法国",
+	cityFirstLetter: "A"
+}, {
+	cityName: "奥兰治蒙德",
+	citySpell: "AOLANZHIMENGDE",
+	"code": "OMD",
+	"countryCode": "NA",
+	"countryName": "纳米比亚",
+	cityFirstLetter: "A"
+}, {
+	cityName: "阿菲永",
+	citySpell: "AFEIYONG",
+	"code": "AFY",
+	"countryCode": "TR",
+	"countryName": "土耳其",
+	cityFirstLetter: "A"
+}, {
+	cityName: "阿皮埃",
+	citySpell: "APIAI",
+	"code": "API",
+	"countryCode": "CO",
+	"countryName": "哥伦比亚",
+	cityFirstLetter: "A"
+}, {
+	cityName: "奥迪内",
+	citySpell: "AODINEI",
+	"code": "KEO",
+	"countryCode": "CI",
+	"countryName": "科特迪瓦",
+	cityFirstLetter: "A"
+}, {
+	cityName: "阿普尔顿",
+	citySpell: "APUERDUN",
+	"code": "ATW",
+	"countryCode": "US",
+	"countryName": "美国",
+	cityFirstLetter: "A"
+}, {
+	cityName: "阿森斯(乔治亚州)",
+	citySpell: "ASENSI",
+	"code": "AHN",
+	"countryCode": "US",
+	"countryName": "美国",
+	cityFirstLetter: "A"
+}, {
+	cityName: "埃利斯塔",
+	citySpell: "AILISITA",
+	"code": "ESL",
+	"countryCode": "RU",
+	"countryName": "俄罗斯",
+	cityFirstLetter: "A"
+}, {
+	cityName: "奥尔巴尼",
+	citySpell: "AOERBANI",
+	"code": "ABY",
+	"countryCode": "US",
+	"countryName": "美国",
+	cityFirstLetter: "A"
+}, {
+	cityName: "安大略(俄勒冈州)",
+	citySpell: "ANDALUE",
+	"code": "ONO",
+	"countryCode": "US",
+	"countryName": "美国",
+	cityFirstLetter: "A"
+}, {
+	cityName: "奥普沃",
+	citySpell: "AOPUWO",
+	"code": "OPW",
+	"countryCode": "NA",
+	"countryName": "纳米比亚",
+	cityFirstLetter: "A"
+}, {
+	cityName: "奥斯汀(德克萨斯州)",
+	citySpell: "AOSITING",
+	"code": "AUS",
+	"countryCode": "US",
+	"countryName": "美国",
+	cityFirstLetter: "A"
+}, {
+	cityName: "阿华斯",
+	citySpell: "AHUASI",
+	"code": "AHS",
+	"countryCode": "HN",
+	"countryName": "洪都拉斯",
+	cityFirstLetter: "A"
+}, {
+	cityName: "奥内普苏",
+	citySpell: "AONEIPUSU",
+	"code": "ONE",
+	"countryCode": "SB",
+	"countryName": "所罗门群岛",
+	cityFirstLetter: "A"
+}, {
+	cityName: "阿克塔",
+	citySpell: "AKETA",
+	"code": "ACV",
+	"countryCode": "US",
+	"countryName": "美国",
+	cityFirstLetter: "A"
+}, {
+	cityName: "阿尔梅尼亚",
+	citySpell: "AERMEINIYA",
+	"code": "AXM",
+	"countryCode": "CO",
+	"countryName": "哥伦比亚",
+	cityFirstLetter: "A"
+}, {
+	cityName: "奥尔莫克",
+	citySpell: "AOERMOKE",
+	"code": "OMC",
+	"countryCode": "PH",
+	"countryName": "菲律宾",
+	cityFirstLetter: "A"
+}, {
+	cityName: "阿斯蒂帕莱阿岛",
+	citySpell: "ASIDIPALAIADAO",
+	"code": "JTY",
+	"countryCode": "GR",
+	"countryName": "希腊",
+	cityFirstLetter: "A"
+}, {
+	cityName: "阿尼亚克",
+	citySpell: "ANIYAKE",
+	"code": "ANI",
+	"countryCode": "US",
+	"countryName": "美国",
+	cityFirstLetter: "A"
+}, {
+	cityName: "阿图岛",
+	citySpell: "ATUDAO",
+	"code": "ATU",
+	"countryCode": "US",
+	"countryName": "美国",
+	cityFirstLetter: "A"
+}, {
+	cityName: "安大略(加利福尼亚州)",
+	citySpell: "ANDALUE",
+	"code": "ONT",
+	"countryCode": "US",
+	"countryName": "美国",
+	cityFirstLetter: "A"
+}, {
+	cityName: "阿格瓦",
+	citySpell: "AGEWA",
+	"code": "AUP",
+	"countryCode": "PG",
+	"countryName": "巴布亚新几内亚",
+	cityFirstLetter: "A"
+}, {
+	cityName: "阿马里洛",
+	citySpell: "AMALILUO",
+	"code": "AMA",
+	"countryCode": "US",
+	"countryName": "美国",
+	cityFirstLetter: "A"
+}, {
+	cityName: "奥克约",
+	citySpell: "AOKEYUE",
+	"code": "OKG",
+	"countryCode": "CG",
+	"countryName": "刚果",
+	cityFirstLetter: "A"
+}, {
+	cityName: "埃佛吉",
+	citySpell: "AIFOJI",
+	"code": "EFG",
+	"countryCode": "PG",
+	"countryName": "巴布亚新几内亚",
+	cityFirstLetter: "A"
+}, {
+	cityName: "奥尔巴尼",
+	citySpell: "AOERBANI",
+	"code": "ALH",
+	"countryCode": "AU",
+	"countryName": "澳大利亚",
+	cityFirstLetter: "A"
+}, {
+	cityName: "阿蒂加斯",
+	citySpell: "ADIJIASI",
+	"code": "ATI",
+	"countryCode": "UY",
+	"countryName": "乌拉圭",
+	cityFirstLetter: "A"
+}, {
+	cityName: "奥德茨胡恩",
+	citySpell: "AODECIHUEN",
+	"code": "OUH",
+	"countryCode": "ZA",
+	"countryName": "南非",
+	cityFirstLetter: "A"
+}, {
+	cityName: "埃沃内斯",
+	citySpell: "AIWONEISI",
+	"code": "EVE",
+	"countryCode": "NO",
+	"countryName": "挪威",
+	cityFirstLetter: "A"
+}, {
+	cityName: "安妮斯顿",
+	citySpell: "ANNISIDUN",
+	"code": "ANB",
+	"countryCode": "US",
+	"countryName": "美国",
+	cityFirstLetter: "A"
+}, {
+	cityName: "奥瓦尔迪亚港",
+	citySpell: "AOWAERDIYAGANG",
+	"code": "PUE",
+	"countryCode": "PA",
+	"countryName": "巴拿马",
+	cityFirstLetter: "A"
+}, {
+	cityName: "阿尔滕莱茵",
+	citySpell: "AERTENGLAIYIN",
+	"code": "ACH",
+	"countryCode": "CH",
+	"countryName": "瑞士",
+	cityFirstLetter: "A"
+}, {
+	cityName: "埃莫西约",
+	citySpell: "AIMOXIYUE",
+	"code": "HMO",
+	"countryCode": "MX",
+	"countryName": "墨西哥",
+	cityFirstLetter: "A"
+}, {
+	cityName: "埃尔波维尼尔",
+	citySpell: "AIERBOWEINIER",
+	"code": "PVE",
+	"countryCode": "PA",
+	"countryName": "巴拿马",
+	cityFirstLetter: "A"
+}, {
+	cityName: "阿尔缪特",
+	citySpell: "AERMIAOTE",
+	"code": "KUK",
+	"countryCode": "US",
+	"countryName": "美国",
+	cityFirstLetter: "A"
+}, {
+	cityName: "奥鲁昆",
+	citySpell: "AOLUKUN",
+	"code": "AUU",
+	"countryCode": "AU",
+	"countryName": "澳大利亚",
+	cityFirstLetter: "A"
+}, {
+	cityName: "奥博",
+	citySpell: "AOBO",
+	"code": "OBX",
+	"countryCode": "PG",
+	"countryName": "巴布亚新几内亚",
+	cityFirstLetter: "A"
+}, {
+	cityName: "艾芦克岛",
+	citySpell: "AILUKEDAO",
+	"code": "AIM",
+	"countryCode": "MH",
+	"countryName": "马绍尔群岛",
+	cityFirstLetter: "A"
+}, {
+	cityName: "奥斯杜波岛",
+	citySpell: "AOSIDUBODAO",
+	"code": "OGM",
+	"countryCode": "PA",
+	"countryName": "巴拿马",
+	cityFirstLetter: "A"
+}, {
+	cityName: "阿里卡",
+	citySpell: "ALIKA",
+	"code": "ACM",
+	"countryCode": "CO",
+	"countryName": "哥伦比亚",
+	cityFirstLetter: "A"
+}, {
+	cityName: "阿拉加尔萨斯",
+	citySpell: "ALAJIAERSASI",
+	"code": "ARS",
+	"countryCode": "BR",
+	"countryName": "巴西",
+	cityFirstLetter: "A"
+}, {
+	cityName: "阿拉亚斯",
+	citySpell: "ALAYASI",
+	"code": "AAI",
+	"countryCode": "BR",
+	"countryName": "巴西",
+	cityFirstLetter: "A"
+}, {
+	cityName: "艾藻尔",
+	citySpell: "AIZAOER",
+	"code": "AJL",
+	"countryCode": "IN",
+	"countryName": "印度",
+	cityFirstLetter: "A"
+}, {
+	cityName: "奥尔达斯港",
+	citySpell: "AOERDASIGANG",
+	"code": "PZO",
+	"countryCode": "VE",
+	"countryName": "委内瑞拉",
+	cityFirstLetter: "A"
+}, {
+	cityName: "阿尔代斯",
+	citySpell: "AERDAISI",
+	"code": "ADY",
+	"countryCode": "ZA",
+	"countryName": "南非",
+	cityFirstLetter: "A"
+}, {
+	cityName: "阿纳德尔",
+	citySpell: "ANADEER",
+	"code": "DYR",
+	"countryCode": "RU",
+	"countryName": "俄罗斯",
+	cityFirstLetter: "A"
+}, {
+	cityName: "奥古斯塔(缅因州)",
+	citySpell: "AOGUSITA",
+	"code": "AUG",
+	"countryCode": "US",
+	"countryName": "美国",
+	cityFirstLetter: "A"
+}, {
+	cityName: "安古干纳克",
+	citySpell: "ANGUGANNAKE",
+	"code": "AKG",
+	"countryCode": "PG",
+	"countryName": "巴布亚新几内亚",
+	cityFirstLetter: "A"
+}, {
+	cityName: "埃尔帕索",
+	citySpell: "AIERPASUO",
+	"code": "ELP",
+	"countryCode": "US",
+	"countryName": "美国",
+	cityFirstLetter: "A"
+}, {
+	cityName: "阿伯丁",
+	citySpell: "ABODING",
+	"code": "ABZ",
+	"countryCode": "GB",
+	"countryName": "英国",
+	cityFirstLetter: "A"
+}, {
+	cityName: "阿巴坎",
+	citySpell: "ABAKAN",
+	"code": "ABA",
+	"countryCode": "RU",
+	"countryName": "俄罗斯",
+	cityFirstLetter: "A"
+}, {
+	cityName: "爱达荷福尔斯",
+	citySpell: "AIDAHEFUERSI",
+	"code": "IDA",
+	"countryCode": "US",
+	"countryName": "美国",
+	cityFirstLetter: "A"
+}, {
+	cityName: "安杜洛",
+	citySpell: "ANDULUO",
+	"code": "ANL",
+	"countryCode": "AO",
+	"countryName": "安哥拉",
+	cityFirstLetter: "A"
+}, {
+	cityName: "安诺本",
+	citySpell: "ANNUOBEN",
+	"code": "NBN",
+	"countryCode": "GQ",
+	"countryName": "赤道几内亚",
+	cityFirstLetter: "A"
+}, {
+	cityName: "奥斯卡斯哈门",
+	citySpell: "AOSIKASIHAMEN",
+	"code": "OSK",
+	"countryCode": "SE",
+	"countryName": "瑞典",
+	cityFirstLetter: "A"
+}, {
+	cityName: "奥安达加勒",
+	citySpell: "AOANDAJIALE",
+	"code": "ODJ",
+	"countryCode": "CF",
+	"countryName": "中非",
+	cityFirstLetter: "A"
+}, {
+	cityName: "埃图塔基",
+	citySpell: "AITUTAJI",
+	"code": "AIT",
+	"countryCode": "CK",
+	"countryName": "库克群岛",
+	cityFirstLetter: "A"
+}, {
+	cityName: "阿特卡",
+	citySpell: "ATEKA",
+	"code": "AKB",
+	"countryCode": "US",
+	"countryName": "美国",
+	cityFirstLetter: "A"
+}, {
+	cityName: "埃阔克",
+	citySpell: "AIKUOKE",
+	"code": "KEK",
+	"countryCode": "US",
+	"countryName": "美国",
+	cityFirstLetter: "A"
+}, {
+	cityName: "阿纳托姆岛",
+	citySpell: "ANATUOMUDAO",
+	"code": "AUY",
+	"countryCode": "VU",
+	"countryName": "瓦努阿图",
+	cityFirstLetter: "A"
+}, {
+	cityName: "奥列纽克",
+	citySpell: "AOLIENIUKE",
+	"code": "ONK",
+	"countryCode": "RU",
+	"countryName": "俄罗斯",
+	cityFirstLetter: "A"
+}, {
+	cityName: "埃夫拉塔",
+	citySpell: "AIFULATA",
+	"code": "EPH",
+	"countryCode": "US",
+	"countryName": "美国",
+	cityFirstLetter: "A"
+}, {
+	cityName: "阿尔巴门奇",
+	citySpell: "AERBAMENQI",
+	"code": "AMH",
+	"countryCode": "ET",
+	"countryName": "埃塞俄比亚",
+	cityFirstLetter: "A"
+}, {
+	cityName: "埃佩纳",
+	citySpell: "AIPEINA",
+	"code": "EPN",
+	"countryCode": "CG",
+	"countryName": "刚果",
+	cityFirstLetter: "A"
+}, {
+	cityName: "阿图奥纳",
+	citySpell: "ATUAONA",
+	"code": "AUQ",
+	"countryCode": "PF",
+	"countryName": "法属波利尼西亚",
+	cityFirstLetter: "A"
+}, {
+	cityName: "爱妮岛",
+	citySpell: "AINIDAO",
+	"code": "ENI",
+	"countryCode": "PH",
+	"countryName": "菲律宾",
+	cityFirstLetter: "A"
+}, {
+	cityName: "阿西乌特",
+	citySpell: "AXIWUTE",
+	"code": "ATZ",
+	"countryCode": "EG",
+	"countryName": "埃及",
+	cityFirstLetter: "A"
+}, {
+	cityName: "安吉利斯港",
+	citySpell: "ANJILISIGANG",
+	"code": "CLM",
+	"countryCode": "US",
+	"countryName": "美国",
+	cityFirstLetter: "A"
+}, {
+	cityName: "埃斯特角城",
+	citySpell: "AISITEJIAOCHENG",
+	"code": "PDP",
+	"countryCode": "UY",
+	"countryName": "乌拉圭",
+	cityFirstLetter: "A"
+}, {
+	cityName: "阿库雷",
+	citySpell: "AKULEI",
+	"code": "AKR",
+	"countryCode": "NG",
+	"countryName": "尼日利亚",
+	cityFirstLetter: "A"
+}, {
+	cityName: "奥斯坦德",
+	citySpell: "AOSITANDE",
+	"code": "OST",
+	"countryCode": "BE",
+	"countryName": "比利时",
+	cityFirstLetter: "A"
+}, {
+	cityName: "埃利斯拉斯",
+	citySpell: "AILISILASI",
+	"code": "ELL",
+	"countryCode": "ZA",
+	"countryName": "南非",
+	cityFirstLetter: "A"
+}, {
+	cityName: "奥尔良",
+	citySpell: "AOERLIANG",
+	"code": "ORE",
+	"countryCode": "FR",
+	"countryName": "法国",
+	cityFirstLetter: "A"
+}, {
+	cityName: "安",
+	citySpell: "AN",
+	"code": "VBA",
+	"countryCode": "MM",
+	"countryName": "缅甸",
+	cityFirstLetter: "A"
+}, {
+	cityName: "阿瑟镇",
+	citySpell: "ASEZHEN",
+	"code": "ATC",
+	"countryCode": "BS",
+	"countryName": "巴哈马",
+	cityFirstLetter: "A"
+}, {
+	cityName: "阿劳卡",
+	citySpell: "ALAOKA",
+	"code": "AUC",
+	"countryCode": "CO",
+	"countryName": "哥伦比亚",
+	cityFirstLetter: "A"
+}, {
+	cityName: "昂古莱姆",
+	citySpell: "ANGGULAIMU",
+	"code": "ANG",
+	"countryCode": "FR",
+	"countryName": "法国",
+	cityFirstLetter: "A"
+}, {
+	cityName: "阿提",
+	citySpell: "ATI",
+	"code": "ATV",
+	"countryCode": "TD",
+	"countryName": "乍得",
+	cityFirstLetter: "A"
+}, {
+	cityName: "奥赫里德",
+	citySpell: "AOHELIDE",
+	"code": "OHD",
+	"countryCode": "MK",
+	"countryName": "马其顿",
+	cityFirstLetter: "A"
+}, {
+	cityName: "安维克",
+	citySpell: "ANWEIKE",
+	"code": "ANV",
+	"countryCode": "US",
+	"countryName": "美国",
+	cityFirstLetter: "A"
+}, {
+	cityName: "阿瓦岛",
+	citySpell: "AWADAO",
+	"code": "AUI",
+	"countryCode": "PG",
+	"countryName": "巴布亚新几内亚",
+	cityFirstLetter: "A"
+}, {
+	cityName: "埃尔科岛",
+	citySpell: "AIERKEDAO",
+	"code": "ELC",
+	"countryCode": "AU",
+	"countryName": "澳大利亚",
+	cityFirstLetter: "A"
+}, {
+	cityName: "埃拉特",
+	citySpell: "AILATE",
+	"code": "ETH",
+	"countryCode": "IL",
+	"countryName": "以色列",
+	cityFirstLetter: "A"
+}, {
+	cityName: "阿雷西沃",
+	citySpell: "ALEIXIWO",
+	"code": "ARE",
+	"countryCode": "PR",
+	"countryName": "波多黎各",
+	cityFirstLetter: "A"
+}, {
+	cityName: "安达姆卡",
+	citySpell: "ANDAMUKA",
+	"code": "ADO",
+	"countryCode": "AU",
+	"countryName": "澳大利亚",
+	cityFirstLetter: "A"
+}, {
+	cityName: "阿尔斯沃特港",
+	citySpell: "AERSIWOTEGANG",
+	"code": "PTA",
+	"countryCode": "US",
+	"countryName": "美国",
+	cityFirstLetter: "A"
+}, {
+	cityName: "艾哈迈达巴德",
+	citySpell: "AIHAMAIDABADE",
+	"code": "AMD",
+	"countryCode": "IN",
+	"countryName": "印度",
+	cityFirstLetter: "A"
+}, {
+	cityName: "埃尔比希亚",
+	citySpell: "AIERBIXIYA",
+	"code": "VIG",
+	"countryCode": "VE",
+	"countryName": "委内瑞拉",
+	cityFirstLetter: "A"
+}, {
+	cityName: "阿基亚查克",
+	citySpell: "AJIYACHAKE",
+	"code": "KKI",
+	"countryCode": "US",
+	"countryName": "美国",
+	cityFirstLetter: "A"
+}, {
+	cityName: "埃默斯",
+	citySpell: "AIMOSI",
+	"code": "YEY",
+	"countryCode": "CA",
+	"countryName": "加拿大",
+	cityFirstLetter: "A"
+}, {
+	cityName: "安嫩伯格",
+	citySpell: "ANNENBOGE",
+	"code": "AOB",
+	"countryCode": "PG",
+	"countryName": "巴布亚新几内亚",
+	cityFirstLetter: "A"
+}, {
+	cityName: "安巴图迈因蒂",
+	citySpell: "ANBATUMAIYINDI",
+	"code": "AMY",
+	"countryCode": "MG",
+	"countryName": "马达加斯加",
+	cityFirstLetter: "A"
+}, {
+	cityName: "阿尔皮纳",
+	citySpell: "AERPINA",
+	"code": "APN",
+	"countryCode": "US",
+	"countryName": "美国",
+	cityFirstLetter: "A"
+}, {
+	cityName: "阿布贾",
+	citySpell: "ABUJIA",
+	"code": "ABV",
+	"countryCode": "NG",
+	"countryName": "尼日利亚",
+	cityFirstLetter: "A"
+}, {
+	cityName: "阿拜昂",
+	citySpell: "ABAIANG",
+	"code": "ABF",
+	"countryCode": "KI",
+	"countryName": "基里巴斯",
+	cityFirstLetter: "A"
+}, {
+	cityName: "阿什兰",
+	citySpell: "ASHILAN",
+	"code": "ASX",
+	"countryCode": "US",
+	"countryName": "美国",
+	cityFirstLetter: "A"
+}, {
+	cityName: "阿尔托纳",
+	citySpell: "AERTUONA",
+	"code": "AOO",
+	"countryCode": "US",
+	"countryName": "美国",
+	cityFirstLetter: "A"
+}, {
+	cityName: "埃尔多雷特",
+	citySpell: "AIERDUOLEITE",
+	"code": "EDL",
+	"countryCode": "KE",
+	"countryName": "肯尼亚",
+	cityFirstLetter: "A"
+}, {
+	cityName: "阿塔尔",
+	citySpell: "ATAER",
+	"code": "ATR",
+	"countryCode": "MR",
+	"countryName": "毛里塔尼亚",
+	cityFirstLetter: "A"
+}, {
+	cityName: "埃库克",
+	citySpell: "AIKUKE",
+	"code": "KKU",
+	"countryCode": "US",
+	"countryName": "美国",
+	cityFirstLetter: "A"
+}, {
+	cityName: "阿瓦萨",
+	citySpell: "AWASA",
+	"code": "AWA",
+	"countryCode": "ET",
+	"countryName": "埃塞俄比亚",
+	cityFirstLetter: "A"
+}, {
+	cityName: "埃奥恩挽埃尔阿特劳斯",
+	citySpell: "AIAOENWANAIERATELAOSI",
+	"code": "AEO",
+	"countryCode": "MR",
+	"countryName": "毛里塔尼亚",
+	cityFirstLetter: "A"
+}, {
+	cityName: "奥尔奇德比奇",
+	citySpell: "AOERQIDEBIQI",
+	"code": "OKB",
+	"countryCode": "AU",
+	"countryName": "澳大利亚",
+	cityFirstLetter: "A"
+}, {
+	cityName: "阿利",
+	citySpell: "ALI",
+	"code": "ARL",
+	"countryCode": "BF",
+	"countryName": "布基纳法索",
+	cityFirstLetter: "A"
+}, {
+	cityName: "阿兰怒卡",
+	citySpell: "ALANNUKA",
+	"code": "AAK",
+	"countryCode": "KI",
+	"countryName": "基里巴斯",
+	cityFirstLetter: "A"
+}, {
+	cityName: "埃克斯库",
+	citySpell: "AIKESIKU",
+	"code": "EXI",
+	"countryCode": "US",
+	"countryName": "美国",
+	cityFirstLetter: "A"
+}, {
+	cityName: "奥里亚",
+	citySpell: "AOLIYA",
+	"code": "OTY",
+	"countryCode": "PG",
+	"countryName": "巴布亚新几内亚",
+	cityFirstLetter: "A"
+}, {
+	cityName: "埃奥贝德",
+	citySpell: "AIAOBEIDE",
+	"code": "EBD",
+	"countryCode": "SD",
+	"countryName": "苏丹",
+	cityFirstLetter: "A"
+}, {
+	cityName: "奥斯陆",
+	citySpell: "AOSILU",
+	"code": "OSL",
+	"countryCode": "NO",
+	"countryName": "挪威",
+	cityFirstLetter: "A"
+}, {
+	cityName: "阿尔汉格尔斯克",
+	citySpell: "AERHANGEERSIKE",
+	"code": "ARH",
+	"countryCode": "RU",
+	"countryName": "俄罗斯",
+	cityFirstLetter: "A"
+}, {
+	cityName: "安帕尼希",
+	citySpell: "ANPANIXI",
+	"code": "AMP",
+	"countryCode": "MG",
+	"countryName": "马达加斯加",
+	cityFirstLetter: "A"
+}, {
+	cityName: "阿宾登",
+	citySpell: "ABINDENG",
+	"code": "ABG",
+	"countryCode": "AU",
+	"countryName": "澳大利亚",
+	cityFirstLetter: "A"
+}, {
+	cityName: "奥廖尔",
+	citySpell: "AOLIAOER",
+	"code": "OEL",
+	"countryCode": "RU",
+	"countryName": "俄罗斯",
+	cityFirstLetter: "A"
+}, {
+	cityName: "艾塔比",
+	citySpell: "AITABI",
+	"code": "ATP",
+	"countryCode": "PG",
+	"countryName": "巴布亚新几内亚",
+	cityFirstLetter: "A"
+}, {
+	cityName: "阿格里尼翁",
+	citySpell: "AGELINIWENG",
+	"code": "AGQ",
+	"countryCode": "GR",
+	"countryName": "希腊",
+	cityFirstLetter: "A"
+}, {
+	cityName: "阿佩文",
+	citySpell: "APEIWEN",
+	"code": "UPV",
+	"countryCode": "GB",
+	"countryName": "英国",
+	cityFirstLetter: "A"
+}, {
+	cityName: "奥斯汀(明尼苏达州)",
+	citySpell: "AOSITING",
+	"code": "AUM",
+	"countryCode": "US",
+	"countryName": "美国",
+	cityFirstLetter: "A"
+}, {
+	cityName: "阿德列尔",
+	citySpell: "ADELIEER",
+	"code": "AER",
+	"countryCode": "RU",
+	"countryName": "俄罗斯",
+	cityFirstLetter: "A"
+}, {
+	cityName: "阿坦布阿",
+	citySpell: "ATANBUA",
+	"code": "ABU",
+	"countryCode": "ID",
+	"countryName": "印度尼西亚",
+	cityFirstLetter: "A"
+}, {
+	cityName: "奥尔索比普",
+	citySpell: "AOERSUOBIPU",
+	"code": "OLQ",
+	"countryCode": "PG",
+	"countryName": "巴布亚新几内亚",
+	cityFirstLetter: "A"
+}, {
+	cityName: "安纳巴",
+	citySpell: "ANNABA",
+	"code": "AAE",
+	"countryCode": "DZ",
+	"countryName": "阿尔及利亚",
+	cityFirstLetter: "A"
+}, {
+	cityName: "埃尔克城",
+	citySpell: "AIERKECHENG",
+	"code": "ELK",
+	"countryCode": "US",
+	"countryName": "美国",
+	cityFirstLetter: "A"
+}, {
+	cityName: "安克雷奇",
+	citySpell: "ANKELEIQI",
+	"code": "ANC",
+	"countryCode": "US",
+	"countryName": "美国",
+	cityFirstLetter: "A"
+}, {
+	cityName: "奥古斯塔(乔治亚州)",
+	citySpell: "AOGUSITA",
+	"code": "AGS",
+	"countryCode": "US",
+	"countryName": "美国",
+	cityFirstLetter: "A"
+}, {
+	cityName: "奥克西比尔",
+	citySpell: "AOKEXIBIER",
+	"code": "OKL",
+	"countryCode": "ID",
+	"countryName": "印度尼西亚",
+	cityFirstLetter: "A"
+}, {
+	cityName: "埃尔金斯",
+	citySpell: "AIERJINSI",
+	"code": "EKN",
+	"countryCode": "US",
+	"countryName": "美国",
+	cityFirstLetter: "A"
+}, {
+	cityName: "阿莱格",
+	citySpell: "ALAIGE",
+	"code": "LEG",
+	"countryCode": "MR",
+	"countryName": "毛里塔尼亚",
+	cityFirstLetter: "A"
+}, {
+	cityName: "阿坎迪",
+	citySpell: "AKANDI",
+	"code": "ACD",
+	"countryCode": "CO",
+	"countryName": "哥伦比亚",
+	cityFirstLetter: "A"
+}, {
+	cityName: "阿尔维斯克尔",
+	citySpell: "AERWEISIKEER",
+	"code": "AJR",
+	"countryCode": "SE",
+	"countryName": "瑞典",
+	cityFirstLetter: "A"
+}, {
+	cityName: "埃斯基谢希尔",
+	citySpell: "AISIJIXIEXIER",
+	"code": "ESK",
+	"countryCode": "TR",
+	"countryName": "土耳其",
+	cityFirstLetter: "A"
+}, {
+	cityName: "艾达佛洛斯塔",
+	citySpell: "AIDAFOLUOSITA",
+	"code": "AFL",
+	"countryCode": "BR",
+	"countryName": "巴西",
+	cityFirstLetter: "A"
+}, {
+	cityName: "艾恩蒙廷",
+	citySpell: "AIENMENGTING",
+	"code": "IMT",
+	"countryCode": "US",
+	"countryName": "美国",
+	cityFirstLetter: "A"
+}, {
+	cityName: "埃雷欣",
+	citySpell: "AILEIXIN",
+	"code": "ERM",
+	"countryCode": "BR",
+	"countryName": "巴西",
+	cityFirstLetter: "A"
+}, {
+	cityName: "阿米代尔",
+	citySpell: "AMIDAIER",
+	"code": "ARM",
+	"countryCode": "AU",
+	"countryName": "澳大利亚",
+	cityFirstLetter: "A"
+}, {
+	cityName: "阿纳拉拉瓦",
+	citySpell: "ANALALAWA",
+	"code": "HVA",
+	"countryCode": "MG",
+	"countryName": "马达加斯加",
+	cityFirstLetter: "A"
+}, {
+	cityName: "安德内斯",
+	citySpell: "ANDENEISI",
+	"code": "ANX",
+	"countryCode": "NO",
+	"countryName": "挪威",
+	cityFirstLetter: "A"
+}, {
+	cityName: "埃克戈当",
+	citySpell: "AIKEGEDANG",
+	"code": "AEG",
+	"countryCode": "ID",
+	"countryName": "印度尼西亚",
+	cityFirstLetter: "A"
+}, {
+	cityName: "阿绍",
+	citySpell: "ASHAO",
+	"code": "AAU",
+	"countryCode": "WS",
+	"countryName": "西萨摩亚（太平洋）",
+	cityFirstLetter: "A"
+}, {
+	cityName: "奥加拉拉",
+	citySpell: "AOJIALALA",
+	"code": "OGA",
+	"countryCode": "US",
+	"countryName": "美国",
+	cityFirstLetter: "A"
+}, {
+	cityName: "埃斯佩兰斯",
+	citySpell: "AISIPEILANSI",
+	"code": "EPR",
+	"countryCode": "AU",
+	"countryName": "澳大利亚",
+	cityFirstLetter: "A"
+}, {
+	cityName: "阿德莫尔",
+	citySpell: "ADEMOER",
+	"code": "ADM",
+	"countryCode": "US",
+	"countryName": "美国",
+	cityFirstLetter: "A"
+}, {
+	cityName: "奥兰芝瓦尔克",
+	citySpell: "AOLANZHIWAERKE",
+	"code": "ORZ",
+	"countryCode": "BZ",
+	"countryName": "伯利兹",
+	cityFirstLetter: "A"
+}, {
+	cityName: "奥沙卡蒂",
+	citySpell: "AOSHAKADI",
+	"code": "OHI",
+	"countryCode": "NA",
+	"countryName": "纳米比亚",
+	cityFirstLetter: "A"
+}, {
+	cityName: "奥韦里",
+	citySpell: "AOWEILI",
+	"code": "QOW",
+	"countryCode": "NG",
+	"countryName": "尼日利亚",
+	cityFirstLetter: "A"
+}, {
+	cityName: "埃尔多拉多",
+	citySpell: "AIERDUOLADUO",
+	"code": "ELD",
+	"countryCode": "US",
+	"countryName": "美国",
+	cityFirstLetter: "A"
+}, {
+	cityName: "阿尔伯勒塔斯",
+	citySpell: "AERBOLETASI",
+	"code": "ARO",
+	"countryCode": "CO",
+	"countryName": "哥伦比亚",
+	cityFirstLetter: "A"
+}, {
+	cityName: "阿尔比",
+	citySpell: "AERBI",
+	"code": "LBI",
+	"countryCode": "FR",
+	"countryName": "法国",
+	cityFirstLetter: "A"
+}, {
+	cityName: "安德鲁斯",
+	citySpell: "ANDELUSI",
+	"code": "ADR",
+	"countryCode": "US",
+	"countryName": "美国",
+	cityFirstLetter: "A"
+}, {
+	cityName: "埃迈",
+	citySpell: "AIMAI",
+	"code": "EAE",
+	"countryCode": "VU",
+	"countryName": "瓦努阿图",
+	cityFirstLetter: "A"
+}, {
+	cityName: "阿基安尼",
+	citySpell: "AJIANNI",
+	"code": "AKE",
+	"countryCode": "GA",
+	"countryName": "加蓬",
+	cityFirstLetter: "A"
+}, {
+	cityName: "埃勒尔",
+	citySpell: "AILEER",
+	"code": "ERR",
+	"countryCode": "US",
+	"countryName": "美国",
+	cityFirstLetter: "A"
+}, {
+	cityName: "阿帕尔坦多",
+	citySpell: "APAERTANDUO",
+	"code": "APO",
+	"countryCode": "CO",
+	"countryName": "哥伦比亚",
+	cityFirstLetter: "A"
+}, {
+	cityName: "阿福尔",
+	citySpell: "AFUER",
+	"code": "AFR",
+	"countryCode": "PG",
+	"countryName": "巴布亚新几内亚",
+	cityFirstLetter: "A"
+}, {
+	cityName: "奥罗库埃",
+	citySpell: "AOLUOKUAI",
+	"code": "ORC",
+	"countryCode": "CO",
+	"countryName": "哥伦比亚",
+	cityFirstLetter: "A"
+}, {
+	cityName: "安巴通德拉扎",
+	citySpell: "ANBATONGDELAZHA",
+	"code": "WAM",
+	"countryCode": "MG",
+	"countryName": "马达加斯加",
+	cityFirstLetter: "A"
+}, {
+	cityName: "阿卢拉",
+	citySpell: "ALULA",
+	"code": "ALU",
+	"countryCode": "SO",
+	"countryName": "索马里",
+	cityFirstLetter: "A"
+}, {
+	cityName: "阿尔伯克基",
+	citySpell: "AERBOKEJI",
+	"code": "ABQ",
+	"countryCode": "US",
+	"countryName": "美国",
+	cityFirstLetter: "A"
+}, {
+	cityName: "安娜",
+	citySpell: "ANNA",
+	"code": "AAA",
+	"countryCode": "PF",
+	"countryName": "法属波利尼西亚",
+	cityFirstLetter: "A"
+}, {
+	cityName: "阿鲁亚",
+	citySpell: "ALUYA",
+	"code": "RUA",
+	"countryCode": "UG",
+	"countryName": "乌干达",
+	cityFirstLetter: "A"
+}, {
+	cityName: "阿亚库乔",
+	citySpell: "AYAKUQIAO",
+	"code": "AYC",
+	"countryCode": "CO",
+	"countryName": "哥伦比亚",
+	cityFirstLetter: "A"
+}, {
+	cityName: "埃尼威托克岛",
+	citySpell: "AINIWEITUOKEDAO",
+	"code": "ENT",
+	"countryCode": "MH",
+	"countryName": "马绍尔群岛",
+	cityFirstLetter: "A"
+}, {
+	cityName: "奥乔里奥斯",
+	citySpell: "AOQIAOLIAOSI",
+	"code": "OCJ",
+	"countryCode": "JM",
+	"countryName": "牙买加",
+	cityFirstLetter: "A"
+}, {
+	cityName: "阿格蒂岛",
+	citySpell: "AGEDIDAO",
+	"code": "AGX",
+	"countryCode": "IN",
+	"countryName": "印度",
+	cityFirstLetter: "A"
+}, {
+	cityName: "奥格兰昂",
+	citySpell: "AOGELANANG",
+	"code": "OGE",
+	"countryCode": "PG",
+	"countryName": "巴布亚新几内亚",
+	cityFirstLetter: "A"
+}, {
+	cityName: "阿纳希姆莱克",
+	citySpell: "ANAXIMULAIKE",
+	"code": "YAA",
+	"countryCode": "CA",
+	"countryName": "加拿大",
+	cityFirstLetter: "A"
+}, {
+	cityName: "奥胡斯",
+	citySpell: "AOHUSI",
+	"code": "AAR",
+	"countryCode": "DK",
+	"countryName": "丹麦",
+	cityFirstLetter: "A"
+}, {
+	cityName: "安博因",
+	citySpell: "ANBOYIN",
+	"code": "AMG",
+	"countryCode": "PG",
+	"countryName": "巴布亚新几内亚",
+	cityFirstLetter: "A"
+}, {
+	cityName: "安齐拉纳纳",
+	citySpell: "ANQILANANA",
+	"code": "DIE",
+	"countryCode": "MG",
+	"countryName": "马达加斯加",
+	cityFirstLetter: "A"
+}, {
+	cityName: "安妮特岛",
+	citySpell: "ANNITEDAO",
+	"code": "ANN",
+	"countryCode": "US",
+	"countryName": "美国",
+	cityFirstLetter: "A"
+}, {
+	cityName: "埃努古",
+	citySpell: "AINUGU",
+	"code": "ENU",
+	"countryCode": "NG",
+	"countryName": "尼日利亚",
+	cityFirstLetter: "A"
+}, {
+	cityName: "阿姆克",
+	citySpell: "AMUKE",
+	"code": "AOS",
+	"countryCode": "US",
+	"countryName": "美国",
+	cityFirstLetter: "A"
+}, {
+	cityName: "奥尔罗伊当斯",
+	citySpell: "AOERLUOYIDANGSI",
+	"code": "AYD",
+	"countryCode": "AU",
+	"countryName": "澳大利亚",
+	cityFirstLetter: "A"
+}, {
+	cityName: "昂佩利",
+	citySpell: "ANGPEILI",
+	"code": "OPI",
+	"countryCode": "AU",
+	"countryName": "澳大利亚",
+	cityFirstLetter: "A"
+}, {
+	cityName: "阿楚图珀",
+	citySpell: "ACHUTUPO",
+	"code": "ACU",
+	"countryCode": "PA",
+	"countryName": "巴拿马",
+	cityFirstLetter: "A"
+}, {
+	cityName: "奥德河",
+	citySpell: "AODEHE",
+	"code": "ODR",
+	"countryCode": "AU",
+	"countryName": "澳大利亚",
+	cityFirstLetter: "A"
+}, {
+	cityName: "奥佛尔堡",
+	citySpell: "AOFOERBAO",
+	"code": "OVG",
+	"countryCode": "ZA",
+	"countryName": "南非",
+	cityFirstLetter: "A"
+}, {
+	cityName: "奥图",
+	citySpell: "AOTU",
+	"code": "OTU",
+	"countryCode": "CO",
+	"countryName": "哥伦比亚",
+	cityFirstLetter: "A"
+}, {
+	cityName: "阿拉",
+	citySpell: "ALA",
+	"code": "RAE",
+	"countryCode": "SA",
+	"countryName": "沙特阿垃伯",
+	cityFirstLetter: "A"
+}, {
+	cityName: "奥米蒂",
+	citySpell: "AOMIDI",
+	"code": "OMI",
+	"countryCode": "IR",
+	"countryName": "伊朗",
+	cityFirstLetter: "A"
+}, {
+	cityName: "阿斯彭",
+	citySpell: "ASIPENG",
+	"code": "ASE",
+	"countryCode": "US",
+	"countryName": "美国",
+	cityFirstLetter: "A"
+}, {
+	cityName: "埃尔德巴",
+	citySpell: "AIERDEBA",
+	"code": "EDB",
+	"countryCode": "SD",
+	"countryName": "苏丹",
+	cityFirstLetter: "A"
+}, {
+	cityName: "埃勒马尔",
+	citySpell: "AILEMAER",
+	"code": "ELW",
+	"countryCode": "US",
+	"countryName": "美国",
+	cityFirstLetter: "A"
+}, {
+	cityName: "爱因霍温",
+	citySpell: "AIYINHUOWEN",
+	"code": "EIN",
+	"countryCode": "NL",
+	"countryName": "荷兰",
+	cityFirstLetter: "A"
+}, {
+	cityName: "奥考奎约",
+	citySpell: "AOKAOKUIYUE",
+	"code": "OKF",
+	"countryCode": "NA",
+	"countryName": "纳米比亚",
+	cityFirstLetter: "A"
+}, {
+	cityName: "阿拉莫戈多",
+	citySpell: "ALAMOGEDUO",
+	"code": "ALM",
+	"countryCode": "US",
+	"countryName": "美国",
+	cityFirstLetter: "A"
+}, {
+	cityName: "阿斯马拉",
+	citySpell: "ASIMALA",
+	"code": "ASM",
+	"countryCode": "ER",
+	"countryName": "厄立特里亚",
+	cityFirstLetter: "A"
+}, {
+	cityName: "阿拉斯加萨拉维克",
+	citySpell: "ALASIJIASALAWEIKE",
+	"code": "WLK",
+	"countryCode": "US",
+	"countryName": "美国",
+	cityFirstLetter: "A"
+}, {
+	cityName: "奥斯本",
+	citySpell: "AOSIBEN",
+	"code": "OSO",
+	"countryCode": "AU",
+	"countryName": "澳大利亚",
+	cityFirstLetter: "A"
+}, {
+	cityName: "阿莱姆港",
+	citySpell: "ALAIMUGANG",
+	"code": "RMF",
+	"countryCode": "EG",
+	"countryName": "埃及",
+	cityFirstLetter: "A"
+}, {
+	cityName: "阿帕塔基",
+	citySpell: "APATAJI",
+	"code": "APK",
+	"countryCode": "PF",
+	"countryName": "法属波利尼西亚",
+	cityFirstLetter: "A"
+}, {
+	cityName: "安达韦拉斯",
+	citySpell: "ANDAWEILASI",
+	"code": "ANS",
+	"countryCode": "PE",
+	"countryName": "秘鲁",
+	cityFirstLetter: "A"
+}, {
+	cityName: "奥尔金",
+	citySpell: "AOERJIN",
+	"code": "HOG",
+	"countryCode": "CU",
+	"countryName": "古巴",
+	cityFirstLetter: "A"
+}, {
+	cityName: "安曼",
+	citySpell: "ANMAN",
+	"code": "AMM",
+	"countryCode": "JO",
+	"countryName": "约旦",
+	cityFirstLetter: "A"
+}, {
+	cityName: "阿博茨福德",
+	citySpell: "ABOCIFUDE",
+	"code": "YXX",
+	"countryCode": "CA",
+	"countryName": "加拿大",
+	cityFirstLetter: "A"
+}, {
+	cityName: "奥哈",
+	citySpell: "AOHA",
+	"code": "OHH",
+	"countryCode": "RU",
+	"countryName": "俄罗斯",
+	cityFirstLetter: "A"
+}, {
+	cityName: "奥卡巴",
+	citySpell: "AOKABA",
+	"code": "OKQ",
+	"countryCode": "ID",
+	"countryName": "印度尼西亚",
+	cityFirstLetter: "A"
+}, {
+	cityName: "奥耶姆",
+	citySpell: "AOYEMU",
+	"code": "OYE",
+	"countryCode": "GA",
+	"countryName": "加蓬",
+	cityFirstLetter: "A"
+}, {
+	cityName: "阿利坎特",
+	citySpell: "ALIKANTE",
+	"code": "ALC",
+	"countryCode": "ES",
+	"countryName": "西班牙",
+	cityFirstLetter: "A"
+}, {
+	cityName: "埃尔雷克雷奥",
+	citySpell: "AIERLEIKELEIAO",
+	"code": "ELJ",
+	"countryCode": "CO",
+	"countryName": "哥伦比亚",
+	cityFirstLetter: "A"
+}, {
+	cityName: "阿尔荷塞马",
+	citySpell: "AERHESAIMA",
+	"code": "AHU",
+	"countryCode": "MA",
+	"countryName": "摩洛哥",
+	cityFirstLetter: "A"
+}, {
+	cityName: "埃伦斯堡",
+	citySpell: "AILUNSIBAO",
+	"code": "ELN",
+	"countryCode": "US",
+	"countryName": "美国",
+	cityFirstLetter: "A"
+}, {
+	cityName: "艾尔斯岩",
+	citySpell: "AIERSIYAN",
+	"code": "AYQ",
+	"countryCode": "AU",
+	"countryName": "澳大利亚",
+	cityFirstLetter: "A"
+}, {
+	cityName: "阿克伦/坎通",
+	citySpell: "AKELUNKANTONG",
+	"code": "CAK",
+	"countryCode": "US",
+	"countryName": "美国",
+	cityFirstLetter: "A"
+}, {
+	cityName: "阿普尔瓦利",
+	citySpell: "APUERWALI",
+	"code": "APV",
+	"countryCode": "US",
+	"countryName": "美国",
+	cityFirstLetter: "A"
+}, {
+	cityName: "阿普兰",
+	citySpell: "APULAN",
+	"code": "CCB",
+	"countryCode": "US",
+	"countryName": "美国",
+	cityFirstLetter: "A"
+}, {
+	cityName: "安贡",
+	citySpell: "ANGONG",
+	"code": "AGN",
+	"countryCode": "US",
+	"countryName": "美国",
+	cityFirstLetter: "A"
+}, {
+	cityName: "阿拉卡茄",
+	citySpell: "ALAKAJIA",
+	"code": "AJU",
+	"countryCode": "BR",
+	"countryName": "巴西",
+	cityFirstLetter: "A"
+}, {
+	cityName: "埃克塞特",
+	citySpell: "AIKESAITE",
+	"code": "EXT",
+	"countryCode": "GB",
+	"countryName": "英国",
+	cityFirstLetter: "A"
+}, {
+	cityName: "阿本古鲁",
+	citySpell: "ABENGULU",
+	"code": "OGO",
+	"countryCode": "CI",
+	"countryName": "科特迪瓦",
+	cityFirstLetter: "A"
+}, {
+	cityName: "奥兰",
+	citySpell: "AOLAN",
+	"code": "ORN",
+	"countryCode": "DZ",
+	"countryName": "阿尔及利亚",
+	cityFirstLetter: "A"
+}, {
+	cityName: "奥尔堡",
+	citySpell: "AOERBAO",
+	"code": "AAL",
+	"countryCode": "DK",
+	"countryName": "丹麦",
+	cityFirstLetter: "A"
+}, {
+	cityName: "安达帕",
+	citySpell: "ANDAPA",
+	"code": "ZWA",
+	"countryCode": "MG",
+	"countryName": "马达加斯加",
+	cityFirstLetter: "A"
+}, {
+	cityName: "阿瓦尼",
+	citySpell: "AWANI",
+	"code": "AWD",
+	"countryCode": "VU",
+	"countryName": "瓦努阿图",
+	cityFirstLetter: "A"
+}, {
+	cityName: "奥兰",
+	citySpell: "AOLAN",
+	"code": "OLA",
+	"countryCode": "NO",
+	"countryName": "挪威",
+	cityFirstLetter: "A"
+}, {
+	cityName: "奥洛穆茨",
+	citySpell: "AOLUOMUCI",
+	"code": "OLO",
+	"countryCode": "CZ",
+	"countryName": "捷克",
+	cityFirstLetter: "A"
+}, {
+	cityName: "埃罗扎",
+	citySpell: "AILUOZHA",
+	"code": "EOZ",
+	"countryCode": "VE",
+	"countryName": "委内瑞拉",
+	cityFirstLetter: "A"
+}, {
+	cityName: "阿里特",
+	citySpell: "ALITE",
+	"code": "RLT",
+	"countryCode": "NE",
+	"countryName": "尼日尔",
+	cityFirstLetter: "A"
+}, {
+	cityName: "埃瓦（岛）",
+	citySpell: "AIWADAO",
+	"code": "EUA",
+	"countryCode": "TO",
+	"countryName": "汤加",
+	cityFirstLetter: "A"
+}, {
+	cityName: "埃克斯茅斯",
+	citySpell: "AIKESIMAOSI",
+	"code": "EXM",
+	"countryCode": "AU",
+	"countryName": "澳大利亚",
+	cityFirstLetter: "A"
+}, {
+	cityName: "埃格德斯米纳",
+	citySpell: "AIGEDESIMINA",
+	"code": "JEG",
+	"countryCode": "GL",
+	"countryName": "格陵兰岛",
+	cityFirstLetter: "A"
+}, {
+	cityName: "埃弗里特",
+	citySpell: "AIFULITE",
+	"code": "PAE",
+	"countryCode": "US",
+	"countryName": "美国",
+	cityFirstLetter: "A"
+}, {
+	cityName: "埃斯克尔",
+	citySpell: "AISIKEER",
+	"code": "EQS",
+	"countryCode": "AR",
+	"countryName": "阿根廷",
+	cityFirstLetter: "A"
+}, {
+	cityName: "阿尔特斯",
+	citySpell: "AERTESI",
+	"code": "LTS",
+	"countryCode": "US",
+	"countryName": "美国",
+	cityFirstLetter: "A"
+}, {
+	cityName: "奥拉帕",
+	citySpell: "AOLAPA",
+	"code": "ORP",
+	"countryCode": "BW",
+	"countryName": "博茨瓦纳",
+	cityFirstLetter: "A"
+}, {
+	cityName: "阿加尔塔拉",
+	citySpell: "AJIAERTALA",
+	"code": "IXA",
+	"countryCode": "IN",
+	"countryName": "印度",
+	cityFirstLetter: "A"
+}, {
+	cityName: "阿克希奥克",
+	citySpell: "AKEXIAOKE",
+	"code": "AKK",
+	"countryCode": "US",
+	"countryName": "美国",
+	cityFirstLetter: "A"
+}, {
+	cityName: "阿姆利则",
+	citySpell: "AMULIZE",
+	"code": "ATQ",
+	"countryCode": "IN",
+	"countryName": "印度",
+	cityFirstLetter: "A"
+}, {
+	cityName: "阿勒",
+	citySpell: "ALE",
+	"code": "AJI",
+	"countryCode": "TR",
+	"countryName": "土耳其",
+	cityFirstLetter: "A"
+}, {
+	cityName: "埃利姆",
+	citySpell: "AILIMU",
+	"code": "ELI",
+	"countryCode": "US",
+	"countryName": "美国",
+	cityFirstLetter: "A"
+}, {
+	cityName: "阿巴丹",
+	citySpell: "ABADAN",
+	"code": "ABD",
+	"countryCode": "IR",
+	"countryName": "伊朗",
+	cityFirstLetter: "A"
+}, {
+	cityName: "埃尔博尔森",
+	citySpell: "AIERBOERSEN",
+	"code": "EHL",
+	"countryCode": "AR",
+	"countryName": "阿根廷",
+	cityFirstLetter: "A"
+}, {
+	cityName: "埃鲁梅",
+	citySpell: "AILUMEI",
+	"code": "ERU",
+	"countryCode": "PG",
+	"countryName": "巴布亚新几内亚",
+	cityFirstLetter: "A"
+}, {
+	cityName: "埃达",
+	citySpell: "AIDA",
+	"code": "ADT",
+	"countryCode": "US",
+	"countryName": "美国",
+	cityFirstLetter: "A"
+}, {
+	cityName: "阿塔瓦皮斯基特",
+	citySpell: "ATAWAPISIJITE",
+	"code": "YAT",
+	"countryCode": "CA",
+	"countryName": "加拿大",
+	cityFirstLetter: "A"
+}, {
+	cityName: "阿拉斯加维尔帕斯",
+	citySpell: "ALASIJIAWEIERPASI",
+	"code": "WWP",
+	"countryCode": "US",
+	"countryName": "美国",
+	cityFirstLetter: "A"
+}, {
+	cityName: "艾斯利普",
+	citySpell: "AISILIPU",
+	"code": "ISP",
+	"countryCode": "US",
+	"countryName": "美国",
+	cityFirstLetter: "A"
+}, {
+	cityName: "艾兰",
+	citySpell: "AILAN",
+	"code": "IRB",
+	"countryCode": "US",
+	"countryName": "美国",
+	cityFirstLetter: "A"
+}, {
+	cityName: "安博因港湾",
+	citySpell: "ANBOYINGANGWAN",
+	"code": "PBN",
+	"countryCode": "AO",
+	"countryName": "安哥拉",
+	cityFirstLetter: "A"
+}, {
+	cityName: "艾图斐",
+	citySpell: "AITUFEI",
+	"code": "ATD",
+	"countryCode": "SB",
+	"countryName": "所罗门群岛",
+	cityFirstLetter: "A"
+}, {
+	cityName: "阿平顿",
+	citySpell: "APINGDUN",
+	"code": "UTN",
+	"countryCode": "ZA",
+	"countryName": "南非",
+	cityFirstLetter: "A"
+}, {
+	cityName: "阿萨布",
+	citySpell: "ASABU",
+	"code": "ASA",
+	"countryCode": "ER",
+	"countryName": "厄立特里亚",
+	cityFirstLetter: "A"
+}, {
+	cityName: "阿马塔",
+	citySpell: "AMATA",
+	"code": "AMT",
+	"countryCode": "AU",
+	"countryName": "澳大利亚",
+	cityFirstLetter: "A"
+}, {
+	cityName: "埃尔雷克德拉",
+	citySpell: "AIERLEIKEDELA",
+	"code": "EKD",
+	"countryCode": "AU",
+	"countryName": "澳大利亚",
+	cityFirstLetter: "A"
+}, {
+	cityName: "阿贝马马环礁",
+	citySpell: "ABEIMAMAHUANJIAO",
+	"code": "AEA",
+	"countryCode": "KI",
+	"countryName": "基里巴斯",
+	cityFirstLetter: "A"
+}, {
+	cityName: "阿西斯港",
+	citySpell: "AXISIGANG",
+	"code": "PUU",
+	"countryCode": "CO",
+	"countryName": "哥伦比亚",
+	cityFirstLetter: "A"
+}, {
+	cityName: "安楚齐齐",
+	citySpell: "ANCHUQIQI",
+	"code": "WAI",
+	"countryCode": "MG",
+	"countryName": "马达加斯加",
+	cityFirstLetter: "A"
+}, {
+	cityName: "奥斯科达",
+	citySpell: "AOSIKEDA",
+	"code": "OSC",
+	"countryCode": "US",
+	"countryName": "美国",
+	cityFirstLetter: "A"
+}, {
+	cityName: "埃尔米纳",
+	citySpell: "AIERMINA",
+	"code": "EMY",
+	"countryCode": "EG",
+	"countryName": "埃及",
+	cityFirstLetter: "A"
+}, {
+	cityName: "阿洛阿",
+	citySpell: "ALUOA",
+	"code": "AOA",
+	"countryCode": "PG",
+	"countryName": "巴布亚新几内亚",
+	cityFirstLetter: "A"
+}, {
+	cityName: "埃雷拉",
+	citySpell: "AILEILA",
+	"code": "HRR",
+	"countryCode": "CO",
+	"countryName": "哥伦比亚",
+	cityFirstLetter: "A"
+}, {
+	cityName: "埃斯皮诺萨",
+	citySpell: "AISIPINUOSA",
+	"code": "ESI",
+	"countryCode": "BR",
+	"countryName": "巴西",
+	cityFirstLetter: "A"
+}, {
+	cityName: "埃斯比约",
+	citySpell: "AISIBIYUE",
+	"code": "EBJ",
+	"countryCode": "DK",
+	"countryName": "丹麦",
+	cityFirstLetter: "A"
+}, {
+	cityName: "奥克兰(马里兰州)",
+	citySpell: "AOKELAN",
+	"code": "ODM",
+	"countryCode": "US",
+	"countryName": "美国",
+	cityFirstLetter: "A"
+}, {
+	cityName: "安拉阿巴德",
+	citySpell: "ANLAABADE",
+	"code": "IXD",
+	"countryCode": "IN",
+	"countryName": "印度",
+	cityFirstLetter: "A"
+}, {
+	cityName: "艾达格罗夫",
+	citySpell: "AIDAGELUOFU",
+	"code": "IDG",
+	"countryCode": "US",
+	"countryName": "美国",
+	cityFirstLetter: "A"
+}, {
+	cityName: "奥本(缅因州)",
+	citySpell: "AOBEN",
+	"code": "LEW",
+	"countryCode": "US",
+	"countryName": "美国",
+	cityFirstLetter: "A"
+}, {
+	cityName: "奥博克",
+	citySpell: "AOBOKE",
+	"code": "OBC",
+	"countryCode": "DJ",
+	"countryName": "吉布堤",
+	cityFirstLetter: "A"
+}, {
+	cityName: "阿洛淘",
+	citySpell: "ALUOTAO",
+	"code": "GUR",
+	"countryCode": "PG",
+	"countryName": "巴布亚新几内亚",
+	cityFirstLetter: "A"
+}, {
+	cityName: "埃拉齐格",
+	citySpell: "AILAQIGE",
+	"code": "EZS",
+	"countryCode": "TR",
+	"countryName": "土耳其",
+	cityFirstLetter: "A"
+}, {
+	cityName: "奥诺劳岛",
+	citySpell: "AONUOLAODAO",
+	"code": "ONU",
+	"countryCode": "FJ",
+	"countryName": "斐济群岛",
+	cityFirstLetter: "A"
+}, {
+	cityName: "阿索萨",
+	citySpell: "ASUOSA",
+	"code": "ASO",
+	"countryCode": "ET",
+	"countryName": "埃塞俄比亚",
+	cityFirstLetter: "A"
+}, {
+	cityName: "安博塞利",
+	citySpell: "ANBOSAILI",
+	"code": "ASV",
+	"countryCode": "KE",
+	"countryName": "肯尼亚",
+	cityFirstLetter: "A"
+}, {
+	cityName: "阿赛拉",
+	citySpell: "ASAILA",
+	"code": "ALK",
+	"countryCode": "ET",
+	"countryName": "埃塞俄比亚",
+	cityFirstLetter: "A"
+}, {
+	cityName: "阿尔巴哈",
+	citySpell: "AERBAHA",
+	"code": "ABT",
+	"countryCode": "SA",
+	"countryName": "沙特阿垃伯",
+	cityFirstLetter: "A"
+}, {
+	cityName: "阿纳克图沃克",
+	citySpell: "ANAKETUWOKE",
+	"code": "AKP",
+	"countryCode": "US",
+	"countryName": "美国",
+	cityFirstLetter: "A"
+}, {
+	cityName: "阿克茹特",
+	citySpell: "AKERUTE",
+	"code": "AJJ",
+	"countryCode": "MR",
+	"countryName": "毛里塔尼亚",
+	cityFirstLetter: "A"
+}, {
+	cityName: "阿森松",
+	citySpell: "ASENSONG",
+	"code": "ASC",
+	"countryCode": "BO",
+	"countryName": "玻利维亚",
+	cityFirstLetter: "A"
+}, {
+	cityName: "阿库里维克",
+	citySpell: "AKULIWEIKE",
+	"code": "AKV",
+	"countryCode": "CA",
+	"countryName": "加拿大",
+	cityFirstLetter: "A"
+}, {
+	cityName: "奥格登",
+	citySpell: "AOGEDENG",
+	"code": "OGD",
+	"countryCode": "US",
+	"countryName": "美国",
+	cityFirstLetter: "A"
+}, {
+	cityName: "埃文代尔",
+	citySpell: "AIWENDAIER",
+	"code": "EVA",
+	"countryCode": "US",
+	"countryName": "美国",
+	cityFirstLetter: "A"
+}, {
+	cityName: "埃姆登",
+	citySpell: "AIMUDENG",
+	"code": "EME",
+	"countryCode": "DE",
+	"countryName": "德国",
+	cityFirstLetter: "A"
+}, {
+	cityName: "埃尔韦德",
+	citySpell: "AIERWEIDE",
+	"code": "ELU",
+	"countryCode": "DZ",
+	"countryName": "阿尔及利亚",
+	cityFirstLetter: "A"
+}, {
+	cityName: "奥尔顿",
+	citySpell: "AOERDUN",
+	"code": "ALN",
+	"countryCode": "US",
+	"countryName": "美国",
+	cityFirstLetter: "A"
+}, {
+	cityName: "奥尔斯克",
+	citySpell: "AOERSIKE",
+	"code": "OSW",
+	"countryCode": "RU",
+	"countryName": "俄罗斯",
+	cityFirstLetter: "A"
+}, {
+	cityName: "艾伯特王子城",
+	citySpell: "AIBOTEWANGZICHENG",
+	"code": "YPA",
+	"countryCode": "CA",
+	"countryName": "加拿大",
+	cityFirstLetter: "A"
+}, {
+	cityName: "阿科拉",
+	citySpell: "AKELA",
+	"code": "AKD",
+	"countryCode": "IN",
+	"countryName": "印度",
+	cityFirstLetter: "A"
+}, {
+	cityName: "阿尔发",
+	citySpell: "AERFA",
+	"code": "ABH",
+	"countryCode": "AU",
+	"countryName": "澳大利亚",
+	cityFirstLetter: "A"
+}, {
+	cityName: "阿富塔拉",
+	citySpell: "AFUTALA",
+	"code": "AFT",
+	"countryCode": "SB",
+	"countryName": "所罗门群岛",
+	cityFirstLetter: "A"
+}, {
+	cityName: "安卡凡德拉",
+	citySpell: "ANKAFANDELA",
+	"code": "JVA",
+	"countryCode": "MG",
+	"countryName": "马达加斯加",
+	cityFirstLetter: "A"
+}, {
+	cityName: "埃希贝",
+	citySpell: "AIXIBEI",
+	"code": "ICY",
+	"countryCode": "US",
+	"countryName": "美国",
+	cityFirstLetter: "A"
+}, {
+	cityName: "奥马哈",
+	citySpell: "AOMAHA",
+	"code": "OMA",
+	"countryCode": "US",
+	"countryName": "美国",
+	cityFirstLetter: "A"
+}, {
+	cityName: "埃默拉尔德",
+	citySpell: "AIMOLAERDE",
+	"code": "EMD",
+	"countryCode": "AU",
+	"countryName": "澳大利亚",
+	cityFirstLetter: "A"
+}, {
+	cityName: "奥廖克明斯克",
+	citySpell: "AOLIAOKEMINGSIKE",
+	"code": "OLZ",
+	"countryCode": "RU",
+	"countryName": "俄罗斯",
+	cityFirstLetter: "A"
+}, {
+	cityName: "埃尔芬考夫",
+	citySpell: "AIERFENKAOFU",
+	"code": "ELV",
+	"countryCode": "US",
+	"countryName": "美国",
+	cityFirstLetter: "A"
+}, {
+	cityName: "爱尔福特",
+	citySpell: "AIERFUTE",
+	"code": "ERF",
+	"countryCode": "DE",
+	"countryName": "德国",
+	cityFirstLetter: "A"
+}, {
+	cityName: "阿拉莫斯",
+	citySpell: "ALAMOSI",
+	"code": "XAL",
+	"countryCode": "MX",
+	"countryName": "墨西哥",
+	cityFirstLetter: "A"
+}, {
+	cityName: "阿克雷里",
+	citySpell: "AKELEILI",
+	"code": "AEY",
+	"countryCode": "IS",
+	"countryName": "冰岛",
+	cityFirstLetter: "A"
+}, {
+	cityName: "埃斯康德港",
+	citySpell: "AISIKANGDEGANG",
+	"code": "PXM",
+	"countryCode": "MX",
+	"countryName": "墨西哥",
+	cityFirstLetter: "A"
+}, {
+	cityName: "奥索尔诺",
+	citySpell: "AOSUOERNUO",
+	"code": "ZOS",
+	"countryCode": "CL",
+	"countryName": "智利",
+	cityFirstLetter: "A"
+}, {
+	cityName: "阿卡普尔科",
+	citySpell: "AKAPUERKE",
+	"code": "ACA",
+	"countryCode": "MX",
+	"countryName": "墨西哥",
+	cityFirstLetter: "A"
+}, {
+	cityName: "巴黎",
+	citySpell: "BALI",
+	"code": "PAR",
+	"countryCode": "FR",
+	"countryName": "法国",
+	cityFirstLetter: "B"
+}, {
+	cityName: "柏林",
+	citySpell: "BOLIN",
+	"code": "BER",
+	"countryCode": "DE",
+	"countryName": "德国",
+	cityFirstLetter: "B"
+}, {
+	cityName: "巴厘岛",
+	citySpell: "BALIDAO",
+	"code": "DPS",
+	"countryCode": "ID",
+	"countryName": "印度尼西亚",
+	cityFirstLetter: "B"
+}, {
+	cityName: "布拉格",
+	citySpell: "BULAGE",
+	"code": "PRG",
+	"countryCode": "CZ",
+	"countryName": "捷克",
+	cityFirstLetter: "B"
+}, {
+	cityName: "巴塞罗那",
+	citySpell: "BASAILUONA",
+	"code": "BCN",
+	"countryCode": "ES",
+	"countryName": "西班牙",
+	cityFirstLetter: "B"
+}, {
+	cityName: "布里斯班",
+	citySpell: "BULISIBAN",
+	"code": "BNE",
+	"countryCode": "AU",
+	"countryName": "澳大利亚",
+	cityFirstLetter: "B"
+}, {
+	cityName: "波士顿",
+	citySpell: "BOSHIDUN",
+	"code": "BOS",
+	"countryCode": "US",
+	"countryName": "美国",
+	cityFirstLetter: "B"
+}, {
+	cityName: "布山加",
+	citySpell: "BUSHANJIA",
+	"code": "USU",
+	"countryCode": "PH",
+	"countryName": "菲律宾",
+	cityFirstLetter: "B"
+}, {
+	cityName: "布加斯",
+	citySpell: "BUJIASI",
+	"code": "BOJ",
+	"countryCode": "BG",
+	"countryName": "保加利亚",
+	cityFirstLetter: "B"
+}, {
+	cityName: "巴里萨尔",
+	citySpell: "BALISAER",
+	"code": "BZL",
+	"countryCode": "BD",
+	"countryName": "孟加拉国",
+	cityFirstLetter: "B"
+}, {
+	cityName: "波尔本德尔",
+	citySpell: "BOERBENDEER",
+	"code": "PBD",
+	"countryCode": "IN",
+	"countryName": "印度",
+	cityFirstLetter: "B"
+}, {
+	cityName: "波照间",
+	citySpell: "BOZHAOJIAN",
+	"code": "HTR",
+	"countryCode": "JP",
+	"countryName": "日本",
+	cityFirstLetter: "B"
+}, {
+	cityName: "贝萨兰皮",
+	citySpell: "BEISALANPI",
+	"code": "BPY",
+	"countryCode": "MG",
+	"countryName": "马达加斯加",
+	cityFirstLetter: "B"
+}, {
+	cityName: "班加西",
+	citySpell: "BANJIAXI",
+	"code": "BEN",
+	"countryCode": "LY",
+	"countryName": "利比亚",
+	cityFirstLetter: "B"
+}, {
+	cityName: "贝尔蒙蒂",
+	citySpell: "BEIERMENGDI",
+	"code": "BVM",
+	"countryCode": "BR",
+	"countryName": "巴西",
+	cityFirstLetter: "B"
+}, {
+	cityName: "布埃纳文图拉",
+	citySpell: "BUAINAWENTULA",
+	"code": "BUN",
+	"countryCode": "CO",
+	"countryName": "哥伦比亚",
+	cityFirstLetter: "B"
+}, {
+	cityName: "贝斯比利湖",
+	citySpell: "BEISIBILIHU",
+	"code": "YNO",
+	"countryCode": "CA",
+	"countryName": "加拿大",
+	cityFirstLetter: "B"
+}, {
+	cityName: "布来梅港",
+	citySpell: "BULAIMEIGANG",
+	"code": "BRV",
+	"countryCode": "DE",
+	"countryName": "德国",
+	cityFirstLetter: "B"
+}, {
+	cityName: "博科罗",
+	citySpell: "BOKELUO",
+	"code": "BKR",
+	"countryCode": "TD",
+	"countryName": "乍得",
+	cityFirstLetter: "B"
+}, {
+	cityName: "不来梅",
+	citySpell: "BULAIMEI",
+	"code": "BRE",
+	"countryCode": "DE",
+	"countryName": "德国",
+	cityFirstLetter: "B"
+}, {
+	cityName: "本尼茨维尔",
+	citySpell: "BENNICIWEIER",
+	"code": "BTN",
+	"countryCode": "US",
+	"countryName": "美国",
+	cityFirstLetter: "B"
+}, {
+	cityName: "贝拉乌尼翁",
+	citySpell: "BEILAWUNIWENG",
+	"code": "BUV",
+	"countryCode": "UY",
+	"countryName": "乌拉圭",
+	cityFirstLetter: "B"
+}, {
+	cityName: "北本德",
+	citySpell: "BEIBENDE",
+	"code": "OTH",
+	"countryCode": "US",
+	"countryName": "美国",
+	cityFirstLetter: "B"
+}, {
+	cityName: "巴格隆",
+	citySpell: "BAGELONG",
+	"code": "BGL",
+	"countryCode": "NP",
+	"countryName": "尼泊尔",
+	cityFirstLetter: "B"
+}, {
+	cityName: "布法罗纳罗斯",
+	citySpell: "BUFALUONALUOSI",
+	"code": "YVT",
+	"countryCode": "CA",
+	"countryName": "加拿大",
+	cityFirstLetter: "B"
+}, {
+	cityName: "博伊西",
+	citySpell: "BOYIXI",
+	"code": "BOI",
+	"countryCode": "US",
+	"countryName": "美国",
+	cityFirstLetter: "B"
+}, {
+	cityName: "波兹南",
+	citySpell: "BOZINAN",
+	"code": "POZ",
+	"countryCode": "PL",
+	"countryName": "波兰",
+	cityFirstLetter: "B"
+}, {
+	cityName: "布卢明顿",
+	citySpell: "BULUMINGDUN",
+	"code": "BMG",
+	"countryCode": "US",
+	"countryName": "美国",
+	cityFirstLetter: "B"
+}, {
+	cityName: "贝洛",
+	citySpell: "BEILUO",
+	"code": "BMD",
+	"countryCode": "MG",
+	"countryName": "马达加斯加",
+	cityFirstLetter: "B"
+}, {
+	cityName: "本地治里",
+	citySpell: "BENDIZHILI",
+	"code": "PNY",
+	"countryCode": "IN",
+	"countryName": "印度",
+	cityFirstLetter: "B"
+}, {
+	cityName: "博尔沃拉",
+	citySpell: "BOERWOLA",
+	"code": "BCK",
+	"countryCode": "AU",
+	"countryName": "澳大利亚",
+	cityFirstLetter: "B"
+}, {
+	cityName: "贝瓦尼",
+	citySpell: "BEIWANI",
+	"code": "BWP",
+	"countryCode": "PG",
+	"countryName": "巴布亚新几内亚",
+	cityFirstLetter: "B"
+}, {
+	cityName: "八日目雅",
+	citySpell: "BARIMUYA",
+	"code": "BYP",
+	"countryCode": "AU",
+	"countryName": "澳大利亚",
+	cityFirstLetter: "B"
+}, {
+	cityName: "布坎南",
+	citySpell: "BUKANNAN",
+	"code": "UCN",
+	"countryCode": "LR",
+	"countryName": "利比里亚",
+	cityFirstLetter: "B"
+}, {
+	cityName: "八丈岛",
+	citySpell: "BAZHANGDAO",
+	"code": "HAC",
+	"countryCode": "JP",
+	"countryName": "日本",
+	cityFirstLetter: "B"
+}, {
+	cityName: "博盖",
+	citySpell: "BOGAI",
+	"code": "BGH",
+	"countryCode": "MR",
+	"countryName": "毛里塔尼亚",
+	cityFirstLetter: "B"
+}, {
+	cityName: "贝克莫",
+	citySpell: "BEIKEMO",
+	"code": "YBC",
+	"countryCode": "CA",
+	"countryName": "加拿大",
+	cityFirstLetter: "B"
+}, {
+	cityName: "宾格尔",
+	citySpell: "BINGEER",
+	"code": "BGG",
+	"countryCode": "TR",
+	"countryName": "土耳其",
+	cityFirstLetter: "B"
+}, {
+	cityName: "博多",
+	citySpell: "BODUO",
+	"code": "BOO",
+	"countryCode": "NO",
+	"countryName": "挪威",
+	cityFirstLetter: "B"
+}, {
+	cityName: "波拉卡",
+	citySpell: "BOLAKA",
+	"code": "PXL",
+	"countryCode": "US",
+	"countryName": "美国",
+	cityFirstLetter: "B"
+}, {
+	cityName: "贝克利",
+	citySpell: "BEIKELI",
+	"code": "BKW",
+	"countryCode": "US",
+	"countryName": "美国",
+	cityFirstLetter: "B"
+}, {
+	cityName: "布巴内斯瓦尔",
+	citySpell: "BUBANEISIWAER",
+	"code": "BBI",
+	"countryCode": "IN",
+	"countryName": "印度",
+	cityFirstLetter: "B"
+}, {
+	cityName: "贝尔谢巴",
+	citySpell: "BEIERXIEBA",
+	"code": "BEV",
+	"countryCode": "IL",
+	"countryName": "以色列",
+	cityFirstLetter: "B"
+}, {
+	cityName: "卑尔根",
+	citySpell: "BEIERGEN",
+	"code": "BGO",
+	"countryCode": "NO",
+	"countryName": "挪威",
+	cityFirstLetter: "B"
+}, {
+	cityName: "比米尼群岛",
+	citySpell: "BIMINIQUNDAO",
+	"code": "BIM",
+	"countryCode": "BS",
+	"countryName": "巴哈马",
+	cityFirstLetter: "B"
+}, {
+	cityName: "波尔拉马尔",
+	citySpell: "BOERLAMAER",
+	"code": "PMV",
+	"countryCode": "VE",
+	"countryName": "委内瑞拉",
+	cityFirstLetter: "B"
+}, {
+	cityName: "巴尔杜福斯",
+	citySpell: "BAERDUFUSI",
+	"code": "BDU",
+	"countryCode": "NO",
+	"countryName": "挪威",
+	cityFirstLetter: "B"
+}, {
+	cityName: "泊特莫尔斯比港",
+	citySpell: "BOTEMOERSIBIGANG",
+	"code": "POM",
+	"countryCode": "PG",
+	"countryName": "巴布亚新几内亚",
+	cityFirstLetter: "B"
+}, {
+	cityName: "贝特尔斯",
+	citySpell: "BEITEERSI",
+	"code": "BTT",
+	"countryCode": "US",
+	"countryName": "美国",
+	cityFirstLetter: "B"
+}, {
+	cityName: "布鲁金斯(俄勒冈州)",
+	citySpell: "BULUJINSI",
+	"code": "BOK",
+	"countryCode": "US",
+	"countryName": "美国",
+	cityFirstLetter: "B"
+}, {
+	cityName: "布提利米特",
+	citySpell: "BUTILIMITE",
+	"code": "OTL",
+	"countryCode": "MR",
+	"countryName": "毛里塔尼亚",
+	cityFirstLetter: "B"
+}, {
+	cityName: "别洛亚尔斯基",
+	citySpell: "BIELUOYAERSIJI",
+	"code": "EYK",
+	"countryCode": "RU",
+	"countryName": "俄罗斯",
+	cityFirstLetter: "B"
+}, {
+	cityName: "巴雷里尼亚斯",
+	citySpell: "BALEILINIYASI",
+	"code": "BRB",
+	"countryCode": "BR",
+	"countryName": "巴西",
+	cityFirstLetter: "B"
+}, {
+	cityName: "贝宁城",
+	citySpell: "BEININGCHENG",
+	"code": "BNI",
+	"countryCode": "NG",
+	"countryName": "尼日利亚",
+	cityFirstLetter: "B"
+}, {
+	cityName: "巴塞尔",
+	citySpell: "BASAIER",
+	"code": "EAP",
+	"countryCode": "CH",
+	"countryName": "瑞士",
+	cityFirstLetter: "B"
+}, {
+	cityName: "巴尔博亚",
+	citySpell: "BAERBOYA",
+	"code": "BLB",
+	"countryCode": "PA",
+	"countryName": "巴拿马",
+	cityFirstLetter: "B"
+}, {
+	cityName: "布里斯托尔",
+	citySpell: "BULISITUOER",
+	"code": "TRI",
+	"countryCode": "US",
+	"countryName": "美国",
+	cityFirstLetter: "B"
+}, {
+	cityName: "布朗伍德",
+	citySpell: "BULANGWUDE",
+	"code": "BWD",
+	"countryCode": "US",
+	"countryName": "美国",
+	cityFirstLetter: "B"
+}, {
+	cityName: "槟榔",
+	citySpell: "BINLANG",
+	"code": "PGK",
+	"countryCode": "ID",
+	"countryName": "印度尼西亚",
+	cityFirstLetter: "B"
+}, {
+	cityName: "彼楚沙夫",
+	citySpell: "BICHUSHAFU",
+	"code": "PES",
+	"countryCode": "RU",
+	"countryName": "俄罗斯",
+	cityFirstLetter: "B"
+}, {
+	cityName: "巴吞鲁日",
+	citySpell: "BATUNLURI",
+	"code": "BTR",
+	"countryCode": "US",
+	"countryName": "美国",
+	cityFirstLetter: "B"
+}, {
+	cityName: "巴莫尼",
+	citySpell: "BAMONI",
+	"code": "BMN",
+	"countryCode": "IQ",
+	"countryName": "伊拉克",
+	cityFirstLetter: "B"
+}, {
+	cityName: "布伦迪欧斯",
+	citySpell: "BULUNDIOUSI",
+	"code": "BLO",
+	"countryCode": "IS",
+	"countryName": "冰岛",
+	cityFirstLetter: "B"
+}, {
+	cityName: "贝克湖",
+	citySpell: "BEIKEHU",
+	"code": "YBK",
+	"countryCode": "CA",
+	"countryName": "加拿大",
+	cityFirstLetter: "B"
+}, {
+	cityName: "博罗卢拉",
+	citySpell: "BOLUOLULA",
+	"code": "BOX",
+	"countryCode": "AU",
+	"countryName": "澳大利亚",
+	cityFirstLetter: "B"
+}, {
+	cityName: "巴尔切诺",
+	citySpell: "BAERQIENUO",
+	"code": "VCF",
+	"countryCode": "AR",
+	"countryName": "阿根廷",
+	cityFirstLetter: "B"
+}, {
+	cityName: "巴米扬",
+	citySpell: "BAMIYANG",
+	"code": "BIN",
+	"countryCode": "AF",
+	"countryName": "阿富汗",
+	cityFirstLetter: "B"
+}, {
+	cityName: "布雷纳德",
+	citySpell: "BULEINADE",
+	"code": "BRD",
+	"countryCode": "US",
+	"countryName": "美国",
+	cityFirstLetter: "B"
+}, {
+	cityName: "巴里巴班",
+	citySpell: "BALIBABAN",
+	"code": "BPN",
+	"countryCode": "ID",
+	"countryName": "印度尼西亚",
+	cityFirstLetter: "B"
+}, {
+	cityName: "博凯",
+	citySpell: "BOKAI",
+	"code": "BKJ",
+	"countryCode": "GN",
+	"countryName": "几内亚",
+	cityFirstLetter: "B"
+}, {
+	cityName: "布列斯特",
+	citySpell: "BULIESITE",
+	"code": "BQT",
+	"countryCode": "BY",
+	"countryName": "白俄罗斯",
+	cityFirstLetter: "B"
+}, {
+	cityName: "布塔里塔里",
+	citySpell: "BUTALITALI",
+	"code": "BBG",
+	"countryCode": "KI",
+	"countryName": "基里巴斯",
+	cityFirstLetter: "B"
+}, {
+	cityName: "博斯韦尔贝",
+	citySpell: "BOSIWEIERBEI",
+	"code": "BSW",
+	"countryCode": "US",
+	"countryName": "美国",
+	cityFirstLetter: "B"
+}, {
+	cityName: "贝伦",
+	citySpell: "BEILUN",
+	"code": "BEL",
+	"countryCode": "BR",
+	"countryName": "巴西",
+	cityFirstLetter: "B"
+}, {
+	cityName: "比查德罗",
+	citySpell: "BICHADELUO",
+	"code": "VCH",
+	"countryCode": "UY",
+	"countryName": "乌拉圭",
+	cityFirstLetter: "B"
+}, {
+	cityName: "巴亚马雷",
+	citySpell: "BAYAMALEI",
+	"code": "BAY",
+	"countryCode": "RO",
+	"countryName": "罗马尼亚",
+	cityFirstLetter: "B"
+}, {
+	cityName: "巴库",
+	citySpell: "BAKU",
+	"code": "BAK",
+	"countryCode": "AZ",
+	"countryName": "阿塞拜疆",
+	cityFirstLetter: "B"
+}, {
+	cityName: "巴勒莫",
+	citySpell: "BALEMO",
+	"code": "PMO",
+	"countryCode": "IT",
+	"countryName": "意大利",
+	cityFirstLetter: "B"
+}, {
+	cityName: "波蒂奇河",
+	citySpell: "BODIQIHE",
+	"code": "PCA",
+	"countryCode": "US",
+	"countryName": "美国",
+	cityFirstLetter: "B"
+}, {
+	cityName: "巴兰卡维梅哈",
+	citySpell: "BALANKAWEIMEIHA",
+	"code": "EJA",
+	"countryCode": "CO",
+	"countryName": "哥伦比亚",
+	cityFirstLetter: "B"
+}, {
+	cityName: "巴罗因弗内斯",
+	citySpell: "BALUOYINFUNEISI",
+	"code": "BWF",
+	"countryCode": "GB",
+	"countryName": "英国",
+	cityFirstLetter: "B"
+}, {
+	cityName: "邦尼维尔",
+	citySpell: "BANGNIWEIER",
+	"code": "YBY",
+	"countryCode": "CA",
+	"countryName": "加拿大",
+	cityFirstLetter: "B"
+}, {
+	cityName: "比拉斯普尔",
+	citySpell: "BILASIPUER",
+	"code": "PAB",
+	"countryCode": "IN",
+	"countryName": "印度",
+	cityFirstLetter: "B"
+}, {
+	cityName: "班加罗尔",
+	citySpell: "BANJIALUOER",
+	"code": "BLR",
+	"countryCode": "IN",
+	"countryName": "印度",
+	cityFirstLetter: "B"
+}, {
+	cityName: "布来克蒂尔",
+	citySpell: "BULAIKEDIER",
+	"code": "YBI",
+	"countryCode": "CA",
+	"countryName": "加拿大",
+	cityFirstLetter: "B"
+}, {
+	cityName: "波特兰",
+	citySpell: "BOTELAN",
+	"code": "PTJ",
+	"countryCode": "AU",
+	"countryName": "澳大利亚",
+	cityFirstLetter: "B"
+}, {
+	cityName: "伯灵顿(衣阿华州)",
+	citySpell: "BOLINGDUN",
+	"code": "BRL",
+	"countryCode": "US",
+	"countryName": "美国",
+	cityFirstLetter: "B"
+}, {
+	cityName: "布卢姆菲尔德",
+	citySpell: "BULUMUFEIERDE",
+	"code": "BFC",
+	"countryCode": "AU",
+	"countryName": "澳大利亚",
+	cityFirstLetter: "B"
+}, {
+	cityName: "贝尔高姆",
+	citySpell: "BEIERGAOMU",
+	"code": "IXG",
+	"countryCode": "IN",
+	"countryName": "印度",
+	cityFirstLetter: "B"
+}, {
+	cityName: "布拉格维申斯科",
+	citySpell: "BULAGEWEISHENSIKE",
+	"code": "BQS",
+	"countryCode": "RU",
+	"countryName": "俄罗斯",
+	cityFirstLetter: "B"
+}, {
+	cityName: "班伯里",
+	citySpell: "BANBOLI",
+	"code": "BUY",
+	"countryCode": "AU",
+	"countryName": "澳大利亚",
+	cityFirstLetter: "B"
+}, {
+	cityName: "巴尔拉纳德",
+	citySpell: "BAERLANADE",
+	"code": "BZD",
+	"countryCode": "AU",
+	"countryName": "澳大利亚",
+	cityFirstLetter: "B"
+}, {
+	cityName: "布科巴",
+	citySpell: "BUKEBA",
+	"code": "BKZ",
+	"countryCode": "TZ",
+	"countryName": "坦桑尼亚",
+	cityFirstLetter: "B"
+}, {
+	cityName: "波罗克瓦内",
+	citySpell: "BOLUOKEWANEI",
+	"code": "PTG",
+	"countryCode": "ZA",
+	"countryName": "南非",
+	cityFirstLetter: "B"
+}, {
+	cityName: "巴瑙尔",
+	citySpell: "BANAOER",
+	"code": "BAX",
+	"countryCode": "RU",
+	"countryName": "俄罗斯",
+	cityFirstLetter: "B"
+}, {
+	cityName: "贝伦斯河",
+	citySpell: "BEILUNSIHE",
+	"code": "YBV",
+	"countryCode": "CA",
+	"countryName": "加拿大",
+	cityFirstLetter: "B"
+}, {
+	cityName: "巴瑟尔顿",
+	citySpell: "BASEERDUN",
+	"code": "BQB",
+	"countryCode": "AU",
+	"countryName": "澳大利亚",
+	cityFirstLetter: "B"
+}, {
+	cityName: "比拉克",
+	citySpell: "BILAKE",
+	"code": "VRC",
+	"countryCode": "PH",
+	"countryName": "菲律宾",
+	cityFirstLetter: "B"
+}, {
+	cityName: "布隆方丹",
+	citySpell: "BULONGFANGDAN",
+	"code": "BFN",
+	"countryCode": "ZA",
+	"countryName": "南非",
+	cityFirstLetter: "B"
+}, {
+	cityName: "巴尔代雷",
+	citySpell: "BAERDAILEI",
+	"code": "BSY",
+	"countryCode": "SO",
+	"countryName": "索马里",
+	cityFirstLetter: "B"
+}, {
+	cityName: "毕晓普",
+	citySpell: "BIXIAOPU",
+	"code": "BIH",
+	"countryCode": "US",
+	"countryName": "美国",
+	cityFirstLetter: "B"
+}, {
+	cityName: "伯斯尼",
+	citySpell: "BOSINI",
+	"code": "PSI",
+	"countryCode": "PK",
+	"countryName": "巴基斯坦",
+	cityFirstLetter: "B"
+}, {
+	cityName: "波杰普尔",
+	citySpell: "BOJIEPUER",
+	"code": "BHP",
+	"countryCode": "NP",
+	"countryName": "尼泊尔",
+	cityFirstLetter: "B"
+}, {
+	cityName: "波普登",
+	citySpell: "BOPUDENG",
+	"code": "PON",
+	"countryCode": "GT",
+	"countryName": "危地马拉",
+	cityFirstLetter: "B"
+}, {
+	cityName: "班戈",
+	citySpell: "BANGE",
+	"code": "BGR",
+	"countryCode": "US",
+	"countryName": "美国",
+	cityFirstLetter: "B"
+}, {
+	cityName: "毕尔巴鄂",
+	citySpell: "BIERBAE",
+	"code": "BIO",
+	"countryCode": "ES",
+	"countryName": "西班牙",
+	cityFirstLetter: "B"
+}, {
+	cityName: "布达巴地",
+	citySpell: "BUDABADI",
+	"code": "PUT",
+	"countryCode": "IN",
+	"countryName": "印度",
+	cityFirstLetter: "B"
+}, {
+	cityName: "巴勒克埃希尔",
+	citySpell: "BALEKEAIXIER",
+	"code": "BZI",
+	"countryCode": "TR",
+	"countryName": "土耳其",
+	cityFirstLetter: "B"
+}, {
+	cityName: "波因特霍普",
+	citySpell: "BOYINTEHUOPU",
+	"code": "PHO",
+	"countryCode": "US",
+	"countryName": "美国",
+	cityFirstLetter: "B"
+}, {
+	cityName: "巴耶杜帕尔",
+	citySpell: "BAYEDUPAER",
+	"code": "VUP",
+	"countryCode": "CO",
+	"countryName": "哥伦比亚",
+	cityFirstLetter: "B"
+}, {
+	cityName: "北帕默斯顿",
+	citySpell: "BEIPAMOSIDUN",
+	"code": "PMR",
+	"countryCode": "NZ",
+	"countryName": "新西兰",
+	cityFirstLetter: "B"
+}, {
+	cityName: "布吉奥斯",
+	citySpell: "BUJIAOSI",
+	"code": "BZC",
+	"countryCode": "BR",
+	"countryName": "巴西",
+	cityFirstLetter: "B"
+}, {
+	cityName: "班巴里",
+	citySpell: "BANBALI",
+	"code": "BBY",
+	"countryCode": "CF",
+	"countryName": "中非",
+	cityFirstLetter: "B"
+}, {
+	cityName: "槟城",
+	citySpell: "BINCHENG",
+	"code": "PEN",
+	"countryCode": "MY",
+	"countryName": "马来西亚",
+	cityFirstLetter: "B"
+}, {
+	cityName: "波普勒布拉夫",
+	citySpell: "BOPULEBULAFU",
+	"code": "POF",
+	"countryCode": "US",
+	"countryName": "美国",
+	cityFirstLetter: "B"
+}, {
+	cityName: "博尔",
+	citySpell: "BOER",
+	"code": "BWK",
+	"countryCode": "HR",
+	"countryName": "克罗地亚",
+	cityFirstLetter: "B"
+}, {
+	cityName: "拜多阿",
+	citySpell: "BAIDUOA",
+	"code": "BIB",
+	"countryCode": "SO",
+	"countryName": "索马里",
+	cityFirstLetter: "B"
+}, {
+	cityName: "巴罗",
+	citySpell: "BALUO",
+	"code": "BRW",
+	"countryCode": "US",
+	"countryName": "美国",
+	cityFirstLetter: "B"
+}, {
+	cityName: "布加勒斯特",
+	citySpell: "BUJIALESITE",
+	"code": "BUH",
+	"countryCode": "RO",
+	"countryName": "罗马尼亚",
+	cityFirstLetter: "B"
+}, {
+	cityName: "波因特莱",
+	citySpell: "BOYINTELAI",
+	"code": "PIZ",
+	"countryCode": "US",
+	"countryName": "美国",
+	cityFirstLetter: "B"
+}, {
+	cityName: "伯恩茅斯",
+	citySpell: "BOENMAOSI",
+	"code": "BOH",
+	"countryCode": "GB",
+	"countryName": "英国",
+	cityFirstLetter: "B"
+}, {
+	cityName: "博昂",
+	citySpell: "BOANG",
+	"code": "BOV",
+	"countryCode": "PG",
+	"countryName": "巴布亚新几内亚",
+	cityFirstLetter: "B"
+}, {
+	cityName: "波纳佩",
+	citySpell: "BONAPEI",
+	"code": "PNI",
+	"countryCode": "FM",
+	"countryName": "密克罗尼西亚",
+	cityFirstLetter: "B"
+}, {
+	cityName: "贝拉库尔",
+	citySpell: "BEILAKUER",
+	"code": "QBC",
+	"countryCode": "CA",
+	"countryName": "加拿大",
+	cityFirstLetter: "B"
+}, {
+	cityName: "布尔诺",
+	citySpell: "BUERNUO",
+	"code": "BRQ",
+	"countryCode": "CZ",
+	"countryName": "捷克",
+	cityFirstLetter: "B"
+}, {
+	cityName: "贝阿拉纳纳",
+	citySpell: "BEIALANANA",
+	"code": "WBE",
+	"countryCode": "MG",
+	"countryName": "马达加斯加",
+	cityFirstLetter: "B"
+}, {
+	cityName: "班登",
+	citySpell: "BANDENG",
+	"code": "BDY",
+	"countryCode": "US",
+	"countryName": "美国",
+	cityFirstLetter: "B"
+}, {
+	cityName: "布拉干萨",
+	citySpell: "BULAGANSA",
+	"code": "BGC",
+	"countryCode": "PT",
+	"countryName": "葡萄牙",
+	cityFirstLetter: "B"
+}, {
+	cityName: "巴拿马城",
+	citySpell: "BANAMACHENG",
+	"code": "PTY",
+	"countryCode": "PA",
+	"countryName": "巴拿马",
+	cityFirstLetter: "B"
+}, {
+	cityName: "巴尼亚卢卡",
+	citySpell: "BANIYALUKA",
+	"code": "BNX",
+	"countryCode": "BA",
+	"countryName": "波斯尼亚和黑塞哥维那",
+	cityFirstLetter: "B"
+}, {
+	cityName: "伯茨菲尤尔",
+	citySpell: "BOCIFEIYOUER",
+	"code": "BJF",
+	"countryCode": "NO",
+	"countryName": "挪威",
+	cityFirstLetter: "B"
+}, {
+	cityName: "巴瑟斯特",
+	citySpell: "BASESITE",
+	"code": "ZBF",
+	"countryCode": "CA",
+	"countryName": "加拿大",
+	cityFirstLetter: "B"
+}, {
+	cityName: "巴哈瓦尔布尔",
+	citySpell: "BAHAWAERBUER",
+	"code": "BHV",
+	"countryCode": "PK",
+	"countryName": "巴基斯坦",
+	cityFirstLetter: "B"
+}, {
+	cityName: "布劳",
+	citySpell: "BULAO",
+	"code": "BUO",
+	"countryCode": "SO",
+	"countryName": "索马里",
+	cityFirstLetter: "B"
+}, {
+	cityName: "宾图尼",
+	citySpell: "BINTUNI",
+	"code": "NTI",
+	"countryCode": "ID",
+	"countryName": "印度尼西亚",
+	cityFirstLetter: "B"
+}, {
+	cityName: "波穆杰拉帕",
+	citySpell: "BOMUJIELAPA",
+	"code": "LSX",
+	"countryCode": "ID",
+	"countryName": "印度尼西亚",
+	cityFirstLetter: "B"
+}, {
+	cityName: "波萨达斯",
+	citySpell: "BOSADASI",
+	"code": "PSS",
+	"countryCode": "AR",
+	"countryName": "阿根廷",
+	cityFirstLetter: "B"
+}, {
+	cityName: "巴特曼",
+	citySpell: "BATEMAN",
+	"code": "BAL",
+	"countryCode": "TR",
+	"countryName": "土耳其",
+	cityFirstLetter: "B"
+}, {
+	cityName: "布瓦凯",
+	citySpell: "BUWAKAI",
+	"code": "BYK",
+	"countryCode": "CI",
+	"countryName": "科特迪瓦",
+	cityFirstLetter: "B"
+}, {
+	cityName: "别德马",
+	citySpell: "BIEDEMA",
+	"code": "VDM",
+	"countryCode": "AR",
+	"countryName": "阿根廷",
+	cityFirstLetter: "B"
+}, {
+	cityName: "伯奇克里克",
+	citySpell: "BOQIKELIKE",
+	"code": "KBC",
+	"countryCode": "US",
+	"countryName": "美国",
+	cityFirstLetter: "B"
+}, {
+	cityName: "波马拉",
+	citySpell: "BOMALA",
+	"code": "PUM",
+	"countryCode": "ID",
+	"countryName": "印度尼西亚",
+	cityFirstLetter: "B"
+}, {
+	cityName: "布里奇敦",
+	citySpell: "BULIQIDUN",
+	"code": "BGI",
+	"countryCode": "BB",
+	"countryName": "巴巴多斯",
+	cityFirstLetter: "B"
+}, {
+	cityName: "巴蒂卡",
+	citySpell: "BADIKA",
+	"code": "GFO",
+	"countryCode": "GY",
+	"countryName": "圭亚那",
+	cityFirstLetter: "B"
+}, {
+	cityName: "邦特",
+	citySpell: "BANGTE",
+	"code": "BTE",
+	"countryCode": "SL",
+	"countryName": "塞拉利昂",
+	cityFirstLetter: "B"
+}, {
+	cityName: "不伦瑞克",
+	citySpell: "BULUNRUIKE",
+	"code": "BWE",
+	"countryCode": "DE",
+	"countryName": "德国",
+	cityFirstLetter: "B"
+}, {
+	cityName: "博莱戈斯普林斯",
+	citySpell: "BOLAIGESIPULINSI",
+	"code": "BXS",
+	"countryCode": "US",
+	"countryName": "美国",
+	cityFirstLetter: "B"
+}, {
+	cityName: "贝贝拉蒂",
+	citySpell: "BEIBEILADI",
+	"code": "BBT",
+	"countryCode": "CF",
+	"countryName": "中非",
+	cityFirstLetter: "B"
+}, {
+	cityName: "别尔哥罗德",
+	citySpell: "BIEERGELUODE",
+	"code": "EGO",
+	"countryCode": "RU",
+	"countryName": "俄罗斯",
+	cityFirstLetter: "B"
+}, {
+	cityName: "比亚里茨",
+	citySpell: "BIYALICI",
+	"code": "BIQ",
+	"countryCode": "FR",
+	"countryName": "法国",
+	cityFirstLetter: "B"
+}, {
+	cityName: "拜达",
+	citySpell: "BAIDA",
+	"code": "LAQ",
+	"countryCode": "LY",
+	"countryName": "利比亚",
+	cityFirstLetter: "B"
+}, {
+	cityName: "布莱克尔",
+	citySpell: "BULAIKEER",
+	"code": "BKQ",
+	"countryCode": "AU",
+	"countryName": "澳大利亚",
+	cityFirstLetter: "B"
+}, {
+	cityName: "本巴",
+	citySpell: "BENBA",
+	"code": "BMB",
+	"countryCode": "CD",
+	"countryName": "刚果民主共和国",
+	cityFirstLetter: "B"
+}, {
+	cityName: "布林迪西",
+	citySpell: "BULINDIXI",
+	"code": "BDS",
+	"countryCode": "IT",
+	"countryName": "意大利",
+	cityFirstLetter: "B"
+}, {
+	cityName: "巴贾瓦",
+	citySpell: "BAJIAWA",
+	"code": "BJW",
+	"countryCode": "ID",
+	"countryName": "印度尼西亚",
+	cityFirstLetter: "B"
+}, {
+	cityName: "巴斯特尔",
+	citySpell: "BASITEER",
+	"code": "BBR",
+	"countryCode": "GP",
+	"countryName": "瓜德罗普岛",
+	cityFirstLetter: "B"
+}, {
+	cityName: "比亚蒙特斯",
+	citySpell: "BIYAMENGTESI",
+	"code": "VLM",
+	"countryCode": "BO",
+	"countryName": "玻利维亚",
+	cityFirstLetter: "B"
+}, {
+	cityName: "巴尼亚拉",
+	citySpell: "BANIYALA",
+	"code": "BYX",
+	"countryCode": "AU",
+	"countryName": "澳大利亚",
+	cityFirstLetter: "B"
+}, {
+	cityName: "别克斯",
+	citySpell: "BIEKESI",
+	"code": "VQS",
+	"countryCode": "PR",
+	"countryName": "波多黎各",
+	cityFirstLetter: "B"
+}, {
+	cityName: "伯拉西",
+	citySpell: "BOLAXI",
+	"code": "PRS",
+	"countryCode": "SB",
+	"countryName": "所罗门群岛",
+	cityFirstLetter: "B"
+}, {
+	cityName: "博洛尼亚",
+	citySpell: "BOLUONIYA",
+	"code": "BLQ",
+	"countryCode": "IT",
+	"countryName": "意大利",
+	cityFirstLetter: "B"
+}, {
+	cityName: "巴拉奥纳",
+	citySpell: "BALAAONA",
+	"code": "BRX",
+	"countryCode": "DO",
+	"countryName": "多米尼加",
+	cityFirstLetter: "B"
+}, {
+	cityName: "布雷沃里纳",
+	citySpell: "BULEIWOLINA",
+	"code": "BWQ",
+	"countryCode": "AU",
+	"countryName": "澳大利亚",
+	cityFirstLetter: "B"
+}, {
+	cityName: "北极湾城",
+	citySpell: "BEIJIWANCHENG",
+	"code": "YAB",
+	"countryCode": "CA",
+	"countryName": "加拿大",
+	cityFirstLetter: "B"
+}, {
+	cityName: "布拉柴维尔",
+	citySpell: "BULACHAIWEIER",
+	"code": "BZV",
+	"countryCode": "CG",
+	"countryName": "刚果",
+	cityFirstLetter: "B"
+}, {
+	cityName: "巴瑟斯特",
+	citySpell: "BASESITE",
+	"code": "BHS",
+	"countryCode": "AU",
+	"countryName": "澳大利亚",
+	cityFirstLetter: "B"
+}, {
+	cityName: "伯克顿",
+	citySpell: "BOKEDUN",
+	"code": "BUC",
+	"countryCode": "AU",
+	"countryName": "澳大利亚",
+	cityFirstLetter: "B"
+}, {
+	cityName: "彼得罗利纳",
+	citySpell: "BIDELUOLINA",
+	"code": "PNZ",
+	"countryCode": "BR",
+	"countryName": "巴西",
+	cityFirstLetter: "B"
+}, {
+	cityName: "巴鲁尔卡德",
+	citySpell: "BALUERKADE",
+	"code": "RGH",
+	"countryCode": "IN",
+	"countryName": "印度",
+	cityFirstLetter: "B"
+}, {
+	cityName: "宾厄姆顿",
+	citySpell: "BINEMUDUN",
+	"code": "BGM",
+	"countryCode": "US",
+	"countryName": "美国",
+	cityFirstLetter: "B"
+}, {
+	cityName: "比利卢纳",
+	citySpell: "BILILUNA",
+	"code": "BIW",
+	"countryCode": "AU",
+	"countryName": "澳大利亚",
+	cityFirstLetter: "B"
+}, {
+	cityName: "巴东",
+	citySpell: "BADONG",
+	"code": "PDG",
+	"countryCode": "ID",
+	"countryName": "印度尼西亚",
+	cityFirstLetter: "B"
+}, {
+	cityName: "布卢明顿 诺马尔",
+	citySpell: "BULUMINGDUNNUOMAER",
+	"code": "BMI",
+	"countryCode": "US",
+	"countryName": "美国",
+	cityFirstLetter: "B"
+}, {
+	cityName: "布罗克维尔",
+	citySpell: "BULUOKEWEIER",
+	"code": "XBR",
+	"countryCode": "CA",
+	"countryName": "加拿大",
+	cityFirstLetter: "B"
+}, {
+	cityName: "巴门达",
+	citySpell: "BAMENDA",
+	"code": "BPC",
+	"countryCode": "CM",
+	"countryName": "喀麦隆",
+	cityFirstLetter: "B"
+}, {
+	cityName: "贝尼",
+	citySpell: "BEINI",
+	"code": "BNC",
+	"countryCode": "CD",
+	"countryName": "刚果民主共和国",
+	cityFirstLetter: "B"
+}, {
+	cityName: "巴夫洛德",
+	citySpell: "BAFULUODE",
+	"code": "PWQ",
+	"countryCode": "KZ",
+	"countryName": "哈萨克斯坦",
+	cityFirstLetter: "B"
+}, {
+	cityName: "班珠尔",
+	citySpell: "BANZHUER",
+	"code": "BJL",
+	"countryCode": "GM",
+	"countryName": "冈比亚",
+	cityFirstLetter: "B"
+}, {
+	cityName: "波特兰(俄勒冈州)",
+	citySpell: "BOTELAN",
+	"code": "PDX",
+	"countryCode": "US",
+	"countryName": "美国",
+	cityFirstLetter: "B"
+}, {
+	cityName: "鲍灵格林",
+	citySpell: "BAOLINGGELIN",
+	"code": "BWG",
+	"countryCode": "US",
+	"countryName": "美国",
+	cityFirstLetter: "B"
+}, {
+	cityName: "伯明翰",
+	citySpell: "BOMINGHAN",
+	"code": "BHX",
+	"countryCode": "GB",
+	"countryName": "英国",
+	cityFirstLetter: "B"
+}, {
+	cityName: "贝沙尔",
+	citySpell: "BEISHAER",
+	"code": "CBH",
+	"countryCode": "DZ",
+	"countryName": "阿尔及利亚",
+	cityFirstLetter: "B"
+}, {
+	cityName: "拜塔蒂",
+	citySpell: "BAITADI",
+	"code": "BIT",
+	"countryCode": "NP",
+	"countryName": "尼泊尔",
+	cityFirstLetter: "B"
+}, {
+	cityName: "巴里奥斯港",
+	citySpell: "BALIAOSIGANG",
+	"code": "PBR",
+	"countryCode": "GT",
+	"countryName": "危地马拉",
+	cityFirstLetter: "B"
+}, {
+	cityName: "巴亚莫",
+	citySpell: "BAYAMO",
+	"code": "BYM",
+	"countryCode": "CU",
+	"countryName": "古巴",
+	cityFirstLetter: "B"
+}, {
+	cityName: "波索",
+	citySpell: "BOSUO",
+	"code": "PSJ",
+	"countryCode": "ID",
+	"countryName": "印度尼西亚",
+	cityFirstLetter: "B"
+}, {
+	cityName: "拜林",
+	citySpell: "BAILIN",
+	"code": "PAI",
+	"countryCode": "KH",
+	"countryName": "柬埔寨",
+	cityFirstLetter: "B"
+}, {
+	cityName: "伯灵顿(佛蒙特州)",
+	citySpell: "BOLINGDUN",
+	"code": "BTV",
+	"countryCode": "US",
+	"countryName": "美国",
+	cityFirstLetter: "B"
+}, {
+	cityName: "贝克斯菲尔德",
+	citySpell: "BEIKESIFEIERDE",
+	"code": "BFL",
+	"countryCode": "US",
+	"countryName": "美国",
+	cityFirstLetter: "B"
+}, {
+	cityName: "伯明翰",
+	citySpell: "BOMINGHAN",
+	"code": "BHM",
+	"countryCode": "US",
+	"countryName": "美国",
+	cityFirstLetter: "B"
+}, {
+	cityName: "布卢菲尔德",
+	citySpell: "BULUFEIERDE",
+	"code": "BLF",
+	"countryCode": "US",
+	"countryName": "美国",
+	cityFirstLetter: "B"
+}, {
+	cityName: "波来古",
+	citySpell: "BOLAIGU",
+	"code": "PXU",
+	"countryCode": "VN",
+	"countryName": "越南",
+	cityFirstLetter: "B"
+}, {
+	cityName: "布拉茨克",
+	citySpell: "BULACIKE",
+	"code": "BTK",
+	"countryCode": "RU",
+	"countryName": "俄罗斯",
+	cityFirstLetter: "B"
+}, {
+	cityName: "巴拉那",
+	citySpell: "BALANA",
+	"code": "PRA",
+	"countryCode": "AR",
+	"countryName": "阿根廷",
+	cityFirstLetter: "B"
+}, {
+	cityName: "贝尔莫潘",
+	citySpell: "BEIERMOPAN",
+	"code": "BCV",
+	"countryCode": "BZ",
+	"countryName": "伯利兹",
+	cityFirstLetter: "B"
+}, {
+	cityName: "博冈代",
+	citySpell: "BOGANGDAI",
+	"code": "XBG",
+	"countryCode": "BF",
+	"countryName": "布基纳法索",
+	cityFirstLetter: "B"
+}, {
+	cityName: "八户",
+	citySpell: "BAHU",
+	"code": "HHE",
+	"countryCode": "JP",
+	"countryName": "日本",
+	cityFirstLetter: "B"
+}, {
+	cityName: "巴罗拉伊泰",
+	citySpell: "BALUOLAYITAI",
+	"code": "RRI",
+	"countryCode": "SB",
+	"countryName": "所罗门群岛",
+	cityFirstLetter: "B"
+}, {
+	cityName: "贝基利",
+	citySpell: "BEIJILI",
+	"code": "OVA",
+	"countryCode": "MG",
+	"countryName": "马达加斯加",
+	cityFirstLetter: "B"
+}, {
+	cityName: "贝尼迈拉勒",
+	citySpell: "BEINIMAILALE",
+	"code": "BEM",
+	"countryCode": "MA",
+	"countryName": "摩洛哥",
+	cityFirstLetter: "B"
+}, {
+	cityName: "巴马加",
+	citySpell: "BAMAJIA",
+	"code": "ABM",
+	"countryCode": "AU",
+	"countryName": "澳大利亚",
+	cityFirstLetter: "B"
+}, {
+	cityName: "邦美蜀",
+	citySpell: "BANGMEISHU",
+	"code": "BMV",
+	"countryCode": "VN",
+	"countryName": "越南",
+	cityFirstLetter: "B"
+}, {
+	cityName: "贝尔热拉克",
+	citySpell: "BEIERRELAKE",
+	"code": "EGC",
+	"countryCode": "FR",
+	"countryName": "法国",
+	cityFirstLetter: "B"
+}, {
+	cityName: "比灵斯",
+	citySpell: "BILINGSI",
+	"code": "BIL",
+	"countryCode": "US",
+	"countryName": "美国",
+	cityFirstLetter: "B"
+}, {
+	cityName: "巴格达",
+	citySpell: "BAGEDA",
+	"code": "BGW",
+	"countryCode": "IQ",
+	"countryName": "伊拉克",
+	cityFirstLetter: "B"
+}, {
+	cityName: "贝尔维尔",
+	citySpell: "BEIERWEIER",
+	"code": "BLV",
+	"countryCode": "US",
+	"countryName": "美国",
+	cityFirstLetter: "B"
+}, {
+	cityName: "贝德福德",
+	citySpell: "BEIDEFUDE",
+	"code": "BED",
+	"countryCode": "US",
+	"countryName": "美国",
+	cityFirstLetter: "B"
+}, {
+	cityName: "巴利莫",
+	citySpell: "BALIMO",
+	"code": "OPU",
+	"countryCode": "PG",
+	"countryName": "巴布亚新几内亚",
+	cityFirstLetter: "B"
+}, {
+	cityName: "波尔格拉",
+	citySpell: "BOERGELA",
+	"code": "RGE",
+	"countryCode": "PG",
+	"countryName": "巴布亚新几内亚",
+	cityFirstLetter: "B"
+}, {
+	cityName: "奔巴",
+	citySpell: "BENBA",
+	"code": "PMA",
+	"countryCode": "TZ",
+	"countryName": "坦桑尼亚",
+	cityFirstLetter: "B"
+}, {
+	cityName: "波尔图",
+	citySpell: "BOERTU",
+	"code": "OPO",
+	"countryCode": "PT",
+	"countryName": "葡萄牙",
+	cityFirstLetter: "B"
+}, {
+	cityName: "布劳恩斯魏克",
+	citySpell: "BULAOENSIWEIKE",
+	"code": "SSI",
+	"countryCode": "US",
+	"countryName": "美国",
+	cityFirstLetter: "B"
+}, {
+	cityName: "博沙索",
+	citySpell: "BOSHASUO",
+	"code": "BSA",
+	"countryCode": "SO",
+	"countryName": "索马里",
+	cityFirstLetter: "B"
+}, {
+	cityName: "巴统",
+	citySpell: "BATONG",
+	"code": "BUS",
+	"countryCode": "GE",
+	"countryName": "格鲁吉亚",
+	cityFirstLetter: "B"
+}, {
+	cityName: "俾斯麦",
+	citySpell: "BISIMAI",
+	"code": "BIS",
+	"countryCode": "US",
+	"countryName": "美国",
+	cityFirstLetter: "B"
+}, {
+	cityName: "布拉加",
+	citySpell: "BULAJIA",
+	"code": "BGZ",
+	"countryCode": "PT",
+	"countryName": "葡萄牙",
+	cityFirstLetter: "B"
+}, {
+	cityName: "波因特贝克",
+	citySpell: "BOYINTEBEIKE",
+	"code": "KPB",
+	"countryCode": "US",
+	"countryName": "美国",
+	cityFirstLetter: "B"
+}, {
+	cityName: "巴港",
+	citySpell: "BAGANG",
+	"code": "BHB",
+	"countryCode": "US",
+	"countryName": "美国",
+	cityFirstLetter: "B"
+}, {
+	cityName: "比弗",
+	citySpell: "BIFU",
+	"code": "WBQ",
+	"countryCode": "US",
+	"countryName": "美国",
+	cityFirstLetter: "B"
+}, {
+	cityName: "巴拉莱",
+	citySpell: "BALALAI",
+	"code": "BAS",
+	"countryCode": "SB",
+	"countryName": "所罗门群岛",
+	cityFirstLetter: "B"
+}, {
+	cityName: "比塔姆",
+	citySpell: "BITAMU",
+	"code": "BMM",
+	"countryCode": "GA",
+	"countryName": "加蓬",
+	cityFirstLetter: "B"
+}, {
+	cityName: "贝尔格莱德",
+	citySpell: "BEIERGELAIDE",
+	"code": "BEG",
+	"countryCode": "RS",
+	"countryName": "塞尔维亚",
+	cityFirstLetter: "B"
+}, {
+	cityName: "巴库马",
+	citySpell: "BAKUMA",
+	"code": "BMF",
+	"countryCode": "CF",
+	"countryName": "中非",
+	cityFirstLetter: "B"
+}, {
+	cityName: "贝尔热港",
+	citySpell: "BEIERREGANG",
+	"code": "WPB",
+	"countryCode": "MG",
+	"countryName": "马达加斯加",
+	cityFirstLetter: "B"
+}, {
+	cityName: "伯绍尔",
+	citySpell: "BOSHAOER",
+	"code": "PEX",
+	"countryCode": "RU",
+	"countryName": "俄罗斯",
+	cityFirstLetter: "B"
+}, {
+	cityName: "布鲁内特",
+	citySpell: "BULUNEITE",
+	"code": "BTD",
+	"countryCode": "AU",
+	"countryName": "澳大利亚",
+	cityFirstLetter: "B"
+}, {
+	cityName: "贝德福德",
+	citySpell: "BEIDEFUDE",
+	"code": "BFR",
+	"countryCode": "US",
+	"countryName": "美国",
+	cityFirstLetter: "B"
+}, {
+	cityName: "比格克里克",
+	citySpell: "BIGEKELIKE",
+	"code": "BGK",
+	"countryCode": "BZ",
+	"countryName": "伯利兹",
+	cityFirstLetter: "B"
+}, {
+	cityName: "布尼亚",
+	citySpell: "BUNIYA",
+	"code": "BUX",
+	"countryCode": "CD",
+	"countryName": "刚果民主共和国",
+	cityFirstLetter: "B"
+}, {
+	cityName: "布尔黑特市",
+	citySpell: "BUERHEITESHI",
+	"code": "IFP",
+	"countryCode": "US",
+	"countryName": "美国",
+	cityFirstLetter: "B"
+}, {
+	cityName: "波由特",
+	citySpell: "BOYOUTE",
+	"code": "BTM",
+	"countryCode": "US",
+	"countryName": "美国",
+	cityFirstLetter: "B"
+}, {
+	cityName: "贝洛奥里藏特",
+	citySpell: "BEILUOAOLIZANGTE",
+	"code": "BHZ",
+	"countryCode": "BR",
+	"countryName": "巴西",
+	cityFirstLetter: "B"
+}, {
+	cityName: "包",
+	citySpell: "BAO",
+	"code": "PAU",
+	"countryCode": "MM",
+	"countryName": "缅甸",
+	cityFirstLetter: "B"
+}, {
+	cityName: "别廖佐沃",
+	citySpell: "BIELIAOZUOWO",
+	"code": "EZV",
+	"countryCode": "RU",
+	"countryName": "俄罗斯",
+	cityFirstLetter: "B"
+}, {
+	cityName: "巴热",
+	citySpell: "BARE",
+	"code": "BGX",
+	"countryCode": "BR",
+	"countryName": "巴西",
+	cityFirstLetter: "B"
+}, {
+	cityName: "巴图里",
+	citySpell: "BATULI",
+	"code": "OUR",
+	"countryCode": "CM",
+	"countryName": "喀麦隆",
+	cityFirstLetter: "B"
+}, {
+	cityName: "鲍曼",
+	citySpell: "BAOMAN",
+	"code": "BWM",
+	"countryCode": "US",
+	"countryName": "美国",
+	cityFirstLetter: "B"
+}, {
+	cityName: "博库",
+	citySpell: "BOKU",
+	"code": "BOQ",
+	"countryCode": "PG",
+	"countryName": "巴布亚新几内亚",
+	cityFirstLetter: "B"
+}, {
+	cityName: "布莱斯",
+	citySpell: "BULAISI",
+	"code": "BLH",
+	"countryCode": "US",
+	"countryName": "美国",
+	cityFirstLetter: "B"
+}, {
+	cityName: "巴林",
+	citySpell: "BALIN",
+	"code": "BAH",
+	"countryCode": "BH",
+	"countryName": "巴林国",
+	cityFirstLetter: "B"
+}, {
+	cityName: "拜罗伊特",
+	citySpell: "BAILUOYITE",
+	"code": "BYU",
+	"countryCode": "DE",
+	"countryName": "德国",
+	cityFirstLetter: "B"
+}, {
+	cityName: "巴基西梅托",
+	citySpell: "BAJIXIMEITUO",
+	"code": "BRM",
+	"countryCode": "VE",
+	"countryName": "委内瑞拉",
+	cityFirstLetter: "B"
+}, {
+	cityName: "布奥尔",
+	citySpell: "BUAOER",
+	"code": "UOL",
+	"countryCode": "ID",
+	"countryName": "印度尼西亚",
+	cityFirstLetter: "B"
+}, {
+	cityName: "柏培拉",
+	citySpell: "BAIPEILA",
+	"code": "BBO",
+	"countryCode": "SO",
+	"countryName": "索马里",
+	cityFirstLetter: "B"
+}, {
+	cityName: "巴拉米塔",
+	citySpell: "BALAMITA",
+	"code": "BMJ",
+	"countryCode": "GY",
+	"countryName": "圭亚那",
+	cityFirstLetter: "B"
+}, {
+	cityName: "巴都利金",
+	citySpell: "BADULIJIN",
+	"code": "BTW",
+	"countryCode": "ID",
+	"countryName": "印度尼西亚",
+	cityFirstLetter: "B"
+}, {
+	cityName: "布卢卡尼昂",
+	citySpell: "BULUKANIANG",
+	"code": "BLU",
+	"countryCode": "US",
+	"countryName": "美国",
+	cityFirstLetter: "B"
+}, {
+	cityName: "布纳",
+	citySpell: "BUNA",
+	"code": "BQO",
+	"countryCode": "CI",
+	"countryName": "科特迪瓦",
+	cityFirstLetter: "B"
+}, {
+	cityName: "奔萨",
+	citySpell: "BENSA",
+	"code": "PEZ",
+	"countryCode": "RU",
+	"countryName": "俄罗斯",
+	cityFirstLetter: "B"
+}, {
+	cityName: "博帕尔",
+	citySpell: "BOPAER",
+	"code": "BHO",
+	"countryCode": "IN",
+	"countryName": "印度",
+	cityFirstLetter: "B"
+}, {
+	cityName: "布赖米",
+	citySpell: "BULAIMI",
+	"code": "RMB",
+	"countryCode": "OM",
+	"countryName": "阿曼",
+	cityFirstLetter: "B"
+}, {
+	cityName: "巴卡尔丁",
+	citySpell: "BAKAERDING",
+	"code": "BCI",
+	"countryCode": "AU",
+	"countryName": "澳大利亚",
+	cityFirstLetter: "B"
+}, {
+	cityName: "邦达伯格",
+	citySpell: "BANGDABOGE",
+	"code": "BDB",
+	"countryCode": "AU",
+	"countryName": "澳大利亚",
+	cityFirstLetter: "B"
+}, {
+	cityName: "布赖达尔斯维克",
+	citySpell: "BULAIDAERSIWEIKE",
+	"code": "BXV",
+	"countryCode": "IS",
+	"countryName": "冰岛",
+	cityFirstLetter: "B"
+}, {
+	cityName: "白山",
+	citySpell: "BAISHAN",
+	"code": "WMO",
+	"countryCode": "US",
+	"countryName": "美国",
+	cityFirstLetter: "B"
+}, {
+	cityName: "比得哥什",
+	citySpell: "BIDEGESHEN",
+	"code": "BZG",
+	"countryCode": "PL",
+	"countryName": "波兰",
+	cityFirstLetter: "B"
+}, {
+	cityName: "巴纳伊巴",
+	citySpell: "BANAYIBA",
+	"code": "PHB",
+	"countryCode": "BR",
+	"countryName": "巴西",
+	cityFirstLetter: "B"
+}, {
+	cityName: "巴坦加福",
+	citySpell: "BATANJIAFU",
+	"code": "BTG",
+	"countryCode": "CF",
+	"countryName": "中非",
+	cityFirstLetter: "B"
+}, {
+	cityName: "布法罗",
+	citySpell: "BUFALUO",
+	"code": "BUF",
+	"countryCode": "US",
+	"countryName": "美国",
+	cityFirstLetter: "B"
+}, {
+	cityName: "布里亚",
+	citySpell: "BULIYA",
+	"code": "BIV",
+	"countryCode": "CF",
+	"countryName": "中非",
+	cityFirstLetter: "B"
+}, {
+	cityName: "巴斯蒂亚",
+	citySpell: "BASIDIYA",
+	"code": "BIA",
+	"countryCode": "FR",
+	"countryName": "法国",
+	cityFirstLetter: "B"
+}, {
+	cityName: "波韦尼尔",
+	citySpell: "BOWEINIER",
+	"code": "WPR",
+	"countryCode": "CL",
+	"countryName": "智利",
+	cityFirstLetter: "B"
+}, {
+	cityName: "布兰森",
+	citySpell: "BULANSEN",
+	"code": "BKG",
+	"countryCode": "US",
+	"countryName": "美国",
+	cityFirstLetter: "B"
+}, {
+	cityName: "波萨里卡",
+	citySpell: "BOSALIKA",
+	"code": "PAZ",
+	"countryCode": "MX",
+	"countryName": "墨西哥",
+	cityFirstLetter: "B"
+}, {
+	cityName: "比萨",
+	citySpell: "BISA",
+	"code": "PSA",
+	"countryCode": "IT",
+	"countryName": "意大利",
+	cityFirstLetter: "B"
+}, {
+	cityName: "贝图",
+	citySpell: "BEITU",
+	"code": "BTB",
+	"countryCode": "CG",
+	"countryName": "刚果",
+	cityFirstLetter: "B"
+}, {
+	cityName: "波哥大",
+	citySpell: "BOGEDA",
+	"code": "BOG",
+	"countryCode": "CO",
+	"countryName": "哥伦比亚",
+	cityFirstLetter: "B"
+}, {
+	cityName: "班顿杜",
+	citySpell: "BANDUNDU",
+	"code": "FDU",
+	"countryCode": "CD",
+	"countryName": "刚果民主共和国",
+	cityFirstLetter: "B"
+}, {
+	cityName: "巴富萨姆",
+	citySpell: "BAFUSAMU",
+	"code": "BFX",
+	"countryCode": "CM",
+	"countryName": "喀麦隆",
+	cityFirstLetter: "B"
+}, {
+	cityName: "芭提雅",
+	citySpell: "BATIYA",
+	"code": "UTP",
+	"countryCode": "TH",
+	"countryName": "泰国",
+	cityFirstLetter: "B"
+}, {
+	cityName: "贝拉贾",
+	citySpell: "BEILAJIA",
+	"code": "BLG",
+	"countryCode": "MY",
+	"countryName": "马来西亚",
+	cityFirstLetter: "B"
+}, {
+	cityName: "巴罗岛",
+	citySpell: "BALUODAO",
+	"code": "BWB",
+	"countryCode": "AU",
+	"countryName": "澳大利亚",
+	cityFirstLetter: "B"
+}, {
+	cityName: "巴尔马塞达",
+	citySpell: "BAERMASAIDA",
+	"code": "BBA",
+	"countryCode": "CL",
+	"countryName": "智利",
+	cityFirstLetter: "B"
+}, {
+	cityName: "巴特尔克里克",
+	citySpell: "BATEERKELIKE",
+	"code": "BTL",
+	"countryCode": "US",
+	"countryName": "美国",
+	cityFirstLetter: "B"
+}, {
+	cityName: "布拉德福德",
+	citySpell: "BULADEFUDE",
+	"code": "BFD",
+	"countryCode": "US",
+	"countryName": "美国",
+	cityFirstLetter: "B"
+}, {
+	cityName: "布卢菲尔兹",
+	citySpell: "BULUFEIERZI",
+	"code": "BEF",
+	"countryCode": "NI",
+	"countryName": "尼加拉瓜",
+	cityFirstLetter: "B"
+}, {
+	cityName: "巴拉－杜加萨",
+	citySpell: "BALA－DUJIASA",
+	"code": "BPG",
+	"countryCode": "BR",
+	"countryName": "巴西",
+	cityFirstLetter: "B"
+}, {
+	cityName: "博尔加峡湾",
+	citySpell: "BOERJIAXIAWAN",
+	"code": "BGJ",
+	"countryCode": "IS",
+	"countryName": "冰岛",
+	cityFirstLetter: "B"
+}, {
+	cityName: "巴万",
+	citySpell: "BAWAN",
+	"code": "BWJ",
+	"countryCode": "PG",
+	"countryName": "巴布亚新几内亚",
+	cityFirstLetter: "B"
+}, {
+	cityName: "巴莱尔",
+	citySpell: "BALAIER",
+	"code": "BQA",
+	"countryCode": "PH",
+	"countryName": "菲律宾",
+	cityFirstLetter: "B"
+}, {
+	cityName: "巴塔盖",
+	citySpell: "BATAGAI",
+	"code": "BQJ",
+	"countryCode": "RU",
+	"countryName": "俄罗斯",
+	cityFirstLetter: "B"
+}, {
+	cityName: "比亚埃尔莫萨",
+	citySpell: "BIYAAIERMOSA",
+	"code": "VSA",
+	"countryCode": "MX",
+	"countryName": "墨西哥",
+	cityFirstLetter: "B"
+}, {
+	cityName: "巴克乌",
+	citySpell: "BAKEWU",
+	"code": "BCM",
+	"countryCode": "RO",
+	"countryName": "罗马尼亚",
+	cityFirstLetter: "B"
+}, {
+	cityName: "巴拉那瓦伊",
+	citySpell: "BALANAWAYI",
+	"code": "PVI",
+	"countryCode": "BR",
+	"countryName": "巴西",
+	cityFirstLetter: "B"
+}, {
+	cityName: "比马",
+	citySpell: "BIMA",
+	"code": "BMU",
+	"countryCode": "ID",
+	"countryName": "印度尼西亚",
+	cityFirstLetter: "B"
+}, {
+	cityName: "博伊古岛",
+	citySpell: "BOYIGUDAO",
+	"code": "GIC",
+	"countryCode": "AU",
+	"countryName": "澳大利亚",
+	cityFirstLetter: "B"
+}, {
+	cityName: "贝莱比",
+	citySpell: "BEILAIBI",
+	"code": "BBV",
+	"countryCode": "CI",
+	"countryName": "科特迪瓦",
+	cityFirstLetter: "B"
+}, {
+	cityName: "比勒陀利亚",
+	citySpell: "BILETUOLIYA",
+	"code": "PRY",
+	"countryCode": "ZA",
+	"countryName": "南非",
+	cityFirstLetter: "B"
+}, {
+	cityName: "贝伊德",
+	citySpell: "BEIYIDE",
+	"code": "EBH",
+	"countryCode": "DZ",
+	"countryName": "阿尔及利亚",
+	cityFirstLetter: "B"
+}, {
+	cityName: "巴克利当斯",
+	citySpell: "BAKELIDANGSI",
+	"code": "BKP",
+	"countryCode": "AU",
+	"countryName": "澳大利亚",
+	cityFirstLetter: "B"
+}, {
+	cityName: "波利亚尔尼",
+	citySpell: "BOLIYAERNI",
+	"code": "PYJ",
+	"countryCode": "RU",
+	"countryName": "俄罗斯",
+	cityFirstLetter: "B"
+}, {
+	cityName: "伯尔尼",
+	citySpell: "BOERNI",
+	"code": "BRN",
+	"countryCode": "CH",
+	"countryName": "瑞士",
+	cityFirstLetter: "B"
+}, {
+	cityName: "北干巴鲁",
+	citySpell: "BEIGANBALU",
+	"code": "PKU",
+	"countryCode": "ID",
+	"countryName": "印度尼西亚",
+	cityFirstLetter: "B"
+}, {
+	cityName: "保拉图克",
+	citySpell: "BAOLATUKE",
+	"code": "YPC",
+	"countryCode": "CA",
+	"countryName": "加拿大",
+	cityFirstLetter: "B"
+}, {
+	cityName: "布罗谢",
+	citySpell: "BULUOXIE",
+	"code": "YBT",
+	"countryCode": "CA",
+	"countryName": "加拿大",
+	cityFirstLetter: "B"
+}, {
+	cityName: "本努",
+	citySpell: "BENNU",
+	"code": "BNP",
+	"countryCode": "PK",
+	"countryName": "巴基斯坦",
+	cityFirstLetter: "B"
+}, {
+	cityName: "巴科洛德",
+	citySpell: "BAKELUODE",
+	"code": "BCD",
+	"countryCode": "PH",
+	"countryName": "菲律宾",
+	cityFirstLetter: "B"
+}, {
+	cityName: "北极村",
+	citySpell: "BEIJICUN",
+	"code": "ARC",
+	"countryCode": "US",
+	"countryName": "美国",
+	cityFirstLetter: "B"
+}, {
+	cityName: "巴特岛",
+	citySpell: "BATEDAO",
+	"code": "BTI",
+	"countryCode": "US",
+	"countryName": "美国",
+	cityFirstLetter: "B"
+}, {
+	cityName: "布哈拉",
+	citySpell: "BUHALA",
+	"code": "BHK",
+	"countryCode": "UZ",
+	"countryName": "乌兹别克斯坦",
+	cityFirstLetter: "B"
+}, {
+	cityName: "巴西利亚",
+	citySpell: "BAXILIYA",
+	"code": "BSB",
+	"countryCode": "BR",
+	"countryName": "巴西",
+	cityFirstLetter: "B"
+}, {
+	cityName: "巴赫达尔",
+	citySpell: "BAHEDAER",
+	"code": "BJR",
+	"countryCode": "ET",
+	"countryName": "埃塞俄比亚",
+	cityFirstLetter: "B"
+}, {
+	cityName: "布塞阿尔",
+	citySpell: "BUSAIAER",
+	"code": "BUZ",
+	"countryCode": "IR",
+	"countryName": "伊朗",
+	cityFirstLetter: "B"
+}, {
+	cityName: "布莱克普尔",
+	citySpell: "BULAIKEPUER",
+	"code": "BLK",
+	"countryCode": "GB",
+	"countryName": "英国",
+	cityFirstLetter: "B"
+}, {
+	cityName: "北九州",
+	citySpell: "BEIJIUZHOU",
+	"code": "KKJ",
+	"countryCode": "JP",
+	"countryName": "日本",
+	cityFirstLetter: "B"
+}, {
+	cityName: "伯丁",
+	citySpell: "BODING",
+	"code": "BDN",
+	"countryCode": "PK",
+	"countryName": "巴基斯坦",
+	cityFirstLetter: "B"
+}, {
+	cityName: "布莱克利岛",
+	citySpell: "BULAIKELIDAO",
+	"code": "BYW",
+	"countryCode": "US",
+	"countryName": "美国",
+	cityFirstLetter: "B"
+}, {
+	cityName: "邦德里",
+	citySpell: "BANGDELI",
+	"code": "BYA",
+	"countryCode": "US",
+	"countryName": "美国",
+	cityFirstLetter: "B"
+}, {
+	cityName: "巴兹敦",
+	citySpell: "BAZIDUN",
+	"code": "BRY",
+	"countryCode": "US",
+	"countryName": "美国",
+	cityFirstLetter: "B"
+}, {
+	cityName: "巴戈特维尔",
+	citySpell: "BAGETEWEIER",
+	"code": "YBG",
+	"countryCode": "CA",
+	"countryName": "加拿大",
+	cityFirstLetter: "B"
+}, {
+	cityName: "巴利那",
+	citySpell: "BALINA",
+	"code": "BNK",
+	"countryCode": "AU",
+	"countryName": "澳大利亚",
+	cityFirstLetter: "B"
+}, {
+	cityName: "布因",
+	citySpell: "BUYIN",
+	"code": "UBI",
+	"countryCode": "PG",
+	"countryName": "巴布亚新几内亚",
+	cityFirstLetter: "B"
+}, {
+	cityName: "邦杜库",
+	citySpell: "BANGDUKU",
+	"code": "BDK",
+	"countryCode": "CI",
+	"countryName": "科特迪瓦",
+	cityFirstLetter: "B"
+}, {
+	cityName: "贝蒂乌基",
+	citySpell: "BEIDIWUJI",
+	"code": "BKU",
+	"countryCode": "MG",
+	"countryName": "马达加斯加",
+	cityFirstLetter: "B"
+}, {
+	cityName: "博博迪乌拉索",
+	citySpell: "BOBODIWULASUO",
+	"code": "BOY",
+	"countryCode": "BF",
+	"countryName": "布基纳法索",
+	cityFirstLetter: "B"
+}, {
+	cityName: "巴士拉",
+	citySpell: "BASHILA",
+	"code": "BSR",
+	"countryCode": "IQ",
+	"countryName": "伊拉克",
+	cityFirstLetter: "B"
+}, {
+	cityName: "彼得斯堡",
+	citySpell: "BIDESIBAO",
+	"code": "PSG",
+	"countryCode": "US",
+	"countryName": "美国",
+	cityFirstLetter: "B"
+}, {
+	cityName: "拜蒂克洛",
+	citySpell: "BAIDIKELUO",
+	"code": "BTC",
+	"countryCode": "LK",
+	"countryName": "斯里兰卡",
+	cityFirstLetter: "B"
+}, {
+	cityName: "博季诺德",
+	citySpell: "BOJINUODE",
+	"code": "BJB",
+	"countryCode": "IR",
+	"countryName": "伊朗",
+	cityFirstLetter: "B"
+}, {
+	cityName: "Bearskin Lake",
+	citySpell: "BEARSKINLAKE",
+	"code": "XBE",
+	"countryCode": "CA",
+	"countryName": "加拿大",
+	cityFirstLetter: "B"
+}, {
+	cityName: "巴拉",
+	citySpell: "BALA",
+	"code": "BQQ",
+	"countryCode": "BR",
+	"countryName": "巴西",
+	cityFirstLetter: "B"
+}, {
+	cityName: "本顿港",
+	citySpell: "BENDUNGANG",
+	"code": "BEH",
+	"countryCode": "US",
+	"countryName": "美国",
+	cityFirstLetter: "B"
+}, {
+	cityName: "本斯巴赫",
+	citySpell: "BENSIBAHE",
+	"code": "BSP",
+	"countryCode": "PG",
+	"countryName": "巴布亚新几内亚",
+	cityFirstLetter: "B"
+}, {
+	cityName: "本森",
+	citySpell: "BENSEN",
+	"code": "BBB",
+	"countryCode": "US",
+	"countryName": "美国",
+	cityFirstLetter: "B"
+}, {
+	cityName: "比斯利格",
+	citySpell: "BISILIGE",
+	"code": "BPH",
+	"countryCode": "PH",
+	"countryName": "菲律宾",
+	cityFirstLetter: "B"
+}, {
+	cityName: "巴里纳斯",
+	citySpell: "BALINASI",
+	"code": "BNS",
+	"countryCode": "VE",
+	"countryName": "委内瑞拉",
+	cityFirstLetter: "B"
+}, {
+	cityName: "比劳",
+	citySpell: "BILAO",
+	"code": "IRO",
+	"countryCode": "CF",
+	"countryName": "中非",
+	cityFirstLetter: "B"
+}, {
+	cityName: "巴兰科米纳斯",
+	citySpell: "BALANKEMINASI",
+	"code": "NBB",
+	"countryCode": "CO",
+	"countryName": "哥伦比亚",
+	cityFirstLetter: "B"
+}, {
+	cityName: "波尔多",
+	citySpell: "BOERDUO",
+	"code": "BOD",
+	"countryCode": "FR",
+	"countryName": "法国",
+	cityFirstLetter: "B"
+}, {
+	cityName: "巴特那",
+	citySpell: "BATENA",
+	"code": "PAT",
+	"countryCode": "IN",
+	"countryName": "印度",
+	cityFirstLetter: "B"
+}, {
+	cityName: "伯恩霍尔姆",
+	citySpell: "BOENHUOERMU",
+	"code": "RNN",
+	"countryCode": "DK",
+	"countryName": "丹麦",
+	cityFirstLetter: "B"
+}, {
+	cityName: "博恩代",
+	citySpell: "BOENDAI",
+	"code": "BNB",
+	"countryCode": "CD",
+	"countryName": "刚果民主共和国",
+	cityFirstLetter: "B"
+}, {
+	cityName: "本吉",
+	citySpell: "BENJI",
+	"code": "BOE",
+	"countryCode": "CG",
+	"countryName": "刚果",
+	cityFirstLetter: "B"
+}, {
+	cityName: "波多黎各",
+	citySpell: "BODUOLIGE",
+	"code": "PUR",
+	"countryCode": "BO",
+	"countryName": "玻利维亚",
+	cityFirstLetter: "B"
+}, {
+	cityName: "布里奇波特",
+	citySpell: "BULIQIBOTE",
+	"code": "BDR",
+	"countryCode": "US",
+	"countryName": "美国",
+	cityFirstLetter: "B"
+}, {
+	cityName: "布雷斯特",
+	citySpell: "BULEISITE",
+	"code": "BES",
+	"countryCode": "FR",
+	"countryName": "法国",
+	cityFirstLetter: "B"
+}, {
+	cityName: "包鲁",
+	citySpell: "BAOLU",
+	"code": "JTC",
+	"countryCode": "BR",
+	"countryName": "巴西",
+	cityFirstLetter: "B"
+}, {
+	cityName: "波城",
+	citySpell: "BOCHENG",
+	"code": "PUF",
+	"countryCode": "FR",
+	"countryName": "法国",
+	cityFirstLetter: "B"
+}, {
+	cityName: "贝弗利",
+	citySpell: "BEIFULI",
+	"code": "BVY",
+	"countryCode": "US",
+	"countryName": "美国",
+	cityFirstLetter: "B"
+}, {
+	cityName: "柏林",
+	citySpell: "BAILIN",
+	"code": "BML",
+	"countryCode": "US",
+	"countryName": "美国",
+	cityFirstLetter: "B"
+}, {
+	cityName: "巴贝罗斯",
+	citySpell: "BABEILUOSI",
+	"code": "BAZ",
+	"countryCode": "BR",
+	"countryName": "巴西",
+	cityFirstLetter: "B"
+}, {
+	cityName: "北克拉沃",
+	citySpell: "BEIKELAWO",
+	"code": "RAV",
+	"countryCode": "CO",
+	"countryName": "哥伦比亚",
+	cityFirstLetter: "B"
+}, {
+	cityName: "布尔萨",
+	citySpell: "BUERSA",
+	"code": "BTZ",
+	"countryCode": "TR",
+	"countryName": "土耳其",
+	cityFirstLetter: "B"
+}, {
+	cityName: "博奈尔",
+	citySpell: "BONAIER",
+	"code": "BON",
+	"countryCode": "BQ",
+	"countryName": "荷兰加勒比区",
+	cityFirstLetter: "B"
+}, {
+	cityName: "巴克拉",
+	citySpell: "BAKELA",
+	"code": "BKC",
+	"countryCode": "US",
+	"countryName": "美国",
+	cityFirstLetter: "B"
+}, {
+	cityName: "巴尔特",
+	citySpell: "BAERTE",
+	"code": "BBH",
+	"countryCode": "DE",
+	"countryName": "德国",
+	cityFirstLetter: "B"
+}, {
+	cityName: "布琼布拉",
+	citySpell: "BUQIONGBULA",
+	"code": "BJM",
+	"countryCode": "BI",
+	"countryName": "布隆迪",
+	cityFirstLetter: "B"
+}, {
+	cityName: "布鲁金斯(南达科他州)",
+	citySpell: "BULUJINSI",
+	"code": "BKX",
+	"countryCode": "US",
+	"countryName": "美国",
+	cityFirstLetter: "B"
+}, {
+	cityName: "比绍",
+	citySpell: "BISHAO",
+	"code": "OXB",
+	"countryCode": "GW",
+	"countryName": "几内亚比绍",
+	cityFirstLetter: "B"
+}, {
+	cityName: "巴拉-杜科尔",
+	citySpell: "BALA-DUKEER",
+	"code": "BDC",
+	"countryCode": "BR",
+	"countryName": "巴西",
+	cityFirstLetter: "B"
+}, {
+	cityName: "博亚卡港",
+	citySpell: "BOYAKAGANG",
+	"code": "PYA",
+	"countryCode": "CO",
+	"countryName": "哥伦比亚",
+	cityFirstLetter: "B"
+}, {
+	cityName: "布阿尔",
+	citySpell: "BUAER",
+	"code": "BOP",
+	"countryCode": "CF",
+	"countryName": "中非",
+	cityFirstLetter: "B"
+}, {
+	cityName: "班达奈拉",
+	citySpell: "BANDANAILA",
+	"code": "NDA",
+	"countryCode": "ID",
+	"countryName": "印度尼西亚",
+	cityFirstLetter: "B"
+}, {
+	cityName: "保护港",
+	citySpell: "BAOHUGANG",
+	"code": "PPV",
+	"countryCode": "US",
+	"countryName": "美国",
+	cityFirstLetter: "B"
+}, {
+	cityName: "鲍威尔河",
+	citySpell: "BAOWEIERHE",
+	"code": "YPW",
+	"countryCode": "CA",
+	"countryName": "加拿大",
+	cityFirstLetter: "B"
+}, {
+	cityName: "班吉",
+	citySpell: "BANJI",
+	"code": "BGF",
+	"countryCode": "CF",
+	"countryName": "中非",
+	cityFirstLetter: "B"
+}, {
+	cityName: "比尔詹德",
+	citySpell: "BIERZHANDE",
+	"code": "XBJ",
+	"countryCode": "IR",
+	"countryName": "伊朗",
+	cityFirstLetter: "B"
+}, {
+	cityName: "布利亚",
+	citySpell: "BULIYA",
+	"code": "BQL",
+	"countryCode": "AU",
+	"countryName": "澳大利亚",
+	cityFirstLetter: "B"
+}, {
+	cityName: "布莱克沃特",
+	citySpell: "BULAIKEWOTE",
+	"code": "BLT",
+	"countryCode": "AU",
+	"countryName": "澳大利亚",
+	cityFirstLetter: "B"
+}, {
+	cityName: "巴塔",
+	citySpell: "BATA",
+	"code": "BSG",
+	"countryCode": "GQ",
+	"countryName": "赤道几内亚",
+	cityFirstLetter: "B"
+}, {
+	cityName: "波因茨诺思兰丁",
+	citySpell: "BOYINCINUOSILANDING",
+	"code": "YNL",
+	"countryCode": "CA",
+	"countryName": "加拿大",
+	cityFirstLetter: "B"
+}, {
+	cityName: "贝灵厄姆",
+	citySpell: "BEILINGEMU",
+	"code": "BLI",
+	"countryCode": "US",
+	"countryName": "美国",
+	cityFirstLetter: "B"
+}, {
+	cityName: "巴里奥",
+	citySpell: "BALIAO",
+	"code": "BBN",
+	"countryCode": "MY",
+	"countryName": "马来西亚",
+	cityFirstLetter: "B"
+}, {
+	cityName: "贝雷纳",
+	citySpell: "BEILEINA",
+	"code": "BEA",
+	"countryCode": "PG",
+	"countryName": "巴布亚新几内亚",
+	cityFirstLetter: "B"
+}, {
+	cityName: "碧差汶",
+	citySpell: "BICHAWEN",
+	"code": "PHY",
+	"countryCode": "TH",
+	"countryName": "泰国",
+	cityFirstLetter: "B"
+}, {
+	cityName: "巴克拉兰",
+	citySpell: "BAKELALAN",
+	"code": "BKM",
+	"countryCode": "MY",
+	"countryName": "马来西亚",
+	cityFirstLetter: "B"
+}, {
+	cityName: "博兹曼",
+	citySpell: "BOZIMAN",
+	"code": "BZN",
+	"countryCode": "US",
+	"countryName": "美国",
+	cityFirstLetter: "B"
+}, {
+	cityName: "巴拉",
+	citySpell: "BALA",
+	"code": "BRR",
+	"countryCode": "GB",
+	"countryName": "英国",
+	cityFirstLetter: "B"
+}, {
+	cityName: "伯尔尼恩孔尼",
+	citySpell: "BOERNIENKONGNI",
+	"code": "BKN",
+	"countryCode": "TM",
+	"countryName": "土库曼斯坦",
+	cityFirstLetter: "B"
+}, {
+	cityName: "巴塞罗那",
+	citySpell: "BASAILUONA",
+	"code": "BLA",
+	"countryCode": "VE",
+	"countryName": "委内瑞拉",
+	cityFirstLetter: "B"
+}, {
+	cityName: "布卡拉曼加",
+	citySpell: "BUKALAMANJIA",
+	"code": "BGA",
+	"countryCode": "CO",
+	"countryName": "哥伦比亚",
+	cityFirstLetter: "B"
+}, {
+	cityName: "北茹阿泽鲁",
+	citySpell: "BEIRUAZELU",
+	"code": "JDO",
+	"countryCode": "BR",
+	"countryName": "巴西",
+	cityFirstLetter: "B"
+}, {
+	cityName: "布里斯托尔",
+	citySpell: "BULISITUOER",
+	"code": "BRS",
+	"countryCode": "GB",
+	"countryName": "英国",
+	cityFirstLetter: "B"
+}, {
+	cityName: "伯恩斯",
+	citySpell: "BOENSI",
+	"code": "BNO",
+	"countryCode": "US",
+	"countryName": "美国",
+	cityFirstLetter: "B"
+}, {
+	cityName: "巴雷拉斯",
+	citySpell: "BALEILASI",
+	"code": "BRA",
+	"countryCode": "BR",
+	"countryName": "巴西",
+	cityFirstLetter: "B"
+}, {
+	cityName: "博迪努穆",
+	citySpell: "BODINUMU",
+	"code": "BNM",
+	"countryCode": "PG",
+	"countryName": "巴布亚新几内亚",
+	cityFirstLetter: "B"
+}, {
+	cityName: "伯利兹城",
+	citySpell: "BOLIZICHENG",
+	"code": "BZE",
+	"countryCode": "BZ",
+	"countryName": "伯利兹",
+	cityFirstLetter: "B"
+}, {
+	cityName: "布里安斯克",
+	citySpell: "BULIANSIKE",
+	"code": "BZK",
+	"countryCode": "RU",
+	"countryName": "俄罗斯",
+	cityFirstLetter: "B"
+}, {
+	cityName: "白沙瓦",
+	citySpell: "BAISHAWA",
+	"code": "PEW",
+	"countryCode": "PK",
+	"countryName": "巴基斯坦",
+	cityFirstLetter: "B"
+}, {
+	cityName: "拜科努尔",
+	citySpell: "BAIKENUER",
+	"code": "BXY",
+	"countryCode": "KZ",
+	"countryName": "哈萨克斯坦",
+	cityFirstLetter: "B"
+}, {
+	cityName: "布雷默顿",
+	citySpell: "BULEIMODUN",
+	"code": "PWT",
+	"countryCode": "US",
+	"countryName": "美国",
+	cityFirstLetter: "B"
+}, {
+	cityName: "巴达霍斯",
+	citySpell: "BADAHUOSI",
+	"code": "BJZ",
+	"countryCode": "ES",
+	"countryName": "西班牙",
+	cityFirstLetter: "B"
+}, {
+	cityName: "贝岛",
+	citySpell: "BEIDAO",
+	"code": "NOS",
+	"countryCode": "MG",
+	"countryName": "马达加斯加",
+	cityFirstLetter: "B"
+}, {
+	cityName: "博尔",
+	citySpell: "BOER",
+	"code": "OTC",
+	"countryCode": "TD",
+	"countryName": "乍得",
+	cityFirstLetter: "B"
+}, {
+	cityName: "保罗阿方索",
+	citySpell: "BAOLUOAFANGSUO",
+	"code": "PAV",
+	"countryCode": "BR",
+	"countryName": "巴西",
+	cityFirstLetter: "B"
+}, {
+	cityName: "博纳旺蒂尔",
+	citySpell: "BONAWANGDIER",
+	"code": "YVB",
+	"countryCode": "CA",
+	"countryName": "加拿大",
+	cityFirstLetter: "B"
+}, {
+	cityName: "布尔萨",
+	citySpell: "BUERSA",
+	"code": "XBO",
+	"countryCode": "BF",
+	"countryName": "布基纳法索",
+	cityFirstLetter: "B"
+}, {
+	cityName: "巴尔维德",
+	citySpell: "BAERWEIDE",
+	"code": "VDE",
+	"countryCode": "ES",
+	"countryName": "西班牙",
+	cityFirstLetter: "B"
+}, {
+	cityName: "比亚鲁",
+	citySpell: "BIYALU",
+	"code": "BRP",
+	"countryCode": "PG",
+	"countryName": "巴布亚新几内亚",
+	cityFirstLetter: "B"
+}, {
+	cityName: "布里维拉加拉德",
+	citySpell: "BULIWEILAJIALADE",
+	"code": "BVE",
+	"countryCode": "FR",
+	"countryName": "法国",
+	cityFirstLetter: "B"
+}, {
+	cityName: "博福尔",
+	citySpell: "BOFUER",
+	"code": "BFT",
+	"countryCode": "US",
+	"countryName": "美国",
+	cityFirstLetter: "B"
+}, {
+	cityName: "博阿 维斯塔",
+	citySpell: "BOAWEISITA",
+	"code": "BVC",
+	"countryCode": "CV",
+	"countryName": "佛得角",
+	cityFirstLetter: "B"
+}, {
+	cityName: "别拉亚戈拉",
+	citySpell: "BIELAYAGELA",
+	"code": "BGN",
+	"countryCode": "RU",
+	"countryName": "俄罗斯",
+	cityFirstLetter: "B"
+}, {
+	cityName: "布尔格达",
+	citySpell: "BUERGEDA",
+	"code": "OCM",
+	"countryCode": "AU",
+	"countryName": "澳大利亚",
+	cityFirstLetter: "B"
+}, {
+	cityName: "布洛洛",
+	citySpell: "BULUOLUO",
+	"code": "BUL",
+	"countryCode": "PG",
+	"countryName": "巴布亚新几内亚",
+	cityFirstLetter: "B"
+}, {
+	cityName: "巴淡岛",
+	citySpell: "BADANDAO",
+	"code": "BTH",
+	"countryCode": "ID",
+	"countryName": "印度尼西亚",
+	cityFirstLetter: "B"
+}, {
+	cityName: "波基普希",
+	citySpell: "BOJIPUXI",
+	"code": "POU",
+	"countryCode": "US",
+	"countryName": "美国",
+	cityFirstLetter: "B"
+}, {
+	cityName: "本迪",
+	citySpell: "BENDI",
+	"code": "BNT",
+	"countryCode": "PG",
+	"countryName": "巴布亚新几内亚",
+	cityFirstLetter: "B"
+}, {
+	cityName: "贝瑟尔",
+	citySpell: "BEISEER",
+	"code": "BET",
+	"countryCode": "US",
+	"countryName": "美国",
+	cityFirstLetter: "B"
+}, {
+	cityName: "伯米吉",
+	citySpell: "BOMIJI",
+	"code": "BJI",
+	"countryCode": "US",
+	"countryName": "美国",
+	cityFirstLetter: "B"
+}, {
+	cityName: "巴亚尔塔港",
+	citySpell: "BAYAERTAGANG",
+	"code": "PVR",
+	"countryCode": "MX",
+	"countryName": "墨西哥",
+	cityFirstLetter: "B"
+}, {
+	cityName: "巴马科",
+	citySpell: "BAMAKE",
+	"code": "BKO",
+	"countryCode": "ML",
+	"countryName": "马里",
+	cityFirstLetter: "B"
+}, {
+	cityName: "巴特纳",
+	citySpell: "BATENA",
+	"code": "BLJ",
+	"countryCode": "DZ",
+	"countryName": "阿尔及利亚",
+	cityFirstLetter: "B"
+}, {
+	cityName: "波尔吉.班.莫吉塔尔",
+	citySpell: "BOERJI.BAN.MOJITAER",
+	"code": "BMW",
+	"countryCode": "DZ",
+	"countryName": "阿尔及利亚",
+	cityFirstLetter: "B"
+}, {
+	cityName: "贝凡德里亚纳",
+	citySpell: "BEIFANDELIYANA",
+	"code": "WBD",
+	"countryCode": "MG",
+	"countryName": "马达加斯加",
+	cityFirstLetter: "B"
+}, {
+	cityName: "波帕扬",
+	citySpell: "BOPAYANG",
+	"code": "PPN",
+	"countryCode": "CO",
+	"countryName": "哥伦比亚",
+	cityFirstLetter: "B"
+}, {
+	cityName: "巴拉科阿",
+	citySpell: "BALAKEA",
+	"code": "BCA",
+	"countryCode": "CU",
+	"countryName": "古巴",
+	cityFirstLetter: "B"
+}, {
+	cityName: "勃生",
+	citySpell: "BOSHENG",
+	"code": "BSX",
+	"countryCode": "MM",
+	"countryName": "缅甸",
+	cityFirstLetter: "B"
+}, {
+	cityName: "巴尔萨斯",
+	citySpell: "BAERSASI",
+	"code": "BSS",
+	"countryCode": "BR",
+	"countryName": "巴西",
+	cityFirstLetter: "B"
+}, {
+	cityName: "布鲁姆",
+	citySpell: "BULUMU",
+	"code": "BME",
+	"countryCode": "AU",
+	"countryName": "澳大利亚",
+	cityFirstLetter: "B"
+}, {
+	cityName: "波多韦柳",
+	citySpell: "BODUOWEILIU",
+	"code": "PVH",
+	"countryCode": "BR",
+	"countryName": "巴西",
+	cityFirstLetter: "B"
+}, {
+	cityName: "邦巴托克",
+	citySpell: "BANGBATUOKE",
+	"code": "GBK",
+	"countryCode": "SL",
+	"countryName": "塞拉利昂",
+	cityFirstLetter: "B"
+}, {
+	cityName: "邦热苏斯达拉帕",
+	citySpell: "BANGRESUSIDALAPA",
+	"code": "LAZ",
+	"countryCode": "BR",
+	"countryName": "巴西",
+	cityFirstLetter: "B"
+}, {
+	cityName: "博伦厄/法鲁恩",
+	citySpell: "BOLUNE/FALUEN",
+	"code": "BLE",
+	"countryCode": "SE",
+	"countryName": "瑞典",
+	cityFirstLetter: "B"
+}, {
+	cityName: "布宜诺斯艾利斯",
+	citySpell: "BUYINUOSIAILISI",
+	"code": "BUE",
+	"countryCode": "AR",
+	"countryName": "阿根廷",
+	cityFirstLetter: "B"
+}, {
+	cityName: "北大年",
+	citySpell: "BEIDANIAN",
+	"code": "PAN",
+	"countryCode": "TH",
+	"countryName": "泰国",
+	cityFirstLetter: "B"
+}, {
+	cityName: "玻利瓦尔城",
+	citySpell: "BOLIWAERCHENG",
+	"code": "CBL",
+	"countryCode": "VE",
+	"countryName": "委内瑞拉",
+	cityFirstLetter: "B"
+}, {
+	cityName: "博宾",
+	citySpell: "BOBIN",
+	"code": "VBP",
+	"countryCode": "MM",
+	"countryName": "缅甸",
+	cityFirstLetter: "B"
+}, {
+	cityName: "巴章",
+	citySpell: "BAZHANG",
+	"code": "BJH",
+	"countryCode": "NP",
+	"countryName": "尼泊尔",
+	cityFirstLetter: "B"
+}, {
+	cityName: "布卡武",
+	citySpell: "BUKAWU",
+	"code": "BKY",
+	"countryCode": "CD",
+	"countryName": "刚果民主共和国",
+	cityFirstLetter: "B"
+}, {
+	cityName: "布塔",
+	citySpell: "BUTA",
+	"code": "BZU",
+	"countryCode": "CD",
+	"countryName": "刚果民主共和国",
+	cityFirstLetter: "B"
+}, {
+	cityName: "博拉马",
+	citySpell: "BOLAMA",
+	"code": "BXX",
+	"countryCode": "SO",
+	"countryName": "索马里",
+	cityFirstLetter: "B"
+}, {
+	cityName: "博城",
+	citySpell: "BOCHENG",
+	"code": "KBS",
+	"countryCode": "SL",
+	"countryName": "塞拉利昂",
+	cityFirstLetter: "B"
+}, {
+	cityName: "邦戈尔",
+	citySpell: "BANGGEER",
+	"code": "OGR",
+	"countryCode": "TD",
+	"countryName": "乍得",
+	cityFirstLetter: "B"
+}, {
+	cityName: "巴克尔",
+	citySpell: "BAKEER",
+	"code": "BXE",
+	"countryCode": "SN",
+	"countryName": "塞内加尔",
+	cityFirstLetter: "B"
+}, {
+	cityName: "博托帕西",
+	citySpell: "BOTUOPAXI",
+	"code": "BTO",
+	"countryCode": "SR",
+	"countryName": "苏里南",
+	cityFirstLetter: "B"
+}, {
+	cityName: "彼尔姆",
+	citySpell: "BIERMU",
+	"code": "PEE",
+	"countryCode": "RU",
+	"countryName": "俄罗斯",
+	cityFirstLetter: "B"
+}, {
+	cityName: "博尔库姆",
+	citySpell: "BOERKUMU",
+	"code": "BMK",
+	"countryCode": "DE",
+	"countryName": "德国",
+	cityFirstLetter: "B"
+}, {
+	cityName: "伯班克",
+	citySpell: "BOBANKE",
+	"code": "BUR",
+	"countryCode": "US",
+	"countryName": "美国",
+	cityFirstLetter: "B"
+}, {
+	cityName: "巴雷图斯",
+	citySpell: "BALEITUSI",
+	"code": "BAT",
+	"countryCode": "BR",
+	"countryName": "巴西",
+	cityFirstLetter: "B"
+}, {
+	cityName: "八莫",
+	citySpell: "BAMO",
+	"code": "BMO",
+	"countryCode": "MM",
+	"countryName": "缅甸",
+	cityFirstLetter: "B"
+}, {
+	cityName: "布塔雷",
+	citySpell: "BUTALEI",
+	"code": "BTQ",
+	"countryCode": "RW",
+	"countryName": "卢旺达",
+	cityFirstLetter: "B"
+}, {
+	cityName: "巴务巴务",
+	citySpell: "BAWUBAWU",
+	"code": "BUW",
+	"countryCode": "ID",
+	"countryName": "印度尼西亚",
+	cityFirstLetter: "B"
+}, {
+	cityName: "波卡洪特斯",
+	citySpell: "BOKAHONGTESI",
+	"code": "POH",
+	"countryCode": "US",
+	"countryName": "美国",
+	cityFirstLetter: "B"
+}, {
+	cityName: "贝杜里",
+	citySpell: "BEIDULI",
+	"code": "BEU",
+	"countryCode": "AU",
+	"countryName": "澳大利亚",
+	cityFirstLetter: "B"
+}, {
+	cityName: "布拉瓦约",
+	citySpell: "BULAWAYUE",
+	"code": "BUQ",
+	"countryCode": "ZW",
+	"countryName": "津巴布韦",
+	cityFirstLetter: "B"
+}, {
+	cityName: "贝鲁",
+	citySpell: "BEILU",
+	"code": "BEZ",
+	"countryCode": "KI",
+	"countryName": "基里巴斯",
+	cityFirstLetter: "B"
+}, {
+	cityName: "波普拉德",
+	citySpell: "BOPULADE",
+	"code": "TAT",
+	"countryCode": "SK",
+	"countryName": "斯洛伐克",
+	cityFirstLetter: "B"
+}, {
+	cityName: "巴雷拉",
+	citySpell: "BALEILA",
+	"code": "VLV",
+	"countryCode": "VE",
+	"countryName": "委内瑞拉",
+	cityFirstLetter: "B"
+}, {
+	cityName: "贝里奥港",
+	citySpell: "BEILIAOGANG",
+	"code": "PBE",
+	"countryCode": "CO",
+	"countryName": "哥伦比亚",
+	cityFirstLetter: "B"
+}, {
+	cityName: "波尔托海利翁",
+	citySpell: "BOERTUOHAILIWENG",
+	"code": "PKH",
+	"countryCode": "GR",
+	"countryName": "希腊",
+	cityFirstLetter: "B"
+}, {
+	cityName: "比沙",
+	citySpell: "BISHA",
+	"code": "BHH",
+	"countryCode": "SA",
+	"countryName": "沙特阿垃伯",
+	cityFirstLetter: "B"
+}, {
+	cityName: "贝拉里",
+	citySpell: "BEILALI",
+	"code": "BEP",
+	"countryCode": "IN",
+	"countryName": "印度",
+	cityFirstLetter: "B"
+}, {
+	cityName: "博代博",
+	citySpell: "BODAIBO",
+	"code": "ODO",
+	"countryCode": "RU",
+	"countryName": "俄罗斯",
+	cityFirstLetter: "B"
+}, {
+	cityName: "贝勒沃格",
+	citySpell: "BEILEWOGE",
+	"code": "BVG",
+	"countryCode": "NO",
+	"countryName": "挪威",
+	cityFirstLetter: "B"
+}, {
+	cityName: "布兰太尔",
+	citySpell: "BULANTAIER",
+	"code": "BLZ",
+	"countryCode": "MW",
+	"countryName": "马拉维",
+	cityFirstLetter: "B"
+}, {
+	cityName: "布卡岛",
+	citySpell: "BUKADAO",
+	"code": "BUA",
+	"countryCode": "PG",
+	"countryName": "巴布亚新几内亚",
+	cityFirstLetter: "B"
+}, {
+	cityName: "本贝库拉",
+	citySpell: "BENBEIKULA",
+	"code": "BEB",
+	"countryCode": "GB",
+	"countryName": "英国",
+	cityFirstLetter: "B"
+}, {
+	cityName: "比尔德拉勒",
+	citySpell: "BIERDELALE",
+	"code": "BIU",
+	"countryCode": "IS",
+	"countryName": "冰岛",
+	cityFirstLetter: "B"
+}, {
+	cityName: "布拉迪斯拉发",
+	citySpell: "BULADISILAFA",
+	"code": "BTS",
+	"countryCode": "SK",
+	"countryName": "斯洛伐克",
+	cityFirstLetter: "B"
+}, {
+	cityName: "巴尔喀什",
+	citySpell: "BAERKASHI",
+	"code": "BXH",
+	"countryCode": "KZ",
+	"countryName": "哈萨克斯坦",
+	cityFirstLetter: "B"
+}, {
+	cityName: "巴博",
+	citySpell: "BABO",
+	"code": "BXB",
+	"countryCode": "ID",
+	"countryName": "印度尼西亚",
+	cityFirstLetter: "B"
+}, {
+	cityName: "伯尼",
+	citySpell: "BONI",
+	"code": "BWT",
+	"countryCode": "AU",
+	"countryName": "澳大利亚",
+	cityFirstLetter: "B"
+}, {
+	cityName: "北伊柳塞拉",
+	citySpell: "BEIYILIUSAILA",
+	"code": "ELH",
+	"countryCode": "BS",
+	"countryName": "巴哈马",
+	cityFirstLetter: "B"
+}, {
+	cityName: "卑谬",
+	citySpell: "BEIMIU",
+	"code": "PRU",
+	"countryCode": "MM",
+	"countryName": "缅甸",
+	cityFirstLetter: "B"
+}, {
+	cityName: "比亚维森西奥",
+	citySpell: "BIYAWEISENXIAO",
+	"code": "VVC",
+	"countryCode": "CO",
+	"countryName": "哥伦比亚",
+	cityFirstLetter: "B"
+}, {
+	cityName: "巴格多格拉",
+	citySpell: "BAGEDUOGELA",
+	"code": "IXB",
+	"countryCode": "IN",
+	"countryName": "印度",
+	cityFirstLetter: "B"
+}, {
+	cityName: "布洛克岛",
+	citySpell: "BULUOKEDAO",
+	"code": "BID",
+	"countryCode": "US",
+	"countryName": "美国",
+	cityFirstLetter: "B"
+}, {
+	cityName: "布朗萨布隆",
+	citySpell: "BULANGSABULONG",
+	"code": "YBX",
+	"countryCode": "CA",
+	"countryName": "加拿大",
+	cityFirstLetter: "B"
+}, {
+	cityName: "布法罗兰奇",
+	citySpell: "BUFALUOLANQI",
+	"code": "BFO",
+	"countryCode": "ZW",
+	"countryName": "津巴布韦",
+	cityFirstLetter: "B"
+}, {
+	cityName: "布卢梅瑙",
+	citySpell: "BULUMEINAO",
+	"code": "BNU",
+	"countryCode": "BR",
+	"countryName": "巴西",
+	cityFirstLetter: "B"
+}, {
+	cityName: "巴格达",
+	citySpell: "BAGEDA",
+	"code": "BGT",
+	"countryCode": "US",
+	"countryName": "美国",
+	cityFirstLetter: "B"
+}, {
+	cityName: "博卡斯德尔托罗",
+	citySpell: "BOKASIDEERTUOLUO",
+	"code": "BOC",
+	"countryCode": "PA",
+	"countryName": "巴拿马",
+	cityFirstLetter: "B"
+}, {
+	cityName: "贝拉纳岛",
+	citySpell: "BEILANADAO",
+	"code": "BNY",
+	"countryCode": "SB",
+	"countryName": "所罗门群岛",
+	cityFirstLetter: "B"
+}, {
+	cityName: "贝尔法斯特",
+	citySpell: "BEIERFASITE",
+	"code": "BFS",
+	"countryCode": "GB",
+	"countryName": "英国",
+	cityFirstLetter: "B"
+}, {
+	cityName: "博尼图",
+	citySpell: "BONITU",
+	"code": "BYO",
+	"countryCode": "BR",
+	"countryName": "巴西",
+	cityFirstLetter: "B"
+}, {
+	cityName: "布达佩斯",
+	citySpell: "BUDAPEISI",
+	"code": "BUD",
+	"countryCode": "HU",
+	"countryName": "匈牙利",
+	cityFirstLetter: "B"
+}, {
+	cityName: "波里",
+	citySpell: "BOLI",
+	"code": "POR",
+	"countryCode": "FI",
+	"countryName": "芬兰",
+	cityFirstLetter: "B"
+}, {
+	cityName: "博韦",
+	citySpell: "BOWEI",
+	"code": "BGB",
+	"countryCode": "GA",
+	"countryName": "加蓬",
+	cityFirstLetter: "B"
+}, {
+	cityName: "巴尔的摩",
+	citySpell: "BAERDEMO",
+	"code": "BWI",
+	"countryCode": "US",
+	"countryName": "美国",
+	cityFirstLetter: "B"
+}, {
+	cityName: "贝贾亚",
+	citySpell: "BEIJIAYA",
+	"code": "BJA",
+	"countryCode": "DZ",
+	"countryName": "阿尔及利亚",
+	cityFirstLetter: "B"
+}, {
+	cityName: "比弗福尔斯",
+	citySpell: "BIFUFUERSI",
+	"code": "BFP",
+	"countryCode": "US",
+	"countryName": "美国",
+	cityFirstLetter: "B"
+}, {
+	cityName: "巴兰基亚",
+	citySpell: "BALANJIYA",
+	"code": "BAQ",
+	"countryCode": "CO",
+	"countryName": "哥伦比亚",
+	cityFirstLetter: "B"
+}, {
+	cityName: "拜穆鲁",
+	citySpell: "BAIMULU",
+	"code": "VMU",
+	"countryCode": "PG",
+	"countryName": "巴布亚新几内亚",
+	cityFirstLetter: "B"
+}, {
+	cityName: "巴卡夫约多尔",
+	citySpell: "BAKAFUYUEDUOER",
+	"code": "BJD",
+	"countryCode": "IS",
+	"countryName": "冰岛",
+	cityFirstLetter: "B"
+}, {
+	cityName: "本杰古尔",
+	citySpell: "BENJIEGUER",
+	"code": "PJG",
+	"countryCode": "PK",
+	"countryName": "巴基斯坦",
+	cityFirstLetter: "B"
+}, {
+	cityName: "博尔",
+	citySpell: "BOER",
+	"code": "TGP",
+	"countryCode": "RU",
+	"countryName": "俄罗斯",
+	cityFirstLetter: "B"
+}, {
+	cityName: "博克拉",
+	citySpell: "BOKELA",
+	"code": "PKR",
+	"countryCode": "NP",
+	"countryName": "尼泊尔",
+	cityFirstLetter: "B"
+}, {
+	cityName: "贝鲁特",
+	citySpell: "BEILUTE",
+	"code": "BEY",
+	"countryCode": "LB",
+	"countryName": "黎巴嫩",
+	cityFirstLetter: "B"
+}, {
+	cityName: "比卡内尔",
+	citySpell: "BIKANEIER",
+	"code": "BKB",
+	"countryCode": "IN",
+	"countryName": "印度",
+	cityFirstLetter: "B"
+}, {
+	cityName: "布伦讷于松",
+	citySpell: "BULUNNEYUSONG",
+	"code": "BNN",
+	"countryCode": "NO",
+	"countryName": "挪威",
+	cityFirstLetter: "B"
+}, {
+	cityName: "布兰卡港",
+	citySpell: "BULANKAGANG",
+	"code": "BHI",
+	"countryCode": "AR",
+	"countryName": "阿根廷",
+	cityFirstLetter: "B"
+}, {
+	cityName: "博德鲁姆",
+	citySpell: "BODELUMU",
+	"code": "BJV",
+	"countryCode": "TR",
+	"countryName": "土耳其",
+	cityFirstLetter: "B"
+}, {
+	cityName: "贝克",
+	citySpell: "BEIKE",
+	"code": "BKE",
+	"countryCode": "US",
+	"countryName": "美国",
+	cityFirstLetter: "B"
+}, {
+	cityName: "毕阿克",
+	citySpell: "BIAKE",
+	"code": "BIK",
+	"countryCode": "ID",
+	"countryName": "印度尼西亚",
+	cityFirstLetter: "B"
+}, {
+	cityName: "博南萨",
+	citySpell: "BONANSA",
+	"code": "BZA",
+	"countryCode": "NI",
+	"countryName": "尼加拉瓜",
+	cityFirstLetter: "B"
+}, {
+	cityName: "巴拉那伊巴",
+	citySpell: "BALANAYIBA",
+	"code": "PBB",
+	"countryCode": "BR",
+	"countryName": "巴西",
+	cityFirstLetter: "B"
+}, {
+	cityName: "拜汉",
+	citySpell: "BAIHAN",
+	"code": "BHN",
+	"countryCode": "YE",
+	"countryName": "也门",
+	cityFirstLetter: "B"
+}, {
+	cityName: "布朗斯维尔",
+	citySpell: "BULANGSIWEIER",
+	"code": "BRO",
+	"countryCode": "US",
+	"countryName": "美国",
+	cityFirstLetter: "B"
+}, {
+	cityName: "比洛威拉",
+	citySpell: "BILUOWEILA",
+	"code": "ZBL",
+	"countryCode": "AU",
+	"countryName": "澳大利亚",
+	cityFirstLetter: "B"
+}, {
+	cityName: "巴都岛",
+	citySpell: "BADUDAO",
+	"code": "BDD",
+	"countryCode": "AU",
+	"countryName": "澳大利亚",
+	cityFirstLetter: "B"
+}, {
+	cityName: "班贾尔马辛",
+	citySpell: "BANJIAERMAXIN",
+	"code": "BDJ",
+	"countryCode": "ID",
+	"countryName": "印度尼西亚",
+	cityFirstLetter: "B"
+}, {
+	cityName: "布诺贝德勒",
+	citySpell: "BUNUOBEIDELE",
+	"code": "XBL",
+	"countryCode": "ET",
+	"countryName": "埃塞俄比亚",
+	cityFirstLetter: "B"
+}, {
+	cityName: "碧瑶",
+	citySpell: "BIYAO",
+	"code": "BAG",
+	"countryCode": "PH",
+	"countryName": "菲律宾",
+	cityFirstLetter: "B"
+}, {
+	cityName: "贝来普群岛",
+	citySpell: "BEILAIPUQUNDAO",
+	"code": "BMY",
+	"countryCode": "NC",
+	"countryName": "新喀里多尼亚（太平洋）",
+	cityFirstLetter: "B"
+}, {
+	cityName: "波蓬德塔",
+	citySpell: "BOPENGDETA",
+	"code": "PNP",
+	"countryCode": "PG",
+	"countryName": "巴布亚新几内亚",
+	cityFirstLetter: "B"
+}, {
+	cityName: "伯兹维尔",
+	citySpell: "BOZIWEIER",
+	"code": "BVI",
+	"countryCode": "AU",
+	"countryName": "澳大利亚",
+	cityFirstLetter: "B"
+}, {
+	cityName: "巴尔戈西尔",
+	citySpell: "BAERGEXIER",
+	"code": "BQW",
+	"countryCode": "AU",
+	"countryName": "澳大利亚",
+	cityFirstLetter: "B"
+}, {
+	cityName: "包纳加尔",
+	citySpell: "BAONAJIAER",
+	"code": "BHU",
+	"countryCode": "IN",
+	"countryName": "印度",
+	cityFirstLetter: "B"
+}, {
+	cityName: "比斯克拉",
+	citySpell: "BISIKELA",
+	"code": "BSK",
+	"countryCode": "DZ",
+	"countryName": "阿尔及利亚",
+	cityFirstLetter: "B"
+}, {
+	cityName: "北卡伊克斯",
+	citySpell: "BEIKAYIKESI",
+	"code": "NCA",
+	"countryCode": "TC",
+	"countryName": "特克斯和凯科斯群岛",
+	cityFirstLetter: "B"
+}, {
+	cityName: "百慕大",
+	citySpell: "BAIMUDA",
+	"code": "BDA",
+	"countryCode": "BM",
+	"countryName": "百慕大",
+	cityFirstLetter: "B"
+}, {
+	cityName: "宾图卢",
+	citySpell: "BINTULU",
+	"code": "XBN",
+	"countryCode": "PG",
+	"countryName": "巴布亚新几内亚",
+	cityFirstLetter: "B"
+}, {
+	cityName: "博尔扎诺",
+	citySpell: "BOERZHANUO",
+	"code": "BZO",
+	"countryCode": "IT",
+	"countryName": "意大利",
+	cityFirstLetter: "B"
+}, {
+	cityName: "彼得马里茨堡",
+	citySpell: "BIDEMALICIBAO",
+	"code": "PZB",
+	"countryCode": "ZA",
+	"countryName": "南非",
+	cityFirstLetter: "B"
+}, {
+	cityName: "波托西",
+	citySpell: "BOTUOXI",
+	"code": "POI",
+	"countryCode": "BO",
+	"countryName": "玻利维亚",
+	cityFirstLetter: "B"
+}, {
+	cityName: "博拉博拉",
+	citySpell: "BOLABOLA",
+	"code": "BOB",
+	"countryCode": "PF",
+	"countryName": "法属波利尼西亚",
+	cityFirstLetter: "B"
+}, {
+	cityName: "布连海姆",
+	citySpell: "BULIANHAIMU",
+	"code": "BHE",
+	"countryCode": "NZ",
+	"countryName": "新西兰",
+	cityFirstLetter: "B"
+}, {
+	cityName: "布尔萨",
+	citySpell: "BUERSA",
+	"code": "YEI",
+	"countryCode": "TR",
+	"countryName": "土耳其",
+	cityFirstLetter: "B"
+}, {
+	cityName: "本贾里",
+	citySpell: "BENJIALI",
+	"code": "BXI",
+	"countryCode": "CI",
+	"countryName": "科特迪瓦",
+	cityFirstLetter: "B"
+}, {
+	cityName: "布雷维格（泰勒）传教区",
+	citySpell: "BULEIWEIGE(TAILE)CHUANJIAOQU",
+	"code": "KTS",
+	"countryCode": "US",
+	"countryName": "美国",
+	cityFirstLetter: "B"
+}, {
+	cityName: "波卡特洛",
+	citySpell: "BOKATELUO",
+	"code": "PIH",
+	"countryCode": "US",
+	"countryName": "美国",
+	cityFirstLetter: "B"
+}, {
+	cityName: "波尔蒂芒",
+	citySpell: "BOERDIMANG",
+	"code": "PRM",
+	"countryCode": "PT",
+	"countryName": "葡萄牙",
+	cityFirstLetter: "B"
+}, {
+	cityName: "波德戈里察",
+	citySpell: "BODEGELICHA",
+	"code": "TGD",
+	"countryCode": "ME",
+	"countryName": "黑山共和国",
+	cityFirstLetter: "B"
+}, {
+	cityName: "贝尔图阿",
+	citySpell: "BEIERTUA",
+	"code": "BTA",
+	"countryCode": "CM",
+	"countryName": "喀麦隆",
+	cityFirstLetter: "B"
+}, {
+	cityName: "巴多莱特",
+	citySpell: "BADUOLAITE",
+	"code": "BDT",
+	"countryCode": "CD",
+	"countryName": "刚果民主共和国",
+	cityFirstLetter: "B"
+}, {
+	cityName: "比什凯克",
+	citySpell: "BISHENKAIKE",
+	"code": "FRU",
+	"countryCode": "KG",
+	"countryName": "吉尔吉斯斯坦",
+	cityFirstLetter: "B"
+}, {
+	cityName: "北顿涅茨克",
+	citySpell: "BEIDUNNIECIKE",
+	"code": "SEV",
+	"countryCode": "UA",
+	"countryName": "乌克兰",
+	cityFirstLetter: "B"
+}, {
+	cityName: "布鲁塞尔",
+	citySpell: "BULUSAIER",
+	"code": "BRU",
+	"countryCode": "BE",
+	"countryName": "比利时",
+	cityFirstLetter: "B"
+}, {
+	cityName: "北大东岛",
+	citySpell: "BEIDADONGDAO",
+	"code": "KTD",
+	"countryCode": "JP",
+	"countryName": "日本",
+	cityFirstLetter: "B"
+}, {
+	cityName: "巴桑库苏",
+	citySpell: "BASANGKUSU",
+	"code": "BSU",
+	"countryCode": "CD",
+	"countryName": "刚果民主共和国",
+	cityFirstLetter: "B"
+}, {
+	cityName: "滨河帕斯",
+	citySpell: "BINHEPASI",
+	"code": "PZA",
+	"countryCode": "CO",
+	"countryName": "哥伦比亚",
+	cityFirstLetter: "B"
+}, {
+	cityName: "博戈罗季茨科耶",
+	citySpell: "BOGELUOJICIKEYE",
+	"code": "BQG",
+	"countryCode": "RU",
+	"countryName": "俄罗斯",
+	cityFirstLetter: "B"
+}, {
+	cityName: "巴拉那瓜",
+	citySpell: "BALANAGUA",
+	"code": "PNG",
+	"countryCode": "BR",
+	"countryName": "巴西",
+	cityFirstLetter: "B"
+}, {
+	cityName: "班达亚齐",
+	citySpell: "BANDAYAQI",
+	"code": "BTJ",
+	"countryCode": "ID",
+	"countryName": "印度尼西亚",
+	cityFirstLetter: "B"
+}, {
+	cityName: "北普拉特",
+	citySpell: "BEIPULATE",
+	"code": "LBF",
+	"countryCode": "US",
+	"countryName": "美国",
+	cityFirstLetter: "B"
+}, {
+	cityName: "彼得罗巴甫洛夫斯克",
+	citySpell: "BIDELUOBAFULUOFUSIKE",
+	"code": "PPK",
+	"countryCode": "KZ",
+	"countryName": "哈萨克斯坦",
+	cityFirstLetter: "B"
+}, {
+	cityName: "比隆",
+	citySpell: "BILONG",
+	"code": "BLL",
+	"countryCode": "DK",
+	"countryName": "丹麦",
+	cityFirstLetter: "B"
+}, {
+	cityName: "贝卡",
+	citySpell: "BEIKA",
+	"code": "BEI",
+	"countryCode": "ET",
+	"countryName": "埃塞俄比亚",
+	cityFirstLetter: "B"
+}, {
+	cityName: "波多尔",
+	citySpell: "BODUOER",
+	"code": "POD",
+	"countryCode": "SN",
+	"countryName": "塞内加尔",
+	cityFirstLetter: "B"
+}, {
+	cityName: "贝济耶",
+	citySpell: "BEIJIYE",
+	"code": "BZR",
+	"countryCode": "FR",
+	"countryName": "法国",
+	cityFirstLetter: "B"
+}, {
+	cityName: "布尔奇",
+	citySpell: "BUERQI",
+	"code": "BCY",
+	"countryCode": "ET",
+	"countryName": "埃塞俄比亚",
+	cityFirstLetter: "B"
+}, {
+	cityName: "班加索",
+	citySpell: "BANJIASUO",
+	"code": "BGU",
+	"countryCode": "CF",
+	"countryName": "中非",
+	cityFirstLetter: "B"
+}, {
+	cityName: "巴利阿多里德",
+	citySpell: "BALIADUOLIDE",
+	"code": "VLL",
+	"countryCode": "ES",
+	"countryName": "西班牙",
+	cityFirstLetter: "B"
+}, {
+	cityName: "波托维耶霍",
+	citySpell: "BOTUOWEIYEHUO",
+	"code": "PVO",
+	"countryCode": "EC",
+	"countryName": "厄瓜多尔",
+	cityFirstLetter: "B"
+}, {
+	cityName: "博蒙特",
+	citySpell: "BOMENGTE",
+	"code": "BPT",
+	"countryCode": "US",
+	"countryName": "美国",
+	cityFirstLetter: "B"
+}, {
+	cityName: "布莱尔港",
+	citySpell: "BULAIERGANG",
+	"code": "IXZ",
+	"countryCode": "IN",
+	"countryName": "印度",
+	cityFirstLetter: "B"
+}, {
+	cityName: "北罗纳德赛岛",
+	citySpell: "BEILUONADESAIDAO",
+	"code": "NRL",
+	"countryCode": "GB",
+	"countryName": "英国",
+	cityFirstLetter: "B"
+}, {
+	cityName: "贝鲁鲁哈",
+	citySpell: "BEILULUHA",
+	"code": "WBO",
+	"countryCode": "MG",
+	"countryName": "马达加斯加",
+	cityFirstLetter: "B"
+}, {
+	cityName: "布兰顿",
+	citySpell: "BULANDUN",
+	"code": "YBR",
+	"countryCode": "CA",
+	"countryName": "加拿大",
+	cityFirstLetter: "B"
+}, {
+	cityName: "贝拉",
+	citySpell: "BEILA",
+	"code": "BEW",
+	"countryCode": "MZ",
+	"countryName": "莫桑比克",
+	cityFirstLetter: "B"
+}, {
+	cityName: "柏森斯亚半岛",
+	citySpell: "BAISENSIYABANDAO",
+	"code": "PLJ",
+	"countryCode": "BZ",
+	"countryName": "伯利兹",
+	cityFirstLetter: "B"
+}, {
+	cityName: "巴示戈",
+	citySpell: "BASHIGE",
+	"code": "BSO",
+	"countryCode": "PH",
+	"countryName": "菲律宾",
+	cityFirstLetter: "B"
+}, {
+	cityName: "伯克",
+	citySpell: "BOKE",
+	"code": "BRK",
+	"countryCode": "AU",
+	"countryName": "澳大利亚",
+	cityFirstLetter: "B"
+}, {
+	cityName: "贝莱德文",
+	citySpell: "BEILAIDEWEN",
+	"code": "BLW",
+	"countryCode": "SO",
+	"countryName": "索马里",
+	cityFirstLetter: "B"
+}, {
+	cityName: "拜恩斯代尔",
+	citySpell: "BAIENSIDAIER",
+	"code": "BSJ",
+	"countryCode": "AU",
+	"countryName": "澳大利亚",
+	cityFirstLetter: "B"
+}, {
+	cityName: "布拉姆顿岛",
+	citySpell: "BULAMUDUNDAO",
+	"code": "BMP",
+	"countryCode": "AU",
+	"countryName": "澳大利亚",
+	cityFirstLetter: "B"
+}, {
+	cityName: "巴依亚 比纳",
+	citySpell: "BAYIYA BINA",
+	"code": "BFQ",
+	"countryCode": "PA",
+	"countryName": "巴拿马",
+	cityFirstLetter: "B"
+}, {
+	cityName: "比拉德纳格尔",
+	citySpell: "BILADENAGEER",
+	"code": "BIR",
+	"countryCode": "NP",
+	"countryName": "尼泊尔",
+	cityFirstLetter: "B"
+}, {
+	cityName: "布朗肯山",
+	citySpell: "BULANGKENSHAN",
+	"code": "BHQ",
+	"countryCode": "AU",
+	"countryName": "澳大利亚",
+	cityFirstLetter: "B"
+}, {
+	cityName: "巴瑟斯特岛",
+	citySpell: "BASESITEDAO",
+	"code": "BRT",
+	"countryCode": "AU",
+	"countryName": "澳大利亚",
+	cityFirstLetter: "B"
+}, {
+	cityName: "菠罗奈斯",
+	citySpell: "BOLUONAISI",
+	"code": "VNS",
+	"countryCode": "IN",
+	"countryName": "印度",
+	cityFirstLetter: "B"
+}, {
+	cityName: "波特兰(缅因州)",
+	citySpell: "BOTELAN",
+	"code": "PWM",
+	"countryCode": "US",
+	"countryName": "美国",
+	cityFirstLetter: "B"
+}, {
+	cityName: "博佐姆",
+	citySpell: "BOZUOMU",
+	"code": "BOZ",
+	"countryCode": "CF",
+	"countryName": "中非",
+	cityFirstLetter: "B"
+}, {
+	cityName: "波苏斯迪卡尔达斯",
+	citySpell: "BOSUSIDIKAERDASI",
+	"code": "POO",
+	"countryCode": "BR",
+	"countryName": "巴西",
+	cityFirstLetter: "B"
+}, {
+	cityName: "拜县",
+	citySpell: "BAIXIAN",
+	"code": "PYY",
+	"countryCode": "TH",
+	"countryName": "泰国",
+	cityFirstLetter: "B"
+}, {
+	cityName: "布厄克斯",
+	citySpell: "BUEKESI",
+	"code": "BXO",
+	"countryCode": "CH",
+	"countryName": "瑞士",
+	cityFirstLetter: "B"
+}, {
+	cityName: "包齐",
+	citySpell: "BAOQI",
+	"code": "BCU",
+	"countryCode": "NG",
+	"countryName": "尼日利亚",
+	cityFirstLetter: "B"
+}, {
+	cityName: "北贝特尔福德",
+	citySpell: "BEIBEITEERFUDE",
+	"code": "YQW",
+	"countryCode": "CA",
+	"countryName": "加拿大",
+	cityFirstLetter: "B"
+}, {
+	cityName: "贝拉贝拉",
+	citySpell: "BEILABEILA",
+	"code": "ZEL",
+	"countryCode": "CA",
+	"countryName": "加拿大",
+	cityFirstLetter: "B"
+}, {
+	cityName: "巴里",
+	citySpell: "BALI",
+	"code": "BRI",
+	"countryCode": "IT",
+	"countryName": "意大利",
+	cityFirstLetter: "B"
+}, {
+	cityName: "巴色",
+	citySpell: "BASE",
+	"code": "PKZ",
+	"countryCode": "LA",
+	"countryName": "老挝",
+	cityFirstLetter: "B"
+}, {
+	cityName: "贝劳",
+	citySpell: "BEILAO",
+	"code": "BEJ",
+	"countryCode": "ID",
+	"countryName": "印度尼西亚",
+	cityFirstLetter: "B"
+}, {
+	cityName: "班茨",
+	citySpell: "BANCI",
+	"code": "BNZ",
+	"countryCode": "PG",
+	"countryName": "巴布亚新几内亚",
+	cityFirstLetter: "B"
+}, {
+	cityName: "比勒费尔德",
+	citySpell: "BILEFEIERDE",
+	"code": "BFE",
+	"countryCode": "DE",
+	"countryName": "德国",
+	cityFirstLetter: "B"
+}, {
+	cityName: "博阿维斯塔",
+	citySpell: "BOAWEISITA",
+	"code": "BVB",
+	"countryCode": "BR",
+	"countryName": "巴西",
+	cityFirstLetter: "B"
+}, {
+	cityName: "冲绳",
+	citySpell: "CHONGSHENG",
+	"code": "OKA",
+	"countryCode": "JP",
+	"countryName": "日本",
+	cityFirstLetter: "C"
+}, {
+	cityName: "长崎",
+	citySpell: "CHANGQI",
+	"code": "NGS",
+	"countryCode": "JP",
+	"countryName": "日本",
+	cityFirstLetter: "C"
+}, {
+	cityName: "彩虹湖",
+	citySpell: "CAIHONGHU",
+	"code": "YOP",
+	"countryCode": "CA",
+	"countryName": "加拿大",
+	cityFirstLetter: "C"
+}, {
+	cityName: "查塔姆",
+	citySpell: "CHATAMU",
+	"code": "XCM",
+	"countryCode": "CA",
+	"countryName": "加拿大",
+	cityFirstLetter: "C"
+}, {
+	cityName: "查拉塔",
+	citySpell: "CHALATA",
+	"code": "CNT",
+	"countryCode": "AR",
+	"countryName": "阿根廷",
+	cityFirstLetter: "C"
+}, {
+	cityName: "川格罗姆",
+	citySpell: "CHUANGELUOMU",
+	"code": "XIE",
+	"countryCode": "LA",
+	"countryName": "老挝",
+	cityFirstLetter: "C"
+}, {
+	cityName: "程逸",
+	citySpell: "CHENGYI",
+	"code": "UTR",
+	"countryCode": "TH",
+	"countryName": "泰国",
+	cityFirstLetter: "C"
+}, {
+	cityName: "赤塔",
+	citySpell: "CHITA",
+	"code": "HTA",
+	"countryCode": "RU",
+	"countryName": "俄罗斯",
+	cityFirstLetter: "C"
+}, {
+	cityName: "查查波亚斯",
+	citySpell: "CHACHABOYASI",
+	"code": "CHH",
+	"countryCode": "PE",
+	"countryName": "秘鲁",
+	cityFirstLetter: "C"
+}, {
+	cityName: "查尔巴",
+	citySpell: "CHAERBA",
+	"code": "DJE",
+	"countryCode": "TN",
+	"countryName": "突尼斯",
+	cityFirstLetter: "C"
+}, {
+	cityName: "查菲堡",
+	citySpell: "CHAFEIBAO",
+	"code": "CCA",
+	"countryCode": "BO",
+	"countryName": "玻利维亚",
+	cityFirstLetter: "C"
+}, {
+	cityName: "处女岛",
+	citySpell: "CHUNVDAO",
+	"code": "ISJ",
+	"countryCode": "MX",
+	"countryName": "墨西哥",
+	cityFirstLetter: "C"
+}, {
+	cityName: "长滩",
+	citySpell: "CHANGTAN",
+	"code": "LGB",
+	"countryCode": "US",
+	"countryName": "美国",
+	cityFirstLetter: "C"
+}, {
+	cityName: "查帕拉尔",
+	citySpell: "CHAPALAER",
+	"code": "CPL",
+	"countryCode": "CO",
+	"countryName": "哥伦比亚",
+	cityFirstLetter: "C"
+}, {
+	cityName: "查尔斯顿(西佛吉尼亚州)",
+	citySpell: "CHAERSIDUN",
+	"code": "CRW",
+	"countryCode": "US",
+	"countryName": "美国",
+	cityFirstLetter: "C"
+}, {
+	cityName: "查漠",
+	citySpell: "CHAMO",
+	"code": "IXJ",
+	"countryCode": "IN",
+	"countryName": "印度",
+	cityFirstLetter: "C"
+}, {
+	cityName: "查特斯堡",
+	citySpell: "CHATESIBAO",
+	"code": "CXT",
+	"countryCode": "AU",
+	"countryName": "澳大利亚",
+	cityFirstLetter: "C"
+}, {
+	cityName: "察嫩",
+	citySpell: "CHANEN",
+	"code": "LTA",
+	"countryCode": "ZA",
+	"countryName": "南非",
+	cityFirstLetter: "C"
+}, {
+	cityName: "查理维尔",
+	citySpell: "CHALIWEIER",
+	"code": "CTL",
+	"countryCode": "AU",
+	"countryName": "澳大利亚",
+	cityFirstLetter: "C"
+}, {
+	cityName: "川圹",
+	citySpell: "CHUANKUANG",
+	"code": "XKH",
+	"countryCode": "LA",
+	"countryName": "老挝",
+	cityFirstLetter: "C"
+}, {
+	cityName: "出云",
+	citySpell: "CHUYUN",
+	"code": "IZO",
+	"countryCode": "JP",
+	"countryName": "日本",
+	cityFirstLetter: "C"
+}, {
+	cityName: "Chevak",
+	citySpell: "CHEVAK",
+	"code": "VAK",
+	"countryCode": "US",
+	"countryName": "美国",
+	cityFirstLetter: "C"
+}, {
+	cityName: "昌迪加尔",
+	citySpell: "CHANGDIJIAER",
+	"code": "IXC",
+	"countryCode": "IN",
+	"countryName": "印度",
+	cityFirstLetter: "C"
+}, {
+	cityName: "串本",
+	citySpell: "CHUANBEN",
+	"code": "KUJ",
+	"countryCode": "JP",
+	"countryName": "日本",
+	cityFirstLetter: "C"
+}, {
+	cityName: "楚莱",
+	citySpell: "CHULAI",
+	"code": "VCL",
+	"countryCode": "VN",
+	"countryName": "越南",
+	cityFirstLetter: "C"
+}, {
+	cityName: "查塔努加",
+	citySpell: "CHATANUJIA",
+	"code": "CHA",
+	"countryCode": "US",
+	"countryName": "美国",
+	cityFirstLetter: "C"
+}, {
+	cityName: "察拉塔纳纳",
+	citySpell: "CHALATANANA",
+	"code": "TTS",
+	"countryCode": "MG",
+	"countryName": "马达加斯加",
+	cityFirstLetter: "C"
+}, {
+	cityName: "查洛",
+	citySpell: "CHALUO",
+	"code": "YCL",
+	"countryCode": "CA",
+	"countryName": "加拿大",
+	cityFirstLetter: "C"
+}, {
+	cityName: "查亚普拉",
+	citySpell: "CHAYAPULA",
+	"code": "DJJ",
+	"countryCode": "ID",
+	"countryName": "印度尼西亚",
+	cityFirstLetter: "C"
+}, {
+	cityName: "查尔基齐克",
+	citySpell: "CHAERJIQIKE",
+	"code": "CIK",
+	"countryCode": "US",
+	"countryName": "美国",
+	cityFirstLetter: "C"
+}, {
+	cityName: "车里雅宾斯克",
+	citySpell: "CHELIYABINSIKE",
+	"code": "CEK",
+	"countryCode": "RU",
+	"countryName": "俄罗斯",
+	cityFirstLetter: "C"
+}, {
+	cityName: "茨城",
+	citySpell: "CICHENG",
+	"code": "IBR",
+	"countryCode": "JP",
+	"countryName": "日本",
+	cityFirstLetter: "C"
+}, {
+	cityName: "柴腾",
+	citySpell: "CHAITENG",
+	"code": "WCH",
+	"countryCode": "CL",
+	"countryName": "智利",
+	cityFirstLetter: "C"
+}, {
+	cityName: "钏路",
+	citySpell: "CHUANLU",
+	"code": "KUH",
+	"countryCode": "JP",
+	"countryName": "日本",
+	cityFirstLetter: "C"
+}, {
+	cityName: "冲永良部",
+	citySpell: "CHONGYONGLIANGBU",
+	"code": "OKE",
+	"countryCode": "JP",
+	"countryName": "日本",
+	cityFirstLetter: "C"
+}, {
+	cityName: "查利斯",
+	citySpell: "CHALISI",
+	"code": "CHL",
+	"countryCode": "US",
+	"countryName": "美国",
+	cityFirstLetter: "C"
+}, {
+	cityName: "昌金努拉",
+	citySpell: "CHANGJINNULA",
+	"code": "CHX",
+	"countryCode": "PA",
+	"countryName": "巴拿马",
+	cityFirstLetter: "C"
+}, {
+	cityName: "查尔斯顿(南卡来罗纳州)",
+	citySpell: "CHAERSIDUN",
+	"code": "CHS",
+	"countryCode": "US",
+	"countryName": "美国",
+	cityFirstLetter: "C"
+}, {
+	cityName: "查塔姆岛",
+	citySpell: "CHATAMUDAO",
+	"code": "CHT",
+	"countryCode": "NZ",
+	"countryName": "新西兰",
+	cityFirstLetter: "C"
+}, {
+	cityName: "大阪",
+	citySpell: "DABAN",
+	"code": "OSA",
+	"countryCode": "JP",
+	"countryName": "日本",
+	cityFirstLetter: "D"
+}, {
+	cityName: "东京",
+	citySpell: "DONGJING",
+	"code": "TYO",
+	"countryCode": "JP",
+	"countryName": "日本",
+	cityFirstLetter: "D"
+}, {
+	cityName: "大叻",
+	citySpell: "DALE",
+	"code": "DLI",
+	"countryCode": "VN",
+	"countryName": "越南",
+	cityFirstLetter: "D"
+}, {
+	cityName: "迪拜",
+	citySpell: "DIBAI",
+	"code": "DXB",
+	"countryCode": "AE",
+	"countryName": "阿联酋",
+	cityFirstLetter: "D"
+}, {
+	cityName: "达拉斯",
+	citySpell: "DALASI",
+	"code": "DFW",
+	"countryCode": "US",
+	"countryName": "美国",
+	cityFirstLetter: "D"
+}, {
+	cityName: "多伦多",
+	citySpell: "DUOLUNDUO",
+	"code": "YTO",
+	"countryCode": "CA",
+	"countryName": "加拿大",
+	cityFirstLetter: "D"
+}, {
+	cityName: "丹佛",
+	citySpell: "DANFO",
+	"code": "DEN",
+	"countryCode": "US",
+	"countryName": "美国",
+	cityFirstLetter: "D"
+}, {
+	cityName: "底特律",
+	citySpell: "DITELV",
+	"code": "DTT",
+	"countryCode": "US",
+	"countryName": "美国",
+	cityFirstLetter: "D"
+}, {
+	cityName: "达尔文",
+	citySpell: "DAERWEN",
+	"code": "DRW",
+	"countryCode": "AU",
+	"countryName": "澳大利亚",
+	cityFirstLetter: "D"
+}, {
+	cityName: "都灵",
+	citySpell: "DOULING",
+	"code": "TRN",
+	"countryCode": "IT",
+	"countryName": "意大利",
+	cityFirstLetter: "D"
+}, {
+	cityName: "都柏林",
+	citySpell: "DOUBAILIN",
+	"code": "DUB",
+	"countryCode": "IE",
+	"countryName": "爱尔兰",
+	cityFirstLetter: "D"
+}, {
+	cityName: "迪巴",
+	citySpell: "DIBA",
+	"code": "BYB",
+	"countryCode": "OM",
+	"countryName": "阿曼",
+	cityFirstLetter: "D"
+}, {
+	cityName: "德雷斯顿",
+	citySpell: "DELEISIDUN",
+	"code": "DRS",
+	"countryCode": "DE",
+	"countryName": "德国",
+	cityFirstLetter: "D"
+}, {
+	cityName: "德弗尔斯莱克",
+	citySpell: "DEFUERSILAIKE",
+	"code": "DVL",
+	"countryCode": "US",
+	"countryName": "美国",
+	cityFirstLetter: "D"
+}, {
+	cityName: "邓巴",
+	citySpell: "DENGBA",
+	"code": "DNB",
+	"countryCode": "AU",
+	"countryName": "澳大利亚",
+	cityFirstLetter: "D"
+}, {
+	cityName: "戴得曼斯凯",
+	citySpell: "DAIDEMANSIKAI",
+	"code": "LGI",
+	"countryCode": "BS",
+	"countryName": "巴哈马",
+	cityFirstLetter: "D"
+}, {
+	cityName: "达文波特",
+	citySpell: "DAWENBOTE",
+	"code": "DVN",
+	"countryCode": "US",
+	"countryName": "美国",
+	cityFirstLetter: "D"
+}, {
+	cityName: "董里",
+	citySpell: "DONGLI",
+	"code": "TST",
+	"countryCode": "TH",
+	"countryName": "泰国",
+	cityFirstLetter: "D"
+}, {
+	cityName: "登比多洛",
+	citySpell: "DENGBIDUOLUO",
+	"code": "DEM",
+	"countryCode": "ET",
+	"countryName": "埃塞俄比亚",
+	cityFirstLetter: "D"
+}, {
+	cityName: "蒂华纳",
+	citySpell: "DIHUANA",
+	"code": "TIJ",
+	"countryCode": "MX",
+	"countryName": "墨西哥",
+	cityFirstLetter: "D"
+}, {
+	cityName: "德希",
+	citySpell: "DEXI",
+	"code": "DSE",
+	"countryCode": "ET",
+	"countryName": "埃塞俄比亚",
+	cityFirstLetter: "D"
+}, {
+	cityName: "渡岛大岛",
+	citySpell: "DUDAODADAO",
+	"code": "OIM",
+	"countryCode": "JP",
+	"countryName": "日本",
+	cityFirstLetter: "D"
+}, {
+	cityName: "达巴赫",
+	citySpell: "DABAHE",
+	"code": "DBB",
+	"countryCode": "EG",
+	"countryName": "埃及",
+	cityFirstLetter: "D"
+}, {
+	cityName: "斗湖",
+	citySpell: "DOUHU",
+	"code": "TWU",
+	"countryCode": "MY",
+	"countryName": "马来西亚",
+	cityFirstLetter: "D"
+}, {
+	cityName: "大开曼岛",
+	citySpell: "DAKAIMANDAO",
+	"code": "GCM",
+	"countryCode": "KY",
+	"countryName": "开曼群岛",
+	cityFirstLetter: "D"
+}, {
+	cityName: "大洋城",
+	citySpell: "DAYANGCHENG",
+	"code": "OCE",
+	"countryCode": "US",
+	"countryName": "美国",
+	cityFirstLetter: "D"
+}, {
+	cityName: "迪亚诺波利斯",
+	citySpell: "DIYANUOBOLISI",
+	"code": "DNO",
+	"countryCode": "BR",
+	"countryName": "巴西",
+	cityFirstLetter: "D"
+}, {
+	cityName: "达沃",
+	citySpell: "DAWO",
+	"code": "DVO",
+	"countryCode": "PH",
+	"countryName": "菲律宾",
+	cityFirstLetter: "D"
+}, {
+	cityName: "迪拉伯土",
+	citySpell: "DILABOTU",
+	"code": "TPP",
+	"countryCode": "PE",
+	"countryName": "秘鲁",
+	cityFirstLetter: "D"
+}, {
+	cityName: "杜古姆",
+	citySpell: "DUGUMU",
+	"code": "DQM",
+	"countryCode": "OM",
+	"countryName": "阿曼",
+	cityFirstLetter: "D"
+}, {
+	cityName: "杜瓦马瓦",
+	citySpell: "DUWAMAWA",
+	"code": "DWA",
+	"countryCode": "MW",
+	"countryName": "马拉维",
+	cityFirstLetter: "D"
+}, {
+	cityName: "奠边府",
+	citySpell: "DIANBIANFU",
+	"code": "DIN",
+	"countryCode": "VN",
+	"countryName": "越南",
+	cityFirstLetter: "D"
+}, {
+	cityName: "大社",
+	citySpell: "DASHE",
+	"code": "TSC",
+	"countryCode": "EC",
+	"countryName": "厄瓜多尔",
+	cityFirstLetter: "D"
+}, {
+	cityName: "德莱登",
+	citySpell: "DELAIDENG",
+	"code": "YHD",
+	"countryCode": "CA",
+	"countryName": "加拿大",
+	cityFirstLetter: "D"
+}, {
+	cityName: "德罗什",
+	citySpell: "DELUOSHI",
+	"code": "DES",
+	"countryCode": "SC",
+	"countryName": "塞舌尔",
+	cityFirstLetter: "D"
+}, {
+	cityName: "多森",
+	citySpell: "DUOSEN",
+	"code": "DHN",
+	"countryCode": "US",
+	"countryName": "美国",
+	cityFirstLetter: "D"
+}, {
+	cityName: "达博",
+	citySpell: "DABO",
+	"code": "DBO",
+	"countryCode": "AU",
+	"countryName": "澳大利亚",
+	cityFirstLetter: "D"
+}, {
+	cityName: "达拉姆萨拉",
+	citySpell: "DALAMUSALA",
+	"code": "DHM",
+	"countryCode": "IN",
+	"countryName": "印度",
+	cityFirstLetter: "D"
+}, {
+	cityName: "迪灵",
+	citySpell: "DILING",
+	"code": "DRG",
+	"countryCode": "US",
+	"countryName": "美国",
+	cityFirstLetter: "D"
+}, {
+	cityName: "达尔本丁",
+	citySpell: "DAERBENDING",
+	"code": "DBA",
+	"countryCode": "PK",
+	"countryName": "巴基斯坦",
+	cityFirstLetter: "D"
+}, {
+	cityName: "洞海",
+	citySpell: "DONGHAI",
+	"code": "VDH",
+	"countryCode": "VN",
+	"countryName": "越南",
+	cityFirstLetter: "D"
+}, {
+	cityName: "德尔塔顿斯",
+	citySpell: "DEERTADUNSI",
+	"code": "DDN",
+	"countryCode": "AU",
+	"countryName": "澳大利亚",
+	cityFirstLetter: "D"
+}, {
+	cityName: "迪克森",
+	citySpell: "DIKESEN",
+	"code": "DKS",
+	"countryCode": "RU",
+	"countryName": "俄罗斯",
+	cityFirstLetter: "D"
+}, {
+	cityName: "德拉加齐汗",
+	citySpell: "DELAJIAQIHAN",
+	"code": "DEA",
+	"countryCode": "PK",
+	"countryName": "巴基斯坦",
+	cityFirstLetter: "D"
+}, {
+	cityName: "德布勒森",
+	citySpell: "DEBULESEN",
+	"code": "DEB",
+	"countryCode": "HU",
+	"countryName": "匈牙利",
+	cityFirstLetter: "D"
+}, {
+	cityName: "多勒",
+	citySpell: "DUOLE",
+	"code": "DLE",
+	"countryCode": "FR",
+	"countryName": "法国",
+	cityFirstLetter: "D"
+}, {
+	cityName: "丹尼斯岛",
+	citySpell: "DANNISIDAO",
+	"code": "DEI",
+	"countryCode": "SC",
+	"countryName": "塞舌尔",
+	cityFirstLetter: "D"
+}, {
+	cityName: "多阿尼",
+	citySpell: "DUOANI",
+	"code": "DOA",
+	"countryCode": "MG",
+	"countryName": "马达加斯加",
+	cityFirstLetter: "D"
+}, {
+	cityName: "丹巴德",
+	citySpell: "DANBADE",
+	"code": "DBD",
+	"countryCode": "IN",
+	"countryName": "印度",
+	cityFirstLetter: "D"
+}, {
+	cityName: "底特律莱克斯",
+	citySpell: "DITELVLAIKESI",
+	"code": "DTL",
+	"countryCode": "US",
+	"countryName": "美国",
+	cityFirstLetter: "D"
+}, {
+	cityName: "代奥米德群岛",
+	citySpell: "DAIAOMIDEQUNDAO",
+	"code": "DIO",
+	"countryCode": "US",
+	"countryName": "美国",
+	cityFirstLetter: "D"
+}, {
+	cityName: "大西洋城",
+	citySpell: "DAXIYANGCHENG",
+	"code": "ACY",
+	"countryCode": "US",
+	"countryName": "美国",
+	cityFirstLetter: "D"
+}, {
+	cityName: "德尔佐尔",
+	citySpell: "DEERZUOER",
+	"code": "DEZ",
+	"countryCode": "SY",
+	"countryName": "叙利亚",
+	cityFirstLetter: "D"
+}, {
+	cityName: "达赫拉",
+	citySpell: "DAHELA",
+	"code": "VIL",
+	"countryCode": "MA",
+	"countryName": "摩洛哥",
+	cityFirstLetter: "D"
+}, {
+	cityName: "大哈伯",
+	citySpell: "DAHABO",
+	"code": "GHC",
+	"countryCode": "BS",
+	"countryName": "巴哈马",
+	cityFirstLetter: "D"
+}, {
+	cityName: "多凡堡",
+	citySpell: "DUOFANBAO",
+	"code": "FTU",
+	"countryCode": "MG",
+	"countryName": "马达加斯加",
+	cityFirstLetter: "D"
+}, {
+	cityName: "达拉曼",
+	citySpell: "DALAMAN",
+	"code": "DLM",
+	"countryCode": "TR",
+	"countryName": "土耳其",
+	cityFirstLetter: "D"
+}, {
+	cityName: "的黎波里",
+	citySpell: "DELIBOLI",
+	"code": "TIP",
+	"countryCode": "LY",
+	"countryName": "利比亚",
+	cityFirstLetter: "D"
+}, {
+	cityName: "德比",
+	citySpell: "DEBI",
+	"code": "DRB",
+	"countryCode": "AU",
+	"countryName": "澳大利亚",
+	cityFirstLetter: "D"
+}, {
+	cityName: "代托纳比奇",
+	citySpell: "DAITUONABIQI",
+	"code": "DAB",
+	"countryCode": "US",
+	"countryName": "美国",
+	cityFirstLetter: "D"
+}, {
+	cityName: "大其力",
+	citySpell: "DAQILI",
+	"code": "THL",
+	"countryCode": "MM",
+	"countryName": "缅甸",
+	cityFirstLetter: "D"
+}, {
+	cityName: "戴利沃特",
+	citySpell: "DAILIWOTE",
+	"code": "DYW",
+	"countryCode": "AU",
+	"countryName": "澳大利亚",
+	cityFirstLetter: "D"
+}, {
+	cityName: "杜迈",
+	citySpell: "DUMAI",
+	"code": "DUM",
+	"countryCode": "ID",
+	"countryName": "印度尼西亚",
+	cityFirstLetter: "D"
+}, {
+	cityName: "德帕里佐",
+	citySpell: "DEPALIZUO",
+	"code": "DEP",
+	"countryCode": "IN",
+	"countryName": "印度",
+	cityFirstLetter: "D"
+}, {
+	cityName: "德里奥",
+	citySpell: "DELIAO",
+	"code": "DRT",
+	"countryCode": "US",
+	"countryName": "美国",
+	cityFirstLetter: "D"
+}, {
+	cityName: "达勒姆当斯",
+	citySpell: "DALEMUDANGSI",
+	"code": "DHD",
+	"countryCode": "AU",
+	"countryName": "澳大利亚",
+	cityFirstLetter: "D"
+}, {
+	cityName: "帝力",
+	citySpell: "DILI",
+	"code": "DIL",
+	"countryCode": "TL",
+	"countryName": "东帝汶",
+	cityFirstLetter: "D"
+}, {
+	cityName: "邓迪",
+	citySpell: "DENGDI",
+	"code": "DND",
+	"countryCode": "GB",
+	"countryName": "英国",
+	cityFirstLetter: "D"
+}, {
+	cityName: "德利萨维尔",
+	citySpell: "DELISAWEIER",
+	"code": "DLV",
+	"countryCode": "AU",
+	"countryName": "澳大利亚",
+	cityFirstLetter: "D"
+}, {
+	cityName: "大塞斯",
+	citySpell: "DASAISI",
+	"code": "GRC",
+	"countryCode": "LR",
+	"countryName": "利比里亚",
+	cityFirstLetter: "D"
+}, {
+	cityName: "迪纳尔",
+	citySpell: "DINAER",
+	"code": "DNR",
+	"countryCode": "FR",
+	"countryName": "法国",
+	cityFirstLetter: "D"
+}, {
+	cityName: "德里斯戴尔里弗",
+	citySpell: "DELISIDAIERLIFU",
+	"code": "DRY",
+	"countryCode": "AU",
+	"countryName": "澳大利亚",
+	cityFirstLetter: "D"
+}, {
+	cityName: "丹格里加",
+	citySpell: "DANGELIJIA",
+	"code": "DGA",
+	"countryCode": "BZ",
+	"countryName": "伯利兹",
+	cityFirstLetter: "D"
+}, {
+	cityName: "迪卡波湖",
+	citySpell: "DIKABOHU",
+	"code": "TKP",
+	"countryCode": "PF",
+	"countryName": "法属波利尼西亚",
+	cityFirstLetter: "D"
+}, {
+	cityName: "蒂马鲁",
+	citySpell: "DIMALU",
+	"code": "TIU",
+	"countryCode": "NZ",
+	"countryName": "新西兰",
+	cityFirstLetter: "D"
+}, {
+	cityName: "狄龙",
+	citySpell: "DILONG",
+	"code": "DLL",
+	"countryCode": "US",
+	"countryName": "美国",
+	cityFirstLetter: "D"
+}, {
+	cityName: "杜尔加布尔",
+	citySpell: "DUERJIABUER",
+	"code": "RDP",
+	"countryCode": "IN",
+	"countryName": "印度",
+	cityFirstLetter: "D"
+}, {
+	cityName: "多伊尼",
+	citySpell: "DUOYINI",
+	"code": "DOI",
+	"countryCode": "PG",
+	"countryName": "巴布亚新几内亚",
+	cityFirstLetter: "D"
+}, {
+	cityName: "蒂马拉夫斯",
+	citySpell: "DIMALAFUSI",
+	"code": "TMF",
+	"countryCode": "MV",
+	"countryName": "马尔代夫",
+	cityFirstLetter: "D"
+}, {
+	cityName: "迪凯特",
+	citySpell: "DIKAITE",
+	"code": "DEC",
+	"countryCode": "US",
+	"countryName": "美国",
+	cityFirstLetter: "D"
+}, {
+	cityName: "德尔卡门",
+	citySpell: "DEERKAMEN",
+	"code": "IAO",
+	"countryCode": "PH",
+	"countryName": "菲律宾",
+	cityFirstLetter: "D"
+}, {
+	cityName: "多隆达",
+	citySpell: "DUOLONGDA",
+	"code": "DRD",
+	"countryCode": "AU",
+	"countryName": "澳大利亚",
+	cityFirstLetter: "D"
+}, {
+	cityName: "达府",
+	citySpell: "DAFU",
+	"code": "TKT",
+	"countryCode": "TH",
+	"countryName": "泰国",
+	cityFirstLetter: "D"
+}, {
+	cityName: "多米尼加岛",
+	citySpell: "DUOMINIJIADAO",
+	"code": "DOM",
+	"countryCode": "DM",
+	"countryName": "多米尼克",
+	cityFirstLetter: "D"
+}, {
+	cityName: "丹戎式罗",
+	citySpell: "DANRONGSHILUO",
+	"code": "TJS",
+	"countryCode": "ID",
+	"countryName": "印度尼西亚",
+	cityFirstLetter: "D"
+}, {
+	cityName: "杜利亚",
+	citySpell: "DULIYA",
+	"code": "TLE",
+	"countryCode": "MG",
+	"countryName": "马达加斯加",
+	cityFirstLetter: "D"
+}, {
+	cityName: "德纳姆",
+	citySpell: "DENAMU",
+	"code": "DNM",
+	"countryCode": "AU",
+	"countryName": "澳大利亚",
+	cityFirstLetter: "D"
+}, {
+	cityName: "杜塞尔多夫",
+	citySpell: "DUSAIERDUOFU",
+	"code": "DUS",
+	"countryCode": "DE",
+	"countryName": "德国",
+	cityFirstLetter: "D"
+}, {
+	cityName: "代尼兹利",
+	citySpell: "DAINIZILI",
+	"code": "DNZ",
+	"countryCode": "TR",
+	"countryName": "土耳其",
+	cityFirstLetter: "D"
+}, {
+	cityName: "蒂瓦特",
+	citySpell: "DIWATE",
+	"code": "TIV",
+	"countryCode": "ME",
+	"countryName": "黑山共和国",
+	cityFirstLetter: "D"
+}, {
+	cityName: "达尔比",
+	citySpell: "DAERBI",
+	"code": "DBY",
+	"countryCode": "AU",
+	"countryName": "澳大利亚",
+	cityFirstLetter: "D"
+}, {
+	cityName: "达里",
+	citySpell: "DALI",
+	"code": "DRR",
+	"countryCode": "AU",
+	"countryName": "澳大利亚",
+	cityFirstLetter: "D"
+}, {
+	cityName: "雕门",
+	citySpell: "DIAOMEN",
+	"code": "TOD",
+	"countryCode": "MY",
+	"countryName": "马来西亚",
+	cityFirstLetter: "D"
+}, {
+	cityName: "达欺县",
+	citySpell: "DAQIXIAN",
+	"code": "TKH",
+	"countryCode": "TH",
+	"countryName": "泰国",
+	cityFirstLetter: "D"
+}, {
+	cityName: "德尔塔",
+	citySpell: "DEERTA",
+	"code": "DTA",
+	"countryCode": "US",
+	"countryName": "美国",
+	cityFirstLetter: "D"
+}, {
+	cityName: "大瀑布城",
+	citySpell: "DAPUBUCHENG",
+	"code": "WBR",
+	"countryCode": "US",
+	"countryName": "美国",
+	cityFirstLetter: "D"
+}, {
+	cityName: "丁城",
+	citySpell: "DINGCHENG",
+	"code": "TNC",
+	"countryCode": "US",
+	"countryName": "美国",
+	cityFirstLetter: "D"
+}, {
+	cityName: "迪亚巴克尔",
+	citySpell: "DIYABAKEER",
+	"code": "DIY",
+	"countryCode": "TR",
+	"countryName": "土耳其",
+	cityFirstLetter: "D"
+}, {
+	cityName: "大章克申",
+	citySpell: "DAZHANGKESHEN",
+	"code": "GJT",
+	"countryCode": "US",
+	"countryName": "美国",
+	cityFirstLetter: "D"
+}, {
+	cityName: "DELINE",
+	citySpell: "DELINE",
+	"code": "YWJ",
+	"countryCode": "CA",
+	"countryName": "加拿大",
+	cityFirstLetter: "D"
+}, {
+	cityName: "东松德",
+	citySpell: "DONGSONGDE",
+	"code": "ESD",
+	"countryCode": "US",
+	"countryName": "美国",
+	cityFirstLetter: "D"
+}, {
+	cityName: "大急流城(明尼苏达州)",
+	citySpell: "DAJILIUCHENG（MINGNISUDAZHOU）",
+	"code": "GPZ",
+	"countryCode": "US",
+	"countryName": "美国",
+	cityFirstLetter: "D"
+}, {
+	cityName: "对马",
+	citySpell: "DUIMA",
+	"code": "TSJ",
+	"countryCode": "JP",
+	"countryName": "日本",
+	cityFirstLetter: "D"
+}, {
+	cityName: "达沙古兹",
+	citySpell: "DASHAGUZI",
+	"code": "TAZ",
+	"countryCode": "TM",
+	"countryName": "土库曼斯坦",
+	cityFirstLetter: "D"
+}, {
+	cityName: "迪波果",
+	citySpell: "DIBOGUO",
+	"code": "XDE",
+	"countryCode": "BF",
+	"countryName": "布基纳法索",
+	cityFirstLetter: "D"
+}, {
+	cityName: "的梨波里",
+	citySpell: "DELIBOLI",
+	"code": "KYE",
+	"countryCode": "LB",
+	"countryName": "黎巴嫩",
+	cityFirstLetter: "D"
+}, {
+	cityName: "多多依马",
+	citySpell: "DUODUOYIMA",
+	"code": "DDM",
+	"countryCode": "PG",
+	"countryName": "巴布亚新几内亚",
+	cityFirstLetter: "D"
+}, {
+	cityName: "德拉伊斯梅尔汗",
+	citySpell: "DELAYISIMEIERHAN",
+	"code": "DSK",
+	"countryCode": "PK",
+	"countryName": "巴基斯坦",
+	cityFirstLetter: "D"
+}, {
+	cityName: "德塞阿多港",
+	citySpell: "DESAIADUOGANG",
+	"code": "PUD",
+	"countryCode": "AR",
+	"countryName": "阿根廷",
+	cityFirstLetter: "D"
+}, {
+	cityName: "多哈",
+	citySpell: "DUOHA",
+	"code": "DOH",
+	"countryCode": "QA",
+	"countryName": "卡塔尔",
+	cityFirstLetter: "D"
+}, {
+	cityName: "达尼丁",
+	citySpell: "DANIDING",
+	"code": "DUD",
+	"countryCode": "NZ",
+	"countryName": "新西兰",
+	cityFirstLetter: "D"
+}, {
+	cityName: "多内茨克",
+	citySpell: "DUONEICIKE",
+	"code": "DOK",
+	"countryCode": "UA",
+	"countryName": "乌克兰",
+	cityFirstLetter: "D"
+}, {
+	cityName: "邓杜",
+	citySpell: "DENGDU",
+	"code": "DUE",
+	"countryCode": "AO",
+	"countryName": "安哥拉",
+	cityFirstLetter: "D"
+}, {
+	cityName: "丹绒玛尼",
+	citySpell: "DANRONGMANI",
+	"code": "TGC",
+	"countryCode": "MY",
+	"countryName": "马来西亚",
+	cityFirstLetter: "D"
+}, {
+	cityName: "达杜",
+	citySpell: "DADU",
+	"code": "DDU",
+	"countryCode": "PK",
+	"countryName": "巴基斯坦",
+	cityFirstLetter: "D"
+}, {
+	cityName: "杜波依斯",
+	citySpell: "DUBOYISI",
+	"code": "DUJ",
+	"countryCode": "US",
+	"countryName": "美国",
+	cityFirstLetter: "D"
+}, {
+	cityName: "迪兰本",
+	citySpell: "DILANBEN",
+	"code": "DRN",
+	"countryCode": "AU",
+	"countryName": "澳大利亚",
+	cityFirstLetter: "D"
+}, {
+	cityName: "大贝尔",
+	citySpell: "DABEIER",
+	"code": "RBF",
+	"countryCode": "US",
+	"countryName": "美国",
+	cityFirstLetter: "D"
+}, {
+	cityName: "达恩利岛",
+	citySpell: "DAENLIDAO",
+	"code": "NLF",
+	"countryCode": "AU",
+	"countryName": "澳大利亚",
+	cityFirstLetter: "D"
+}, {
+	cityName: "迪维诺波利斯",
+	citySpell: "DIWEINUOBOLISI",
+	"code": "DIQ",
+	"countryCode": "BR",
+	"countryName": "巴西",
+	cityFirstLetter: "D"
+}, {
+	cityName: "多克里弗",
+	citySpell: "DUOKELIFU",
+	"code": "DKV",
+	"countryCode": "AU",
+	"countryName": "澳大利亚",
+	cityFirstLetter: "D"
+}, {
+	cityName: "大福克斯",
+	citySpell: "DAFUKESI",
+	"code": "GFK",
+	"countryCode": "US",
+	"countryName": "美国",
+	cityFirstLetter: "D"
+}, {
+	cityName: "当加拉",
+	citySpell: "DANGJIALA",
+	"code": "DOX",
+	"countryCode": "AU",
+	"countryName": "澳大利亚",
+	cityFirstLetter: "D"
+}, {
+	cityName: "德尔玛岛",
+	citySpell: "DEERMADAO",
+	"code": "ZDY",
+	"countryCode": "AE",
+	"countryName": "阿联酋",
+	cityFirstLetter: "D"
+}, {
+	cityName: "达喀尔",
+	citySpell: "DAKAER",
+	"code": "DKR",
+	"countryCode": "SN",
+	"countryName": "塞内加尔",
+	cityFirstLetter: "D"
+}, {
+	cityName: "丹尼森",
+	citySpell: "DANNISEN",
+	"code": "DNS",
+	"countryCode": "US",
+	"countryName": "美国",
+	cityFirstLetter: "D"
+}, {
+	cityName: "达曼",
+	citySpell: "DAMAN",
+	"code": "DMM",
+	"countryCode": "SA",
+	"countryName": "沙特阿垃伯",
+	cityFirstLetter: "D"
+}, {
+	cityName: "丁德尔",
+	citySpell: "DINGDEER",
+	"code": "DNX",
+	"countryCode": "SD",
+	"countryName": "苏丹",
+	cityFirstLetter: "D"
+}, {
+	cityName: "达维德",
+	citySpell: "DAWEIDE",
+	"code": "DAV",
+	"countryCode": "PA",
+	"countryName": "巴拿马",
+	cityFirstLetter: "D"
+}, {
+	cityName: "迪亚曼蒂纳",
+	citySpell: "DIYAMANDINA",
+	"code": "DYM",
+	"countryCode": "AU",
+	"countryName": "澳大利亚",
+	cityFirstLetter: "D"
+}, {
+	cityName: "第乌",
+	citySpell: "DIWU",
+	"code": "DIU",
+	"countryCode": "IN",
+	"countryName": "印度",
+	cityFirstLetter: "D"
+}, {
+	cityName: "蒂阿诺",
+	citySpell: "DIANUO",
+	"code": "TEU",
+	"countryCode": "NZ",
+	"countryName": "新西兰",
+	cityFirstLetter: "D"
+}, {
+	cityName: "道格拉斯港",
+	citySpell: "DAOGELASIGANG",
+	"code": "PTI",
+	"countryCode": "AU",
+	"countryName": "澳大利亚",
+	cityFirstLetter: "D"
+}, {
+	cityName: "丁博克罗",
+	citySpell: "DINGBOKELUO",
+	"code": "DIM",
+	"countryCode": "CI",
+	"countryName": "科特迪瓦",
+	cityFirstLetter: "D"
+}, {
+	cityName: "德苏",
+	citySpell: "DESU",
+	"code": "TEI",
+	"countryCode": "IN",
+	"countryName": "印度",
+	cityFirstLetter: "D"
+}, {
+	cityName: "邓克岛",
+	citySpell: "DENGKEDAO",
+	"code": "DKI",
+	"countryCode": "AU",
+	"countryName": "澳大利亚",
+	cityFirstLetter: "D"
+}, {
+	cityName: "蒂米什瓦拉",
+	citySpell: "DIMISHENWALA",
+	"code": "TSR",
+	"countryCode": "RO",
+	"countryName": "罗马尼亚",
+	cityFirstLetter: "D"
+}, {
+	cityName: "德尼利昆",
+	citySpell: "DENILIKUN",
+	"code": "DNQ",
+	"countryCode": "AU",
+	"countryName": "澳大利亚",
+	cityFirstLetter: "D"
+}, {
+	cityName: "蒂加",
+	citySpell: "DIJIA",
+	"code": "TGJ",
+	"countryCode": "NC",
+	"countryName": "新喀里多尼亚（太平洋）",
+	cityFirstLetter: "D"
+}, {
+	cityName: "的里雅斯特",
+	citySpell: "DELIYASITE",
+	"code": "TRS",
+	"countryCode": "IT",
+	"countryName": "意大利",
+	cityFirstLetter: "D"
+}, {
+	cityName: "迪纳加特",
+	citySpell: "DINAJIATE",
+	"code": "DNU",
+	"countryCode": "PG",
+	"countryName": "巴布亚新几内亚",
+	cityFirstLetter: "D"
+}, {
+	cityName: "迪凡斯",
+	citySpell: "DIFANSI",
+	"code": "DFI",
+	"countryCode": "US",
+	"countryName": "美国",
+	cityFirstLetter: "D"
+}, {
+	cityName: "达赫莱绿洲",
+	citySpell: "DAHELAILVZHOU",
+	"code": "DAK",
+	"countryCode": "EG",
+	"countryName": "埃及",
+	cityFirstLetter: "D"
+}, {
+	cityName: "达塔达瓦伊",
+	citySpell: "DATADAWAYI",
+	"code": "DTD",
+	"countryCode": "ID",
+	"countryName": "印度尼西亚",
+	cityFirstLetter: "D"
+}, {
+	cityName: "得土安",
+	citySpell: "DETUAN",
+	"code": "TTU",
+	"countryCode": "MA",
+	"countryName": "摩洛哥",
+	cityFirstLetter: "D"
+}, {
+	cityName: "迪尔伦湾",
+	citySpell: "DIERLUNWAN",
+	"code": "DLY",
+	"countryCode": "VU",
+	"countryName": "瓦努阿图",
+	cityFirstLetter: "D"
+}, {
+	cityName: "达洛亚",
+	citySpell: "DALUOYA",
+	"code": "DJO",
+	"countryCode": "CI",
+	"countryName": "科特迪瓦",
+	cityFirstLetter: "D"
+}, {
+	cityName: "达盖特",
+	citySpell: "DAGAITE",
+	"code": "DAG",
+	"countryCode": "US",
+	"countryName": "美国",
+	cityFirstLetter: "D"
+}, {
+	cityName: "杜兰戈",
+	citySpell: "DULANGE",
+	"code": "DRO",
+	"countryCode": "US",
+	"countryName": "美国",
+	cityFirstLetter: "D"
+}, {
+	cityName: "丹兑",
+	citySpell: "DANDUI",
+	"code": "SNW",
+	"countryCode": "MM",
+	"countryName": "缅甸",
+	cityFirstLetter: "D"
+}, {
+	cityName: "当果拉",
+	citySpell: "DANGGUOLA",
+	"code": "DOG",
+	"countryCode": "SD",
+	"countryName": "苏丹",
+	cityFirstLetter: "D"
+}, {
+	cityName: "大斯普林斯",
+	citySpell: "DASIPULINSI",
+	"code": "HCA",
+	"countryCode": "US",
+	"countryName": "美国",
+	cityFirstLetter: "D"
+}, {
+	cityName: "大克佩尔",
+	citySpell: "DAKEPEIER",
+	"code": "GKL",
+	"countryCode": "AU",
+	"countryName": "澳大利亚",
+	cityFirstLetter: "D"
+}, {
+	cityName: "代瓦迪米",
+	citySpell: "DAIWADIMI",
+	"code": "DWD",
+	"countryCode": "SA",
+	"countryName": "沙特阿垃伯",
+	cityFirstLetter: "D"
+}, {
+	cityName: "德之岛",
+	citySpell: "DEZHIDAO",
+	"code": "TKN",
+	"countryCode": "JP",
+	"countryName": "日本",
+	cityFirstLetter: "D"
+}, {
+	cityName: "达勒姆提斯瓦雷",
+	citySpell: "DALEMUTISIWALEI",
+	"code": "MME",
+	"countryCode": "GB",
+	"countryName": "英国",
+	cityFirstLetter: "D"
+}, {
+	cityName: "丹戎彭登",
+	citySpell: "DANRONGPENGDENG",
+	"code": "TJQ",
+	"countryCode": "ID",
+	"countryName": "印度尼西亚",
+	cityFirstLetter: "D"
+}, {
+	cityName: "代尔纳",
+	citySpell: "DAIERNA",
+	"code": "DNF",
+	"countryCode": "LY",
+	"countryName": "利比亚",
+	cityFirstLetter: "D"
+}, {
+	cityName: "代顿",
+	citySpell: "DAIDUN",
+	"code": "DAY",
+	"countryCode": "US",
+	"countryName": "美国",
+	cityFirstLetter: "D"
+}, {
+	cityName: "德班",
+	citySpell: "DEBAN",
+	"code": "DUR",
+	"countryCode": "ZA",
+	"countryName": "南非",
+	cityFirstLetter: "D"
+}, {
+	cityName: "杜马格特",
+	citySpell: "DUMAGETE",
+	"code": "DGT",
+	"countryCode": "PH",
+	"countryName": "菲律宾",
+	cityFirstLetter: "D"
+}, {
+	cityName: "丹戎槟榔",
+	citySpell: "DANRONGBINLANG",
+	"code": "TNJ",
+	"countryCode": "ID",
+	"countryName": "印度尼西亚",
+	cityFirstLetter: "D"
+}, {
+	cityName: "达特",
+	citySpell: "DATE",
+	"code": "DTE",
+	"countryCode": "PH",
+	"countryName": "菲律宾",
+	cityFirstLetter: "D"
+}, {
+	cityName: "蒂默特",
+	citySpell: "DIMOTE",
+	"code": "TUM",
+	"countryCode": "AU",
+	"countryName": "澳大利亚",
+	cityFirstLetter: "D"
+}, {
+	cityName: "迪斯丁/华尔顿堡",
+	citySpell: "DISIDINGHUAERDUNBAO",
+	"code": "VPS",
+	"countryCode": "US",
+	"countryName": "美国",
+	cityFirstLetter: "D"
+}, {
+	cityName: "东托沃斯",
+	citySpell: "DONGTUOWOSI",
+	"code": "ECA",
+	"countryCode": "US",
+	"countryName": "美国",
+	cityFirstLetter: "D"
+}, {
+	cityName: "多里",
+	citySpell: "DUOLI",
+	"code": "DOR",
+	"countryCode": "BF",
+	"countryName": "布基纳法索",
+	cityFirstLetter: "D"
+}, {
+	cityName: "大马士革",
+	citySpell: "DAMASHIGE",
+	"code": "DAM",
+	"countryCode": "SY",
+	"countryName": "叙利亚",
+	cityFirstLetter: "D"
+}, {
+	cityName: "大草原城",
+	citySpell: "DACAOYUANCHENG",
+	"code": "YQU",
+	"countryCode": "CA",
+	"countryName": "加拿大",
+	cityFirstLetter: "D"
+}, {
+	cityName: "多特蒙德",
+	citySpell: "DUOTEMENGDE",
+	"code": "DTM",
+	"countryCode": "DE",
+	"countryName": "德国",
+	cityFirstLetter: "D"
+}, {
+	cityName: "杜兰戈",
+	citySpell: "DULANGE",
+	"code": "DGO",
+	"countryCode": "MX",
+	"countryName": "墨西哥",
+	cityFirstLetter: "D"
+}, {
+	cityName: "迪石",
+	citySpell: "DISHI",
+	"code": "VKG",
+	"countryCode": "VN",
+	"countryName": "越南",
+	cityFirstLetter: "D"
+}, {
+	cityName: "德岛",
+	citySpell: "DEDAO",
+	"code": "TSU",
+	"countryCode": "KI",
+	"countryName": "基里巴斯",
+	cityFirstLetter: "D"
+}, {
+	cityName: "迪马布尔",
+	citySpell: "DIMABUER",
+	"code": "DMU",
+	"countryCode": "IN",
+	"countryName": "印度",
+	cityFirstLetter: "D"
+}, {
+	cityName: "东汉普顿",
+	citySpell: "DONGHANPUDUN",
+	"code": "HTO",
+	"countryCode": "US",
+	"countryName": "美国",
+	cityFirstLetter: "D"
+}, {
+	cityName: "独立城",
+	citySpell: "DULICHENG",
+	"code": "INB",
+	"countryCode": "BZ",
+	"countryName": "伯利兹",
+	cityFirstLetter: "D"
+}, {
+	cityName: "东格陵兰",
+	citySpell: "DONGGELINGLAN",
+	"code": "CNP",
+	"countryCode": "GL",
+	"countryName": "格陵兰岛",
+	cityFirstLetter: "D"
+}, {
+	cityName: "道森河",
+	citySpell: "DAOSENHE",
+	"code": "YDQ",
+	"countryCode": "CA",
+	"countryName": "加拿大",
+	cityFirstLetter: "D"
+}, {
+	cityName: "达兰扎达嘎德",
+	citySpell: "DALANZHADAGADE",
+	"code": "DLZ",
+	"countryCode": "MN",
+	"countryName": "蒙古",
+	cityFirstLetter: "D"
+}, {
+	cityName: "杜蒂戈林",
+	citySpell: "DUDIGELIN",
+	"code": "TCR",
+	"countryCode": "IN",
+	"countryName": "印度",
+	cityFirstLetter: "D"
+}, {
+	cityName: "多多马",
+	citySpell: "DUODUOMA",
+	"code": "DOD",
+	"countryCode": "TZ",
+	"countryName": "坦桑尼亚",
+	cityFirstLetter: "D"
+}, {
+	cityName: "蒂鲁吉拉伯利",
+	citySpell: "DILUJILABOLI",
+	"code": "TRZ",
+	"countryCode": "IN",
+	"countryName": "印度",
+	cityFirstLetter: "D"
+}, {
+	cityName: "迪奥斯",
+	citySpell: "DIAOSI",
+	"code": "DOS",
+	"countryCode": "PG",
+	"countryName": "巴布亚新几内亚",
+	cityFirstLetter: "D"
+}, {
+	cityName: "大本德",
+	citySpell: "DABENDE",
+	"code": "GBD",
+	"countryCode": "US",
+	"countryName": "美国",
+	cityFirstLetter: "D"
+}, {
+	cityName: "代里姆",
+	citySpell: "DAILIMU",
+	"code": "DER",
+	"countryCode": "PG",
+	"countryName": "巴布亚新几内亚",
+	cityFirstLetter: "D"
+}, {
+	cityName: "东戈瓦",
+	citySpell: "DONGGEWA",
+	"code": "TGH",
+	"countryCode": "VU",
+	"countryName": "瓦努阿图",
+	cityFirstLetter: "D"
+}, {
+	cityName: "大坎普",
+	citySpell: "DAKANPU",
+	"code": "CGR",
+	"countryCode": "BR",
+	"countryName": "巴西",
+	cityFirstLetter: "D"
+}, {
+	cityName: "德黑兰",
+	citySpell: "DEHEILAN",
+	"code": "THR",
+	"countryCode": "IR",
+	"countryName": "伊朗",
+	cityFirstLetter: "D"
+}, {
+	cityName: "丹维尔（伊利诺伊）",
+	citySpell: "DANWEIER",
+	"code": "DAN",
+	"countryCode": "US",
+	"countryName": "美国",
+	cityFirstLetter: "D"
+}, {
+	cityName: "打巴端",
+	citySpell: "DABADUAN",
+	"code": "TPK",
+	"countryCode": "ID",
+	"countryName": "印度尼西亚",
+	cityFirstLetter: "D"
+}, {
+	cityName: "多良间",
+	citySpell: "DUOLIANGJIAN",
+	"code": "TRA",
+	"countryCode": "JP",
+	"countryName": "日本",
+	cityFirstLetter: "D"
+}, {
+	cityName: "道奇堡",
+	citySpell: "DAOQIBAO",
+	"code": "FOD",
+	"countryCode": "US",
+	"countryName": "美国",
+	cityFirstLetter: "D"
+}, {
+	cityName: "大峡谷",
+	citySpell: "DAXIAGU",
+	"code": "GCN",
+	"countryCode": "US",
+	"countryName": "美国",
+	cityFirstLetter: "D"
+}, {
+	cityName: "道格拉斯",
+	citySpell: "DAOGELASI",
+	"code": "DUG",
+	"countryCode": "US",
+	"countryName": "美国",
+	cityFirstLetter: "D"
+}, {
+	cityName: "多尼戈尔",
+	citySpell: "DUONIGEER",
+	"code": "CFN",
+	"countryCode": "IE",
+	"countryName": "爱尔兰",
+	cityFirstLetter: "D"
+}, {
+	cityName: "第比利斯",
+	citySpell: "DIBILISI",
+	"code": "TBS",
+	"countryCode": "GE",
+	"countryName": "格鲁吉亚",
+	cityFirstLetter: "D"
+}, {
+	cityName: "达西纳",
+	citySpell: "DAXINA",
+	"code": "DAH",
+	"countryCode": "YE",
+	"countryName": "也门",
+	cityFirstLetter: "D"
+}, {
+	cityName: "多芬",
+	citySpell: "DUOFEN",
+	"code": "YDN",
+	"countryCode": "CA",
+	"countryName": "加拿大",
+	cityFirstLetter: "D"
+}, {
+	cityName: "达鲁",
+	citySpell: "DALU",
+	"code": "DAU",
+	"countryCode": "PG",
+	"countryName": "巴布亚新几内亚",
+	cityFirstLetter: "D"
+}, {
+	cityName: "大村",
+	citySpell: "DACUN",
+	"code": "OMJ",
+	"countryCode": "JP",
+	"countryName": "日本",
+	cityFirstLetter: "D"
+}, {
+	cityName: "多波",
+	citySpell: "DUOBO",
+	"code": "DOB",
+	"countryCode": "ID",
+	"countryName": "印度尼西亚",
+	cityFirstLetter: "D"
+}, {
+	cityName: "大馆能代",
+	citySpell: "DAGUANNENGDAI",
+	"code": "ONJ",
+	"countryCode": "JP",
+	"countryName": "日本",
+	cityFirstLetter: "D"
+}, {
+	cityName: "丹吉尔",
+	citySpell: "DANJIER",
+	"code": "TNG",
+	"countryCode": "MA",
+	"countryName": "摩洛哥",
+	cityFirstLetter: "D"
+}, {
+	cityName: "德瑞司",
+	citySpell: "DERUISI",
+	"code": "YXT",
+	"countryCode": "CA",
+	"countryName": "加拿大",
+	cityFirstLetter: "D"
+}, {
+	cityName: "道森",
+	citySpell: "DAOSEN",
+	"code": "YDA",
+	"countryCode": "CA",
+	"countryName": "加拿大",
+	cityFirstLetter: "D"
+}, {
+	cityName: "德文波特",
+	citySpell: "DEWENBOTE",
+	"code": "DPO",
+	"countryCode": "AU",
+	"countryName": "澳大利亚",
+	cityFirstLetter: "D"
+}, {
+	cityName: "德芦斯",
+	citySpell: "DELUSI",
+	"code": "DLH",
+	"countryCode": "US",
+	"countryName": "美国",
+	cityFirstLetter: "D"
+}, {
+	cityName: "得梅因",
+	citySpell: "DEMEIYIN",
+	"code": "DSM",
+	"countryCode": "US",
+	"countryName": "美国",
+	cityFirstLetter: "D"
+}, {
+	cityName: "迪比克",
+	citySpell: "DIBIKE",
+	"code": "DBQ",
+	"countryCode": "US",
+	"countryName": "美国",
+	cityFirstLetter: "D"
+}, {
+	cityName: "道奇城",
+	citySpell: "DAOQICHENG",
+	"code": "DDC",
+	"countryCode": "US",
+	"countryName": "美国",
+	cityFirstLetter: "D"
+}, {
+	cityName: "达累斯萨拉姆",
+	citySpell: "DALEISISALAMU",
+	"code": "DAR",
+	"countryCode": "TZ",
+	"countryName": "坦桑尼亚",
+	cityFirstLetter: "D"
+}, {
+	cityName: "大不里士",
+	citySpell: "DABULISHI",
+	"code": "TBZ",
+	"countryCode": "IR",
+	"countryName": "伊朗",
+	cityFirstLetter: "D"
+}, {
+	cityName: "东伦敦",
+	citySpell: "DONGLUNDUN",
+	"code": "ELS",
+	"countryCode": "ZA",
+	"countryName": "南非",
+	cityFirstLetter: "D"
+}, {
+	cityName: "达拉万杜岛",
+	citySpell: "DALAWANDUDAO",
+	"code": "DRV",
+	"countryCode": "MV",
+	"countryName": "马尔代夫",
+	cityFirstLetter: "D"
+}, {
+	cityName: "德雷达瓦",
+	citySpell: "DELEIDAWA",
+	"code": "DIR",
+	"countryCode": "ET",
+	"countryName": "埃塞俄比亚",
+	cityFirstLetter: "D"
+}, {
+	cityName: "德雷克湾",
+	citySpell: "DELEIKEWAN",
+	"code": "DRK",
+	"countryCode": "CR",
+	"countryName": "哥斯达黎加",
+	cityFirstLetter: "D"
+}, {
+	cityName: "德岛",
+	citySpell: "DEDAO",
+	"code": "TKS",
+	"countryCode": "JP",
+	"countryName": "日本",
+	cityFirstLetter: "D"
+}, {
+	cityName: "多尔帕",
+	citySpell: "DUOERPA",
+	"code": "DOP",
+	"countryCode": "NP",
+	"countryName": "尼泊尔",
+	cityFirstLetter: "D"
+}, {
+	cityName: "稻草河",
+	citySpell: "DAOCAOHE",
+	"code": "YHY",
+	"countryCode": "CA",
+	"countryName": "加拿大",
+	cityFirstLetter: "D"
+}, {
+	cityName: "大凯克城",
+	citySpell: "DAKAIKECHENG",
+	"code": "YGC",
+	"countryCode": "CA",
+	"countryName": "加拿大",
+	cityFirstLetter: "D"
+}, {
+	cityName: "代沙尔特",
+	citySpell: "DAISHAERTE",
+	"code": "DYA",
+	"countryCode": "AU",
+	"countryName": "澳大利亚",
+	cityFirstLetter: "D"
+}, {
+	cityName: "第聂伯罗彼得罗夫斯克",
+	citySpell: "DINIEBOLUOBIDELUOFUSIKE",
+	"code": "DNK",
+	"countryCode": "UA",
+	"countryName": "乌克兰",
+	cityFirstLetter: "D"
+}, {
+	cityName: "迪灵汗",
+	citySpell: "DILINGHAN",
+	"code": "DLG",
+	"countryCode": "US",
+	"countryName": "美国",
+	cityFirstLetter: "D"
+}, {
+	cityName: "大邱",
+	citySpell: "DAQIU",
+	"code": "TAE",
+	"countryCode": "KR",
+	"countryName": "韩国",
+	cityFirstLetter: "D"
+}, {
+	cityName: "大峡谷",
+	citySpell: "DAXIAGU",
+	"code": "GCT",
+	"countryCode": "US",
+	"countryName": "美国",
+	cityFirstLetter: "D"
+}, {
+	cityName: "迪克韦勒",
+	citySpell: "DIKEWEILE",
+	"code": "DIW",
+	"countryCode": "LK",
+	"countryName": "斯里兰卡",
+	cityFirstLetter: "D"
+}, {
+	cityName: "迪布鲁格尔",
+	citySpell: "DIBULUGEER",
+	"code": "DIB",
+	"countryCode": "IN",
+	"countryName": "印度",
+	cityFirstLetter: "D"
+}, {
+	cityName: "大特克",
+	citySpell: "DATEKE",
+	"code": "GDT",
+	"countryCode": "TC",
+	"countryName": "特克斯和凯科斯群岛",
+	cityFirstLetter: "D"
+}, {
+	cityName: "多佛－切斯沃尔德",
+	citySpell: "DUOFO－QIESIWOERDE",
+	"code": "DOV",
+	"countryCode": "US",
+	"countryName": "美国",
+	cityFirstLetter: "D"
+}, {
+	cityName: "德帕斯",
+	citySpell: "DEPASI",
+	"code": "YQD",
+	"countryCode": "CA",
+	"countryName": "加拿大",
+	cityFirstLetter: "D"
+}, {
+	cityName: "戴布拉挽马科斯",
+	citySpell: "DAIBULAWANMAKESI",
+	"code": "DBM",
+	"countryCode": "ET",
+	"countryName": "埃塞俄比亚",
+	cityFirstLetter: "D"
+}, {
+	cityName: "代曼",
+	citySpell: "DAIMAN",
+	"code": "NMB",
+	"countryCode": "IN",
+	"countryName": "印度",
+	cityFirstLetter: "D"
+}, {
+	cityName: "帝米卡",
+	citySpell: "DIMIKA",
+	"code": "TIM",
+	"countryCode": "ID",
+	"countryName": "印度尼西亚",
+	cityFirstLetter: "D"
+}, {
+	cityName: "达卡",
+	citySpell: "DAKA",
+	"code": "DAC",
+	"countryCode": "BD",
+	"countryName": "孟加拉国",
+	cityFirstLetter: "D"
+}, {
+	cityName: "迪兹富勒",
+	citySpell: "DIZIFULE",
+	"code": "DEF",
+	"countryCode": "IR",
+	"countryName": "伊朗",
+	cityFirstLetter: "D"
+}, {
+	cityName: "杜马德吉",
+	citySpell: "DUMADEJI",
+	"code": "DMD",
+	"countryCode": "AU",
+	"countryName": "澳大利亚",
+	cityFirstLetter: "D"
+}, {
+	cityName: "迪沃",
+	citySpell: "DIWO",
+	"code": "DIV",
+	"countryCode": "CI",
+	"countryName": "科特迪瓦",
+	cityFirstLetter: "D"
+}, {
+	cityName: "大分",
+	citySpell: "DAFEN",
+	"code": "OIT",
+	"countryCode": "JP",
+	"countryName": "日本",
+	cityFirstLetter: "D"
+}, {
+	cityName: "杜阿拉",
+	citySpell: "DUALA",
+	"code": "DLA",
+	"countryCode": "CM",
+	"countryName": "喀麦隆",
+	cityFirstLetter: "D"
+}, {
+	cityName: "多维尔",
+	citySpell: "DUOWEIER",
+	"code": "DOL",
+	"countryCode": "FR",
+	"countryName": "法国",
+	cityFirstLetter: "D"
+}, {
+	cityName: "多巴哥岛",
+	citySpell: "DUOBAGEDAO",
+	"code": "TAB",
+	"countryCode": "TT",
+	"countryName": "特尼达和多巴哥",
+	cityFirstLetter: "D"
+}, {
+	cityName: "丹达",
+	citySpell: "DANDA",
+	"code": "TDG",
+	"countryCode": "PH",
+	"countryName": "菲律宾",
+	cityFirstLetter: "D"
+}, {
+	cityName: "大乌斯秋格",
+	citySpell: "DAWUSIQIUGE",
+	"code": "VUS",
+	"countryCode": "RU",
+	"countryName": "俄罗斯",
+	cityFirstLetter: "D"
+}, {
+	cityName: "迪金森",
+	citySpell: "DIJINSEN",
+	"code": "DIK",
+	"countryCode": "US",
+	"countryName": "美国",
+	cityFirstLetter: "D"
+}, {
+	cityName: "丹维尔（弗米利恩县）",
+	citySpell: "DANWEIER",
+	"code": "DNV",
+	"countryCode": "US",
+	"countryName": "美国",
+	cityFirstLetter: "D"
+}, {
+	cityName: "迪戎",
+	citySpell: "DIRONG",
+	"code": "DIJ",
+	"countryCode": "FR",
+	"countryName": "法国",
+	cityFirstLetter: "D"
+}, {
+	cityName: "杜布罗夫尼克",
+	citySpell: "DUBULUOFUNIKE",
+	"code": "DBV",
+	"countryCode": "HR",
+	"countryName": "克罗地亚",
+	cityFirstLetter: "D"
+}, {
+	cityName: "多塞特角",
+	citySpell: "DUOSAITEJIAO",
+	"code": "YTE",
+	"countryCode": "CA",
+	"countryName": "加拿大",
+	cityFirstLetter: "D"
+}, {
+	cityName: "打拉根",
+	citySpell: "DALAGEN",
+	"code": "TRK",
+	"countryCode": "ID",
+	"countryName": "印度尼西亚",
+	cityFirstLetter: "D"
+}, {
+	cityName: "多拉杜斯",
+	citySpell: "DUOLADUSI",
+	"code": "DOU",
+	"countryCode": "BR",
+	"countryName": "巴西",
+	cityFirstLetter: "D"
+}, {
+	cityName: "德拉蒙德",
+	citySpell: "DELAMENGDE",
+	"code": "DRU",
+	"countryCode": "US",
+	"countryName": "美国",
+	cityFirstLetter: "D"
+}, {
+	cityName: "迪波洛格",
+	citySpell: "DIBOLUOGE",
+	"code": "DPL",
+	"countryCode": "PH",
+	"countryName": "菲律宾",
+	cityFirstLetter: "D"
+}, {
+	cityName: "多罗比索罗",
+	citySpell: "DUOLUOBISUOLUO",
+	"code": "DOO",
+	"countryCode": "PG",
+	"countryName": "巴布亚新几内亚",
+	cityFirstLetter: "D"
+}, {
+	cityName: "邓肯/夸姆",
+	citySpell: "DENGKEN/KUAMU",
+	"code": "DUQ",
+	"countryCode": "CA",
+	"countryName": "加拿大",
+	cityFirstLetter: "D"
+}, {
+	cityName: "大急流城(密执安州)",
+	citySpell: "DAJILIUCHENG",
+	"code": "GRR",
+	"countryCode": "US",
+	"countryName": "美国",
+	cityFirstLetter: "D"
+}, {
+	cityName: "蒂明斯",
+	citySpell: "DIMINGSI",
+	"code": "YTS",
+	"countryCode": "CA",
+	"countryName": "加拿大",
+	cityFirstLetter: "D"
+}, {
+	cityName: "德贝帕尔",
+	citySpell: "DEBEIPAER",
+	"code": "DBP",
+	"countryCode": "PG",
+	"countryName": "巴布亚新几内亚",
+	cityFirstLetter: "D"
+}, {
+	cityName: "戴利里弗",
+	citySpell: "DAILILIFU",
+	"code": "DVR",
+	"countryCode": "AU",
+	"countryName": "澳大利亚",
+	cityFirstLetter: "D"
+}, {
+	cityName: "杜尚别",
+	citySpell: "DUSHANGBIE",
+	"code": "DYU",
+	"countryCode": "TJ",
+	"countryName": "塔吉克斯坦",
+	cityFirstLetter: "D"
+}, {
+	cityName: "带广",
+	citySpell: "DAIGUANG",
+	"code": "OBO",
+	"countryCode": "JP",
+	"countryName": "日本",
+	cityFirstLetter: "D"
+}, {
+	cityName: "俄克拉何马城",
+	citySpell: "EKELAHEMACHENG",
+	"code": "OKC",
+	"countryCode": "US",
+	"countryName": "美国",
+	cityFirstLetter: "E"
+}, {
+	cityName: "恩波里亚",
+	citySpell: "ENBOLIYA",
+	"code": "EMP",
+	"countryCode": "US",
+	"countryName": "美国",
+	cityFirstLetter: "E"
+}, {
+	cityName: "恩泽雷科雷",
+	citySpell: "ENZELEIKELEI",
+	"code": "NZE",
+	"countryCode": "GN",
+	"countryName": "几内亚",
+	cityFirstLetter: "E"
+}, {
+	cityName: "厄勒布鲁",
+	citySpell: "ELEBULU",
+	"code": "ORB",
+	"countryCode": "SE",
+	"countryName": "瑞典",
+	cityFirstLetter: "E"
+}, {
+	cityName: "俄罗斯米申",
+	citySpell: "ELUOSIMISHEN",
+	"code": "RSH",
+	"countryCode": "US",
+	"countryName": "美国",
+	cityFirstLetter: "E"
+}, {
+	cityName: "俄祖汝穆",
+	citySpell: "EZURUMU",
+	"code": "ERZ",
+	"countryCode": "TR",
+	"countryName": "土耳其",
+	cityFirstLetter: "E"
+}, {
+	cityName: "恩德培",
+	citySpell: "ENDEPEI",
+	"code": "EBB",
+	"countryCode": "UG",
+	"countryName": "乌干达",
+	cityFirstLetter: "E"
+}, {
+	cityName: "恩贝萨",
+	citySpell: "ENBEISA",
+	"code": "EMS",
+	"countryCode": "PG",
+	"countryName": "巴布亚新几内亚",
+	cityFirstLetter: "E"
+}, {
+	cityName: "恩代莱",
+	citySpell: "ENDAILAI",
+	"code": "NDL",
+	"countryCode": "CF",
+	"countryName": "中非",
+	cityFirstLetter: "E"
+}, {
+	cityName: "恩甲美那",
+	citySpell: "ENJIAMEINA",
+	"code": "NDJ",
+	"countryCode": "TD",
+	"countryName": "乍得",
+	cityFirstLetter: "E"
+}, {
+	cityName: "恩乔莱",
+	citySpell: "ENQIAOLAI",
+	"code": "KDJ",
+	"countryCode": "GA",
+	"countryName": "加蓬",
+	cityFirstLetter: "E"
+}, {
+	cityName: "厄尔巴岛",
+	citySpell: "EERBADAO",
+	"code": "EBA",
+	"countryCode": "IT",
+	"countryName": "意大利",
+	cityFirstLetter: "E"
+}, {
+	cityName: "恩代恩代",
+	citySpell: "ENDAIENDAI",
+	"code": "KDN",
+	"countryCode": "GA",
+	"countryName": "加蓬",
+	cityFirstLetter: "E"
+}, {
+	cityName: "俄斯特拉伐",
+	citySpell: "ESITELAFA",
+	"code": "OSR",
+	"countryCode": "CZ",
+	"countryName": "捷克",
+	cityFirstLetter: "E"
+}, {
+	cityName: "鄂木斯克",
+	citySpell: "EMUSIKE",
+	"code": "OMS",
+	"countryCode": "RU",
+	"countryName": "俄罗斯",
+	cityFirstLetter: "E"
+}, {
+	cityName: "恩卡伊",
+	citySpell: "ENKAYI",
+	"code": "NKY",
+	"countryCode": "CG",
+	"countryName": "刚果",
+	cityFirstLetter: "E"
+}, {
+	cityName: "恩卡纳西翁",
+	citySpell: "ENKANAXIWENG",
+	"code": "ENO",
+	"countryCode": "PY",
+	"countryName": "巴拉圭",
+	cityFirstLetter: "E"
+}, {
+	cityName: "恩高岛",
+	citySpell: "ENGAODAO",
+	"code": "NGI",
+	"countryCode": "FJ",
+	"countryName": "斐济群岛",
+	cityFirstLetter: "E"
+}, {
+	cityName: "恩菲达",
+	citySpell: "ENFEIDA",
+	"code": "NBE",
+	"countryCode": "TN",
+	"countryName": "突尼斯",
+	cityFirstLetter: "E"
+}, {
+	cityName: "恩斯赫德",
+	citySpell: "ENSIHEDE",
+	"code": "ENS",
+	"countryCode": "NL",
+	"countryName": "荷兰",
+	cityFirstLetter: "E"
+}, {
+	cityName: "恩纳胡德",
+	citySpell: "ENNAHUDE",
+	"code": "NUD",
+	"countryCode": "SD",
+	"countryName": "苏丹",
+	cityFirstLetter: "E"
+}, {
+	cityName: "鄂霍次克",
+	citySpell: "EHUOCIKE",
+	"code": "OHO",
+	"countryCode": "RU",
+	"countryName": "俄罗斯",
+	cityFirstLetter: "E"
+}, {
+	cityName: "厄德尔",
+	citySpell: "EDEER",
+	"code": "IGD",
+	"countryCode": "TR",
+	"countryName": "土耳其",
+	cityFirstLetter: "E"
+}, {
+	cityName: "俄斯帕尔塔",
+	citySpell: "ESIPAERTA",
+	"code": "ISE",
+	"countryCode": "TR",
+	"countryName": "土耳其",
+	cityFirstLetter: "E"
+}, {
+	cityName: "恩坎",
+	citySpell: "ENKAN",
+	"code": "NKA",
+	"countryCode": "GA",
+	"countryName": "加蓬",
+	cityFirstLetter: "E"
+}, {
+	cityName: "恩特普赖斯",
+	citySpell: "ENTEPULAISI",
+	"code": "ETS",
+	"countryCode": "US",
+	"countryName": "美国",
+	cityFirstLetter: "E"
+}, {
+	cityName: "恩多拉",
+	citySpell: "ENDUOLA",
+	"code": "NLA",
+	"countryCode": "ZM",
+	"countryName": "赞比亚",
+	cityFirstLetter: "E"
+}, {
+	cityName: "恩克洛",
+	citySpell: "ENKELUO",
+	"code": "NKL",
+	"countryCode": "CD",
+	"countryName": "刚果民主共和国",
+	cityFirstLetter: "E"
+}, {
+	cityName: "恩舍尔兹维克",
+	citySpell: "ENSHEERZIWEIKE",
+	"code": "OER",
+	"countryCode": "SE",
+	"countryName": "瑞典",
+	cityFirstLetter: "E"
+}, {
+	cityName: "恩加拉",
+	citySpell: "ENJIALA",
+	"code": "NGL",
+	"countryCode": "ZA",
+	"countryName": "南非",
+	cityFirstLetter: "E"
+}, {
+	cityName: "厄斯特松德",
+	citySpell: "ESITESONGDE",
+	"code": "OSD",
+	"countryCode": "SE",
+	"countryName": "瑞典",
+	cityFirstLetter: "E"
+}, {
+	cityName: "鹅湾",
+	citySpell: "EWAN",
+	"code": "YYR",
+	"countryCode": "CA",
+	"countryName": "加拿大",
+	cityFirstLetter: "E"
+}, {
+	cityName: "恩泽托",
+	citySpell: "ENZETUO",
+	"code": "ARZ",
+	"countryCode": "AO",
+	"countryName": "安哥拉",
+	cityFirstLetter: "E"
+}, {
+	cityName: "恩卡斯",
+	citySpell: "ENKASI",
+	"code": "NKU",
+	"countryCode": "LS",
+	"countryName": "莱索托",
+	cityFirstLetter: "E"
+}, {
+	cityName: "恩扎基",
+	citySpell: "ENZHAJI",
+	"code": "NZA",
+	"countryCode": "AO",
+	"countryName": "安哥拉",
+	cityFirstLetter: "E"
+}, {
+	cityName: "恩冈代雷",
+	citySpell: "ENGANGDAILEI",
+	"code": "NGE",
+	"countryCode": "CM",
+	"countryName": "喀麦隆",
+	cityFirstLetter: "E"
+}, {
+	cityName: "厄什达瓦尔达",
+	citySpell: "ESHIDAWAERDA",
+	"code": "HOV",
+	"countryCode": "NO",
+	"countryName": "挪威",
+	cityFirstLetter: "E"
+}, {
+	cityName: "法兰克福",
+	citySpell: "FALANKEFU",
+	"code": "FRA",
+	"countryCode": "DE",
+	"countryName": "德国",
+	cityFirstLetter: "F"
+}, {
+	cityName: "釜山",
+	citySpell: "FUSHAN",
+	"code": "PUS",
+	"countryCode": "KR",
+	"countryName": "韩国",
+	cityFirstLetter: "F"
+}, {
+	cityName: "福冈",
+	citySpell: "FUGANG",
+	"code": "FUK",
+	"countryCode": "JP",
+	"countryName": "日本",
+	cityFirstLetter: "F"
+}, {
+	cityName: "费城",
+	citySpell: "FEICHENG",
+	"code": "PHL",
+	"countryCode": "US",
+	"countryName": "美国",
+	cityFirstLetter: "F"
+}, {
+	cityName: "佛罗伦萨",
+	citySpell: "FOLUOLUNSA",
+	"code": "FLR",
+	"countryCode": "IT",
+	"countryName": "意大利",
+	cityFirstLetter: "F"
+}, {
+	cityName: "凤凰城",
+	citySpell: "FENGHUANGCHENG",
+	"code": "PHX",
+	"countryCode": "US",
+	"countryName": "美国",
+	cityFirstLetter: "F"
+}, {
+	cityName: "富山",
+	citySpell: "FUSHAN",
+	"code": "TOY",
+	"countryCode": "JP",
+	"countryName": "日本",
+	cityFirstLetter: "F"
+}, {
+	cityName: "富勒顿",
+	citySpell: "FULEDUN",
+	"code": "FUL",
+	"countryCode": "US",
+	"countryName": "美国",
+	cityFirstLetter: "F"
+}, {
+	cityName: "丰沙里",
+	citySpell: "FENGSHALI",
+	"code": "PCQ",
+	"countryCode": "LA",
+	"countryName": "老挝",
+	cityFirstLetter: "F"
+}, {
+	cityName: "费拉泰里",
+	citySpell: "FEILATAILI",
+	"code": "FLI",
+	"countryCode": "IS",
+	"countryName": "冰岛",
+	cityFirstLetter: "F"
+}, {
+	cityName: "费尔凯塞杜古",
+	citySpell: "FEIERKAISAIDUGU",
+	"code": "FEK",
+	"countryCode": "CI",
+	"countryName": "科特迪瓦",
+	cityFirstLetter: "F"
+}, {
+	cityName: "法卡希纳",
+	citySpell: "FAKAXINA",
+	"code": "FHZ",
+	"countryCode": "PF",
+	"countryName": "法属波利尼西亚",
+	cityFirstLetter: "F"
+}, {
+	cityName: "福马",
+	citySpell: "FUMA",
+	"code": "FUM",
+	"countryCode": "PG",
+	"countryName": "巴布亚新几内亚",
+	cityFirstLetter: "F"
+}, {
+	cityName: "福江",
+	citySpell: "FUJIANG",
+	"code": "FUJ",
+	"countryCode": "JP",
+	"countryName": "日本",
+	cityFirstLetter: "F"
+}, {
+	cityName: "法法岛",
+	citySpell: "FAFADAO",
+	"code": "VAV",
+	"countryCode": "TO",
+	"countryName": "汤加",
+	cityFirstLetter: "F"
+}, {
+	cityName: "芬达",
+	citySpell: "FENDA",
+	"code": "PZL",
+	"countryCode": "ZA",
+	"countryName": "南非",
+	cityFirstLetter: "F"
+}, {
+	cityName: "福尔斯岛",
+	citySpell: "FUERSIDAO",
+	"code": "FAK",
+	"countryCode": "US",
+	"countryName": "美国",
+	cityFirstLetter: "F"
+}, {
+	cityName: "弗伦奇利克",
+	citySpell: "FULUNQILIKE",
+	"code": "FRH",
+	"countryCode": "US",
+	"countryName": "美国",
+	cityFirstLetter: "F"
+}, {
+	cityName: "法克法克",
+	citySpell: "FAKEFAKE",
+	"code": "FKQ",
+	"countryCode": "ID",
+	"countryName": "印度尼西亚",
+	cityFirstLetter: "F"
+}, {
+	cityName: "费拉迪圣安娜",
+	citySpell: "FEILADISHENGANNA",
+	"code": "FEC",
+	"countryCode": "BR",
+	"countryName": "巴西",
+	cityFirstLetter: "F"
+}, {
+	cityName: "菲加里",
+	citySpell: "FEIJIALI",
+	"code": "FSC",
+	"countryCode": "FR",
+	"countryName": "法国",
+	cityFirstLetter: "F"
+}, {
+	cityName: "费耶特维尔(北卡罗莱纳州)",
+	citySpell: "FEIYETEWEIER",
+	"code": "FAY",
+	"countryCode": "US",
+	"countryName": "美国",
+	cityFirstLetter: "F"
+}, {
+	cityName: "弗阿穆拉岛",
+	citySpell: "FUAMULADAO",
+	"code": "FVM",
+	"countryCode": "MV",
+	"countryName": "马尔代夫",
+	cityFirstLetter: "F"
+}, {
+	cityName: "佛洛斯",
+	citySpell: "FOLUOSI",
+	"code": "VOL",
+	"countryCode": "GR",
+	"countryName": "希腊",
+	cityFirstLetter: "F"
+}, {
+	cityName: "菲尔莫尔",
+	citySpell: "FEIERMOER",
+	"code": "FIL",
+	"countryCode": "US",
+	"countryName": "美国",
+	cityFirstLetter: "F"
+}, {
+	cityName: "法戈",
+	citySpell: "FAGE",
+	"code": "FAR",
+	"countryCode": "US",
+	"countryName": "美国",
+	cityFirstLetter: "F"
+}, {
+	cityName: "福斯特",
+	citySpell: "FUSITE",
+	"code": "FOT",
+	"countryCode": "AU",
+	"countryName": "澳大利亚",
+	cityFirstLetter: "F"
+}, {
+	cityName: "丰冈",
+	citySpell: "FENGGANG",
+	"code": "TJH",
+	"countryCode": "JP",
+	"countryName": "日本",
+	cityFirstLetter: "F"
+}, {
+	cityName: "凡城",
+	citySpell: "FANCHENG",
+	"code": "VAN",
+	"countryCode": "TR",
+	"countryName": "土耳其",
+	cityFirstLetter: "F"
+}, {
+	cityName: "福克斯港",
+	citySpell: "FUKESIGANG",
+	"code": "YFX",
+	"countryCode": "CA",
+	"countryName": "加拿大",
+	cityFirstLetter: "F"
+}, {
+	cityName: "丰盛港",
+	citySpell: "FENGSHENGGANG",
+	"code": "MEP",
+	"countryCode": "MY",
+	"countryName": "马来西亚",
+	cityFirstLetter: "F"
+}, {
+	cityName: "非斯",
+	citySpell: "FEISI",
+	"code": "FEZ",
+	"countryCode": "MA",
+	"countryName": "摩洛哥",
+	cityFirstLetter: "F"
+}, {
+	cityName: "福岛",
+	citySpell: "FUDAO",
+	"code": "FKS",
+	"countryCode": "JP",
+	"countryName": "日本",
+	cityFirstLetter: "F"
+}, {
+	cityName: "弗雷海德",
+	citySpell: "FULEIHAIDE",
+	"code": "VYD",
+	"countryCode": "ZA",
+	"countryName": "南非",
+	cityFirstLetter: "F"
+}, {
+	cityName: "富图纳岛",
+	citySpell: "FUTUNADAO",
+	"code": "FTA",
+	"countryCode": "VU",
+	"countryName": "瓦努阿图",
+	cityFirstLetter: "F"
+}, {
+	cityName: "富国岛",
+	citySpell: "FUGUODAO",
+	"code": "PQC",
+	"countryCode": "VN",
+	"countryName": "越南",
+	cityFirstLetter: "F"
+}, {
+	cityName: "福朗卡",
+	citySpell: "FULANGKA",
+	"code": "FRC",
+	"countryCode": "BR",
+	"countryName": "巴西",
+	cityFirstLetter: "F"
+}, {
+	cityName: "方阿陶",
+	citySpell: "FANGATAO",
+	"code": "FGU",
+	"countryCode": "PF",
+	"countryName": "法属波利尼西亚",
+	cityFirstLetter: "F"
+}, {
+	cityName: "弗朗斯维尔",
+	citySpell: "FULANGSIWEIER",
+	"code": "MVB",
+	"countryCode": "GA",
+	"countryName": "加蓬",
+	cityFirstLetter: "F"
+}, {
+	cityName: "富兰克林",
+	citySpell: "FULANKELIN",
+	"code": "FKL",
+	"countryCode": "US",
+	"countryName": "美国",
+	cityFirstLetter: "F"
+}, {
+	cityName: "弗里波特",
+	citySpell: "FULIBOTE",
+	"code": "FPO",
+	"countryCode": "BS",
+	"countryName": "巴哈马",
+	cityFirstLetter: "F"
+}, {
+	cityName: "弗罗茨瓦夫",
+	citySpell: "FULUOCIWAFU",
+	"code": "WRO",
+	"countryCode": "PL",
+	"countryName": "波兰",
+	cityFirstLetter: "F"
+}, {
+	cityName: "弗朗西思科挽贝尔特劳",
+	citySpell: "FULANGXISIKEWANBEIERTELAO",
+	"code": "FBE",
+	"countryCode": "BR",
+	"countryName": "巴西",
+	cityFirstLetter: "F"
+}, {
+	cityName: "富勒博恩",
+	citySpell: "FULEBOEN",
+	"code": "FUB",
+	"countryCode": "PG",
+	"countryName": "巴布亚新几内亚",
+	cityFirstLetter: "F"
+}, {
+	cityName: "福井",
+	citySpell: "FUJING",
+	"code": "FKJ",
+	"countryCode": "JP",
+	"countryName": "日本",
+	cityFirstLetter: "F"
+}, {
+	cityName: "法达恩古尔马",
+	citySpell: "FADAENGUERMA",
+	"code": "FNG",
+	"countryCode": "BF",
+	"countryName": "布基纳法索",
+	cityFirstLetter: "F"
+}, {
+	cityName: "弗纳尔",
+	citySpell: "FUNAER",
+	"code": "VEL",
+	"countryCode": "US",
+	"countryName": "美国",
+	cityFirstLetter: "F"
+}, {
+	cityName: "弗洛里亚努",
+	citySpell: "FULUOLIYANU",
+	"code": "FLB",
+	"countryCode": "BR",
+	"countryName": "巴西",
+	cityFirstLetter: "F"
+}, {
+	cityName: "法琛德",
+	citySpell: "FACHENDE",
+	"code": "FAN",
+	"countryCode": "NO",
+	"countryName": "挪威",
+	cityFirstLetter: "F"
+}, {
+	cityName: "费图伊塔",
+	citySpell: "FEITUYITA",
+	"code": "FTI",
+	"countryCode": "AS",
+	"countryName": "美属萨摩亚",
+	cityFirstLetter: "F"
+}, {
+	cityName: "弗雷德里克顿",
+	citySpell: "FULEIDELIKEDUN",
+	"code": "YFC",
+	"countryCode": "CA",
+	"countryName": "加拿大",
+	cityFirstLetter: "F"
+}, {
+	cityName: "费尔蒙特",
+	citySpell: "FEIERMENGTE",
+	"code": "FRM",
+	"countryCode": "US",
+	"countryName": "美国",
+	cityFirstLetter: "F"
+}, {
+	cityName: "佛罗伦西亚",
+	citySpell: "FOLUOLUNXIYA",
+	"code": "FLA",
+	"countryCode": "CO",
+	"countryName": "哥伦比亚",
+	cityFirstLetter: "F"
+}, {
+	cityName: "腓特烈斯港",
+	citySpell: "FEITELIESIGANG",
+	"code": "FDH",
+	"countryCode": "DE",
+	"countryName": "德国",
+	cityFirstLetter: "F"
+}, {
+	cityName: "法拉纳",
+	citySpell: "FALANA",
+	"code": "FAA",
+	"countryCode": "GN",
+	"countryName": "几内亚",
+	cityFirstLetter: "F"
+}, {
+	cityName: "弗雷堡",
+	citySpell: "FULEIBAO",
+	"code": "VRU",
+	"countryCode": "ZA",
+	"countryName": "南非",
+	cityFirstLetter: "F"
+}, {
+	cityName: "菲克斯堡",
+	citySpell: "FEIKESIBAO",
+	"code": "FCB",
+	"countryCode": "ZA",
+	"countryName": "南非",
+	cityFirstLetter: "F"
+}, {
+	cityName: "弗伦斯堡",
+	citySpell: "FULUNSIBAO",
+	"code": "FLF",
+	"countryCode": "DE",
+	"countryName": "德国",
+	cityFirstLetter: "F"
+}, {
+	cityName: "富加穆",
+	citySpell: "FUJIAMU",
+	"code": "FOU",
+	"countryCode": "GA",
+	"countryName": "加蓬",
+	cityFirstLetter: "F"
+}, {
+	cityName: "费希尔斯岛",
+	citySpell: "FEIXIERSIDAO",
+	"code": "FID",
+	"countryCode": "US",
+	"countryName": "美国",
+	cityFirstLetter: "F"
+}, {
+	cityName: "福贾",
+	citySpell: "FUJIA",
+	"code": "FOG",
+	"countryCode": "IT",
+	"countryName": "意大利",
+	cityFirstLetter: "F"
+}, {
+	cityName: "费尔班克斯",
+	citySpell: "FEIERBANKESI",
+	"code": "FAI",
+	"countryCode": "US",
+	"countryName": "美国",
+	cityFirstLetter: "F"
+}, {
+	cityName: "法埃特",
+	citySpell: "FAAITE",
+	"code": "FAC",
+	"countryCode": "PF",
+	"countryName": "法属波利尼西亚",
+	cityFirstLetter: "F"
+}, {
+	cityName: "福尔斯帕斯",
+	citySpell: "FUERSIPASI",
+	"code": "KFP",
+	"countryCode": "US",
+	"countryName": "美国",
+	cityFirstLetter: "F"
+}, {
+	cityName: "法罗群岛",
+	citySpell: "FALUOQUNDAO",
+	"code": "FAE",
+	"countryCode": "FO",
+	"countryName": "法罗群岛",
+	cityFirstLetter: "F"
+}, {
+	cityName: "富荣",
+	citySpell: "FURONG",
+	"code": "PHU",
+	"countryCode": "VN",
+	"countryName": "越南",
+	cityFirstLetter: "F"
+}, {
+	cityName: "弗雷盖特岛",
+	citySpell: "FULEIGAITEDAO",
+	"code": "FRK",
+	"countryCode": "SC",
+	"countryName": "塞舌尔",
+	cityFirstLetter: "F"
+}, {
+	cityName: "伏尔加格勒",
+	citySpell: "FUERJIAGELE",
+	"code": "VOG",
+	"countryCode": "RU",
+	"countryName": "俄罗斯",
+	cityFirstLetter: "F"
+}, {
+	cityName: "富林伏隆市",
+	citySpell: "FULINFULONGSHI",
+	"code": "YFO",
+	"countryCode": "CA",
+	"countryName": "加拿大",
+	cityFirstLetter: "F"
+}, {
+	cityName: "弗利",
+	citySpell: "FULI",
+	"code": "FRL",
+	"countryCode": "IT",
+	"countryName": "意大利",
+	cityFirstLetter: "F"
+}, {
+	cityName: "菲茨罗伊克罗辛",
+	citySpell: "FEICILUOYIKELUOXIN",
+	"code": "FIZ",
+	"countryCode": "AU",
+	"countryName": "澳大利亚",
+	cityFirstLetter: "F"
+}, {
+	cityName: "福图纳",
+	citySpell: "FUTUNA",
+	"code": "FON",
+	"countryCode": "CR",
+	"countryName": "哥斯达黎加",
+	cityFirstLetter: "F"
+}, {
+	cityName: "法古罗尔斯米里",
+	citySpell: "FAGULUOERSIMILI",
+	"code": "FAG",
+	"countryCode": "IS",
+	"countryName": "冰岛",
+	cityFirstLetter: "F"
+}, {
+	cityName: "弗林特",
+	citySpell: "FULINTE",
+	"code": "FNT",
+	"countryCode": "US",
+	"countryName": "美国",
+	cityFirstLetter: "F"
+}, {
+	cityName: "菲利普斯堡",
+	citySpell: "FEILIPUSIBAO",
+	"code": "PSB",
+	"countryCode": "US",
+	"countryName": "美国",
+	cityFirstLetter: "F"
+}, {
+	cityName: "弗赖堡",
+	citySpell: "FULAIBAO",
+	"code": "FRY",
+	"countryCode": "US",
+	"countryName": "美国",
+	cityFirstLetter: "F"
+}, {
+	cityName: "弗格森湾",
+	citySpell: "FUGESENWAN",
+	"code": "FER",
+	"countryCode": "KE",
+	"countryName": "肯尼亚",
+	cityFirstLetter: "F"
+}, {
+	cityName: "富查伊拉",
+	citySpell: "FUCHAYILA",
+	"code": "FJR",
+	"countryCode": "AE",
+	"countryName": "阿联酋",
+	cityFirstLetter: "F"
+}, {
+	cityName: "丰迪拉克",
+	citySpell: "FENGDILAKE",
+	"code": "ZFD",
+	"countryCode": "CA",
+	"countryName": "加拿大",
+	cityFirstLetter: "F"
+}, {
+	cityName: "丰沙尔",
+	citySpell: "FENGSHAER",
+	"code": "FNC",
+	"countryCode": "PT",
+	"countryName": "葡萄牙",
+	cityFirstLetter: "F"
+}, {
+	cityName: "法鲁",
+	citySpell: "FALU",
+	"code": "FAO",
+	"countryCode": "PT",
+	"countryName": "葡萄牙",
+	cityFirstLetter: "F"
+}, {
+	cityName: "弗朗西斯敦",
+	citySpell: "FULANGXISIDUN",
+	"code": "FRW",
+	"countryCode": "BW",
+	"countryName": "博茨瓦纳",
+	cityFirstLetter: "F"
+}, {
+	cityName: "法亚",
+	citySpell: "FAYA",
+	"code": "FYT",
+	"countryCode": "TD",
+	"countryName": "乍得",
+	cityFirstLetter: "F"
+}, {
+	cityName: "富埃特文图拉岛",
+	citySpell: "FUAITEWENTULADAO",
+	"code": "FUE",
+	"countryCode": "ES",
+	"countryName": "西班牙",
+	cityFirstLetter: "F"
+}, {
+	cityName: "费萨拉巴德",
+	citySpell: "FEISALABADE",
+	"code": "LYP",
+	"countryCode": "PK",
+	"countryName": "巴基斯坦",
+	cityFirstLetter: "F"
+}, {
+	cityName: "芬利",
+	citySpell: "FENLI",
+	"code": "FLY",
+	"countryCode": "AU",
+	"countryName": "澳大利亚",
+	cityFirstLetter: "F"
+}, {
+	cityName: "法罗",
+	citySpell: "FALUO",
+	"code": "ZFA",
+	"countryCode": "CA",
+	"countryName": "加拿大",
+	cityFirstLetter: "F"
+}, {
+	cityName: "法明代尔",
+	citySpell: "FAMINGDAIER",
+	"code": "FRG",
+	"countryCode": "US",
+	"countryName": "美国",
+	cityFirstLetter: "F"
+}, {
+	cityName: "法格内斯",
+	citySpell: "FAGENEISI",
+	"code": "VDB",
+	"countryCode": "NO",
+	"countryName": "挪威",
+	cityFirstLetter: "F"
+}, {
+	cityName: "弗卢里亚诺波利斯",
+	citySpell: "FULULIYANUOBOLISI",
+	"code": "FLN",
+	"countryCode": "BR",
+	"countryName": "巴西",
+	cityFirstLetter: "F"
+}, {
+	cityName: "芬夏范",
+	citySpell: "FENXIAFAN",
+	"code": "FIN",
+	"countryCode": "PG",
+	"countryName": "巴布亚新几内亚",
+	cityFirstLetter: "F"
+}, {
+	cityName: "富纳富蒂",
+	citySpell: "FUNAFUDI",
+	"code": "FUN",
+	"countryCode": "TV",
+	"countryName": "图瓦卢",
+	cityFirstLetter: "F"
+}, {
+	cityName: "费耶特维尔(阿肯色州)",
+	citySpell: "FEIYETEWEIER",
+	"code": "FYV",
+	"countryCode": "US",
+	"countryName": "美国",
+	cityFirstLetter: "F"
+}, {
+	cityName: "法斯克鲁兹约德尔",
+	citySpell: "FASIKELUZIYUEDEER",
+	"code": "FAS",
+	"countryCode": "IS",
+	"countryName": "冰岛",
+	cityFirstLetter: "F"
+}, {
+	cityName: "法拉",
+	citySpell: "FALA",
+	"code": "FAH",
+	"countryCode": "AF",
+	"countryName": "阿富汗",
+	cityFirstLetter: "F"
+}, {
+	cityName: "弗雷斯诺",
+	citySpell: "FULEISINUO",
+	"code": "FAT",
+	"countryCode": "US",
+	"countryName": "美国",
+	cityFirstLetter: "F"
+}, {
+	cityName: "费尔韦尔",
+	citySpell: "FEIERWEIER",
+	"code": "FWL",
+	"countryCode": "US",
+	"countryName": "美国",
+	cityFirstLetter: "F"
+}, {
+	cityName: "福亚",
+	citySpell: "FUYA",
+	"code": "FOY",
+	"countryCode": "LR",
+	"countryName": "利比里亚",
+	cityFirstLetter: "F"
+}, {
+	cityName: "富图纳岛",
+	citySpell: "FUTUNADAO",
+	"code": "FUT",
+	"countryCode": "WF",
+	"countryName": "瓦利斯和富图纳",
+	cityFirstLetter: "F"
+}, {
+	cityName: "芬克",
+	citySpell: "FENKE",
+	"code": "FIK",
+	"countryCode": "AU",
+	"countryName": "澳大利亚",
+	cityFirstLetter: "F"
+}, {
+	cityName: "弗卢勒",
+	citySpell: "FULULE",
+	"code": "FRO",
+	"countryCode": "NO",
+	"countryName": "挪威",
+	cityFirstLetter: "F"
+}, {
+	cityName: "费里敦",
+	citySpell: "FEILIDUN",
+	"code": "FNA",
+	"countryCode": "SL",
+	"countryName": "塞拉利昂",
+	cityFirstLetter: "F"
+}, {
+	cityName: "法明顿",
+	citySpell: "FAMINGDUN",
+	"code": "FMN",
+	"countryCode": "US",
+	"countryName": "美国",
+	cityFirstLetter: "F"
+}, {
+	cityName: "费恩",
+	citySpell: "FEIEN",
+	"code": "FNE",
+	"countryCode": "PG",
+	"countryName": "巴布亚新几内亚",
+	cityFirstLetter: "F"
+}, {
+	cityName: "法明顿",
+	citySpell: "FAMINGDUN",
+	"code": "FAM",
+	"countryCode": "US",
+	"countryName": "美国",
+	cityFirstLetter: "F"
+}, {
+	cityName: "菲亚纳兰楚阿",
+	citySpell: "FEIYANALANCHUA",
+	"code": "WFI",
+	"countryCode": "MG",
+	"countryName": "马达加斯加",
+	cityFirstLetter: "F"
+}, {
+	cityName: "费尔干纳",
+	citySpell: "FEIERGANNA",
+	"code": "FEG",
+	"countryCode": "UZ",
+	"countryName": "乌兹别克斯坦",
+	cityFirstLetter: "F"
+}, {
+	cityName: "法扎巴德",
+	citySpell: "FAZHABADE",
+	"code": "FBD",
+	"countryCode": "AF",
+	"countryName": "阿富汗",
+	cityFirstLetter: "F"
+}, {
+	cityName: "弗雷登达尔",
+	citySpell: "FULEIDENGDAER",
+	"code": "VRE",
+	"countryCode": "ZA",
+	"countryName": "南非",
+	cityFirstLetter: "F"
+}, {
+	cityName: "藩朗",
+	citySpell: "FANLANG",
+	"code": "PHA",
+	"countryCode": "VN",
+	"countryName": "越南",
+	cityFirstLetter: "F"
+}, {
+	cityName: "符拉迪沃斯托克",
+	citySpell: "FULADIWOSITUOKE",
+	"code": "VVO",
+	"countryCode": "RU",
+	"countryName": "俄罗斯",
+	cityFirstLetter: "F"
+}, {
+	cityName: "弗洛伦斯",
+	citySpell: "FULUOLUNSI",
+	"code": "FLO",
+	"countryCode": "US",
+	"countryName": "美国",
+	cityFirstLetter: "F"
+}, {
+	cityName: "丰班",
+	citySpell: "FENGBAN",
+	"code": "FOM",
+	"countryCode": "CM",
+	"countryName": "喀麦隆",
+	cityFirstLetter: "F"
+}, {
+	cityName: "福布斯",
+	citySpell: "FUBUSI",
+	"code": "FRB",
+	"countryCode": "AU",
+	"countryName": "澳大利亚",
+	cityFirstLetter: "F"
+}, {
+	cityName: "弗朗西斯堡",
+	citySpell: "FULANGXISIBAO",
+	"code": "YAG",
+	"countryCode": "CA",
+	"countryName": "加拿大",
+	cityFirstLetter: "F"
+}, {
+	cityName: "复活节岛",
+	citySpell: "FUHUOJIEDAO",
+	"code": "IPC",
+	"countryCode": "CL",
+	"countryName": "智利",
+	cityFirstLetter: "F"
+}, {
+	cityName: "法哈多",
+	citySpell: "FAHADUO",
+	"code": "FAJ",
+	"countryCode": "PR",
+	"countryName": "波多黎各",
+	cityFirstLetter: "F"
+}, {
+	cityName: "弗拉季高加索",
+	citySpell: "FULAJIGAOJIASUO",
+	"code": "OGZ",
+	"countryCode": "RU",
+	"countryName": "俄罗斯",
+	cityFirstLetter: "F"
+}, {
+	cityName: "福塔莱萨",
+	citySpell: "FUTALAISA",
+	"code": "FOR",
+	"countryCode": "BR",
+	"countryName": "巴西",
+	cityFirstLetter: "F"
+}, {
+	cityName: "弗拉岛",
+	citySpell: "FULADAO",
+	"code": "FRE",
+	"countryCode": "SB",
+	"countryName": "所罗门群岛",
+	cityFirstLetter: "F"
+}, {
+	cityName: "费.努罗尼亚",
+	citySpell: "FEINULUONIYA",
+	"code": "FEN",
+	"countryCode": "BR",
+	"countryName": "巴西",
+	cityFirstLetter: "F"
+}, {
+	cityName: "法兰西堡",
+	citySpell: "FALANXIBAO",
+	"code": "FDF",
+	"countryCode": "MQ",
+	"countryName": "马提尼克岛",
+	cityFirstLetter: "F"
+}, {
+	cityName: "弗林德斯岛",
+	citySpell: "FULINDESIDAO",
+	"code": "FLS",
+	"countryCode": "AU",
+	"countryName": "澳大利亚",
+	cityFirstLetter: "F"
+}, {
+	cityName: "福麦木瑞",
+	citySpell: "FUMAIMURUI",
+	"code": "YMM",
+	"countryCode": "CA",
+	"countryName": "加拿大",
+	cityFirstLetter: "F"
+}, {
+	cityName: "佛洛雷斯岛",
+	citySpell: "FOLUOLEISIDAO",
+	"code": "FLW",
+	"countryCode": "PT",
+	"countryName": "葡萄牙",
+	cityFirstLetter: "F"
+}, {
+	cityName: "佛罗雷斯",
+	citySpell: "FOLUOLEISI",
+	"code": "FRS",
+	"countryCode": "GT",
+	"countryName": "危地马拉",
+	cityFirstLetter: "F"
+}, {
+	cityName: "弗拉特",
+	citySpell: "FULATE",
+	"code": "FLT",
+	"countryCode": "US",
+	"countryName": "美国",
+	cityFirstLetter: "F"
+}, {
+	cityName: "费尔岛",
+	citySpell: "FEIERDAO",
+	"code": "FIE",
+	"countryCode": "GB",
+	"countryName": "英国",
+	cityFirstLetter: "F"
+}, {
+	cityName: "福格尔角",
+	citySpell: "FUGEERJIAO",
+	"code": "CVL",
+	"countryCode": "PG",
+	"countryName": "巴布亚新几内亚",
+	cityFirstLetter: "F"
+}, {
+	cityName: "丰蒂博阿",
+	citySpell: "FENGDIBOA",
+	"code": "FBA",
+	"countryCode": "BR",
+	"countryName": "巴西",
+	cityFirstLetter: "F"
+}, {
+	cityName: "福莫萨",
+	citySpell: "FUMOSA",
+	"code": "FMA",
+	"countryCode": "AR",
+	"countryName": "阿根廷",
+	cityFirstLetter: "F"
+}, {
+	cityName: "弗勒",
+	citySpell: "FULE",
+	"code": "FDE",
+	"countryCode": "NO",
+	"countryName": "挪威",
+	cityFirstLetter: "F"
+}, {
+	cityName: "弗多斯塔",
+	citySpell: "FUDUOSITA",
+	"code": "VLD",
+	"countryCode": "US",
+	"countryName": "美国",
+	cityFirstLetter: "F"
+}, {
+	cityName: "法拉凡加纳",
+	citySpell: "FALAFANJIANA",
+	"code": "RVA",
+	"countryCode": "MG",
+	"countryName": "马达加斯加",
+	cityFirstLetter: "F"
+}, {
+	cityName: "弗利平",
+	citySpell: "FULIPING",
+	"code": "FLP",
+	"countryCode": "US",
+	"countryName": "美国",
+	cityFirstLetter: "F"
+}, {
+	cityName: "法卡拉瓦岛",
+	citySpell: "FAKALAWADAO",
+	"code": "FAV",
+	"countryCode": "PF",
+	"countryName": "法属波利尼西亚",
+	cityFirstLetter: "F"
+}, {
+	cityName: "甘岛",
+	citySpell: "GANDAO",
+	"code": "GAN",
+	"countryCode": "MV",
+	"countryName": "马尔代夫",
+	cityFirstLetter: "G"
+}, {
+	cityName: "广岛",
+	citySpell: "GUANGDAO",
+	"code": "HIJ",
+	"countryCode": "JP",
+	"countryName": "日本",
+	cityFirstLetter: "G"
+}, {
+	cityName: "高雄",
+	citySpell: "GAOXIONG",
+	"code": "KHH",
+	"countryCode": "TW",
+	"countryName": "中国台湾",
+	cityFirstLetter: "G"
+}, {
+	cityName: "宫古",
+	citySpell: "GONGGU",
+	"code": "MMY",
+	"countryCode": "JP",
+	"countryName": "日本",
+	cityFirstLetter: "G"
+}, {
+	cityName: "哥本哈根",
+	citySpell: "GEBENHAGEN",
+	"code": "CPH",
+	"countryCode": "DK",
+	"countryName": "丹麦",
+	cityFirstLetter: "G"
+}, {
+	cityName: "格拉斯哥",
+	citySpell: "GELASIGE",
+	"code": "GLA",
+	"countryCode": "GB",
+	"countryName": "英国",
+	cityFirstLetter: "G"
+}, {
+	cityName: "冈山",
+	citySpell: "GANGSHAN",
+	"code": "OKJ",
+	"countryCode": "JP",
+	"countryName": "日本",
+	cityFirstLetter: "G"
+}, {
+	cityName: "盖恩斯维尔",
+	citySpell: "GAIENSIWEIER",
+	"code": "GNV",
+	"countryCode": "US",
+	"countryName": "美国",
+	cityFirstLetter: "G"
+}, {
+	cityName: "格林纳达",
+	citySpell: "GELINNADA",
+	"code": "GND",
+	"countryCode": "GD",
+	"countryName": "格林纳达",
+	cityFirstLetter: "G"
+}, {
+	cityName: "格雷茅斯",
+	citySpell: "GELEIMAOSI",
+	"code": "GMN",
+	"countryCode": "NZ",
+	"countryName": "新西兰",
+	cityFirstLetter: "G"
+}, {
+	cityName: "格林贝",
+	citySpell: "GELINBEI",
+	"code": "GRB",
+	"countryCode": "US",
+	"countryName": "美国",
+	cityFirstLetter: "G"
+}, {
+	cityName: "高松",
+	citySpell: "GAOSONG",
+	"code": "TAK",
+	"countryCode": "JP",
+	"countryName": "日本",
+	cityFirstLetter: "G"
+}, {
+	cityName: "格雷罗内洛罗",
+	citySpell: "GELEILUONEILUOLUO",
+	"code": "GUB",
+	"countryCode": "MX",
+	"countryName": "墨西哥",
+	cityFirstLetter: "G"
+}, {
+	cityName: "哥伦布(佐治亚州)",
+	citySpell: "GELUNBU",
+	"code": "CSG",
+	"countryCode": "US",
+	"countryName": "美国",
+	cityFirstLetter: "G"
+}, {
+	cityName: "格达雷夫",
+	citySpell: "GEDALEIFU",
+	"code": "GSI",
+	"countryCode": "GF",
+	"countryName": "法属圭亚那",
+	cityFirstLetter: "G"
+}, {
+	cityName: "根西岛",
+	citySpell: "GENXIDAO",
+	"code": "GCI",
+	"countryCode": "GB",
+	"countryName": "英国",
+	cityFirstLetter: "G"
+}, {
+	cityName: "盖蒙",
+	citySpell: "GAIMENG",
+	"code": "GUY",
+	"countryCode": "US",
+	"countryName": "美国",
+	cityFirstLetter: "G"
+}, {
+	cityName: "伽耶",
+	citySpell: "GAYE",
+	"code": "GAY",
+	"countryCode": "IN",
+	"countryName": "印度",
+	cityFirstLetter: "G"
+}, {
+	cityName: "格伦因尼斯",
+	citySpell: "GELUNYINNISI",
+	"code": "GLI",
+	"countryCode": "AU",
+	"countryName": "澳大利亚",
+	cityFirstLetter: "G"
+}, {
+	cityName: "甘米银岛",
+	citySpell: "GANMIYINDAO",
+	"code": "CGM",
+	"countryCode": "PH",
+	"countryName": "菲律宾",
+	cityFirstLetter: "G"
+}, {
+	cityName: "哥德堡",
+	citySpell: "GEDEBAO",
+	"code": "GOT",
+	"countryCode": "SE",
+	"countryName": "瑞典",
+	cityFirstLetter: "G"
+}, {
+	cityName: "贡城",
+	citySpell: "GONGCHENG",
+	"code": "KQL",
+	"countryCode": "PG",
+	"countryName": "巴布亚新几内亚",
+	cityFirstLetter: "G"
+}, {
+	cityName: "格尔夫波特(加佛港)",
+	citySpell: "GEERFUBOTE(JIAFOGANG)",
+	"code": "GPT",
+	"countryCode": "US",
+	"countryName": "美国",
+	cityFirstLetter: "G"
+}, {
+	cityName: "光州",
+	citySpell: "GUANGZHOU",
+	"code": "KWJ",
+	"countryCode": "KR",
+	"countryName": "韩国",
+	cityFirstLetter: "G"
+}, {
+	cityName: "盖沃亚",
+	citySpell: "GAIWOYA",
+	"code": "GEW",
+	"countryCode": "PG",
+	"countryName": "巴布亚新几内亚",
+	cityFirstLetter: "G"
+}, {
+	cityName: "各沃斯奈罗",
+	citySpell: "GEWOSINAILUO",
+	"code": "YGO",
+	"countryCode": "CA",
+	"countryName": "加拿大",
+	cityFirstLetter: "G"
+}, {
+	cityName: "戈雷",
+	citySpell: "GELEI",
+	"code": "GOR",
+	"countryCode": "ET",
+	"countryName": "埃塞俄比亚",
+	cityFirstLetter: "G"
+}, {
+	cityName: "贡迪温迪",
+	citySpell: "GONGDIWENDI",
+	"code": "GOO",
+	"countryCode": "AU",
+	"countryName": "澳大利亚",
+	cityFirstLetter: "G"
+}, {
+	cityName: "各德斯河",
+	citySpell: "GEDESIHE",
+	"code": "ZGI",
+	"countryCode": "CA",
+	"countryName": "加拿大",
+	cityFirstLetter: "G"
+}, {
+	cityName: "瓜达卢普",
+	citySpell: "GUADALUPU",
+	"code": "GDP",
+	"countryCode": "BR",
+	"countryName": "巴西",
+	cityFirstLetter: "G"
+}, {
+	cityName: "格伦费尔",
+	citySpell: "GELUNFEIER",
+	"code": "GFE",
+	"countryCode": "AU",
+	"countryName": "澳大利亚",
+	cityFirstLetter: "G"
+}, {
+	cityName: "格施姆",
+	citySpell: "GESHIMU",
+	"code": "GSM",
+	"countryCode": "IR",
+	"countryName": "伊朗",
+	cityFirstLetter: "G"
+}, {
+	cityName: "古达米斯",
+	citySpell: "GUDAMISI",
+	"code": "LTD",
+	"countryCode": "LY",
+	"countryName": "利比亚",
+	cityFirstLetter: "G"
+}, {
+	cityName: "格鲁特岛",
+	citySpell: "GELUTEDAO",
+	"code": "GTE",
+	"countryCode": "AU",
+	"countryName": "澳大利亚",
+	cityFirstLetter: "G"
+}, {
+	cityName: "格拉纳达",
+	citySpell: "GELANADA",
+	"code": "GRX",
+	"countryCode": "ES",
+	"countryName": "西班牙",
+	cityFirstLetter: "G"
+}, {
+	cityName: "瓜拉丁加奴",
+	citySpell: "GUALADINGJIANU",
+	"code": "TGG",
+	"countryCode": "MY",
+	"countryName": "马来西亚",
+	cityFirstLetter: "G"
+}, {
+	cityName: "瓜纳贾",
+	citySpell: "GUANAJIA",
+	"code": "GJA",
+	"countryCode": "HN",
+	"countryName": "洪都拉斯",
+	cityFirstLetter: "G"
+}, {
+	cityName: "古纳",
+	citySpell: "GUNA",
+	"code": "GUX",
+	"countryCode": "IN",
+	"countryName": "印度",
+	cityFirstLetter: "G"
+}, {
+	cityName: "格林斯伯勒/海波因特",
+	citySpell: "GELINSIBOLEHAIBOYINTE",
+	"code": "GSO",
+	"countryCode": "US",
+	"countryName": "美国",
+	cityFirstLetter: "G"
+}, {
+	cityName: "格罗德诺",
+	citySpell: "GELUODENUO",
+	"code": "GNA",
+	"countryCode": "BY",
+	"countryName": "白俄罗斯",
+	cityFirstLetter: "G"
+}, {
+	cityName: "甘巴",
+	citySpell: "GANBA",
+	"code": "GAX",
+	"countryCode": "GA",
+	"countryName": "加蓬",
+	cityFirstLetter: "G"
+}, {
+	cityName: "戈亚",
+	citySpell: "GEYA",
+	"code": "OYA",
+	"countryCode": "AR",
+	"countryName": "阿根廷",
+	cityFirstLetter: "G"
+}, {
+	cityName: "戈登当斯",
+	citySpell: "GEDENGDANGSI",
+	"code": "GDD",
+	"countryCode": "AU",
+	"countryName": "澳大利亚",
+	cityFirstLetter: "G"
+}, {
+	cityName: "格兰茨帕斯",
+	citySpell: "GELANCIPASI",
+	"code": "GTP",
+	"countryCode": "US",
+	"countryName": "美国",
+	cityFirstLetter: "G"
+}, {
+	cityName: "戈马",
+	citySpell: "GEMA",
+	"code": "GOM",
+	"countryCode": "CD",
+	"countryName": "刚果民主共和国",
+	cityFirstLetter: "G"
+}, {
+	cityName: "古鲁皮",
+	citySpell: "GULUPI",
+	"code": "GRP",
+	"countryCode": "BR",
+	"countryName": "巴西",
+	cityFirstLetter: "G"
+}, {
+	cityName: "甘德市",
+	citySpell: "GANDESHI",
+	"code": "YQX",
+	"countryCode": "CA",
+	"countryName": "加拿大",
+	cityFirstLetter: "G"
+}, {
+	cityName: "哥特瓦尔多夫",
+	citySpell: "GETEWAERDUOFU",
+	"code": "GTW",
+	"countryCode": "CZ",
+	"countryName": "捷克",
+	cityFirstLetter: "G"
+}, {
+	cityName: "戈德",
+	citySpell: "GEDE",
+	"code": "GDE",
+	"countryCode": "ET",
+	"countryName": "埃塞俄比亚",
+	cityFirstLetter: "G"
+}, {
+	cityName: "贡贝",
+	citySpell: "GONGBEI",
+	"code": "GMO",
+	"countryCode": "NG",
+	"countryName": "尼日利亚",
+	cityFirstLetter: "G"
+}, {
+	cityName: "关塔那摩",
+	citySpell: "GUANTANAMO",
+	"code": "GAO",
+	"countryCode": "CU",
+	"countryName": "古巴",
+	cityFirstLetter: "G"
+}, {
+	cityName: "古亚",
+	citySpell: "GUYA",
+	"code": "GWA",
+	"countryCode": "MM",
+	"countryName": "缅甸",
+	cityFirstLetter: "G"
+}, {
+	cityName: "瓜斯杜阿里托",
+	citySpell: "GUASIDUALITUO",
+	"code": "GDO",
+	"countryCode": "VE",
+	"countryName": "委内瑞拉",
+	cityFirstLetter: "G"
+}, {
+	cityName: "格罗内达尔",
+	citySpell: "GELUONEIDAER",
+	"code": "JGR",
+	"countryCode": "GL",
+	"countryName": "格陵兰岛",
+	cityFirstLetter: "G"
+}, {
+	cityName: "戈尔德比奇",
+	citySpell: "GEERDEBIQI",
+	"code": "GOL",
+	"countryCode": "US",
+	"countryName": "美国",
+	cityFirstLetter: "G"
+}, {
+	cityName: "宫崎",
+	citySpell: "GONGQI",
+	"code": "KMI",
+	"countryCode": "JP",
+	"countryName": "日本",
+	cityFirstLetter: "G"
+}, {
+	cityName: "古利明",
+	citySpell: "GULIMING",
+	"code": "GLN",
+	"countryCode": "MA",
+	"countryName": "摩洛哥",
+	cityFirstLetter: "G"
+}, {
+	cityName: "格威鲁",
+	citySpell: "GEWEILU",
+	"code": "GWE",
+	"countryCode": "ZW",
+	"countryName": "津巴布韦",
+	cityFirstLetter: "G"
+}, {
+	cityName: "格伦斯福尔斯",
+	citySpell: "GELUNSIFUERSI",
+	"code": "GFL",
+	"countryCode": "US",
+	"countryName": "美国",
+	cityFirstLetter: "G"
+}, {
+	cityName: "格拉尼特斯",
+	citySpell: "GELANITESI",
+	"code": "GTS",
+	"countryCode": "AU",
+	"countryName": "澳大利亚",
+	cityFirstLetter: "G"
+}, {
+	cityName: "瓜雅拉米林",
+	citySpell: "GUAYALAMILIN",
+	"code": "GJM",
+	"countryCode": "BR",
+	"countryName": "巴西",
+	cityFirstLetter: "G"
+}, {
+	cityName: "瓜廖尔",
+	citySpell: "GUALIAOER",
+	"code": "GWL",
+	"countryCode": "IN",
+	"countryName": "印度",
+	cityFirstLetter: "G"
+}, {
+	cityName: "格雷特瀑布",
+	citySpell: "GELEITEBAOBU",
+	"code": "GTF",
+	"countryCode": "US",
+	"countryName": "美国",
+	cityFirstLetter: "G"
+}, {
+	cityName: "瓜马尔",
+	citySpell: "GUAMAER",
+	"code": "GAA",
+	"countryCode": "CO",
+	"countryName": "哥伦比亚",
+	cityFirstLetter: "G"
+}, {
+	cityName: "格塞尔山庄",
+	citySpell: "GESAIERSHANZHUANG",
+	"code": "VLG",
+	"countryCode": "AR",
+	"countryName": "阿根廷",
+	cityFirstLetter: "G"
+}, {
+	cityName: "瓜莱瓜伊丘",
+	citySpell: "GUALAIGUAYIQIU",
+	"code": "GHU",
+	"countryCode": "AR",
+	"countryName": "阿根廷",
+	cityFirstLetter: "G"
+}, {
+	cityName: "格拉西奥萨",
+	citySpell: "GELAXIAOSA",
+	"code": "GRW",
+	"countryCode": "PT",
+	"countryName": "葡萄牙",
+	cityFirstLetter: "G"
+}, {
+	cityName: "格拉斯哥",
+	citySpell: "GELASIGE",
+	"code": "GGW",
+	"countryCode": "US",
+	"countryName": "美国",
+	cityFirstLetter: "G"
+}, {
+	cityName: "戈夫",
+	citySpell: "GEFU",
+	"code": "GOV",
+	"countryCode": "AU",
+	"countryName": "澳大利亚",
+	cityFirstLetter: "G"
+}, {
+	cityName: "戈纳利亚",
+	citySpell: "GENALIYA",
+	"code": "GOE",
+	"countryCode": "PG",
+	"countryName": "巴布亚新几内亚",
+	cityFirstLetter: "G"
+}, {
+	cityName: "哥伦比亚(加利福尼亚州)",
+	citySpell: "GELUNBIYA",
+	"code": "COA",
+	"countryCode": "US",
+	"countryName": "美国",
+	cityFirstLetter: "G"
+}, {
+	cityName: "戈勒克布尔",
+	citySpell: "GELEKEBUER",
+	"code": "GOP",
+	"countryCode": "IN",
+	"countryName": "印度",
+	cityFirstLetter: "G"
+}, {
+	cityName: "哥伦比亚",
+	citySpell: "GELUNBIYA",
+	"code": "COU",
+	"countryCode": "US",
+	"countryName": "美国",
+	cityFirstLetter: "G"
+}, {
+	cityName: "瓜南比",
+	citySpell: "GUANANBI",
+	"code": "GNM",
+	"countryCode": "BR",
+	"countryName": "巴西",
+	cityFirstLetter: "G"
+}, {
+	cityName: "圭罗",
+	citySpell: "GUILUO",
+	"code": "GGO",
+	"countryCode": "CI",
+	"countryName": "科特迪瓦",
+	cityFirstLetter: "G"
+}, {
+	cityName: "古德兰",
+	citySpell: "GUDELAN",
+	"code": "GLD",
+	"countryCode": "US",
+	"countryName": "美国",
+	cityFirstLetter: "G"
+}, {
+	cityName: "盖洛德",
+	citySpell: "GAILUODE",
+	"code": "GLR",
+	"countryCode": "US",
+	"countryName": "美国",
+	cityFirstLetter: "G"
+}, {
+	cityName: "戈络文",
+	citySpell: "GELUOWEN",
+	"code": "GLV",
+	"countryCode": "US",
+	"countryName": "美国",
+	cityFirstLetter: "G"
+}, {
+	cityName: "根达乌",
+	citySpell: "GENDAWU",
+	"code": "ETE",
+	"countryCode": "ET",
+	"countryName": "埃塞俄比亚",
+	cityFirstLetter: "G"
+}, {
+	cityName: "格劳斯特",
+	citySpell: "GELAOSITE",
+	"code": "GLO",
+	"countryCode": "GB",
+	"countryName": "英国",
+	cityFirstLetter: "G"
+}, {
+	cityName: "格雷林",
+	citySpell: "GELEILIN",
+	"code": "KGX",
+	"countryCode": "US",
+	"countryName": "美国",
+	cityFirstLetter: "G"
+}, {
+	cityName: "格拉夫顿",
+	citySpell: "GELAFUDUN",
+	"code": "GFN",
+	"countryCode": "AU",
+	"countryName": "澳大利亚",
+	cityFirstLetter: "G"
+}, {
+	cityName: "瓜皮尔斯",
+	citySpell: "GUAPIERSI",
+	"code": "GPL",
+	"countryCode": "CR",
+	"countryName": "哥斯达黎加",
+	cityFirstLetter: "G"
+}, {
+	cityName: "格西特卡勒",
+	citySpell: "GEXITEKALE",
+	"code": "GEC",
+	"countryCode": "CY",
+	"countryName": "塞浦路斯",
+	cityFirstLetter: "G"
+}, {
+	cityName: "格罗斯特角",
+	citySpell: "GELUOSITEJIAO",
+	"code": "CGC",
+	"countryCode": "PG",
+	"countryName": "巴布亚新几内亚",
+	cityFirstLetter: "G"
+}, {
+	cityName: "戈斯福德",
+	citySpell: "GESIFUDE",
+	"code": "GOS",
+	"countryCode": "AU",
+	"countryName": "澳大利亚",
+	cityFirstLetter: "G"
+}, {
+	cityName: "格林里福",
+	citySpell: "GELINLIFU",
+	"code": "GVI",
+	"countryCode": "PG",
+	"countryName": "巴布亚新几内亚",
+	cityFirstLetter: "G"
+}, {
+	cityName: "干尼亚",
+	citySpell: "GANNIYA",
+	"code": "CHQ",
+	"countryCode": "GR",
+	"countryName": "希腊",
+	cityFirstLetter: "G"
+}, {
+	cityName: "哥打邦翁",
+	citySpell: "GEDABANGWENG",
+	"code": "KOD",
+	"countryCode": "ID",
+	"countryName": "印度尼西亚",
+	cityFirstLetter: "G"
+}, {
+	cityName: "盖奇",
+	citySpell: "GAIQI",
+	"code": "GAG",
+	"countryCode": "US",
+	"countryName": "美国",
+	cityFirstLetter: "G"
+}, {
+	cityName: "高知",
+	citySpell: "GAOZHI",
+	"code": "KCZ",
+	"countryCode": "JP",
+	"countryName": "日本",
+	cityFirstLetter: "G"
+}, {
+	cityName: "各离曼",
+	citySpell: "GELIMAN",
+	"code": "YGX",
+	"countryCode": "CA",
+	"countryName": "加拿大",
+	cityFirstLetter: "G"
+}, {
+	cityName: "盖拉蒂",
+	citySpell: "GAILADI",
+	"code": "GLC",
+	"countryCode": "ET",
+	"countryName": "埃塞俄比亚",
+	cityFirstLetter: "G"
+}, {
+	cityName: "盖巴拉",
+	citySpell: "GAIBALA",
+	"code": "GBB",
+	"countryCode": "AZ",
+	"countryName": "阿塞拜疆",
+	cityFirstLetter: "G"
+}, {
+	cityName: "格林韦尔",
+	citySpell: "GELINWEIER",
+	"code": "GVP",
+	"countryCode": "AU",
+	"countryName": "澳大利亚",
+	cityFirstLetter: "G"
+}, {
+	cityName: "戈登",
+	citySpell: "GEDENG",
+	"code": "GRN",
+	"countryCode": "US",
+	"countryName": "美国",
+	cityFirstLetter: "G"
+}, {
+	cityName: "格林维尔(南卡罗莱纳州)",
+	citySpell: "GELINWEIER",
+	"code": "GSP",
+	"countryCode": "US",
+	"countryName": "美国",
+	cityFirstLetter: "G"
+}, {
+	cityName: "瓜伊马斯",
+	citySpell: "GUAYIMASI",
+	"code": "GYM",
+	"countryCode": "MX",
+	"countryName": "墨西哥",
+	cityFirstLetter: "G"
+}, {
+	cityName: "高尔诺-阿尔塔斯克",
+	citySpell: "GAOERNUOAERTASIKE",
+	"code": "RGK",
+	"countryCode": "RU",
+	"countryName": "俄罗斯",
+	cityFirstLetter: "G"
+}, {
+	cityName: "瓜德尔",
+	citySpell: "GUADEER",
+	"code": "GWD",
+	"countryCode": "PK",
+	"countryName": "巴基斯坦",
+	cityFirstLetter: "G"
+}, {
+	cityName: "格林伍德",
+	citySpell: "GELINWUDE",
+	"code": "GWO",
+	"countryCode": "US",
+	"countryName": "美国",
+	cityFirstLetter: "G"
+}, {
+	cityName: "哥打巴鲁",
+	citySpell: "GEDABALU",
+	"code": "KBR",
+	"countryCode": "MY",
+	"countryName": "马来西亚",
+	cityFirstLetter: "G"
+}, {
+	cityName: "高当",
+	citySpell: "GAODANG",
+	"code": "KAW",
+	"countryCode": "MM",
+	"countryName": "缅甸",
+	cityFirstLetter: "G"
+}, {
+	cityName: "哥伦布(俄亥俄州)",
+	citySpell: "GELUNBU",
+	"code": "CMH",
+	"countryCode": "US",
+	"countryName": "美国",
+	cityFirstLetter: "G"
+}, {
+	cityName: "冈尼森",
+	citySpell: "GANGNISEN",
+	"code": "GUC",
+	"countryCode": "US",
+	"countryName": "美国",
+	cityFirstLetter: "G"
+}, {
+	cityName: "甘贝拉",
+	citySpell: "GANBEILA",
+	"code": "GMB",
+	"countryCode": "ET",
+	"countryName": "埃塞俄比亚",
+	cityFirstLetter: "G"
+}, {
+	cityName: "古拉亚特",
+	citySpell: "GULAYATE",
+	"code": "URY",
+	"countryCode": "SA",
+	"countryName": "沙特阿垃伯",
+	cityFirstLetter: "G"
+}, {
+	cityName: "古斯塔夫斯",
+	citySpell: "GUSITAFUSI",
+	"code": "GST",
+	"countryCode": "US",
+	"countryName": "美国",
+	cityFirstLetter: "G"
+}, {
+	cityName: "戈亚尼亚",
+	citySpell: "GEYANIYA",
+	"code": "GYN",
+	"countryCode": "BR",
+	"countryName": "巴西",
+	cityFirstLetter: "G"
+}, {
+	cityName: "戈德港顽凯塔苏瓦克",
+	citySpell: "GEDEGANGWANKAITASUWAKE",
+	"code": "JGO",
+	"countryCode": "GL",
+	"countryName": "格陵兰岛",
+	cityFirstLetter: "G"
+}, {
+	cityName: "盖梅纳",
+	citySpell: "GAIMEINA",
+	"code": "GMA",
+	"countryCode": "CD",
+	"countryName": "刚果民主共和国",
+	cityFirstLetter: "G"
+}, {
+	cityName: "盖达",
+	citySpell: "GAIDA",
+	"code": "AAY",
+	"countryCode": "YE",
+	"countryName": "也门",
+	cityFirstLetter: "G"
+}, {
+	cityName: "戈尔干",
+	citySpell: "GEERGAN",
+	"code": "GBT",
+	"countryCode": "IR",
+	"countryName": "伊朗",
+	cityFirstLetter: "G"
+}, {
+	cityName: "格罗塞托",
+	citySpell: "GELUOSAITUO",
+	"code": "GRS",
+	"countryCode": "IT",
+	"countryName": "意大利",
+	cityFirstLetter: "G"
+}, {
+	cityName: "格里列",
+	citySpell: "GELILIE",
+	"code": "GXY",
+	"countryCode": "US",
+	"countryName": "美国",
+	cityFirstLetter: "G"
+}, {
+	cityName: "哥伦比亚(南卡罗莱那州)",
+	citySpell: "GELUNBIYA",
+	"code": "CAE",
+	"countryCode": "US",
+	"countryName": "美国",
+	cityFirstLetter: "G"
+}, {
+	cityName: "格林伍德",
+	citySpell: "GELINWUDE",
+	"code": "GRD",
+	"countryCode": "US",
+	"countryName": "美国",
+	cityFirstLetter: "G"
+}, {
+	cityName: "戈尔菲托",
+	citySpell: "GEERFEITUO",
+	"code": "GLF",
+	"countryCode": "CR",
+	"countryName": "哥斯达黎加",
+	cityFirstLetter: "G"
+}, {
+	cityName: "戈尔韦",
+	citySpell: "GEERWEI",
+	"code": "GWY",
+	"countryCode": "IE",
+	"countryName": "爱尔兰",
+	cityFirstLetter: "G"
+}, {
+	cityName: "格里姆塞",
+	citySpell: "GELIMUSAI",
+	"code": "GRY",
+	"countryCode": "IS",
+	"countryName": "冰岛",
+	cityFirstLetter: "G"
+}, {
+	cityName: "戈罗姆戈罗姆",
+	citySpell: "GELUOMUGELUOMU",
+	"code": "XGG",
+	"countryCode": "BF",
+	"countryName": "布基纳法索",
+	cityFirstLetter: "G"
+}, {
+	cityName: "古德纽斯湾",
+	citySpell: "GUDENIUSIWAN",
+	"code": "GNU",
+	"countryCode": "US",
+	"countryName": "美国",
+	cityFirstLetter: "G"
+}, {
+	cityName: "格克切岛",
+	citySpell: "GEKEQIEDAO",
+	"code": "GKD",
+	"countryCode": "TR",
+	"countryName": "土耳其",
+	cityFirstLetter: "G"
+}, {
+	cityName: "格罗兹尼",
+	citySpell: "GELUOZINI",
+	"code": "GRV",
+	"countryCode": "RU",
+	"countryName": "俄罗斯",
+	cityFirstLetter: "G"
+}, {
+	cityName: "格里菲斯",
+	citySpell: "GELIFEISI",
+	"code": "GFF",
+	"countryCode": "AU",
+	"countryName": "澳大利亚",
+	cityFirstLetter: "G"
+}, {
+	cityName: "戈巴",
+	citySpell: "GEBA",
+	"code": "GOB",
+	"countryCode": "ET",
+	"countryName": "埃塞俄比亚",
+	cityFirstLetter: "G"
+}, {
+	cityName: "格拉茨",
+	citySpell: "GELACI",
+	"code": "GRZ",
+	"countryCode": "AT",
+	"countryName": "奥地利",
+	cityFirstLetter: "G"
+}, {
+	cityName: "甘高",
+	citySpell: "GANGAO",
+	"code": "GAW",
+	"countryCode": "MM",
+	"countryName": "缅甸",
+	cityFirstLetter: "G"
+}, {
+	cityName: "戈梅利",
+	citySpell: "GEMEILI",
+	"code": "GME",
+	"countryCode": "BY",
+	"countryName": "白俄罗斯",
+	cityFirstLetter: "G"
+}, {
+	cityName: "格罗宁根",
+	citySpell: "GELUONINGGEN",
+	"code": "GRQ",
+	"countryCode": "NL",
+	"countryName": "荷兰",
+	cityFirstLetter: "G"
+}, {
+	cityName: "古晋",
+	citySpell: "GUJIN",
+	"code": "KCH",
+	"countryCode": "MY",
+	"countryName": "马来西亚",
+	cityFirstLetter: "G"
+}, {
+	cityName: "格雷戈里当斯",
+	citySpell: "GELEIGELIDANGSI",
+	"code": "GGD",
+	"countryCode": "AU",
+	"countryName": "澳大利亚",
+	cityFirstLetter: "G"
+}, {
+	cityName: "哥伦布(密西西比州)",
+	citySpell: "GELUNBU",
+	"code": "UBS",
+	"countryCode": "US",
+	"countryName": "美国",
+	cityFirstLetter: "G"
+}, {
+	cityName: "贡达尔",
+	citySpell: "GONGDAER",
+	"code": "GDQ",
+	"countryCode": "ET",
+	"countryName": "埃塞俄比亚",
+	cityFirstLetter: "G"
+}, {
+	cityName: "甘达吉卡",
+	citySpell: "GANDAJIKA",
+	"code": "GDJ",
+	"countryCode": "CD",
+	"countryName": "刚果民主共和国",
+	cityFirstLetter: "G"
+}, {
+	cityName: "瓜亚拉梅林",
+	citySpell: "GUAYALAMEILIN",
+	"code": "GYA",
+	"countryCode": "BO",
+	"countryName": "玻利维亚",
+	cityFirstLetter: "G"
+}, {
+	cityName: "甘伯尔",
+	citySpell: "GANBOER",
+	"code": "GAM",
+	"countryCode": "US",
+	"countryName": "美国",
+	cityFirstLetter: "G"
+}, {
+	cityName: "戈尔达角",
+	citySpell: "GEERDAJIAO",
+	"code": "PND",
+	"countryCode": "BZ",
+	"countryName": "伯利兹",
+	cityFirstLetter: "G"
+}, {
+	cityName: "盖恩达",
+	citySpell: "GAIENDA",
+	"code": "GAH",
+	"countryCode": "AU",
+	"countryName": "澳大利亚",
+	cityFirstLetter: "G"
+}, {
+	cityName: "格兰德岛",
+	citySpell: "GELANDEDAO",
+	"code": "GRI",
+	"countryCode": "US",
+	"countryName": "美国",
+	cityFirstLetter: "G"
+}, {
+	cityName: "古农西托利",
+	citySpell: "GUNONGXITUOLI",
+	"code": "GNS",
+	"countryCode": "ID",
+	"countryName": "印度尼西亚",
+	cityFirstLetter: "G"
+}, {
+	cityName: "古尔本岛",
+	citySpell: "GUERBENDAO",
+	"code": "GBL",
+	"countryCode": "AU",
+	"countryName": "澳大利亚",
+	cityFirstLetter: "G"
+}, {
+	cityName: "瓜索帕",
+	citySpell: "GUASUOPA",
+	"code": "GAZ",
+	"countryCode": "PG",
+	"countryName": "巴布亚新几内亚",
+	cityFirstLetter: "G"
+}, {
+	cityName: "甘博马",
+	citySpell: "GANBOMA",
+	"code": "GMM",
+	"countryCode": "CG",
+	"countryName": "刚果",
+	cityFirstLetter: "G"
+}, {
+	cityName: "格尔哈布尔",
+	citySpell: "GEERHABUER",
+	"code": "KLH",
+	"countryCode": "IN",
+	"countryName": "印度",
+	cityFirstLetter: "G"
+}, {
+	cityName: "果阿",
+	citySpell: "GUOA",
+	"code": "GOI",
+	"countryCode": "IN",
+	"countryName": "印度",
+	cityFirstLetter: "G"
+}, {
+	cityName: "格伦盖尔",
+	citySpell: "GELUNGAIER",
+	"code": "GLG",
+	"countryCode": "AU",
+	"countryName": "澳大利亚",
+	cityFirstLetter: "G"
+}, {
+	cityName: "哥打巴卢",
+	citySpell: "GEDABALU",
+	"code": "KBU",
+	"countryCode": "ID",
+	"countryName": "印度尼西亚",
+	cityFirstLetter: "G"
+}, {
+	cityName: "瓜卡马亚",
+	citySpell: "GUAKAMAYA",
+	"code": "GCA",
+	"countryCode": "CO",
+	"countryName": "哥伦比亚",
+	cityFirstLetter: "G"
+}, {
+	cityName: "戈韦诺港",
+	citySpell: "GEWEINUOGANG",
+	"code": "GHB",
+	"countryCode": "BS",
+	"countryName": "巴哈马",
+	cityFirstLetter: "G"
+}, {
+	cityName: "格林维尔(密西西比州)",
+	citySpell: "GELINWEIER",
+	"code": "GLH",
+	"countryCode": "US",
+	"countryName": "美国",
+	cityFirstLetter: "G"
+}, {
+	cityName: "瓜纳雷",
+	citySpell: "GUANALEI",
+	"code": "GUQ",
+	"countryCode": "VE",
+	"countryName": "委内瑞拉",
+	cityFirstLetter: "G"
+}, {
+	cityName: "古德伯",
+	citySpell: "GUDEBO",
+	"code": "CDP",
+	"countryCode": "IN",
+	"countryName": "印度",
+	cityFirstLetter: "G"
+}, {
+	cityName: "戈尔纳奥里亚霍维察",
+	citySpell: "GEERNAAOLIYAHUOWEICHA",
+	"code": "GOZ",
+	"countryCode": "BG",
+	"countryName": "保加利亚",
+	cityFirstLetter: "G"
+}, {
+	cityName: "古拉",
+	citySpell: "GULA",
+	"code": "GOC",
+	"countryCode": "PG",
+	"countryName": "巴布亚新几内亚",
+	cityFirstLetter: "G"
+}, {
+	cityName: "国际瀑布",
+	citySpell: "GUOJIPUBU",
+	"code": "INL",
+	"countryCode": "US",
+	"countryName": "美国",
+	cityFirstLetter: "G"
+}, {
+	cityName: "格鲁美地",
+	citySpell: "GELUMEIDI",
+	"code": "GTZ",
+	"countryCode": "TZ",
+	"countryName": "坦桑尼亚",
+	cityFirstLetter: "G"
+}, {
+	cityName: "盖洛普",
+	citySpell: "GAILUOPU",
+	"code": "GUP",
+	"countryCode": "US",
+	"countryName": "美国",
+	cityFirstLetter: "G"
+}, {
+	cityName: "戈特利克",
+	citySpell: "GETELIKE",
+	"code": "KOT",
+	"countryCode": "US",
+	"countryName": "美国",
+	cityFirstLetter: "G"
+}, {
+	cityName: "瓜比",
+	citySpell: "GUABI",
+	"code": "GPI",
+	"countryCode": "CO",
+	"countryName": "哥伦比亚",
+	cityFirstLetter: "G"
+}, {
+	cityName: "古尔本",
+	citySpell: "GUERBEN",
+	"code": "GUL",
+	"countryCode": "AU",
+	"countryName": "澳大利亚",
+	cityFirstLetter: "G"
+}, {
+	cityName: "古瓦哈蒂",
+	citySpell: "GUWAHADI",
+	"code": "GAU",
+	"countryCode": "IN",
+	"countryName": "印度",
+	cityFirstLetter: "G"
+}, {
+	cityName: "贡达姆",
+	citySpell: "GONGDAMU",
+	"code": "GUD",
+	"countryCode": "ML",
+	"countryName": "马里",
+	cityFirstLetter: "G"
+}, {
+	cityName: "瓜里",
+	citySpell: "GUALI",
+	"code": "GUG",
+	"countryCode": "PG",
+	"countryName": "巴布亚新几内亚",
+	cityFirstLetter: "G"
+}, {
+	cityName: "古雷拉",
+	citySpell: "GULEILA",
+	"code": "CPX",
+	"countryCode": "PR",
+	"countryName": "波多黎各",
+	cityFirstLetter: "G"
+}, {
+	cityName: "哥伦布",
+	citySpell: "GELUNBU",
+	"code": "OLU",
+	"countryCode": "US",
+	"countryName": "美国",
+	cityFirstLetter: "G"
+}, {
+	cityName: "格尔卡纳",
+	citySpell: "GEERKANA",
+	"code": "GKN",
+	"countryCode": "US",
+	"countryName": "美国",
+	cityFirstLetter: "G"
+}, {
+	cityName: "古邦",
+	citySpell: "GUBANG",
+	"code": "KOE",
+	"countryCode": "ID",
+	"countryName": "印度尼西亚",
+	cityFirstLetter: "G"
+}, {
+	cityName: "格雷厄姆港",
+	citySpell: "GELEIEMUGANG",
+	"code": "PGM",
+	"countryCode": "US",
+	"countryName": "美国",
+	cityFirstLetter: "G"
+}, {
+	cityName: "瓜亚基尔",
+	citySpell: "GUAYAJIER",
+	"code": "GYE",
+	"countryCode": "EC",
+	"countryName": "厄瓜多尔",
+	cityFirstLetter: "G"
+}, {
+	cityName: "归仁",
+	citySpell: "GUIREN",
+	"code": "UIH",
+	"countryCode": "VN",
+	"countryName": "越南",
+	cityFirstLetter: "G"
+}, {
+	cityName: "关岛",
+	citySpell: "GUANDAO",
+	"code": "GUM",
+	"countryCode": "GU",
+	"countryName": "关岛",
+	cityFirstLetter: "G"
+}, {
+	cityName: "格林维尔（北卡罗来纳州）",
+	citySpell: "GELINWEIER",
+	"code": "PGV",
+	"countryCode": "US",
+	"countryName": "美国",
+	cityFirstLetter: "G"
+}, {
+	cityName: "关丹",
+	citySpell: "GUANDAN",
+	"code": "KUA",
+	"countryCode": "MY",
+	"countryName": "马来西亚",
+	cityFirstLetter: "G"
+}, {
+	cityName: "格但斯克",
+	citySpell: "GEDANSIKE",
+	"code": "GDN",
+	"countryCode": "PL",
+	"countryName": "波兰",
+	cityFirstLetter: "G"
+}, {
+	cityName: "格贝",
+	citySpell: "GEBEI",
+	"code": "GEB",
+	"countryCode": "ID",
+	"countryName": "印度尼西亚",
+	cityFirstLetter: "G"
+}, {
+	cityName: "高亚",
+	citySpell: "GAOYA",
+	"code": "ZGU",
+	"countryCode": "VU",
+	"countryName": "瓦努阿图",
+	cityFirstLetter: "G"
+}, {
+	cityName: "古卢",
+	citySpell: "GULU",
+	"code": "ULU",
+	"countryCode": "UG",
+	"countryName": "乌干达",
+	cityFirstLetter: "G"
+}, {
+	cityName: "格伦代夫",
+	citySpell: "GELUNDAIFU",
+	"code": "GDV",
+	"countryCode": "US",
+	"countryName": "美国",
+	cityFirstLetter: "G"
+}, {
+	cityName: "哥伦打洛",
+	citySpell: "GELUNDALUO",
+	"code": "GTO",
+	"countryCode": "ID",
+	"countryName": "印度尼西亚",
+	cityFirstLetter: "G"
+}, {
+	cityName: "冈讷达",
+	citySpell: "GANGNEDA",
+	"code": "GUH",
+	"countryCode": "AU",
+	"countryName": "澳大利亚",
+	cityFirstLetter: "G"
+}, {
+	cityName: "格林维尔(得克萨斯州)",
+	citySpell: "GELINWEIER",
+	"code": "GVT",
+	"countryCode": "US",
+	"countryName": "美国",
+	cityFirstLetter: "G"
+}, {
+	cityName: "格里斯菲奥德",
+	citySpell: "GELISIFEIAODE",
+	"code": "YGZ",
+	"countryCode": "CA",
+	"countryName": "加拿大",
+	cityFirstLetter: "G"
+}, {
+	cityName: "戈罗卡",
+	citySpell: "GELUOKA",
+	"code": "GKA",
+	"countryCode": "PG",
+	"countryName": "巴布亚新几内亚",
+	cityFirstLetter: "G"
+}, {
+	cityName: "哥印拜陀",
+	citySpell: "GEYINBAITUO",
+	"code": "CJB",
+	"countryCode": "IN",
+	"countryName": "印度",
+	cityFirstLetter: "G"
+}, {
+	cityName: "瓜拉普阿瓦",
+	citySpell: "GUALAPUAWA",
+	"code": "GPB",
+	"countryCode": "BR",
+	"countryName": "巴西",
+	cityFirstLetter: "G"
+}, {
+	cityName: "盖尔斯堡",
+	citySpell: "GAIERSIBAO",
+	"code": "GBG",
+	"countryCode": "US",
+	"countryName": "美国",
+	cityFirstLetter: "G"
+}, {
+	cityName: "格拉德斯通",
+	citySpell: "GELADESITONG",
+	"code": "GLT",
+	"countryCode": "AU",
+	"countryName": "澳大利亚",
+	cityFirstLetter: "G"
+}, {
+	cityName: "瓜达拉哈拉",
+	citySpell: "GUADALAHALA",
+	"code": "GDL",
+	"countryCode": "MX",
+	"countryName": "墨西哥",
+	cityFirstLetter: "G"
+}, {
+	cityName: "哈罗盖特",
+	citySpell: "HALUOGAITE",
+	"code": "HRT",
+	"countryCode": "GB",
+	"countryName": "英国",
+	cityFirstLetter: "H"
+}, {
+	cityName: "胡志明市",
+	citySpell: "HUZHIMINGSHI",
+	"code": "SGN",
+	"countryCode": "VN",
+	"countryName": "越南",
+	cityFirstLetter: "H"
+}, {
+	cityName: "河内",
+	citySpell: "HENEI",
+	"code": "HAN",
+	"countryCode": "VN",
+	"countryName": "越南",
+	cityFirstLetter: "H"
+}, {
+	cityName: "华盛顿",
+	citySpell: "HUASHENGDUN",
+	"code": "WAS",
+	"countryCode": "US",
+	"countryName": "美国",
+	cityFirstLetter: "H"
+}, {
+	cityName: "黄金海岸",
+	citySpell: "HUANGJINHAIAN",
+	"code": "OOL",
+	"countryCode": "AU",
+	"countryName": "澳大利亚",
+	cityFirstLetter: "H"
+}, {
+	cityName: "华沙",
+	citySpell: "HUASHA",
+	"code": "WAW",
+	"countryCode": "PL",
+	"countryName": "波兰",
+	cityFirstLetter: "H"
+}, {
+	cityName: "汉堡",
+	citySpell: "HANBAO",
+	"code": "HAM",
+	"countryCode": "DE",
+	"countryName": "德国",
+	cityFirstLetter: "H"
+}, {
+	cityName: "惠灵顿",
+	citySpell: "HUILINGDUN",
+	"code": "WLG",
+	"countryCode": "NZ",
+	"countryName": "新西兰",
+	cityFirstLetter: "H"
+}, {
+	cityName: "函馆",
+	citySpell: "HANGUAN",
+	"code": "HKD",
+	"countryCode": "JP",
+	"countryName": "日本",
+	cityFirstLetter: "H"
+}, {
+	cityName: "海法",
+	citySpell: "HAIFA",
+	"code": "HFA",
+	"countryCode": "IL",
+	"countryName": "以色列",
+	cityFirstLetter: "H"
+}, {
+	cityName: "哈拉帕",
+	citySpell: "HALAPA",
+	"code": "JAL",
+	"countryCode": "MX",
+	"countryName": "墨西哥",
+	cityFirstLetter: "H"
+}, {
+	cityName: "胡昆齐",
+	citySpell: "HUKUNQI",
+	"code": "HUK",
+	"countryCode": "BW",
+	"countryName": "博茨瓦纳",
+	cityFirstLetter: "H"
+}, {
+	cityName: "海登港",
+	citySpell: "HAIDENGGANG",
+	"code": "PTH",
+	"countryCode": "US",
+	"countryName": "美国",
+	cityFirstLetter: "H"
+}, {
+	cityName: "霍夫",
+	citySpell: "HUOFU",
+	"code": "HOQ",
+	"countryCode": "DE",
+	"countryName": "德国",
+	cityFirstLetter: "H"
+}, {
+	cityName: "海沃德",
+	citySpell: "HAIWODE",
+	"code": "HYR",
+	"countryCode": "US",
+	"countryName": "美国",
+	cityFirstLetter: "H"
+}, {
+	cityName: "赫尔辛基",
+	citySpell: "HEERXINJI",
+	"code": "HEL",
+	"countryCode": "FI",
+	"countryName": "芬兰",
+	cityFirstLetter: "H"
+}, {
+	cityName: "海莱夫尔",
+	citySpell: "HAILAIFUER",
+	"code": "YOJ",
+	"countryCode": "CA",
+	"countryName": "加拿大",
+	cityFirstLetter: "H"
+}, {
+	cityName: "霍克尔",
+	citySpell: "HUOKEER",
+	"code": "HWK",
+	"countryCode": "AU",
+	"countryName": "澳大利亚",
+	cityFirstLetter: "H"
+}, {
+	cityName: "霍普维尔",
+	citySpell: "HUOPUWEIER",
+	"code": "HPE",
+	"countryCode": "AU",
+	"countryName": "澳大利亚",
+	cityFirstLetter: "H"
+}, {
+	cityName: "黑斯廷斯",
+	citySpell: "HEISITINGSI",
+	"code": "HSI",
+	"countryCode": "US",
+	"countryName": "美国",
+	cityFirstLetter: "H"
+}, {
+	cityName: "哈伊马角",
+	citySpell: "HAYIMAJIAO",
+	"code": "RKT",
+	"countryCode": "AE",
+	"countryName": "阿联酋",
+	cityFirstLetter: "H"
+}, {
+	cityName: "荷兹普鲁伊特",
+	citySpell: "HEZIPULUYITE",
+	"code": "HDS",
+	"countryCode": "ZA",
+	"countryName": "南非",
+	cityFirstLetter: "H"
+}, {
+	cityName: "霍夫恩",
+	citySpell: "HUOFUEN",
+	"code": "HFN",
+	"countryCode": "IS",
+	"countryName": "冰岛",
+	cityFirstLetter: "H"
+}, {
+	cityName: "黑尔戈兰",
+	citySpell: "HEIERGELAN",
+	"code": "HGL",
+	"countryCode": "DE",
+	"countryName": "德国",
+	cityFirstLetter: "H"
+}, {
+	cityName: "赫罗纳",
+	citySpell: "HELUONA",
+	"code": "GRO",
+	"countryCode": "ES",
+	"countryName": "西班牙",
+	cityFirstLetter: "H"
+}, {
+	cityName: "海恩斯",
+	citySpell: "HAIENSI",
+	"code": "HNS",
+	"countryCode": "US",
+	"countryName": "美国",
+	cityFirstLetter: "H"
+}, {
+	cityName: "红湖",
+	citySpell: "HONGHU",
+	"code": "YRL",
+	"countryCode": "CA",
+	"countryName": "加拿大",
+	cityFirstLetter: "H"
+}, {
+	cityName: "海米斯穆谢特",
+	citySpell: "HAIMISIMUXIETE",
+	"code": "KMX",
+	"countryCode": "SA",
+	"countryName": "沙特阿垃伯",
+	cityFirstLetter: "H"
+}, {
+	cityName: "哈克",
+	citySpell: "HAKE",
+	"code": "JQE",
+	"countryCode": "PA",
+	"countryName": "巴拿马",
+	cityFirstLetter: "H"
+}, {
+	cityName: "皇后镇",
+	citySpell: "HUANGHOUZHEN",
+	"code": "ZQN",
+	"countryCode": "NZ",
+	"countryName": "新西兰",
+	cityFirstLetter: "H"
+}, {
+	cityName: "哈马丹",
+	citySpell: "HAMADAN",
+	"code": "HDM",
+	"countryCode": "IR",
+	"countryName": "伊朗",
+	cityFirstLetter: "H"
+}, {
+	cityName: "哈弗福德韦斯特",
+	citySpell: "HAFUFUDEWEISITE",
+	"code": "HAW",
+	"countryCode": "GB",
+	"countryName": "英国",
+	cityFirstLetter: "H"
+}, {
+	cityName: "霍索恩",
+	citySpell: "HUOSUOEN",
+	"code": "HHR",
+	"countryCode": "US",
+	"countryName": "美国",
+	cityFirstLetter: "H"
+}, {
+	cityName: "华富里",
+	citySpell: "HUAFULI",
+	"code": "KKM",
+	"countryCode": "TH",
+	"countryName": "泰国",
+	cityFirstLetter: "H"
+}, {
+	cityName: "侯拉",
+	citySpell: "HOULA",
+	"code": "HOA",
+	"countryCode": "KE",
+	"countryName": "肯尼亚",
+	cityFirstLetter: "H"
+}, {
+	cityName: "哈里森",
+	citySpell: "HALISEN",
+	"code": "HRO",
+	"countryCode": "US",
+	"countryName": "美国",
+	cityFirstLetter: "H"
+}, {
+	cityName: "霍奎厄姆",
+	citySpell: "HUOKUIEMU",
+	"code": "HQM",
+	"countryCode": "US",
+	"countryName": "美国",
+	cityFirstLetter: "H"
+}, {
+	cityName: "荷马",
+	citySpell: "HEMA",
+	"code": "HOM",
+	"countryCode": "US",
+	"countryName": "美国",
+	cityFirstLetter: "H"
+}, {
+	cityName: "胡阿内岛",
+	citySpell: "HUANEIDAO",
+	"code": "HUH",
+	"countryCode": "PF",
+	"countryName": "法属波利尼西亚",
+	cityFirstLetter: "H"
+}, {
+	cityName: "霍利克罗斯",
+	citySpell: "HUOLIKELUOSI",
+	"code": "HCR",
+	"countryCode": "US",
+	"countryName": "美国",
+	cityFirstLetter: "H"
+}, {
+	cityName: "荷台达",
+	citySpell: "HETAIDA",
+	"code": "HOD",
+	"countryCode": "YE",
+	"countryName": "也门",
+	cityFirstLetter: "H"
+}, {
+	cityName: "哈瓦伊里弗莱基",
+	citySpell: "HAWAYILIFULAIJI",
+	"code": "KHW",
+	"countryCode": "BW",
+	"countryName": "博茨瓦纳",
+	cityFirstLetter: "H"
+}, {
+	cityName: "何巴特",
+	citySpell: "HEBATE",
+	"code": "HBT",
+	"countryCode": "LK",
+	"countryName": "斯里兰卡",
+	cityFirstLetter: "H"
+}, {
+	cityName: "好望堡",
+	citySpell: "HAOWANGBAO",
+	"code": "YGH",
+	"countryCode": "CA",
+	"countryName": "加拿大",
+	cityFirstLetter: "H"
+}, {
+	cityName: "横滨",
+	citySpell: "HENGBIN",
+	"code": "YOK",
+	"countryCode": "JP",
+	"countryName": "日本",
+	cityFirstLetter: "H"
+}, {
+	cityName: "哈科特港",
+	citySpell: "HAKETEGANG",
+	"code": "PHC",
+	"countryCode": "NG",
+	"countryName": "尼日利亚",
+	cityFirstLetter: "H"
+}, {
+	cityName: "海德堡",
+	citySpell: "HAIDEBAO",
+	"code": "HDB",
+	"countryCode": "DE",
+	"countryName": "德国",
+	cityFirstLetter: "H"
+}, {
+	cityName: "胡富夫",
+	citySpell: "HUFUFU",
+	"code": "HOF",
+	"countryCode": "SA",
+	"countryName": "沙特阿垃伯",
+	cityFirstLetter: "H"
+}, {
+	cityName: "胡梅拉",
+	citySpell: "HUMEILA",
+	"code": "HUE",
+	"countryCode": "ET",
+	"countryName": "埃塞俄比亚",
+	cityFirstLetter: "H"
+}, {
+	cityName: "怀斯",
+	citySpell: "HUAISI",
+	"code": "LNP",
+	"countryCode": "US",
+	"countryName": "美国",
+	cityFirstLetter: "H"
+}, {
+	cityName: "哈灵根",
+	citySpell: "HALINGGEN",
+	"code": "HRL",
+	"countryCode": "US",
+	"countryName": "美国",
+	cityFirstLetter: "H"
+}, {
+	cityName: "赫伊",
+	citySpell: "HEYI",
+	"code": "HXX",
+	"countryCode": "AU",
+	"countryName": "澳大利亚",
+	cityFirstLetter: "H"
+}, {
+	cityName: "哈钦森",
+	citySpell: "HAQINSEN",
+	"code": "HUT",
+	"countryCode": "US",
+	"countryName": "美国",
+	cityFirstLetter: "H"
+}, {
+	cityName: "胡布利",
+	citySpell: "HUBULI",
+	"code": "HBX",
+	"countryCode": "IN",
+	"countryName": "印度",
+	cityFirstLetter: "H"
+}, {
+	cityName: "胡利亚卡",
+	citySpell: "HULIYAKA",
+	"code": "JUL",
+	"countryCode": "PE",
+	"countryName": "秘鲁",
+	cityFirstLetter: "H"
+}, {
+	cityName: "海什姆吉尔拜",
+	citySpell: "HAISHIMUJIERBAI",
+	"code": "GBU",
+	"countryCode": "SD",
+	"countryName": "苏丹",
+	cityFirstLetter: "H"
+}, {
+	cityName: "汉德加",
+	citySpell: "HANDEJIA",
+	"code": "KDY",
+	"countryCode": "RU",
+	"countryName": "俄罗斯",
+	cityFirstLetter: "H"
+}, {
+	cityName: "呵叻",
+	citySpell: "HELE",
+	"code": "NAK",
+	"countryCode": "TH",
+	"countryName": "泰国",
+	cityFirstLetter: "H"
+}, {
+	cityName: "胡萨维克",
+	citySpell: "HUSAWEIKE",
+	"code": "HZK",
+	"countryCode": "IS",
+	"countryName": "冰岛",
+	cityFirstLetter: "H"
+}, {
+	cityName: "霍普金斯维尔",
+	citySpell: "HUOPUJINSIWEIER",
+	"code": "HOP",
+	"countryCode": "US",
+	"countryName": "美国",
+	cityFirstLetter: "H"
+}, {
+	cityName: "哈尔姆斯塔德",
+	citySpell: "HAERMUSITADE",
+	"code": "HAD",
+	"countryCode": "SE",
+	"countryName": "瑞典",
+	cityFirstLetter: "H"
+}, {
+	cityName: "霍普敦",
+	citySpell: "HUOPUDUN",
+	"code": "HTU",
+	"countryCode": "AU",
+	"countryName": "澳大利亚",
+	cityFirstLetter: "H"
+}, {
+	cityName: "华伦西亚",
+	citySpell: "HUALUNXIYA",
+	"code": "VLN",
+	"countryCode": "VE",
+	"countryName": "委内瑞拉",
+	cityFirstLetter: "H"
+}, {
+	cityName: "黑格斯敦",
+	citySpell: "HEIGESIDUN",
+	"code": "HGR",
+	"countryCode": "US",
+	"countryName": "美国",
+	cityFirstLetter: "H"
+}, {
+	cityName: "霍浦港",
+	citySpell: "HUOPUGANG",
+	"code": "YHA",
+	"countryCode": "CA",
+	"countryName": "加拿大",
+	cityFirstLetter: "H"
+}, {
+	cityName: "海塞卜",
+	citySpell: "HAISAIBO",
+	"code": "KHS",
+	"countryCode": "OM",
+	"countryName": "阿曼",
+	cityFirstLetter: "H"
+}, {
+	cityName: "霍布斯",
+	citySpell: "HUOBUSI",
+	"code": "HOB",
+	"countryCode": "US",
+	"countryName": "美国",
+	cityFirstLetter: "H"
+}, {
+	cityName: "胡珀湾",
+	citySpell: "HUPOWAN",
+	"code": "HPB",
+	"countryCode": "US",
+	"countryName": "美国",
+	cityFirstLetter: "H"
+}, {
+	cityName: "哈西迈萨乌德",
+	citySpell: "HAXIMAISAWUDE",
+	"code": "HME",
+	"countryCode": "DZ",
+	"countryName": "阿尔及利亚",
+	cityFirstLetter: "H"
+}, {
+	cityName: "胡迪克斯瓦尔",
+	citySpell: "HUDIKESIWAER",
+	"code": "HUV",
+	"countryCode": "SE",
+	"countryName": "瑞典",
+	cityFirstLetter: "H"
+}, {
+	cityName: "黑赫",
+	citySpell: "HEIHE",
+	"code": "HEH",
+	"countryCode": "MM",
+	"countryName": "缅甸",
+	cityFirstLetter: "H"
+}, {
+	cityName: "哈斯维克",
+	citySpell: "HASIWEIKE",
+	"code": "HAA",
+	"countryCode": "NO",
+	"countryName": "挪威",
+	cityFirstLetter: "H"
+}, {
+	cityName: "寒冷角",
+	citySpell: "HANLENGJIAO",
+	"code": "CFB",
+	"countryCode": "BR",
+	"countryName": "巴西",
+	cityFirstLetter: "H"
+}, {
+	cityName: "霍巴特贝",
+	citySpell: "HUOBATEBEI",
+	"code": "HBH",
+	"countryCode": "US",
+	"countryName": "美国",
+	cityFirstLetter: "H"
+}, {
+	cityName: "霍利斯",
+	citySpell: "HUOLISI",
+	"code": "HYL",
+	"countryCode": "US",
+	"countryName": "美国",
+	cityFirstLetter: "H"
+}, {
+	cityName: "哈密尔顿岛",
+	citySpell: "HAMIERDUNDAO",
+	"code": "HTI",
+	"countryCode": "AU",
+	"countryName": "澳大利亚",
+	cityFirstLetter: "H"
+}, {
+	cityName: "海达堡",
+	citySpell: "HAIDABAO",
+	"code": "HYG",
+	"countryCode": "US",
+	"countryName": "美国",
+	cityFirstLetter: "H"
+}, {
+	cityName: "霍奥莱胡阿",
+	citySpell: "HUOAOLAIHUA",
+	"code": "MKK",
+	"countryCode": "US",
+	"countryName": "美国",
+	cityFirstLetter: "H"
+}, {
+	cityName: "赫维湾",
+	citySpell: "HEWEIWAN",
+	"code": "HVB",
+	"countryCode": "AU",
+	"countryName": "澳大利亚",
+	cityFirstLetter: "H"
+}, {
+	cityName: "黑泽尔顿",
+	citySpell: "HEIZEERDUN",
+	"code": "HZL",
+	"countryCode": "US",
+	"countryName": "美国",
+	cityFirstLetter: "H"
+}, {
+	cityName: "亨廷顿",
+	citySpell: "HENGTINGDUN",
+	"code": "HTS",
+	"countryCode": "US",
+	"countryName": "美国",
+	cityFirstLetter: "H"
+}, {
+	cityName: "皇后镇",
+	citySpell: "HUANGHOUZHEN",
+	"code": "ULP",
+	"countryCode": "AU",
+	"countryName": "澳大利亚",
+	cityFirstLetter: "H"
+}, {
+	cityName: "胡胡伊",
+	citySpell: "HUHUYI",
+	"code": "JUJ",
+	"countryCode": "AR",
+	"countryName": "阿根廷",
+	cityFirstLetter: "H"
+}, {
+	cityName: "胡斯利亚",
+	citySpell: "HUSILIYA",
+	"code": "HSL",
+	"countryCode": "US",
+	"countryName": "美国",
+	cityFirstLetter: "H"
+}, {
+	cityName: "哈霓玛阿都",
+	citySpell: "HANIMAADU",
+	"code": "HAQ",
+	"countryCode": "MV",
+	"countryName": "马尔代夫",
+	cityFirstLetter: "H"
+}, {
+	cityName: "合艾",
+	citySpell: "HEAI",
+	"code": "HDY",
+	"countryCode": "TH",
+	"countryName": "泰国",
+	cityFirstLetter: "H"
+}, {
+	cityName: "汉密尔顿",
+	citySpell: "HANMIERDUN",
+	"code": "HLZ",
+	"countryCode": "NZ",
+	"countryName": "新西兰",
+	cityFirstLetter: "H"
+}, {
+	cityName: "花莲",
+	citySpell: "HUALIAN",
+	"code": "HUN",
+	"countryCode": "TW",
+	"countryName": "中国台湾",
+	cityFirstLetter: "H"
+}, {
+	cityName: "哈特福德",
+	citySpell: "HATEFUDE",
+	"code": "HFD",
+	"countryCode": "US",
+	"countryName": "美国",
+	cityFirstLetter: "H"
+}, {
+	cityName: "豪哈",
+	citySpell: "HAOHA",
+	"code": "JAU",
+	"countryCode": "PE",
+	"countryName": "秘鲁",
+	cityFirstLetter: "H"
+}, {
+	cityName: "哈瓦班戈",
+	citySpell: "HAWABANGE",
+	"code": "HWA",
+	"countryCode": "PG",
+	"countryName": "巴布亚新几内亚",
+	cityFirstLetter: "H"
+}, {
+	cityName: "哈尔海滩",
+	citySpell: "HAERHAITAN",
+	"code": "YUX",
+	"countryCode": "CA",
+	"countryName": "加拿大",
+	cityFirstLetter: "H"
+}, {
+	cityName: "哈特勒斯",
+	citySpell: "HATELESI",
+	"code": "HNC",
+	"countryCode": "US",
+	"countryName": "美国",
+	cityFirstLetter: "H"
+}, {
+	cityName: "霍巴特",
+	citySpell: "HUOBATE",
+	"code": "HBR",
+	"countryCode": "US",
+	"countryName": "美国",
+	cityFirstLetter: "H"
+}, {
+	cityName: "海布里",
+	citySpell: "HAIBULI",
+	"code": "HIG",
+	"countryCode": "AU",
+	"countryName": "澳大利亚",
+	cityFirstLetter: "H"
+}, {
+	cityName: "惠灵",
+	citySpell: "HUILING",
+	"code": "HLG",
+	"countryCode": "US",
+	"countryName": "美国",
+	cityFirstLetter: "H"
+}, {
+	cityName: "哈里斯堡",
+	citySpell: "HALISIBAO",
+	"code": "HAR",
+	"countryCode": "US",
+	"countryName": "美国",
+	cityFirstLetter: "H"
+}, {
+	cityName: "霍尔曼",
+	citySpell: "HUOERMAN",
+	"code": "YHI",
+	"countryCode": "CA",
+	"countryName": "加拿大",
+	cityFirstLetter: "H"
+}, {
+	cityName: "霍斯特",
+	citySpell: "HUOSITE",
+	"code": "KHT",
+	"countryCode": "AF",
+	"countryName": "阿富汗",
+	cityFirstLetter: "H"
+}, {
+	cityName: "海沃德",
+	citySpell: "HAIWODE",
+	"code": "HWD",
+	"countryCode": "US",
+	"countryName": "美国",
+	cityFirstLetter: "H"
+}, {
+	cityName: "哈帕伊",
+	citySpell: "HAPAYI",
+	"code": "HPA",
+	"countryCode": "TO",
+	"countryName": "汤加",
+	cityFirstLetter: "H"
+}, {
+	cityName: "哈尔格萨",
+	citySpell: "HAERGESA",
+	"code": "HGA",
+	"countryCode": "SO",
+	"countryName": "索马里",
+	cityFirstLetter: "H"
+}, {
+	cityName: "火奴鲁鲁",
+	citySpell: "HUONULULU",
+	"code": "HNL",
+	"countryCode": "US",
+	"countryName": "美国",
+	cityFirstLetter: "H"
+}, {
+	cityName: "黑德兰港",
+	citySpell: "HEIDELANGANG",
+	"code": "PHE",
+	"countryCode": "AU",
+	"countryName": "澳大利亚",
+	cityFirstLetter: "H"
+}, {
+	cityName: "霍斯金斯",
+	citySpell: "HUOSIJINSI",
+	"code": "HKN",
+	"countryCode": "PG",
+	"countryName": "巴布亚新几内亚",
+	cityFirstLetter: "H"
+}, {
+	cityName: "哈瓦那",
+	citySpell: "HAWANA",
+	"code": "HAV",
+	"countryCode": "CU",
+	"countryName": "古巴",
+	cityFirstLetter: "H"
+}, {
+	cityName: "哈迪港",
+	citySpell: "HADIGANG",
+	"code": "YZT",
+	"countryCode": "CA",
+	"countryName": "加拿大",
+	cityFirstLetter: "H"
+}, {
+	cityName: "和平港",
+	citySpell: "HEPINGGANG",
+	"code": "PAX",
+	"countryCode": "HT",
+	"countryName": "海地",
+	cityFirstLetter: "H"
+}, {
+	cityName: "哈汉",
+	citySpell: "HAHAN",
+	"code": "KWH",
+	"countryCode": "AF",
+	"countryName": "阿富汗",
+	cityFirstLetter: "H"
+}, {
+	cityName: "华欣",
+	citySpell: "HUAXIN",
+	"code": "HHQ",
+	"countryCode": "TH",
+	"countryName": "泰国",
+	cityFirstLetter: "H"
+}, {
+	cityName: "哈格福什",
+	citySpell: "HAGEFUSHI",
+	"code": "HFS",
+	"countryCode": "SE",
+	"countryName": "瑞典",
+	cityFirstLetter: "H"
+}, {
+	cityName: "豪岛",
+	citySpell: "HAODAO",
+	"code": "HOI",
+	"countryCode": "PF",
+	"countryName": "法属波利尼西亚",
+	cityFirstLetter: "H"
+}, {
+	cityName: "哈尔科夫",
+	citySpell: "HAERKEFU",
+	"code": "HRK",
+	"countryCode": "UA",
+	"countryName": "乌克兰",
+	cityFirstLetter: "H"
+}, {
+	cityName: "霍恩岛",
+	citySpell: "HUOENDAO",
+	"code": "HID",
+	"countryCode": "AU",
+	"countryName": "澳大利亚",
+	cityFirstLetter: "H"
+}, {
+	cityName: "赫尔辛堡",
+	citySpell: "HEERXINBAO",
+	"code": "AGH",
+	"countryCode": "SE",
+	"countryName": "瑞典",
+	cityFirstLetter: "H"
+}, {
+	cityName: "哈卡里",
+	citySpell: "HAKALI",
+	"code": "YKO",
+	"countryCode": "TR",
+	"countryName": "土耳其",
+	cityFirstLetter: "H"
+}, {
+	cityName: "海恩尼斯",
+	citySpell: "HAIENNISI",
+	"code": "HYA",
+	"countryCode": "US",
+	"countryName": "美国",
+	cityFirstLetter: "H"
+}, {
+	cityName: "Higlieg",
+	citySpell: "HIGLIEG",
+	"code": "HGI",
+	"countryCode": "SD",
+	"countryName": "苏丹",
+	cityFirstLetter: "H"
+}, {
+	cityName: "海于格生德",
+	citySpell: "HAIYUGESHENGDE",
+	"code": "HAU",
+	"countryCode": "NO",
+	"countryName": "挪威",
+	cityFirstLetter: "H"
+}, {
+	cityName: "侯尔马维克",
+	citySpell: "HOUERMAWEIKE",
+	"code": "HVK",
+	"countryCode": "IS",
+	"countryName": "冰岛",
+	cityFirstLetter: "H"
+}, {
+	cityName: "海星圣母",
+	citySpell: "HAIXINGSHENGMU",
+	"code": "SML",
+	"countryCode": "BS",
+	"countryName": "巴哈马",
+	cityFirstLetter: "H"
+}, {
+	cityName: "哈里史密斯",
+	citySpell: "HALISHIMISI",
+	"code": "HRS",
+	"countryCode": "ZA",
+	"countryName": "南非",
+	cityFirstLetter: "H"
+}, {
+	cityName: "华雷斯城",
+	citySpell: "HUALEISICHENG",
+	"code": "CJS",
+	"countryCode": "MX",
+	"countryName": "墨西哥",
+	cityFirstLetter: "H"
+}, {
+	cityName: "霍尔施泰因斯堡",
+	citySpell: "HUOERSHITAIYINSIBAO",
+	"code": "JHS",
+	"countryCode": "GL",
+	"countryName": "格陵兰岛",
+	cityFirstLetter: "H"
+}, {
+	cityName: "哈巴罗夫斯克",
+	citySpell: "HABALUOFUSIKE",
+	"code": "KHV",
+	"countryCode": "RU",
+	"countryName": "俄罗斯",
+	cityFirstLetter: "H"
+}, {
+	cityName: "赫拉克利翁",
+	citySpell: "HELAKELIWENG",
+	"code": "HER",
+	"countryCode": "GR",
+	"countryName": "希腊",
+	cityFirstLetter: "H"
+}, {
+	cityName: "黑丁利",
+	citySpell: "HEIDINGLI",
+	"code": "HIP",
+	"countryCode": "AU",
+	"countryName": "澳大利亚",
+	cityFirstLetter: "H"
+}, {
+	cityName: "海伦迪恩",
+	citySpell: "HAILUNDIEN",
+	"code": "HED",
+	"countryCode": "US",
+	"countryName": "美国",
+	cityFirstLetter: "H"
+}, {
+	cityName: "哈茨费尔特港",
+	citySpell: "HACIFEIERTEGANG",
+	"code": "HAZ",
+	"countryCode": "PG",
+	"countryName": "巴布亚新几内亚",
+	cityFirstLetter: "H"
+}, {
+	cityName: "海德/布埃色姆",
+	citySpell: "HAIDE/BUAISEMU",
+	"code": "HEI",
+	"countryCode": "DE",
+	"countryName": "德国",
+	cityFirstLetter: "H"
+}, {
+	cityName: "霍尼纳比",
+	citySpell: "HUONINABI",
+	"code": "HNN",
+	"countryCode": "PG",
+	"countryName": "巴布亚新几内亚",
+	cityFirstLetter: "H"
+}, {
+	cityName: "哈恩",
+	citySpell: "HAEN",
+	"code": "JAE",
+	"countryCode": "PE",
+	"countryName": "秘鲁",
+	cityFirstLetter: "H"
+}, {
+	cityName: "海林维尔",
+	citySpell: "HAILINWEIER",
+	"code": "HLV",
+	"countryCode": "AU",
+	"countryName": "澳大利亚",
+	cityFirstLetter: "H"
+}, {
+	cityName: "汉伯塞",
+	citySpell: "HANBOSAI",
+	"code": "HUY",
+	"countryCode": "GB",
+	"countryName": "英国",
+	cityFirstLetter: "H"
+}, {
+	cityName: "赫米特",
+	citySpell: "HEMITE",
+	"code": "HMT",
+	"countryCode": "US",
+	"countryName": "美国",
+	cityFirstLetter: "H"
+}, {
+	cityName: "哈纳",
+	citySpell: "HANA",
+	"code": "HNM",
+	"countryCode": "US",
+	"countryName": "美国",
+	cityFirstLetter: "H"
+}, {
+	cityName: "海防",
+	citySpell: "HAIFANG",
+	"code": "HPH",
+	"countryCode": "VN",
+	"countryName": "越南",
+	cityFirstLetter: "H"
+}, {
+	cityName: "霍普代尔",
+	citySpell: "HUOPUDAIER",
+	"code": "YHO",
+	"countryCode": "CA",
+	"countryName": "加拿大",
+	cityFirstLetter: "H"
+}, {
+	cityName: "赫雷斯",
+	citySpell: "HELEISI",
+	"code": "XRY",
+	"countryCode": "ES",
+	"countryName": "西班牙",
+	cityFirstLetter: "H"
+}, {
+	cityName: "胡蒂卡尔帕",
+	citySpell: "HUDIKAERPA",
+	"code": "JUT",
+	"countryCode": "HN",
+	"countryName": "洪都拉斯",
+	cityFirstLetter: "H"
+}, {
+	cityName: "胡兹达尔",
+	citySpell: "HUZIDAER",
+	"code": "KDD",
+	"countryCode": "PK",
+	"countryName": "巴基斯坦",
+	cityFirstLetter: "H"
+}, {
+	cityName: "赫尔格达",
+	citySpell: "HEERGEDA",
+	"code": "HRG",
+	"countryCode": "EG",
+	"countryName": "埃及",
+	cityFirstLetter: "H"
+}, {
+	cityName: "哈坦加",
+	citySpell: "HATANJIA",
+	"code": "HTG",
+	"countryCode": "RU",
+	"countryName": "俄罗斯",
+	cityFirstLetter: "H"
+}, {
+	cityName: "洪恩",
+	citySpell: "HONGEN",
+	"code": "HUQ",
+	"countryCode": "LY",
+	"countryName": "利比亚",
+	cityFirstLetter: "H"
+}, {
+	cityName: "赫尔松",
+	citySpell: "HEERSONG",
+	"code": "KHE",
+	"countryCode": "UA",
+	"countryName": "乌克兰",
+	cityFirstLetter: "H"
+}, {
+	cityName: "哈伊勒",
+	citySpell: "HAYILE",
+	"code": "HAS",
+	"countryCode": "SA",
+	"countryName": "沙特阿垃伯",
+	cityFirstLetter: "H"
+}, {
+	cityName: "汉考克",
+	citySpell: "HANKAOKE",
+	"code": "CMX",
+	"countryCode": "US",
+	"countryName": "美国",
+	cityFirstLetter: "H"
+}, {
+	cityName: "霍尼亚拉",
+	citySpell: "HUONIYALA",
+	"code": "HIR",
+	"countryCode": "SB",
+	"countryName": "所罗门群岛",
+	cityFirstLetter: "H"
+}, {
+	cityName: "会晒",
+	citySpell: "HUISHAI",
+	"code": "HOE",
+	"countryCode": "LA",
+	"countryName": "老挝",
+	cityFirstLetter: "H"
+}, {
+	cityName: "哈塔伊",
+	citySpell: "HATAYI",
+	"code": "HTY",
+	"countryCode": "TR",
+	"countryName": "土耳其",
+	cityFirstLetter: "H"
+}, {
+	cityName: "海地角",
+	citySpell: "HAIDIJIAO",
+	"code": "CAP",
+	"countryCode": "HT",
+	"countryName": "海地",
+	cityFirstLetter: "H"
+}, {
+	cityName: "海斯",
+	citySpell: "HAISI",
+	"code": "HYS",
+	"countryCode": "US",
+	"countryName": "美国",
+	cityFirstLetter: "H"
+}, {
+	cityName: "胡拉多",
+	citySpell: "HULADUO",
+	"code": "JUO",
+	"countryCode": "CO",
+	"countryName": "哥伦比亚",
+	cityFirstLetter: "H"
+}, {
+	cityName: "霍基蒂卡",
+	citySpell: "HUOJIDIKA",
+	"code": "HKK",
+	"countryCode": "NZ",
+	"countryName": "新西兰",
+	cityFirstLetter: "H"
+}, {
+	cityName: "霍洛",
+	citySpell: "HUOLUO",
+	"code": "JOL",
+	"countryCode": "PH",
+	"countryName": "菲律宾",
+	cityFirstLetter: "H"
+}, {
+	cityName: "哈密尔顿",
+	citySpell: "HAMIERDUN",
+	"code": "HLT",
+	"countryCode": "AU",
+	"countryName": "澳大利亚",
+	cityFirstLetter: "H"
+}, {
+	cityName: "海非尔德",
+	citySpell: "HAIFEIERDE",
+	"code": "HYF",
+	"countryCode": "PG",
+	"countryName": "巴布亚新几内亚",
+	cityFirstLetter: "H"
+}, {
+	cityName: "滑铁卢",
+	citySpell: "HUATIELU",
+	"code": "ALO",
+	"countryCode": "US",
+	"countryName": "美国",
+	cityFirstLetter: "H"
+}, {
+	cityName: "赫林斯多夫",
+	citySpell: "HELINSIDUOFU",
+	"code": "HDF",
+	"countryCode": "DE",
+	"countryName": "德国",
+	cityFirstLetter: "H"
+}, {
+	cityName: "胡克克里克",
+	citySpell: "HUKEKELIKE",
+	"code": "HOK",
+	"countryCode": "AU",
+	"countryName": "澳大利亚",
+	cityFirstLetter: "H"
+}, {
+	cityName: "赫玛旺",
+	citySpell: "HEMAWANG",
+	"code": "HMV",
+	"countryCode": "SE",
+	"countryName": "瑞典",
+	cityFirstLetter: "H"
+}, {
+	cityName: "霍努",
+	citySpell: "HUONU",
+	"code": "MQJ",
+	"countryCode": "RU",
+	"countryName": "俄罗斯",
+	cityFirstLetter: "H"
+}, {
+	cityName: "哈拉雷",
+	citySpell: "HALALEI",
+	"code": "HRE",
+	"countryCode": "ZW",
+	"countryName": "津巴布韦",
+	cityFirstLetter: "H"
+}, {
+	cityName: "化提",
+	citySpell: "HUATI",
+	"code": "YLE",
+	"countryCode": "CA",
+	"countryName": "加拿大",
+	cityFirstLetter: "H"
+}, {
+	cityName: "哈拉里",
+	citySpell: "HALALI",
+	"code": "HAL",
+	"countryCode": "NA",
+	"countryName": "纳米比亚",
+	cityFirstLetter: "H"
+}, {
+	cityName: "黑角",
+	citySpell: "HEIJIAO",
+	"code": "PNR",
+	"countryCode": "CG",
+	"countryName": "刚果",
+	cityFirstLetter: "H"
+}, {
+	cityName: "霍巴特",
+	citySpell: "HUOBATE",
+	"code": "HBA",
+	"countryCode": "AU",
+	"countryName": "澳大利亚",
+	cityFirstLetter: "H"
+}, {
+	cityName: "汉斯威尔",
+	citySpell: "HANSIWEIER",
+	"code": "HSV",
+	"countryCode": "US",
+	"countryName": "美国",
+	cityFirstLetter: "H"
+}, {
+	cityName: "胡安惠",
+	citySpell: "HUANHUI",
+	"code": "JJI",
+	"countryCode": "PE",
+	"countryName": "秘鲁",
+	cityFirstLetter: "H"
+}, {
+	cityName: "怀特霍斯",
+	citySpell: "HUAITEHUOSI",
+	"code": "YXY",
+	"countryCode": "CA",
+	"countryName": "加拿大",
+	cityFirstLetter: "H"
+}, {
+	cityName: "哈托考罗扎尔",
+	citySpell: "HATUOKAOLUOZHAER",
+	"code": "HTZ",
+	"countryCode": "CO",
+	"countryName": "哥伦比亚",
+	cityFirstLetter: "H"
+}, {
+	cityName: "胡宁",
+	citySpell: "HUNING",
+	"code": "JNI",
+	"countryCode": "AR",
+	"countryName": "阿根廷",
+	cityFirstLetter: "H"
+}, {
+	cityName: "荷兰港",
+	citySpell: "HELANGANG",
+	"code": "DUT",
+	"countryCode": "US",
+	"countryName": "美国",
+	cityFirstLetter: "H"
+}, {
+	cityName: "海得拉巴",
+	citySpell: "HAIDELABA",
+	"code": "HYD",
+	"countryCode": "IN",
+	"countryName": "印度",
+	cityFirstLetter: "H"
+}, {
+	cityName: "厚木",
+	citySpell: "HOUMU",
+	"code": "NJA",
+	"countryCode": "JP",
+	"countryName": "日本",
+	cityFirstLetter: "H"
+}, {
+	cityName: "哈里法克斯",
+	citySpell: "HALIFAKESI",
+	"code": "YHZ",
+	"countryCode": "CA",
+	"countryName": "加拿大",
+	cityFirstLetter: "H"
+}, {
+	cityName: "海伦娜",
+	citySpell: "HELENA",
+	"code": "HLN",
+	"countryCode": "US",
+	"countryName": "美国",
+	cityFirstLetter: "H"
+}, {
+	cityName: "胡尔茨弗雷德",
+	citySpell: "HUERCIFULEIDE",
+	"code": "HLF",
+	"countryCode": "SE",
+	"countryName": "瑞典",
+	cityFirstLetter: "H"
+}, {
+	cityName: "霍尔兹克里克",
+	citySpell: "HUOERZIKELIKE",
+	"code": "HCQ",
+	"countryCode": "AU",
+	"countryName": "澳大利亚",
+	cityFirstLetter: "H"
+}, {
+	cityName: "赫拉特",
+	citySpell: "HELATE",
+	"code": "HEA",
+	"countryCode": "AF",
+	"countryName": "阿富汗",
+	cityFirstLetter: "H"
+}, {
+	cityName: "赫鲁特方丹",
+	citySpell: "HELUTEFANGDAN",
+	"code": "GFY",
+	"countryCode": "NA",
+	"countryName": "纳米比亚",
+	cityFirstLetter: "H"
+}, {
+	cityName: "汉诺威",
+	citySpell: "HANNUOWEI",
+	"code": "HAJ",
+	"countryCode": "DE",
+	"countryName": "德国",
+	cityFirstLetter: "H"
+}, {
+	cityName: "霍舍姆",
+	citySpell: "HUOSHEMU",
+	"code": "HSM",
+	"countryCode": "AU",
+	"countryName": "澳大利亚",
+	cityFirstLetter: "H"
+}, {
+	cityName: "海德拉巴",
+	citySpell: "HAIDELABA",
+	"code": "HDD",
+	"countryCode": "PK",
+	"countryName": "巴基斯坦",
+	cityFirstLetter: "H"
+}, {
+	cityName: "海登",
+	citySpell: "HAIDENG",
+	"code": "HDN",
+	"countryCode": "US",
+	"countryName": "美国",
+	cityFirstLetter: "H"
+}, {
+	cityName: "霍恩埃姆斯",
+	citySpell: "HUOENAIMUSI",
+	"code": "HOH",
+	"countryCode": "AT",
+	"countryName": "奥地利",
+	cityFirstLetter: "H"
+}, {
+	cityName: "胡纳",
+	citySpell: "HUNA",
+	"code": "HNH",
+	"countryCode": "US",
+	"countryName": "美国",
+	cityFirstLetter: "H"
+}, {
+	cityName: "汉班托特",
+	citySpell: "HANBANTUOTE",
+	"code": "HRI",
+	"countryCode": "LK",
+	"countryName": "斯里兰卡",
+	cityFirstLetter: "H"
+}, {
+	cityName: "哈默弗斯特",
+	citySpell: "HAMOFUSITE",
+	"code": "HFT",
+	"countryCode": "NO",
+	"countryName": "挪威",
+	cityFirstLetter: "H"
+}, {
+	cityName: "霍拉马巴德",
+	citySpell: "HUOLAMABADE",
+	"code": "KHD",
+	"countryCode": "IR",
+	"countryName": "伊朗",
+	cityFirstLetter: "H"
+}, {
+	cityName: "哈顿",
+	citySpell: "HADUN",
+	"code": "NUF",
+	"countryCode": "LK",
+	"countryName": "斯里兰卡",
+	cityFirstLetter: "H"
+}, {
+	cityName: "哈马尔",
+	citySpell: "HAMAER",
+	"code": "HMR",
+	"countryCode": "NO",
+	"countryName": "挪威",
+	cityFirstLetter: "H"
+}, {
+	cityName: "怀阿拉",
+	citySpell: "HUAIALA",
+	"code": "WYA",
+	"countryCode": "AU",
+	"countryName": "澳大利亚",
+	cityFirstLetter: "H"
+}, {
+	cityName: "霍马林",
+	citySpell: "HUOMALIN",
+	"code": "HOX",
+	"countryCode": "MM",
+	"countryName": "缅甸",
+	cityFirstLetter: "H"
+}, {
+	cityName: "霍伊岛",
+	citySpell: "HUOYIDAO",
+	"code": "HOY",
+	"countryCode": "GB",
+	"countryName": "英国",
+	cityFirstLetter: "H"
+}, {
+	cityName: "霍宁斯沃格",
+	citySpell: "HUONINGSIWOGE",
+	"code": "HVG",
+	"countryCode": "NO",
+	"countryName": "挪威",
+	cityFirstLetter: "H"
+}, {
+	cityName: "杭济",
+	citySpell: "HANGJI",
+	"code": "GNZ",
+	"countryCode": "BW",
+	"countryName": "博茨瓦纳",
+	cityFirstLetter: "H"
+}, {
+	cityName: "哈博罗内",
+	citySpell: "HABOLUONEI",
+	"code": "GBE",
+	"countryCode": "BW",
+	"countryName": "博茨瓦纳",
+	cityFirstLetter: "H"
+}, {
+	cityName: "Ileg",
+	citySpell: "ILEG",
+	"code": "ILX",
+	"countryCode": "PG",
+	"countryName": "巴布亚新几内亚",
+	cityFirstLetter: "I"
+}, {
+	cityName: "吉隆坡",
+	citySpell: "JILONGPO",
+	"code": "KUL",
+	"countryCode": "MY",
+	"countryName": "马来西亚",
+	cityFirstLetter: "J"
+}, {
+	cityName: "济州岛",
+	citySpell: "JIZHOUDAO",
+	"code": "CJU",
+	"countryCode": "KR",
+	"countryName": "韩国",
+	cityFirstLetter: "J"
+}, {
+	cityName: "金边",
+	citySpell: "JINBIAN",
+	"code": "PNH",
+	"countryCode": "KH",
+	"countryName": "柬埔寨",
+	cityFirstLetter: "J"
+}, {
+	cityName: "旧金山",
+	citySpell: "JIUJINSHAN",
+	"code": "SFO",
+	"countryCode": "US",
+	"countryName": "美国",
+	cityFirstLetter: "J"
+}, {
+	cityName: "静冈",
+	citySpell: "JINGGANG",
+	"code": "FSZ",
+	"countryCode": "JP",
+	"countryName": "日本",
+	cityFirstLetter: "J"
+}, {
+	cityName: "京都",
+	citySpell: "JINGDOU",
+	"code": "UKY",
+	"countryCode": "JP",
+	"countryName": "日本",
+	cityFirstLetter: "J"
+}, {
+	cityName: "基督城",
+	citySpell: "JIDUCHENG",
+	"code": "CHC",
+	"countryCode": "NZ",
+	"countryName": "新西兰",
+	cityFirstLetter: "J"
+}, {
+	cityName: "甲米",
+	citySpell: "JIAMI",
+	"code": "KBV",
+	"countryCode": "TH",
+	"countryName": "泰国",
+	cityFirstLetter: "J"
+}, {
+	cityName: "季克西",
+	citySpell: "JIKEXI",
+	"code": "IKS",
+	"countryCode": "RU",
+	"countryName": "俄罗斯",
+	cityFirstLetter: "J"
+}, {
+	cityName: "贾姆博尔",
+	citySpell: "JIAMUBOER",
+	"code": "JAM",
+	"countryCode": "BG",
+	"countryName": "保加利亚",
+	cityFirstLetter: "J"
+}, {
+	cityName: "捷金",
+	citySpell: "JIEJIN",
+	"code": "TKW",
+	"countryCode": "PG",
+	"countryName": "巴布亚新几内亚",
+	cityFirstLetter: "J"
+}, {
+	cityName: "基洛纳",
+	citySpell: "JILUONA",
+	"code": "YLW",
+	"countryCode": "CA",
+	"countryName": "加拿大",
+	cityFirstLetter: "J"
+}, {
+	cityName: "吉列普",
+	citySpell: "JILIEPU",
+	"code": "GLU",
+	"countryCode": "BT",
+	"countryName": "不丹",
+	cityFirstLetter: "J"
+}, {
+	cityName: "金伯利",
+	citySpell: "JINBOLI",
+	"code": "KIM",
+	"countryCode": "ZA",
+	"countryName": "南非",
+	cityFirstLetter: "J"
+}, {
+	cityName: "加尔各答",
+	citySpell: "JIAERGEDA",
+	"code": "CCU",
+	"countryCode": "IN",
+	"countryName": "印度",
+	cityFirstLetter: "J"
+}, {
+	cityName: "杰兹卡兹甘",
+	citySpell: "JIEZIKAZIGAN",
+	"code": "DZN",
+	"countryCode": "KZ",
+	"countryName": "哈萨克斯坦",
+	cityFirstLetter: "J"
+}, {
+	cityName: "加尔多",
+	citySpell: "JIAERDUO",
+	"code": "GSR",
+	"countryCode": "SO",
+	"countryName": "索马里",
+	cityFirstLetter: "J"
+}, {
+	cityName: "基尔瓦",
+	citySpell: "JIERWA",
+	"code": "KIY",
+	"countryCode": "TZ",
+	"countryName": "坦桑尼亚",
+	cityFirstLetter: "J"
+}, {
+	cityName: "兼巴拉",
+	citySpell: "JIANBALA",
+	"code": "DJM",
+	"countryCode": "CG",
+	"countryName": "刚果",
+	cityFirstLetter: "J"
+}, {
+	cityName: "基洛夫",
+	citySpell: "JILUOFU",
+	"code": "KVX",
+	"countryCode": "RU",
+	"countryName": "俄罗斯",
+	cityFirstLetter: "J"
+}, {
+	cityName: "杰斐逊城",
+	citySpell: "JIEFEIXUNCHENG",
+	"code": "JEF",
+	"countryCode": "US",
+	"countryName": "美国",
+	cityFirstLetter: "J"
+}, {
+	cityName: "基廉斯克",
+	citySpell: "JILIANSIKE",
+	"code": "KCK",
+	"countryCode": "RU",
+	"countryName": "俄罗斯",
+	cityFirstLetter: "J"
+}, {
+	cityName: "加普",
+	citySpell: "JIAPU",
+	"code": "GAT",
+	"countryCode": "FR",
+	"countryName": "法国",
+	cityFirstLetter: "J"
+}, {
+	cityName: "基加利",
+	citySpell: "JIJIALI",
+	"code": "KGL",
+	"countryCode": "RW",
+	"countryName": "卢旺达",
+	cityFirstLetter: "J"
+}, {
+	cityName: "吉莱特",
+	citySpell: "JILAITE",
+	"code": "GCC",
+	"countryCode": "US",
+	"countryName": "美国",
+	cityFirstLetter: "J"
+}, {
+	cityName: "杰克波特",
+	citySpell: "JIEKEBOTE",
+	"code": "KPT",
+	"countryCode": "US",
+	"countryName": "美国",
+	cityFirstLetter: "J"
+}, {
+	cityName: "基韦斯特",
+	citySpell: "JIWEISITE",
+	"code": "EYW",
+	"countryCode": "US",
+	"countryName": "美国",
+	cityFirstLetter: "J"
+}, {
+	cityName: "金科夫",
+	citySpell: "JINKEFU",
+	"code": "KVC",
+	"countryCode": "US",
+	"countryName": "美国",
+	cityFirstLetter: "J"
+}, {
+	cityName: "基普努克",
+	citySpell: "JIPUNUKE",
+	"code": "KPN",
+	"countryCode": "US",
+	"countryName": "美国",
+	cityFirstLetter: "J"
+}, {
+	cityName: "加帝夫",
+	citySpell: "JIADIFU",
+	"code": "CWL",
+	"countryCode": "GB",
+	"countryName": "英国",
+	cityFirstLetter: "J"
+}, {
+	cityName: "驹子",
+	citySpell: "JUZI",
+	"code": "HOC",
+	"countryCode": "PG",
+	"countryName": "巴布亚新几内亚",
+	cityFirstLetter: "J"
+}, {
+	cityName: "贾奈特",
+	citySpell: "JIANAITE",
+	"code": "DJG",
+	"countryCode": "DZ",
+	"countryName": "阿尔及利亚",
+	cityFirstLetter: "J"
+}, {
+	cityName: "济金绍尔",
+	citySpell: "JIJINSHAOER",
+	"code": "ZIG",
+	"countryCode": "SN",
+	"countryName": "塞内加尔",
+	cityFirstLetter: "J"
+}, {
+	cityName: "杰伊瑟尔梅尔",
+	citySpell: "JIEYISEERMEIER",
+	"code": "JSA",
+	"countryCode": "IN",
+	"countryName": "印度",
+	cityFirstLetter: "J"
+}, {
+	cityName: "加布斯",
+	citySpell: "JIABUSI",
+	"code": "GAB",
+	"countryCode": "US",
+	"countryName": "美国",
+	cityFirstLetter: "J"
+}, {
+	cityName: "建宁欧",
+	citySpell: "JIANNINGOU",
+	"code": "KGU",
+	"countryCode": "MY",
+	"countryName": "马来西亚",
+	cityFirstLetter: "J"
+}, {
+	cityName: "基蒂拉",
+	citySpell: "JIDILA",
+	"code": "KTT",
+	"countryCode": "FI",
+	"countryName": "芬兰",
+	cityFirstLetter: "J"
+}, {
+	cityName: "金塞米尔",
+	citySpell: "JINSAIMIER",
+	"code": "UMI",
+	"countryCode": "PE",
+	"countryName": "秘鲁",
+	cityFirstLetter: "J"
+}, {
+	cityName: "金瓯",
+	citySpell: "JINOU",
+	"code": "CAH",
+	"countryCode": "VN",
+	"countryName": "越南",
+	cityFirstLetter: "J"
+}, {
+	cityName: "吉里亚",
+	citySpell: "JILIYA",
+	"code": "GUI",
+	"countryCode": "VE",
+	"countryName": "委内瑞拉",
+	cityFirstLetter: "J"
+}, {
+	cityName: "基特韦",
+	citySpell: "JITEWEI",
+	"code": "KIW",
+	"countryCode": "ZM",
+	"countryName": "赞比亚",
+	cityFirstLetter: "J"
+}, {
+	cityName: "贾拉拉巴德",
+	citySpell: "JIALALABADE",
+	"code": "JAA",
+	"countryCode": "AF",
+	"countryName": "阿富汗",
+	cityFirstLetter: "J"
+}, {
+	cityName: "嘉义",
+	citySpell: "JIAYI",
+	"code": "CYI",
+	"countryCode": "TW",
+	"countryName": "中国台湾",
+	cityFirstLetter: "J"
+}, {
+	cityName: "吉尔吉特",
+	citySpell: "JIERJITE",
+	"code": "GIL",
+	"countryCode": "PK",
+	"countryName": "巴基斯坦",
+	cityFirstLetter: "J"
+}, {
+	cityName: "基尔",
+	citySpell: "JIER",
+	"code": "KEL",
+	"countryCode": "DE",
+	"countryName": "德国",
+	cityFirstLetter: "J"
+}, {
+	cityName: "戛那",
+	citySpell: "JIANA",
+	"code": "CEQ",
+	"countryCode": "FR",
+	"countryName": "法国",
+	cityFirstLetter: "J"
+}, {
+	cityName: "杰拉尔敦",
+	citySpell: "JIELAERDUN",
+	"code": "GET",
+	"countryCode": "AU",
+	"countryName": "澳大利亚",
+	cityFirstLetter: "J"
+}, {
+	cityName: "加斯佩",
+	citySpell: "JIASIPEI",
+	"code": "YGP",
+	"countryCode": "CA",
+	"countryName": "加拿大",
+	cityFirstLetter: "J"
+}, {
+	cityName: "基法",
+	citySpell: "JIFA",
+	"code": "KFA",
+	"countryCode": "MR",
+	"countryName": "毛里塔尼亚",
+	cityFirstLetter: "J"
+}, {
+	cityName: "加德满都",
+	citySpell: "JIADEMANDU",
+	"code": "KTM",
+	"countryCode": "NP",
+	"countryName": "尼泊尔",
+	cityFirstLetter: "J"
+}, {
+	cityName: "贾比鲁",
+	citySpell: "JIABILU",
+	"code": "JAB",
+	"countryCode": "AU",
+	"countryName": "澳大利亚",
+	cityFirstLetter: "J"
+}, {
+	cityName: "吉布提",
+	citySpell: "JIBUTI",
+	"code": "JIB",
+	"countryCode": "DJ",
+	"countryName": "吉布堤",
+	cityFirstLetter: "J"
+}, {
+	cityName: "加里宁格勒",
+	citySpell: "JIALININGGELE",
+	"code": "KGD",
+	"countryCode": "RU",
+	"countryName": "俄罗斯",
+	cityFirstLetter: "J"
+}, {
+	cityName: "基温加",
+	citySpell: "JIWENJIA",
+	"code": "KIU",
+	"countryCode": "KE",
+	"countryName": "肯尼亚",
+	cityFirstLetter: "J"
+}, {
+	cityName: "金丹巴",
+	citySpell: "JINDANBA",
+	"code": "KNJ",
+	"countryCode": "CG",
+	"countryName": "刚果",
+	cityFirstLetter: "J"
+}, {
+	cityName: "基拉",
+	citySpell: "JILA",
+	"code": "KIQ",
+	"countryCode": "PG",
+	"countryName": "巴布亚新几内亚",
+	cityFirstLetter: "J"
+}, {
+	cityName: "加尼奥阿",
+	citySpell: "JIANIAOA",
+	"code": "GGN",
+	"countryCode": "CI",
+	"countryName": "科特迪瓦",
+	cityFirstLetter: "J"
+}, {
+	cityName: "加拉柴恩",
+	citySpell: "JIALACHAIEN",
+	"code": "GHE",
+	"countryCode": "PA",
+	"countryName": "巴拿马",
+	cityFirstLetter: "J"
+}, {
+	cityName: "久姆利",
+	citySpell: "JIUMULI",
+	"code": "LWN",
+	"countryCode": "AM",
+	"countryName": "亚美尼亚",
+	cityFirstLetter: "J"
+}, {
+	cityName: "巨港",
+	citySpell: "JUGANG",
+	"code": "PLM",
+	"countryCode": "ID",
+	"countryName": "印度尼西亚",
+	cityFirstLetter: "J"
+}, {
+	cityName: "加济帕夏",
+	citySpell: "JIAJIPAXIA",
+	"code": "GZP",
+	"countryCode": "TR",
+	"countryName": "土耳其",
+	cityFirstLetter: "J"
+}, {
+	cityName: "加特",
+	citySpell: "JIATE",
+	"code": "GHT",
+	"countryCode": "LY",
+	"countryName": "利比亚",
+	cityFirstLetter: "J"
+}, {
+	cityName: "嘉苏特",
+	citySpell: "JIASUTE",
+	"code": "JQA",
+	"countryCode": "GL",
+	"countryName": "格陵兰岛",
+	cityFirstLetter: "J"
+}, {
+	cityName: "吉里",
+	citySpell: "JILI",
+	"code": "JIR",
+	"countryCode": "NP",
+	"countryName": "尼泊尔",
+	cityFirstLetter: "J"
+}, {
+	cityName: "贾斯珀",
+	citySpell: "JIASIPO",
+	"code": "JAS",
+	"countryCode": "US",
+	"countryName": "美国",
+	cityFirstLetter: "J"
+}, {
+	cityName: "基多",
+	citySpell: "JIDUO",
+	"code": "UIO",
+	"countryCode": "EC",
+	"countryName": "厄瓜多尔",
+	cityFirstLetter: "J"
+}, {
+	cityName: "加莱拉",
+	citySpell: "JIALAILA",
+	"code": "GLX",
+	"countryCode": "ID",
+	"countryName": "印度尼西亚",
+	cityFirstLetter: "J"
+}, {
+	cityName: "加尔卡尤",
+	citySpell: "JIAERKAYOU",
+	"code": "GLK",
+	"countryCode": "SO",
+	"countryName": "索马里",
+	cityFirstLetter: "J"
+}, {
+	cityName: "吉亚尼",
+	citySpell: "JIYANI",
+	"code": "GIY",
+	"countryCode": "ZA",
+	"countryName": "南非",
+	cityFirstLetter: "J"
+}, {
+	cityName: "鲸湾港",
+	citySpell: "JINGWANGANG",
+	"code": "WVB",
+	"countryCode": "NA",
+	"countryName": "纳米比亚",
+	cityFirstLetter: "J"
+}, {
+	cityName: "吉吉加",
+	citySpell: "JIJIJIA",
+	"code": "JIJ",
+	"countryCode": "ET",
+	"countryName": "埃塞俄比亚",
+	cityFirstLetter: "J"
+}, {
+	cityName: "吉大港",
+	citySpell: "JIDAGANG",
+	"code": "CGP",
+	"countryCode": "BD",
+	"countryName": "孟加拉国",
+	cityFirstLetter: "J"
+}, {
+	cityName: "贾巴特",
+	citySpell: "JIABATE",
+	"code": "JAT",
+	"countryCode": "MH",
+	"countryName": "马绍尔群岛",
+	cityFirstLetter: "J"
+}, {
+	cityName: "皎道",
+	citySpell: "JIAODAO",
+	"code": "KYT",
+	"countryCode": "MM",
+	"countryName": "缅甸",
+	cityFirstLetter: "J"
+}, {
+	cityName: "金斯科特",
+	citySpell: "JINSIKETE",
+	"code": "KGC",
+	"countryCode": "AU",
+	"countryName": "澳大利亚",
+	cityFirstLetter: "J"
+}, {
+	cityName: "基联恩金克",
+	citySpell: "JILIANENJINKE",
+	"code": "GDZ",
+	"countryCode": "RU",
+	"countryName": "俄罗斯",
+	cityFirstLetter: "J"
+}, {
+	cityName: "金纳",
+	citySpell: "JINNA",
+	"code": "JJM",
+	"countryCode": "KE",
+	"countryName": "肯尼亚",
+	cityFirstLetter: "J"
+}, {
+	cityName: "吉郎",
+	citySpell: "JILANG",
+	"code": "GEX",
+	"countryCode": "AU",
+	"countryName": "澳大利亚",
+	cityFirstLetter: "J"
+}, {
+	cityName: "基特加",
+	citySpell: "JITEJIA",
+	"code": "GID",
+	"countryCode": "BI",
+	"countryName": "布隆迪",
+	cityFirstLetter: "J"
+}, {
+	cityName: "基耶塔",
+	citySpell: "JIYETA",
+	"code": "KIE",
+	"countryCode": "PG",
+	"countryName": "巴布亚新几内亚",
+	cityFirstLetter: "J"
+}, {
+	cityName: "甲描育",
+	citySpell: "JIAMIAOYU",
+	"code": "CYP",
+	"countryCode": "PH",
+	"countryName": "菲律宾",
+	cityFirstLetter: "J"
+}, {
+	cityName: "加斯马塔",
+	citySpell: "JIASIMATA",
+	"code": "GMI",
+	"countryCode": "PG",
+	"countryName": "巴布亚新几内亚",
+	cityFirstLetter: "J"
+}, {
+	cityName: "基罗夫斯克",
+	citySpell: "JILUOFUSIKE",
+	"code": "KVK",
+	"countryCode": "RU",
+	"countryName": "俄罗斯",
+	cityFirstLetter: "J"
+}, {
+	cityName: "加斯克因章克申",
+	citySpell: "JIASIKEYINZHANGKESHEN",
+	"code": "GSC",
+	"countryCode": "AU",
+	"countryName": "澳大利亚",
+	cityFirstLetter: "J"
+}, {
+	cityName: "季马",
+	citySpell: "JIMA",
+	"code": "JIM",
+	"countryCode": "ET",
+	"countryName": "埃塞俄比亚",
+	cityFirstLetter: "J"
+}, {
+	cityName: "金奈",
+	citySpell: "JINNAI",
+	"code": "MAA",
+	"countryCode": "IN",
+	"countryName": "印度",
+	cityFirstLetter: "J"
+}, {
+	cityName: "焦特布尔",
+	citySpell: "JIAOTEBUER",
+	"code": "JDH",
+	"countryCode": "IN",
+	"countryName": "印度",
+	cityFirstLetter: "J"
+}, {
+	cityName: "久米岛",
+	citySpell: "JIUMIDAO",
+	"code": "UEO",
+	"countryCode": "JP",
+	"countryName": "日本",
+	cityFirstLetter: "J"
+}, {
+	cityName: "基莱克",
+	citySpell: "JILAIKE",
+	"code": "YKJ",
+	"countryCode": "CA",
+	"countryName": "加拿大",
+	cityFirstLetter: "J"
+}, {
+	cityName: "基苏木",
+	citySpell: "JISUMU",
+	"code": "KIS",
+	"countryCode": "KE",
+	"countryName": "肯尼亚",
+	cityFirstLetter: "J"
+}, {
+	cityName: "加济安泰普",
+	citySpell: "JIAJIANTAIPU",
+	"code": "GZT",
+	"countryCode": "TR",
+	"countryName": "土耳其",
+	cityFirstLetter: "J"
+}, {
+	cityName: "皎漂",
+	citySpell: "JIAOPIAO",
+	"code": "KYP",
+	"countryCode": "MM",
+	"countryName": "缅甸",
+	cityFirstLetter: "J"
+}, {
+	cityName: "景栋",
+	citySpell: "JINGDONG",
+	"code": "KET",
+	"countryCode": "MM",
+	"countryName": "缅甸",
+	cityFirstLetter: "J"
+}, {
+	cityName: "吉德拉尔",
+	citySpell: "JIDELAER",
+	"code": "CJL",
+	"countryCode": "PK",
+	"countryName": "巴基斯坦",
+	cityFirstLetter: "J"
+}, {
+	cityName: "杰普塔茨基",
+	citySpell: "JIEPUTACIJI",
+	"code": "DPT",
+	"countryCode": "RU",
+	"countryName": "俄罗斯",
+	cityFirstLetter: "J"
+}, {
+	cityName: "间斯维尔",
+	citySpell: "JIANSIWEIER",
+	"code": "JVL",
+	"countryCode": "US",
+	"countryName": "美国",
+	cityFirstLetter: "J"
+}, {
+	cityName: "吉灵庙",
+	citySpell: "JILINGMIAO",
+	"code": "KMV",
+	"countryCode": "MM",
+	"countryName": "缅甸",
+	cityFirstLetter: "J"
+}, {
+	cityName: "杰伊布尔",
+	citySpell: "JIEYIBUER",
+	"code": "PYB",
+	"countryCode": "IN",
+	"countryName": "印度",
+	cityFirstLetter: "J"
+}, {
+	cityName: "杰克逊（怀俄明州）",
+	citySpell: "JIEKEXUN",
+	"code": "JAC",
+	"countryCode": "US",
+	"countryName": "美国",
+	cityFirstLetter: "J"
+}, {
+	cityName: "津坦",
+	citySpell: "JINTAN",
+	"code": "ZIS",
+	"countryCode": "LY",
+	"countryName": "利比亚",
+	cityFirstLetter: "J"
+}, {
+	cityName: "贾巴尔普尔",
+	citySpell: "JIABAERPUER",
+	"code": "JLR",
+	"countryCode": "IN",
+	"countryName": "印度",
+	cityFirstLetter: "J"
+}, {
+	cityName: "基戈马",
+	citySpell: "JIGEMA",
+	"code": "TKQ",
+	"countryCode": "TZ",
+	"countryName": "坦桑尼亚",
+	cityFirstLetter: "J"
+}, {
+	cityName: "加帛",
+	citySpell: "JIABO",
+	"code": "KPI",
+	"countryCode": "MY",
+	"countryName": "马来西亚",
+	cityFirstLetter: "J"
+}, {
+	cityName: "加贝斯",
+	citySpell: "JIABEISI",
+	"code": "GAE",
+	"countryCode": "TN",
+	"countryName": "突尼斯",
+	cityFirstLetter: "J"
+}, {
+	cityName: "基辅",
+	citySpell: "JIFU",
+	"code": "IEV",
+	"countryCode": "UA",
+	"countryName": "乌克兰",
+	cityFirstLetter: "J"
+}, {
+	cityName: "角尔",
+	citySpell: "JIAOER",
+	"code": "KGW",
+	"countryCode": "PG",
+	"countryName": "巴布亚新几内亚",
+	cityFirstLetter: "J"
+}, {
+	cityName: "基奈",
+	citySpell: "JINAI",
+	"code": "ENA",
+	"countryCode": "US",
+	"countryName": "美国",
+	cityFirstLetter: "J"
+}, {
+	cityName: "基科里",
+	citySpell: "JIKELI",
+	"code": "KRI",
+	"countryCode": "PG",
+	"countryName": "巴布亚新几内亚",
+	cityFirstLetter: "J"
+}, {
+	cityName: "金格罗伊",
+	citySpell: "JINGELUOYI",
+	"code": "KGY",
+	"countryCode": "AU",
+	"countryName": "澳大利亚",
+	cityFirstLetter: "J"
+}, {
+	cityName: "基西杜古",
+	citySpell: "JIXIDUGU",
+	"code": "KSI",
+	"countryCode": "GN",
+	"countryName": "几内亚",
+	cityFirstLetter: "J"
+}, {
+	cityName: "加希姆",
+	citySpell: "JIAXIMU",
+	"code": "ELQ",
+	"countryCode": "SA",
+	"countryName": "沙特阿垃伯",
+	cityFirstLetter: "J"
+}, {
+	cityName: "金斯敦",
+	citySpell: "JINSIDUN",
+	"code": "KIN",
+	"countryCode": "JM",
+	"countryName": "牙买加",
+	cityFirstLetter: "J"
+}, {
+	cityName: "加里萨",
+	citySpell: "JIALISA",
+	"code": "GAS",
+	"countryCode": "KE",
+	"countryName": "肯尼亚",
+	cityFirstLetter: "J"
+}, {
+	cityName: "江陵",
+	citySpell: "JIANGLING",
+	"code": "KAG",
+	"countryCode": "KR",
+	"countryName": "韩国",
+	cityFirstLetter: "J"
+}, {
+	cityName: "加鲁阿",
+	citySpell: "JIALUA",
+	"code": "GOU",
+	"countryCode": "CM",
+	"countryName": "喀麦隆",
+	cityFirstLetter: "J"
+}, {
+	cityName: "吉达",
+	citySpell: "JIDA",
+	"code": "JED",
+	"countryCode": "SA",
+	"countryName": "沙特阿垃伯",
+	cityFirstLetter: "J"
+}, {
+	cityName: "基林",
+	citySpell: "JILIN",
+	"code": "ILE",
+	"countryCode": "US",
+	"countryName": "美国",
+	cityFirstLetter: "J"
+}, {
+	cityName: "金曼",
+	citySpell: "JINMAN",
+	"code": "IGM",
+	"countryCode": "US",
+	"countryName": "美国",
+	cityFirstLetter: "J"
+}, {
+	cityName: "加登波恩特",
+	citySpell: "JIADENGBOENTE",
+	"code": "GPN",
+	"countryCode": "AU",
+	"countryName": "澳大利亚",
+	cityFirstLetter: "J"
+}, {
+	cityName: "基奎特",
+	citySpell: "JIKUITE",
+	"code": "KKW",
+	"countryCode": "CD",
+	"countryName": "刚果民主共和国",
+	cityFirstLetter: "J"
+}, {
+	cityName: "金沙萨",
+	citySpell: "JINSHASA",
+	"code": "FIH",
+	"countryCode": "CD",
+	"countryName": "刚果民主共和国",
+	cityFirstLetter: "J"
+}, {
+	cityName: "杰克逊(密执安州)",
+	citySpell: "JIEKEXUN",
+	"code": "JXN",
+	"countryCode": "US",
+	"countryName": "美国",
+	cityFirstLetter: "J"
+}, {
+	cityName: "金卡",
+	citySpell: "JINKA",
+	"code": "BCO",
+	"countryCode": "ET",
+	"countryName": "埃塞俄比亚",
+	cityFirstLetter: "J"
+}, {
+	cityName: "加达里夫",
+	citySpell: "JIADALIFU",
+	"code": "GSU",
+	"countryCode": "SD",
+	"countryName": "苏丹",
+	cityFirstLetter: "J"
+}, {
+	cityName: "基布多",
+	citySpell: "JIBUDUO",
+	"code": "UIB",
+	"countryCode": "CO",
+	"countryName": "哥伦比亚",
+	cityFirstLetter: "J"
+}, {
+	cityName: "杰克逊(田纳西州)",
+	citySpell: "JIEKEXUN",
+	"code": "MKL",
+	"countryCode": "US",
+	"countryName": "美国",
+	cityFirstLetter: "J"
+}, {
+	cityName: "基什恩",
+	citySpell: "JISHIEN",
+	"code": "IHN",
+	"countryCode": "YE",
+	"countryName": "也门",
+	cityFirstLetter: "J"
+}, {
+	cityName: "贾纳克普尔",
+	citySpell: "JIANAKEPUER",
+	"code": "JKR",
+	"countryCode": "NP",
+	"countryName": "尼泊尔",
+	cityFirstLetter: "J"
+}, {
+	cityName: "加利纳",
+	citySpell: "JIALINA",
+	"code": "GAL",
+	"countryCode": "US",
+	"countryName": "美国",
+	cityFirstLetter: "J"
+}, {
+	cityName: "加途",
+	citySpell: "JIATU",
+	"code": "KDO",
+	"countryCode": "MV",
+	"countryName": "马尔代夫",
+	cityFirstLetter: "J"
+}, {
+	cityName: "金菲舍湖",
+	citySpell: "JINFEISHEHU",
+	"code": "KIF",
+	"countryCode": "CA",
+	"countryName": "加拿大",
+	cityFirstLetter: "J"
+}, {
+	cityName: "吉-巴拉那",
+	citySpell: "JIBALANA",
+	"code": "JPR",
+	"countryCode": "BR",
+	"countryName": "巴西",
+	cityFirstLetter: "J"
+}, {
+	cityName: "加拉加斯",
+	citySpell: "JIALAJIASI",
+	"code": "CCS",
+	"countryCode": "VE",
+	"countryName": "委内瑞拉",
+	cityFirstLetter: "J"
+}, {
+	cityName: "贾姆纳加尔",
+	citySpell: "JIAMUNAJIAER",
+	"code": "JGA",
+	"countryCode": "IN",
+	"countryName": "印度",
+	cityFirstLetter: "J"
+}, {
+	cityName: "加罗",
+	citySpell: "JIALUO",
+	"code": "GGR",
+	"countryCode": "SO",
+	"countryName": "索马里",
+	cityFirstLetter: "J"
+}, {
+	cityName: "济良卡",
+	citySpell: "JILIANGKA",
+	"code": "ZKP",
+	"countryCode": "RU",
+	"countryName": "俄罗斯",
+	cityFirstLetter: "J"
+}, {
+	cityName: "金井",
+	citySpell: "JINJING",
+	"code": "KNE",
+	"countryCode": "PG",
+	"countryName": "巴布亚新几内亚",
+	cityFirstLetter: "J"
+}, {
+	cityName: "基恩",
+	citySpell: "JIEN",
+	"code": "EEN",
+	"countryCode": "US",
+	"countryName": "美国",
+	cityFirstLetter: "J"
+}, {
+	cityName: "基特曼斯胡普",
+	citySpell: "JITEMANSIHUPU",
+	"code": "KMP",
+	"countryCode": "NA",
+	"countryName": "纳米比亚",
+	cityFirstLetter: "J"
+}, {
+	cityName: "基塔莱",
+	citySpell: "JITALAI",
+	"code": "KTL",
+	"countryCode": "KE",
+	"countryName": "肯尼亚",
+	cityFirstLetter: "J"
+}, {
+	cityName: "久姆拉",
+	citySpell: "JIUMULA",
+	"code": "JUM",
+	"countryCode": "NP",
+	"countryName": "尼泊尔",
+	cityFirstLetter: "J"
+}, {
+	cityName: "基卢瓦",
+	citySpell: "JILUWA",
+	"code": "KIL",
+	"countryCode": "CD",
+	"countryName": "刚果民主共和国",
+	cityFirstLetter: "J"
+}, {
+	cityName: "贾赞",
+	citySpell: "JIAZAN",
+	"code": "GIZ",
+	"countryCode": "SA",
+	"countryName": "沙特阿垃伯",
+	cityFirstLetter: "J"
+}, {
+	cityName: "基利岛",
+	citySpell: "JILIDAO",
+	"code": "KIO",
+	"countryCode": "MH",
+	"countryName": "马绍尔群岛",
+	cityFirstLetter: "J"
+}, {
+	cityName: "加达亚",
+	citySpell: "JIADAYA",
+	"code": "GHA",
+	"countryCode": "DZ",
+	"countryName": "阿尔及利亚",
+	cityFirstLetter: "J"
+}, {
+	cityName: "吉塞尼",
+	citySpell: "JISAINI",
+	"code": "GYI",
+	"countryCode": "RW",
+	"countryName": "卢旺达",
+	cityFirstLetter: "J"
+}, {
+	cityName: "加夫萨",
+	citySpell: "JIAFUSA",
+	"code": "GAF",
+	"countryCode": "TN",
+	"countryName": "突尼斯",
+	cityFirstLetter: "J"
+}, {
+	cityName: "加利恩",
+	citySpell: "JIALIEN",
+	"code": "GQQ",
+	"countryCode": "US",
+	"countryName": "美国",
+	cityFirstLetter: "J"
+}, {
+	cityName: "加拉杰斯",
+	citySpell: "JIALAJIESI",
+	"code": "CKS",
+	"countryCode": "BR",
+	"countryName": "巴西",
+	cityFirstLetter: "J"
+}, {
+	cityName: "晋州",
+	citySpell: "JINZHOU",
+	"code": "HIN",
+	"countryCode": "KR",
+	"countryName": "韩国",
+	cityFirstLetter: "J"
+}, {
+	cityName: "加奥",
+	citySpell: "JIAAO",
+	"code": "GAQ",
+	"countryCode": "ML",
+	"countryName": "马里",
+	cityFirstLetter: "J"
+}, {
+	cityName: "杰内纳",
+	citySpell: "JIENEINA",
+	"code": "EGN",
+	"countryCode": "SD",
+	"countryName": "苏丹",
+	cityFirstLetter: "J"
+}, {
+	cityName: "贾姆巴",
+	citySpell: "JIAMUBA",
+	"code": "JMB",
+	"countryCode": "AO",
+	"countryName": "安哥拉",
+	cityFirstLetter: "J"
+}, {
+	cityName: "基瓦利纳",
+	citySpell: "JIWALINA",
+	"code": "KVL",
+	"countryCode": "US",
+	"countryName": "美国",
+	cityFirstLetter: "J"
+}, {
+	cityName: "贾卡",
+	citySpell: "JIAKA",
+	"code": "BUT",
+	"countryCode": "BT",
+	"countryName": "不丹",
+	cityFirstLetter: "J"
+}, {
+	cityName: "基希岛",
+	citySpell: "JIXIDAO",
+	"code": "KHY",
+	"countryCode": "IR",
+	"countryName": "伊朗",
+	cityFirstLetter: "J"
+}, {
+	cityName: "基西拉",
+	citySpell: "JIXILA",
+	"code": "KIT",
+	"countryCode": "GR",
+	"countryName": "希腊",
+	cityFirstLetter: "J"
+}, {
+	cityName: "杰基诺特湾",
+	citySpell: "JIEJINUOTEWAN",
+	"code": "JAQ",
+	"countryCode": "PG",
+	"countryName": "巴布亚新几内亚",
+	cityFirstLetter: "J"
+}, {
+	cityName: "加拉帕戈斯",
+	citySpell: "JIALAPAGESI",
+	"code": "GPS",
+	"countryCode": "EC",
+	"countryName": "厄瓜多尔",
+	cityFirstLetter: "J"
+}, {
+	cityName: "吉打邦",
+	citySpell: "JIDABANG",
+	"code": "KTG",
+	"countryCode": "ID",
+	"countryName": "印度尼西亚",
+	cityFirstLetter: "J"
+}, {
+	cityName: "金门",
+	citySpell: "JINMEN",
+	"code": "KNH",
+	"countryCode": "TW",
+	"countryName": "中国台湾",
+	cityFirstLetter: "J"
+}, {
+	cityName: "贾塔伊",
+	citySpell: "JIATAYI",
+	"code": "JTI",
+	"countryCode": "BR",
+	"countryName": "巴西",
+	cityFirstLetter: "J"
+}, {
+	cityName: "贾夫纳",
+	citySpell: "JIAFUNA",
+	"code": "JAF",
+	"countryCode": "LK",
+	"countryName": "斯里兰卡",
+	cityFirstLetter: "J"
+}, {
+	cityName: "加尔巴哈雷",
+	citySpell: "JIAERBAHALEI",
+	"code": "GBM",
+	"countryCode": "SO",
+	"countryName": "索马里",
+	cityFirstLetter: "J"
+}, {
+	cityName: "君士坦丁",
+	citySpell: "JUNSHITANDING",
+	"code": "CZL",
+	"countryCode": "DZ",
+	"countryName": "阿尔及利亚",
+	cityFirstLetter: "J"
+}, {
+	cityName: "吉佐",
+	citySpell: "JIZUO",
+	"code": "GZO",
+	"countryCode": "SB",
+	"countryName": "所罗门群岛",
+	cityFirstLetter: "J"
+}, {
+	cityName: "杰克逊(密西西比州)",
+	citySpell: "JIEKEXUN",
+	"code": "JAN",
+	"countryCode": "US",
+	"countryName": "美国",
+	cityFirstLetter: "J"
+}, {
+	cityName: "金岛",
+	citySpell: "JINDAO",
+	"code": "KNS",
+	"countryCode": "AU",
+	"countryName": "澳大利亚",
+	cityFirstLetter: "J"
+}, {
+	cityName: "基律纳",
+	citySpell: "JILVNA",
+	"code": "KRN",
+	"countryCode": "SE",
+	"countryName": "瑞典",
+	cityFirstLetter: "J"
+}, {
+	cityName: "金贾",
+	citySpell: "JINJIA",
+	"code": "JIN",
+	"countryCode": "UG",
+	"countryName": "乌干达",
+	cityFirstLetter: "J"
+}, {
+	cityName: "加瓦",
+	citySpell: "JIAWA",
+	"code": "XGA",
+	"countryCode": "BF",
+	"countryName": "布基纳法索",
+	cityFirstLetter: "J"
+}, {
+	cityName: "金萨蒙",
+	citySpell: "JINSAMENG",
+	"code": "AKN",
+	"countryCode": "US",
+	"countryName": "美国",
+	cityFirstLetter: "J"
+}, {
+	cityName: "基茨港",
+	citySpell: "JICIGANG",
+	"code": "PKT",
+	"countryCode": "AU",
+	"countryName": "澳大利亚",
+	cityFirstLetter: "J"
+}, {
+	cityName: "基桑加尼",
+	citySpell: "JISANGJIANI",
+	"code": "FKI",
+	"countryCode": "CD",
+	"countryName": "刚果民主共和国",
+	cityFirstLetter: "J"
+}, {
+	cityName: "加德兹",
+	citySpell: "JIADEZI",
+	"code": "GRG",
+	"countryCode": "AF",
+	"countryName": "阿富汗",
+	cityFirstLetter: "J"
+}, {
+	cityName: "吉布里弗",
+	citySpell: "JIBULIFU",
+	"code": "GBV",
+	"countryCode": "AU",
+	"countryName": "澳大利亚",
+	cityFirstLetter: "J"
+}, {
+	cityName: "加尔维斯顿",
+	citySpell: "JIAERWEISIDUN",
+	"code": "GLS",
+	"countryCode": "US",
+	"countryName": "美国",
+	cityFirstLetter: "J"
+}, {
+	cityName: "姜镇",
+	citySpell: "JIANGZHEN",
+	"code": "DSC",
+	"countryCode": "CM",
+	"countryName": "喀麦隆",
+	cityFirstLetter: "J"
+}, {
+	cityName: "金皮",
+	citySpell: "JINPI",
+	"code": "GYP",
+	"countryCode": "AU",
+	"countryName": "澳大利亚",
+	cityFirstLetter: "J"
+}, {
+	cityName: "杰索尔",
+	citySpell: "JIESUOER",
+	"code": "JSR",
+	"countryCode": "BD",
+	"countryName": "孟加拉国",
+	cityFirstLetter: "J"
+}, {
+	cityName: "居茶",
+	citySpell: "JUCHA",
+	"code": "KTE",
+	"countryCode": "MY",
+	"countryName": "马来西亚",
+	cityFirstLetter: "J"
+}, {
+	cityName: "加兹登",
+	citySpell: "JIAZIDENG",
+	"code": "GAD",
+	"countryCode": "US",
+	"countryName": "美国",
+	cityFirstLetter: "J"
+}, {
+	cityName: "加来",
+	citySpell: "JIALAI",
+	"code": "CQF",
+	"countryCode": "FR",
+	"countryName": "法国",
+	cityFirstLetter: "J"
+}, {
+	cityName: "基温加",
+	citySpell: "JIWENJIA",
+	"code": "UNG",
+	"countryCode": "PG",
+	"countryName": "巴布亚新几内亚",
+	cityFirstLetter: "J"
+}, {
+	cityName: "贾路易特岛",
+	citySpell: "JIALUYITEDAO",
+	"code": "UIT",
+	"countryCode": "MH",
+	"countryName": "马绍尔群岛",
+	cityFirstLetter: "J"
+}, {
+	cityName: "基什岛",
+	citySpell: "JISHIDAO",
+	"code": "KIH",
+	"countryCode": "IR",
+	"countryName": "伊朗",
+	cityFirstLetter: "J"
+}, {
+	cityName: "巨济",
+	citySpell: "JUJI",
+	"code": "JGE",
+	"countryCode": "KR",
+	"countryName": "韩国",
+	cityFirstLetter: "J"
+}, {
+	cityName: "剑桥",
+	citySpell: "JIANQIAO",
+	"code": "CBG",
+	"countryCode": "GB",
+	"countryName": "英国",
+	cityFirstLetter: "J"
+}, {
+	cityName: "杰克逊维尔（北卡罗来纳州）",
+	citySpell: "JIEKEXUNWEIER",
+	"code": "OAJ",
+	"countryCode": "US",
+	"countryName": "美国",
+	cityFirstLetter: "J"
+}, {
+	cityName: "吉博",
+	citySpell: "JIBO",
+	"code": "XDJ",
+	"countryCode": "BF",
+	"countryName": "布基纳法索",
+	cityFirstLetter: "J"
+}, {
+	cityName: "杰克逊维尔(佛罗里达州)",
+	citySpell: "JIEKEXUNWEIER",
+	"code": "JAX",
+	"countryCode": "US",
+	"countryName": "美国",
+	cityFirstLetter: "J"
+}, {
+	cityName: "杰格德尔布尔",
+	citySpell: "JIEGEDEERBUER",
+	"code": "JGB",
+	"countryCode": "IN",
+	"countryName": "印度",
+	cityFirstLetter: "J"
+}, {
+	cityName: "吉梅内兹港",
+	citySpell: "JIMEINEIZIGANG",
+	"code": "PJM",
+	"countryCode": "CR",
+	"countryName": "哥斯达黎加",
+	cityFirstLetter: "J"
+}, {
+	cityName: "金杜",
+	citySpell: "JINDU",
+	"code": "KND",
+	"countryCode": "CD",
+	"countryName": "刚果民主共和国",
+	cityFirstLetter: "J"
+}, {
+	cityName: "吉沃尼",
+	citySpell: "JIWONI",
+	"code": "JIW",
+	"countryCode": "PK",
+	"countryName": "巴基斯坦",
+	cityFirstLetter: "J"
+}, {
+	cityName: "吉杰勒",
+	citySpell: "JIJIELE",
+	"code": "GJL",
+	"countryCode": "DZ",
+	"countryName": "阿尔及利亚",
+	cityFirstLetter: "J"
+}, {
+	cityName: "基拉基拉",
+	citySpell: "JILAJILA",
+	"code": "IRA",
+	"countryCode": "SB",
+	"countryName": "所罗门群岛",
+	cityFirstLetter: "J"
+}, {
+	cityName: "金斯顿",
+	citySpell: "JINSIDUN",
+	"code": "ISO",
+	"countryCode": "US",
+	"countryName": "美国",
+	cityFirstLetter: "J"
+}, {
+	cityName: "佳特土",
+	citySpell: "JIATETU",
+	"code": "KDM",
+	"countryCode": "MV",
+	"countryName": "马尔代夫",
+	cityFirstLetter: "J"
+}, {
+	cityName: "吉斯伯恩",
+	citySpell: "JISIBOEN",
+	"code": "GIS",
+	"countryCode": "NZ",
+	"countryName": "新西兰",
+	cityFirstLetter: "J"
+}, {
+	cityName: "津德尔",
+	citySpell: "JINDEER",
+	"code": "ZND",
+	"countryCode": "NE",
+	"countryName": "尼日尔",
+	cityFirstLetter: "J"
+}, {
+	cityName: "加赖纳",
+	citySpell: "JIALAINA",
+	"code": "GAR",
+	"countryCode": "PG",
+	"countryName": "巴布亚新几内亚",
+	cityFirstLetter: "J"
+}, {
+	cityName: "基斯马尤",
+	citySpell: "JISIMAYOU",
+	"code": "KMU",
+	"countryCode": "SO",
+	"countryName": "索马里",
+	cityFirstLetter: "J"
+}, {
+	cityName: "杰克逊(明尼苏达州)",
+	citySpell: "JIEKEXUN",
+	"code": "MJQ",
+	"countryCode": "US",
+	"countryName": "美国",
+	cityFirstLetter: "J"
+}, {
+	cityName: "基希讷乌",
+	citySpell: "JIXINEWU",
+	"code": "KIV",
+	"countryCode": "MD",
+	"countryName": "摩尔多瓦",
+	cityFirstLetter: "J"
+}, {
+	cityName: "金斯顿",
+	citySpell: "JINSIDUN",
+	"code": "YGK",
+	"countryCode": "CA",
+	"countryName": "加拿大",
+	cityFirstLetter: "J"
+}, {
+	cityName: "加登城（堪萨斯州）",
+	citySpell: "JIADENGCHENG",
+	"code": "GCK",
+	"countryCode": "US",
+	"countryName": "美国",
+	cityFirstLetter: "J"
+}, {
+	cityName: "贾姆谢普尔",
+	citySpell: "JIAMUXIEPUER",
+	"code": "IXW",
+	"countryCode": "IN",
+	"countryName": "印度",
+	cityFirstLetter: "J"
+}, {
+	cityName: "基奥卡克",
+	citySpell: "JIAOKAKE",
+	"code": "EOK",
+	"countryCode": "US",
+	"countryName": "美国",
+	cityFirstLetter: "J"
+}, {
+	cityName: "堪培拉",
+	citySpell: "KANPEILA",
+	"code": "CBR",
+	"countryCode": "AU",
+	"countryName": "澳大利亚",
+	cityFirstLetter: "K"
+}, {
+	cityName: "开罗",
+	citySpell: "KAILUO",
+	"code": "CAI",
+	"countryCode": "EG",
+	"countryName": "埃及",
+	cityFirstLetter: "K"
+}, {
+	cityName: "开普敦",
+	citySpell: "KAIPUDUN",
+	"code": "CPT",
+	"countryCode": "ZA",
+	"countryName": "南非",
+	cityFirstLetter: "K"
+}, {
+	cityName: "科威特",
+	citySpell: "KEWEITE",
+	"code": "KWI",
+	"countryCode": "KW",
+	"countryName": "科威特",
+	cityFirstLetter: "K"
+}, {
+	cityName: "克里夫兰",
+	citySpell: "KELIFULAN",
+	"code": "CLE",
+	"countryCode": "US",
+	"countryName": "美国",
+	cityFirstLetter: "K"
+}, {
+	cityName: "科伦坡",
+	citySpell: "KELUNPO",
+	"code": "CMB",
+	"countryCode": "LK",
+	"countryName": "斯里兰卡",
+	cityFirstLetter: "K"
+}, {
+	cityName: "科隆",
+	citySpell: "KELONG",
+	"code": "CGN",
+	"countryCode": "DE",
+	"countryName": "德国",
+	cityFirstLetter: "K"
+}, {
+	cityName: "克曼沙",
+	citySpell: "KEMANSHA",
+	"code": "KSH",
+	"countryCode": "IR",
+	"countryName": "伊朗",
+	cityFirstLetter: "K"
+}, {
+	cityName: "卡诺",
+	citySpell: "KANUO",
+	"code": "KAN",
+	"countryCode": "NG",
+	"countryName": "尼日利亚",
+	cityFirstLetter: "K"
+}, {
+	cityName: "科泽科德",
+	citySpell: "KEZEKEDE",
+	"code": "CCJ",
+	"countryCode": "IN",
+	"countryName": "印度",
+	cityFirstLetter: "K"
+}, {
+	cityName: "科罗巴",
+	citySpell: "KELUOBA",
+	"code": "KDE",
+	"countryCode": "PG",
+	"countryName": "巴布亚新几内亚",
+	cityFirstLetter: "K"
+}, {
+	cityName: "卡拉马塔",
+	citySpell: "KALAMATA",
+	"code": "KLX",
+	"countryCode": "GR",
+	"countryName": "希腊",
+	cityFirstLetter: "K"
+}, {
+	cityName: "克拉马斯福尔斯",
+	citySpell: "KELAMASIFUERSI",
+	"code": "LMT",
+	"countryCode": "US",
+	"countryName": "美国",
+	cityFirstLetter: "K"
+}, {
+	cityName: "克林顿",
+	citySpell: "KELINDUN",
+	"code": "CWI",
+	"countryCode": "US",
+	"countryName": "美国",
+	cityFirstLetter: "K"
+}, {
+	cityName: "坎达武",
+	citySpell: "KANDAWU",
+	"code": "KDV",
+	"countryCode": "FJ",
+	"countryName": "斐济群岛",
+	cityFirstLetter: "K"
+}, {
+	cityName: "卡奥马",
+	citySpell: "KAAOMA",
+	"code": "KMZ",
+	"countryCode": "ZM",
+	"countryName": "赞比亚",
+	cityFirstLetter: "K"
+}, {
+	cityName: "卡拉特哈",
+	citySpell: "KALATEHA",
+	"code": "KTA",
+	"countryCode": "AU",
+	"countryName": "澳大利亚",
+	cityFirstLetter: "K"
+}, {
+	cityName: "坤甸",
+	citySpell: "KUNDIAN",
+	"code": "PNK",
+	"countryCode": "ID",
+	"countryName": "印度尼西亚",
+	cityFirstLetter: "K"
+}, {
+	cityName: "卡贝略港",
+	citySpell: "KABEILUEGANG",
+	"code": "PBL",
+	"countryCode": "VE",
+	"countryName": "委内瑞拉",
+	cityFirstLetter: "K"
+}, {
+	cityName: "卡姆登",
+	citySpell: "KAMUDENG",
+	"code": "CDH",
+	"countryCode": "US",
+	"countryName": "美国",
+	cityFirstLetter: "K"
+}, {
+	cityName: "科苏梅尔",
+	citySpell: "KESUMEIER",
+	"code": "CZM",
+	"countryCode": "MX",
+	"countryName": "墨西哥",
+	cityFirstLetter: "K"
+}, {
+	cityName: "卡尼考巴",
+	citySpell: "KANIKAOBA",
+	"code": "CBD",
+	"countryCode": "IN",
+	"countryName": "印度",
+	cityFirstLetter: "K"
+}, {
+	cityName: "克里斯蒂安斯霍布顽卡西江吉特",
+	citySpell: "KELISIDIANSIHUOBUWANKAXIJIANGJITE",
+	"code": "JCH",
+	"countryCode": "GL",
+	"countryName": "格陵兰岛",
+	cityFirstLetter: "K"
+}, {
+	cityName: "考拉",
+	citySpell: "KAOLA",
+	"code": "CWT",
+	"countryCode": "AU",
+	"countryName": "澳大利亚",
+	cityFirstLetter: "K"
+}, {
+	cityName: "孔基加纳克",
+	citySpell: "KONGJIJIANAKE",
+	"code": "KKH",
+	"countryCode": "US",
+	"countryName": "美国",
+	cityFirstLetter: "K"
+}, {
+	cityName: "卡维马斯",
+	citySpell: "KAWEIMASI",
+	"code": "CBS",
+	"countryCode": "VE",
+	"countryName": "委内瑞拉",
+	cityFirstLetter: "K"
+}, {
+	cityName: "凯恩斯",
+	citySpell: "KAIENSI",
+	"code": "CNS",
+	"countryCode": "AU",
+	"countryName": "澳大利亚",
+	cityFirstLetter: "K"
+}, {
+	cityName: "库努纳拉",
+	citySpell: "KUNUNALA",
+	"code": "KNX",
+	"countryCode": "AU",
+	"countryName": "澳大利亚",
+	cityFirstLetter: "K"
+}, {
+	cityName: "考文垂",
+	citySpell: "KAOWENCHUI",
+	"code": "CVT",
+	"countryCode": "GB",
+	"countryName": "英国",
+	cityFirstLetter: "K"
+}, {
+	cityName: "考夫曼考弗",
+	citySpell: "KAOFUMANKAOFU",
+	"code": "KCC",
+	"countryCode": "US",
+	"countryName": "美国",
+	cityFirstLetter: "K"
+}, {
+	cityName: "卡特拉尔",
+	citySpell: "KATELAER",
+	"code": "CUT",
+	"countryCode": "AR",
+	"countryName": "阿根廷",
+	cityFirstLetter: "K"
+}, {
+	cityName: "科罗",
+	citySpell: "KELUO",
+	"code": "CZE",
+	"countryCode": "VE",
+	"countryName": "委内瑞拉",
+	cityFirstLetter: "K"
+}, {
+	cityName: "卡尔古利",
+	citySpell: "KAERGULI",
+	"code": "KGI",
+	"countryCode": "AU",
+	"countryName": "澳大利亚",
+	cityFirstLetter: "K"
+}, {
+	cityName: "科珀斯克里斯蒂",
+	citySpell: "KEPOSIKELISIDI",
+	"code": "CRP",
+	"countryCode": "US",
+	"countryName": "美国",
+	cityFirstLetter: "K"
+}, {
+	cityName: "康诺特",
+	citySpell: "KANGNUOTE",
+	"code": "NOC",
+	"countryCode": "IE",
+	"countryName": "爱尔兰",
+	cityFirstLetter: "K"
+}, {
+	cityName: "库鲁鲁普",
+	citySpell: "KULULUPU",
+	"code": "CPU",
+	"countryCode": "BR",
+	"countryName": "巴西",
+	cityFirstLetter: "K"
+}, {
+	cityName: "库奥雷韦西",
+	citySpell: "KUAOLEIWEIXI",
+	"code": "KEV",
+	"countryCode": "FI",
+	"countryName": "芬兰",
+	cityFirstLetter: "K"
+}, {
+	cityName: "克纳纳",
+	citySpell: "KENANA",
+	"code": "KJN",
+	"countryCode": "SD",
+	"countryName": "苏丹",
+	cityFirstLetter: "K"
+}, {
+	cityName: "卡胡卢伊",
+	citySpell: "KAHULUYI",
+	"code": "OGG",
+	"countryCode": "US",
+	"countryName": "美国",
+	cityFirstLetter: "K"
+}, {
+	cityName: "卡雷尼奥港",
+	citySpell: "KALEINIAOGANG",
+	"code": "PCR",
+	"countryCode": "CO",
+	"countryName": "哥伦比亚",
+	cityFirstLetter: "K"
+}, {
+	cityName: "克拉伦斯港",
+	citySpell: "KELALUNSIGANG",
+	"code": "KPC",
+	"countryCode": "US",
+	"countryName": "美国",
+	cityFirstLetter: "K"
+}, {
+	cityName: "卡瓦拉",
+	citySpell: "KAWALA",
+	"code": "KVA",
+	"countryCode": "GR",
+	"countryName": "希腊",
+	cityFirstLetter: "K"
+}, {
+	cityName: "科巴",
+	citySpell: "KEBA",
+	"code": "CAZ",
+	"countryCode": "AU",
+	"countryName": "澳大利亚",
+	cityFirstLetter: "K"
+}, {
+	cityName: "卡图姆贝拉",
+	citySpell: "KATUMUBEILA",
+	"code": "CBT",
+	"countryCode": "AO",
+	"countryName": "安哥拉",
+	cityFirstLetter: "K"
+}, {
+	cityName: "卡尼",
+	citySpell: "KANI",
+	"code": "EAR",
+	"countryCode": "US",
+	"countryName": "美国",
+	cityFirstLetter: "K"
+}, {
+	cityName: "科茨维尔",
+	citySpell: "KECIWEIER",
+	"code": "CTH",
+	"countryCode": "US",
+	"countryName": "美国",
+	cityFirstLetter: "K"
+}, {
+	cityName: "克洛维斯",
+	citySpell: "KELUOWEISI",
+	"code": "CVN",
+	"countryCode": "US",
+	"countryName": "美国",
+	cityFirstLetter: "K"
+}, {
+	cityName: "克鲁克德岛",
+	citySpell: "KELUKEDEDAO",
+	"code": "CRI",
+	"countryCode": "BS",
+	"countryName": "巴哈马",
+	cityFirstLetter: "K"
+}, {
+	cityName: "卡斯塔韦",
+	citySpell: "KASITAWEI",
+	"code": "CST",
+	"countryCode": "FJ",
+	"countryName": "斐济群岛",
+	cityFirstLetter: "K"
+}, {
+	cityName: "克里沃罗格",
+	citySpell: "KELIWOLUOGE",
+	"code": "KWG",
+	"countryCode": "UA",
+	"countryName": "乌克兰",
+	cityFirstLetter: "K"
+}, {
+	cityName: "昆西",
+	citySpell: "KUNXI",
+	"code": "KUI",
+	"countryCode": "NZ",
+	"countryName": "新西兰",
+	cityFirstLetter: "K"
+}, {
+	cityName: "卡尚",
+	citySpell: "KASHANG",
+	"code": "KKS",
+	"countryCode": "IR",
+	"countryName": "伊朗",
+	cityFirstLetter: "K"
+}, {
+	cityName: "卡埃迪",
+	citySpell: "KAAIDI",
+	"code": "KED",
+	"countryCode": "MR",
+	"countryName": "毛里塔尼亚",
+	cityFirstLetter: "K"
+}, {
+	cityName: "卡龙加",
+	citySpell: "KALONGJIA",
+	"code": "KGJ",
+	"countryCode": "MW",
+	"countryName": "马拉维",
+	cityFirstLetter: "K"
+}, {
+	cityName: "卡莱米",
+	citySpell: "KALAIMI",
+	"code": "FMI",
+	"countryCode": "CD",
+	"countryName": "刚果民主共和国",
+	cityFirstLetter: "K"
+}, {
+	cityName: "卡卡梅加",
+	citySpell: "KAKAMEIJIA",
+	"code": "GGM",
+	"countryCode": "KE",
+	"countryName": "肯尼亚",
+	cityFirstLetter: "K"
+}, {
+	cityName: "考阿里",
+	citySpell: "KAOALI",
+	"code": "CWR",
+	"countryCode": "AU",
+	"countryName": "澳大利亚",
+	cityFirstLetter: "K"
+}, {
+	cityName: "卡普里维",
+	citySpell: "KAPULIWEI",
+	"code": "LHU",
+	"countryCode": "NA",
+	"countryName": "纳米比亚",
+	cityFirstLetter: "K"
+}, {
+	cityName: "奎达",
+	citySpell: "KUIDA",
+	"code": "UET",
+	"countryCode": "PK",
+	"countryName": "巴基斯坦",
+	cityFirstLetter: "K"
+}, {
+	cityName: "克里比",
+	citySpell: "KELIBI",
+	"code": "KBI",
+	"countryCode": "CM",
+	"countryName": "喀麦隆",
+	cityFirstLetter: "K"
+}, {
+	cityName: "卡尼亚马",
+	citySpell: "KANIYAMA",
+	"code": "KNM",
+	"countryCode": "CD",
+	"countryName": "刚果民主共和国",
+	cityFirstLetter: "K"
+}, {
+	cityName: "科皮阿格",
+	citySpell: "KEPIAGE",
+	"code": "KPA",
+	"countryCode": "PG",
+	"countryName": "巴布亚新几内亚",
+	cityFirstLetter: "K"
+}, {
+	cityName: "科米索",
+	citySpell: "KEMISUO",
+	"code": "CIY",
+	"countryCode": "IT",
+	"countryName": "意大利",
+	cityFirstLetter: "K"
+}, {
+	cityName: "卡尔塔格",
+	citySpell: "KAERTAGE",
+	"code": "KAL",
+	"countryCode": "US",
+	"countryName": "美国",
+	cityFirstLetter: "K"
+}, {
+	cityName: "卡斯托里亚",
+	citySpell: "KASITUOLIYA",
+	"code": "KSO",
+	"countryCode": "GR",
+	"countryName": "希腊",
+	cityFirstLetter: "K"
+}, {
+	cityName: "坎纳马拉",
+	citySpell: "KANNAMALA",
+	"code": "CMA",
+	"countryCode": "AU",
+	"countryName": "澳大利亚",
+	cityFirstLetter: "K"
+}, {
+	cityName: "昆西（伊利诺伊州）",
+	citySpell: "KUNXI",
+	"code": "UIN",
+	"countryCode": "US",
+	"countryName": "美国",
+	cityFirstLetter: "K"
+}, {
+	cityName: "肯达里",
+	citySpell: "KENDALI",
+	"code": "KDI",
+	"countryCode": "ID",
+	"countryName": "印度尼西亚",
+	cityFirstLetter: "K"
+}, {
+	cityName: "卡丰佛",
+	citySpell: "KAFENGFO",
+	"code": "CFF",
+	"countryCode": "AO",
+	"countryName": "安哥拉",
+	cityFirstLetter: "K"
+}, {
+	cityName: "克尔甘",
+	citySpell: "KEERGAN",
+	"code": "KRO",
+	"countryCode": "RU",
+	"countryName": "俄罗斯",
+	cityFirstLetter: "K"
+}, {
+	cityName: "凯客",
+	citySpell: "KAIKE",
+	"code": "KAE",
+	"countryCode": "US",
+	"countryName": "美国",
+	cityFirstLetter: "K"
+}, {
+	cityName: "魁北克",
+	citySpell: "KUIBEIKE",
+	"code": "YQB",
+	"countryCode": "CA",
+	"countryName": "加拿大",
+	cityFirstLetter: "K"
+}, {
+	cityName: "卡松戈挽隆达",
+	citySpell: "KASONGGEWANLONGDA",
+	"code": "KGN",
+	"countryCode": "CD",
+	"countryName": "刚果民主共和国",
+	cityFirstLetter: "K"
+}, {
+	cityName: "喀土穆",
+	citySpell: "KATUMU",
+	"code": "KRT",
+	"countryCode": "SD",
+	"countryName": "苏丹",
+	cityFirstLetter: "K"
+}, {
+	cityName: "卡萨",
+	citySpell: "KASA",
+	"code": "KXA",
+	"countryCode": "US",
+	"countryName": "美国",
+	cityFirstLetter: "K"
+}, {
+	cityName: "卡拉博",
+	citySpell: "KALABO",
+	"code": "KLB",
+	"countryCode": "ZM",
+	"countryName": "赞比亚",
+	cityFirstLetter: "K"
+}, {
+	cityName: "康科德",
+	citySpell: "KANGKEDE",
+	"code": "CCR",
+	"countryCode": "US",
+	"countryName": "美国",
+	cityFirstLetter: "K"
+}, {
+	cityName: "孔盖",
+	citySpell: "KONGGAI",
+	"code": "KGB",
+	"countryCode": "PG",
+	"countryName": "巴布亚新几内亚",
+	cityFirstLetter: "K"
+}, {
+	cityName: "科克斯巴扎尔",
+	citySpell: "KEKESIBAZHAER",
+	"code": "CXB",
+	"countryCode": "BD",
+	"countryName": "孟加拉国",
+	cityFirstLetter: "K"
+}, {
+	cityName: "科沙林",
+	citySpell: "KESHALIN",
+	"code": "OSZ",
+	"countryCode": "PL",
+	"countryName": "波兰",
+	cityFirstLetter: "K"
+}, {
+	cityName: "开曼布拉克",
+	citySpell: "KAIMANBULAKE",
+	"code": "CYB",
+	"countryCode": "KY",
+	"countryName": "开曼群岛",
+	cityFirstLetter: "K"
+}, {
+	cityName: "科尔德福特",
+	citySpell: "KEERDEFUTE",
+	"code": "CXF",
+	"countryCode": "US",
+	"countryName": "美国",
+	cityFirstLetter: "K"
+}, {
+	cityName: "克利夫",
+	citySpell: "KELIFU",
+	"code": "CVC",
+	"countryCode": "AU",
+	"countryName": "澳大利亚",
+	cityFirstLetter: "K"
+}, {
+	cityName: "坎德利安",
+	citySpell: "KANDELIAN",
+	"code": "KDR",
+	"countryCode": "PG",
+	"countryName": "巴布亚新几内亚",
+	cityFirstLetter: "K"
+}, {
+	cityName: "肯尼特",
+	citySpell: "KENNITE",
+	"code": "KNT",
+	"countryCode": "US",
+	"countryName": "美国",
+	cityFirstLetter: "K"
+}, {
+	cityName: "库伯佩迪",
+	citySpell: "KUBOPEIDI",
+	"code": "CPD",
+	"countryCode": "AU",
+	"countryName": "澳大利亚",
+	cityFirstLetter: "K"
+}, {
+	cityName: "坎德尔",
+	citySpell: "KANDEER",
+	"code": "CDL",
+	"countryCode": "US",
+	"countryName": "美国",
+	cityFirstLetter: "K"
+}, {
+	cityName: "卡托维茨",
+	citySpell: "KATUOWEICI",
+	"code": "KTW",
+	"countryCode": "PL",
+	"countryName": "波兰",
+	cityFirstLetter: "K"
+}, {
+	cityName: "凯奇坎",
+	citySpell: "KAIQIKAN",
+	"code": "KTN",
+	"countryCode": "US",
+	"countryName": "美国",
+	cityFirstLetter: "K"
+}, {
+	cityName: "卡莱尔",
+	citySpell: "KALAIER",
+	"code": "CAX",
+	"countryCode": "GB",
+	"countryName": "英国",
+	cityFirstLetter: "K"
+}, {
+	cityName: "库奇比哈尔",
+	citySpell: "KUQIBIHAER",
+	"code": "COH",
+	"countryCode": "IN",
+	"countryName": "印度",
+	cityFirstLetter: "K"
+}, {
+	cityName: "卡萨巴湾",
+	citySpell: "KASABAWAN",
+	"code": "ZKB",
+	"countryCode": "ZM",
+	"countryName": "赞比亚",
+	cityFirstLetter: "K"
+}, {
+	cityName: "奎托",
+	citySpell: "KUITUO",
+	"code": "SVP",
+	"countryCode": "AO",
+	"countryName": "安哥拉",
+	cityFirstLetter: "K"
+}, {
+	cityName: "库留苏克岛",
+	citySpell: "KULIUSUKEDAO",
+	"code": "KUS",
+	"countryCode": "GL",
+	"countryName": "格陵兰岛",
+	cityFirstLetter: "K"
+}, {
+	cityName: "卡拉巴尔",
+	citySpell: "KALABAER",
+	"code": "CBQ",
+	"countryCode": "NG",
+	"countryName": "尼日利亚",
+	cityFirstLetter: "K"
+}, {
+	cityName: "坎佩尔",
+	citySpell: "KANPEIER",
+	"code": "UIP",
+	"countryCode": "FR",
+	"countryName": "法国",
+	cityFirstLetter: "K"
+}, {
+	cityName: "开尔斯",
+	citySpell: "KAIERSI",
+	"code": "KSY",
+	"countryCode": "TR",
+	"countryName": "土耳其",
+	cityFirstLetter: "K"
+}, {
+	cityName: "卡迪亚克",
+	citySpell: "KADIYAKE",
+	"code": "CAD",
+	"countryCode": "US",
+	"countryName": "美国",
+	cityFirstLetter: "K"
+}, {
+	cityName: "科科莫",
+	citySpell: "KEKEMO",
+	"code": "OKK",
+	"countryCode": "US",
+	"countryName": "美国",
+	cityFirstLetter: "K"
+}, {
+	cityName: "卡尔斯库加",
+	citySpell: "KAERSIKUJIA",
+	"code": "KSK",
+	"countryCode": "SE",
+	"countryName": "瑞典",
+	cityFirstLetter: "K"
+}, {
+	cityName: "开普帕尔马斯",
+	citySpell: "KAIPUPAERMASI",
+	"code": "CPA",
+	"countryCode": "LR",
+	"countryName": "利比里亚",
+	cityFirstLetter: "K"
+}, {
+	cityName: "克雷格",
+	citySpell: "KELEIGE",
+	"code": "CIG",
+	"countryCode": "US",
+	"countryName": "美国",
+	cityFirstLetter: "K"
+}, {
+	cityName: "康克鲁斯瓦格",
+	citySpell: "KANGKELUSIWAGE",
+	"code": "SFJ",
+	"countryCode": "GL",
+	"countryName": "格陵兰岛",
+	cityFirstLetter: "K"
+}, {
+	cityName: "卡尔维",
+	citySpell: "KAERWEI",
+	"code": "CLY",
+	"countryCode": "FR",
+	"countryName": "法国",
+	cityFirstLetter: "K"
+}, {
+	cityName: "科尤库克",
+	citySpell: "KEYOUKUKE",
+	"code": "KYU",
+	"countryCode": "US",
+	"countryName": "美国",
+	cityFirstLetter: "K"
+}, {
+	cityName: "克拉克斯维尔",
+	citySpell: "KELAKESIWEIER",
+	"code": "CKV",
+	"countryCode": "US",
+	"countryName": "美国",
+	cityFirstLetter: "K"
+}, {
+	cityName: "卡农城",
+	citySpell: "KANONGCHENG",
+	"code": "CNE",
+	"countryCode": "US",
+	"countryName": "美国",
+	cityFirstLetter: "K"
+}, {
+	cityName: "孔达拉",
+	citySpell: "KONGDALA",
+	"code": "SBI",
+	"countryCode": "GN",
+	"countryName": "几内亚",
+	cityFirstLetter: "K"
+}, {
+	cityName: "坎布里奇贝",
+	citySpell: "KANBULIQIBEI",
+	"code": "YCB",
+	"countryCode": "CA",
+	"countryName": "加拿大",
+	cityFirstLetter: "K"
+}, {
+	cityName: "卡特赖特",
+	citySpell: "KATELAITE",
+	"code": "YRF",
+	"countryCode": "CA",
+	"countryName": "加拿大",
+	cityFirstLetter: "K"
+}, {
+	cityName: "KIMMIRUT LAKE HARBOUR",
+	citySpell: "KIMMIRUTLAKEHARBOUR",
+	"code": "YLC",
+	"countryCode": "CA",
+	"countryName": "加拿大",
+	cityFirstLetter: "K"
+}, {
+	cityName: "克鲁克岛",
+	citySpell: "KELUKEDAO",
+	"code": "CKI",
+	"countryCode": "AU",
+	"countryName": "澳大利亚",
+	cityFirstLetter: "K"
+}, {
+	cityName: "卡拉瓜亚河畔康塞桑",
+	citySpell: "KALAGUAYAHEPANKANGSAISANG",
+	"code": "CDJ",
+	"countryCode": "BR",
+	"countryName": "巴西",
+	cityFirstLetter: "K"
+}, {
+	cityName: "康科德",
+	citySpell: "KANGKEDE",
+	"code": "CON",
+	"countryCode": "US",
+	"countryName": "美国",
+	cityFirstLetter: "K"
+}, {
+	cityName: "考库拉环礁",
+	citySpell: "KAOKULAHUANJIAO",
+	"code": "KKR",
+	"countryCode": "PF",
+	"countryName": "法属波利尼西亚",
+	cityFirstLetter: "K"
+}, {
+	cityName: "卡斯特利翁-德拉普拉纳",
+	citySpell: "KASITELIWENG-DELAPULANA",
+	"code": "CDT",
+	"countryCode": "ES",
+	"countryName": "西班牙",
+	cityFirstLetter: "K"
+}, {
+	cityName: "卡贝萨斯港",
+	citySpell: "KABEISASIGANG",
+	"code": "PUZ",
+	"countryCode": "NI",
+	"countryName": "尼加拉瓜",
+	cityFirstLetter: "K"
+}, {
+	cityName: "卡宗博",
+	citySpell: "KAZONGBO",
+	"code": "CAV",
+	"countryCode": "AO",
+	"countryName": "安哥拉",
+	cityFirstLetter: "K"
+}, {
+	cityName: "卡斯珀",
+	citySpell: "KASIPO",
+	"code": "CPR",
+	"countryCode": "US",
+	"countryName": "美国",
+	cityFirstLetter: "K"
+}, {
+	cityName: "克里斯蒂安斯塔德",
+	citySpell: "KELISIDIANSITADE",
+	"code": "KID",
+	"countryCode": "SE",
+	"countryName": "瑞典",
+	cityFirstLetter: "K"
+}, {
+	cityName: "勘察加",
+	citySpell: "KANCHAJIA",
+	"code": "PKC",
+	"countryCode": "RU",
+	"countryName": "俄罗斯",
+	cityFirstLetter: "K"
+}, {
+	cityName: "克拉根福特",
+	citySpell: "KELAGENFUTE",
+	"code": "KLU",
+	"countryCode": "AT",
+	"countryName": "奥地利",
+	cityFirstLetter: "K"
+}, {
+	cityName: "科洛尼亚",
+	citySpell: "KELUONIYA",
+	"code": "CYR",
+	"countryCode": "UY",
+	"countryName": "乌拉圭",
+	cityFirstLetter: "K"
+}, {
+	cityName: "科夫斯港",
+	citySpell: "KEFUSIGANG",
+	"code": "CFS",
+	"countryCode": "AU",
+	"countryName": "澳大利亚",
+	cityFirstLetter: "K"
+}, {
+	cityName: "科迪",
+	citySpell: "KEDI",
+	"code": "COD",
+	"countryCode": "US",
+	"countryName": "美国",
+	cityFirstLetter: "K"
+}, {
+	cityName: "克加拉",
+	citySpell: "KEJIALA",
+	"code": "KCT",
+	"countryCode": "LK",
+	"countryName": "斯里兰卡",
+	cityFirstLetter: "K"
+}, {
+	cityName: "科斯雷",
+	citySpell: "KESILEI",
+	"code": "KSA",
+	"countryCode": "FM",
+	"countryName": "密克罗尼西亚",
+	cityFirstLetter: "K"
+}, {
+	cityName: "克兰布鲁克",
+	citySpell: "KELANBULUKE",
+	"code": "YXC",
+	"countryCode": "CA",
+	"countryName": "加拿大",
+	cityFirstLetter: "K"
+}, {
+	cityName: "卡萨内",
+	citySpell: "KASANEI",
+	"code": "BBK",
+	"countryCode": "BW",
+	"countryName": "博茨瓦纳",
+	cityFirstLetter: "K"
+}, {
+	cityName: "卡萨拉",
+	citySpell: "KASALA",
+	"code": "KSL",
+	"countryCode": "SD",
+	"countryName": "苏丹",
+	cityFirstLetter: "K"
+}, {
+	cityName: "卡拉马祖",
+	citySpell: "KALAMAZU",
+	"code": "AZO",
+	"countryCode": "US",
+	"countryName": "美国",
+	cityFirstLetter: "K"
+}, {
+	cityName: "卡珀加纳",
+	citySpell: "KAPOJIANA",
+	"code": "CPB",
+	"countryCode": "CO",
+	"countryName": "哥伦比亚",
+	cityFirstLetter: "K"
+}, {
+	cityName: "孔米尤特",
+	citySpell: "KONGMIYOUTE",
+	"code": "KUZ",
+	"countryCode": "GL",
+	"countryName": "格陵兰岛",
+	cityFirstLetter: "K"
+}, {
+	cityName: "卡马朗",
+	citySpell: "KAMALANG",
+	"code": "KAR",
+	"countryCode": "GY",
+	"countryName": "圭亚那",
+	cityFirstLetter: "K"
+}, {
+	cityName: "科尔霍戈",
+	citySpell: "KEERHUOGE",
+	"code": "HGO",
+	"countryCode": "CI",
+	"countryName": "科特迪瓦",
+	cityFirstLetter: "K"
+}, {
+	cityName: "科尔维尔湖",
+	citySpell: "KEERWEIERHU",
+	"code": "YCK",
+	"countryCode": "CA",
+	"countryName": "加拿大",
+	cityFirstLetter: "K"
+}, {
+	cityName: "克莱蒙",
+	citySpell: "KELAIMENG",
+	"code": "CMQ",
+	"countryCode": "AU",
+	"countryName": "澳大利亚",
+	cityFirstLetter: "K"
+}, {
+	cityName: "库南布尔",
+	citySpell: "KUNANBUER",
+	"code": "CNB",
+	"countryCode": "AU",
+	"countryName": "澳大利亚",
+	cityFirstLetter: "K"
+}, {
+	cityName: "卡似彻彻湾",
+	citySpell: "KASICHECHEWAN",
+	"code": "ZKE",
+	"countryCode": "CA",
+	"countryName": "加拿大",
+	cityFirstLetter: "K"
+}, {
+	cityName: "库纳巴拉",
+	citySpell: "KUNABALA",
+	"code": "COJ",
+	"countryCode": "AU",
+	"countryName": "澳大利亚",
+	cityFirstLetter: "K"
+}, {
+	cityName: "卡尔波沃",
+	citySpell: "KAERBOWO",
+	"code": "KPP",
+	"countryCode": "AU",
+	"countryName": "澳大利亚",
+	cityFirstLetter: "K"
+}, {
+	cityName: "科里加内克",
+	citySpell: "KELIJIANEIKE",
+	"code": "KGK",
+	"countryCode": "US",
+	"countryName": "美国",
+	cityFirstLetter: "K"
+}, {
+	cityName: "卡瓦底夹",
+	citySpell: "KAWADIJIA",
+	"code": "KWD",
+	"countryCode": "CF",
+	"countryName": "中非",
+	cityFirstLetter: "K"
+}, {
+	cityName: "凯里曼",
+	citySpell: "KAILIMAN",
+	"code": "KMA",
+	"countryCode": "PG",
+	"countryName": "巴布亚新几内亚",
+	cityFirstLetter: "K"
+}, {
+	cityName: "克拉约瓦",
+	citySpell: "KELAYUEWA",
+	"code": "CRA",
+	"countryCode": "RO",
+	"countryName": "罗马尼亚",
+	cityFirstLetter: "K"
+}, {
+	cityName: "克洛林达",
+	citySpell: "KELUOLINDA",
+	"code": "CLX",
+	"countryCode": "AR",
+	"countryName": "阿根廷",
+	cityFirstLetter: "K"
+}, {
+	cityName: "科特",
+	citySpell: "KETE",
+	"code": "DWO",
+	"countryCode": "LK",
+	"countryName": "斯里兰卡",
+	cityFirstLetter: "K"
+}, {
+	cityName: "科皮亚波",
+	citySpell: "KEPIYABO",
+	"code": "CPO",
+	"countryCode": "CL",
+	"countryName": "智利",
+	cityFirstLetter: "K"
+}, {
+	cityName: "卡哈马",
+	citySpell: "KAHAMA",
+	"code": "KBH",
+	"countryCode": "TZ",
+	"countryName": "坦桑尼亚",
+	cityFirstLetter: "K"
+}, {
+	cityName: "奎雷塔罗",
+	citySpell: "KUILEITALUO",
+	"code": "QRO",
+	"countryCode": "MX",
+	"countryName": "墨西哥",
+	cityFirstLetter: "K"
+}, {
+	cityName: "克利马内",
+	citySpell: "KELIMANEI",
+	"code": "UEL",
+	"countryCode": "MZ",
+	"countryName": "莫桑比克",
+	cityFirstLetter: "K"
+}, {
+	cityName: "卡南加",
+	citySpell: "KANANJIA",
+	"code": "KGA",
+	"countryCode": "CD",
+	"countryName": "刚果民主共和国",
+	cityFirstLetter: "K"
+}, {
+	cityName: "卡罗利纳",
+	citySpell: "KALUOLINA",
+	"code": "CLN",
+	"countryCode": "BR",
+	"countryName": "巴西",
+	cityFirstLetter: "K"
+}, {
+	cityName: "凯诺拉",
+	citySpell: "KAINUOLA",
+	"code": "YQK",
+	"countryCode": "CA",
+	"countryName": "加拿大",
+	cityFirstLetter: "K"
+}, {
+	cityName: "卡提克兰",
+	citySpell: "KATIKELAN",
+	"code": "MPH",
+	"countryCode": "PH",
+	"countryName": "菲律宾",
+	cityFirstLetter: "K"
+}, {
+	cityName: "卡拉奇",
+	citySpell: "KALAQI",
+	"code": "KHI",
+	"countryCode": "PK",
+	"countryName": "巴基斯坦",
+	cityFirstLetter: "K"
+}, {
+	cityName: "卡洛克尔",
+	citySpell: "KALUOKEER",
+	"code": "KLK",
+	"countryCode": "KE",
+	"countryName": "肯尼亚",
+	cityFirstLetter: "K"
+}, {
+	cityName: "卡马河畔切尔尼",
+	citySpell: "KAMAHEPANQIEERNI",
+	"code": "NBC",
+	"countryCode": "RU",
+	"countryName": "俄罗斯",
+	cityFirstLetter: "K"
+}, {
+	cityName: "开塞利",
+	citySpell: "KAISAILI",
+	"code": "ASR",
+	"countryCode": "TR",
+	"countryName": "土耳其",
+	cityFirstLetter: "K"
+}, {
+	cityName: "康各苏克",
+	citySpell: "KANGGESUKE",
+	"code": "YKG",
+	"countryCode": "CA",
+	"countryName": "加拿大",
+	cityFirstLetter: "K"
+}, {
+	cityName: "凯库拉",
+	citySpell: "KAIKULA",
+	"code": "KBZ",
+	"countryCode": "NZ",
+	"countryName": "新西兰",
+	cityFirstLetter: "K"
+}, {
+	cityName: "库鲁曼",
+	citySpell: "KULUMAN",
+	"code": "KMH",
+	"countryCode": "ZA",
+	"countryName": "南非",
+	cityFirstLetter: "K"
+}, {
+	cityName: "库皮诺",
+	citySpell: "KUPINUO",
+	"code": "KUP",
+	"countryCode": "PG",
+	"countryName": "巴布亚新几内亚",
+	cityFirstLetter: "K"
+}, {
+	cityName: "卡萨布兰卡",
+	citySpell: "KASABULANKA",
+	"code": "CAS",
+	"countryCode": "MA",
+	"countryName": "摩洛哥",
+	cityFirstLetter: "K"
+}, {
+	cityName: "康科迪亚",
+	citySpell: "KANGKEDIYA",
+	"code": "CCI",
+	"countryCode": "BR",
+	"countryName": "巴西",
+	cityFirstLetter: "K"
+}, {
+	cityName: "科罗拉多斯普林",
+	citySpell: "KELUOLADUOSIPULIN",
+	"code": "COS",
+	"countryCode": "US",
+	"countryName": "美国",
+	cityFirstLetter: "K"
+}, {
+	cityName: "卡拉卡凯特",
+	citySpell: "KALAKAKAITE",
+	"code": "KKK",
+	"countryCode": "US",
+	"countryName": "美国",
+	cityFirstLetter: "K"
+}, {
+	cityName: "克朗克里",
+	citySpell: "KELANGKELI",
+	"code": "CNJ",
+	"countryCode": "AU",
+	"countryName": "澳大利亚",
+	cityFirstLetter: "K"
+}, {
+	cityName: "库加鲁克",
+	citySpell: "KUJIALUKE",
+	"code": "YBB",
+	"countryCode": "CA",
+	"countryName": "加拿大",
+	cityFirstLetter: "K"
+}, {
+	cityName: "克尔曼",
+	citySpell: "KEERMAN",
+	"code": "KER",
+	"countryCode": "IR",
+	"countryName": "伊朗",
+	cityFirstLetter: "K"
+}, {
+	cityName: "考爱岛",
+	citySpell: "KAOAIDAO",
+	"code": "LIH",
+	"countryCode": "US",
+	"countryName": "美国",
+	cityFirstLetter: "K"
+}, {
+	cityName: "科图拉",
+	citySpell: "KETULA",
+	"code": "COT",
+	"countryCode": "US",
+	"countryName": "美国",
+	cityFirstLetter: "K"
+}, {
+	cityName: "科隆",
+	citySpell: "KELONG",
+	"code": "ONX",
+	"countryCode": "PA",
+	"countryName": "巴拿马",
+	cityFirstLetter: "K"
+}, {
+	cityName: "库格卢克图克",
+	citySpell: "KUGELUKETUKE",
+	"code": "YCO",
+	"countryCode": "CA",
+	"countryName": "加拿大",
+	cityFirstLetter: "K"
+}, {
+	cityName: "库米拉",
+	citySpell: "KUMILA",
+	"code": "CLA",
+	"countryCode": "BD",
+	"countryName": "孟加拉国",
+	cityFirstLetter: "K"
+}, {
+	cityName: "科斯",
+	citySpell: "KESI",
+	"code": "KGS",
+	"countryCode": "GR",
+	"countryName": "希腊",
+	cityFirstLetter: "K"
+}, {
+	cityName: "括克",
+	citySpell: "KUOKE",
+	"code": "TKJ",
+	"countryCode": "US",
+	"countryName": "美国",
+	cityFirstLetter: "K"
+}, {
+	cityName: "库热特",
+	citySpell: "KURETE",
+	"code": "HJT",
+	"countryCode": "MN",
+	"countryName": "蒙古",
+	cityFirstLetter: "K"
+}, {
+	cityName: "库亚巴",
+	citySpell: "KUYABA",
+	"code": "CGB",
+	"countryCode": "BR",
+	"countryName": "巴西",
+	cityFirstLetter: "K"
+}, {
+	cityName: "卡巴拉",
+	citySpell: "KABALA",
+	"code": "KBA",
+	"countryCode": "SL",
+	"countryName": "塞拉利昂",
+	cityFirstLetter: "K"
+}, {
+	cityName: "卡里穆伊",
+	citySpell: "KALIMUYI",
+	"code": "KMR",
+	"countryCode": "PG",
+	"countryName": "巴布亚新几内亚",
+	cityFirstLetter: "K"
+}, {
+	cityName: "凯撒",
+	citySpell: "KAISA",
+	"code": "AIZ",
+	"countryCode": "US",
+	"countryName": "美国",
+	cityFirstLetter: "K"
+}, {
+	cityName: "克莱柏特",
+	citySpell: "KELAIBAITE",
+	"code": "PLQ",
+	"countryCode": "LT",
+	"countryName": "立陶宛",
+	cityFirstLetter: "K"
+}, {
+	cityName: "坎基克苏阿鲁约克",
+	citySpell: "KANJIKESUALUYUEKE",
+	"code": "XGR",
+	"countryCode": "CA",
+	"countryName": "加拿大",
+	cityFirstLetter: "K"
+}, {
+	cityName: "凯里郡",
+	citySpell: "KAILIJUN",
+	"code": "KIR",
+	"countryCode": "IE",
+	"countryName": "爱尔兰",
+	cityFirstLetter: "K"
+}, {
+	cityName: "卡斯塔莫努",
+	citySpell: "KASITAMONU",
+	"code": "KFS",
+	"countryCode": "TR",
+	"countryName": "土耳其",
+	cityFirstLetter: "K"
+}, {
+	cityName: "克卢日",
+	citySpell: "KELURI",
+	"code": "CLJ",
+	"countryCode": "RO",
+	"countryName": "罗马尼亚",
+	cityFirstLetter: "K"
+}, {
+	cityName: "开普纽文汉姆",
+	citySpell: "KAIPUNIUWENHANMU",
+	"code": "EHM",
+	"countryCode": "US",
+	"countryName": "美国",
+	cityFirstLetter: "K"
+}, {
+	cityName: "卡埃莱",
+	citySpell: "KAAILAI",
+	"code": "KLE",
+	"countryCode": "CM",
+	"countryName": "喀麦隆",
+	cityFirstLetter: "K"
+}, {
+	cityName: "库塔巴",
+	citySpell: "KUTABA",
+	"code": "KOB",
+	"countryCode": "CM",
+	"countryName": "喀麦隆",
+	cityFirstLetter: "K"
+}, {
+	cityName: "卡德拉",
+	citySpell: "KADELA",
+	"code": "KDL",
+	"countryCode": "EE",
+	"countryName": "爱沙尼亚",
+	cityFirstLetter: "K"
+}, {
+	cityName: "凯里凯里",
+	citySpell: "KAILIKAILI",
+	"code": "KKE",
+	"countryCode": "NZ",
+	"countryName": "新西兰",
+	cityFirstLetter: "K"
+}, {
+	cityName: "卡提雷",
+	citySpell: "KATILEI",
+	"code": "KXU",
+	"countryCode": "PF",
+	"countryName": "法属波利尼西亚",
+	cityFirstLetter: "K"
+}, {
+	cityName: "库内奥",
+	citySpell: "KUNEIAO",
+	"code": "CUF",
+	"countryCode": "IT",
+	"countryName": "意大利",
+	cityFirstLetter: "K"
+}, {
+	cityName: "考纳斯",
+	citySpell: "KAONASI",
+	"code": "KUN",
+	"countryCode": "LT",
+	"countryName": "立陶宛",
+	cityFirstLetter: "K"
+}, {
+	cityName: "凯莱",
+	citySpell: "KAILAI",
+	"code": "KEE",
+	"countryCode": "CG",
+	"countryName": "刚果",
+	cityFirstLetter: "K"
+}, {
+	cityName: "卡勒克",
+	citySpell: "KALEKE",
+	"code": "KYK",
+	"countryCode": "US",
+	"countryName": "美国",
+	cityFirstLetter: "K"
+}, {
+	cityName: "昆仑岛",
+	citySpell: "KUNLUNDAO",
+	"code": "VCS",
+	"countryCode": "VN",
+	"countryName": "越南",
+	cityFirstLetter: "K"
+}, {
+	cityName: "卡尔库龙",
+	citySpell: "KAERKULONG",
+	"code": "KFG",
+	"countryCode": "AU",
+	"countryName": "澳大利亚",
+	cityFirstLetter: "K"
+}, {
+	cityName: "孔皮亚姆",
+	citySpell: "KONGPIYAMU",
+	"code": "KPM",
+	"countryCode": "PG",
+	"countryName": "巴布亚新几内亚",
+	cityFirstLetter: "K"
+}, {
+	cityName: "坎贝尔镇",
+	citySpell: "KANBEIERZHEN",
+	"code": "CAL",
+	"countryCode": "GB",
+	"countryName": "英国",
+	cityFirstLetter: "K"
+}, {
+	cityName: "科尔多瓦",
+	citySpell: "KEERDUOWA",
+	"code": "CDV",
+	"countryCode": "US",
+	"countryName": "美国",
+	cityFirstLetter: "K"
+}, {
+	cityName: "卡罗旺德拉",
+	citySpell: "KALUOWANGDELA",
+	"code": "CUD",
+	"countryCode": "AU",
+	"countryName": "澳大利亚",
+	cityFirstLetter: "K"
+}, {
+	cityName: "康科德市",
+	citySpell: "KANGKEDESHI",
+	"code": "USA",
+	"countryCode": "US",
+	"countryName": "美国",
+	cityFirstLetter: "K"
+}, {
+	cityName: "卡瑙普斯考",
+	citySpell: "KANAOPUSIKAO",
+	"code": "ZKG",
+	"countryCode": "CA",
+	"countryName": "加拿大",
+	cityFirstLetter: "K"
+}, {
+	cityName: "科卢韦齐",
+	citySpell: "KELUWEIQI",
+	"code": "KWZ",
+	"countryCode": "CD",
+	"countryName": "刚果民主共和国",
+	cityFirstLetter: "K"
+}, {
+	cityName: "科连特斯",
+	citySpell: "KELIANTESI",
+	"code": "CNQ",
+	"countryCode": "AR",
+	"countryName": "阿根廷",
+	cityFirstLetter: "K"
+}, {
+	cityName: "卡森城",
+	citySpell: "KASENCHENG",
+	"code": "CSN",
+	"countryCode": "US",
+	"countryName": "美国",
+	cityFirstLetter: "K"
+}, {
+	cityName: "科扎尼",
+	citySpell: "KEZHANI",
+	"code": "KZI",
+	"countryCode": "GR",
+	"countryName": "希腊",
+	cityFirstLetter: "K"
+}, {
+	cityName: "夸贾林",
+	citySpell: "KUAJIALIN",
+	"code": "KWA",
+	"countryCode": "MH",
+	"countryName": "马绍尔群岛",
+	cityFirstLetter: "K"
+}, {
+	cityName: "卡尔马",
+	citySpell: "KAERMA",
+	"code": "KLR",
+	"countryCode": "SE",
+	"countryName": "瑞典",
+	cityFirstLetter: "K"
+}, {
+	cityName: "科尔达",
+	citySpell: "KEERDA",
+	"code": "KDA",
+	"countryCode": "SN",
+	"countryName": "塞内加尔",
+	cityFirstLetter: "K"
+}, {
+	cityName: "库克岛",
+	citySpell: "KUKEDAO",
+	"code": "CUK",
+	"countryCode": "BZ",
+	"countryName": "伯利兹",
+	cityFirstLetter: "K"
+}, {
+	cityName: "科塔巴托",
+	citySpell: "KETABATUO",
+	"code": "CBO",
+	"countryCode": "PH",
+	"countryName": "菲律宾",
+	cityFirstLetter: "K"
+}, {
+	cityName: "库斯塔奈",
+	citySpell: "KUSITANAI",
+	"code": "KSN",
+	"countryCode": "KZ",
+	"countryName": "哈萨克斯坦",
+	cityFirstLetter: "K"
+}, {
+	cityName: "孔戈洛",
+	citySpell: "KONGGELUO",
+	"code": "KOO",
+	"countryCode": "CD",
+	"countryName": "刚果民主共和国",
+	cityFirstLetter: "K"
+}, {
+	cityName: "卡兰巴",
+	citySpell: "KALANBA",
+	"code": "KRB",
+	"countryCode": "AU",
+	"countryName": "澳大利亚",
+	cityFirstLetter: "K"
+}, {
+	cityName: "凯格尔苏格",
+	citySpell: "KAIGEERSUGE",
+	"code": "KEG",
+	"countryCode": "PG",
+	"countryName": "巴布亚新几内亚",
+	cityFirstLetter: "K"
+}, {
+	cityName: "卡兰塞贝什",
+	citySpell: "KALANSAIBEISHI",
+	"code": "CSB",
+	"countryCode": "RO",
+	"countryName": "罗马尼亚",
+	cityFirstLetter: "K"
+}, {
+	cityName: "科科舍塔",
+	citySpell: "KEKESHETA",
+	"code": "KOV",
+	"countryCode": "KZ",
+	"countryName": "哈萨克斯坦",
+	cityFirstLetter: "K"
+}, {
+	cityName: "凯米/托尼奥",
+	citySpell: "KAIMITUONIAO",
+	"code": "KEM",
+	"countryCode": "FI",
+	"countryName": "芬兰",
+	cityFirstLetter: "K"
+}, {
+	cityName: "库尔斯克",
+	citySpell: "KUERSIKE",
+	"code": "URS",
+	"countryCode": "RU",
+	"countryName": "俄罗斯",
+	cityFirstLetter: "K"
+}, {
+	cityName: "科罗尔",
+	citySpell: "KELUOER",
+	"code": "ROR",
+	"countryCode": "PW",
+	"countryName": "帕劳",
+	cityFirstLetter: "K"
+}, {
+	cityName: "克雷格考夫",
+	citySpell: "KELEIGEKAOFU",
+	"code": "CCV",
+	"countryCode": "VU",
+	"countryName": "瓦努阿图",
+	cityFirstLetter: "K"
+}, {
+	cityName: "卡乌",
+	citySpell: "KAWU",
+	"code": "KAZ",
+	"countryCode": "ID",
+	"countryName": "印度尼西亚",
+	cityFirstLetter: "K"
+}, {
+	cityName: "卡马圭",
+	citySpell: "KAMAGUI",
+	"code": "CMW",
+	"countryCode": "CU",
+	"countryName": "古巴",
+	cityFirstLetter: "K"
+}, {
+	cityName: "科布多",
+	citySpell: "KEBUDUO",
+	"code": "HVD",
+	"countryCode": "MN",
+	"countryName": "蒙古",
+	cityFirstLetter: "K"
+}, {
+	cityName: "卡姆登",
+	citySpell: "KAMUDENG",
+	"code": "CDU",
+	"countryCode": "AU",
+	"countryName": "澳大利亚",
+	cityFirstLetter: "K"
+}, {
+	cityName: "凯塔依亚",
+	citySpell: "KAITAYIYA",
+	"code": "KAT",
+	"countryCode": "NZ",
+	"countryName": "新西兰",
+	cityFirstLetter: "K"
+}, {
+	cityName: "卡伊",
+	citySpell: "KAYI",
+	"code": "KYS",
+	"countryCode": "ML",
+	"countryName": "马里",
+	cityFirstLetter: "K"
+}, {
+	cityName: "库英达",
+	citySpell: "KUYINGDA",
+	"code": "CDA",
+	"countryCode": "AU",
+	"countryName": "澳大利亚",
+	cityFirstLetter: "K"
+}, {
+	cityName: "卡尔卡松",
+	citySpell: "KAERKASONG",
+	"code": "CCF",
+	"countryCode": "FR",
+	"countryName": "法国",
+	cityFirstLetter: "K"
+}, {
+	cityName: "卡尔加里",
+	citySpell: "KAERJIALI",
+	"code": "YYC",
+	"countryCode": "CA",
+	"countryName": "加拿大",
+	cityFirstLetter: "K"
+}, {
+	cityName: "克鲁克特城",
+	citySpell: "KELUKETECHENG",
+	"code": "CKD",
+	"countryCode": "US",
+	"countryName": "美国",
+	cityFirstLetter: "K"
+}, {
+	cityName: "卡门贝",
+	citySpell: "KAMENBEI",
+	"code": "KME",
+	"countryCode": "RW",
+	"countryName": "卢旺达",
+	cityFirstLetter: "K"
+}, {
+	cityName: "卡塔赫纳",
+	citySpell: "KATAHENA",
+	"code": "CTG",
+	"countryCode": "CO",
+	"countryName": "哥伦比亚",
+	cityFirstLetter: "K"
+}, {
+	cityName: "克拉斯诺雅尔斯克",
+	citySpell: "KELASINUOYAERSIKE",
+	"code": "KJA",
+	"countryCode": "RU",
+	"countryName": "俄罗斯",
+	cityFirstLetter: "K"
+}, {
+	cityName: "开普利斯本",
+	citySpell: "KAIPULISIBEN",
+	"code": "LUR",
+	"countryCode": "US",
+	"countryName": "美国",
+	cityFirstLetter: "K"
+}, {
+	cityName: "坎普斯",
+	citySpell: "KANPUSI",
+	"code": "CAW",
+	"countryCode": "BR",
+	"countryName": "巴西",
+	cityFirstLetter: "K"
+}, {
+	cityName: "坎贝尔河",
+	citySpell: "KANBEIERHE",
+	"code": "YBL",
+	"countryCode": "CA",
+	"countryName": "加拿大",
+	cityFirstLetter: "K"
+}, {
+	cityName: "库朱阿克",
+	citySpell: "KUZHUAKE",
+	"code": "YVP",
+	"countryCode": "CA",
+	"countryName": "加拿大",
+	cityFirstLetter: "K"
+}, {
+	cityName: "库约",
+	citySpell: "KUYUE",
+	"code": "CYU",
+	"countryCode": "PH",
+	"countryName": "菲律宾",
+	cityFirstLetter: "K"
+}, {
+	cityName: "凯特凯斯",
+	citySpell: "KAITEKAISI",
+	"code": "CXY",
+	"countryCode": "BS",
+	"countryName": "巴哈马",
+	cityFirstLetter: "K"
+}, {
+	cityName: "卡塔曼",
+	citySpell: "KATAMAN",
+	"code": "CRM",
+	"countryCode": "PH",
+	"countryName": "菲律宾",
+	cityFirstLetter: "K"
+}, {
+	cityName: "卡尔斯卡格",
+	citySpell: "KAERSIKAGE",
+	"code": "KLG",
+	"countryCode": "US",
+	"countryName": "美国",
+	cityFirstLetter: "K"
+}, {
+	cityName: "卡瓦廷",
+	citySpell: "KAWATING",
+	"code": "CYZ",
+	"countryCode": "PH",
+	"countryName": "菲律宾",
+	cityFirstLetter: "K"
+}, {
+	cityName: "卡米纳",
+	citySpell: "KAMINA",
+	"code": "KMF",
+	"countryCode": "PG",
+	"countryName": "巴布亚新几内亚",
+	cityFirstLetter: "K"
+}, {
+	cityName: "科纳克里",
+	citySpell: "KENAKELI",
+	"code": "CKY",
+	"countryCode": "GN",
+	"countryName": "几内亚",
+	cityFirstLetter: "K"
+}, {
+	cityName: "卡塔利娜岛",
+	citySpell: "KATALINADAO",
+	"code": "AVX",
+	"countryCode": "US",
+	"countryName": "美国",
+	cityFirstLetter: "K"
+}, {
+	cityName: "克雷格",
+	citySpell: "KELEIGE",
+	"code": "CGA",
+	"countryCode": "US",
+	"countryName": "美国",
+	cityFirstLetter: "K"
+}, {
+	cityName: "科瓦尼阿马",
+	citySpell: "KEWANIAMA",
+	"code": "KWM",
+	"countryCode": "AU",
+	"countryName": "澳大利亚",
+	cityFirstLetter: "K"
+}, {
+	cityName: "卡萨马",
+	citySpell: "KASAMA",
+	"code": "KAA",
+	"countryCode": "ZM",
+	"countryName": "赞比亚",
+	cityFirstLetter: "K"
+}, {
+	cityName: "坎基克苏阿约克",
+	citySpell: "KANJIKESUAYUEKE",
+	"code": "YWB",
+	"countryCode": "CA",
+	"countryName": "加拿大",
+	cityFirstLetter: "K"
+}, {
+	cityName: "凯拉沙哈尔",
+	citySpell: "KAILASHAHAER",
+	"code": "IXH",
+	"countryCode": "IN",
+	"countryName": "印度",
+	cityFirstLetter: "K"
+}, {
+	cityName: "堪萨斯城",
+	citySpell: "KANSASICHENG",
+	"code": "MKC",
+	"countryCode": "US",
+	"countryName": "美国",
+	cityFirstLetter: "K"
+}, {
+	cityName: "卡门城",
+	citySpell: "KAMENCHENG",
+	"code": "CME",
+	"countryCode": "MX",
+	"countryName": "墨西哥",
+	cityFirstLetter: "K"
+}, {
+	cityName: "孔克布巴",
+	citySpell: "KONGKEBUBA",
+	"code": "GKO",
+	"countryCode": "GA",
+	"countryName": "加蓬",
+	cityFirstLetter: "K"
+}, {
+	cityName: "克基拉",
+	citySpell: "KEJILA",
+	"code": "CFU",
+	"countryCode": "GR",
+	"countryName": "希腊",
+	cityFirstLetter: "K"
+}, {
+	cityName: "库卢",
+	citySpell: "KULU",
+	"code": "KUU",
+	"countryCode": "IN",
+	"countryName": "印度",
+	cityFirstLetter: "K"
+}, {
+	cityName: "卡尔卡尔",
+	citySpell: "KAERKAER",
+	"code": "KRX",
+	"countryCode": "PG",
+	"countryName": "巴布亚新几内亚",
+	cityFirstLetter: "K"
+}, {
+	cityName: "坎代普",
+	citySpell: "KANDAIPU",
+	"code": "KDP",
+	"countryCode": "PG",
+	"countryName": "巴布亚新几内亚",
+	cityFirstLetter: "K"
+}, {
+	cityName: "坎伯兰",
+	citySpell: "KANBOLAN",
+	"code": "CBE",
+	"countryCode": "US",
+	"countryName": "美国",
+	cityFirstLetter: "K"
+}, {
+	cityName: "卡宾达",
+	citySpell: "KABINDA",
+	"code": "CAB",
+	"countryCode": "AO",
+	"countryName": "安哥拉",
+	cityFirstLetter: "K"
+}, {
+	cityName: "库勒塔",
+	citySpell: "KULETA",
+	"code": "KOH",
+	"countryCode": "AU",
+	"countryName": "澳大利亚",
+	cityFirstLetter: "K"
+}, {
+	cityName: "坎普尔",
+	citySpell: "KANPUER",
+	"code": "KNU",
+	"countryCode": "IN",
+	"countryName": "印度",
+	cityFirstLetter: "K"
+}, {
+	cityName: "康瑟尔",
+	citySpell: "KANGSEER",
+	"code": "CIL",
+	"countryCode": "US",
+	"countryName": "美国",
+	cityFirstLetter: "K"
+}, {
+	cityName: "卡杜纳",
+	citySpell: "KADUNA",
+	"code": "KAD",
+	"countryCode": "NG",
+	"countryName": "尼日利亚",
+	cityFirstLetter: "K"
+}, {
+	cityName: "克拉克斯堡",
+	citySpell: "KELAKESIBAO",
+	"code": "CKB",
+	"countryCode": "US",
+	"countryName": "美国",
+	cityFirstLetter: "K"
+}, {
+	cityName: "凯法利尼亚",
+	citySpell: "KAIFALINIYA",
+	"code": "EFL",
+	"countryCode": "GR",
+	"countryName": "希腊",
+	cityFirstLetter: "K"
+}, {
+	cityName: "克波斯",
+	citySpell: "KEBOSI",
+	"code": "XQP",
+	"countryCode": "CR",
+	"countryName": "哥斯达黎加",
+	cityFirstLetter: "K"
+}, {
+	cityName: "卡姆提",
+	citySpell: "KAMUTI",
+	"code": "KHM",
+	"countryCode": "MM",
+	"countryName": "缅甸",
+	cityFirstLetter: "K"
+}, {
+	cityName: "科策布",
+	citySpell: "KECEBU",
+	"code": "OTZ",
+	"countryCode": "US",
+	"countryName": "美国",
+	cityFirstLetter: "K"
+}, {
+	cityName: "科贾埃利",
+	citySpell: "KEJIAAILI",
+	"code": "KCO",
+	"countryCode": "TR",
+	"countryName": "土耳其",
+	cityFirstLetter: "K"
+}, {
+	cityName: "考厄尔",
+	citySpell: "KAOEER",
+	"code": "CCW",
+	"countryCode": "AU",
+	"countryName": "澳大利亚",
+	cityFirstLetter: "K"
+}, {
+	cityName: "卡达格",
+	citySpell: "KADAGE",
+	"code": "CRC",
+	"countryCode": "CO",
+	"countryName": "哥伦比亚",
+	cityFirstLetter: "K"
+}, {
+	cityName: "卡罗维发利",
+	citySpell: "KALUOWEIFALI",
+	"code": "KLV",
+	"countryCode": "CZ",
+	"countryName": "捷克",
+	cityFirstLetter: "K"
+}, {
+	cityName: "卡帕拉奥阿",
+	citySpell: "KAPALAAOA",
+	"code": "JHM",
+	"countryCode": "US",
+	"countryName": "美国",
+	cityFirstLetter: "K"
+}, {
+	cityName: "卡米勒罗依",
+	citySpell: "KAMILELUOYI",
+	"code": "KML",
+	"countryCode": "AU",
+	"countryName": "澳大利亚",
+	cityFirstLetter: "K"
+}, {
+	cityName: "康多托",
+	citySpell: "KANGDUOTUO",
+	"code": "COG",
+	"countryCode": "CO",
+	"countryName": "哥伦比亚",
+	cityFirstLetter: "K"
+}, {
+	cityName: "科尤克",
+	citySpell: "KEYOUKE",
+	"code": "KKA",
+	"countryCode": "US",
+	"countryName": "美国",
+	cityFirstLetter: "K"
+}, {
+	cityName: "卡拉萨拜",
+	citySpell: "KALASABAI",
+	"code": "KRG",
+	"countryCode": "GY",
+	"countryName": "圭亚那",
+	cityFirstLetter: "K"
+}, {
+	cityName: "卡尔巴里",
+	citySpell: "KAERBALI",
+	"code": "KAX",
+	"countryCode": "AU",
+	"countryName": "澳大利亚",
+	cityFirstLetter: "K"
+}, {
+	cityName: "坎博尔达",
+	citySpell: "KANBOERDA",
+	"code": "KDB",
+	"countryCode": "AU",
+	"countryName": "澳大利亚",
+	cityFirstLetter: "K"
+}, {
+	cityName: "卡维恩",
+	citySpell: "KAWEIEN",
+	"code": "KVG",
+	"countryCode": "PG",
+	"countryName": "巴布亚新几内亚",
+	cityFirstLetter: "K"
+}, {
+	cityName: "卡马兰多",
+	citySpell: "KAMALANDUO",
+	"code": "KDS",
+	"countryCode": "AU",
+	"countryName": "澳大利亚",
+	cityFirstLetter: "K"
+}, {
+	cityName: "凯瑟琳",
+	citySpell: "KAISELIN",
+	"code": "KTR",
+	"countryCode": "AU",
+	"countryName": "澳大利亚",
+	cityFirstLetter: "K"
+}, {
+	cityName: "卡拉曼马拉斯",
+	citySpell: "KALAMANMALASI",
+	"code": "KCM",
+	"countryCode": "TR",
+	"countryName": "土耳其",
+	cityFirstLetter: "K"
+}, {
+	cityName: "卡奈马",
+	citySpell: "KANAIMA",
+	"code": "CAJ",
+	"countryCode": "VE",
+	"countryName": "委内瑞拉",
+	cityFirstLetter: "K"
+}, {
+	cityName: "奎斯芦克",
+	citySpell: "KUISILUKE",
+	"code": "KWT",
+	"countryCode": "US",
+	"countryName": "美国",
+	cityFirstLetter: "K"
+}, {
+	cityName: "卡莱克西科",
+	citySpell: "KALAIKEXIKE",
+	"code": "CXL",
+	"countryCode": "US",
+	"countryName": "美国",
+	cityFirstLetter: "K"
+}, {
+	cityName: "卡马兰岛",
+	citySpell: "KAMALANDAO",
+	"code": "KAM",
+	"countryCode": "YE",
+	"countryName": "也门",
+	cityFirstLetter: "K"
+}, {
+	cityName: "卡索斯岛",
+	citySpell: "KASUOSIDAO",
+	"code": "KSJ",
+	"countryCode": "GR",
+	"countryName": "希腊",
+	cityFirstLetter: "K"
+}, {
+	cityName: "康科迪亚",
+	citySpell: "KANGKEDIYA",
+	"code": "COC",
+	"countryCode": "AR",
+	"countryName": "阿根廷",
+	cityFirstLetter: "K"
+}, {
+	cityName: "卡斯凯斯",
+	citySpell: "KASIKAISI",
+	"code": "CAT",
+	"countryCode": "PT",
+	"countryName": "葡萄牙",
+	cityFirstLetter: "K"
+}, {
+	cityName: "库奥皮欧",
+	citySpell: "KUAOPIOU",
+	"code": "KUO",
+	"countryCode": "FI",
+	"countryName": "芬兰",
+	cityFirstLetter: "K"
+}, {
+	cityName: "克肖德",
+	citySpell: "KEXIAODE",
+	"code": "IXK",
+	"countryCode": "IN",
+	"countryName": "印度",
+	cityFirstLetter: "K"
+}, {
+	cityName: "克孜勒",
+	citySpell: "KEZILE",
+	"code": "KYZ",
+	"countryCode": "RU",
+	"countryName": "俄罗斯",
+	cityFirstLetter: "K"
+}, {
+	cityName: "克里斯蒂安松",
+	citySpell: "KELISIDIANSONG",
+	"code": "KSU",
+	"countryCode": "NO",
+	"countryName": "挪威",
+	cityFirstLetter: "K"
+}, {
+	cityName: "库库塔",
+	citySpell: "KUKUTA",
+	"code": "CUC",
+	"countryCode": "CO",
+	"countryName": "哥伦比亚",
+	cityFirstLetter: "K"
+}, {
+	cityName: "科特斯",
+	citySpell: "KETESI",
+	"code": "CEZ",
+	"countryCode": "US",
+	"countryName": "美国",
+	cityFirstLetter: "K"
+}, {
+	cityName: "库斯提",
+	citySpell: "KUSITI",
+	"code": "KST",
+	"countryCode": "SD",
+	"countryName": "苏丹",
+	cityFirstLetter: "K"
+}, {
+	cityName: "卡尔斯鲁厄",
+	citySpell: "KAERSILUE",
+	"code": "FKB",
+	"countryCode": "DE",
+	"countryName": "德国",
+	cityFirstLetter: "K"
+}, {
+	cityName: "库拉",
+	citySpell: "KULA",
+	"code": "CLH",
+	"countryCode": "AU",
+	"countryName": "澳大利亚",
+	cityFirstLetter: "K"
+}, {
+	cityName: "克利奇站",
+	citySpell: "KELIQIZHAN",
+	"code": "CLL",
+	"countryCode": "US",
+	"countryName": "美国",
+	cityFirstLetter: "K"
+}, {
+	cityName: "科哈特",
+	citySpell: "KEHATE",
+	"code": "OHT",
+	"countryCode": "PK",
+	"countryName": "巴基斯坦",
+	cityFirstLetter: "K"
+}, {
+	cityName: "卡塞雷斯",
+	citySpell: "KASAILEISI",
+	"code": "CCX",
+	"countryCode": "BR",
+	"countryName": "巴西",
+	cityFirstLetter: "K"
+}, {
+	cityName: "库鲁苏夸蒂亚",
+	citySpell: "KULUSUKUADIYA",
+	"code": "UZU",
+	"countryCode": "AR",
+	"countryName": "阿根廷",
+	cityFirstLetter: "K"
+}, {
+	cityName: "卡塔尼亚",
+	citySpell: "KATANIYA",
+	"code": "CTA",
+	"countryCode": "IT",
+	"countryName": "意大利",
+	cityFirstLetter: "K"
+}, {
+	cityName: "凯苏马",
+	citySpell: "KAISUMA",
+	"code": "AQI",
+	"countryCode": "SA",
+	"countryName": "沙特阿垃伯",
+	cityFirstLetter: "K"
+}, {
+	cityName: "卡鲁普",
+	citySpell: "KALUPU",
+	"code": "KRP",
+	"countryCode": "DK",
+	"countryName": "丹麦",
+	cityFirstLetter: "K"
+}, {
+	cityName: "科韦尼亚斯",
+	citySpell: "KEWEINIYASI",
+	"code": "CVE",
+	"countryCode": "CO",
+	"countryName": "哥伦比亚",
+	cityFirstLetter: "K"
+}, {
+	cityName: "凯佩尔韦耶姆",
+	citySpell: "KAIPEIERWEIYEMU",
+	"code": "KPW",
+	"countryCode": "RU",
+	"countryName": "俄罗斯",
+	cityFirstLetter: "K"
+}, {
+	cityName: "喀布尔",
+	citySpell: "KABUER",
+	"code": "KBL",
+	"countryCode": "AF",
+	"countryName": "阿富汗",
+	cityFirstLetter: "K"
+}, {
+	cityName: "库萨莫",
+	citySpell: "KUSAMO",
+	"code": "KAO",
+	"countryCode": "FI",
+	"countryName": "芬兰",
+	cityFirstLetter: "K"
+}, {
+	cityName: "卡劳帕帕",
+	citySpell: "KALAOPAPA",
+	"code": "LUP",
+	"countryCode": "US",
+	"countryName": "美国",
+	cityFirstLetter: "K"
+}, {
+	cityName: "卡利斯佩尔",
+	citySpell: "KALISIPEIER",
+	"code": "FCA",
+	"countryCode": "US",
+	"countryName": "美国",
+	cityFirstLetter: "K"
+}, {
+	cityName: "凯因蒂巴",
+	citySpell: "KAIYINDIBA",
+	"code": "KZF",
+	"countryCode": "PG",
+	"countryName": "巴布亚新几内亚",
+	cityFirstLetter: "K"
+}, {
+	cityName: "孔敬",
+	citySpell: "KONGJING",
+	"code": "KKC",
+	"countryCode": "TH",
+	"countryName": "泰国",
+	cityFirstLetter: "K"
+}, {
+	cityName: "凯厄纳",
+	citySpell: "KAIENA",
+	"code": "IAN",
+	"countryCode": "US",
+	"countryName": "美国",
+	cityFirstLetter: "K"
+}, {
+	cityName: "科尼亚",
+	citySpell: "KENIYA",
+	"code": "KYA",
+	"countryCode": "TR",
+	"countryName": "土耳其",
+	cityFirstLetter: "K"
+}, {
+	cityName: "科科拉",
+	citySpell: "KEKELA",
+	"code": "KOK",
+	"countryCode": "FI",
+	"countryName": "芬兰",
+	cityFirstLetter: "K"
+}, {
+	cityName: "坎德拉",
+	citySpell: "KANDELA",
+	"code": "CXN",
+	"countryCode": "SO",
+	"countryName": "索马里",
+	cityFirstLetter: "K"
+}, {
+	cityName: "喀山",
+	citySpell: "KASHAN",
+	"code": "KZN",
+	"countryCode": "RU",
+	"countryName": "俄罗斯",
+	cityFirstLetter: "K"
+}, {
+	cityName: "卡里亚库岛",
+	citySpell: "KALIYAKUDAO",
+	"code": "CRU",
+	"countryCode": "GD",
+	"countryName": "格林纳达",
+	cityFirstLetter: "K"
+}, {
+	cityName: "库拉穆图",
+	citySpell: "KULAMUTU",
+	"code": "KOU",
+	"countryCode": "GA",
+	"countryName": "加蓬",
+	cityFirstLetter: "K"
+}, {
+	cityName: "凯内马",
+	citySpell: "KAINEIMA",
+	"code": "KEN",
+	"countryCode": "SL",
+	"countryName": "塞拉利昂",
+	cityFirstLetter: "K"
+}, {
+	cityName: "卡够",
+	citySpell: "KAGOU",
+	"code": "KGE",
+	"countryCode": "SB",
+	"countryName": "所罗门群岛",
+	cityFirstLetter: "K"
+}, {
+	cityName: "卡萨甘尼史",
+	citySpell: "KASAGANNISHI",
+	"code": "YKQ",
+	"countryCode": "CA",
+	"countryName": "加拿大",
+	cityFirstLetter: "K"
+}, {
+	cityName: "科科岛",
+	citySpell: "KEKEDAO",
+	"code": "CCC",
+	"countryCode": "CU",
+	"countryName": "古巴",
+	cityFirstLetter: "K"
+}, {
+	cityName: "克勒因兹",
+	citySpell: "KELEYINZI",
+	"code": "KLZ",
+	"countryCode": "ZA",
+	"countryName": "南非",
+	cityFirstLetter: "K"
+}, {
+	cityName: "库奇",
+	citySpell: "KUQI",
+	"code": "COK",
+	"countryCode": "IN",
+	"countryName": "印度",
+	cityFirstLetter: "K"
+}, {
+	cityName: "卡卢加",
+	citySpell: "KALUJIA",
+	"code": "KLF",
+	"countryCode": "RU",
+	"countryName": "俄罗斯",
+	cityFirstLetter: "K"
+}, {
+	cityName: "卡纳维埃拉斯",
+	citySpell: "KANAWEIAILASI",
+	"code": "CNV",
+	"countryCode": "BR",
+	"countryName": "巴西",
+	cityFirstLetter: "K"
+}, {
+	cityName: "康沃尔",
+	citySpell: "KANGWOER",
+	"code": "YCC",
+	"countryCode": "CA",
+	"countryName": "加拿大",
+	cityFirstLetter: "K"
+}, {
+	cityName: "卡那封",
+	citySpell: "KANAFENG",
+	"code": "CVQ",
+	"countryCode": "AU",
+	"countryName": "澳大利亚",
+	cityFirstLetter: "K"
+}, {
+	cityName: "开普罗曼佐夫",
+	citySpell: "KAIPULUOMANZUOFU",
+	"code": "CZF",
+	"countryCode": "US",
+	"countryName": "美国",
+	cityFirstLetter: "K"
+}, {
+	cityName: "科利马",
+	citySpell: "KELIMA",
+	"code": "CLQ",
+	"countryCode": "MX",
+	"countryName": "墨西哥",
+	cityFirstLetter: "K"
+}, {
+	cityName: "科罗萨尔",
+	citySpell: "KELUOSAER",
+	"code": "CZH",
+	"countryCode": "BZ",
+	"countryName": "伯利兹",
+	cityFirstLetter: "K"
+}, {
+	cityName: "克罗斯莱克",
+	citySpell: "KELUOSILAIKE",
+	"code": "YCR",
+	"countryCode": "CA",
+	"countryName": "加拿大",
+	cityFirstLetter: "K"
+}, {
+	cityName: "昆哈加克",
+	citySpell: "KUNHAJIAKE",
+	"code": "KWN",
+	"countryCode": "US",
+	"countryName": "美国",
+	cityFirstLetter: "K"
+}, {
+	cityName: "凯涅巴",
+	citySpell: "KAINIEBA",
+	"code": "KNZ",
+	"countryCode": "ML",
+	"countryName": "马里",
+	cityFirstLetter: "K"
+}, {
+	cityName: "科英布拉",
+	citySpell: "KEYINGBULA",
+	"code": "CBP",
+	"countryCode": "PT",
+	"countryName": "葡萄牙",
+	cityFirstLetter: "K"
+}, {
+	cityName: "孔迪亚瓦",
+	citySpell: "KONGDIYAWA",
+	"code": "CMU",
+	"countryCode": "PG",
+	"countryName": "巴布亚新几内亚",
+	cityFirstLetter: "K"
+}, {
+	cityName: "考伊海格",
+	citySpell: "KAOYIHAIGE",
+	"code": "GXQ",
+	"countryCode": "CL",
+	"countryName": "智利",
+	cityFirstLetter: "K"
+}, {
+	cityName: "库弗拉",
+	citySpell: "KUFULA",
+	"code": "AKF",
+	"countryCode": "LY",
+	"countryName": "利比亚",
+	cityFirstLetter: "K"
+}, {
+	cityName: "卡尼亚",
+	citySpell: "KANIYA",
+	"code": "KAJ",
+	"countryCode": "FI",
+	"countryName": "芬兰",
+	cityFirstLetter: "K"
+}, {
+	cityName: "库里蒂巴",
+	citySpell: "KULIDIBA",
+	"code": "CWB",
+	"countryCode": "BR",
+	"countryName": "巴西",
+	cityFirstLetter: "K"
+}, {
+	cityName: "库塔伊西",
+	citySpell: "KUTAYIXI",
+	"code": "KUT",
+	"countryCode": "GE",
+	"countryName": "格鲁吉亚",
+	cityFirstLetter: "K"
+}, {
+	cityName: "卡伦布鲁",
+	citySpell: "KALUNBULU",
+	"code": "UBU",
+	"countryCode": "AU",
+	"countryName": "澳大利亚",
+	cityFirstLetter: "K"
+}, {
+	cityName: "库斯科",
+	citySpell: "KUSIKE",
+	"code": "CUZ",
+	"countryCode": "PE",
+	"countryName": "秘鲁",
+	cityFirstLetter: "K"
+}, {
+	cityName: "科科纳特岛",
+	citySpell: "KEKENATEDAO",
+	"code": "CNC",
+	"countryCode": "AU",
+	"countryName": "澳大利亚",
+	cityFirstLetter: "K"
+}, {
+	cityName: "开普珀尔",
+	citySpell: "KAIPUPOER",
+	"code": "CZP",
+	"countryCode": "US",
+	"countryName": "美国",
+	cityFirstLetter: "K"
+}, {
+	cityName: "科纳",
+	citySpell: "KENA",
+	"code": "KOA",
+	"countryCode": "US",
+	"countryName": "美国",
+	cityFirstLetter: "K"
+}, {
+	cityName: "库利亚布",
+	citySpell: "KULIYABU",
+	"code": "TJU",
+	"countryCode": "TJ",
+	"countryName": "塔吉克斯坦",
+	cityFirstLetter: "K"
+}, {
+	cityName: "卡姆也拉",
+	citySpell: "KAMUYELA",
+	"code": "MUE",
+	"countryCode": "US",
+	"countryName": "美国",
+	cityFirstLetter: "K"
+}, {
+	cityName: "克雷斯提德挽巴特",
+	citySpell: "KELEISITIDEWANBATE",
+	"code": "CSE",
+	"countryCode": "US",
+	"countryName": "美国",
+	cityFirstLetter: "K"
+}, {
+	cityName: "卡克霍纳克",
+	citySpell: "KAKEHUONAKE",
+	"code": "KNK",
+	"countryCode": "US",
+	"countryName": "美国",
+	cityFirstLetter: "K"
+}, {
+	cityName: "科达伦",
+	citySpell: "KEDALUN",
+	"code": "COE",
+	"countryCode": "US",
+	"countryName": "美国",
+	cityFirstLetter: "K"
+}, {
+	cityName: "康英克斯",
+	citySpell: "KANGYINGKESI",
+	"code": "YQQ",
+	"countryCode": "CA",
+	"countryName": "加拿大",
+	cityFirstLetter: "K"
+}, {
+	cityName: "库里亚",
+	citySpell: "KULIYA",
+	"code": "KUC",
+	"countryCode": "KI",
+	"countryName": "基里巴斯",
+	cityFirstLetter: "K"
+}, {
+	cityName: "克久拉霍",
+	citySpell: "KEJIULAHUO",
+	"code": "HJR",
+	"countryCode": "IN",
+	"countryName": "印度",
+	cityFirstLetter: "K"
+}, {
+	cityName: "卡利马",
+	citySpell: "KALIMA",
+	"code": "KLY",
+	"countryCode": "CD",
+	"countryName": "刚果民主共和国",
+	cityFirstLetter: "K"
+}, {
+	cityName: "克拉克斯波因特",
+	citySpell: "KELAKESIBOYINTE",
+	"code": "CLP",
+	"countryCode": "US",
+	"countryName": "美国",
+	cityFirstLetter: "K"
+}, {
+	cityName: "宽陶",
+	citySpell: "KUANTAO",
+	"code": "YQC",
+	"countryCode": "CA",
+	"countryName": "加拿大",
+	cityFirstLetter: "K"
+}, {
+	cityName: "卡塔劳",
+	citySpell: "KATALAO",
+	"code": "TLZ",
+	"countryCode": "BR",
+	"countryName": "巴西",
+	cityFirstLetter: "K"
+}, {
+	cityName: "克罗伊登",
+	citySpell: "KELUOYIDENG",
+	"code": "CDQ",
+	"countryCode": "AU",
+	"countryName": "澳大利亚",
+	cityFirstLetter: "K"
+}, {
+	cityName: "凯卡拉",
+	citySpell: "KAIKALA",
+	"code": "CXA",
+	"countryCode": "VE",
+	"countryName": "委内瑞拉",
+	cityFirstLetter: "K"
+}, {
+	cityName: "坎德拉",
+	citySpell: "KANDELA",
+	"code": "IXY",
+	"countryCode": "IN",
+	"countryName": "印度",
+	cityFirstLetter: "K"
+}, {
+	cityName: "克拉特夫",
+	citySpell: "KELATEFU",
+	"code": "KRK",
+	"countryCode": "PL",
+	"countryName": "波兰",
+	cityFirstLetter: "K"
+}, {
+	cityName: "库克斯港",
+	citySpell: "KUKESIGANG",
+	"code": "FCN",
+	"countryCode": "DE",
+	"countryName": "德国",
+	cityFirstLetter: "K"
+}, {
+	cityName: "克鲁兹",
+	citySpell: "KELUZI",
+	"code": "JJD",
+	"countryCode": "BR",
+	"countryName": "巴西",
+	cityFirstLetter: "K"
+}, {
+	cityName: "康提",
+	citySpell: "KANGTI",
+	"code": "KDW",
+	"countryCode": "LK",
+	"countryName": "斯里兰卡",
+	cityFirstLetter: "K"
+}, {
+	cityName: "Kauehi",
+	citySpell: "KAUEHI",
+	"code": "KHZ",
+	"countryCode": "PF",
+	"countryName": "法属波利尼西亚",
+	cityFirstLetter: "K"
+}, {
+	cityName: "卡诺",
+	citySpell: "KANUO",
+	"code": "CRF",
+	"countryCode": "CF",
+	"countryName": "中非",
+	cityFirstLetter: "K"
+}, {
+	cityName: "卡米什利",
+	citySpell: "KAMISHILI",
+	"code": "KAC",
+	"countryCode": "SY",
+	"countryName": "叙利亚",
+	cityFirstLetter: "K"
+}, {
+	cityName: "卡尔希",
+	citySpell: "KAERXI",
+	"code": "KSQ",
+	"countryCode": "UZ",
+	"countryName": "乌兹别克斯坦",
+	cityFirstLetter: "K"
+}, {
+	cityName: "库达特",
+	citySpell: "KUDATE",
+	"code": "KUD",
+	"countryCode": "MY",
+	"countryName": "马来西亚",
+	cityFirstLetter: "K"
+}, {
+	cityName: "克莱德河",
+	citySpell: "KELAIDEHE",
+	"code": "YCY",
+	"countryCode": "CA",
+	"countryName": "加拿大",
+	cityFirstLetter: "K"
+}, {
+	cityName: "昆卡",
+	citySpell: "KUNKA",
+	"code": "CUE",
+	"countryCode": "EC",
+	"countryName": "厄瓜多尔",
+	cityFirstLetter: "K"
+}, {
+	cityName: "科内",
+	citySpell: "KENEI",
+	"code": "KNQ",
+	"countryCode": "NC",
+	"countryName": "新喀里多尼亚（太平洋）",
+	cityFirstLetter: "K"
+}, {
+	cityName: "科林斯维尔",
+	citySpell: "KELINSIWEIER",
+	"code": "KCE",
+	"countryCode": "AU",
+	"countryName": "澳大利亚",
+	cityFirstLetter: "K"
+}, {
+	cityName: "克麦罗沃",
+	citySpell: "KEMAILUOWO",
+	"code": "KEJ",
+	"countryCode": "RU",
+	"countryName": "俄罗斯",
+	cityFirstLetter: "K"
+}, {
+	cityName: "廓尔喀",
+	citySpell: "KUOERKA",
+	"code": "GKH",
+	"countryCode": "NP",
+	"countryName": "尼泊尔",
+	cityFirstLetter: "K"
+}, {
+	cityName: "库埃",
+	citySpell: "KUAI",
+	"code": "CUY",
+	"countryCode": "AU",
+	"countryName": "澳大利亚",
+	cityFirstLetter: "K"
+}, {
+	cityName: "昆都士",
+	citySpell: "KUNDUSHI",
+	"code": "UND",
+	"countryCode": "AF",
+	"countryName": "阿富汗",
+	cityFirstLetter: "K"
+}, {
+	cityName: "康康",
+	citySpell: "KANGKANG",
+	"code": "KNN",
+	"countryCode": "GN",
+	"countryName": "几内亚",
+	cityFirstLetter: "K"
+}, {
+	cityName: "科尔马",
+	citySpell: "KEERMA",
+	"code": "CMR",
+	"countryCode": "FR",
+	"countryName": "法国",
+	cityFirstLetter: "K"
+}, {
+	cityName: "卡里巴",
+	citySpell: "KALIBA",
+	"code": "KAB",
+	"countryCode": "ZW",
+	"countryName": "津巴布韦",
+	cityFirstLetter: "K"
+}, {
+	cityName: "卡姆莱",
+	citySpell: "KAMULAI",
+	"code": "KAQ",
+	"countryCode": "PG",
+	"countryName": "巴布亚新几内亚",
+	cityFirstLetter: "K"
+}, {
+	cityName: "坎卢普斯",
+	citySpell: "KANLUPUSI",
+	"code": "YKA",
+	"countryCode": "CA",
+	"countryName": "加拿大",
+	cityFirstLetter: "K"
+}, {
+	cityName: "凯马纳",
+	citySpell: "KAIMANA",
+	"code": "KNG",
+	"countryCode": "ID",
+	"countryName": "印度尼西亚",
+	cityFirstLetter: "K"
+}, {
+	cityName: "卡纳巴",
+	citySpell: "KANABA",
+	"code": "KNB",
+	"countryCode": "US",
+	"countryName": "美国",
+	cityFirstLetter: "K"
+}, {
+	cityName: "卡利",
+	citySpell: "KALI",
+	"code": "CLO",
+	"countryCode": "CO",
+	"countryName": "哥伦比亚",
+	cityFirstLetter: "K"
+}, {
+	cityName: "科尔德湖",
+	citySpell: "KEERDEHU",
+	"code": "YOD",
+	"countryCode": "CA",
+	"countryName": "加拿大",
+	cityFirstLetter: "K"
+}, {
+	cityName: "科塔",
+	citySpell: "KETA",
+	"code": "KTU",
+	"countryCode": "IN",
+	"countryName": "印度",
+	cityFirstLetter: "K"
+}, {
+	cityName: "卡塞尔",
+	citySpell: "KASAIER",
+	"code": "KSF",
+	"countryCode": "DE",
+	"countryName": "德国",
+	cityFirstLetter: "K"
+}, {
+	cityName: "肯多伯冷",
+	citySpell: "KENDUOBOLENG",
+	"code": "CBX",
+	"countryCode": "AU",
+	"countryName": "澳大利亚",
+	cityFirstLetter: "K"
+}, {
+	cityName: "卡诺比",
+	citySpell: "KANUOBI",
+	"code": "CBY",
+	"countryCode": "AU",
+	"countryName": "澳大利亚",
+	cityFirstLetter: "K"
+}, {
+	cityName: "刻赤",
+	citySpell: "KECHI",
+	"code": "KHC",
+	"countryCode": "UA",
+	"countryName": "乌克兰",
+	cityFirstLetter: "K"
+}, {
+	cityName: "克拉斯诺达尔",
+	citySpell: "KELASINUODAER",
+	"code": "KRR",
+	"countryCode": "RU",
+	"countryName": "俄罗斯",
+	cityFirstLetter: "K"
+}, {
+	cityName: "克拉瓦克",
+	citySpell: "KELAWAKE",
+	"code": "KLW",
+	"countryCode": "US",
+	"countryName": "美国",
+	cityFirstLetter: "K"
+}, {
+	cityName: "卡斯特罗市",
+	citySpell: "KASITELUOSHI",
+	"code": "WCA",
+	"countryCode": "CL",
+	"countryName": "智利",
+	cityFirstLetter: "K"
+}, {
+	cityName: "科恩岛",
+	citySpell: "KEENDAO",
+	"code": "RNI",
+	"countryCode": "NI",
+	"countryName": "尼加拉瓜",
+	cityFirstLetter: "K"
+}, {
+	cityName: "坎昆",
+	citySpell: "KANKUN",
+	"code": "CUN",
+	"countryCode": "MX",
+	"countryName": "墨西哥",
+	cityFirstLetter: "K"
+}, {
+	cityName: "卡斯特洛里佐",
+	citySpell: "KASITELUOLIZUO",
+	"code": "KZS",
+	"countryCode": "GR",
+	"countryName": "希腊",
+	cityFirstLetter: "K"
+}, {
+	cityName: "卡努安岛",
+	citySpell: "KANUANDAO",
+	"code": "CIW",
+	"countryCode": "VC",
+	"countryName": "圣文森特和格林纳丁斯",
+	cityFirstLetter: "K"
+}, {
+	cityName: "柯克斯维尔",
+	citySpell: "KEKESIWEIER",
+	"code": "IRK",
+	"countryCode": "US",
+	"countryName": "美国",
+	cityFirstLetter: "K"
+}, {
+	cityName: "凯恩图尔",
+	citySpell: "KAIENTUER",
+	"code": "KAI",
+	"countryCode": "GY",
+	"countryName": "圭亚那",
+	cityFirstLetter: "K"
+}, {
+	cityName: "克罗斯韦尔",
+	citySpell: "KELUOSIWEIER",
+	"code": "CSV",
+	"countryCode": "US",
+	"countryName": "美国",
+	cityFirstLetter: "K"
+}, {
+	cityName: "科恰班巴",
+	citySpell: "KEQIABANBA",
+	"code": "CBB",
+	"countryCode": "BO",
+	"countryName": "玻利维亚",
+	cityFirstLetter: "K"
+}, {
+	cityName: "克利夫顿希尔斯",
+	citySpell: "KELIFUDUNXIERSI",
+	"code": "CFH",
+	"countryCode": "AU",
+	"countryName": "澳大利亚",
+	cityFirstLetter: "K"
+}, {
+	cityName: "凯杜古",
+	citySpell: "KAIDUGU",
+	"code": "KGG",
+	"countryCode": "SN",
+	"countryName": "塞内加尔",
+	cityFirstLetter: "K"
+}, {
+	cityName: "克莱克斯多普",
+	citySpell: "KELAIKESIDUOPU",
+	"code": "KXE",
+	"countryCode": "ZA",
+	"countryName": "南非",
+	cityFirstLetter: "K"
+}, {
+	cityName: "卡瓜",
+	citySpell: "KAGUA",
+	"code": "AGK",
+	"countryCode": "PG",
+	"countryName": "巴布亚新几内亚",
+	cityFirstLetter: "K"
+}, {
+	cityName: "克利尔湖",
+	citySpell: "KELIERHU",
+	"code": "CKE",
+	"countryCode": "US",
+	"countryName": "美国",
+	cityFirstLetter: "K"
+}, {
+	cityName: "卡拉瓦里",
+	citySpell: "KALAWALI",
+	"code": "KRJ",
+	"countryCode": "PG",
+	"countryName": "巴布亚新几内亚",
+	cityFirstLetter: "K"
+}, {
+	cityName: "科迪洛",
+	citySpell: "KEDILUO",
+	"code": "ODL",
+	"countryCode": "AU",
+	"countryName": "澳大利亚",
+	cityFirstLetter: "K"
+}, {
+	cityName: "卡尔斯塔德",
+	citySpell: "KAERSITADE",
+	"code": "KSD",
+	"countryCode": "SE",
+	"countryName": "瑞典",
+	cityFirstLetter: "K"
+}, {
+	cityName: "卡斯尔加",
+	citySpell: "KASIERJIA",
+	"code": "YCG",
+	"countryCode": "CA",
+	"countryName": "加拿大",
+	cityFirstLetter: "K"
+}, {
+	cityName: "卡潘加",
+	citySpell: "KAPANJIA",
+	"code": "KAP",
+	"countryCode": "CD",
+	"countryName": "刚果民主共和国",
+	cityFirstLetter: "K"
+}, {
+	cityName: "卡卜里达尔",
+	citySpell: "KABOLIDAER",
+	"code": "ABK",
+	"countryCode": "ET",
+	"countryName": "埃塞俄比亚",
+	cityFirstLetter: "K"
+}, {
+	cityName: "克维纳",
+	citySpell: "KEWEINA",
+	"code": "KWV",
+	"countryCode": "PG",
+	"countryName": "巴布亚新几内亚",
+	cityFirstLetter: "K"
+}, {
+	cityName: "坎甘巴",
+	citySpell: "KANGANBA",
+	"code": "CNZ",
+	"countryCode": "AO",
+	"countryName": "安哥拉",
+	cityFirstLetter: "K"
+}, {
+	cityName: "库马克",
+	citySpell: "KUMAKE",
+	"code": "KOC",
+	"countryCode": "NC",
+	"countryName": "新喀里多尼亚（太平洋）",
+	cityFirstLetter: "K"
+}, {
+	cityName: "克孜勒奥尔达",
+	citySpell: "KEZILEAOERDA",
+	"code": "KZO",
+	"countryCode": "KZ",
+	"countryName": "哈萨克斯坦",
+	cityFirstLetter: "K"
+}, {
+	cityName: "科罗莱武",
+	citySpell: "KELUOLAIWU",
+	"code": "KVU",
+	"countryCode": "FJ",
+	"countryName": "斐济群岛",
+	cityFirstLetter: "K"
+}, {
+	cityName: "科托努",
+	citySpell: "KETUONU",
+	"code": "COO",
+	"countryCode": "BJ",
+	"countryName": "贝宁",
+	cityFirstLetter: "K"
+}, {
+	cityName: "科恩",
+	citySpell: "KEEN",
+	"code": "CUQ",
+	"countryCode": "AU",
+	"countryName": "澳大利亚",
+	cityFirstLetter: "K"
+}, {
+	cityName: "卡布罗卓",
+	citySpell: "KABULUOZHUO",
+	"code": "CBJ",
+	"countryCode": "DO",
+	"countryName": "多米尼加",
+	cityFirstLetter: "K"
+}, {
+	cityName: "卡塔马尔卡",
+	citySpell: "KATAMAERKA",
+	"code": "CTC",
+	"countryCode": "AR",
+	"countryName": "阿根廷",
+	cityFirstLetter: "K"
+}, {
+	cityName: "卡斯特尔",
+	citySpell: "KASITEER",
+	"code": "DCM",
+	"countryCode": "FR",
+	"countryName": "法国",
+	cityFirstLetter: "K"
+}, {
+	cityName: "考卡西亚",
+	citySpell: "KAOKAXIYA",
+	"code": "CAQ",
+	"countryCode": "CO",
+	"countryName": "哥伦比亚",
+	cityFirstLetter: "K"
+}, {
+	cityName: "科罗岛",
+	citySpell: "KELUODAO",
+	"code": "KXF",
+	"countryCode": "FJ",
+	"countryName": "斐济群岛",
+	cityFirstLetter: "K"
+}, {
+	cityName: "坎佩切",
+	citySpell: "KANPEIQIE",
+	"code": "CPE",
+	"countryCode": "MX",
+	"countryName": "墨西哥",
+	cityFirstLetter: "K"
+}, {
+	cityName: "库利阿坎",
+	citySpell: "KULIAKAN",
+	"code": "CUL",
+	"countryCode": "MX",
+	"countryName": "墨西哥",
+	cityFirstLetter: "K"
+}, {
+	cityName: "考拉克",
+	citySpell: "KAOLAKE",
+	"code": "KLC",
+	"countryCode": "SN",
+	"countryName": "塞内加尔",
+	cityFirstLetter: "K"
+}, {
+	cityName: "康斯提丘恩城",
+	citySpell: "KANGSITIQIUENCHENG",
+	"code": "CUA",
+	"countryCode": "MX",
+	"countryName": "墨西哥",
+	cityFirstLetter: "K"
+}, {
+	cityName: "克莱蒙费朗",
+	citySpell: "KELAIMENGFEILANG",
+	"code": "CFE",
+	"countryCode": "FR",
+	"countryName": "法国",
+	cityFirstLetter: "K"
+}, {
+	cityName: "科尔德湾",
+	citySpell: "KEERDEWAN",
+	"code": "CDB",
+	"countryCode": "US",
+	"countryName": "美国",
+	cityFirstLetter: "K"
+}, {
+	cityName: "科克",
+	citySpell: "KEKE",
+	"code": "ORK",
+	"countryCode": "IE",
+	"countryName": "爱尔兰",
+	cityFirstLetter: "K"
+}, {
+	cityName: "柯林斯堡/拉夫兰",
+	citySpell: "KELINSIBAO/LAFULAN",
+	"code": "FNL",
+	"countryCode": "US",
+	"countryName": "美国",
+	cityFirstLetter: "K"
+}, {
+	cityName: "克拉姆福什",
+	citySpell: "KELAMUFUSHI",
+	"code": "KRF",
+	"countryCode": "SE",
+	"countryName": "瑞典",
+	cityFirstLetter: "K"
+}, {
+	cityName: "卡鲁帕诺",
+	citySpell: "KALUPANUO",
+	"code": "CUP",
+	"countryCode": "VE",
+	"countryName": "委内瑞拉",
+	cityFirstLetter: "K"
+}, {
+	cityName: "克罗托内",
+	citySpell: "KELUOTUONEI",
+	"code": "CRV",
+	"countryCode": "IT",
+	"countryName": "意大利",
+	cityFirstLetter: "K"
+}, {
+	cityName: "库马",
+	citySpell: "KUMA",
+	"code": "OOM",
+	"countryCode": "AU",
+	"countryName": "澳大利亚",
+	cityFirstLetter: "K"
+}, {
+	cityName: "考哈瓦",
+	citySpell: "KAOHAWA",
+	"code": "KAU",
+	"countryCode": "FI",
+	"countryName": "芬兰",
+	cityFirstLetter: "K"
+}, {
+	cityName: "卡利亚里",
+	citySpell: "KALIYALI",
+	"code": "CAG",
+	"countryCode": "IT",
+	"countryName": "意大利",
+	cityFirstLetter: "K"
+}, {
+	cityName: "科内利乌挽普罗科皮乌",
+	citySpell: "KENEILIWUWANPULUOKEPIWU",
+	"code": "CKO",
+	"countryCode": "BR",
+	"countryName": "巴西",
+	cityFirstLetter: "K"
+}, {
+	cityName: "卡布武姆",
+	citySpell: "KABUWUMU",
+	"code": "KBM",
+	"countryCode": "PG",
+	"countryName": "巴布亚新几内亚",
+	cityFirstLetter: "K"
+}, {
+	cityName: "卡西古阿",
+	citySpell: "KAXIGUA",
+	"code": "CUV",
+	"countryCode": "VE",
+	"countryName": "委内瑞拉",
+	cityFirstLetter: "K"
+}, {
+	cityName: "科罗曼德尔",
+	citySpell: "KELUOMANDEER",
+	"code": "CMV",
+	"countryCode": "NZ",
+	"countryName": "新西兰",
+	cityFirstLetter: "K"
+}, {
+	cityName: "库拉索",
+	citySpell: "KULASUO",
+	"code": "CUR",
+	"countryCode": "CW",
+	"countryName": "库拉索岛",
+	cityFirstLetter: "K"
+}, {
+	cityName: "卡拉沃索",
+	citySpell: "KALAWOSUO",
+	"code": "CLZ",
+	"countryCode": "VE",
+	"countryName": "委内瑞拉",
+	cityFirstLetter: "K"
+}, {
+	cityName: "卡克岛",
+	citySpell: "KAKEDAO",
+	"code": "KHK",
+	"countryCode": "IR",
+	"countryName": "伊朗",
+	cityFirstLetter: "K"
+}, {
+	cityName: "克雷申特城",
+	citySpell: "KELEISHENTECHENG",
+	"code": "CEC",
+	"countryCode": "US",
+	"countryName": "美国",
+	cityFirstLetter: "K"
+}, {
+	cityName: "魁斯内尔",
+	citySpell: "KUISINEIER",
+	"code": "YQZ",
+	"countryCode": "CA",
+	"countryName": "加拿大",
+	cityFirstLetter: "K"
+}, {
+	cityName: "卡瓦列罗沃",
+	citySpell: "KAWALIELUOWO",
+	"code": "KVR",
+	"countryCode": "RU",
+	"countryName": "俄罗斯",
+	cityFirstLetter: "K"
+}, {
+	cityName: "科维哈",
+	citySpell: "KEWEIHA",
+	"code": "CIJ",
+	"countryCode": "BO",
+	"countryName": "玻利维亚",
+	cityFirstLetter: "K"
+}, {
+	cityName: "卡库尔",
+	citySpell: "KAKUER",
+	"code": "OAL",
+	"countryCode": "BR",
+	"countryName": "巴西",
+	cityFirstLetter: "K"
+}, {
+	cityName: "库德旺纳",
+	citySpell: "KUDEWANGNA",
+	"code": "CJF",
+	"countryCode": "AU",
+	"countryName": "澳大利亚",
+	cityFirstLetter: "K"
+}, {
+	cityName: "库尔瑟维尔",
+	citySpell: "KUERSEWEIER",
+	"code": "CVF",
+	"countryCode": "FR",
+	"countryName": "法国",
+	cityFirstLetter: "K"
+}, {
+	cityName: "科罗萨尔",
+	citySpell: "KELUOSAER",
+	"code": "CZU",
+	"countryCode": "CO",
+	"countryName": "哥伦比亚",
+	cityFirstLetter: "K"
+}, {
+	cityName: "库宾岛",
+	citySpell: "KUBINDAO",
+	"code": "KUG",
+	"countryCode": "AU",
+	"countryName": "澳大利亚",
+	cityFirstLetter: "K"
+}, {
+	cityName: "库马纳",
+	citySpell: "KUMANA",
+	"code": "CUM",
+	"countryCode": "VE",
+	"countryName": "委内瑞拉",
+	cityFirstLetter: "K"
+}, {
+	cityName: "卡西诺",
+	citySpell: "KAXINUO",
+	"code": "CSI",
+	"countryCode": "AU",
+	"countryName": "澳大利亚",
+	cityFirstLetter: "K"
+}, {
+	cityName: "坎迪",
+	citySpell: "KANDI",
+	"code": "KDC",
+	"countryCode": "BJ",
+	"countryName": "贝宁",
+	cityFirstLetter: "K"
+}, {
+	cityName: "凯库赫",
+	citySpell: "KAIKUHE",
+	"code": "KKO",
+	"countryCode": "NZ",
+	"countryName": "新西兰",
+	cityFirstLetter: "K"
+}, {
+	cityName: "科科拉",
+	citySpell: "KEKELA",
+	"code": "KOR",
+	"countryCode": "PG",
+	"countryName": "巴布亚新几内亚",
+	cityFirstLetter: "K"
+}, {
+	cityName: "科洛尼亚挽卡特里尔",
+	citySpell: "KELUONIYAWANKATELIER",
+	"code": "CCT",
+	"countryCode": "AR",
+	"countryName": "阿根廷",
+	cityFirstLetter: "K"
+}, {
+	cityName: "开普吉拉多",
+	citySpell: "KAIPUJILADUO",
+	"code": "CGI",
+	"countryCode": "US",
+	"countryName": "美国",
+	cityFirstLetter: "K"
+}, {
+	cityName: "科科斯群岛",
+	citySpell: "KEKESIQUNDAO",
+	"code": "CCK",
+	"countryCode": "CC",
+	"countryName": "(澳大利亚)科科斯(基林)群岛",
+	cityFirstLetter: "K"
+}, {
+	cityName: "坎大哈",
+	citySpell: "KANDAHA",
+	"code": "KDH",
+	"countryCode": "AF",
+	"countryName": "阿富汗",
+	cityFirstLetter: "K"
+}, {
+	cityName: "卡利博",
+	citySpell: "KALIBO",
+	"code": "KLO",
+	"countryCode": "PH",
+	"countryName": "菲律宾",
+	cityFirstLetter: "K"
+}, {
+	cityName: "坎顿岛",
+	citySpell: "KANDUNDAO",
+	"code": "CIS",
+	"countryCode": "KI",
+	"countryName": "基里巴斯",
+	cityFirstLetter: "K"
+}, {
+	cityName: "卡托",
+	citySpell: "KATUO",
+	"code": "KTO",
+	"countryCode": "GY",
+	"countryName": "圭亚那",
+	cityFirstLetter: "K"
+}, {
+	cityName: "科尔多瓦",
+	citySpell: "KEERDUOWA",
+	"code": "ODB",
+	"countryCode": "ES",
+	"countryName": "西班牙",
+	cityFirstLetter: "K"
+}, {
+	cityName: "卡克塔尼亚",
+	citySpell: "KAKETANIYA",
+	"code": "CQT",
+	"countryCode": "CO",
+	"countryName": "哥伦比亚",
+	cityFirstLetter: "K"
+}, {
+	cityName: "卡本代尔",
+	citySpell: "KABENDAIER",
+	"code": "MDH",
+	"countryCode": "US",
+	"countryName": "美国",
+	cityFirstLetter: "K"
+}, {
+	cityName: "克雷西阿马",
+	citySpell: "KELEIXIAMA",
+	"code": "CCM",
+	"countryCode": "BR",
+	"countryName": "巴西",
+	cityFirstLetter: "K"
+}, {
+	cityName: "卡宴",
+	citySpell: "KAYAN",
+	"code": "CAY",
+	"countryCode": "GF",
+	"countryName": "法属圭亚那",
+	cityFirstLetter: "K"
+}, {
+	cityName: "卡尔斯巴德",
+	citySpell: "KAERSIBADE",
+	"code": "CNM",
+	"countryCode": "US",
+	"countryName": "美国",
+	cityFirstLetter: "K"
+}, {
+	cityName: "卡加延德奥罗",
+	citySpell: "KAJIAYANDEAOLUO",
+	"code": "CGY",
+	"countryCode": "PH",
+	"countryName": "菲律宾",
+	cityFirstLetter: "K"
+}, {
+	cityName: "克里斯蒂安桑",
+	citySpell: "KELISIDIANSANG",
+	"code": "KRS",
+	"countryCode": "NO",
+	"countryName": "挪威",
+	cityFirstLetter: "K"
+}, {
+	cityName: "科尔多瓦",
+	citySpell: "KEERDUOWA",
+	"code": "COR",
+	"countryCode": "AR",
+	"countryName": "阿根廷",
+	cityFirstLetter: "K"
+}, {
+	cityName: "库多岛",
+	citySpell: "KUDUODAO",
+	"code": "GKK",
+	"countryCode": "MV",
+	"countryName": "马尔代夫",
+	cityFirstLetter: "K"
+}, {
+	cityName: "克加利姆",
+	citySpell: "KEJIALIMU",
+	"code": "KGP",
+	"countryCode": "RU",
+	"countryName": "俄罗斯",
+	cityFirstLetter: "K"
+}, {
+	cityName: "奎吉林戈克",
+	citySpell: "KUIJILINGEKE",
+	"code": "KWK",
+	"countryCode": "US",
+	"countryName": "美国",
+	cityFirstLetter: "K"
+}, {
+	cityName: "康斯坦察",
+	citySpell: "KANGSITANCHA",
+	"code": "CND",
+	"countryCode": "RO",
+	"countryName": "罗马尼亚",
+	cityFirstLetter: "K"
+}, {
+	cityName: "科伯斯凯尔",
+	citySpell: "KEBOSIKAIER",
+	"code": "OPA",
+	"countryCode": "IS",
+	"countryName": "冰岛",
+	cityFirstLetter: "K"
+}, {
+	cityName: "康塞普西翁",
+	citySpell: "KANGSAIPUXIWENG",
+	"code": "CCP",
+	"countryCode": "CL",
+	"countryName": "智利",
+	cityFirstLetter: "K"
+}, {
+	cityName: "卡拉干达",
+	citySpell: "KALAGANDA",
+	"code": "KGF",
+	"countryCode": "KZ",
+	"countryName": "哈萨克斯坦",
+	cityFirstLetter: "K"
+}, {
+	cityName: "卡塞塞",
+	citySpell: "KASAISAI",
+	"code": "KSE",
+	"countryCode": "UG",
+	"countryName": "乌干达",
+	cityFirstLetter: "K"
+}, {
+	cityName: "库达胡瓦杜",
+	citySpell: "KUDAHUWADU",
+	"code": "DDD",
+	"countryCode": "MV",
+	"countryName": "马尔代夫",
+	cityFirstLetter: "K"
+}, {
+	cityName: "卡哈马尔卡",
+	citySpell: "KAHAMAERKA",
+	"code": "CJA",
+	"countryCode": "PE",
+	"countryName": "秘鲁",
+	cityFirstLetter: "K"
+}, {
+	cityName: "克拉福",
+	citySpell: "KELAFU",
+	"code": "LFO",
+	"countryCode": "ET",
+	"countryName": "埃塞俄比亚",
+	cityFirstLetter: "K"
+}, {
+	cityName: "科希策",
+	citySpell: "KEXICE",
+	"code": "KSC",
+	"countryCode": "SK",
+	"countryName": "斯洛伐克",
+	cityFirstLetter: "K"
+}, {
+	cityName: "库德贾德",
+	citySpell: "KUDEJIADE",
+	"code": "LBD",
+	"countryCode": "TJ",
+	"countryName": "塔吉克斯坦",
+	cityFirstLetter: "K"
+}, {
+	cityName: "科尔武岛",
+	citySpell: "KEERWUDAO",
+	"code": "CVU",
+	"countryCode": "PT",
+	"countryName": "葡萄牙",
+	cityFirstLetter: "K"
+}, {
+	cityName: "坎皮纳格拉德",
+	citySpell: "KANPINAGELADE",
+	"code": "CPV",
+	"countryCode": "BR",
+	"countryName": "巴西",
+	cityFirstLetter: "K"
+}, {
+	cityName: "卡劳阿里",
+	citySpell: "KALAOALI",
+	"code": "CAF",
+	"countryCode": "BR",
+	"countryName": "巴西",
+	cityFirstLetter: "K"
+}, {
+	cityName: "康塔多拉",
+	citySpell: "KANGTADUOLA",
+	"code": "OTD",
+	"countryCode": "PA",
+	"countryName": "巴拿马",
+	cityFirstLetter: "K"
+}, {
+	cityName: "卡昂",
+	citySpell: "KAANG",
+	"code": "CFR",
+	"countryCode": "FR",
+	"countryName": "法国",
+	cityFirstLetter: "K"
+}, {
+	cityName: "卡利姆诺斯",
+	citySpell: "KALIMUNUOSI",
+	"code": "JKL",
+	"countryCode": "GR",
+	"countryName": "希腊",
+	cityFirstLetter: "K"
+}, {
+	cityName: "肯普西",
+	citySpell: "KENPUXI",
+	"code": "KPS",
+	"countryCode": "AU",
+	"countryName": "澳大利亚",
+	cityFirstLetter: "K"
+}, {
+	cityName: "奎托夸纳瓦莱",
+	citySpell: "KUITUOKUANAWALAI",
+	"code": "CTI",
+	"countryCode": "AO",
+	"countryName": "安哥拉",
+	cityFirstLetter: "K"
+}, {
+	cityName: "卡米纳",
+	citySpell: "KAMINA",
+	"code": "KMN",
+	"countryCode": "CD",
+	"countryName": "刚果民主共和国",
+	cityFirstLetter: "K"
+}, {
+	cityName: "库达门德",
+	citySpell: "KUDAMENDE",
+	"code": "CMD",
+	"countryCode": "AU",
+	"countryName": "澳大利亚",
+	cityFirstLetter: "K"
+}, {
+	cityName: "库马西",
+	citySpell: "KUMAXI",
+	"code": "KMS",
+	"countryCode": "GH",
+	"countryName": "加纳",
+	cityFirstLetter: "K"
+}, {
+	cityName: "科科达",
+	citySpell: "KEKEDA",
+	"code": "KKD",
+	"countryCode": "PG",
+	"countryName": "巴布亚新几内亚",
+	cityFirstLetter: "K"
+}, {
+	cityName: "柯克沃尔",
+	citySpell: "KEKEWOER",
+	"code": "KOI",
+	"countryCode": "GB",
+	"countryName": "英国",
+	cityFirstLetter: "K"
+}, {
+	cityName: "卡尔帕索斯",
+	citySpell: "KAERPASUOSI",
+	"code": "AOK",
+	"countryCode": "GR",
+	"countryName": "希腊",
+	cityFirstLetter: "K"
+}, {
+	cityName: "科龙巴",
+	citySpell: "KELONGBA",
+	"code": "CMG",
+	"countryCode": "BR",
+	"countryName": "巴西",
+	cityFirstLetter: "K"
+}, {
+	cityName: "库居阿尔阿皮克",
+	citySpell: "KUJUAERAPIKE",
+	"code": "YGW",
+	"countryCode": "CA",
+	"countryName": "加拿大",
+	cityFirstLetter: "K"
+}, {
+	cityName: "卡拉马",
+	citySpell: "KALAMA",
+	"code": "CJC",
+	"countryCode": "CL",
+	"countryName": "智利",
+	cityFirstLetter: "K"
+}, {
+	cityName: "科斯特罗马",
+	citySpell: "KESITELUOMA",
+	"code": "KMW",
+	"countryCode": "RU",
+	"countryName": "俄罗斯",
+	cityFirstLetter: "K"
+}, {
+	cityName: "科卡",
+	citySpell: "KEKA",
+	"code": "OCC",
+	"countryCode": "EC",
+	"countryName": "厄瓜多尔",
+	cityFirstLetter: "K"
+}, {
+	cityName: "科迪亚克",
+	citySpell: "KEDIYAKE",
+	"code": "ADQ",
+	"countryCode": "US",
+	"countryName": "美国",
+	cityFirstLetter: "K"
+}, {
+	cityName: "库克敦",
+	citySpell: "KUKEDUN",
+	"code": "CTN",
+	"countryCode": "AU",
+	"countryName": "澳大利亚",
+	cityFirstLetter: "K"
+}, {
+	cityName: "卡鲁塔佩拉",
+	citySpell: "KALUTAPEILA",
+	"code": "CTP",
+	"countryCode": "BR",
+	"countryName": "巴西",
+	cityFirstLetter: "K"
+}, {
+	cityName: "科伯克",
+	citySpell: "KEBOKE",
+	"code": "OBU",
+	"countryCode": "US",
+	"countryName": "美国",
+	cityFirstLetter: "K"
+}, {
+	cityName: "卡特莱克",
+	citySpell: "KATELAIKE",
+	"code": "YAC",
+	"countryCode": "CA",
+	"countryName": "加拿大",
+	cityFirstLetter: "K"
+}, {
+	cityName: "科特拉斯",
+	citySpell: "KETELASI",
+	"code": "KSZ",
+	"countryCode": "RU",
+	"countryName": "俄罗斯",
+	cityFirstLetter: "K"
+}, {
+	cityName: "凯劳",
+	citySpell: "KAILAO",
+	"code": "KRU",
+	"countryCode": "PG",
+	"countryName": "巴布亚新几内亚",
+	cityFirstLetter: "K"
+}, {
+	cityName: "卡斯卡韦尔",
+	citySpell: "KASIKAWEIER",
+	"code": "CAC",
+	"countryCode": "BR",
+	"countryName": "巴西",
+	cityFirstLetter: "K"
+}, {
+	cityName: "洛杉矶",
+	citySpell: "LUOSHANJI",
+	"code": "LAX",
+	"countryCode": "US",
+	"countryName": "美国",
+	cityFirstLetter: "L"
+}, {
+	cityName: "伦敦",
+	citySpell: "LUNDUN",
+	"code": "LON",
+	"countryCode": "GB",
+	"countryName": "英国",
+	cityFirstLetter: "L"
+}, {
+	cityName: "龙目岛",
+	citySpell: "LONGMUDAO",
+	"code": "LOP",
+	"countryCode": "ID",
+	"countryName": "印度尼西亚",
+	cityFirstLetter: "L"
+}, {
+	cityName: "罗马",
+	citySpell: "LUOMA",
+	"code": "RMA",
+	"countryCode": "AU",
+	"countryName": "澳大利亚",
+	cityFirstLetter: "L"
+}, {
+	cityName: "罗马",
+	citySpell: "LUOMA",
+	"code": "ROM",
+	"countryCode": "IT",
+	"countryName": "意大利",
+	cityFirstLetter: "L"
+}, {
+	cityName: "伦敦",
+	citySpell: "LUNDUN",
+	"code": "YXU",
+	"countryCode": "CA",
+	"countryName": "加拿大",
+	cityFirstLetter: "L"
+}, {
+	cityName: "鹿特丹",
+	citySpell: "LUTEDAN",
+	"code": "RTM",
+	"countryCode": "NL",
+	"countryName": "荷兰",
+	cityFirstLetter: "L"
+}, {
+	cityName: "莱贝尔苏尔奎维勒",
+	citySpell: "LAIBEIERSUERKUIWEILE",
+	"code": "YLS",
+	"countryCode": "CA",
+	"countryName": "加拿大",
+	cityFirstLetter: "L"
+}, {
+	cityName: "鲁鲁士岛",
+	citySpell: "LULUSHIDAO",
+	"code": "RUR",
+	"countryCode": "PF",
+	"countryName": "法属波利尼西亚",
+	cityFirstLetter: "L"
+}, {
+	cityName: "罗得岛",
+	citySpell: "LUODEDAO",
+	"code": "RHO",
+	"countryCode": "GR",
+	"countryName": "希腊",
+	cityFirstLetter: "L"
+}, {
+	cityName: "利耶帕亚",
+	citySpell: "LIYEPAYA",
+	"code": "LPX",
+	"countryCode": "LV",
+	"countryName": "拉托维亚",
+	cityFirstLetter: "L"
+}, {
+	cityName: "列日",
+	citySpell: "LIERI",
+	"code": "LGG",
+	"countryCode": "BE",
+	"countryName": "比利时",
+	cityFirstLetter: "L"
+}, {
+	cityName: "莱昂",
+	citySpell: "LAIANG",
+	"code": "LEN",
+	"countryCode": "ES",
+	"countryName": "西班牙",
+	cityFirstLetter: "L"
+}, {
+	cityName: "罗尔维克",
+	citySpell: "LUOERWEIKE",
+	"code": "RVK",
+	"countryCode": "NO",
+	"countryName": "挪威",
+	cityFirstLetter: "L"
+}, {
+	cityName: "林吉考夫",
+	citySpell: "LINJIKAOFU",
+	"code": "RIN",
+	"countryCode": "SB",
+	"countryName": "所罗门群岛",
+	cityFirstLetter: "L"
+}, {
+	cityName: "拉马尔",
+	citySpell: "LAMAER",
+	"code": "LAA",
+	"countryCode": "US",
+	"countryName": "美国",
+	cityFirstLetter: "L"
+}, {
+	cityName: "拉姆岛",
+	citySpell: "LAMUDAO",
+	"code": "RCY",
+	"countryCode": "BS",
+	"countryName": "巴哈马",
+	cityFirstLetter: "L"
+}, {
+	cityName: "拉克鲁斯",
+	citySpell: "LAKELUSI",
+	"code": "LSE",
+	"countryCode": "US",
+	"countryName": "美国",
+	cityFirstLetter: "L"
+}, {
+	cityName: "朗塞斯顿",
+	citySpell: "LANGSAISIDUN",
+	"code": "LST",
+	"countryCode": "AU",
+	"countryName": "澳大利亚",
+	cityFirstLetter: "L"
+}, {
+	cityName: "洛根",
+	citySpell: "LUOGEN",
+	"code": "LGU",
+	"countryCode": "US",
+	"countryName": "美国",
+	cityFirstLetter: "L"
+}, {
+	cityName: "勒雷赫",
+	citySpell: "LELEIHE",
+	"code": "LHI",
+	"countryCode": "ID",
+	"countryName": "印度尼西亚",
+	cityFirstLetter: "L"
+}, {
+	cityName: "莱塞",
+	citySpell: "LAISAI",
+	"code": "LNG",
+	"countryCode": "PG",
+	"countryName": "巴布亚新几内亚",
+	cityFirstLetter: "L"
+}, {
+	cityName: "拉什特",
+	citySpell: "LASHITE",
+	"code": "RAS",
+	"countryCode": "IR",
+	"countryName": "伊朗",
+	cityFirstLetter: "L"
+}, {
+	cityName: "拉利萨",
+	citySpell: "LALISA",
+	"code": "LRA",
+	"countryCode": "GR",
+	"countryName": "希腊",
+	cityFirstLetter: "L"
+}, {
+	cityName: "老乌鸦",
+	citySpell: "LAOWUYA",
+	"code": "YOC",
+	"countryCode": "CA",
+	"countryName": "加拿大",
+	cityFirstLetter: "L"
+}, {
+	cityName: "罗斯堡",
+	citySpell: "LUOSIBAO",
+	"code": "RBG",
+	"countryCode": "US",
+	"countryName": "美国",
+	cityFirstLetter: "L"
+}, {
+	cityName: "利辛加",
+	citySpell: "LIXINJIA",
+	"code": "VXC",
+	"countryCode": "MZ",
+	"countryName": "莫桑比克",
+	cityFirstLetter: "L"
+}, {
+	cityName: "拉克塞尔夫",
+	citySpell: "LAKESAIERFU",
+	"code": "LKL",
+	"countryCode": "NO",
+	"countryName": "挪威",
+	cityFirstLetter: "L"
+}, {
+	cityName: "莱特宁岭",
+	citySpell: "LAITENINGLING",
+	"code": "LHG",
+	"countryCode": "AU",
+	"countryName": "澳大利亚",
+	cityFirstLetter: "L"
+}, {
+	cityName: "兰帕特",
+	citySpell: "LANPATE",
+	"code": "RMP",
+	"countryCode": "US",
+	"countryName": "美国",
+	cityFirstLetter: "L"
+}, {
+	cityName: "洛斯麦努克斯",
+	citySpell: "LUOSIMAINUKESI",
+	"code": "LMD",
+	"countryCode": "AR",
+	"countryName": "阿根廷",
+	cityFirstLetter: "L"
+}, {
+	cityName: "莱昂斯港",
+	citySpell: "LAIANGSIGANG",
+	"code": "ORI",
+	"countryCode": "US",
+	"countryName": "美国",
+	cityFirstLetter: "L"
+}, {
+	cityName: "拉瓦格",
+	citySpell: "LAWAGE",
+	"code": "LAO",
+	"countryCode": "PH",
+	"countryName": "菲律宾",
+	cityFirstLetter: "L"
+}, {
+	cityName: "拉萨罗-卡德纳斯",
+	citySpell: "LASALUO-KADENASI",
+	"code": "LZC",
+	"countryCode": "MX",
+	"countryName": "墨西哥",
+	cityFirstLetter: "L"
+}, {
+	cityName: "吕勒奥",
+	citySpell: "LVLEAO",
+	"code": "LLA",
+	"countryCode": "SE",
+	"countryName": "瑞典",
+	cityFirstLetter: "L"
+}, {
+	cityName: "罗萨里奥",
+	citySpell: "LUOSALIAO",
+	"code": "ROS",
+	"countryCode": "AR",
+	"countryName": "阿根廷",
+	cityFirstLetter: "L"
+}, {
+	cityName: "里奥布朗库",
+	citySpell: "LIAOBULANGKU",
+	"code": "RBR",
+	"countryCode": "BR",
+	"countryName": "巴西",
+	cityFirstLetter: "L"
+}, {
+	cityName: "卢萨卡",
+	citySpell: "LUSAKA",
+	"code": "LUN",
+	"countryCode": "ZM",
+	"countryName": "赞比亚",
+	cityFirstLetter: "L"
+}, {
+	cityName: "罗克塞斯城",
+	citySpell: "LUOKESAISICHENG",
+	"code": "RXS",
+	"countryCode": "PH",
+	"countryName": "菲律宾",
+	cityFirstLetter: "L"
+}, {
+	cityName: "刘易斯敦",
+	citySpell: "LIUYISIDUN",
+	"code": "LWT",
+	"countryCode": "US",
+	"countryName": "美国",
+	cityFirstLetter: "L"
+}, {
+	cityName: "洛格罗尼奥",
+	citySpell: "LUOGELUONIAO",
+	"code": "RJL",
+	"countryCode": "ES",
+	"countryName": "西班牙",
+	cityFirstLetter: "L"
+}, {
+	cityName: "卢卡",
+	citySpell: "LUKA",
+	"code": "LCV",
+	"countryCode": "IT",
+	"countryName": "意大利",
+	cityFirstLetter: "L"
+}, {
+	cityName: "利赫尔岛",
+	citySpell: "LIHEERDAO",
+	"code": "LNV",
+	"countryCode": "PG",
+	"countryName": "巴布亚新几内亚",
+	cityFirstLetter: "L"
+}, {
+	cityName: "鲁雷纳瓦克",
+	citySpell: "LULEINAWAKE",
+	"code": "RBQ",
+	"countryCode": "BO",
+	"countryName": "玻利维亚",
+	cityFirstLetter: "L"
+}, {
+	cityName: "朗希尔",
+	citySpell: "LANGXIER",
+	"code": "LWH",
+	"countryCode": "AU",
+	"countryName": "澳大利亚",
+	cityFirstLetter: "L"
+}, {
+	cityName: "罗吉斯",
+	citySpell: "LUOJISI",
+	"code": "ROG",
+	"countryCode": "US",
+	"countryName": "美国",
+	cityFirstLetter: "L"
+}, {
+	cityName: "劳德代尔堡",
+	citySpell: "LAODEDAIERBAO",
+	"code": "FLL",
+	"countryCode": "US",
+	"countryName": "美国",
+	cityFirstLetter: "L"
+}, {
+	cityName: "里贾纳",
+	citySpell: "LIJIANA",
+	"code": "YQR",
+	"countryCode": "CA",
+	"countryName": "加拿大",
+	cityFirstLetter: "L"
+}, {
+	cityName: "罗斯福",
+	citySpell: "LUOSIFU",
+	"code": "ROL",
+	"countryCode": "US",
+	"countryName": "美国",
+	cityFirstLetter: "L"
+}, {
+	cityName: "罗阿诺克",
+	citySpell: "LUOANUOKE",
+	"code": "ROA",
+	"countryCode": "US",
+	"countryName": "美国",
+	cityFirstLetter: "L"
+}, {
+	cityName: "莱昂",
+	citySpell: "LAIANG",
+	"code": "BJX",
+	"countryCode": "MX",
+	"countryName": "墨西哥",
+	cityFirstLetter: "L"
+}, {
+	cityName: "伦巴西亚",
+	citySpell: "LUNBAXIYA",
+	"code": "GSA",
+	"countryCode": "MY",
+	"countryName": "马来西亚",
+	cityFirstLetter: "L"
+}, {
+	cityName: "拉希姆亚尔克罕",
+	citySpell: "LAXIMUYAERKEHAN",
+	"code": "RYK",
+	"countryCode": "PK",
+	"countryName": "巴基斯坦",
+	cityFirstLetter: "L"
+}, {
+	cityName: "莱城",
+	citySpell: "LAICHENG",
+	"code": "LAE",
+	"countryCode": "PG",
+	"countryName": "巴布亚新几内亚",
+	cityFirstLetter: "L"
+}, {
+	cityName: "卢武克",
+	citySpell: "LUWUKE",
+	"code": "LUW",
+	"countryCode": "ID",
+	"countryName": "印度尼西亚",
+	cityFirstLetter: "L"
+}, {
+	cityName: "罗克兰",
+	citySpell: "LUOKELAN",
+	"code": "RKD",
+	"countryCode": "US",
+	"countryName": "美国",
+	cityFirstLetter: "L"
+}, {
+	cityName: "罗德兹",
+	citySpell: "LUODEZI",
+	"code": "RDZ",
+	"countryCode": "FR",
+	"countryName": "法国",
+	cityFirstLetter: "L"
+}, {
+	cityName: "莱吉萨莫港",
+	citySpell: "LAIJISAMOGANG",
+	"code": "LQM",
+	"countryCode": "CO",
+	"countryName": "哥伦比亚",
+	cityFirstLetter: "L"
+}, {
+	cityName: "鲁伊多索",
+	citySpell: "LUYIDUOSUO",
+	"code": "RUI",
+	"countryCode": "US",
+	"countryName": "美国",
+	cityFirstLetter: "L"
+}, {
+	cityName: "罗索",
+	citySpell: "LUOSUO",
+	"code": "ROX",
+	"countryCode": "US",
+	"countryName": "美国",
+	cityFirstLetter: "L"
+}, {
+	cityName: "拉塔巴蒂埃耶",
+	citySpell: "LATABADIAIYE",
+	"code": "ZLT",
+	"countryCode": "CA",
+	"countryName": "加拿大",
+	cityFirstLetter: "L"
+}, {
+	cityName: "拉门湾",
+	citySpell: "LAMENWAN",
+	"code": "LNB",
+	"countryCode": "VU",
+	"countryName": "瓦努阿图",
+	cityFirstLetter: "L"
+}, {
+	cityName: "罗什平纳",
+	citySpell: "LUOSHIPINGNA",
+	"code": "RPN",
+	"countryCode": "IL",
+	"countryName": "以色列",
+	cityFirstLetter: "L"
+}, {
+	cityName: "里弗顿",
+	citySpell: "LIFUDUN",
+	"code": "RIW",
+	"countryCode": "US",
+	"countryName": "美国",
+	cityFirstLetter: "L"
+}, {
+	cityName: "拉龙吉",
+	citySpell: "LALONGJI",
+	"code": "YVC",
+	"countryCode": "CA",
+	"countryName": "加拿大",
+	cityFirstLetter: "L"
+}, {
+	cityName: "里雅恩姆卡拉",
+	citySpell: "LIYAENMUKALA",
+	"code": "RIY",
+	"countryCode": "YE",
+	"countryName": "也门",
+	cityFirstLetter: "L"
+}, {
+	cityName: "拉贾蒙德里",
+	citySpell: "LAJIAMENGDELI",
+	"code": "RJA",
+	"countryCode": "IN",
+	"countryName": "印度",
+	cityFirstLetter: "L"
+}, {
+	cityName: "拉希迪耶",
+	citySpell: "LAXIDIYE",
+	"code": "ERH",
+	"countryCode": "MA",
+	"countryName": "摩洛哥",
+	cityFirstLetter: "L"
+}, {
+	cityName: "莱迪史密斯",
+	citySpell: "LAIDISHIMISI",
+	"code": "LAY",
+	"countryCode": "ZA",
+	"countryName": "南非",
+	cityFirstLetter: "L"
+}, {
+	cityName: "利隆圭",
+	citySpell: "LILONGGUI",
+	"code": "LLW",
+	"countryCode": "MW",
+	"countryName": "马拉维",
+	cityFirstLetter: "L"
+}, {
+	cityName: "卢克拉",
+	citySpell: "LUKELA",
+	"code": "LUA",
+	"countryCode": "NP",
+	"countryName": "尼泊尔",
+	cityFirstLetter: "L"
+}, {
+	cityName: "罗伯恩",
+	citySpell: "LUOBOEN",
+	"code": "RBU",
+	"countryCode": "AU",
+	"countryName": "澳大利亚",
+	cityFirstLetter: "L"
+}, {
+	cityName: "拉朱里",
+	citySpell: "LAZHULI",
+	"code": "RJI",
+	"countryCode": "IN",
+	"countryName": "印度",
+	cityFirstLetter: "L"
+}, {
+	cityName: "里奥格朗德",
+	citySpell: "LIAOGELANGDE",
+	"code": "RGA",
+	"countryCode": "AR",
+	"countryName": "阿根廷",
+	cityFirstLetter: "L"
+}, {
+	cityName: "利文斯通",
+	citySpell: "LIWENSITONG",
+	"code": "LVI",
+	"countryCode": "ZM",
+	"countryName": "赞比亚",
+	cityFirstLetter: "L"
+}, {
+	cityName: "雷恩",
+	citySpell: "LEIEN",
+	"code": "RNS",
+	"countryCode": "FR",
+	"countryName": "法国",
+	cityFirstLetter: "L"
+}, {
+	cityName: "鹿湖",
+	citySpell: "LUHU",
+	"code": "YDF",
+	"countryCode": "CA",
+	"countryName": "加拿大",
+	cityFirstLetter: "L"
+}, {
+	cityName: "莱瑟姆",
+	citySpell: "LAISEMU",
+	"code": "LTM",
+	"countryCode": "GY",
+	"countryName": "圭亚那",
+	cityFirstLetter: "L"
+}, {
+	cityName: "林奇堡",
+	citySpell: "LINQIBAO",
+	"code": "LYH",
+	"countryCode": "US",
+	"countryName": "美国",
+	cityFirstLetter: "L"
+}, {
+	cityName: "朗伊罗阿",
+	citySpell: "LANGYILUOA",
+	"code": "RGI",
+	"countryCode": "PF",
+	"countryName": "法属波利尼西亚",
+	cityFirstLetter: "L"
+}, {
+	cityName: "栗国",
+	citySpell: "LIGUO",
+	"code": "AGJ",
+	"countryCode": "JP",
+	"countryName": "日本",
+	cityFirstLetter: "L"
+}, {
+	cityName: "利弗莫",
+	citySpell: "LIFUMO",
+	"code": "LVK",
+	"countryCode": "US",
+	"countryName": "美国",
+	cityFirstLetter: "L"
+}, {
+	cityName: "勒阿弗尔",
+	citySpell: "LEAFUER",
+	"code": "LEH",
+	"countryCode": "FR",
+	"countryName": "法国",
+	cityFirstLetter: "L"
+}, {
+	cityName: "路易斯威尔",
+	citySpell: "LUYISIWEIER",
+	"code": "SDF",
+	"countryCode": "US",
+	"countryName": "美国",
+	cityFirstLetter: "L"
+}, {
+	cityName: "隆巴旺",
+	citySpell: "LONGBAWANG",
+	"code": "LBW",
+	"countryCode": "ID",
+	"countryName": "印度尼西亚",
+	cityFirstLetter: "L"
+}, {
+	cityName: "拉特罗布",
+	citySpell: "LATELUOBU",
+	"code": "LBE",
+	"countryCode": "US",
+	"countryName": "美国",
+	cityFirstLetter: "L"
+}, {
+	cityName: "累西腓",
+	citySpell: "LEIXIFEI",
+	"code": "REC",
+	"countryCode": "BR",
+	"countryName": "巴西",
+	cityFirstLetter: "L"
+}, {
+	cityName: "雷瓦",
+	citySpell: "LEIWA",
+	"code": "REW",
+	"countryCode": "IN",
+	"countryName": "印度",
+	cityFirstLetter: "L"
+}, {
+	cityName: "拉罗什",
+	citySpell: "LALUOSHI",
+	"code": "EDM",
+	"countryCode": "FR",
+	"countryName": "法国",
+	cityFirstLetter: "L"
+}, {
+	cityName: "雷德蒙德",
+	citySpell: "LEIDEMENGDE",
+	"code": "RDM",
+	"countryCode": "US",
+	"countryName": "美国",
+	cityFirstLetter: "L"
+}, {
+	cityName: "罗阿衲",
+	citySpell: "LUOANA",
+	"code": "RNE",
+	"countryCode": "FR",
+	"countryName": "法国",
+	cityFirstLetter: "L"
+}, {
+	cityName: "拉罗歇尔",
+	citySpell: "LALUOXIEER",
+	"code": "LRH",
+	"countryCode": "FR",
+	"countryName": "法国",
+	cityFirstLetter: "L"
+}, {
+	cityName: "里奥夸尔托",
+	citySpell: "LIAOKUAERTUO",
+	"code": "RCU",
+	"countryCode": "AR",
+	"countryName": "阿根廷",
+	cityFirstLetter: "L"
+}, {
+	cityName: "莱巴嫩",
+	citySpell: "LAIBANEN",
+	"code": "LEB",
+	"countryCode": "US",
+	"countryName": "美国",
+	cityFirstLetter: "L"
+}, {
+	cityName: "朗挪罗依",
+	citySpell: "LANGNUOLUOYI",
+	"code": "LNE",
+	"countryCode": "VU",
+	"countryName": "瓦努阿图",
+	cityFirstLetter: "L"
+}, {
+	cityName: "雷奥图阿莫托岛",
+	citySpell: "LEIAOTUAMOTUODAO",
+	"code": "REA",
+	"countryCode": "PF",
+	"countryName": "法属波利尼西亚",
+	cityFirstLetter: "L"
+}, {
+	cityName: "鲁古姆果德",
+	citySpell: "LUGUMUGUODE",
+	"code": "RUK",
+	"countryCode": "NP",
+	"countryName": "尼泊尔",
+	cityFirstLetter: "L"
+}, {
+	cityName: "龙多诺波利斯",
+	citySpell: "LONGDUONUOBOLISI",
+	"code": "ROO",
+	"countryCode": "BR",
+	"countryName": "巴西",
+	cityFirstLetter: "L"
+}, {
+	cityName: "拉瑙",
+	citySpell: "LANAO",
+	"code": "RNU",
+	"countryCode": "MY",
+	"countryName": "马来西亚",
+	cityFirstLetter: "L"
+}, {
+	cityName: "莱弗洛克",
+	citySpell: "LAIFULUOKE",
+	"code": "KLL",
+	"countryCode": "US",
+	"countryName": "美国",
+	cityFirstLetter: "L"
+}, {
+	cityName: "拉斯克鲁塞",
+	citySpell: "LASIKELUSAI",
+	"code": "LRU",
+	"countryCode": "US",
+	"countryName": "美国",
+	cityFirstLetter: "L"
+}, {
+	cityName: "伦敦德里",
+	citySpell: "LUNDUNDELI",
+	"code": "LDY",
+	"countryCode": "GB",
+	"countryName": "英国",
+	cityFirstLetter: "L"
+}, {
+	cityName: "拉姆萨尔",
+	citySpell: "LAMUSAER",
+	"code": "RZR",
+	"countryCode": "IR",
+	"countryName": "伊朗",
+	cityFirstLetter: "L"
+}, {
+	cityName: "利物浦",
+	citySpell: "LIWUPU",
+	"code": "LPL",
+	"countryCode": "GB",
+	"countryName": "英国",
+	cityFirstLetter: "L"
+}, {
+	cityName: "兰卡威",
+	citySpell: "LANKAWEI",
+	"code": "LGK",
+	"countryCode": "MY",
+	"countryName": "马来西亚",
+	cityFirstLetter: "L"
+}, {
+	cityName: "里加",
+	citySpell: "LIJIA",
+	"code": "RIX",
+	"countryCode": "LV",
+	"countryName": "拉托维亚",
+	cityFirstLetter: "L"
+}, {
+	cityName: "拉斯托维尔",
+	citySpell: "LASITUOWEIER",
+	"code": "LTL",
+	"countryCode": "GA",
+	"countryName": "加蓬",
+	cityFirstLetter: "L"
+}, {
+	cityName: "罗克比",
+	citySpell: "LUOKEBI",
+	"code": "RKY",
+	"countryCode": "AU",
+	"countryName": "澳大利亚",
+	cityFirstLetter: "L"
+}, {
+	cityName: "莱克查尔斯",
+	citySpell: "LAIKECHAERSI",
+	"code": "LCH",
+	"countryCode": "US",
+	"countryName": "美国",
+	cityFirstLetter: "L"
+}, {
+	cityName: "莱文古德",
+	citySpell: "LAIWENGUDE",
+	"code": "LIV",
+	"countryCode": "US",
+	"countryName": "美国",
+	cityFirstLetter: "L"
+}, {
+	cityName: "里士满",
+	citySpell: "LISHIMAN",
+	"code": "RCM",
+	"countryCode": "AU",
+	"countryName": "澳大利亚",
+	cityFirstLetter: "L"
+}, {
+	cityName: "拉斯帕尔马斯",
+	citySpell: "LASIPAERMASI",
+	"code": "LPA",
+	"countryCode": "ES",
+	"countryName": "西班牙",
+	cityFirstLetter: "L"
+}, {
+	cityName: "罗德里格斯岛",
+	citySpell: "LUODELIGESIDAO",
+	"code": "RRG",
+	"countryCode": "MU",
+	"countryName": "毛里求斯",
+	cityFirstLetter: "L"
+}, {
+	cityName: "拉菲特",
+	citySpell: "LAFEITE",
+	"code": "LFT",
+	"countryCode": "US",
+	"countryName": "美国",
+	cityFirstLetter: "L"
+}, {
+	cityName: "良乌",
+	citySpell: "LIANGWU",
+	"code": "NYU",
+	"countryCode": "MM",
+	"countryName": "缅甸",
+	cityFirstLetter: "L"
+}, {
+	cityName: "罗安达",
+	citySpell: "LUOANDA",
+	"code": "LAD",
+	"countryCode": "AO",
+	"countryName": "安哥拉",
+	cityFirstLetter: "L"
+}, {
+	cityName: "里奥弗里奥",
+	citySpell: "LIAOFULIAO",
+	"code": "RFR",
+	"countryCode": "CR",
+	"countryName": "哥斯达黎加",
+	cityFirstLetter: "L"
+}, {
+	cityName: "劳拉",
+	citySpell: "LAOLA",
+	"code": "LUU",
+	"countryCode": "AU",
+	"countryName": "澳大利亚",
+	cityFirstLetter: "L"
+}, {
+	cityName: "拉什卡尔加",
+	citySpell: "LASHIKAERJIA",
+	"code": "BST",
+	"countryCode": "AF",
+	"countryName": "阿富汗",
+	cityFirstLetter: "L"
+}, {
+	cityName: "隆勒朗",
+	citySpell: "LONGLELANG",
+	"code": "LGL",
+	"countryCode": "MY",
+	"countryName": "马来西亚",
+	cityFirstLetter: "L"
+}, {
+	cityName: "拉戈阿格里奥",
+	citySpell: "LAGEAGELIAO",
+	"code": "LGQ",
+	"countryCode": "EC",
+	"countryName": "厄瓜多尔",
+	cityFirstLetter: "L"
+}, {
+	cityName: "莱克星顿",
+	citySpell: "LAIKEXINGDUN",
+	"code": "LEX",
+	"countryCode": "US",
+	"countryName": "美国",
+	cityFirstLetter: "L"
+}, {
+	cityName: "雷恩克斯",
+	citySpell: "LEIENKESI",
+	"code": "LEC",
+	"countryCode": "BR",
+	"countryName": "巴西",
+	cityFirstLetter: "L"
+}, {
+	cityName: "拉包尔",
+	citySpell: "LABAOER",
+	"code": "LBY",
+	"countryCode": "FR",
+	"countryName": "法国",
+	cityFirstLetter: "L"
+}, {
+	cityName: "卢格加纳内",
+	citySpell: "LUGEJIANANEI",
+	"code": "LGX",
+	"countryCode": "SO",
+	"countryName": "索马里",
+	cityFirstLetter: "L"
+}, {
+	cityName: "拉斐拉",
+	citySpell: "LAFEILA",
+	"code": "RAF",
+	"countryCode": "AR",
+	"countryName": "阿根廷",
+	cityFirstLetter: "L"
+}, {
+	cityName: "里瓦达维亚海军准将城",
+	citySpell: "LIWADAWEIYAHAIJUNZHUNJIANGCHENG",
+	"code": "CRD",
+	"countryCode": "AR",
+	"countryName": "阿根廷",
+	cityFirstLetter: "L"
+}, {
+	cityName: "利德",
+	citySpell: "LIDE",
+	"code": "LYX",
+	"countryCode": "GB",
+	"countryName": "英国",
+	cityFirstLetter: "L"
+}, {
+	cityName: "赖夫尔",
+	citySpell: "LAIFUER",
+	"code": "RIL",
+	"countryCode": "US",
+	"countryName": "美国",
+	cityFirstLetter: "L"
+}, {
+	cityName: "罗明斯特",
+	citySpell: "LUOMINGSITE",
+	"code": "YLL",
+	"countryCode": "CA",
+	"countryName": "加拿大",
+	cityFirstLetter: "L"
+}, {
+	cityName: "罗塞拉普拉托",
+	citySpell: "LUOSAILAPULATUO",
+	"code": "RLP",
+	"countryCode": "AU",
+	"countryName": "澳大利亚",
+	cityFirstLetter: "L"
+}, {
+	cityName: "利福",
+	citySpell: "LIFU",
+	"code": "LIF",
+	"countryCode": "NC",
+	"countryName": "新喀里多尼亚（太平洋）",
+	cityFirstLetter: "L"
+}, {
+	cityName: "拉特罗布",
+	citySpell: "LATELUOBU",
+	"code": "LTB",
+	"countryCode": "AU",
+	"countryName": "澳大利亚",
+	cityFirstLetter: "L"
+}, {
+	cityName: "勒克瑙",
+	citySpell: "LEKENAO",
+	"code": "LKO",
+	"countryCode": "IN",
+	"countryName": "印度",
+	cityFirstLetter: "L"
+}, {
+	cityName: "拉塞瓦",
+	citySpell: "LASAIWA",
+	"code": "LCE",
+	"countryCode": "HN",
+	"countryName": "洪都拉斯",
+	cityFirstLetter: "L"
+}, {
+	cityName: "拉明吉宁",
+	citySpell: "LAMINGJINING",
+	"code": "RAM",
+	"countryCode": "AU",
+	"countryName": "澳大利亚",
+	cityFirstLetter: "L"
+}, {
+	cityName: "连斯克",
+	citySpell: "LIANSIKE",
+	"code": "ULK",
+	"countryCode": "RU",
+	"countryName": "俄罗斯",
+	cityFirstLetter: "L"
+}, {
+	cityName: "拉布拉布",
+	citySpell: "LABULABU",
+	"code": "LAB",
+	"countryCode": "PG",
+	"countryName": "巴布亚新几内亚",
+	cityFirstLetter: "L"
+}, {
+	cityName: "利泽德岛",
+	citySpell: "LIZEDEDAO",
+	"code": "LZR",
+	"countryCode": "AU",
+	"countryName": "澳大利亚",
+	cityFirstLetter: "L"
+}, {
+	cityName: "伦皮拉港",
+	citySpell: "LUNPILAGANG",
+	"code": "PEU",
+	"countryCode": "HN",
+	"countryName": "洪都拉斯",
+	cityFirstLetter: "L"
+}, {
+	cityName: "罗特内斯特岛",
+	citySpell: "LUOTENEISITEDAO",
+	"code": "RTS",
+	"countryCode": "AU",
+	"countryName": "澳大利亚",
+	cityFirstLetter: "L"
+}, {
+	cityName: "洛斯阿拉莫斯",
+	citySpell: "LUOSIALAMOSI",
+	"code": "LAM",
+	"countryCode": "US",
+	"countryName": "美国",
+	cityFirstLetter: "L"
+}, {
+	cityName: "里贝朗普雷图",
+	citySpell: "LIBEILANGPULEITU",
+	"code": "RAO",
+	"countryCode": "BR",
+	"countryName": "巴西",
+	cityFirstLetter: "L"
+}, {
+	cityName: "罗斯伯斯",
+	citySpell: "LUOSIBOSI",
+	"code": "RSB",
+	"countryCode": "AU",
+	"countryName": "澳大利亚",
+	cityFirstLetter: "L"
+}, {
+	cityName: "里沃夫",
+	citySpell: "LIWOFU",
+	"code": "LWO",
+	"countryCode": "UA",
+	"countryName": "乌克兰",
+	cityFirstLetter: "L"
+}, {
+	cityName: "利凯普岛",
+	citySpell: "LIKAIPUDAO",
+	"code": "LIK",
+	"countryCode": "MH",
+	"countryName": "马绍尔群岛",
+	cityFirstLetter: "L"
+}, {
+	cityName: "拉巴拉巴",
+	citySpell: "LABALABA",
+	"code": "RBP",
+	"countryCode": "PG",
+	"countryName": "巴布亚新几内亚",
+	cityFirstLetter: "L"
+}, {
+	cityName: "赖伯雷利",
+	citySpell: "LAIBOLEILI",
+	"code": "BEK",
+	"countryCode": "IN",
+	"countryName": "印度",
+	cityFirstLetter: "L"
+}, {
+	cityName: "拉格斯",
+	citySpell: "LAGESI",
+	"code": "LAJ",
+	"countryCode": "BR",
+	"countryName": "巴西",
+	cityFirstLetter: "L"
+}, {
+	cityName: "拉布哈",
+	citySpell: "LABUHA",
+	"code": "LAH",
+	"countryCode": "ID",
+	"countryName": "印度尼西亚",
+	cityFirstLetter: "L"
+}, {
+	cityName: "拉斯皮耶德拉斯",
+	citySpell: "LASIPIYEDELASI",
+	"code": "LSP",
+	"countryCode": "VE",
+	"countryName": "委内瑞拉",
+	cityFirstLetter: "L"
+}, {
+	cityName: "卢博莫",
+	citySpell: "LUBOMO",
+	"code": "DIS",
+	"countryCode": "CG",
+	"countryName": "刚果",
+	cityFirstLetter: "L"
+}, {
+	cityName: "里约热内卢",
+	citySpell: "LIYUERENEILU",
+	"code": "RIO",
+	"countryCode": "BR",
+	"countryName": "巴西",
+	cityFirstLetter: "L"
+}, {
+	cityName: "卢切内茨",
+	citySpell: "LUQIENEICI",
+	"code": "LUE",
+	"countryCode": "SK",
+	"countryName": "斯洛伐克",
+	cityFirstLetter: "L"
+}, {
+	cityName: "伦阿彭",
+	citySpell: "LUNAPENG",
+	"code": "LPU",
+	"countryCode": "ID",
+	"countryName": "印度尼西亚",
+	cityFirstLetter: "L"
+}, {
+	cityName: "罗克桑德",
+	citySpell: "LUOKESANGDE",
+	"code": "RSD",
+	"countryCode": "BS",
+	"countryName": "巴哈马",
+	cityFirstLetter: "L"
+}, {
+	cityName: "朗里奇",
+	citySpell: "LANGLIQI",
+	"code": "LRE",
+	"countryCode": "AU",
+	"countryName": "澳大利亚",
+	cityFirstLetter: "L"
+}, {
+	cityName: "卢尔德/塔布",
+	citySpell: "LUERDETABU",
+	"code": "LDE",
+	"countryCode": "FR",
+	"countryName": "法国",
+	cityFirstLetter: "L"
+}, {
+	cityName: "利韦里亚",
+	citySpell: "LIWEILIYA",
+	"code": "LIR",
+	"countryCode": "CR",
+	"countryName": "哥斯达黎加",
+	cityFirstLetter: "L"
+}, {
+	cityName: "利尔蒙斯",
+	citySpell: "LIERMENGSI",
+	"code": "LEA",
+	"countryCode": "AU",
+	"countryName": "澳大利亚",
+	cityFirstLetter: "L"
+}, {
+	cityName: "兰巴雷内",
+	citySpell: "LANBALEINEI",
+	"code": "LBQ",
+	"countryCode": "GA",
+	"countryName": "加蓬",
+	cityFirstLetter: "L"
+}, {
+	cityName: "莱克明丘米纳",
+	citySpell: "LAIKEMINGQIUMINA",
+	"code": "LMA",
+	"countryCode": "US",
+	"countryName": "美国",
+	cityFirstLetter: "L"
+}, {
+	cityName: "罗塔",
+	citySpell: "LUOTA",
+	"code": "ROP",
+	"countryCode": "MP",
+	"countryName": "北马里亚纳群岛",
+	cityFirstLetter: "L"
+}, {
+	cityName: "拉亚加姆",
+	citySpell: "LAYAJIAMU",
+	"code": "LGM",
+	"countryCode": "PG",
+	"countryName": "巴布亚新几内亚",
+	cityFirstLetter: "L"
+}, {
+	cityName: "拉里贝拉",
+	citySpell: "LALIBEILA",
+	"code": "LLI",
+	"countryCode": "ET",
+	"countryName": "埃塞俄比亚",
+	cityFirstLetter: "L"
+}, {
+	cityName: "伦德尔洛兹",
+	citySpell: "LUNDEERLUOZI",
+	"code": "LDZ",
+	"countryCode": "ZA",
+	"countryName": "南非",
+	cityFirstLetter: "L"
+}, {
+	cityName: "拉帕尔马",
+	citySpell: "LAPAERMA",
+	"code": "PLP",
+	"countryCode": "PA",
+	"countryName": "巴拿马",
+	cityFirstLetter: "L"
+}, {
+	cityName: "勒湾",
+	citySpell: "LEWAN",
+	"code": "TBI",
+	"countryCode": "BS",
+	"countryName": "巴哈马",
+	cityFirstLetter: "L"
+}, {
+	cityName: "拉廊",
+	citySpell: "LALANG",
+	"code": "UNN",
+	"countryCode": "TH",
+	"countryName": "泰国",
+	cityFirstLetter: "L"
+}, {
+	cityName: "醴泉",
+	citySpell: "LIQUAN",
+	"code": "YEC",
+	"countryCode": "KR",
+	"countryName": "韩国",
+	cityFirstLetter: "L"
+}, {
+	cityName: "罗宾韦尔",
+	citySpell: "LUOBINWEIER",
+	"code": "RBC",
+	"countryCode": "AU",
+	"countryName": "澳大利亚",
+	cityFirstLetter: "L"
+}, {
+	cityName: "磷酸盐山",
+	citySpell: "LINSUANYANSHAN",
+	"code": "PHQ",
+	"countryCode": "AU",
+	"countryName": "澳大利亚",
+	cityFirstLetter: "L"
+}, {
+	cityName: "隆巴拉",
+	citySpell: "LONGBALA",
+	"code": "GGC",
+	"countryCode": "AO",
+	"countryName": "安哥拉",
+	cityFirstLetter: "L"
+}, {
+	cityName: "雷德道格",
+	citySpell: "LEIDEDAOGE",
+	"code": "RDB",
+	"countryCode": "US",
+	"countryName": "美国",
+	cityFirstLetter: "L"
+}, {
+	cityName: "林茨",
+	citySpell: "LINCI",
+	"code": "LNZ",
+	"countryCode": "AT",
+	"countryName": "奥地利",
+	cityFirstLetter: "L"
+}, {
+	cityName: "罗斯韦尔",
+	citySpell: "LUOSIWEIER",
+	"code": "ROW",
+	"countryCode": "US",
+	"countryName": "美国",
+	cityFirstLetter: "L"
+}, {
+	cityName: "拉默齐亚",
+	citySpell: "LAMOQIYA",
+	"code": "SUF",
+	"countryCode": "IT",
+	"countryName": "意大利",
+	cityFirstLetter: "L"
+}, {
+	cityName: "里奥图尔维奥",
+	citySpell: "LIAOTUERWEIAO",
+	"code": "RYO",
+	"countryCode": "AR",
+	"countryName": "阿根廷",
+	cityFirstLetter: "L"
+}, {
+	cityName: "莱克维尤",
+	citySpell: "LAIKEWEIYOU",
+	"code": "LKV",
+	"countryCode": "US",
+	"countryName": "美国",
+	cityFirstLetter: "L"
+}, {
+	cityName: "冷岳",
+	citySpell: "LENGYUE",
+	"code": "RGT",
+	"countryCode": "ID",
+	"countryName": "印度尼西亚",
+	cityFirstLetter: "L"
+}, {
+	cityName: "隆德里纳",
+	citySpell: "LONGDELINA",
+	"code": "LDB",
+	"countryCode": "BR",
+	"countryName": "巴西",
+	cityFirstLetter: "L"
+}, {
+	cityName: "林雪平",
+	citySpell: "LINXUEPING",
+	"code": "LPI",
+	"countryCode": "SE",
+	"countryName": "瑞典",
+	cityFirstLetter: "L"
+}, {
+	cityName: "罗阿坦",
+	citySpell: "LUOATAN",
+	"code": "RTB",
+	"countryCode": "HN",
+	"countryName": "洪都拉斯",
+	cityFirstLetter: "L"
+}, {
+	cityName: "雷宾斯基",
+	citySpell: "LEIBINSIJI",
+	"code": "RYB",
+	"countryCode": "RU",
+	"countryName": "俄罗斯",
+	cityFirstLetter: "L"
+}, {
+	cityName: "卢班戈",
+	citySpell: "LUBANGE",
+	"code": "SDD",
+	"countryCode": "AO",
+	"countryName": "安哥拉",
+	cityFirstLetter: "L"
+}, {
+	cityName: "兰兹角",
+	citySpell: "LANZIJIAO",
+	"code": "LEQ",
+	"countryCode": "GB",
+	"countryName": "英国",
+	cityFirstLetter: "L"
+}, {
+	cityName: "拉图尔",
+	citySpell: "LATUER",
+	"code": "LTU",
+	"countryCode": "IN",
+	"countryName": "印度",
+	cityFirstLetter: "L"
+}, {
+	cityName: "利伯勒尔",
+	citySpell: "LIBOLEER",
+	"code": "LBL",
+	"countryCode": "US",
+	"countryName": "美国",
+	cityFirstLetter: "L"
+}, {
+	cityName: "拉乌尼翁",
+	citySpell: "LAWUNIWENG",
+	"code": "LUI",
+	"countryCode": "HN",
+	"countryName": "洪都拉斯",
+	cityFirstLetter: "L"
+}, {
+	cityName: "丽水",
+	citySpell: "LISHUI",
+	"code": "RSU",
+	"countryCode": "KR",
+	"countryName": "韩国",
+	cityFirstLetter: "L"
+}, {
+	cityName: "吕德里茨",
+	citySpell: "LVDELICI",
+	"code": "LUD",
+	"countryCode": "NA",
+	"countryName": "纳米比亚",
+	cityFirstLetter: "L"
+}, {
+	cityName: "雷焦卡拉布里亚",
+	citySpell: "LEIJIAOKALABULIYA",
+	"code": "REG",
+	"countryCode": "IT",
+	"countryName": "意大利",
+	cityFirstLetter: "L"
+}, {
+	cityName: "拉格伦",
+	citySpell: "LAGELUN",
+	"code": "RAG",
+	"countryCode": "NZ",
+	"countryName": "新西兰",
+	cityFirstLetter: "L"
+}, {
+	cityName: "兰佩杜萨",
+	citySpell: "LANPEIDUSA",
+	"code": "LMP",
+	"countryCode": "IT",
+	"countryName": "意大利",
+	cityFirstLetter: "L"
+}, {
+	cityName: "罗卡将军城",
+	citySpell: "LUOKAJIANGJUNCHENG",
+	"code": "GNR",
+	"countryCode": "AR",
+	"countryName": "阿根廷",
+	cityFirstLetter: "L"
+}, {
+	cityName: "雷西斯藤西亚",
+	citySpell: "LEIXISITENGXIYA",
+	"code": "RES",
+	"countryCode": "AR",
+	"countryName": "阿根廷",
+	cityFirstLetter: "L"
+}, {
+	cityName: "朗勃拉邦",
+	citySpell: "LANGBOLABANG",
+	"code": "LPQ",
+	"countryCode": "LA",
+	"countryName": "老挝",
+	cityFirstLetter: "L"
+}, {
+	cityName: "拉瓦斯",
+	citySpell: "LAWASI",
+	"code": "LWY",
+	"countryCode": "MY",
+	"countryName": "马来西亚",
+	cityFirstLetter: "L"
+}, {
+	cityName: "拉夫哈",
+	citySpell: "LAFUHA",
+	"code": "RAH",
+	"countryCode": "SA",
+	"countryName": "沙特阿垃伯",
+	cityFirstLetter: "L"
+}, {
+	cityName: "卢姆贾塔",
+	citySpell: "LUMUJIATA",
+	"code": "RUM",
+	"countryCode": "NP",
+	"countryName": "尼泊尔",
+	cityFirstLetter: "L"
+}, {
+	cityName: "莱蒂西亚",
+	citySpell: "LAIDIXIYA",
+	"code": "LET",
+	"countryCode": "CO",
+	"countryName": "哥伦比亚",
+	cityFirstLetter: "L"
+}, {
+	cityName: "礼文",
+	citySpell: "LIWEN",
+	"code": "RBJ",
+	"countryCode": "JP",
+	"countryName": "日本",
+	cityFirstLetter: "L"
+}, {
+	cityName: "林肯港",
+	citySpell: "LINKENGANG",
+	"code": "PLO",
+	"countryCode": "AU",
+	"countryName": "澳大利亚",
+	cityFirstLetter: "L"
+}, {
+	cityName: "罗利",
+	citySpell: "LUOLI",
+	"code": "RDU",
+	"countryCode": "US",
+	"countryName": "美国",
+	cityFirstLetter: "L"
+}, {
+	cityName: "洛特斯韦尔",
+	citySpell: "LUOTESIWEIER",
+	"code": "LTV",
+	"countryCode": "AU",
+	"countryName": "澳大利亚",
+	cityFirstLetter: "L"
+}, {
+	cityName: "兰契",
+	citySpell: "LANQI",
+	"code": "IXR",
+	"countryCode": "IN",
+	"countryName": "印度",
+	cityFirstLetter: "L"
+}, {
+	cityName: "劳伦斯",
+	citySpell: "LAOLUNSI",
+	"code": "LWC",
+	"countryCode": "US",
+	"countryName": "美国",
+	cityFirstLetter: "L"
+}, {
+	cityName: "兰格尔",
+	citySpell: "LANGEER",
+	"code": "LUV",
+	"countryCode": "ID",
+	"countryName": "印度尼西亚",
+	cityFirstLetter: "L"
+}, {
+	cityName: "鲁西基西基",
+	citySpell: "LUXIJIXIJI",
+	"code": "LUJ",
+	"countryCode": "ZA",
+	"countryName": "南非",
+	cityFirstLetter: "L"
+}, {
+	cityName: "拉塞雷纳",
+	citySpell: "LASAILEINA",
+	"code": "LSC",
+	"countryCode": "CL",
+	"countryName": "智利",
+	cityFirstLetter: "L"
+}, {
+	cityName: "拉里奥哈",
+	citySpell: "LALIAOHA",
+	"code": "IRJ",
+	"countryCode": "AR",
+	"countryName": "阿根廷",
+	cityFirstLetter: "L"
+}, {
+	cityName: "林迪",
+	citySpell: "LINDI",
+	"code": "LDI",
+	"countryCode": "TZ",
+	"countryName": "坦桑尼亚",
+	cityFirstLetter: "L"
+}, {
+	cityName: "刘易斯堡",
+	citySpell: "LIUYISIBAO",
+	"code": "LWB",
+	"countryCode": "US",
+	"countryName": "美国",
+	cityFirstLetter: "L"
+}, {
+	cityName: "赖瓦瓦埃岛",
+	citySpell: "LAIWAWAAIDAO",
+	"code": "RVV",
+	"countryCode": "PF",
+	"countryName": "法属波利尼西亚",
+	cityFirstLetter: "L"
+}, {
+	cityName: "勒罗斯",
+	citySpell: "LELUOSI",
+	"code": "RRS",
+	"countryCode": "NO",
+	"countryName": "挪威",
+	cityFirstLetter: "L"
+}, {
+	cityName: "利萨拉",
+	citySpell: "LISALA",
+	"code": "LIQ",
+	"countryCode": "CD",
+	"countryName": "刚果民主共和国",
+	cityFirstLetter: "L"
+}, {
+	cityName: "拉罗马纳",
+	citySpell: "LALUOMANA",
+	"code": "LRM",
+	"countryCode": "DO",
+	"countryName": "多米尼加",
+	cityFirstLetter: "L"
+}, {
+	cityName: "拉克布罗切特",
+	citySpell: "LAKEBULUOQIETE",
+	"code": "XLB",
+	"countryCode": "CA",
+	"countryName": "加拿大",
+	cityFirstLetter: "L"
+}, {
+	cityName: "里奥翁多",
+	citySpell: "LIAOWENGDUO",
+	"code": "RHD",
+	"countryCode": "AR",
+	"countryName": "阿根廷",
+	cityFirstLetter: "L"
+}, {
+	cityName: "拉尼永",
+	citySpell: "LANIYONG",
+	"code": "LAI",
+	"countryCode": "FR",
+	"countryName": "法国",
+	cityFirstLetter: "L"
+}, {
+	cityName: "鲁特塞尔克",
+	citySpell: "LUTESAIERKE",
+	"code": "YSG",
+	"countryCode": "CA",
+	"countryName": "加拿大",
+	cityFirstLetter: "L"
+}, {
+	cityName: "鲁布西",
+	citySpell: "LUBUXI",
+	"code": "RUP",
+	"countryCode": "IN",
+	"countryName": "印度",
+	cityFirstLetter: "L"
+}, {
+	cityName: "罗斯托克",
+	citySpell: "LUOSITUOKE",
+	"code": "RLG",
+	"countryCode": "DE",
+	"countryName": "德国",
+	cityFirstLetter: "L"
+}, {
+	cityName: "朗维尤",
+	citySpell: "LANGWEIYOU",
+	"code": "GGG",
+	"countryCode": "US",
+	"countryName": "美国",
+	cityFirstLetter: "L"
+}, {
+	cityName: "林格港",
+	citySpell: "LINGEGANG",
+	"code": "BDH",
+	"countryCode": "IR",
+	"countryName": "伊朗",
+	cityFirstLetter: "L"
+}, {
+	cityName: "拉辛",
+	citySpell: "LAXIN",
+	"code": "RAC",
+	"countryCode": "US",
+	"countryName": "美国",
+	cityFirstLetter: "L"
+}, {
+	cityName: "罗地",
+	citySpell: "LUODI",
+	"code": "RTI",
+	"countryCode": "ID",
+	"countryName": "印度尼西亚",
+	cityFirstLetter: "L"
+}, {
+	cityName: "拉巴肯",
+	citySpell: "LABAKEN",
+	"code": "LKB",
+	"countryCode": "FJ",
+	"countryName": "斐济群岛",
+	cityFirstLetter: "L"
+}, {
+	cityName: "鲁赛里斯",
+	citySpell: "LUSAILISI",
+	"code": "RSS",
+	"countryCode": "SD",
+	"countryName": "苏丹",
+	cityFirstLetter: "L"
+}, {
+	cityName: "隆邦加",
+	citySpell: "LONGBANGJIA",
+	"code": "LBP",
+	"countryCode": "MY",
+	"countryName": "马来西亚",
+	cityFirstLetter: "L"
+}, {
+	cityName: "里耶卡",
+	citySpell: "LIYEKA",
+	"code": "RJK",
+	"countryCode": "HR",
+	"countryName": "克罗地亚",
+	cityFirstLetter: "L"
+}, {
+	cityName: "拉特兰普拉托",
+	citySpell: "LATELANPULATUO",
+	"code": "RTP",
+	"countryCode": "AU",
+	"countryName": "澳大利亚",
+	cityFirstLetter: "L"
+}, {
+	cityName: "林斯",
+	citySpell: "LINSI",
+	"code": "LIP",
+	"countryCode": "BR",
+	"countryName": "巴西",
+	cityFirstLetter: "L"
+}, {
+	cityName: "路易挽特里哈特",
+	citySpell: "LUYIWANTELIHATE",
+	"code": "LCD",
+	"countryCode": "ZA",
+	"countryName": "南非",
+	cityFirstLetter: "L"
+}, {
+	cityName: "林邦",
+	citySpell: "LINBANG",
+	"code": "LMN",
+	"countryCode": "MY",
+	"countryName": "马来西亚",
+	cityFirstLetter: "L"
+}, {
+	cityName: "雷德萨克尔莱克",
+	citySpell: "LEIDESAKEERLAIKE",
+	"code": "YRS",
+	"countryCode": "CA",
+	"countryName": "加拿大",
+	cityFirstLetter: "L"
+}, {
+	cityName: "里尔",
+	citySpell: "LIER",
+	"code": "LIL",
+	"countryCode": "FR",
+	"countryName": "法国",
+	cityFirstLetter: "L"
+}, {
+	cityName: "利奥诺拉",
+	citySpell: "LIAONUOLA",
+	"code": "LNO",
+	"countryCode": "AU",
+	"countryName": "澳大利亚",
+	cityFirstLetter: "L"
+}, {
+	cityName: "卢布尔雅那",
+	citySpell: "LUBUERYANA",
+	"code": "LJU",
+	"countryCode": "SI",
+	"countryName": "斯洛文尼亚",
+	cityFirstLetter: "L"
+}, {
+	cityName: "卢本巴希",
+	citySpell: "LUBENBAXI",
+	"code": "FBM",
+	"countryCode": "CD",
+	"countryName": "刚果民主共和国",
+	cityFirstLetter: "L"
+}, {
+	cityName: "兰奇利",
+	citySpell: "LANQILI",
+	"code": "RNG",
+	"countryCode": "US",
+	"countryName": "美国",
+	cityFirstLetter: "L"
+}, {
+	cityName: "伦加纳",
+	citySpell: "LUNJIANA",
+	"code": "LOD",
+	"countryCode": "VU",
+	"countryName": "瓦努阿图",
+	cityFirstLetter: "L"
+}, {
+	cityName: "拉兰图卡",
+	citySpell: "LALANTUKA",
+	"code": "LKA",
+	"countryCode": "ID",
+	"countryName": "印度尼西亚",
+	cityFirstLetter: "L"
+}, {
+	cityName: "洛里昂",
+	citySpell: "LUOLIANG",
+	"code": "LRT",
+	"countryCode": "FR",
+	"countryName": "法国",
+	cityFirstLetter: "L"
+}, {
+	cityName: "垒固",
+	citySpell: "LEIGU",
+	"code": "LIW",
+	"countryCode": "MM",
+	"countryName": "缅甸",
+	cityFirstLetter: "L"
+}, {
+	cityName: "鲁安",
+	citySpell: "LUAN",
+	"code": "YUY",
+	"countryCode": "CA",
+	"countryName": "加拿大",
+	cityFirstLetter: "L"
+}, {
+	cityName: "拉雷多",
+	citySpell: "LALEIDUO",
+	"code": "LRD",
+	"countryCode": "US",
+	"countryName": "美国",
+	cityFirstLetter: "L"
+}, {
+	cityName: "罗伯勒",
+	citySpell: "LUOBOLE",
+	"code": "RCE",
+	"countryCode": "US",
+	"countryName": "美国",
+	cityFirstLetter: "L"
+}, {
+	cityName: "莱昂斯",
+	citySpell: "LAIANGSI",
+	"code": "LYO",
+	"countryCode": "US",
+	"countryName": "美国",
+	cityFirstLetter: "L"
+}, {
+	cityName: "利兹",
+	citySpell: "LIZI",
+	"code": "LBA",
+	"countryCode": "GB",
+	"countryName": "英国",
+	cityFirstLetter: "L"
+}, {
+	cityName: "莱因兰德",
+	citySpell: "LAIYINLANDE",
+	"code": "RHI",
+	"countryCode": "US",
+	"countryName": "美国",
+	cityFirstLetter: "L"
+}, {
+	cityName: "伦杜",
+	citySpell: "LUNDU",
+	"code": "NDU",
+	"countryCode": "NA",
+	"countryName": "纳米比亚",
+	cityFirstLetter: "L"
+}, {
+	cityName: "罗萨里奥",
+	citySpell: "LUOSALIAO",
+	"code": "RSJ",
+	"countryCode": "US",
+	"countryName": "美国",
+	cityFirstLetter: "L"
+}, {
+	cityName: "拉杰沙西",
+	citySpell: "LAJIESHAXI",
+	"code": "RJH",
+	"countryCode": "BD",
+	"countryName": "孟加拉国",
+	cityFirstLetter: "L"
+}, {
+	cityName: "罗宾胡",
+	citySpell: "LUOBINHU",
+	"code": "ROH",
+	"countryCode": "AU",
+	"countryName": "澳大利亚",
+	cityFirstLetter: "L"
+}, {
+	cityName: "吕桑热",
+	citySpell: "LVSANGRE",
+	"code": "LUS",
+	"countryCode": "CD",
+	"countryName": "刚果民主共和国",
+	cityFirstLetter: "L"
+}, {
+	cityName: "拉科洛马",
+	citySpell: "LAKELUOMA",
+	"code": "LCL",
+	"countryCode": "CU",
+	"countryName": "古巴",
+	cityFirstLetter: "L"
+}, {
+	cityName: "卢延加拉尼",
+	citySpell: "LUYANJIALANI",
+	"code": "LOY",
+	"countryCode": "KE",
+	"countryName": "肯尼亚",
+	cityFirstLetter: "L"
+}, {
+	cityName: "林布尼亚",
+	citySpell: "LINBUNIYA",
+	"code": "LIB",
+	"countryCode": "AU",
+	"countryName": "澳大利亚",
+	cityFirstLetter: "L"
+}, {
+	cityName: "利斯堡",
+	citySpell: "LISIBAO",
+	"code": "LEE",
+	"countryCode": "US",
+	"countryName": "美国",
+	cityFirstLetter: "L"
+}, {
+	cityName: "里奥马约",
+	citySpell: "LIAOMAYUE",
+	"code": "ROY",
+	"countryCode": "AR",
+	"countryName": "阿根廷",
+	cityFirstLetter: "L"
+}, {
+	cityName: "鲁比",
+	citySpell: "LUBI",
+	"code": "RBY",
+	"countryCode": "US",
+	"countryName": "美国",
+	cityFirstLetter: "L"
+}, {
+	cityName: "利夫拉门",
+	citySpell: "LIFULAMEN",
+	"code": "LVB",
+	"countryCode": "BR",
+	"countryName": "巴西",
+	cityFirstLetter: "L"
+}, {
+	cityName: "洛斯罗克斯",
+	citySpell: "LUOSILUOKESI",
+	"code": "LRV",
+	"countryCode": "VE",
+	"countryName": "委内瑞拉",
+	cityFirstLetter: "L"
+}, {
+	cityName: "吕扎巴",
+	citySpell: "LVZHABA",
+	"code": "LZM",
+	"countryCode": "AO",
+	"countryName": "安哥拉",
+	cityFirstLetter: "L"
+}, {
+	cityName: "罗斯托夫",
+	citySpell: "LUOSITUOFU",
+	"code": "ROV",
+	"countryCode": "RU",
+	"countryName": "俄罗斯",
+	cityFirstLetter: "L"
+}, {
+	cityName: "赖布尔",
+	citySpell: "LAIBUER",
+	"code": "RPR",
+	"countryCode": "IN",
+	"countryName": "印度",
+	cityFirstLetter: "L"
+}, {
+	cityName: "拉奈",
+	citySpell: "LANAI",
+	"code": "LNY",
+	"countryCode": "US",
+	"countryName": "美国",
+	cityFirstLetter: "L"
+}, {
+	cityName: "雷耶斯",
+	citySpell: "LEIYESI",
+	"code": "REY",
+	"countryCode": "BO",
+	"countryName": "玻利维亚",
+	cityFirstLetter: "L"
+}, {
+	cityName: "拉斯维加斯",
+	citySpell: "LASIWEIJIASI",
+	"code": "LAS",
+	"countryCode": "US",
+	"countryName": "美国",
+	cityFirstLetter: "L"
+}, {
+	cityName: "拉多姆",
+	citySpell: "LADUOMU",
+	"code": "RDO",
+	"countryCode": "PL",
+	"countryName": "波兰",
+	cityFirstLetter: "L"
+}, {
+	cityName: "洛巴策",
+	citySpell: "LUOBACE",
+	"code": "LOQ",
+	"countryCode": "BW",
+	"countryName": "博茨瓦纳",
+	cityFirstLetter: "L"
+}, {
+	cityName: "拉布安",
+	citySpell: "LABUAN",
+	"code": "LBU",
+	"countryCode": "MY",
+	"countryName": "马来西亚",
+	cityFirstLetter: "L"
+}, {
+	cityName: "兰斯",
+	citySpell: "LANSI",
+	"code": "RHE",
+	"countryCode": "FR",
+	"countryName": "法国",
+	cityFirstLetter: "L"
+}, {
+	cityName: "勒伊法赫本",
+	citySpell: "LEYIFAHEBEN",
+	"code": "RFN",
+	"countryCode": "IS",
+	"countryName": "冰岛",
+	cityFirstLetter: "L"
+}, {
+	cityName: "里帕尔斯贝",
+	citySpell: "LIPAERSIBEI",
+	"code": "YUT",
+	"countryCode": "CA",
+	"countryName": "加拿大",
+	cityFirstLetter: "L"
+}, {
+	cityName: "拉科塔",
+	citySpell: "LAKETA",
+	"code": "LKT",
+	"countryCode": "CI",
+	"countryName": "科特迪瓦",
+	cityFirstLetter: "L"
+}, {
+	cityName: "拉罗亚",
+	citySpell: "LALUOYA",
+	"code": "RRR",
+	"countryCode": "PF",
+	"countryName": "法属波利尼西亚",
+	cityFirstLetter: "L"
+}, {
+	cityName: "洛杉矶",
+	citySpell: "LUOSHANJI",
+	"code": "LSQ",
+	"countryCode": "CL",
+	"countryName": "智利",
+	cityFirstLetter: "L"
+}, {
+	cityName: "拉彭兰塔",
+	citySpell: "LAPENGLANTA",
+	"code": "LPP",
+	"countryCode": "FI",
+	"countryName": "芬兰",
+	cityFirstLetter: "L"
+}, {
+	cityName: "拉代西拉德岛",
+	citySpell: "LADAIXILADEDAO",
+	"code": "DSD",
+	"countryCode": "GP",
+	"countryName": "瓜德罗普岛",
+	cityFirstLetter: "L"
+}, {
+	cityName: "拉各斯",
+	citySpell: "LAGESI",
+	"code": "LOS",
+	"countryCode": "NG",
+	"countryName": "尼日利亚",
+	cityFirstLetter: "L"
+}, {
+	cityName: "罗切斯特(纽约州)",
+	citySpell: "LUOQIESITE",
+	"code": "ROC",
+	"countryCode": "US",
+	"countryName": "美国",
+	cityFirstLetter: "L"
+}, {
+	cityName: "罗切斯特(明尼苏达州)",
+	citySpell: "LUOQIESITE",
+	"code": "RST",
+	"countryCode": "US",
+	"countryName": "美国",
+	cityFirstLetter: "L"
+}, {
+	cityName: "伦斯特",
+	citySpell: "LUNSITE",
+	"code": "LER",
+	"countryCode": "AU",
+	"countryName": "澳大利亚",
+	cityFirstLetter: "L"
+}, {
+	cityName: "刘沃莱巴",
+	citySpell: "LIUWOLAIBA",
+	"code": "LWE",
+	"countryCode": "ID",
+	"countryName": "印度尼西亚",
+	cityFirstLetter: "L"
+}, {
+	cityName: "拉合尔",
+	citySpell: "LAHEER",
+	"code": "LHE",
+	"countryCode": "PK",
+	"countryName": "巴基斯坦",
+	cityFirstLetter: "L"
+}, {
+	cityName: "罗兹",
+	citySpell: "LUOZI",
+	"code": "LCJ",
+	"countryCode": "PL",
+	"countryName": "波兰",
+	cityFirstLetter: "L"
+}, {
+	cityName: "莱斯布里奇",
+	citySpell: "LAISIBULIQI",
+	"code": "YQL",
+	"countryCode": "CA",
+	"countryName": "加拿大",
+	cityFirstLetter: "L"
+}, {
+	cityName: "鲁伯特王子市",
+	citySpell: "LUBOTEWANGZISHI",
+	"code": "YPR",
+	"countryCode": "CA",
+	"countryName": "加拿大",
+	cityFirstLetter: "L"
+}, {
+	cityName: "兰萨罗特",
+	citySpell: "LANSALUOTE",
+	"code": "ACE",
+	"countryCode": "ES",
+	"countryName": "西班牙",
+	cityFirstLetter: "L"
+}, {
+	cityName: "拉皮德城",
+	citySpell: "LAPIDECHENG",
+	"code": "RAP",
+	"countryCode": "US",
+	"countryName": "美国",
+	cityFirstLetter: "L"
+}, {
+	cityName: "里奥加耶戈斯",
+	citySpell: "LIAOJIAYEGESI",
+	"code": "RGL",
+	"countryCode": "AR",
+	"countryName": "阿根廷",
+	cityFirstLetter: "L"
+}, {
+	cityName: "绿山城",
+	citySpell: "LVSHANCHENG",
+	"code": "IEG",
+	"countryCode": "PL",
+	"countryName": "波兰",
+	cityFirstLetter: "L"
+}, {
+	cityName: "拉古尼亚斯",
+	citySpell: "LAGUNIYASI",
+	"code": "LGY",
+	"countryCode": "VE",
+	"countryName": "委内瑞拉",
+	cityFirstLetter: "L"
+}, {
+	cityName: "鹿儿岛",
+	citySpell: "LUERDAO",
+	"code": "KOJ",
+	"countryCode": "JP",
+	"countryName": "日本",
+	cityFirstLetter: "L"
+}, {
+	cityName: "拉纳卡",
+	citySpell: "LANAKA",
+	"code": "LCA",
+	"countryCode": "CY",
+	"countryName": "塞浦路斯",
+	cityFirstLetter: "L"
+}, {
+	cityName: "雷加尔城",
+	citySpell: "LEIJIAERCHENG",
+	"code": "VRL",
+	"countryCode": "PT",
+	"countryName": "葡萄牙",
+	cityFirstLetter: "L"
+}, {
+	cityName: "雷丁(宾州)",
+	citySpell: "LEIDING",
+	"code": "RDG",
+	"countryCode": "US",
+	"countryName": "美国",
+	cityFirstLetter: "L"
+}, {
+	cityName: "里弗赛德",
+	citySpell: "LIFUSAIDE",
+	"code": "RAL",
+	"countryCode": "US",
+	"countryName": "美国",
+	cityFirstLetter: "L"
+}, {
+	cityName: "利蒙",
+	citySpell: "LIMENG",
+	"code": "LIO",
+	"countryCode": "CR",
+	"countryName": "哥斯达黎加",
+	cityFirstLetter: "L"
+}, {
+	cityName: "利尻",
+	citySpell: "LIKAO",
+	"code": "RIS",
+	"countryCode": "JP",
+	"countryName": "日本",
+	cityFirstLetter: "L"
+}, {
+	cityName: "利德雪平",
+	citySpell: "LIDEXUEPING",
+	"code": "LDK",
+	"countryCode": "SE",
+	"countryName": "瑞典",
+	cityFirstLetter: "L"
+}, {
+	cityName: "兰格尔",
+	citySpell: "LANGEER",
+	"code": "WRG",
+	"countryCode": "US",
+	"countryName": "美国",
+	cityFirstLetter: "L"
+}, {
+	cityName: "洛德瓦尔",
+	citySpell: "LUODEWAER",
+	"code": "LOK",
+	"countryCode": "KE",
+	"countryName": "肯尼亚",
+	cityFirstLetter: "L"
+}, {
+	cityName: "罗斯特",
+	citySpell: "LUOSITE",
+	"code": "RET",
+	"countryCode": "NO",
+	"countryName": "挪威",
+	cityFirstLetter: "L"
+}, {
+	cityName: "拉沃拉果德",
+	citySpell: "LAWOLAGUODE",
+	"code": "RAZ",
+	"countryCode": "PK",
+	"countryName": "巴基斯坦",
+	cityFirstLetter: "L"
+}, {
+	cityName: "罗瓦涅米",
+	citySpell: "LUOWANIEMI",
+	"code": "RVN",
+	"countryCode": "FI",
+	"countryName": "芬兰",
+	cityFirstLetter: "L"
+}, {
+	cityName: "莱武卡",
+	citySpell: "LAIWUKA",
+	"code": "LEV",
+	"countryCode": "FJ",
+	"countryName": "斐济群岛",
+	cityFirstLetter: "L"
+}, {
+	cityName: "拉波特",
+	citySpell: "LABOTE",
+	"code": "LPO",
+	"countryCode": "US",
+	"countryName": "美国",
+	cityFirstLetter: "L"
+}, {
+	cityName: "雷德代夫尔",
+	citySpell: "LEIDEDAIFUER",
+	"code": "RDV",
+	"countryCode": "US",
+	"countryName": "美国",
+	cityFirstLetter: "L"
+}, {
+	cityName: "拉尔戈德尔苏尔",
+	citySpell: "LAERGEDEERSUER",
+	"code": "CYO",
+	"countryCode": "CU",
+	"countryName": "古巴",
+	cityFirstLetter: "L"
+}, {
+	cityName: "罗图马岛",
+	citySpell: "LUOTUMADAO",
+	"code": "RTA",
+	"countryCode": "FJ",
+	"countryName": "斐济群岛",
+	cityFirstLetter: "L"
+}, {
+	cityName: "雷克雅未克",
+	citySpell: "LEIKEYAWEIKE",
+	"code": "REK",
+	"countryCode": "IS",
+	"countryName": "冰岛",
+	cityFirstLetter: "L"
+}, {
+	cityName: "雷德布拉夫",
+	citySpell: "LEIDEBULAFU",
+	"code": "RBL",
+	"countryCode": "US",
+	"countryName": "美国",
+	cityFirstLetter: "L"
+}, {
+	cityName: "鲁滕",
+	citySpell: "LUTENG",
+	"code": "RTG",
+	"countryCode": "ID",
+	"countryName": "印度尼西亚",
+	cityFirstLetter: "L"
+}, {
+	cityName: "罗德豪岛",
+	citySpell: "LUODEHAODAO",
+	"code": "LDH",
+	"countryCode": "AU",
+	"countryName": "澳大利亚",
+	cityFirstLetter: "L"
+}, {
+	cityName: "鲁昂",
+	citySpell: "LUANG",
+	"code": "URO",
+	"countryCode": "FR",
+	"countryName": "法国",
+	cityFirstLetter: "L"
+}, {
+	cityName: "卢埃纳",
+	citySpell: "LUAINA",
+	"code": "LUO",
+	"countryCode": "AO",
+	"countryName": "安哥拉",
+	cityFirstLetter: "L"
+}, {
+	cityName: "利克利克",
+	citySpell: "LIKELIKE",
+	"code": "LGH",
+	"countryCode": "AU",
+	"countryName": "澳大利亚",
+	cityFirstLetter: "L"
+}, {
+	cityName: "劳顿",
+	citySpell: "LAODUN",
+	"code": "LAW",
+	"countryCode": "US",
+	"countryName": "美国",
+	cityFirstLetter: "L"
+}, {
+	cityName: "伦敦考宾",
+	citySpell: "LUNDUNKAOBIN",
+	"code": "LOZ",
+	"countryCode": "US",
+	"countryName": "美国",
+	cityFirstLetter: "L"
+}, {
+	cityName: "拉巴斯",
+	citySpell: "LABASI",
+	"code": "LPB",
+	"countryCode": "BO",
+	"countryName": "玻利维亚",
+	cityFirstLetter: "L"
+}, {
+	cityName: "利拉巴里",
+	citySpell: "LILABALI",
+	"code": "IXI",
+	"countryCode": "IN",
+	"countryName": "印度",
+	cityFirstLetter: "L"
+}, {
+	cityName: "拉弗顿",
+	citySpell: "LAFUDUN",
+	"code": "LVO",
+	"countryCode": "AU",
+	"countryName": "澳大利亚",
+	cityFirstLetter: "L"
+}, {
+	cityName: "勒芒",
+	citySpell: "LEMANG",
+	"code": "LME",
+	"countryCode": "FR",
+	"countryName": "法国",
+	cityFirstLetter: "L"
+}, {
+	cityName: "罗德尼角",
+	citySpell: "LUODENIJIAO",
+	"code": "CPN",
+	"countryCode": "PG",
+	"countryName": "巴布亚新几内亚",
+	cityFirstLetter: "L"
+}, {
+	cityName: "拉巴斯",
+	citySpell: "LABASI",
+	"code": "LAP",
+	"countryCode": "MX",
+	"countryName": "墨西哥",
+	cityFirstLetter: "L"
+}, {
+	cityName: "朗伊尔城",
+	citySpell: "LANGYIERCHENG",
+	"code": "LYR",
+	"countryCode": "NO",
+	"countryName": "挪威",
+	cityFirstLetter: "L"
+}, {
+	cityName: "拉乔雷拉",
+	citySpell: "LAQIAOLEILA",
+	"code": "LCR",
+	"countryCode": "CO",
+	"countryName": "哥伦比亚",
+	cityFirstLetter: "L"
+}, {
+	cityName: "洛美",
+	citySpell: "LUOMEI",
+	"code": "LFW",
+	"countryCode": "TG",
+	"countryName": "多哥",
+	cityFirstLetter: "L"
+}, {
+	cityName: "卢甘斯克",
+	citySpell: "LUGANSIKE",
+	"code": "VSG",
+	"countryCode": "UA",
+	"countryName": "乌克兰",
+	cityFirstLetter: "L"
+}, {
+	cityName: "里奥哈",
+	citySpell: "LIAOHA",
+	"code": "RIJ",
+	"countryCode": "PE",
+	"countryName": "秘鲁",
+	cityFirstLetter: "L"
+}, {
+	cityName: "卢森堡",
+	citySpell: "LUSENBAO",
+	"code": "LUX",
+	"countryCode": "LU",
+	"countryName": "卢森堡",
+	cityFirstLetter: "L"
+}, {
+	cityName: "拉佩德雷拉",
+	citySpell: "LAPEIDELEILA",
+	"code": "LPD",
+	"countryCode": "CO",
+	"countryName": "哥伦比亚",
+	cityFirstLetter: "L"
+}, {
+	cityName: "雷克候拉尔",
+	citySpell: "LEIKEHOULAER",
+	"code": "RHA",
+	"countryCode": "IS",
+	"countryName": "冰岛",
+	cityFirstLetter: "L"
+}, {
+	cityName: "洛贾",
+	citySpell: "LUOJIA",
+	"code": "LJA",
+	"countryCode": "CD",
+	"countryName": "刚果民主共和国",
+	cityFirstLetter: "L"
+}, {
+	cityName: "拉特兰",
+	citySpell: "LATELAN",
+	"code": "RUT",
+	"countryCode": "US",
+	"countryName": "美国",
+	cityFirstLetter: "L"
+}, {
+	cityName: "利摩日",
+	citySpell: "LIMORI",
+	"code": "LIG",
+	"countryCode": "FR",
+	"countryName": "法国",
+	cityFirstLetter: "L"
+}, {
+	cityName: "里昂",
+	citySpell: "LIANG",
+	"code": "LYS",
+	"countryCode": "FR",
+	"countryName": "法国",
+	cityFirstLetter: "L"
+}, {
+	cityName: "里夏尔托勒",
+	citySpell: "LIXIAERTUOLE",
+	"code": "RDT",
+	"countryCode": "SN",
+	"countryName": "塞内加尔",
+	cityFirstLetter: "L"
+}, {
+	cityName: "卢米",
+	citySpell: "LUMI",
+	"code": "LMI",
+	"countryCode": "PG",
+	"countryName": "巴布亚新几内亚",
+	cityFirstLetter: "L"
+}, {
+	cityName: "利姆诺斯岛",
+	citySpell: "LIMUNUOSIDAO",
+	"code": "LXS",
+	"countryCode": "GR",
+	"countryName": "希腊",
+	cityFirstLetter: "L"
+}, {
+	cityName: "洛雷恩",
+	citySpell: "LUOLEIEN",
+	"code": "LOA",
+	"countryCode": "AU",
+	"countryName": "澳大利亚",
+	cityFirstLetter: "L"
+}, {
+	cityName: "洛佩斯",
+	citySpell: "LUOPEISI",
+	"code": "LPS",
+	"countryCode": "US",
+	"countryName": "美国",
+	cityFirstLetter: "L"
+}, {
+	cityName: "雷孔基斯塔",
+	citySpell: "LEIKONGJISITA",
+	"code": "RCQ",
+	"countryCode": "AR",
+	"countryName": "阿根廷",
+	cityFirstLetter: "L"
+}, {
+	cityName: "莱卡纳",
+	citySpell: "LAIKANA",
+	"code": "LKC",
+	"countryCode": "CG",
+	"countryName": "刚果",
+	cityFirstLetter: "L"
+}, {
+	cityName: "雷德迪尔",
+	citySpell: "LEIDEDIER",
+	"code": "YQF",
+	"countryCode": "CA",
+	"countryName": "加拿大",
+	cityFirstLetter: "L"
+}, {
+	cityName: "罗克汉普顿",
+	citySpell: "LUOKEHANPUDUN",
+	"code": "ROK",
+	"countryCode": "AU",
+	"countryName": "澳大利亚",
+	cityFirstLetter: "L"
+}, {
+	cityName: "里韦拉尔塔",
+	citySpell: "LIWEILAERTA",
+	"code": "RIB",
+	"countryCode": "BO",
+	"countryName": "玻利维亚",
+	cityFirstLetter: "L"
+}, {
+	cityName: "莱蒙",
+	citySpell: "LAIMENG",
+	"code": "LEM",
+	"countryCode": "US",
+	"countryName": "美国",
+	cityFirstLetter: "L"
+}, {
+	cityName: "洛斯莫奇斯",
+	citySpell: "LUOSIMOQISI",
+	"code": "LMM",
+	"countryCode": "MX",
+	"countryName": "墨西哥",
+	cityFirstLetter: "L"
+}, {
+	cityName: "硫黄岛",
+	citySpell: "LIUHUANGDAO",
+	"code": "IWO",
+	"countryCode": "JP",
+	"countryName": "日本",
+	cityFirstLetter: "L"
+}, {
+	cityName: "勒德纳吉里",
+	citySpell: "LEDENAJILI",
+	"code": "RTC",
+	"countryCode": "IN",
+	"countryName": "印度",
+	cityFirstLetter: "L"
+}, {
+	cityName: "里米尼",
+	citySpell: "LIMINI",
+	"code": "RMI",
+	"countryCode": "IT",
+	"countryName": "意大利",
+	cityFirstLetter: "L"
+}, {
+	cityName: "雷乌斯",
+	citySpell: "LEIWUSI",
+	"code": "REU",
+	"countryCode": "ES",
+	"countryName": "西班牙",
+	cityFirstLetter: "L"
+}, {
+	cityName: "黎",
+	citySpell: "LI",
+	"code": "LOE",
+	"countryCode": "TH",
+	"countryName": "泰国",
+	cityFirstLetter: "L"
+}, {
+	cityName: "卢库卢",
+	citySpell: "LUKULU",
+	"code": "LXU",
+	"countryCode": "ZM",
+	"countryName": "赞比亚",
+	cityFirstLetter: "L"
+}, {
+	cityName: "莱姆维利吉",
+	citySpell: "LAIMUWEILIJI",
+	"code": "LVD",
+	"countryCode": "US",
+	"countryName": "美国",
+	cityFirstLetter: "L"
+}, {
+	cityName: "兰辛",
+	citySpell: "LANXIN",
+	"code": "LAN",
+	"countryCode": "US",
+	"countryName": "美国",
+	cityFirstLetter: "L"
+}, {
+	cityName: "里弗塞斯",
+	citySpell: "LIFUSAISI",
+	"code": "RVC",
+	"countryCode": "LR",
+	"countryName": "利比里亚",
+	cityFirstLetter: "L"
+}, {
+	cityName: "雷丁(加州)",
+	citySpell: "LEIDING",
+	"code": "RDD",
+	"countryCode": "US",
+	"countryName": "美国",
+	cityFirstLetter: "L"
+}, {
+	cityName: "莱特雷",
+	citySpell: "LAITELEI",
+	"code": "LTF",
+	"countryCode": "PG",
+	"countryName": "巴布亚新几内亚",
+	cityFirstLetter: "L"
+}, {
+	cityName: "鲁宾逊里弗",
+	citySpell: "LUBINXUNLIFU",
+	"code": "RNR",
+	"countryCode": "PG",
+	"countryName": "巴布亚新几内亚",
+	cityFirstLetter: "L"
+}, {
+	cityName: "列城",
+	citySpell: "LIECHENG",
+	"code": "IXL",
+	"countryCode": "IN",
+	"countryName": "印度",
+	cityFirstLetter: "L"
+}, {
+	cityName: "龙东",
+	citySpell: "LONGDONG",
+	"code": "RON",
+	"countryCode": "CO",
+	"countryName": "哥伦比亚",
+	cityFirstLetter: "L"
+}, {
+	cityName: "洛赫吉尔普黑德",
+	citySpell: "LUOHEJIERPUHEIDE",
+	"code": "LPH",
+	"countryCode": "GB",
+	"countryName": "英国",
+	cityFirstLetter: "L"
+}, {
+	cityName: "雷维罗",
+	citySpell: "LEIWEILUO",
+	"code": "RVO",
+	"countryCode": "ZA",
+	"countryName": "南非",
+	cityFirstLetter: "L"
+}, {
+	cityName: "莱岛",
+	citySpell: "LAIDAO",
+	"code": "LML",
+	"countryCode": "MH",
+	"countryName": "马绍尔群岛",
+	cityFirstLetter: "L"
+}, {
+	cityName: "拉格兰德",
+	citySpell: "LAGELANDE",
+	"code": "YGL",
+	"countryCode": "CA",
+	"countryName": "加拿大",
+	cityFirstLetter: "L"
+}, {
+	cityName: "刘易斯顿",
+	citySpell: "LIUYISIDUN",
+	"code": "LWS",
+	"countryCode": "US",
+	"countryName": "美国",
+	cityFirstLetter: "L"
+}, {
+	cityName: "罗珀瓦利",
+	citySpell: "LUOPOWALI",
+	"code": "RPV",
+	"countryCode": "AU",
+	"countryName": "澳大利亚",
+	cityFirstLetter: "L"
+}, {
+	cityName: "拉斯洛米塔",
+	citySpell: "LASILUOMITA",
+	"code": "LLS",
+	"countryCode": "AR",
+	"countryName": "阿根廷",
+	cityFirstLetter: "L"
+}, {
+	cityName: "莱克曼亚拉",
+	citySpell: "LAIKEMANYALA",
+	"code": "LKY",
+	"countryCode": "TZ",
+	"countryName": "坦桑尼亚",
+	cityFirstLetter: "L"
+}, {
+	cityName: "里奇菲尔德",
+	citySpell: "LIQIFEIERDE",
+	"code": "RIF",
+	"countryCode": "US",
+	"countryName": "美国",
+	cityFirstLetter: "L"
+}, {
+	cityName: "里士满",
+	citySpell: "LISHIMAN",
+	"code": "RIC",
+	"countryCode": "US",
+	"countryName": "美国",
+	cityFirstLetter: "L"
+}, {
+	cityName: "赖斯湖",
+	citySpell: "LAISIHU",
+	"code": "RIE",
+	"countryCode": "US",
+	"countryName": "美国",
+	cityFirstLetter: "L"
+}, {
+	cityName: "兰巴萨",
+	citySpell: "LANBASA",
+	"code": "LBS",
+	"countryCode": "FJ",
+	"countryName": "斐济群岛",
+	cityFirstLetter: "L"
+}, {
+	cityName: "拉瓦勒",
+	citySpell: "LAWALE",
+	"code": "LVA",
+	"countryCode": "FR",
+	"countryName": "法国",
+	cityFirstLetter: "L"
+}, {
+	cityName: "拉塔基亚",
+	citySpell: "LATAJIYA",
+	"code": "LTK",
+	"countryCode": "SY",
+	"countryName": "叙利亚",
+	cityFirstLetter: "L"
+}, {
+	cityName: "洛坤",
+	citySpell: "LUOKUN",
+	"code": "NST",
+	"countryCode": "TH",
+	"countryName": "泰国",
+	cityFirstLetter: "L"
+}, {
+	cityName: "拉梅奇哈普",
+	citySpell: "LAMEIQIHAPU",
+	"code": "RHP",
+	"countryCode": "NP",
+	"countryName": "尼泊尔",
+	cityFirstLetter: "L"
+}, {
+	cityName: "罗恩赛",
+	citySpell: "LUOENSAI",
+	"code": "RAY",
+	"countryCode": "GB",
+	"countryName": "英国",
+	cityFirstLetter: "L"
+}, {
+	cityName: "利罗斯",
+	citySpell: "LILUOSI",
+	"code": "LRS",
+	"countryCode": "GR",
+	"countryName": "希腊",
+	cityFirstLetter: "L"
+}, {
+	cityName: "洛克",
+	citySpell: "LUOKE",
+	"code": "LOC",
+	"countryCode": "AU",
+	"countryName": "澳大利亚",
+	cityFirstLetter: "L"
+}, {
+	cityName: "拉马贡丹",
+	citySpell: "LAMAGONGDAN",
+	"code": "RMD",
+	"countryCode": "IN",
+	"countryName": "印度",
+	cityFirstLetter: "L"
+}, {
+	cityName: "拉法",
+	citySpell: "LAFA",
+	"code": "RFA",
+	"countryCode": "CF",
+	"countryName": "中非",
+	cityFirstLetter: "L"
+}, {
+	cityName: "勒土开",
+	citySpell: "LETUKAI",
+	"code": "LTQ",
+	"countryCode": "FR",
+	"countryName": "法国",
+	cityFirstLetter: "L"
+}, {
+	cityName: "拉包尔",
+	citySpell: "LABAOER",
+	"code": "RAB",
+	"countryCode": "PG",
+	"countryName": "巴布亚新几内亚",
+	cityFirstLetter: "L"
+}, {
+	cityName: "鹿湖",
+	citySpell: "LUHU",
+	"code": "YVZ",
+	"countryCode": "CA",
+	"countryName": "加拿大",
+	cityFirstLetter: "L"
+}, {
+	cityName: "拉马塔",
+	citySpell: "LAMATA",
+	"code": "RBV",
+	"countryCode": "SB",
+	"countryName": "所罗门群岛",
+	cityFirstLetter: "L"
+}, {
+	cityName: "里奥贝尔德",
+	citySpell: "LIAOBEIERDE",
+	"code": "RVD",
+	"countryCode": "BR",
+	"countryName": "巴西",
+	cityFirstLetter: "L"
+}, {
+	cityName: "拉斯图纳斯",
+	citySpell: "LASITUNASI",
+	"code": "VTU",
+	"countryCode": "CU",
+	"countryName": "古巴",
+	cityFirstLetter: "L"
+}, {
+	cityName: "莱昂纳德伍德堡",
+	citySpell: "LAIANGNADEWUDEBAO",
+	"code": "TBN",
+	"countryCode": "US",
+	"countryName": "美国",
+	cityFirstLetter: "L"
+}, {
+	cityName: "莱克菲尔德",
+	citySpell: "LAIKEFEIERDE",
+	"code": "LFP",
+	"countryCode": "AU",
+	"countryName": "澳大利亚",
+	cityFirstLetter: "L"
+}, {
+	cityName: "拉马卡雷纳",
+	citySpell: "LAMAKALEINA",
+	"code": "LMC",
+	"countryCode": "CO",
+	"countryName": "哥伦比亚",
+	cityFirstLetter: "L"
+}, {
+	cityName: "洛克哈特",
+	citySpell: "LUOKEHATE",
+	"code": "IRG",
+	"countryCode": "AU",
+	"countryName": "澳大利亚",
+	cityFirstLetter: "L"
+}, {
+	cityName: "拉科鲁利亚",
+	citySpell: "LAKELULIYA",
+	"code": "LCG",
+	"countryCode": "ES",
+	"countryName": "西班牙",
+	cityFirstLetter: "L"
+}, {
+	cityName: "拉贝",
+	citySpell: "LABEI",
+	"code": "LEK",
+	"countryCode": "GN",
+	"countryName": "几内亚",
+	cityFirstLetter: "L"
+}, {
+	cityName: "拉弗里亚",
+	citySpell: "LAFULIYA",
+	"code": "LFR",
+	"countryCode": "VE",
+	"countryName": "委内瑞拉",
+	cityFirstLetter: "L"
+}, {
+	cityName: "莱里达",
+	citySpell: "LAILIDA",
+	"code": "ILD",
+	"countryCode": "ES",
+	"countryName": "西班牙",
+	cityFirstLetter: "L"
+}, {
+	cityName: "里科港",
+	citySpell: "LIKEGANG",
+	"code": "PCC",
+	"countryCode": "CO",
+	"countryName": "哥伦比亚",
+	cityFirstLetter: "L"
+}, {
+	cityName: "洛苏亚",
+	citySpell: "LUOSUYA",
+	"code": "LSA",
+	"countryCode": "PG",
+	"countryName": "巴布亚新几内亚",
+	cityFirstLetter: "L"
+}, {
+	cityName: "利伯维尔",
+	citySpell: "LIBOWEIER",
+	"code": "LBV",
+	"countryCode": "GA",
+	"countryName": "加蓬",
+	cityFirstLetter: "L"
+}, {
+	cityName: "拉杰果德",
+	citySpell: "LAJIEGUODE",
+	"code": "RAJ",
+	"countryCode": "IN",
+	"countryName": "印度",
+	cityFirstLetter: "L"
+}, {
+	cityName: "莱奥",
+	citySpell: "LAIAO",
+	"code": "XLU",
+	"countryCode": "BF",
+	"countryName": "布基纳法索",
+	cityFirstLetter: "L"
+}, {
+	cityName: "拉斐特",
+	citySpell: "LAFEITE",
+	"code": "LAF",
+	"countryCode": "US",
+	"countryName": "美国",
+	cityFirstLetter: "L"
+}, {
+	cityName: "勒皮",
+	citySpell: "LEPI",
+	"code": "LPY",
+	"countryCode": "FR",
+	"countryName": "法国",
+	cityFirstLetter: "L"
+}, {
+	cityName: "伦马克",
+	citySpell: "LUNMAKE",
+	"code": "RMK",
+	"countryCode": "AU",
+	"countryName": "澳大利亚",
+	cityFirstLetter: "L"
+}, {
+	cityName: "拉门尔德",
+	citySpell: "LAMENERDE",
+	"code": "LFM",
+	"countryCode": "IR",
+	"countryName": "伊朗",
+	cityFirstLetter: "L"
+}, {
+	cityName: "拉森湾",
+	citySpell: "LASENWAN",
+	"code": "KLN",
+	"countryCode": "US",
+	"countryName": "美国",
+	cityFirstLetter: "L"
+}, {
+	cityName: "利雅得",
+	citySpell: "LIYADE",
+	"code": "RUH",
+	"countryCode": "SA",
+	"countryName": "沙特阿垃伯",
+	cityFirstLetter: "L"
+}, {
+	cityName: "卢迪亚纳",
+	citySpell: "LUDIYANA",
+	"code": "LUH",
+	"countryCode": "IN",
+	"countryName": "印度",
+	cityFirstLetter: "L"
+}, {
+	cityName: "利佩茨克",
+	citySpell: "LIPEICIKE",
+	"code": "LPK",
+	"countryCode": "RU",
+	"countryName": "俄罗斯",
+	cityFirstLetter: "L"
+}, {
+	cityName: "雷索卢特",
+	citySpell: "LEISUOLUTE",
+	"code": "YRB",
+	"countryCode": "CA",
+	"countryName": "加拿大",
+	cityFirstLetter: "L"
+}, {
+	cityName: "拉巴特",
+	citySpell: "LABATE",
+	"code": "RBA",
+	"countryCode": "MA",
+	"countryName": "摩洛哥",
+	cityFirstLetter: "L"
+}, {
+	cityName: "琅南塔",
+	citySpell: "LANGNANTA",
+	"code": "LXG",
+	"countryCode": "LA",
+	"countryName": "老挝",
+	cityFirstLetter: "L"
+}, {
+	cityName: "拉伯克",
+	citySpell: "LABOKE",
+	"code": "LBB",
+	"countryCode": "US",
+	"countryName": "美国",
+	cityFirstLetter: "L"
+}, {
+	cityName: "莱瑟本",
+	citySpell: "LAISEBEN",
+	"code": "LES",
+	"countryCode": "LS",
+	"countryName": "莱索托",
+	cityFirstLetter: "L"
+}, {
+	cityName: "雷文斯索普",
+	citySpell: "LEIWENSISUOPU",
+	"code": "RVT",
+	"countryCode": "AU",
+	"countryName": "澳大利亚",
+	cityFirstLetter: "L"
+}, {
+	cityName: "洛雷托",
+	citySpell: "LUOLEITUO",
+	"code": "LTO",
+	"countryCode": "MX",
+	"countryName": "墨西哥",
+	cityFirstLetter: "L"
+}, {
+	cityName: "鲁塞",
+	citySpell: "LUSAI",
+	"code": "ROU",
+	"countryCode": "BG",
+	"countryName": "保加利亚",
+	cityFirstLetter: "L"
+}, {
+	cityName: "雷登桑",
+	citySpell: "LEIDENGSANG",
+	"code": "RDC",
+	"countryCode": "BR",
+	"countryName": "巴西",
+	cityFirstLetter: "L"
+}, {
+	cityName: "伦塞里旦",
+	citySpell: "LUNSAILIDAN",
+	"code": "ODN",
+	"countryCode": "MY",
+	"countryName": "马来西亚",
+	cityFirstLetter: "L"
+}, {
+	cityName: "拉佛尔",
+	citySpell: "LAFOER",
+	"code": "POY",
+	"countryCode": "US",
+	"countryName": "美国",
+	cityFirstLetter: "L"
+}, {
+	cityName: "兰卡斯特",
+	citySpell: "LANKASITE",
+	"code": "LNS",
+	"countryCode": "US",
+	"countryName": "美国",
+	cityFirstLetter: "L"
+}, {
+	cityName: "莱德维尔",
+	citySpell: "LAIDEWEIER",
+	"code": "LXV",
+	"countryCode": "US",
+	"countryName": "美国",
+	cityFirstLetter: "L"
+}, {
+	cityName: "拉斯克",
+	citySpell: "LASIKE",
+	"code": "LSK",
+	"countryCode": "US",
+	"countryName": "美国",
+	cityFirstLetter: "L"
+}, {
+	cityName: "腊戌",
+	citySpell: "LAXU",
+	"code": "LSH",
+	"countryCode": "MM",
+	"countryName": "缅甸",
+	cityFirstLetter: "L"
+}, {
+	cityName: "莱昂纳德",
+	citySpell: "LAIANGNADE",
+	"code": "LTW",
+	"countryCode": "US",
+	"countryName": "美国",
+	cityFirstLetter: "L"
+}, {
+	cityName: "利奥波尔迪纳",
+	citySpell: "LIAOBOERDINA",
+	"code": "LEP",
+	"countryCode": "BR",
+	"countryName": "巴西",
+	cityFirstLetter: "L"
+}, {
+	cityName: "里斯本",
+	citySpell: "LISIBEN",
+	"code": "LIS",
+	"countryCode": "PT",
+	"countryName": "葡萄牙",
+	cityFirstLetter: "L"
+}, {
+	cityName: "隆内比",
+	citySpell: "LONGNEIBI",
+	"code": "RNB",
+	"countryCode": "SE",
+	"countryName": "瑞典",
+	cityFirstLetter: "L"
+}, {
+	cityName: "拉布里亚",
+	citySpell: "LABULIYA",
+	"code": "LBR",
+	"countryCode": "BR",
+	"countryName": "巴西",
+	cityFirstLetter: "L"
+}, {
+	cityName: "拉罗曼",
+	citySpell: "LALUOMAN",
+	"code": "ZGS",
+	"countryCode": "CA",
+	"countryName": "加拿大",
+	cityFirstLetter: "L"
+}, {
+	cityName: "伦内尔",
+	citySpell: "LUNNEIER",
+	"code": "RNL",
+	"countryCode": "SB",
+	"countryName": "所罗门群岛",
+	cityFirstLetter: "L"
+}, {
+	cityName: "利夫拉皮兹",
+	citySpell: "LIFULAPIZI",
+	"code": "YLR",
+	"countryCode": "CA",
+	"countryName": "加拿大",
+	cityFirstLetter: "L"
+}, {
+	cityName: "鲁瓦扬",
+	citySpell: "LUWAYANG",
+	"code": "RYN",
+	"countryCode": "FR",
+	"countryName": "法国",
+	cityFirstLetter: "L"
+}, {
+	cityName: "拉哈达图",
+	citySpell: "LAHADATU",
+	"code": "LDU",
+	"countryCode": "MY",
+	"countryName": "马来西亚",
+	cityFirstLetter: "L"
+}, {
+	cityName: "连科兰",
+	citySpell: "LIANKELAN",
+	"code": "LLK",
+	"countryCode": "AZ",
+	"countryName": "阿塞拜疆",
+	cityFirstLetter: "L"
+}, {
+	cityName: "轮岛",
+	citySpell: "LUNDAO",
+	"code": "NTQ",
+	"countryCode": "JP",
+	"countryName": "日本",
+	cityFirstLetter: "L"
+}, {
+	cityName: "黎逸",
+	citySpell: "LIYI",
+	"code": "ROI",
+	"countryCode": "TH",
+	"countryName": "泰国",
+	cityFirstLetter: "L"
+}, {
+	cityName: "劳里河",
+	citySpell: "LAOLIHE",
+	"code": "LRQ",
+	"countryCode": "CA",
+	"countryName": "加拿大",
+	cityFirstLetter: "L"
+}, {
+	cityName: "莱克纳什",
+	citySpell: "LAIKENASHI",
+	"code": "LNH",
+	"countryCode": "AU",
+	"countryName": "澳大利亚",
+	cityFirstLetter: "L"
+}, {
+	cityName: "莱克杰克",
+	citySpell: "LAIKEJIEKE",
+	"code": "LJN",
+	"countryCode": "US",
+	"countryName": "美国",
+	cityFirstLetter: "L"
+}, {
+	cityName: "雷诺萨",
+	citySpell: "LEINUOSA",
+	"code": "REX",
+	"countryCode": "MX",
+	"countryName": "墨西哥",
+	cityFirstLetter: "L"
+}, {
+	cityName: "莱克讷斯",
+	citySpell: "LAIKENASI",
+	"code": "LKN",
+	"countryCode": "NO",
+	"countryName": "挪威",
+	cityFirstLetter: "L"
+}, {
+	cityName: "利斯莫尔",
+	citySpell: "LISIMOER",
+	"code": "LSY",
+	"countryCode": "AU",
+	"countryName": "澳大利亚",
+	cityFirstLetter: "L"
+}, {
+	cityName: "洛哈",
+	citySpell: "LUOHA",
+	"code": "LOH",
+	"countryCode": "EC",
+	"countryName": "厄瓜多尔",
+	cityFirstLetter: "L"
+}, {
+	cityName: "雷伊提",
+	citySpell: "LEIYITI",
+	"code": "RFP",
+	"countryCode": "PF",
+	"countryName": "法属波利尼西亚",
+	cityFirstLetter: "L"
+}, {
+	cityName: "拉比",
+	citySpell: "LABI",
+	"code": "RBI",
+	"countryCode": "FJ",
+	"countryName": "斐济群岛",
+	cityFirstLetter: "L"
+}, {
+	cityName: "劳莱尔",
+	citySpell: "LAOLAIER",
+	"code": "LUL",
+	"countryCode": "US",
+	"countryName": "美国",
+	cityFirstLetter: "L"
+}, {
+	cityName: "里诺",
+	citySpell: "LINUO",
+	"code": "RNO",
+	"countryCode": "US",
+	"countryName": "美国",
+	cityFirstLetter: "L"
+}, {
+	cityName: "利本盖",
+	citySpell: "LIBENGAI",
+	"code": "LIE",
+	"countryCode": "CD",
+	"countryName": "刚果民主共和国",
+	cityFirstLetter: "L"
+}, {
+	cityName: "利马",
+	citySpell: "LIMA",
+	"code": "LIM",
+	"countryCode": "PE",
+	"countryName": "秘鲁",
+	cityFirstLetter: "L"
+}, {
+	cityName: "莱里贝",
+	citySpell: "LAILIBEI",
+	"code": "LRB",
+	"countryCode": "LS",
+	"countryName": "莱索托",
+	cityFirstLetter: "L"
+}, {
+	cityName: "隆塞马多",
+	citySpell: "LONGSAIMADUO",
+	"code": "LSM",
+	"countryCode": "MY",
+	"countryName": "马来西亚",
+	cityFirstLetter: "L"
+}, {
+	cityName: "里奥阿查",
+	citySpell: "LIAOACHA",
+	"code": "RCH",
+	"countryCode": "CO",
+	"countryName": "哥伦比亚",
+	cityFirstLetter: "L"
+}, {
+	cityName: "拉罗汤加",
+	citySpell: "LALUOTANGJIA",
+	"code": "RAR",
+	"countryCode": "CK",
+	"countryName": "库克群岛",
+	cityFirstLetter: "L"
+}, {
+	cityName: "劳灵斯",
+	citySpell: "LAOLINGSI",
+	"code": "RWL",
+	"countryCode": "US",
+	"countryName": "美国",
+	cityFirstLetter: "L"
+}, {
+	cityName: "里查兹贝",
+	citySpell: "LICHAZIBEI",
+	"code": "RCB",
+	"countryCode": "ZA",
+	"countryName": "南非",
+	cityFirstLetter: "L"
+}, {
+	cityName: "罗利",
+	citySpell: "LUOLI",
+	"code": "YRA",
+	"countryCode": "CA",
+	"countryName": "加拿大",
+	cityFirstLetter: "L"
+}, {
+	cityName: "罗托鲁瓦",
+	citySpell: "LUOTUOLUWA",
+	"code": "ROT",
+	"countryCode": "NZ",
+	"countryName": "新西兰",
+	cityFirstLetter: "L"
+}, {
+	cityName: "林恩湖",
+	citySpell: "LINENHU",
+	"code": "YYL",
+	"countryCode": "CA",
+	"countryName": "加拿大",
+	cityFirstLetter: "L"
+}, {
+	cityName: "里瓦斯",
+	citySpell: "LIWASI",
+	"code": "ECI",
+	"countryCode": "NI",
+	"countryName": "尼加拉瓜",
+	cityFirstLetter: "L"
+}, {
+	cityName: "里奥格兰德",
+	citySpell: "LIAOGELANDE",
+	"code": "RIG",
+	"countryCode": "BR",
+	"countryName": "巴西",
+	cityFirstLetter: "L"
+}, {
+	cityName: "雷果勒",
+	citySpell: "LEIGUOLE",
+	"code": "YRG",
+	"countryCode": "CA",
+	"countryName": "加拿大",
+	cityFirstLetter: "L"
+}, {
+	cityName: "拉勒米",
+	citySpell: "LALEMI",
+	"code": "LAR",
+	"countryCode": "US",
+	"countryName": "美国",
+	cityFirstLetter: "L"
+}, {
+	cityName: "莱比锡",
+	citySpell: "LAIBIXI",
+	"code": "LEJ",
+	"countryCode": "DE",
+	"countryName": "德国",
+	cityFirstLetter: "L"
+}, {
+	cityName: "里马塔拉",
+	citySpell: "LIMATALA",
+	"code": "RMT",
+	"countryCode": "PF",
+	"countryName": "法属波利尼西亚",
+	cityFirstLetter: "L"
+}, {
+	cityName: "落基山城威尔逊",
+	citySpell: "LUOJISHANCHENGWEIERXUN",
+	"code": "RWI",
+	"countryCode": "US",
+	"countryName": "美国",
+	cityFirstLetter: "L"
+}, {
+	cityName: "莱加斯皮",
+	citySpell: "LAIJIASIPI",
+	"code": "LGP",
+	"countryCode": "PH",
+	"countryName": "菲律宾",
+	cityFirstLetter: "L"
+}, {
+	cityName: "拉穆",
+	citySpell: "LAMU",
+	"code": "LAU",
+	"countryCode": "KE",
+	"countryName": "肯尼亚",
+	cityFirstLetter: "L"
+}, {
+	cityName: "罗阿诺克拉皮兹",
+	citySpell: "LUOANUOKELAPIZI",
+	"code": "RZZ",
+	"countryCode": "US",
+	"countryName": "美国",
+	cityFirstLetter: "L"
+}, {
+	cityName: "卢加诺",
+	citySpell: "LUJIANUO",
+	"code": "LUG",
+	"countryCode": "CH",
+	"countryName": "瑞士",
+	cityFirstLetter: "L"
+}, {
+	cityName: "兰金因雷特",
+	citySpell: "LANJINYINLEITE",
+	"code": "YRT",
+	"countryCode": "CA",
+	"countryName": "加拿大",
+	cityFirstLetter: "L"
+}, {
+	cityName: "罗克斯普林顿",
+	citySpell: "LUOKESIPULINDUN",
+	"code": "RKS",
+	"countryCode": "US",
+	"countryName": "美国",
+	cityFirstLetter: "L"
+}, {
+	cityName: "吕克瑟勒",
+	citySpell: "LVKESELE",
+	"code": "LYC",
+	"countryCode": "SE",
+	"countryName": "瑞典",
+	cityFirstLetter: "L"
+}, {
+	cityName: "拉科尼亚",
+	citySpell: "LAKENIYA",
+	"code": "LCI",
+	"countryCode": "US",
+	"countryName": "美国",
+	cityFirstLetter: "L"
+}, {
+	cityName: "卢克索",
+	citySpell: "LUKESUO",
+	"code": "LXR",
+	"countryCode": "EG",
+	"countryName": "埃及",
+	cityFirstLetter: "L"
+}, {
+	cityName: "林肯",
+	citySpell: "LINKEN",
+	"code": "LNK",
+	"countryCode": "US",
+	"countryName": "美国",
+	cityFirstLetter: "L"
+}, {
+	cityName: "里韦拉",
+	citySpell: "LIWEILA",
+	"code": "RVY",
+	"countryCode": "UY",
+	"countryName": "乌拉圭",
+	cityFirstLetter: "L"
+}, {
+	cityName: "莱克埃委拉",
+	citySpell: "LAIKEAIWEILA",
+	"code": "LEL",
+	"countryCode": "AU",
+	"countryName": "澳大利亚",
+	cityFirstLetter: "L"
+}, {
+	cityName: "拉马普",
+	citySpell: "LAMAPU",
+	"code": "LPM",
+	"countryCode": "VU",
+	"countryName": "瓦努阿图",
+	cityFirstLetter: "L"
+}, {
+	cityName: "莱克默里",
+	citySpell: "LAIKEMOLI",
+	"code": "LMY",
+	"countryCode": "PG",
+	"countryName": "巴布亚新几内亚",
+	cityFirstLetter: "L"
+}, {
+	cityName: "兰德",
+	citySpell: "LANDE",
+	"code": "LND",
+	"countryCode": "US",
+	"countryName": "美国",
+	cityFirstLetter: "L"
+}, {
+	cityName: "卢布林",
+	citySpell: "LUBULIN",
+	"code": "LUZ",
+	"countryCode": "PL",
+	"countryName": "波兰",
+	cityFirstLetter: "L"
+}, {
+	cityName: "里格利",
+	citySpell: "LIGELI",
+	"code": "YWY",
+	"countryCode": "CA",
+	"countryName": "加拿大",
+	cityFirstLetter: "L"
+}, {
+	cityName: "曼谷",
+	citySpell: "MANGU",
+	"code": "BKK",
+	"countryCode": "TH",
+	"countryName": "泰国",
+	cityFirstLetter: "M"
+}, {
+	cityName: "马尼拉",
+	citySpell: "MANILA",
+	"code": "MNL",
+	"countryCode": "PH",
+	"countryName": "菲律宾",
+	cityFirstLetter: "M"
+}, {
+	cityName: "莫斯科",
+	citySpell: "MOSIKE",
+	"code": "MOW",
+	"countryCode": "RU",
+	"countryName": "俄罗斯",
+	cityFirstLetter: "M"
+}, {
+	cityName: "墨尔本",
+	citySpell: "MOERBEN",
+	"code": "MEL",
+	"countryCode": "AU",
+	"countryName": "澳大利亚",
+	cityFirstLetter: "M"
+}, {
+	cityName: "马累",
+	citySpell: "MALEI",
+	"code": "MLE",
+	"countryCode": "MV",
+	"countryName": "马尔代夫",
+	cityFirstLetter: "M"
+}, {
+	cityName: "曼彻斯特",
+	citySpell: "MANCHESITE",
+	"code": "MAN",
+	"countryCode": "GB",
+	"countryName": "英国",
+	cityFirstLetter: "M"
+}, {
+	cityName: "名古屋",
+	citySpell: "MINGGUWU",
+	"code": "NGO",
+	"countryCode": "JP",
+	"countryName": "日本",
+	cityFirstLetter: "M"
+}, {
+	cityName: "墨尔本",
+	citySpell: "MOERBEN",
+	"code": "MLB",
+	"countryCode": "US",
+	"countryName": "美国",
+	cityFirstLetter: "M"
+}, {
+	cityName: "马德里",
+	citySpell: "MADELI",
+	"code": "MAD",
+	"countryCode": "ES",
+	"countryName": "西班牙",
+	cityFirstLetter: "M"
+}, {
+	cityName: "孟买",
+	citySpell: "MENGMAI",
+	"code": "BOM",
+	"countryCode": "IN",
+	"countryName": "印度",
+	cityFirstLetter: "M"
+}, {
+	cityName: "慕尼黑",
+	citySpell: "MUNIHEI",
+	"code": "MUC",
+	"countryCode": "DE",
+	"countryName": "德国",
+	cityFirstLetter: "M"
+}, {
+	cityName: "米兰",
+	citySpell: "MILAN",
+	"code": "MIL",
+	"countryCode": "IT",
+	"countryName": "意大利",
+	cityFirstLetter: "M"
+}, {
+	cityName: "迈阿密",
+	citySpell: "MAIAMI",
+	"code": "MIA",
+	"countryCode": "US",
+	"countryName": "美国",
+	cityFirstLetter: "M"
+}, {
+	cityName: "孟菲斯",
+	citySpell: "MENGFEISI",
+	"code": "MEM",
+	"countryCode": "US",
+	"countryName": "美国",
+	cityFirstLetter: "M"
+}, {
+	cityName: "摩拉雅",
+	citySpell: "MOLAYA",
+	"code": "MYA",
+	"countryCode": "AU",
+	"countryName": "澳大利亚",
+	cityFirstLetter: "M"
+}, {
+	cityName: "马埃岛",
+	citySpell: "MAAIDAO",
+	"code": "SEZ",
+	"countryCode": "SC",
+	"countryName": "塞舌尔",
+	cityFirstLetter: "M"
+}, {
+	cityName: "门多萨",
+	citySpell: "MENDUOSA",
+	"code": "MDZ",
+	"countryCode": "AR",
+	"countryName": "阿根廷",
+	cityFirstLetter: "M"
+}, {
+	cityName: "姆康巴蒂",
+	citySpell: "MUKANGBADI",
+	"code": "MBM",
+	"countryCode": "ZA",
+	"countryName": "南非",
+	cityFirstLetter: "M"
+}, {
+	cityName: "姆布特",
+	citySpell: "MUBUTE",
+	"code": "MBR",
+	"countryCode": "MR",
+	"countryName": "毛里塔尼亚",
+	cityFirstLetter: "M"
+}, {
+	cityName: "米纳蒂特兰",
+	citySpell: "MINADITELAN",
+	"code": "MTT",
+	"countryCode": "MX",
+	"countryName": "墨西哥",
+	cityFirstLetter: "M"
+}, {
+	cityName: "玛琅",
+	citySpell: "MALANG",
+	"code": "MLG",
+	"countryCode": "ID",
+	"countryName": "印度尼西亚",
+	cityFirstLetter: "M"
+}, {
+	cityName: "马斯垂克",
+	citySpell: "MASICHUIKE",
+	"code": "MST",
+	"countryCode": "NL",
+	"countryName": "荷兰",
+	cityFirstLetter: "M"
+}, {
+	cityName: "墨西哥城",
+	citySpell: "MOXIGECHENG",
+	"code": "MEX",
+	"countryCode": "MX",
+	"countryName": "墨西哥",
+	cityFirstLetter: "M"
+}, {
+	cityName: "梅克内斯",
+	citySpell: "MEIKENEISI",
+	"code": "MEK",
+	"countryCode": "MA",
+	"countryName": "摩洛哥",
+	cityFirstLetter: "M"
+}, {
+	cityName: "马斯科吉",
+	citySpell: "MASIKEJI",
+	"code": "MKO",
+	"countryCode": "US",
+	"countryName": "美国",
+	cityFirstLetter: "M"
+}, {
+	cityName: "迈克艾伦",
+	citySpell: "MAIKEAILUN",
+	"code": "MFE",
+	"countryCode": "US",
+	"countryName": "美国",
+	cityFirstLetter: "M"
+}, {
+	cityName: "蒙斯特",
+	citySpell: "MENGSITE",
+	"code": "FMO",
+	"countryCode": "DE",
+	"countryName": "德国",
+	cityFirstLetter: "M"
+}, {
+	cityName: "迈索尔",
+	citySpell: "MAISUOER",
+	"code": "MYQ",
+	"countryCode": "IN",
+	"countryName": "印度",
+	cityFirstLetter: "M"
+}, {
+	cityName: "莫罗贝",
+	citySpell: "MOLUOBEI",
+	"code": "OBM",
+	"countryCode": "PG",
+	"countryName": "巴布亚新几内亚",
+	cityFirstLetter: "M"
+}, {
+	cityName: "曼萨尼略",
+	citySpell: "MANSANILUE",
+	"code": "ZLO",
+	"countryCode": "MX",
+	"countryName": "墨西哥",
+	cityFirstLetter: "M"
+}, {
+	cityName: "默塞德",
+	citySpell: "MOSAIDE",
+	"code": "MCE",
+	"countryCode": "US",
+	"countryName": "美国",
+	cityFirstLetter: "M"
+}, {
+	cityName: "马萨葡萄园",
+	citySpell: "MASAPUTAOYUAN",
+	"code": "MVY",
+	"countryCode": "US",
+	"countryName": "美国",
+	cityFirstLetter: "M"
+}, {
+	cityName: "马克姆",
+	citySpell: "MAKEMU",
+	"code": "MQB",
+	"countryCode": "US",
+	"countryName": "美国",
+	cityFirstLetter: "M"
+}, {
+	cityName: "马塞纳",
+	citySpell: "MASAINA",
+	"code": "MSS",
+	"countryCode": "US",
+	"countryName": "美国",
+	cityFirstLetter: "M"
+}, {
+	cityName: "梅德福",
+	citySpell: "MEIDEFU",
+	"code": "MFR",
+	"countryCode": "US",
+	"countryName": "美国",
+	cityFirstLetter: "M"
+}, {
+	cityName: "默里迪恩",
+	citySpell: "MOLIDIEN",
+	"code": "MEI",
+	"countryCode": "US",
+	"countryName": "美国",
+	cityFirstLetter: "M"
+}, {
+	cityName: "马什港",
+	citySpell: "MASHIGANG",
+	"code": "MHH",
+	"countryCode": "BS",
+	"countryName": "巴哈马",
+	cityFirstLetter: "M"
+}, {
+	cityName: "蒙特里亚",
+	citySpell: "MENGTELIYA",
+	"code": "MTR",
+	"countryCode": "CO",
+	"countryName": "哥伦比亚",
+	cityFirstLetter: "M"
+}, {
+	cityName: "马朱罗",
+	citySpell: "MAZHULUO",
+	"code": "MAJ",
+	"countryCode": "MH",
+	"countryName": "马绍尔群岛",
+	cityFirstLetter: "M"
+}, {
+	cityName: "姆万扎",
+	citySpell: "MUWANZHA",
+	"code": "MWZ",
+	"countryCode": "TZ",
+	"countryName": "坦桑尼亚",
+	cityFirstLetter: "M"
+}, {
+	cityName: "麦格哈利",
+	citySpell: "MAIGEHALI",
+	"code": "MEY",
+	"countryCode": "NP",
+	"countryName": "尼泊尔",
+	cityFirstLetter: "M"
+}, {
+	cityName: "毛埃斯",
+	citySpell: "MAOAISI",
+	"code": "MBZ",
+	"countryCode": "BR",
+	"countryName": "巴西",
+	cityFirstLetter: "M"
+}, {
+	cityName: "梅科尤克",
+	citySpell: "MEIKEYOUKE",
+	"code": "MYU",
+	"countryCode": "US",
+	"countryName": "美国",
+	cityFirstLetter: "M"
+}, {
+	cityName: "麦夸里港",
+	citySpell: "MAIKUALIGANG",
+	"code": "PQQ",
+	"countryCode": "AU",
+	"countryName": "澳大利亚",
+	cityFirstLetter: "M"
+}, {
+	cityName: "马卡帕",
+	citySpell: "MAKAPA",
+	"code": "MCP",
+	"countryCode": "BR",
+	"countryName": "巴西",
+	cityFirstLetter: "M"
+}, {
+	cityName: "马鲁阿",
+	citySpell: "MALUA",
+	"code": "MVR",
+	"countryCode": "CM",
+	"countryName": "喀麦隆",
+	cityFirstLetter: "M"
+}, {
+	cityName: "马歇尔(明尼苏达州)",
+	citySpell: "MAXIEER",
+	"code": "MML",
+	"countryCode": "US",
+	"countryName": "美国",
+	cityFirstLetter: "M"
+}, {
+	cityName: "缅迭什",
+	citySpell: "MIANDIESHI",
+	"code": "MZD",
+	"countryCode": "EC",
+	"countryName": "厄瓜多尔",
+	cityFirstLetter: "M"
+}, {
+	cityName: "莫什泰鲁",
+	citySpell: "MOSHITAILU",
+	"code": "MTI",
+	"countryCode": "CV",
+	"countryName": "佛得角",
+	cityFirstLetter: "M"
+}, {
+	cityName: "明拉顿",
+	citySpell: "MINGLADUN",
+	"code": "XML",
+	"countryCode": "AU",
+	"countryName": "澳大利亚",
+	cityFirstLetter: "M"
+}, {
+	cityName: "曼塔",
+	citySpell: "MANTA",
+	"code": "MEC",
+	"countryCode": "EC",
+	"countryName": "厄瓜多尔",
+	cityFirstLetter: "M"
+}, {
+	cityName: "麦斯-卡蒙尼",
+	citySpell: "MAISIKAMENGNI",
+	"code": "YMK",
+	"countryCode": "RU",
+	"countryName": "俄罗斯",
+	cityFirstLetter: "M"
+}, {
+	cityName: "曼斯菲尔德",
+	citySpell: "MANSIFEIERDE",
+	"code": "MFD",
+	"countryCode": "US",
+	"countryName": "美国",
+	cityFirstLetter: "M"
+}, {
+	cityName: "曼凯托",
+	citySpell: "MANKAITUO",
+	"code": "MKT",
+	"countryCode": "US",
+	"countryName": "美国",
+	cityFirstLetter: "M"
+}, {
+	cityName: "米凯利",
+	citySpell: "MIKAILI",
+	"code": "MIK",
+	"countryCode": "FI",
+	"countryName": "芬兰",
+	cityFirstLetter: "M"
+}, {
+	cityName: "迈马纳",
+	citySpell: "MAIMANA",
+	"code": "MMZ",
+	"countryCode": "AF",
+	"countryName": "阿富汗",
+	cityFirstLetter: "M"
+}, {
+	cityName: "马六甲",
+	citySpell: "MALIUJIA",
+	"code": "MKZ",
+	"countryCode": "MY",
+	"countryName": "马来西亚",
+	cityFirstLetter: "M"
+}, {
+	cityName: "毛梅里",
+	citySpell: "MAOMEILI",
+	"code": "MOF",
+	"countryCode": "ID",
+	"countryName": "印度尼西亚",
+	cityFirstLetter: "M"
+}, {
+	cityName: "蒙戈",
+	citySpell: "MENGGE",
+	"code": "MVO",
+	"countryCode": "TD",
+	"countryName": "乍得",
+	cityFirstLetter: "M"
+}, {
+	cityName: "迈杜古里",
+	citySpell: "MAIDUGULI",
+	"code": "MIU",
+	"countryCode": "NG",
+	"countryName": "尼日利亚",
+	cityFirstLetter: "M"
+}, {
+	cityName: "莫比",
+	citySpell: "MOBI",
+	"code": "MGX",
+	"countryCode": "GA",
+	"countryName": "加蓬",
+	cityFirstLetter: "M"
+}, {
+	cityName: "米林金比",
+	citySpell: "MILINJINBI",
+	"code": "MGT",
+	"countryCode": "AU",
+	"countryName": "澳大利亚",
+	cityFirstLetter: "M"
+}, {
+	cityName: "芒古",
+	citySpell: "MANGGU",
+	"code": "MNR",
+	"countryCode": "ZM",
+	"countryName": "赞比亚",
+	cityFirstLetter: "M"
+}, {
+	cityName: "马斯格雷夫",
+	citySpell: "MASIGELEIFU",
+	"code": "MVU",
+	"countryCode": "AU",
+	"countryName": "澳大利亚",
+	cityFirstLetter: "M"
+}, {
+	cityName: "蒙特利尔",
+	citySpell: "MENGTELIER",
+	"code": "YMQ",
+	"countryCode": "CA",
+	"countryName": "加拿大",
+	cityFirstLetter: "M"
+}, {
+	cityName: "马库尔迪",
+	citySpell: "MAKUERDI",
+	"code": "MDI",
+	"countryCode": "NG",
+	"countryName": "尼日利亚",
+	cityFirstLetter: "M"
+}, {
+	cityName: "蒙蒂阿莱格里",
+	citySpell: "MENGDIALAIGELI",
+	"code": "MTE",
+	"countryCode": "BR",
+	"countryName": "巴西",
+	cityFirstLetter: "M"
+}, {
+	cityName: "米赞特费里",
+	citySpell: "MIZANTEFEILI",
+	"code": "MTF",
+	"countryCode": "ET",
+	"countryName": "埃塞俄比亚",
+	cityFirstLetter: "M"
+}, {
+	cityName: "明沃尔",
+	citySpell: "MINGWOER",
+	"code": "MVX",
+	"countryCode": "GA",
+	"countryName": "加蓬",
+	cityFirstLetter: "M"
+}, {
+	cityName: "蒙特雷",
+	citySpell: "MENGTELEI",
+	"code": "MRY",
+	"countryCode": "US",
+	"countryName": "美国",
+	cityFirstLetter: "M"
+}, {
+	cityName: "莫罗",
+	citySpell: "MOLUO",
+	"code": "MXH",
+	"countryCode": "PG",
+	"countryName": "巴布亚新几内亚",
+	cityFirstLetter: "M"
+}, {
+	cityName: "梅尔迪",
+	citySpell: "MEIERDI",
+	"code": "RDE",
+	"countryCode": "ID",
+	"countryName": "印度尼西亚",
+	cityFirstLetter: "M"
+}, {
+	cityName: "马塔莫罗斯",
+	citySpell: "MATAMOLUOSI",
+	"code": "MAM",
+	"countryCode": "MX",
+	"countryName": "墨西哥",
+	cityFirstLetter: "M"
+}, {
+	cityName: "木淡棉",
+	citySpell: "MUDANMIAN",
+	"code": "MNU",
+	"countryCode": "MM",
+	"countryName": "缅甸",
+	cityFirstLetter: "M"
+}, {
+	cityName: "马纳卡拉",
+	citySpell: "MANAKALA",
+	"code": "WVK",
+	"countryCode": "MG",
+	"countryName": "马达加斯加",
+	cityFirstLetter: "M"
+}, {
+	cityName: "穆鲁罗阿环礁",
+	citySpell: "MULULUOAHUANJIAO",
+	"code": "UOA",
+	"countryCode": "PF",
+	"countryName": "法属波利尼西亚",
+	cityFirstLetter: "M"
+}, {
+	cityName: "马托格罗索",
+	citySpell: "MATUOGELUOSUO",
+	"code": "MTG",
+	"countryCode": "BR",
+	"countryName": "巴西",
+	cityFirstLetter: "M"
+}, {
+	cityName: "马尼斯蒂",
+	citySpell: "MANISIDI",
+	"code": "MBL",
+	"countryCode": "US",
+	"countryName": "美国",
+	cityFirstLetter: "M"
+}, {
+	cityName: "马鲁安采特拉",
+	citySpell: "MALUANCAITELA",
+	"code": "WMN",
+	"countryCode": "MG",
+	"countryName": "马达加斯加",
+	cityFirstLetter: "M"
+}, {
+	cityName: "姆贝亚",
+	citySpell: "MUBEIYA",
+	"code": "MBI",
+	"countryCode": "TZ",
+	"countryName": "坦桑尼亚",
+	cityFirstLetter: "M"
+}, {
+	cityName: "穆巴",
+	citySpell: "MUBA",
+	"code": "MOO",
+	"countryCode": "AU",
+	"countryName": "澳大利亚",
+	cityFirstLetter: "M"
+}, {
+	cityName: "马尔多那多港",
+	citySpell: "MAERDUONADUOGANG",
+	"code": "PEM",
+	"countryCode": "PE",
+	"countryName": "秘鲁",
+	cityFirstLetter: "M"
+}, {
+	cityName: "马塔姆",
+	citySpell: "MATAMU",
+	"code": "MAX",
+	"countryCode": "SN",
+	"countryName": "塞内加尔",
+	cityFirstLetter: "M"
+}, {
+	cityName: "米尔福德桑德",
+	citySpell: "MIERFUDESANGDE",
+	"code": "MFN",
+	"countryCode": "NZ",
+	"countryName": "新西兰",
+	cityFirstLetter: "M"
+}, {
+	cityName: "麦迪纳",
+	citySpell: "MAIDINA",
+	"code": "MED",
+	"countryCode": "SA",
+	"countryName": "沙特阿垃伯",
+	cityFirstLetter: "M"
+}, {
+	cityName: "马格尼托哥尔斯克",
+	citySpell: "MAGENITUOGEERSIKE",
+	"code": "MQF",
+	"countryCode": "RU",
+	"countryName": "俄罗斯",
+	cityFirstLetter: "M"
+}, {
+	cityName: "麦迪逊",
+	citySpell: "MAIDIXUN",
+	"code": "MSN",
+	"countryCode": "US",
+	"countryName": "美国",
+	cityFirstLetter: "M"
+}, {
+	cityName: "马菲亚",
+	citySpell: "MAFEIYA",
+	"code": "MFA",
+	"countryCode": "TZ",
+	"countryName": "坦桑尼亚",
+	cityFirstLetter: "M"
+}, {
+	cityName: "马金乔",
+	citySpell: "MAJINQIAO",
+	"code": "MQD",
+	"countryCode": "AR",
+	"countryName": "阿根廷",
+	cityFirstLetter: "M"
+}, {
+	cityName: "马塞马拉",
+	citySpell: "MASAIMALA",
+	"code": "MRE",
+	"countryCode": "KE",
+	"countryName": "肯尼亚",
+	cityFirstLetter: "M"
+}, {
+	cityName: "马普托",
+	citySpell: "MAPUTUO",
+	"code": "MPM",
+	"countryCode": "MZ",
+	"countryName": "莫桑比克",
+	cityFirstLetter: "M"
+}, {
+	cityName: "蒙塞拉特",
+	citySpell: "MENGSAILATE",
+	"code": "MNI",
+	"countryCode": "MS",
+	"countryName": "蒙特塞拉特",
+	cityFirstLetter: "M"
+}, {
+	cityName: "蒙得维的亚",
+	citySpell: "MENGDEWEIDEYA",
+	"code": "MVE",
+	"countryCode": "US",
+	"countryName": "美国",
+	cityFirstLetter: "M"
+}, {
+	cityName: "梅尔菲",
+	citySpell: "MEIERFEI",
+	"code": "MEF",
+	"countryCode": "TD",
+	"countryName": "乍得",
+	cityFirstLetter: "M"
+}, {
+	cityName: "马亚奎兹",
+	citySpell: "MAYAKUIZI",
+	"code": "MAZ",
+	"countryCode": "PR",
+	"countryName": "波多黎各",
+	cityFirstLetter: "M"
+}, {
+	cityName: "玛丽挽加朗特岛",
+	citySpell: "MALIWANJIALANGTEDAO",
+	"code": "GBJ",
+	"countryCode": "GP",
+	"countryName": "瓜德罗普岛",
+	cityFirstLetter: "M"
+}, {
+	cityName: "莫尔德",
+	citySpell: "MOERDE",
+	"code": "MOL",
+	"countryCode": "NO",
+	"countryName": "挪威",
+	cityFirstLetter: "M"
+}, {
+	cityName: "米切尔山口",
+	citySpell: "MIQIEERSHANKOU",
+	"code": "MIH",
+	"countryCode": "AU",
+	"countryName": "澳大利亚",
+	cityFirstLetter: "M"
+}, {
+	cityName: "迈尔斯城",
+	citySpell: "MAIERSICHENG",
+	"code": "MLS",
+	"countryCode": "US",
+	"countryName": "美国",
+	cityFirstLetter: "M"
+}, {
+	cityName: "梅特兰",
+	citySpell: "MEITELAN",
+	"code": "MTL",
+	"countryCode": "AU",
+	"countryName": "澳大利亚",
+	cityFirstLetter: "M"
+}, {
+	cityName: "莫辛布瓦挽达普拉亚",
+	citySpell: "MOXINBUWAWANDAPULAYA",
+	"code": "MZB",
+	"countryCode": "MZ",
+	"countryName": "莫桑比克",
+	cityFirstLetter: "M"
+}, {
+	cityName: "姆富韦",
+	citySpell: "MUFUWEI",
+	"code": "MFU",
+	"countryCode": "ZM",
+	"countryName": "赞比亚",
+	cityFirstLetter: "M"
+}, {
+	cityName: "马德普拉塔",
+	citySpell: "MADEPULATA",
+	"code": "MDQ",
+	"countryCode": "AR",
+	"countryName": "阿根廷",
+	cityFirstLetter: "M"
+}, {
+	cityName: "曼海姆",
+	citySpell: "MANHAIMU",
+	"code": "MHG",
+	"countryCode": "DE",
+	"countryName": "德国",
+	cityFirstLetter: "M"
+}, {
+	cityName: "莫普提",
+	citySpell: "MOPUTI",
+	"code": "MZI",
+	"countryCode": "ML",
+	"countryName": "马里",
+	cityFirstLetter: "M"
+}, {
+	cityName: "梅森城",
+	citySpell: "MEISENCHENG",
+	"code": "MCW",
+	"countryCode": "US",
+	"countryName": "美国",
+	cityFirstLetter: "M"
+}, {
+	cityName: "默卡讷瑟拉姆",
+	citySpell: "MOKANESELAMU",
+	"code": "MKS",
+	"countryCode": "ET",
+	"countryName": "埃塞俄比亚",
+	cityFirstLetter: "M"
+}, {
+	cityName: "明登",
+	citySpell: "MINGDENG",
+	"code": "MEV",
+	"countryCode": "US",
+	"countryName": "美国",
+	cityFirstLetter: "M"
+}, {
+	cityName: "穆卡",
+	citySpell: "MUKA",
+	"code": "MKM",
+	"countryCode": "MY",
+	"countryName": "马来西亚",
+	cityFirstLetter: "M"
+}, {
+	cityName: "姆巴拉",
+	citySpell: "MUBALA",
+	"code": "MMQ",
+	"countryCode": "ZM",
+	"countryName": "赞比亚",
+	cityFirstLetter: "M"
+}, {
+	cityName: "马顿",
+	citySpell: "MADUN",
+	"code": "MTO",
+	"countryCode": "US",
+	"countryName": "美国",
+	cityFirstLetter: "M"
+}, {
+	cityName: "马奥",
+	citySpell: "MAAO",
+	"code": "AMO",
+	"countryCode": "TD",
+	"countryName": "乍得",
+	cityFirstLetter: "M"
+}, {
+	cityName: "蒙特哥贝",
+	citySpell: "MENGTEGEBEI",
+	"code": "MBJ",
+	"countryCode": "JM",
+	"countryName": "牙买加",
+	cityFirstLetter: "M"
+}, {
+	cityName: "蒙特斯 克拉劳斯",
+	citySpell: "MENGTESIKELALAOSI",
+	"code": "MOC",
+	"countryCode": "BR",
+	"countryName": "巴西",
+	cityFirstLetter: "M"
+}, {
+	cityName: "马拉迪",
+	citySpell: "MALADI",
+	"code": "MFQ",
+	"countryCode": "NE",
+	"countryName": "尼日尔",
+	cityFirstLetter: "M"
+}, {
+	cityName: "明拉塞纳多诺特",
+	citySpell: "MINGLASAINADUONUOTE",
+	"code": "NTM",
+	"countryCode": "BR",
+	"countryName": "巴西",
+	cityFirstLetter: "M"
+}, {
+	cityName: "马里斯克尔挽埃斯蒂加里",
+	citySpell: "MALISIKEERWANAISIDIJIALI",
+	"code": "ESG",
+	"countryCode": "PY",
+	"countryName": "巴拉圭",
+	cityFirstLetter: "M"
+}, {
+	cityName: "蒙彼利埃",
+	citySpell: "MENGBILIAI",
+	"code": "MPL",
+	"countryCode": "FR",
+	"countryName": "法国",
+	cityFirstLetter: "M"
+}, {
+	cityName: "莫阿纳马尼",
+	citySpell: "MOANAMANI",
+	"code": "ONI",
+	"countryCode": "ID",
+	"countryName": "印度尼西亚",
+	cityFirstLetter: "M"
+}, {
+	cityName: "米诺阔",
+	citySpell: "MINUOKUO",
+	"code": "ARV",
+	"countryCode": "US",
+	"countryName": "美国",
+	cityFirstLetter: "M"
+}, {
+	cityName: "蒙达",
+	citySpell: "MENGDA",
+	"code": "MUA",
+	"countryCode": "SB",
+	"countryName": "所罗门群岛",
+	cityFirstLetter: "M"
+}, {
+	cityName: "芒俄勒",
+	citySpell: "MANGELE",
+	"code": "MAL",
+	"countryCode": "ID",
+	"countryName": "印度尼西亚",
+	cityFirstLetter: "M"
+}, {
+	cityName: "马塔克",
+	citySpell: "MATAKE",
+	"code": "MWK",
+	"countryCode": "ID",
+	"countryName": "印度尼西亚",
+	cityFirstLetter: "M"
+}, {
+	cityName: "蒙托",
+	citySpell: "MENGTUO",
+	"code": "MNQ",
+	"countryCode": "AU",
+	"countryName": "澳大利亚",
+	cityFirstLetter: "M"
+}, {
+	cityName: "姆碌",
+	citySpell: "MULU",
+	"code": "MZV",
+	"countryCode": "MY",
+	"countryName": "马来西亚",
+	cityFirstLetter: "M"
+}, {
+	cityName: "米尔迪拉",
+	citySpell: "MIERDILA",
+	"code": "MQL",
+	"countryCode": "AU",
+	"countryName": "澳大利亚",
+	cityFirstLetter: "M"
+}, {
+	cityName: "麦罗维",
+	citySpell: "MAILUOWEI",
+	"code": "MWE",
+	"countryCode": "SD",
+	"countryName": "苏丹",
+	cityFirstLetter: "M"
+}, {
+	cityName: "米洛斯",
+	citySpell: "MILUOSI",
+	"code": "MLO",
+	"countryCode": "GR",
+	"countryName": "希腊",
+	cityFirstLetter: "M"
+}, {
+	cityName: "马恩岛",
+	citySpell: "MAENDAO",
+	"code": "IOM",
+	"countryCode": "GB",
+	"countryName": "英国",
+	cityFirstLetter: "M"
+}, {
+	cityName: "马甘格",
+	citySpell: "MAGANGE",
+	"code": "MGN",
+	"countryCode": "CO",
+	"countryName": "哥伦比亚",
+	cityFirstLetter: "M"
+}, {
+	cityName: "马里伯勒",
+	citySpell: "MALIBOLE",
+	"code": "MBH",
+	"countryCode": "AU",
+	"countryName": "澳大利亚",
+	cityFirstLetter: "M"
+}, {
+	cityName: "马拉松",
+	citySpell: "MALASONG",
+	"code": "MTH",
+	"countryCode": "US",
+	"countryName": "美国",
+	cityFirstLetter: "M"
+}, {
+	cityName: "米德兰",
+	citySpell: "MIDELAN",
+	"code": "MAF",
+	"countryCode": "US",
+	"countryName": "美国",
+	cityFirstLetter: "M"
+}, {
+	cityName: "马德林港",
+	citySpell: "MADELINGANG",
+	"code": "PMY",
+	"countryCode": "AR",
+	"countryName": "阿根廷",
+	cityFirstLetter: "M"
+}, {
+	cityName: "梅明根",
+	citySpell: "MEIMINGGEN",
+	"code": "FMM",
+	"countryCode": "DE",
+	"countryName": "德国",
+	cityFirstLetter: "M"
+}, {
+	cityName: "迈考",
+	citySpell: "MAIKAO",
+	"code": "MCJ",
+	"countryCode": "CO",
+	"countryName": "哥伦比亚",
+	cityFirstLetter: "M"
+}, {
+	cityName: "芒特哈根",
+	citySpell: "MANGTEHAGEN",
+	"code": "HGU",
+	"countryCode": "PG",
+	"countryName": "巴布亚新几内亚",
+	cityFirstLetter: "M"
+}, {
+	cityName: "马塔兰",
+	citySpell: "MATALAN",
+	"code": "AMI",
+	"countryCode": "ID",
+	"countryName": "印度尼西亚",
+	cityFirstLetter: "M"
+}, {
+	cityName: "马老奇",
+	citySpell: "MALAOQI",
+	"code": "MKQ",
+	"countryCode": "ID",
+	"countryName": "印度尼西亚",
+	cityFirstLetter: "M"
+}, {
+	cityName: "马纳萨斯",
+	citySpell: "MANASASI",
+	"code": "MNZ",
+	"countryCode": "US",
+	"countryName": "美国",
+	cityFirstLetter: "M"
+}, {
+	cityName: "芒基贝",
+	citySpell: "MANGJIBEI",
+	"code": "MYZ",
+	"countryCode": "MW",
+	"countryName": "马拉维",
+	cityFirstLetter: "M"
+}, {
+	cityName: "马尔达",
+	citySpell: "MAERDA",
+	"code": "LDA",
+	"countryCode": "IN",
+	"countryName": "印度",
+	cityFirstLetter: "M"
+}, {
+	cityName: "蒙波斯",
+	citySpell: "MENGBOSI",
+	"code": "MMP",
+	"countryCode": "CO",
+	"countryName": "哥伦比亚",
+	cityFirstLetter: "M"
+}, {
+	cityName: "门罗",
+	citySpell: "MENLUO",
+	"code": "MLU",
+	"countryCode": "US",
+	"countryName": "美国",
+	cityFirstLetter: "M"
+}, {
+	cityName: "梅尼亚米亚",
+	citySpell: "MEINIYAMIYA",
+	"code": "MYX",
+	"countryCode": "PG",
+	"countryName": "巴布亚新几内亚",
+	cityFirstLetter: "M"
+}, {
+	cityName: "马里博",
+	citySpell: "MALIBO",
+	"code": "MBX",
+	"countryCode": "SI",
+	"countryName": "斯洛文尼亚",
+	cityFirstLetter: "M"
+}, {
+	cityName: "马奥塔沙瓦依",
+	citySpell: "MAAOTASHAWAYI",
+	"code": "MXS",
+	"countryCode": "WS",
+	"countryName": "西萨摩亚（太平洋）",
+	cityFirstLetter: "M"
+}, {
+	cityName: "莫里斯敦",
+	citySpell: "MOLISIDUN",
+	"code": "MMU",
+	"countryCode": "US",
+	"countryName": "美国",
+	cityFirstLetter: "M"
+}, {
+	cityName: "穆塔雷",
+	citySpell: "MUTALEI",
+	"code": "UTA",
+	"countryCode": "ZW",
+	"countryName": "津巴布韦",
+	cityFirstLetter: "M"
+}, {
+	cityName: "马萨",
+	citySpell: "MASA",
+	"code": "MBV",
+	"countryCode": "PG",
+	"countryName": "巴布亚新几内亚",
+	cityFirstLetter: "M"
+}, {
+	cityName: "梅多纽",
+	citySpell: "MEIDUONIU",
+	"code": "MDV",
+	"countryCode": "GA",
+	"countryName": "加蓬",
+	cityFirstLetter: "M"
+}, {
+	cityName: "蒙哥马利",
+	citySpell: "MENGGEMALI",
+	"code": "MGM",
+	"countryCode": "US",
+	"countryName": "美国",
+	cityFirstLetter: "M"
+}, {
+	cityName: "马米基里岛",
+	citySpell: "MAMIJILIDAO",
+	"code": "VAM",
+	"countryCode": "MV",
+	"countryName": "马尔代夫",
+	cityFirstLetter: "M"
+}, {
+	cityName: "孟萨",
+	citySpell: "MENGSA",
+	"code": "MOG",
+	"countryCode": "MM",
+	"countryName": "缅甸",
+	cityFirstLetter: "M"
+}, {
+	cityName: "马太瓦",
+	citySpell: "MATAIWA",
+	"code": "MVT",
+	"countryCode": "PF",
+	"countryName": "法属波利尼西亚",
+	cityFirstLetter: "M"
+}, {
+	cityName: "马科库",
+	citySpell: "MAKEKU",
+	"code": "MKU",
+	"countryCode": "GA",
+	"countryName": "加蓬",
+	cityFirstLetter: "M"
+}, {
+	cityName: "梅兹南希",
+	citySpell: "MEIZINANXI",
+	"code": "ETZ",
+	"countryCode": "FR",
+	"countryName": "法国",
+	cityFirstLetter: "M"
+}, {
+	cityName: "穆扎法拉巴德",
+	citySpell: "MUZHAFALABADE",
+	"code": "MFG",
+	"countryCode": "PK",
+	"countryName": "巴基斯坦",
+	cityFirstLetter: "M"
+}, {
+	cityName: "穆伊",
+	citySpell: "MUYI",
+	"code": "MUJ",
+	"countryCode": "ET",
+	"countryName": "埃塞俄比亚",
+	cityFirstLetter: "M"
+}, {
+	cityName: "马兰格",
+	citySpell: "MALANGE",
+	"code": "MEG",
+	"countryCode": "AO",
+	"countryName": "安哥拉",
+	cityFirstLetter: "M"
+}, {
+	cityName: "麦德林",
+	citySpell: "MAIDELIN",
+	"code": "MDE",
+	"countryCode": "CO",
+	"countryName": "哥伦比亚",
+	cityFirstLetter: "M"
+}, {
+	cityName: "莫宁顿",
+	citySpell: "MONINGDUN",
+	"code": "ONG",
+	"countryCode": "AU",
+	"countryName": "澳大利亚",
+	cityFirstLetter: "M"
+}, {
+	cityName: "木格具",
+	citySpell: "MUGEJU",
+	"code": "PKK",
+	"countryCode": "MM",
+	"countryName": "缅甸",
+	cityFirstLetter: "M"
+}, {
+	cityName: "米尔内",
+	citySpell: "MIERNEI",
+	"code": "MJZ",
+	"countryCode": "RU",
+	"countryName": "俄罗斯",
+	cityFirstLetter: "M"
+}, {
+	cityName: "马布尔",
+	citySpell: "MABUER",
+	"code": "MYH",
+	"countryCode": "US",
+	"countryName": "美国",
+	cityFirstLetter: "M"
+}, {
+	cityName: "姆巴拉拉",
+	citySpell: "MUBALALA",
+	"code": "MBQ",
+	"countryCode": "UG",
+	"countryName": "乌干达",
+	cityFirstLetter: "M"
+}, {
+	cityName: "马拉卡勒",
+	citySpell: "MALAKALE",
+	"code": "MAK",
+	"countryCode": "SS",
+	"countryName": "南苏丹共和国",
+	cityFirstLetter: "M"
+}, {
+	cityName: "梅察达",
+	citySpell: "MEICHADA",
+	"code": "MTZ",
+	"countryCode": "IL",
+	"countryName": "以色列",
+	cityFirstLetter: "M"
+}, {
+	cityName: "马林杜克",
+	citySpell: "MALINDUKE",
+	"code": "MRQ",
+	"countryCode": "PH",
+	"countryName": "菲律宾",
+	cityFirstLetter: "M"
+}, {
+	cityName: "密克隆",
+	citySpell: "MIKELONG",
+	"code": "MQC",
+	"countryCode": "PM",
+	"countryName": "圣皮埃尔和密克隆",
+	cityFirstLetter: "M"
+}, {
+	cityName: "梅尔济丰",
+	citySpell: "MEIERJIFENG",
+	"code": "MZH",
+	"countryCode": "TR",
+	"countryName": "土耳其",
+	cityFirstLetter: "M"
+}, {
+	cityName: "迈因蒂拉努",
+	citySpell: "MAIYINDILANU",
+	"code": "MXT",
+	"countryCode": "MG",
+	"countryName": "马达加斯加",
+	cityFirstLetter: "M"
+}, {
+	cityName: "马尔默",
+	citySpell: "MAERMO",
+	"code": "MMA",
+	"countryCode": "SE",
+	"countryName": "瑞典",
+	cityFirstLetter: "M"
+}, {
+	cityName: "莫尔特里",
+	citySpell: "MOERTELI",
+	"code": "MGR",
+	"countryCode": "US",
+	"countryName": "美国",
+	cityFirstLetter: "M"
+}, {
+	cityName: "姆波基",
+	citySpell: "MUBOJI",
+	"code": "MKI",
+	"countryCode": "CF",
+	"countryName": "中非",
+	cityFirstLetter: "M"
+}, {
+	cityName: "明纳",
+	citySpell: "MINGNA",
+	"code": "MXJ",
+	"countryCode": "NG",
+	"countryName": "尼日利亚",
+	cityFirstLetter: "M"
+}, {
+	cityName: "穆尔西亚",
+	citySpell: "MUERXIYA",
+	"code": "MJV",
+	"countryCode": "ES",
+	"countryName": "西班牙",
+	cityFirstLetter: "M"
+}, {
+	cityName: "米拉务",
+	citySpell: "MILAWU",
+	"code": "MEQ",
+	"countryCode": "ID",
+	"countryName": "印度尼西亚",
+	cityFirstLetter: "M"
+}, {
+	cityName: "马塔迪",
+	citySpell: "MATADI",
+	"code": "MAT",
+	"countryCode": "CD",
+	"countryName": "刚果民主共和国",
+	cityFirstLetter: "M"
+}, {
+	cityName: "马图林",
+	citySpell: "MATULIN",
+	"code": "MUN",
+	"countryCode": "VE",
+	"countryName": "委内瑞拉",
+	cityFirstLetter: "M"
+}, {
+	cityName: "米苏拉塔",
+	citySpell: "MISULATA",
+	"code": "MRA",
+	"countryCode": "LY",
+	"countryName": "利比亚",
+	cityFirstLetter: "M"
+}, {
+	cityName: "马宁里达",
+	citySpell: "MANINGLIDA",
+	"code": "MNG",
+	"countryCode": "AU",
+	"countryName": "澳大利亚",
+	cityFirstLetter: "M"
+}, {
+	cityName: "莫里",
+	citySpell: "MOLI",
+	"code": "MRZ",
+	"countryCode": "AU",
+	"countryName": "澳大利亚",
+	cityFirstLetter: "M"
+}, {
+	cityName: "明托",
+	citySpell: "MINGTUO",
+	"code": "MNT",
+	"countryCode": "US",
+	"countryName": "美国",
+	cityFirstLetter: "M"
+}, {
+	cityName: "马瓦拉",
+	citySpell: "MAWALA",
+	"code": "MYW",
+	"countryCode": "TZ",
+	"countryName": "坦桑尼亚",
+	cityFirstLetter: "M"
+}, {
+	cityName: "蒙罗维亚",
+	citySpell: "MENGLUOWEIYA",
+	"code": "MLW",
+	"countryCode": "LR",
+	"countryName": "利比里亚",
+	cityFirstLetter: "M"
+}, {
+	cityName: "马布尔巴",
+	citySpell: "MABUERBA",
+	"code": "MBB",
+	"countryCode": "AU",
+	"countryName": "澳大利亚",
+	cityFirstLetter: "M"
+}, {
+	cityName: "马加丹",
+	citySpell: "MAJIADAN",
+	"code": "GDX",
+	"countryCode": "RU",
+	"countryName": "俄罗斯",
+	cityFirstLetter: "M"
+}, {
+	cityName: "马洛洛莱莱",
+	citySpell: "MALUOLUOLAILAI",
+	"code": "PTF",
+	"countryCode": "FJ",
+	"countryName": "斐济群岛",
+	cityFirstLetter: "M"
+}, {
+	cityName: "马尔",
+	citySpell: "MAER",
+	"code": "ULL",
+	"countryCode": "GB",
+	"countryName": "英国",
+	cityFirstLetter: "M"
+}, {
+	cityName: "芒特马格尼特",
+	citySpell: "MANGTEMAGENITE",
+	"code": "MMG",
+	"countryCode": "AU",
+	"countryName": "澳大利亚",
+	cityFirstLetter: "M"
+}, {
+	cityName: "梅纳",
+	citySpell: "MEINA",
+	"code": "MZX",
+	"countryCode": "ET",
+	"countryName": "埃塞俄比亚",
+	cityFirstLetter: "M"
+}, {
+	cityName: "马盖特",
+	citySpell: "MAGAITE",
+	"code": "MGH",
+	"countryCode": "ZA",
+	"countryName": "南非",
+	cityFirstLetter: "M"
+}, {
+	cityName: "梅坎博",
+	citySpell: "MEIKANBO",
+	"code": "MKB",
+	"countryCode": "GA",
+	"countryName": "加蓬",
+	cityFirstLetter: "M"
+}, {
+	cityName: "马斯尔肖尔斯",
+	citySpell: "MASIERXIAOERSI",
+	"code": "MSL",
+	"countryCode": "US",
+	"countryName": "美国",
+	cityFirstLetter: "M"
+}, {
+	cityName: "米切尔",
+	citySpell: "MIQIEER",
+	"code": "MTQ",
+	"countryCode": "AU",
+	"countryName": "澳大利亚",
+	cityFirstLetter: "M"
+}, {
+	cityName: "麦基诺岛",
+	citySpell: "MAIJINUODAO",
+	"code": "MCD",
+	"countryCode": "US",
+	"countryName": "美国",
+	cityFirstLetter: "M"
+}, {
+	cityName: "米拉米希",
+	citySpell: "MILAMIXI",
+	"code": "YCH",
+	"countryCode": "CA",
+	"countryName": "加拿大",
+	cityFirstLetter: "M"
+}, {
+	cityName: "麦克阿瑟河",
+	citySpell: "MAIKEASEHE",
+	"code": "MCV",
+	"countryCode": "AU",
+	"countryName": "澳大利亚",
+	cityFirstLetter: "M"
+}, {
+	cityName: "蒙特雷",
+	citySpell: "MENGTELEI",
+	"code": "MTY",
+	"countryCode": "MX",
+	"countryName": "墨西哥",
+	cityFirstLetter: "M"
+}, {
+	cityName: "米蒂利尼",
+	citySpell: "MIDILINI",
+	"code": "MJT",
+	"countryCode": "GR",
+	"countryName": "希腊",
+	cityFirstLetter: "M"
+}, {
+	cityName: "莫亚莱",
+	citySpell: "MOYALAI",
+	"code": "MYS",
+	"countryCode": "ET",
+	"countryName": "埃塞俄比亚",
+	cityFirstLetter: "M"
+}, {
+	cityName: "麦库克",
+	citySpell: "MAIKUKE",
+	"code": "MCK",
+	"countryCode": "US",
+	"countryName": "美国",
+	cityFirstLetter: "M"
+}, {
+	cityName: "民都鲁",
+	citySpell: "MINDOULU",
+	"code": "BTU",
+	"countryCode": "MY",
+	"countryName": "马来西亚",
+	cityFirstLetter: "M"
+}, {
+	cityName: "明尼帕",
+	citySpell: "MINGNIPA",
+	"code": "MIN",
+	"countryCode": "AU",
+	"countryName": "澳大利亚",
+	cityFirstLetter: "M"
+}, {
+	cityName: "芒特甘比尔",
+	citySpell: "MANGTEGANBIER",
+	"code": "MGB",
+	"countryCode": "AU",
+	"countryName": "澳大利亚",
+	cityFirstLetter: "M"
+}, {
+	cityName: "马公",
+	citySpell: "MAGONG",
+	"code": "MZG",
+	"countryCode": "TW",
+	"countryName": "中国台湾",
+	cityFirstLetter: "M"
+}, {
+	cityName: "蒙特朗布朗",
+	citySpell: "MENGTELANGBULANG",
+	"code": "YTM",
+	"countryCode": "CA",
+	"countryName": "加拿大",
+	cityFirstLetter: "M"
+}, {
+	cityName: "穆纳",
+	citySpell: "MUNA",
+	"code": "RAQ",
+	"countryCode": "ID",
+	"countryName": "印度尼西亚",
+	cityFirstLetter: "M"
+}, {
+	cityName: "马鲁迪",
+	citySpell: "MALUDI",
+	"code": "MUR",
+	"countryCode": "MY",
+	"countryName": "马来西亚",
+	cityFirstLetter: "M"
+}, {
+	cityName: "曼德利特萨拉",
+	citySpell: "MANDELITESALA",
+	"code": "WMA",
+	"countryCode": "MG",
+	"countryName": "马达加斯加",
+	cityFirstLetter: "M"
+}, {
+	cityName: "墨西拿",
+	citySpell: "MOXINA",
+	"code": "MEZ",
+	"countryCode": "ZA",
+	"countryName": "南非",
+	cityFirstLetter: "M"
+}, {
+	cityName: "马可维客",
+	citySpell: "MAKEWEIKE",
+	"code": "YMN",
+	"countryCode": "CA",
+	"countryName": "加拿大",
+	cityFirstLetter: "M"
+}, {
+	cityName: "莫比尔",
+	citySpell: "MOBIER",
+	"code": "MOB",
+	"countryCode": "US",
+	"countryName": "美国",
+	cityFirstLetter: "M"
+}, {
+	cityName: "马格丽特里弗",
+	citySpell: "MAGELITELIFU",
+	"code": "MGV",
+	"countryCode": "AU",
+	"countryName": "澳大利亚",
+	cityFirstLetter: "M"
+}, {
+	cityName: "莫雷利亚",
+	citySpell: "MOLEILIYA",
+	"code": "MLM",
+	"countryCode": "MX",
+	"countryName": "墨西哥",
+	cityFirstLetter: "M"
+}, {
+	cityName: "默克莱",
+	citySpell: "MOKELAI",
+	"code": "MQX",
+	"countryCode": "ET",
+	"countryName": "埃塞俄比亚",
+	cityFirstLetter: "M"
+}, {
+	cityName: "马利斯港",
+	citySpell: "MALISIGANG",
+	"code": "YMH",
+	"countryCode": "CA",
+	"countryName": "加拿大",
+	cityFirstLetter: "M"
+}, {
+	cityName: "马圭",
+	citySpell: "MAGUI",
+	"code": "MWQ",
+	"countryCode": "MM",
+	"countryName": "缅甸",
+	cityFirstLetter: "M"
+}, {
+	cityName: "马拉基",
+	citySpell: "MALAJI",
+	"code": "MZK",
+	"countryCode": "KI",
+	"countryName": "基里巴斯",
+	cityFirstLetter: "M"
+}, {
+	cityName: "毛凯岛",
+	citySpell: "MAOKAIDAO",
+	"code": "MUK",
+	"countryCode": "CK",
+	"countryName": "库克群岛",
+	cityFirstLetter: "M"
+}, {
+	cityName: "默勒卜",
+	citySpell: "MOLEBU",
+	"code": "MYN",
+	"countryCode": "YE",
+	"countryName": "也门",
+	cityFirstLetter: "M"
+}, {
+	cityName: "米利森特",
+	citySpell: "MILISENTE",
+	"code": "MLR",
+	"countryCode": "AU",
+	"countryName": "澳大利亚",
+	cityFirstLetter: "M"
+}, {
+	cityName: "明蒂克",
+	citySpell: "MINGDIKE",
+	"code": "MXK",
+	"countryCode": "PG",
+	"countryName": "巴布亚新几内亚",
+	cityFirstLetter: "M"
+}, {
+	cityName: "马布亚格岛",
+	citySpell: "MABUYAGEDAO",
+	"code": "UBB",
+	"countryCode": "AU",
+	"countryName": "澳大利亚",
+	cityFirstLetter: "M"
+}, {
+	cityName: "蒙得维的亚",
+	citySpell: "MENGDEWEIDEYA",
+	"code": "MVD",
+	"countryCode": "UY",
+	"countryName": "乌拉圭",
+	cityFirstLetter: "M"
+}, {
+	cityName: "穆村",
+	citySpell: "MUCUN",
+	"code": "MQN",
+	"countryCode": "NO",
+	"countryName": "挪威",
+	cityFirstLetter: "M"
+}, {
+	cityName: "梅特拉卡特拉",
+	citySpell: "MEITELAKATELA",
+	"code": "MTM",
+	"countryCode": "US",
+	"countryName": "美国",
+	cityFirstLetter: "M"
+}, {
+	cityName: "马斯蒂克岛",
+	citySpell: "MASIDIKEDAO",
+	"code": "MQS",
+	"countryCode": "VC",
+	"countryName": "圣文森特和格林纳丁斯",
+	cityFirstLetter: "M"
+}, {
+	cityName: "毛里求斯",
+	citySpell: "MAOLIQIUSI",
+	"code": "MRU",
+	"countryCode": "MU",
+	"countryName": "毛里求斯",
+	cityFirstLetter: "M"
+}, {
+	cityName: "摩亨朱达罗",
+	citySpell: "MOHENGZHUDALUO",
+	"code": "MJD",
+	"countryCode": "PK",
+	"countryName": "巴基斯坦",
+	cityFirstLetter: "M"
+}, {
+	cityName: "湄索",
+	citySpell: "MEISUO",
+	"code": "MAQ",
+	"countryCode": "TH",
+	"countryName": "泰国",
+	cityFirstLetter: "M"
+}, {
+	cityName: "蒙戈莫",
+	citySpell: "MENGGEMO",
+	"code": "GEM",
+	"countryCode": "GQ",
+	"countryName": "赤道几内亚",
+	cityFirstLetter: "M"
+}, {
+	cityName: "莫尔黑德",
+	citySpell: "MOERHEIDE",
+	"code": "MHY",
+	"countryCode": "PG",
+	"countryName": "巴布亚新几内亚",
+	cityFirstLetter: "M"
+}, {
+	cityName: "蒙特罗斯",
+	citySpell: "MENGTELUOSI",
+	"code": "MTJ",
+	"countryCode": "US",
+	"countryName": "美国",
+	cityFirstLetter: "M"
+}, {
+	cityName: "梅奥姆巴",
+	citySpell: "MEIAOMUBA",
+	"code": "MYB",
+	"countryCode": "GA",
+	"countryName": "加蓬",
+	cityFirstLetter: "M"
+}, {
+	cityName: "曼扎",
+	citySpell: "MANZHA",
+	"code": "MJA",
+	"countryCode": "MG",
+	"countryName": "马达加斯加",
+	cityFirstLetter: "M"
+}, {
+	cityName: "马什菲尔德",
+	citySpell: "MASHIFEIERDE",
+	"code": "MFI",
+	"countryCode": "US",
+	"countryName": "美国",
+	cityFirstLetter: "M"
+}, {
+	cityName: "马拉拉瓦",
+	citySpell: "MALALAWA",
+	"code": "MLQ",
+	"countryCode": "PG",
+	"countryName": "巴布亚新几内亚",
+	cityFirstLetter: "M"
+}, {
+	cityName: "马佐夫舍地区新庄园",
+	citySpell: "MAZUOFUSHEDIQUXINZHUANGYUAN",
+	"code": "WMI",
+	"countryCode": "PL",
+	"countryName": "波兰",
+	cityFirstLetter: "M"
+}, {
+	cityName: "马斯基根",
+	citySpell: "MASIJIGEN",
+	"code": "MKG",
+	"countryCode": "US",
+	"countryName": "美国",
+	cityFirstLetter: "M"
+}, {
+	cityName: "马诺诺",
+	citySpell: "MANUONUO",
+	"code": "MNO",
+	"countryCode": "CD",
+	"countryName": "刚果民主共和国",
+	cityFirstLetter: "M"
+}, {
+	cityName: "马诺夸里",
+	citySpell: "MANUOKUALI",
+	"code": "MKW",
+	"countryCode": "ID",
+	"countryName": "印度尼西亚",
+	cityFirstLetter: "M"
+}, {
+	cityName: "马拉巴",
+	citySpell: "MALABA",
+	"code": "MAB",
+	"countryCode": "BR",
+	"countryName": "巴西",
+	cityFirstLetter: "M"
+}, {
+	cityName: "马里恩",
+	citySpell: "MALIEN",
+	"code": "MWA",
+	"countryCode": "US",
+	"countryName": "美国",
+	cityFirstLetter: "M"
+}, {
+	cityName: "马拉库塔",
+	citySpell: "MALAKUTA",
+	"code": "XMC",
+	"countryCode": "AU",
+	"countryName": "澳大利亚",
+	cityFirstLetter: "M"
+}, {
+	cityName: "马默斯莱克斯",
+	citySpell: "MAMOSILAIKESI",
+	"code": "MMH",
+	"countryCode": "US",
+	"countryName": "美国",
+	cityFirstLetter: "M"
+}, {
+	cityName: "麦克斯维尔",
+	citySpell: "MAIKESIWEIER",
+	"code": "MVH",
+	"countryCode": "AU",
+	"countryName": "澳大利亚",
+	cityFirstLetter: "M"
+}, {
+	cityName: "姆班扎刚果",
+	citySpell: "MUBANZHAGANGGUO",
+	"code": "SSY",
+	"countryCode": "AO",
+	"countryName": "安哥拉",
+	cityFirstLetter: "M"
+}, {
+	cityName: "莫塔",
+	citySpell: "MOTA",
+	"code": "OTA",
+	"countryCode": "ET",
+	"countryName": "埃塞俄比亚",
+	cityFirstLetter: "M"
+}, {
+	cityName: "米德莱蒙",
+	citySpell: "MIDELAIMENG",
+	"code": "MMM",
+	"countryCode": "AU",
+	"countryName": "澳大利亚",
+	cityFirstLetter: "M"
+}, {
+	cityName: "马当",
+	citySpell: "MADANG",
+	"code": "MAG",
+	"countryCode": "PG",
+	"countryName": "巴布亚新几内亚",
+	cityFirstLetter: "M"
+}, {
+	cityName: "马拉凯",
+	citySpell: "MALAKAI",
+	"code": "MYC",
+	"countryCode": "VE",
+	"countryName": "委内瑞拉",
+	cityFirstLetter: "M"
+}, {
+	cityName: "曼尼提",
+	citySpell: "MANNITI",
+	"code": "XMH",
+	"countryCode": "PF",
+	"countryName": "法属波利尼西亚",
+	cityFirstLetter: "M"
+}, {
+	cityName: "密尔沃基",
+	citySpell: "MIERWOJI",
+	"code": "MKE",
+	"countryCode": "US",
+	"countryName": "美国",
+	cityFirstLetter: "M"
+}, {
+	cityName: "马诺科塔克",
+	citySpell: "MANUOKETAKE",
+	"code": "KMO",
+	"countryCode": "US",
+	"countryName": "美国",
+	cityFirstLetter: "M"
+}, {
+	cityName: "莫安达",
+	citySpell: "MOANDA",
+	"code": "MNB",
+	"countryCode": "CD",
+	"countryName": "刚果民主共和国",
+	cityFirstLetter: "M"
+}, {
+	cityName: "马凯特",
+	citySpell: "MAKAITE",
+	"code": "MQT",
+	"countryCode": "US",
+	"countryName": "美国",
+	cityFirstLetter: "M"
+}, {
+	cityName: "曼布劳",
+	citySpell: "MANBULAO",
+	"code": "MBO",
+	"countryCode": "PH",
+	"countryName": "菲律宾",
+	cityFirstLetter: "M"
+}, {
+	cityName: "曼蒂奥",
+	citySpell: "MANDIAO",
+	"code": "MEO",
+	"countryCode": "US",
+	"countryName": "美国",
+	cityFirstLetter: "M"
+}, {
+	cityName: "梅塞德斯镇",
+	citySpell: "MEISAIDESIZHEN",
+	"code": "VME",
+	"countryCode": "AR",
+	"countryName": "阿根廷",
+	cityFirstLetter: "M"
+}, {
+	cityName: "芒特弗农",
+	citySpell: "MANGTEFUNONG",
+	"code": "MVN",
+	"countryCode": "US",
+	"countryName": "美国",
+	cityFirstLetter: "M"
+}, {
+	cityName: "马萨西",
+	citySpell: "MASAXI",
+	"code": "XMI",
+	"countryCode": "TZ",
+	"countryName": "坦桑尼亚",
+	cityFirstLetter: "M"
+}, {
+	cityName: "穆兰巴赫",
+	citySpell: "MULANBAHE",
+	"code": "MOV",
+	"countryCode": "AU",
+	"countryName": "澳大利亚",
+	cityFirstLetter: "M"
+}, {
+	cityName: "曼彻斯特",
+	citySpell: "MANCHESITE",
+	"code": "MHT",
+	"countryCode": "US",
+	"countryName": "美国",
+	cityFirstLetter: "M"
+}, {
+	cityName: "莫尔登",
+	citySpell: "MOERDENG",
+	"code": "MAW",
+	"countryCode": "US",
+	"countryName": "美国",
+	cityFirstLetter: "M"
+}, {
+	cityName: "马里乌波尔",
+	citySpell: "MALIWUBOER",
+	"code": "MPW",
+	"countryCode": "UA",
+	"countryName": "乌克兰",
+	cityFirstLetter: "M"
+}, {
+	cityName: "莫舍恩",
+	citySpell: "MOSHEEN",
+	"code": "MJF",
+	"countryCode": "NO",
+	"countryName": "挪威",
+	cityFirstLetter: "M"
+}, {
+	cityName: "曼讷斯克里克",
+	citySpell: "MANNESIKELIKE",
+	"code": "MFP",
+	"countryCode": "AU",
+	"countryName": "澳大利亚",
+	cityFirstLetter: "M"
+}, {
+	cityName: "摩图伊卡",
+	citySpell: "MOTUYIKA",
+	"code": "MZP",
+	"countryCode": "NZ",
+	"countryName": "新西兰",
+	cityFirstLetter: "M"
+}, {
+	cityName: "蒙育瓦",
+	citySpell: "MENGYUWA",
+	"code": "NYW",
+	"countryCode": "MM",
+	"countryName": "缅甸",
+	cityFirstLetter: "M"
+}, {
+	cityName: "马赛",
+	citySpell: "MASAI",
+	"code": "MRS",
+	"countryCode": "FR",
+	"countryName": "法国",
+	cityFirstLetter: "M"
+}, {
+	cityName: "穆阿斯凯尔",
+	citySpell: "MUASIKAIER",
+	"code": "MUW",
+	"countryCode": "DZ",
+	"countryName": "阿尔及利亚",
+	cityFirstLetter: "M"
+}, {
+	cityName: "蒙克洛瓦",
+	citySpell: "MENGKELUOWA",
+	"code": "LOV",
+	"countryCode": "MX",
+	"countryName": "墨西哥",
+	cityFirstLetter: "M"
+}, {
+	cityName: "马林加",
+	citySpell: "MALINJIA",
+	"code": "MGF",
+	"countryCode": "BR",
+	"countryName": "巴西",
+	cityFirstLetter: "M"
+}, {
+	cityName: "马格达莱纳",
+	citySpell: "MAGEDALAINA",
+	"code": "MGD",
+	"countryCode": "BO",
+	"countryName": "玻利维亚",
+	cityFirstLetter: "M"
+}, {
+	cityName: "米尔福德",
+	citySpell: "MIERFUDE",
+	"code": "MLF",
+	"countryCode": "US",
+	"countryName": "美国",
+	cityFirstLetter: "M"
+}, {
+	cityName: "莫勒港",
+	citySpell: "MOLEGANG",
+	"code": "PML",
+	"countryCode": "US",
+	"countryName": "美国",
+	cityFirstLetter: "M"
+}, {
+	cityName: "米子",
+	citySpell: "MIZI",
+	"code": "YGJ",
+	"countryCode": "JP",
+	"countryName": "日本",
+	cityFirstLetter: "M"
+}, {
+	cityName: "马姆费",
+	citySpell: "MAMUFEI",
+	"code": "MMF",
+	"countryCode": "CM",
+	"countryName": "喀麦隆",
+	cityFirstLetter: "M"
+}, {
+	cityName: "马杜赖",
+	citySpell: "MADULAI",
+	"code": "IXM",
+	"countryCode": "IN",
+	"countryName": "印度",
+	cityFirstLetter: "M"
+}, {
+	cityName: "麦格拉斯",
+	citySpell: "MAIGELASI",
+	"code": "MCG",
+	"countryCode": "US",
+	"countryName": "美国",
+	cityFirstLetter: "M"
+}, {
+	cityName: "米扬瓦里",
+	citySpell: "MIYANGWALI",
+	"code": "MWD",
+	"countryCode": "PK",
+	"countryName": "巴基斯坦",
+	cityFirstLetter: "M"
+}, {
+	cityName: "姆比古",
+	citySpell: "MUBIGU",
+	"code": "MBC",
+	"countryCode": "GA",
+	"countryName": "加蓬",
+	cityFirstLetter: "M"
+}, {
+	cityName: "木伦",
+	citySpell: "MULUN",
+	"code": "MXV",
+	"countryCode": "MN",
+	"countryName": "蒙古",
+	cityFirstLetter: "M"
+}, {
+	cityName: "莫皮蒂",
+	citySpell: "MOPIDI",
+	"code": "MAU",
+	"countryCode": "PF",
+	"countryName": "法属波利尼西亚",
+	cityFirstLetter: "M"
+}, {
+	cityName: "马查拉",
+	citySpell: "MACHALA",
+	"code": "MCH",
+	"countryCode": "EC",
+	"countryName": "厄瓜多尔",
+	cityFirstLetter: "M"
+}, {
+	cityName: "曼齐尼",
+	citySpell: "MANQINI",
+	"code": "MTS",
+	"countryCode": "SZ",
+	"countryName": "斯威士兰",
+	cityFirstLetter: "M"
+}, {
+	cityName: "马拉提亚",
+	citySpell: "MALATIYA",
+	"code": "MLX",
+	"countryCode": "TR",
+	"countryName": "土耳其",
+	cityFirstLetter: "M"
+}, {
+	cityName: "马拉喀什",
+	citySpell: "MALAKASHEN",
+	"code": "RAK",
+	"countryCode": "MA",
+	"countryName": "摩洛哥",
+	cityFirstLetter: "M"
+}, {
+	cityName: "密歇根城",
+	citySpell: "MIXIEGENCHENG",
+	"code": "MGC",
+	"countryCode": "US",
+	"countryName": "美国",
+	cityFirstLetter: "M"
+}, {
+	cityName: "马里利亚",
+	citySpell: "MALILIYA",
+	"code": "MII",
+	"countryCode": "BR",
+	"countryName": "巴西",
+	cityFirstLetter: "M"
+}, {
+	cityName: "马斯温戈",
+	citySpell: "MASIWENGE",
+	"code": "MVZ",
+	"countryCode": "ZW",
+	"countryName": "津巴布韦",
+	cityFirstLetter: "M"
+}, {
+	cityName: "马巴鲁马",
+	citySpell: "MABALUMA",
+	"code": "USI",
+	"countryCode": "GY",
+	"countryName": "圭亚那",
+	cityFirstLetter: "M"
+}, {
+	cityName: "迈诺特",
+	citySpell: "MAINUOTE",
+	"code": "MOT",
+	"countryCode": "US",
+	"countryName": "美国",
+	cityFirstLetter: "M"
+}, {
+	cityName: "马穆朱",
+	citySpell: "MAMUZHU",
+	"code": "MJU",
+	"countryCode": "ID",
+	"countryName": "印度尼西亚",
+	cityFirstLetter: "M"
+}, {
+	cityName: "曼泰",
+	citySpell: "MANTAI",
+	"code": "NTJ",
+	"countryCode": "US",
+	"countryName": "美国",
+	cityFirstLetter: "M"
+}, {
+	cityName: "马特鲁港",
+	citySpell: "MATELUGANG",
+	"code": "MUH",
+	"countryCode": "EG",
+	"countryName": "埃及",
+	cityFirstLetter: "M"
+}, {
+	cityName: "马斯巴特",
+	citySpell: "MASIBATE",
+	"code": "MBT",
+	"countryCode": "PH",
+	"countryName": "菲律宾",
+	cityFirstLetter: "M"
+}, {
+	cityName: "芒特克伊斯",
+	citySpell: "MANGTEKEYISI",
+	"code": "WME",
+	"countryCode": "AU",
+	"countryName": "澳大利亚",
+	cityFirstLetter: "M"
+}, {
+	cityName: "马纳瑞",
+	citySpell: "MANARUI",
+	"code": "MRM",
+	"countryCode": "PG",
+	"countryName": "巴布亚新几内亚",
+	cityFirstLetter: "M"
+}, {
+	cityName: "马蒂",
+	citySpell: "MADI",
+	"code": "MXI",
+	"countryCode": "PH",
+	"countryName": "菲律宾",
+	cityFirstLetter: "M"
+}, {
+	cityName: "马雷",
+	citySpell: "MALEI",
+	"code": "MYP",
+	"countryCode": "TM",
+	"countryName": "土库曼斯坦",
+	cityFirstLetter: "M"
+}, {
+	cityName: "马德拉斯",
+	citySpell: "MADELASI",
+	"code": "MDJ",
+	"countryCode": "US",
+	"countryName": "美国",
+	cityFirstLetter: "M"
+}, {
+	cityName: "马翁",
+	citySpell: "MAWENG",
+	"code": "MUB",
+	"countryCode": "BW",
+	"countryName": "博茨瓦纳",
+	cityFirstLetter: "M"
+}, {
+	cityName: "穆索尼",
+	citySpell: "MUSUONI",
+	"code": "YMO",
+	"countryCode": "CA",
+	"countryName": "加拿大",
+	cityFirstLetter: "M"
+}, {
+	cityName: "马斯特顿",
+	citySpell: "MASITEDUN",
+	"code": "MRO",
+	"countryCode": "NZ",
+	"countryName": "新西兰",
+	cityFirstLetter: "M"
+}, {
+	cityName: "明尼阿波利斯",
+	citySpell: "MINGNIABOLISI",
+	"code": "MSP",
+	"countryCode": "US",
+	"countryName": "美国",
+	cityFirstLetter: "M"
+}, {
+	cityName: "梅诺卡",
+	citySpell: "MEINUOKA",
+	"code": "MAH",
+	"countryCode": "ES",
+	"countryName": "西班牙",
+	cityFirstLetter: "M"
+}, {
+	cityName: "姆米亚斯",
+	citySpell: "MUMIYASI",
+	"code": "MUM",
+	"countryCode": "KE",
+	"countryName": "肯尼亚",
+	cityFirstLetter: "M"
+}, {
+	cityName: "马尼托沃克",
+	citySpell: "MANITUOWOKE",
+	"code": "MTW",
+	"countryCode": "US",
+	"countryName": "美国",
+	cityFirstLetter: "M"
+}, {
+	cityName: "马森塔",
+	citySpell: "MASENTA",
+	"code": "MCA",
+	"countryCode": "GN",
+	"countryName": "几内亚",
+	cityFirstLetter: "M"
+}, {
+	cityName: "麦凯",
+	citySpell: "MAIKAI",
+	"code": "MKY",
+	"countryCode": "AU",
+	"countryName": "澳大利亚",
+	cityFirstLetter: "M"
+}, {
+	cityName: "马丁",
+	citySpell: "MADING",
+	"code": "MQM",
+	"countryCode": "TR",
+	"countryName": "土耳其",
+	cityFirstLetter: "M"
+}, {
+	cityName: "姆扎巴",
+	citySpell: "MUZHABA",
+	"code": "MZF",
+	"countryCode": "ZA",
+	"countryName": "南非",
+	cityFirstLetter: "M"
+}, {
+	cityName: "马拉加",
+	citySpell: "MALAJIA",
+	"code": "AGP",
+	"countryCode": "ES",
+	"countryName": "西班牙",
+	cityFirstLetter: "M"
+}, {
+	cityName: "摩加迪沙",
+	citySpell: "MOJIADISHA",
+	"code": "MGQ",
+	"countryCode": "SO",
+	"countryName": "索马里",
+	cityFirstLetter: "M"
+}, {
+	cityName: "穆永济",
+	citySpell: "MUYONGJI",
+	"code": "MUY",
+	"countryCode": "CG",
+	"countryName": "刚果",
+	cityFirstLetter: "M"
+}, {
+	cityName: "米德尔顿岛",
+	citySpell: "MIDEERDUNDAO",
+	"code": "MDO",
+	"countryCode": "US",
+	"countryName": "美国",
+	cityFirstLetter: "M"
+}, {
+	cityName: "莫约班巴",
+	citySpell: "MOYUEBANBA",
+	"code": "MBP",
+	"countryCode": "PE",
+	"countryName": "秘鲁",
+	cityFirstLetter: "M"
+}, {
+	cityName: "马费滕",
+	citySpell: "MAFEITENG",
+	"code": "MFC",
+	"countryCode": "LS",
+	"countryName": "莱索托",
+	cityFirstLetter: "M"
+}, {
+	cityName: "麦迪兰岛",
+	citySpell: "MAIDILANDAO",
+	"code": "YGR",
+	"countryCode": "CA",
+	"countryName": "加拿大",
+	cityFirstLetter: "M"
+}, {
+	cityName: "马加斯",
+	citySpell: "MAJIASI",
+	"code": "IGT",
+	"countryCode": "RU",
+	"countryName": "俄罗斯",
+	cityFirstLetter: "M"
+}, {
+	cityName: "迈尔斯",
+	citySpell: "MAIERSI",
+	"code": "WLE",
+	"countryCode": "AU",
+	"countryName": "澳大利亚",
+	cityFirstLetter: "M"
+}, {
+	cityName: "莫诺岛",
+	citySpell: "MONUODAO",
+	"code": "MNY",
+	"countryCode": "SB",
+	"countryName": "所罗门群岛",
+	cityFirstLetter: "M"
+}, {
+	cityName: "曼加",
+	citySpell: "MANJIA",
+	"code": "MGP",
+	"countryCode": "PG",
+	"countryName": "巴布亚新几内亚",
+	cityFirstLetter: "M"
+}, {
+	cityName: "马拉桑德",
+	citySpell: "MALASANGDE",
+	"code": "RUS",
+	"countryCode": "SB",
+	"countryName": "所罗门群岛",
+	cityFirstLetter: "M"
+}, {
+	cityName: "梅里达",
+	citySpell: "MEILIDA",
+	"code": "MID",
+	"countryCode": "MX",
+	"countryName": "墨西哥",
+	cityFirstLetter: "M"
+}, {
+	cityName: "马西拉岛",
+	citySpell: "MAXILADAO",
+	"code": "MSH",
+	"countryCode": "OM",
+	"countryName": "阿曼",
+	cityFirstLetter: "M"
+}, {
+	cityName: "马尼萨莱斯",
+	citySpell: "MANISALAISI",
+	"code": "MZL",
+	"countryCode": "CO",
+	"countryName": "哥伦比亚",
+	cityFirstLetter: "M"
+}, {
+	cityName: "木尔坦",
+	citySpell: "MUERTAN",
+	"code": "MUX",
+	"countryCode": "PK",
+	"countryName": "巴基斯坦",
+	cityFirstLetter: "M"
+}, {
+	cityName: "马迈",
+	citySpell: "MAMAI",
+	"code": "MAP",
+	"countryCode": "PG",
+	"countryName": "巴布亚新几内亚",
+	cityFirstLetter: "M"
+}, {
+	cityName: "蒙巴萨",
+	citySpell: "MENGBASA",
+	"code": "MBA",
+	"countryCode": "KE",
+	"countryName": "肯尼亚",
+	cityFirstLetter: "M"
+}, {
+	cityName: "马修斯里奇",
+	citySpell: "MAXIUSILIQI",
+	"code": "MWJ",
+	"countryCode": "GY",
+	"countryName": "圭亚那",
+	cityFirstLetter: "M"
+}, {
+	cityName: "迈亚纳",
+	citySpell: "MAIYANA",
+	"code": "MNK",
+	"countryCode": "KI",
+	"countryName": "基里巴斯",
+	cityFirstLetter: "M"
+}, {
+	cityName: "姆巴查",
+	citySpell: "MUBACHA",
+	"code": "MPA",
+	"countryCode": "NA",
+	"countryName": "纳米比亚",
+	cityFirstLetter: "M"
+}, {
+	cityName: "麦克弗森堡",
+	citySpell: "MAIKEFUSENBAO",
+	"code": "ZFM",
+	"countryCode": "CA",
+	"countryName": "加拿大",
+	cityFirstLetter: "M"
+}, {
+	cityName: "莫顿",
+	citySpell: "MODUN",
+	"code": "MET",
+	"countryCode": "AU",
+	"countryName": "澳大利亚",
+	cityFirstLetter: "M"
+}, {
+	cityName: "姆祖祖",
+	citySpell: "MUZUZU",
+	"code": "ZZU",
+	"countryCode": "MW",
+	"countryName": "马拉维",
+	cityFirstLetter: "M"
+}, {
+	cityName: "莫索罗",
+	citySpell: "MOSUOLUO",
+	"code": "MVF",
+	"countryCode": "BR",
+	"countryName": "巴西",
+	cityFirstLetter: "M"
+}, {
+	cityName: "蒙特朱利",
+	citySpell: "MENGTEZHULI",
+	"code": "YYY",
+	"countryCode": "CA",
+	"countryName": "加拿大",
+	cityFirstLetter: "M"
+}, {
+	cityName: "姆班达卡",
+	citySpell: "MUBANDAKA",
+	"code": "MDK",
+	"countryCode": "CD",
+	"countryName": "刚果民主共和国",
+	cityFirstLetter: "M"
+}, {
+	cityName: "米里",
+	citySpell: "MILI",
+	"code": "MYY",
+	"countryCode": "MY",
+	"countryName": "马来西亚",
+	cityFirstLetter: "M"
+}, {
+	cityName: "马洛埃拉普岛",
+	citySpell: "MALUOAILAPUDAO",
+	"code": "MAV",
+	"countryCode": "MH",
+	"countryName": "马绍尔群岛",
+	cityFirstLetter: "M"
+}, {
+	cityName: "马金岛",
+	citySpell: "MAJINDAO",
+	"code": "MTK",
+	"countryCode": "KI",
+	"countryName": "基里巴斯",
+	cityFirstLetter: "M"
+}, {
+	cityName: "马祖",
+	citySpell: "MAZU",
+	"code": "MFK",
+	"countryCode": "TW",
+	"countryName": "中国台湾",
+	cityFirstLetter: "M"
+}, {
+	cityName: "密支那",
+	citySpell: "MIZHINA",
+	"code": "MYT",
+	"countryCode": "MM",
+	"countryName": "缅甸",
+	cityFirstLetter: "M"
+}, {
+	cityName: "莫德斯托",
+	citySpell: "MODESITUO",
+	"code": "MOD",
+	"countryCode": "US",
+	"countryName": "美国",
+	cityFirstLetter: "M"
+}, {
+	cityName: "马尤岛",
+	citySpell: "MAYOUDAO",
+	"code": "MMO",
+	"countryCode": "CV",
+	"countryName": "佛得角",
+	cityFirstLetter: "M"
+}, {
+	cityName: "摩塞斯莱克",
+	citySpell: "MOSAISILAIKE",
+	"code": "MWH",
+	"countryCode": "US",
+	"countryName": "美国",
+	cityFirstLetter: "M"
+}, {
+	cityName: "马努斯岛",
+	citySpell: "MANUSIDAO",
+	"code": "MAS",
+	"countryCode": "PG",
+	"countryName": "巴布亚新几内亚",
+	cityFirstLetter: "M"
+}, {
+	cityName: "芒特奥厄",
+	citySpell: "MANGTEAOE",
+	"code": "UAE",
+	"countryCode": "PG",
+	"countryName": "巴布亚新几内亚",
+	cityFirstLetter: "M"
+}, {
+	cityName: "马卡埃",
+	citySpell: "MAKAAI",
+	"code": "MEA",
+	"countryCode": "BR",
+	"countryName": "巴西",
+	cityFirstLetter: "M"
+}, {
+	cityName: "迈尔斯堡",
+	citySpell: "MAIERSIBAO",
+	"code": "FMY",
+	"countryCode": "US",
+	"countryName": "美国",
+	cityFirstLetter: "M"
+}, {
+	cityName: "梅多莱克",
+	citySpell: "MEIDUOLAIKE",
+	"code": "YLJ",
+	"countryCode": "CA",
+	"countryName": "加拿大",
+	cityFirstLetter: "M"
+}, {
+	cityName: "蒙塔克角",
+	citySpell: "MENGTAKEJIAO",
+	"code": "MTP",
+	"countryCode": "US",
+	"countryName": "美国",
+	cityFirstLetter: "M"
+}, {
+	cityName: "曼西",
+	citySpell: "MANXI",
+	"code": "MIE",
+	"countryCode": "US",
+	"countryName": "美国",
+	cityFirstLetter: "M"
+}, {
+	cityName: "曼格罗夫岛",
+	citySpell: "MANGELUOFUDAO",
+	"code": "MAY",
+	"countryCode": "BS",
+	"countryName": "巴哈马",
+	cityFirstLetter: "M"
+}, {
+	cityName: "米蒂亚罗岛",
+	citySpell: "MIDIYALUODAO",
+	"code": "MOI",
+	"countryCode": "CK",
+	"countryName": "库克群岛",
+	cityFirstLetter: "M"
+}, {
+	cityName: "穆斯",
+	citySpell: "MUSI",
+	"code": "MSR",
+	"countryCode": "TR",
+	"countryName": "土耳其",
+	cityFirstLetter: "M"
+}, {
+	cityName: "蒙特尔利巴诺",
+	citySpell: "MENGTEERLIBANUO",
+	"code": "MTB",
+	"countryCode": "CO",
+	"countryName": "哥伦比亚",
+	cityFirstLetter: "M"
+}, {
+	cityName: "马萨特蓝",
+	citySpell: "MASATELAN",
+	"code": "MZT",
+	"countryCode": "MX",
+	"countryName": "墨西哥",
+	cityFirstLetter: "M"
+}, {
+	cityName: "默凯莫",
+	citySpell: "MOKAIMO",
+	"code": "MKP",
+	"countryCode": "PF",
+	"countryName": "法属波利尼西亚",
+	cityFirstLetter: "M"
+}, {
+	cityName: "莫安达",
+	citySpell: "MOANDA",
+	"code": "MFF",
+	"countryCode": "GA",
+	"countryName": "加蓬",
+	cityFirstLetter: "M"
+}, {
+	cityName: "马拉博",
+	citySpell: "MALABO",
+	"code": "SSG",
+	"countryCode": "GQ",
+	"countryName": "赤道几内亚",
+	cityFirstLetter: "M"
+}, {
+	cityName: "梅哈姆",
+	citySpell: "MEIHAMU",
+	"code": "MEH",
+	"countryCode": "NO",
+	"countryName": "挪威",
+	cityFirstLetter: "M"
+}, {
+	cityName: "芒特麦克金利",
+	citySpell: "MANGTEMAIKEJINLI",
+	"code": "MCL",
+	"countryCode": "US",
+	"countryName": "美国",
+	cityFirstLetter: "M"
+}, {
+	cityName: "莫塔拉瓦",
+	citySpell: "MOTALAWA",
+	"code": "MTV",
+	"countryCode": "VU",
+	"countryName": "瓦努阿图",
+	cityFirstLetter: "M"
+}, {
+	cityName: "穆龙达瓦",
+	citySpell: "MULONGDAWA",
+	"code": "MOQ",
+	"countryCode": "MG",
+	"countryName": "马达加斯加",
+	cityFirstLetter: "M"
+}, {
+	cityName: "玛丽亚温泉",
+	citySpell: "MALIYAWENQUAN",
+	"code": "MKA",
+	"countryCode": "CZ",
+	"countryName": "捷克",
+	cityFirstLetter: "M"
+}, {
+	cityName: "米蒂加-特里波里",
+	citySpell: "MIDIJIA-WANTELIBOLI",
+	"code": "MJI",
+	"countryCode": "LY",
+	"countryName": "利比亚",
+	cityFirstLetter: "M"
+}, {
+	cityName: "芒杰兰尼",
+	citySpell: "MANGJIELANNI",
+	"code": "MNE",
+	"countryCode": "AU",
+	"countryName": "澳大利亚",
+	cityFirstLetter: "M"
+}, {
+	cityName: "芒特普林森",
+	citySpell: "MANGTEPULINSEN",
+	"code": "MPN",
+	"countryCode": "FK",
+	"countryName": "马尔维纳斯群岛",
+	cityFirstLetter: "M"
+}, {
+	cityName: "梅里特",
+	citySpell: "MEILITE",
+	"code": "YMB",
+	"countryCode": "CA",
+	"countryName": "加拿大",
+	cityFirstLetter: "M"
+}, {
+	cityName: "米拉菲奥里",
+	citySpell: "MILAFEIAOLI",
+	"code": "MFS",
+	"countryCode": "CO",
+	"countryName": "哥伦比亚",
+	cityFirstLetter: "M"
+}, {
+	cityName: "芒特普莱森特",
+	citySpell: "MANGTEPULAISENTE",
+	"code": "MSD",
+	"countryCode": "US",
+	"countryName": "美国",
+	cityFirstLetter: "M"
+}, {
+	cityName: "米图",
+	citySpell: "MITU",
+	"code": "MVP",
+	"countryCode": "CO",
+	"countryName": "哥伦比亚",
+	cityFirstLetter: "M"
+}, {
+	cityName: "马雷",
+	citySpell: "MALEI",
+	"code": "MEE",
+	"countryCode": "NC",
+	"countryName": "新喀里多尼亚（太平洋）",
+	cityFirstLetter: "M"
+}, {
+	cityName: "穆伊拉",
+	citySpell: "MUYILA",
+	"code": "MJL",
+	"countryCode": "GA",
+	"countryName": "加蓬",
+	cityFirstLetter: "M"
+}, {
+	cityName: "莫里查尔",
+	citySpell: "MOLICHAER",
+	"code": "MHF",
+	"countryCode": "CO",
+	"countryName": "哥伦比亚",
+	cityFirstLetter: "M"
+}, {
+	cityName: "马勒库拉",
+	citySpell: "MALEKULA",
+	"code": "MKN",
+	"countryCode": "PG",
+	"countryName": "巴布亚新几内亚",
+	cityFirstLetter: "M"
+}, {
+	cityName: "马塞特",
+	citySpell: "MASAITE",
+	"code": "ZMT",
+	"countryCode": "CA",
+	"countryName": "加拿大",
+	cityFirstLetter: "M"
+}, {
+	cityName: "马扎里沙里夫",
+	citySpell: "MAZHALISHALIFU",
+	"code": "MZR",
+	"countryCode": "AF",
+	"countryName": "阿富汗",
+	cityFirstLetter: "M"
+}, {
+	cityName: "米安德里瓦祖",
+	citySpell: "MIANDELIWAZU",
+	"code": "ZVA",
+	"countryCode": "MG",
+	"countryName": "马达加斯加",
+	cityFirstLetter: "M"
+}, {
+	cityName: "蒙奇迈亚",
+	citySpell: "MENGQIMAIYA",
+	"code": "MJK",
+	"countryCode": "AU",
+	"countryName": "澳大利亚",
+	cityFirstLetter: "M"
+}, {
+	cityName: "姆马巴托",
+	citySpell: "MUMABATUO",
+	"code": "MBD",
+	"countryCode": "ZA",
+	"countryName": "南非",
+	cityFirstLetter: "M"
+}, {
+	cityName: "莫特库克",
+	citySpell: "MOTEKUKE",
+	"code": "MON",
+	"countryCode": "NZ",
+	"countryName": "新西兰",
+	cityFirstLetter: "M"
+}, {
+	cityName: "马卡斯",
+	citySpell: "MAKASI",
+	"code": "XMS",
+	"countryCode": "EC",
+	"countryName": "厄瓜多尔",
+	cityFirstLetter: "M"
+}, {
+	cityName: "芒基芒廷",
+	citySpell: "MANGJIMANGTING",
+	"code": "MYM",
+	"countryCode": "GY",
+	"countryName": "圭亚那",
+	cityFirstLetter: "M"
+}, {
+	cityName: "蒙戈",
+	citySpell: "MENGGE",
+	"code": "MOJ",
+	"countryCode": "SR",
+	"countryName": "苏里南",
+	cityFirstLetter: "M"
+}, {
+	cityName: "马沙尔港",
+	citySpell: "MASHAERGANG",
+	"code": "MRX",
+	"countryCode": "IR",
+	"countryName": "伊朗",
+	cityFirstLetter: "M"
+}, {
+	cityName: "马斯克拉特坝",
+	citySpell: "MASIKELATEBA",
+	"code": "MSA",
+	"countryCode": "CA",
+	"countryName": "加拿大",
+	cityFirstLetter: "M"
+}, {
+	cityName: "摩苏尔",
+	citySpell: "MOSUER",
+	"code": "OSM",
+	"countryCode": "IQ",
+	"countryName": "伊拉克",
+	cityFirstLetter: "M"
+}, {
+	cityName: "梅兰瓜内",
+	citySpell: "MEILANGUANEI",
+	"code": "MNA",
+	"countryCode": "ID",
+	"countryName": "印度尼西亚",
+	cityFirstLetter: "M"
+}, {
+	cityName: "蒙蒂塞洛",
+	citySpell: "MENGDISAILUO",
+	"code": "MSV",
+	"countryCode": "US",
+	"countryName": "美国",
+	cityFirstLetter: "M"
+}, {
+	cityName: "马歇尔(阿拉斯加州)",
+	citySpell: "MAXIEER",
+	"code": "MLL",
+	"countryCode": "US",
+	"countryName": "美国",
+	cityFirstLetter: "M"
+}, {
+	cityName: "梅利拉",
+	citySpell: "MEILILA",
+	"code": "MLN",
+	"countryCode": "ES",
+	"countryName": "西班牙",
+	cityFirstLetter: "M"
+}, {
+	cityName: "米卡萨拉",
+	citySpell: "MIKASALA",
+	"code": "MKR",
+	"countryCode": "AU",
+	"countryName": "澳大利亚",
+	cityFirstLetter: "M"
+}, {
+	cityName: "马赫迪耶",
+	citySpell: "MAHEDIYE",
+	"code": "MHA",
+	"countryCode": "GY",
+	"countryName": "圭亚那",
+	cityFirstLetter: "M"
+}, {
+	cityName: "马南扎里",
+	citySpell: "MANANZHALI",
+	"code": "MNJ",
+	"countryCode": "MG",
+	"countryName": "马达加斯加",
+	cityFirstLetter: "M"
+}, {
+	cityName: "蒙特卡洛",
+	citySpell: "MENGTEKALUO",
+	"code": "MCM",
+	"countryCode": "MC",
+	"countryName": "摩纳哥",
+	cityFirstLetter: "M"
+}, {
+	cityName: "马科岛",
+	citySpell: "MAKEDAO",
+	"code": "MRK",
+	"countryCode": "US",
+	"countryName": "美国",
+	cityFirstLetter: "M"
+}, {
+	cityName: "明斯克",
+	citySpell: "MINGSIKE",
+	"code": "MSQ",
+	"countryCode": "BY",
+	"countryName": "白俄罗斯",
+	cityFirstLetter: "M"
+}, {
+	cityName: "马那瓜",
+	citySpell: "MANAGUA",
+	"code": "MGA",
+	"countryCode": "NI",
+	"countryName": "尼加拉瓜",
+	cityFirstLetter: "M"
+}, {
+	cityName: "莫尔莱",
+	citySpell: "MOERLAI",
+	"code": "MXN",
+	"countryCode": "FR",
+	"countryName": "法国",
+	cityFirstLetter: "M"
+}, {
+	cityName: "马纳",
+	citySpell: "MANA",
+	"code": "MNF",
+	"countryCode": "FJ",
+	"countryName": "斐济群岛",
+	cityFirstLetter: "M"
+}, {
+	cityName: "莫阿",
+	citySpell: "MOA",
+	"code": "MOA",
+	"countryCode": "CU",
+	"countryName": "古巴",
+	cityFirstLetter: "M"
+}, {
+	cityName: "穆拉图波",
+	citySpell: "MULATUBO",
+	"code": "MPP",
+	"countryCode": "PA",
+	"countryName": "巴拿马",
+	cityFirstLetter: "M"
+}, {
+	cityName: "莫林",
+	citySpell: "MOLIN",
+	"code": "MLI",
+	"countryCode": "US",
+	"countryName": "美国",
+	cityFirstLetter: "M"
+}, {
+	cityName: "莫纳斯提尔",
+	citySpell: "MONASITIER",
+	"code": "MIR",
+	"countryCode": "TN",
+	"countryName": "突尼斯",
+	cityFirstLetter: "M"
+}, {
+	cityName: "默特尔比奇",
+	citySpell: "MOTEERBIQI",
+	"code": "MYR",
+	"countryCode": "US",
+	"countryName": "美国",
+	cityFirstLetter: "M"
+}, {
+	cityName: "曼德拉",
+	citySpell: "MANDELA",
+	"code": "NDE",
+	"countryCode": "KE",
+	"countryName": "肯尼亚",
+	cityFirstLetter: "M"
+}, {
+	cityName: "迈沃",
+	citySpell: "MAIWO",
+	"code": "MWF",
+	"countryCode": "VU",
+	"countryName": "瓦努阿图",
+	cityFirstLetter: "M"
+}, {
+	cityName: "马恩",
+	citySpell: "MAEN",
+	"code": "MJC",
+	"countryCode": "CI",
+	"countryName": "科特迪瓦",
+	cityFirstLetter: "M"
+}, {
+	cityName: "默卢纳",
+	citySpell: "MOLUNA",
+	"code": "MLV",
+	"countryCode": "AU",
+	"countryName": "澳大利亚",
+	cityFirstLetter: "M"
+}, {
+	cityName: "莫罗尼",
+	citySpell: "MOLUONI",
+	"code": "YVA",
+	"countryCode": "KM",
+	"countryName": "科摩罗",
+	cityFirstLetter: "M"
+}, {
+	cityName: "墨西卡利",
+	citySpell: "MOXIKALI",
+	"code": "MXL",
+	"countryCode": "MX",
+	"countryName": "墨西哥",
+	cityFirstLetter: "M"
+}, {
+	cityName: "莫阿布",
+	citySpell: "MOABU",
+	"code": "CNY",
+	"countryCode": "US",
+	"countryName": "美国",
+	cityFirstLetter: "M"
+}, {
+	cityName: "马塞约",
+	citySpell: "MASAIYUE",
+	"code": "MCZ",
+	"countryCode": "BR",
+	"countryName": "巴西",
+	cityFirstLetter: "M"
+}, {
+	cityName: "穆拉",
+	citySpell: "MULA",
+	"code": "MXX",
+	"countryCode": "SE",
+	"countryName": "瑞典",
+	cityFirstLetter: "M"
+}, {
+	cityName: "蒙杜",
+	citySpell: "MENGDU",
+	"code": "MQQ",
+	"countryCode": "TD",
+	"countryName": "乍得",
+	cityFirstLetter: "M"
+}, {
+	cityName: "门格洛尔",
+	citySpell: "MENGELUOER",
+	"code": "IXE",
+	"countryCode": "IN",
+	"countryName": "印度",
+	cityFirstLetter: "M"
+}, {
+	cityName: "米科诺斯",
+	citySpell: "MIKENUOSI",
+	"code": "JMK",
+	"countryCode": "GR",
+	"countryName": "希腊",
+	cityFirstLetter: "M"
+}, {
+	cityName: "蒙福特",
+	citySpell: "MENGFUTE",
+	"code": "MFB",
+	"countryCode": "CO",
+	"countryName": "哥伦比亚",
+	cityFirstLetter: "M"
+}, {
+	cityName: "蒙克顿",
+	citySpell: "MENGKEDUN",
+	"code": "YQM",
+	"countryCode": "CA",
+	"countryName": "加拿大",
+	cityFirstLetter: "M"
+}, {
+	cityName: "蒙特港",
+	citySpell: "MENGTEGANG",
+	"code": "PMC",
+	"countryCode": "CL",
+	"countryName": "智利",
+	cityFirstLetter: "M"
+}, {
+	cityName: "米拉尔耶沃德",
+	citySpell: "MILAERYEWODE",
+	"code": "MRV",
+	"countryCode": "RU",
+	"countryName": "俄罗斯",
+	cityFirstLetter: "M"
+}, {
+	cityName: "莫罗瓦利",
+	citySpell: "MOLUOWALI",
+	"code": "MOH",
+	"countryCode": "ID",
+	"countryName": "印度尼西亚",
+	cityFirstLetter: "M"
+}, {
+	cityName: "曼德",
+	citySpell: "MANDE",
+	"code": "MDU",
+	"countryCode": "PG",
+	"countryName": "巴布亚新几内亚",
+	cityFirstLetter: "M"
+}, {
+	cityName: "马根",
+	citySpell: "MAGEN",
+	"code": "GYG",
+	"countryCode": "RU",
+	"countryName": "俄罗斯",
+	cityFirstLetter: "M"
+}, {
+	cityName: "莫罗泰岛",
+	citySpell: "MOLUOTAIDAO",
+	"code": "OTI",
+	"countryCode": "ID",
+	"countryName": "印度尼西亚",
+	cityFirstLetter: "M"
+}, {
+	cityName: "马拉开波",
+	citySpell: "MALAKAIBO",
+	"code": "MAR",
+	"countryCode": "VE",
+	"countryName": "委内瑞拉",
+	cityFirstLetter: "M"
+}, {
+	cityName: "马萨瓦",
+	citySpell: "MASAWA",
+	"code": "MSW",
+	"countryCode": "ER",
+	"countryName": "厄立特里亚",
+	cityFirstLetter: "M"
+}, {
+	cityName: "门迪",
+	citySpell: "MENDI",
+	"code": "NDM",
+	"countryCode": "ET",
+	"countryName": "埃塞俄比亚",
+	cityFirstLetter: "M"
+}, {
+	cityName: "蒙吕松",
+	citySpell: "MENGLVSONG",
+	"code": "MCU",
+	"countryCode": "FR",
+	"countryName": "法国",
+	cityFirstLetter: "M"
+}, {
+	cityName: "马里奎塔",
+	citySpell: "MALIKUITA",
+	"code": "MQU",
+	"countryCode": "CO",
+	"countryName": "哥伦比亚",
+	cityFirstLetter: "M"
+}, {
+	cityName: "芒廷霍姆",
+	citySpell: "MANGTINGHUOMU",
+	"code": "WMH",
+	"countryCode": "US",
+	"countryName": "美国",
+	cityFirstLetter: "M"
+}, {
+	cityName: "马尼希基群岛",
+	citySpell: "MANIXIJIQUNDAO",
+	"code": "MHX",
+	"countryCode": "CK",
+	"countryName": "库克群岛",
+	cityFirstLetter: "M"
+}, {
+	cityName: "莫雷阿",
+	citySpell: "MOLEIA",
+	"code": "MOZ",
+	"countryCode": "PF",
+	"countryName": "法属波利尼西亚",
+	cityFirstLetter: "M"
+}, {
+	cityName: "马哈诺洛",
+	citySpell: "MAHANUOLUO",
+	"code": "VVB",
+	"countryCode": "MG",
+	"countryName": "马达加斯加",
+	cityFirstLetter: "M"
+}, {
+	cityName: "麦卡里斯特",
+	citySpell: "MAIKALISITE",
+	"code": "MLC",
+	"countryCode": "US",
+	"countryName": "美国",
+	cityFirstLetter: "M"
+}, {
+	cityName: "米湖",
+	citySpell: "MIHU",
+	"code": "MVA",
+	"countryCode": "IS",
+	"countryName": "冰岛",
+	cityFirstLetter: "M"
+}, {
+	cityName: "穆埃奥",
+	citySpell: "MUAIAO",
+	"code": "PDC",
+	"countryCode": "NC",
+	"countryName": "新喀里多尼亚（太平洋）",
+	cityFirstLetter: "M"
+}, {
+	cityName: "玛瑞巴",
+	citySpell: "MARUIBA",
+	"code": "MRG",
+	"countryCode": "AU",
+	"countryName": "澳大利亚",
+	cityFirstLetter: "M"
+}, {
+	cityName: "蒙特卡塞罗斯",
+	citySpell: "MENGTEKASAILUOSI",
+	"code": "MCS",
+	"countryCode": "AR",
+	"countryName": "阿根廷",
+	cityFirstLetter: "M"
+}, {
+	cityName: "摩尔曼斯科",
+	citySpell: "MOERMANSIKE",
+	"code": "MMK",
+	"countryCode": "RU",
+	"countryName": "俄罗斯",
+	cityFirstLetter: "M"
+}, {
+	cityName: "芒德",
+	citySpell: "MANGDE",
+	"code": "MEN",
+	"countryCode": "FR",
+	"countryName": "法国",
+	cityFirstLetter: "M"
+}, {
+	cityName: "马拉邦",
+	citySpell: "MALABANG",
+	"code": "MLP",
+	"countryCode": "PH",
+	"countryName": "菲律宾",
+	cityFirstLetter: "M"
+}, {
+	cityName: "明季",
+	citySpell: "MINGJI",
+	"code": "MZN",
+	"countryCode": "PG",
+	"countryName": "巴布亚新几内亚",
+	cityFirstLetter: "M"
+}, {
+	cityName: "曼德勒",
+	citySpell: "MANDELE",
+	"code": "MDL",
+	"countryCode": "MM",
+	"countryName": "缅甸",
+	cityFirstLetter: "M"
+}, {
+	cityName: "芒特艾萨",
+	citySpell: "MANGTEAISA",
+	"code": "ISA",
+	"countryCode": "AU",
+	"countryName": "澳大利亚",
+	cityFirstLetter: "M"
+}, {
+	cityName: "穆古卢",
+	citySpell: "MUGULU",
+	"code": "GUV",
+	"countryCode": "PG",
+	"countryName": "巴布亚新几内亚",
+	cityFirstLetter: "M"
+}, {
+	cityName: "米西马岛",
+	citySpell: "MIXIMADAO",
+	"code": "MIS",
+	"countryCode": "PG",
+	"countryName": "巴布亚新几内亚",
+	cityFirstLetter: "M"
+}, {
+	cityName: "马卡尔",
+	citySpell: "MAKAER",
+	"code": "MRR",
+	"countryCode": "EC",
+	"countryName": "厄瓜多尔",
+	cityFirstLetter: "M"
+}, {
+	cityName: "玛丽港",
+	citySpell: "MALIGANG",
+	"code": "MHQ",
+	"countryCode": "FI",
+	"countryName": "芬兰",
+	cityFirstLetter: "M"
+}, {
+	cityName: "马尔默",
+	citySpell: "MAERMO",
+	"code": "HMA",
+	"countryCode": "RU",
+	"countryName": "俄罗斯",
+	cityFirstLetter: "M"
+}, {
+	cityName: "马辛迪",
+	citySpell: "MAXINDI",
+	"code": "KCU",
+	"countryCode": "UG",
+	"countryName": "乌干达",
+	cityFirstLetter: "M"
+}, {
+	cityName: "米切尔",
+	citySpell: "MIQIEER",
+	"code": "MHE",
+	"countryCode": "US",
+	"countryName": "美国",
+	cityFirstLetter: "M"
+}, {
+	cityName: "莫埃利岛",
+	citySpell: "MOAILIDAO",
+	"code": "NWA",
+	"countryCode": "KM",
+	"countryName": "科摩罗",
+	cityFirstLetter: "M"
+}, {
+	cityName: "麦尔斯楚克",
+	citySpell: "MAIERSICHUKE",
+	"code": "WMK",
+	"countryCode": "US",
+	"countryName": "美国",
+	cityFirstLetter: "M"
+}, {
+	cityName: "姆布吉马伊",
+	citySpell: "MUBUJIMAYI",
+	"code": "MJM",
+	"countryCode": "CD",
+	"countryName": "刚果民主共和国",
+	cityFirstLetter: "M"
+}, {
+	cityName: "穆绍",
+	citySpell: "MUSHAO",
+	"code": "MWU",
+	"countryCode": "PG",
+	"countryName": "巴布亚新几内亚",
+	cityFirstLetter: "M"
+}, {
+	cityName: "马夸",
+	citySpell: "MAKUA",
+	"code": "MKJ",
+	"countryCode": "CG",
+	"countryName": "刚果",
+	cityFirstLetter: "M"
+}, {
+	cityName: "摩根敦",
+	citySpell: "MOGENDUN",
+	"code": "MGW",
+	"countryCode": "US",
+	"countryName": "美国",
+	cityFirstLetter: "M"
+}, {
+	cityName: "马耳他",
+	citySpell: "MAERTA",
+	"code": "MLA",
+	"countryCode": "MT",
+	"countryName": "马耳他",
+	cityFirstLetter: "M"
+}, {
+	cityName: "蒙杜库",
+	citySpell: "MENGDUKU",
+	"code": "MDM",
+	"countryCode": "PG",
+	"countryName": "巴布亚新几内亚",
+	cityFirstLetter: "M"
+}, {
+	cityName: "梅热沃",
+	citySpell: "MEIREWO",
+	"code": "MVV",
+	"countryCode": "FR",
+	"countryName": "法国",
+	cityFirstLetter: "M"
+}, {
+	cityName: "马孔",
+	citySpell: "MAKONG",
+	"code": "MCN",
+	"countryCode": "US",
+	"countryName": "美国",
+	cityFirstLetter: "M"
+}, {
+	cityName: "曼萨",
+	citySpell: "MANSA",
+	"code": "MNS",
+	"countryCode": "ZM",
+	"countryName": "赞比亚",
+	cityFirstLetter: "M"
+}, {
+	cityName: "梅迪辛哈特",
+	citySpell: "MEIDIXINHATE",
+	"code": "YXH",
+	"countryCode": "CA",
+	"countryName": "加拿大",
+	cityFirstLetter: "M"
+}, {
+	cityName: "穆龙贝",
+	citySpell: "MULONGBEI",
+	"code": "MXM",
+	"countryCode": "MG",
+	"countryName": "马达加斯加",
+	cityFirstLetter: "M"
+}, {
+	cityName: "默里姆布拉",
+	citySpell: "MOLIMUBULA",
+	"code": "MIM",
+	"countryCode": "AU",
+	"countryName": "澳大利亚",
+	cityFirstLetter: "M"
+}, {
+	cityName: "马塞卢",
+	citySpell: "MASAILU",
+	"code": "MSU",
+	"countryCode": "LS",
+	"countryName": "莱索托",
+	cityFirstLetter: "M"
+}, {
+	cityName: "曼萨尼约",
+	citySpell: "MANSANIYUE",
+	"code": "MZO",
+	"countryCode": "CU",
+	"countryName": "古巴",
+	cityFirstLetter: "M"
+}, {
+	cityName: "莫森焦",
+	citySpell: "MOSENJIAO",
+	"code": "MSX",
+	"countryCode": "CG",
+	"countryName": "刚果",
+	cityFirstLetter: "M"
+}, {
+	cityName: "马利亚纳",
+	citySpell: "MALIYANA",
+	"code": "MPT",
+	"countryCode": "TL",
+	"countryName": "东帝汶",
+	cityFirstLetter: "M"
+}, {
+	cityName: "马任加",
+	citySpell: "MARENJIA",
+	"code": "MJN",
+	"countryCode": "MG",
+	"countryName": "马达加斯加",
+	cityFirstLetter: "M"
+}, {
+	cityName: "芒艾亚岛",
+	citySpell: "MANGAIYADAO",
+	"code": "MGS",
+	"countryCode": "CK",
+	"countryName": "库克群岛",
+	cityFirstLetter: "M"
+}, {
+	cityName: "马斯喀特",
+	citySpell: "MASIKATE",
+	"code": "MCT",
+	"countryCode": "OM",
+	"countryName": "阿曼",
+	cityFirstLetter: "M"
+}, {
+	cityName: "漫斯顿",
+	citySpell: "MANSIDUN",
+	"code": "MSE",
+	"countryCode": "GB",
+	"countryName": "英国",
+	cityFirstLetter: "M"
+}, {
+	cityName: "孟东",
+	citySpell: "MENGDONG",
+	"code": "MGK",
+	"countryCode": "MM",
+	"countryName": "缅甸",
+	cityFirstLetter: "M"
+}, {
+	cityName: "马哈奇卡拉",
+	citySpell: "MAHAQIKALA",
+	"code": "MCX",
+	"countryCode": "RU",
+	"countryName": "俄罗斯",
+	cityFirstLetter: "M"
+}, {
+	cityName: "马奇",
+	citySpell: "MAQI",
+	"code": "DGE",
+	"countryCode": "AU",
+	"countryName": "澳大利亚",
+	cityFirstLetter: "M"
+}, {
+	cityName: "姆索马",
+	citySpell: "MUSUOMA",
+	"code": "MUZ",
+	"countryCode": "TZ",
+	"countryName": "坦桑尼亚",
+	cityFirstLetter: "M"
+}, {
+	cityName: "马林迪",
+	citySpell: "MALINDI",
+	"code": "MYD",
+	"countryCode": "KE",
+	"countryName": "肯尼亚",
+	cityFirstLetter: "M"
+}, {
+	cityName: "穆利亚",
+	citySpell: "MULIYA",
+	"code": "LII",
+	"countryCode": "ID",
+	"countryName": "印度尼西亚",
+	cityFirstLetter: "M"
+}, {
+	cityName: "梅洛",
+	citySpell: "MEILUO",
+	"code": "MLZ",
+	"countryCode": "UY",
+	"countryName": "乌拉圭",
+	cityFirstLetter: "M"
+}, {
+	cityName: "曼利温泉",
+	citySpell: "MANLIWENQUAN",
+	"code": "MLY",
+	"countryCode": "US",
+	"countryName": "美国",
+	cityFirstLetter: "M"
+}, {
+	cityName: "米兰达",
+	citySpell: "MILANDA",
+	"code": "MWY",
+	"countryCode": "AU",
+	"countryName": "澳大利亚",
+	cityFirstLetter: "M"
+}, {
+	cityName: "米尔布尔哈",
+	citySpell: "MIERBUERHA",
+	"code": "MPD",
+	"countryCode": "PK",
+	"countryName": "巴基斯坦",
+	cityFirstLetter: "M"
+}, {
+	cityName: "米齐克",
+	citySpell: "MIQIKE",
+	"code": "MZC",
+	"countryCode": "GA",
+	"countryName": "加蓬",
+	cityFirstLetter: "M"
+}, {
+	cityName: "梅诺米尼",
+	citySpell: "MEINUOMINI",
+	"code": "MNM",
+	"countryCode": "US",
+	"countryName": "美国",
+	cityFirstLetter: "M"
+}, {
+	cityName: "曼达贝",
+	citySpell: "MANDABEI",
+	"code": "WMD",
+	"countryCode": "MG",
+	"countryName": "马达加斯加",
+	cityFirstLetter: "M"
+}, {
+	cityName: "马加里马",
+	citySpell: "MAJIALIMA",
+	"code": "MGG",
+	"countryCode": "PG",
+	"countryName": "巴布亚新几内亚",
+	cityFirstLetter: "M"
+}, {
+	cityName: "莫斯塔尔",
+	citySpell: "MOSITAER",
+	"code": "OMO",
+	"countryCode": "BA",
+	"countryName": "波斯尼亚和黑塞哥维那",
+	cityFirstLetter: "M"
+}, {
+	cityName: "芒廷村",
+	citySpell: "MANGTINGCUN",
+	"code": "MOU",
+	"countryCode": "US",
+	"countryName": "美国",
+	cityFirstLetter: "M"
+}, {
+	cityName: "马纳纳拉",
+	citySpell: "MANANALA",
+	"code": "WMR",
+	"countryCode": "MG",
+	"countryName": "马达加斯加",
+	cityFirstLetter: "M"
+}, {
+	cityName: "马什哈德",
+	citySpell: "MASHENHADE",
+	"code": "MHD",
+	"countryCode": "IR",
+	"countryName": "伊朗",
+	cityFirstLetter: "M"
+}, {
+	cityName: "穆拉费努贝",
+	citySpell: "MULAFEINUBEI",
+	"code": "TVA",
+	"countryCode": "MG",
+	"countryName": "马达加斯加",
+	cityFirstLetter: "M"
+}, {
+	cityName: "曼吉马普",
+	citySpell: "MANJIMAPU",
+	"code": "MJP",
+	"countryCode": "AU",
+	"countryName": "澳大利亚",
+	cityFirstLetter: "M"
+}, {
+	cityName: "莫哈韦",
+	citySpell: "MOHAWEI",
+	"code": "MHV",
+	"countryCode": "US",
+	"countryName": "美国",
+	cityFirstLetter: "M"
+}, {
+	cityName: "米德维尔",
+	citySpell: "MIDEWEIER",
+	"code": "MEJ",
+	"countryCode": "US",
+	"countryName": "美国",
+	cityFirstLetter: "M"
+}, {
+	cityName: "马瑙斯",
+	citySpell: "MANAOSI",
+	"code": "MAO",
+	"countryCode": "BR",
+	"countryName": "巴西",
+	cityFirstLetter: "M"
+}, {
+	cityName: "米利岛",
+	citySpell: "MILIDAO",
+	"code": "MIJ",
+	"countryCode": "MH",
+	"countryName": "马绍尔群岛",
+	cityFirstLetter: "M"
+}, {
+	cityName: "穆凯伊拉斯",
+	citySpell: "MUKAIYILASI",
+	"code": "UKR",
+	"countryCode": "YE",
+	"countryName": "也门",
+	cityFirstLetter: "M"
+}, {
+	cityName: "穆杰里亚",
+	citySpell: "MUJIELIYA",
+	"code": "MOM",
+	"countryCode": "MR",
+	"countryName": "毛里塔尼亚",
+	cityFirstLetter: "M"
+}, {
+	cityName: "穆延",
+	citySpell: "MUYAN",
+	"code": "MUF",
+	"countryCode": "ID",
+	"countryName": "印度尼西亚",
+	cityFirstLetter: "M"
+}, {
+	cityName: "莫霍特隆",
+	citySpell: "MOHUOTELONG",
+	"code": "MKH",
+	"countryCode": "LS",
+	"countryName": "莱索托",
+	cityFirstLetter: "M"
+}, {
+	cityName: "马拉德城",
+	citySpell: "MALADECHENG",
+	"code": "MLD",
+	"countryCode": "US",
+	"countryName": "美国",
+	cityFirstLetter: "M"
+}, {
+	cityName: "姆班姆巴纳基拉",
+	citySpell: "MUBANMUBANAJILA",
+	"code": "MBU",
+	"countryCode": "SB",
+	"countryName": "所罗门群岛",
+	cityFirstLetter: "M"
+}, {
+	cityName: "马亨德拉格尔",
+	citySpell: "MAHENGDELAGEER",
+	"code": "XMG",
+	"countryCode": "NP",
+	"countryName": "尼泊尔",
+	cityFirstLetter: "M"
+}, {
+	cityName: "明蒂普塔纳",
+	citySpell: "MINGDIPUTANA",
+	"code": "MDP",
+	"countryCode": "ID",
+	"countryName": "印度尼西亚",
+	cityFirstLetter: "M"
+}, {
+	cityName: "梅吉特岛",
+	citySpell: "MEIJITEDAO",
+	"code": "MJB",
+	"countryCode": "MH",
+	"countryName": "马绍尔群岛",
+	cityFirstLetter: "M"
+}, {
+	cityName: "莫阿拉",
+	citySpell: "MOALA",
+	"code": "MFJ",
+	"countryCode": "FJ",
+	"countryName": "斐济群岛",
+	cityFirstLetter: "M"
+}, {
+	cityName: "马拉因班迪",
+	citySpell: "MALAYINBANDI",
+	"code": "WML",
+	"countryCode": "MG",
+	"countryName": "马达加斯加",
+	cityFirstLetter: "M"
+}, {
+	cityName: "米苏拉",
+	citySpell: "MISULA",
+	"code": "MSO",
+	"countryCode": "US",
+	"countryName": "美国",
+	cityFirstLetter: "M"
+}, {
+	cityName: "梅里达",
+	citySpell: "MEILIDA",
+	"code": "MRD",
+	"countryCode": "VE",
+	"countryName": "委内瑞拉",
+	cityFirstLetter: "M"
+}, {
+	cityName: "曼哈顿",
+	citySpell: "MANHADUN",
+	"code": "MHK",
+	"countryCode": "US",
+	"countryName": "美国",
+	cityFirstLetter: "M"
+}, {
+	cityName: "美克",
+	citySpell: "MEIKE",
+	"code": "MGZ",
+	"countryCode": "MM",
+	"countryName": "缅甸",
+	cityFirstLetter: "M"
+}, {
+	cityName: "迈迪逊堡",
+	citySpell: "MAIDIXUNBAO",
+	"code": "FMS",
+	"countryCode": "US",
+	"countryName": "美国",
+	cityFirstLetter: "M"
+}, {
+	cityName: "马亚古纳",
+	citySpell: "MAYAGUNA",
+	"code": "MYG",
+	"countryCode": "BS",
+	"countryName": "巴哈马",
+	cityFirstLetter: "M"
+}, {
+	cityName: "棉兰",
+	citySpell: "MIANLAN",
+	"code": "MES",
+	"countryCode": "ID",
+	"countryName": "印度尼西亚",
+	cityFirstLetter: "M"
+}, {
+	cityName: "马卡巴纳",
+	citySpell: "MAKABANA",
+	"code": "KMK",
+	"countryCode": "CG",
+	"countryName": "刚果",
+	cityFirstLetter: "M"
+}, {
+	cityName: "马尔伯勒",
+	citySpell: "MAERBOLE",
+	"code": "MXG",
+	"countryCode": "US",
+	"countryName": "美国",
+	cityFirstLetter: "M"
+}, {
+	cityName: "纽约",
+	citySpell: "NIUYUE",
+	"code": "NYC",
+	"countryCode": "US",
+	"countryName": "美国",
+	cityFirstLetter: "N"
+}, {
+	cityName: "鸟取",
+	citySpell: "NIAOQU",
+	"code": "TTJ",
+	"countryCode": "JP",
+	"countryName": "日本",
+	cityFirstLetter: "N"
+}, {
+	cityName: "尼亚美",
+	citySpell: "NIYAMEI",
+	"code": "NIM",
+	"countryCode": "NE",
+	"countryName": "尼日尔",
+	cityFirstLetter: "N"
+}, {
+	cityName: "诺尔雪平",
+	citySpell: "NUOERXUEPING",
+	"code": "NRK",
+	"countryCode": "SE",
+	"countryName": "瑞典",
+	cityFirstLetter: "N"
+}, {
+	cityName: "纽阿福欧",
+	citySpell: "NIUAFUOU",
+	"code": "NFO",
+	"countryCode": "TO",
+	"countryName": "汤加",
+	cityFirstLetter: "N"
+}, {
+	cityName: "纳尔奇克",
+	citySpell: "NAERQIKE",
+	"code": "NAL",
+	"countryCode": "RU",
+	"countryName": "俄罗斯",
+	cityFirstLetter: "N"
+}, {
+	cityName: "那不勒斯",
+	citySpell: "NABULESI",
+	"code": "NAP",
+	"countryCode": "IT",
+	"countryName": "意大利",
+	cityFirstLetter: "N"
+}, {
+	cityName: "尼克尔森",
+	citySpell: "NIKEERSEN",
+	"code": "NLS",
+	"countryCode": "AU",
+	"countryName": "澳大利亚",
+	cityFirstLetter: "N"
+}, {
+	cityName: "纳乌吉蒂",
+	citySpell: "NAWUJIDI",
+	"code": "NKI",
+	"countryCode": "US",
+	"countryName": "美国",
+	cityFirstLetter: "N"
+}, {
+	cityName: "纳普卡",
+	citySpell: "NAPUKA",
+	"code": "NAU",
+	"countryCode": "PF",
+	"countryName": "法属波利尼西亚",
+	cityFirstLetter: "N"
+}, {
+	cityName: "努古里亚",
+	citySpell: "NUGULIYA",
+	"code": "NUG",
+	"countryCode": "PG",
+	"countryName": "巴布亚新几内亚",
+	cityFirstLetter: "N"
+}, {
+	cityName: "尼亚甘",
+	citySpell: "NIYAGAN",
+	"code": "NYA",
+	"countryCode": "RU",
+	"countryName": "俄罗斯",
+	cityFirstLetter: "N"
+}, {
+	cityName: "诺曼韦尔斯",
+	citySpell: "NUOMANWEIERSI",
+	"code": "YVQ",
+	"countryCode": "CA",
+	"countryName": "加拿大",
+	cityFirstLetter: "N"
+}, {
+	cityName: "瑙罗",
+	citySpell: "NAOLUO",
+	"code": "NOO",
+	"countryCode": "PG",
+	"countryName": "巴布亚新几内亚",
+	cityFirstLetter: "N"
+}, {
+	cityName: "纳马塔奈",
+	citySpell: "NAMATANAI",
+	"code": "ATN",
+	"countryCode": "PG",
+	"countryName": "巴布亚新几内亚",
+	cityFirstLetter: "N"
+}, {
+	cityName: "纳尔逊拉戈",
+	citySpell: "NAERXUNLAGE",
+	"code": "NLG",
+	"countryCode": "US",
+	"countryName": "美国",
+	cityFirstLetter: "N"
+}, {
+	cityName: "纳塔尔",
+	citySpell: "NATAER",
+	"code": "NAT",
+	"countryCode": "BR",
+	"countryName": "巴西",
+	cityFirstLetter: "N"
+}, {
+	cityName: "内米斯奥",
+	citySpell: "NEIMISIAO",
+	"code": "YNS",
+	"countryCode": "CA",
+	"countryName": "加拿大",
+	cityFirstLetter: "N"
+}, {
+	cityName: "尼法",
+	citySpell: "NIFA",
+	"code": "NPH",
+	"countryCode": "US",
+	"countryName": "美国",
+	cityFirstLetter: "N"
+}, {
+	cityName: "内格拉斯",
+	citySpell: "NEIGELASI",
+	"code": "PDS",
+	"countryCode": "MX",
+	"countryName": "墨西哥",
+	cityFirstLetter: "N"
+}, {
+	cityName: "努苏阿克",
+	citySpell: "NUSUAKE",
+	"code": "NSQ",
+	"countryCode": "GL",
+	"countryName": "格陵兰岛",
+	cityFirstLetter: "N"
+}, {
+	cityName: "纳莫里克岛",
+	citySpell: "NAMOLIKEDAO",
+	"code": "NDK",
+	"countryCode": "MH",
+	"countryName": "马绍尔群岛",
+	cityFirstLetter: "N"
+}, {
+	cityName: "纳萨尔苏瓦克",
+	citySpell: "NASAERSUWAKE",
+	"code": "UAK",
+	"countryCode": "GL",
+	"countryName": "格陵兰岛",
+	cityFirstLetter: "N"
+}, {
+	cityName: "纳杜努姆",
+	citySpell: "NADUNUMU",
+	"code": "NDN",
+	"countryCode": "PG",
+	"countryName": "巴布亚新几内亚",
+	cityFirstLetter: "N"
+}, {
+	cityName: "那塔雷斯港",
+	citySpell: "NATALEISIGANG",
+	"code": "PNT",
+	"countryCode": "CL",
+	"countryName": "智利",
+	cityFirstLetter: "N"
+}, {
+	cityName: "内乌肯",
+	citySpell: "NEIWUKEN",
+	"code": "NQN",
+	"countryCode": "AR",
+	"countryName": "阿根廷",
+	cityFirstLetter: "N"
+}, {
+	cityName: "女满别",
+	citySpell: "NVMANBIE",
+	"code": "MMB",
+	"countryCode": "JP",
+	"countryName": "日本",
+	cityFirstLetter: "N"
+}, {
+	cityName: "南卡希亚斯",
+	citySpell: "NANKAXIYASI",
+	"code": "CXJ",
+	"countryCode": "BR",
+	"countryName": "巴西",
+	cityFirstLetter: "N"
+}, {
+	cityName: "诺斯贝",
+	citySpell: "NUOSIBEI",
+	"code": "YYB",
+	"countryCode": "CA",
+	"countryName": "加拿大",
+	cityFirstLetter: "N"
+}, {
+	cityName: "纽卡斯尔",
+	citySpell: "NIUKASIER",
+	"code": "NCL",
+	"countryCode": "GB",
+	"countryName": "英国",
+	cityFirstLetter: "N"
+}, {
+	cityName: "南",
+	citySpell: "NAN",
+	"code": "NNT",
+	"countryCode": "TH",
+	"countryName": "泰国",
+	cityFirstLetter: "N"
+}, {
+	cityName: "纳德姆",
+	citySpell: "NADEMU",
+	"code": "NYM",
+	"countryCode": "RU",
+	"countryName": "俄罗斯",
+	cityFirstLetter: "N"
+}, {
+	cityName: "努图弗",
+	citySpell: "NUTUFU",
+	"code": "NUT",
+	"countryCode": "PG",
+	"countryName": "巴布亚新几内亚",
+	cityFirstLetter: "N"
+}, {
+	cityName: "尼亚科纳特",
+	citySpell: "NIYAKENATE",
+	"code": "NIQ",
+	"countryCode": "GL",
+	"countryName": "格陵兰岛",
+	cityFirstLetter: "N"
+}, {
+	cityName: "诺格利基",
+	citySpell: "NUOGELIJI",
+	"code": "NGK",
+	"countryCode": "RU",
+	"countryName": "俄罗斯",
+	cityFirstLetter: "N"
+}, {
+	cityName: "纳诺塔利克",
+	citySpell: "NANUOTALIKE",
+	"code": "JNN",
+	"countryCode": "GL",
+	"countryName": "格陵兰岛",
+	cityFirstLetter: "N"
+}, {
+	cityName: "纽阿托普塔普",
+	citySpell: "NIUATUOPUTAPU",
+	"code": "NTT",
+	"countryCode": "TO",
+	"countryName": "汤加",
+	cityFirstLetter: "N"
+}, {
+	cityName: "尼亚加拉瀑布",
+	citySpell: "NIYAJIALABAOBU",
+	"code": "IAG",
+	"countryCode": "US",
+	"countryName": "美国",
+	cityFirstLetter: "N"
+}, {
+	cityName: "纽卡斯尔",
+	citySpell: "NIUKASIER",
+	"code": "NTL",
+	"countryCode": "AU",
+	"countryName": "澳大利亚",
+	cityFirstLetter: "N"
+}, {
+	cityName: "南达什全",
+	citySpell: "NANDASHIQUAN",
+	"code": "YNA",
+	"countryCode": "CA",
+	"countryName": "加拿大",
+	cityFirstLetter: "N"
+}, {
+	cityName: "农多尔顿",
+	citySpell: "NONGDUOERDUN",
+	"code": "NNL",
+	"countryCode": "US",
+	"countryName": "美国",
+	cityFirstLetter: "N"
+}, {
+	cityName: "尼尔森",
+	citySpell: "NIERSEN",
+	"code": "NSN",
+	"countryCode": "NZ",
+	"countryName": "新西兰",
+	cityFirstLetter: "N"
+}, {
+	cityName: "奴奴干城",
+	citySpell: "NUNUGANCHENG",
+	"code": "NNX",
+	"countryCode": "ID",
+	"countryName": "印度尼西亚",
+	cityFirstLetter: "N"
+}, {
+	cityName: "楠塔基特岛",
+	citySpell: "NANTAJITEDAO",
+	"code": "ACK",
+	"countryCode": "US",
+	"countryName": "美国",
+	cityFirstLetter: "N"
+}, {
+	cityName: "内尔斯普雷特",
+	citySpell: "NEIERSIPULEITE",
+	"code": "NLP",
+	"countryCode": "ZA",
+	"countryName": "南非",
+	cityFirstLetter: "N"
+}, {
+	cityName: "宁根",
+	citySpell: "NINGGEN",
+	"code": "NYN",
+	"countryCode": "AU",
+	"countryName": "澳大利亚",
+	cityFirstLetter: "N"
+}, {
+	cityName: "纳兰德拉",
+	citySpell: "NALANDELA",
+	"code": "NRA",
+	"countryCode": "AU",
+	"countryName": "澳大利亚",
+	cityFirstLetter: "N"
+}, {
+	cityName: "尼克西亚",
+	citySpell: "NIKEXIYA",
+	"code": "NIC",
+	"countryCode": "CY",
+	"countryName": "塞浦路斯",
+	cityFirstLetter: "N"
+}, {
+	cityName: "弄亚卡",
+	citySpell: "NONGYAKA",
+	"code": "LKH",
+	"countryCode": "MY",
+	"countryName": "马来西亚",
+	cityFirstLetter: "N"
+}, {
+	cityName: "南渡",
+	citySpell: "NANDU",
+	"code": "NMT",
+	"countryCode": "MM",
+	"countryName": "缅甸",
+	cityFirstLetter: "N"
+}, {
+	cityName: "诺加莱斯",
+	citySpell: "NUOJIALAISI",
+	"code": "NOG",
+	"countryCode": "MX",
+	"countryName": "墨西哥",
+	cityFirstLetter: "N"
+}, {
+	cityName: "楠桑",
+	citySpell: "NANSANG",
+	"code": "NMS",
+	"countryCode": "MM",
+	"countryName": "缅甸",
+	cityFirstLetter: "N"
+}, {
+	cityName: "内凯姆特",
+	citySpell: "NEIKAIMUTE",
+	"code": "NEK",
+	"countryCode": "ET",
+	"countryName": "埃塞俄比亚",
+	cityFirstLetter: "N"
+}, {
+	cityName: "纳钦圭阿",
+	citySpell: "NAQINGUIA",
+	"code": "NCH",
+	"countryCode": "TZ",
+	"countryName": "坦桑尼亚",
+	cityFirstLetter: "N"
+}, {
+	cityName: "内夫谢希尔",
+	citySpell: "NEIFUXIEXIER",
+	"code": "NAV",
+	"countryCode": "TR",
+	"countryName": "土耳其",
+	cityFirstLetter: "N"
+}, {
+	cityName: "尼弗蒂",
+	citySpell: "NIFUDI",
+	"code": "NIF",
+	"countryCode": "AU",
+	"countryName": "澳大利亚",
+	cityFirstLetter: "N"
+}, {
+	cityName: "纳科多奇斯",
+	citySpell: "NAKEDUOQISI",
+	"code": "OCH",
+	"countryCode": "US",
+	"countryName": "美国",
+	cityFirstLetter: "N"
+}, {
+	cityName: "内韦利",
+	citySpell: "NEIWEILI",
+	"code": "NVY",
+	"countryCode": "IN",
+	"countryName": "印度",
+	cityFirstLetter: "N"
+}, {
+	cityName: "纳拉布里",
+	citySpell: "NALABULI",
+	"code": "NAA",
+	"countryCode": "AU",
+	"countryName": "澳大利亚",
+	cityFirstLetter: "N"
+}, {
+	cityName: "诺斯韦",
+	citySpell: "NUOSIWEI",
+	"code": "ORT",
+	"countryCode": "US",
+	"countryName": "美国",
+	cityFirstLetter: "N"
+}, {
+	cityName: "纳拉金",
+	citySpell: "NALAJIN",
+	"code": "NLL",
+	"countryCode": "AU",
+	"countryName": "澳大利亚",
+	cityFirstLetter: "N"
+}, {
+	cityName: "挪威屋",
+	citySpell: "NUOWEIWU",
+	"code": "YNE",
+	"countryCode": "CA",
+	"countryName": "加拿大",
+	cityFirstLetter: "N"
+}, {
+	cityName: "诺萨拉比奇",
+	citySpell: "NUOSALABIQI",
+	"code": "NOB",
+	"countryCode": "CR",
+	"countryName": "哥斯达黎加",
+	cityFirstLetter: "N"
+}, {
+	cityName: "诺托登",
+	citySpell: "NUOTUODENG",
+	"code": "NTB",
+	"countryCode": "NO",
+	"countryName": "挪威",
+	cityFirstLetter: "N"
+}, {
+	cityName: "诺登",
+	citySpell: "NUODENG",
+	"code": "NOD",
+	"countryCode": "DE",
+	"countryName": "德国",
+	cityFirstLetter: "N"
+}, {
+	cityName: "纳奈莫",
+	citySpell: "NANAIMO",
+	"code": "YCD",
+	"countryCode": "CA",
+	"countryName": "加拿大",
+	cityFirstLetter: "N"
+}, {
+	cityName: "牛津",
+	citySpell: "NIUJIN",
+	"code": "UOX",
+	"countryCode": "US",
+	"countryName": "美国",
+	cityFirstLetter: "N"
+}, {
+	cityName: "南安德罗斯",
+	citySpell: "NANANDELUOSI",
+	"code": "TZN",
+	"countryCode": "BS",
+	"countryName": "巴哈马",
+	cityFirstLetter: "N"
+}, {
+	cityName: "诺维奇",
+	citySpell: "NUOWEIQI",
+	"code": "NWI",
+	"countryCode": "GB",
+	"countryName": "英国",
+	cityFirstLetter: "N"
+}, {
+	cityName: "纳姆布瓦尔",
+	citySpell: "NAMUBUWAER",
+	"code": "NUB",
+	"countryCode": "AU",
+	"countryName": "澳大利亚",
+	cityFirstLetter: "N"
+}, {
+	cityName: "纽波特纽斯",
+	citySpell: "NIUBOTENIUSI",
+	"code": "PHF",
+	"countryCode": "US",
+	"countryName": "美国",
+	cityFirstLetter: "N"
+}, {
+	cityName: "纳组尔",
+	citySpell: "NAZUER",
+	"code": "NDR",
+	"countryCode": "MA",
+	"countryName": "摩洛哥",
+	cityFirstLetter: "N"
+}, {
+	cityName: "瑙鲁岛",
+	citySpell: "NAOLUDAO",
+	"code": "INU",
+	"countryCode": "NR",
+	"countryName": "瑙鲁",
+	cityFirstLetter: "N"
+}, {
+	cityName: "诺马德里弗",
+	citySpell: "NUOMADELIFU",
+	"code": "NOM",
+	"countryCode": "PG",
+	"countryName": "巴布亚新几内亚",
+	cityFirstLetter: "N"
+}, {
+	cityName: "内恩",
+	citySpell: "NEIEN",
+	"code": "YDP",
+	"countryCode": "CA",
+	"countryName": "加拿大",
+	cityFirstLetter: "N"
+}, {
+	cityName: "那牙",
+	citySpell: "NAYA",
+	"code": "WNP",
+	"countryCode": "PH",
+	"countryName": "菲律宾",
+	cityFirstLetter: "N"
+}, {
+	cityName: "努库塔维克",
+	citySpell: "NUKUTAWEIKE",
+	"code": "NUK",
+	"countryCode": "PF",
+	"countryName": "法属波利尼西亚",
+	cityFirstLetter: "N"
+}, {
+	cityName: "纳卡拉",
+	citySpell: "NAKALA",
+	"code": "MNC",
+	"countryCode": "MZ",
+	"countryName": "莫桑比克",
+	cityFirstLetter: "N"
+}, {
+	cityName: "楠勒阿",
+	citySpell: "NANLEA",
+	"code": "NAM",
+	"countryCode": "ID",
+	"countryName": "印度尼西亚",
+	cityFirstLetter: "N"
+}, {
+	cityName: "内马",
+	citySpell: "NEIMA",
+	"code": "EMN",
+	"countryCode": "MR",
+	"countryName": "毛里塔尼亚",
+	cityFirstLetter: "N"
+}, {
+	cityName: "那穆托尼",
+	citySpell: "NAMUTUONI",
+	"code": "NNI",
+	"countryCode": "NA",
+	"countryName": "纳米比亚",
+	cityFirstLetter: "N"
+}, {
+	cityName: "诺曼内",
+	citySpell: "NUOMANNEI",
+	"code": "NMN",
+	"countryCode": "PG",
+	"countryName": "巴布亚新几内亚",
+	cityFirstLetter: "N"
+}, {
+	cityName: "诺尔维克",
+	citySpell: "NUOERWEIKE",
+	"code": "ORV",
+	"countryCode": "US",
+	"countryName": "美国",
+	cityFirstLetter: "N"
+}, {
+	cityName: "努库",
+	citySpell: "NUKU",
+	"code": "UKU",
+	"countryCode": "PG",
+	"countryName": "巴布亚新几内亚",
+	cityFirstLetter: "N"
+}, {
+	cityName: "内科切阿",
+	citySpell: "NEIKEQIEA",
+	"code": "NEC",
+	"countryCode": "AR",
+	"countryName": "阿根廷",
+	cityFirstLetter: "N"
+}, {
+	cityName: "努库阿洛法",
+	citySpell: "NUKUALUOFA",
+	"code": "TBU",
+	"countryCode": "TO",
+	"countryName": "汤加",
+	cityFirstLetter: "N"
+}, {
+	cityName: "纳济克",
+	citySpell: "NAJIKE",
+	"code": "ISK",
+	"countryCode": "IN",
+	"countryName": "印度",
+	cityFirstLetter: "N"
+}, {
+	cityName: "努基",
+	citySpell: "NUJI",
+	"code": "NQU",
+	"countryCode": "CO",
+	"countryName": "哥伦比亚",
+	cityFirstLetter: "N"
+}, {
+	cityName: "纳曼干",
+	citySpell: "NAMANGAN",
+	"code": "NMA",
+	"countryCode": "UZ",
+	"countryName": "乌兹别克斯坦",
+	cityFirstLetter: "N"
+}, {
+	cityName: "努萨",
+	citySpell: "NUSA",
+	"code": "NSA",
+	"countryCode": "BR",
+	"countryName": "巴西",
+	cityFirstLetter: "N"
+}, {
+	cityName: "南印度河",
+	citySpell: "NANYINDUHE",
+	"code": "XSI",
+	"countryCode": "CA",
+	"countryName": "加拿大",
+	cityFirstLetter: "N"
+}, {
+	cityName: "努瓦克肖特",
+	citySpell: "NUWAKEXIAOTE",
+	"code": "NKC",
+	"countryCode": "MR",
+	"countryName": "毛里塔尼亚",
+	cityFirstLetter: "N"
+}, {
+	cityName: "纽埃岛",
+	citySpell: "NIUAIDAO",
+	"code": "IUE",
+	"countryCode": "NU",
+	"countryName": "纽埃",
+	cityFirstLetter: "N"
+}, {
+	cityName: "纽波特",
+	citySpell: "NIUBOTE",
+	"code": "NPT",
+	"countryCode": "US",
+	"countryName": "美国",
+	cityFirstLetter: "N"
+}, {
+	cityName: "南凯科斯岛",
+	citySpell: "NANKAIKESIDAO",
+	"code": "XSC",
+	"countryCode": "TC",
+	"countryName": "特克斯和凯科斯群岛",
+	cityFirstLetter: "N"
+}, {
+	cityName: "南鸟岛",
+	citySpell: "NANNIAODAO",
+	"code": "MUS",
+	"countryCode": "JP",
+	"countryName": "日本",
+	cityFirstLetter: "N"
+}, {
+	cityName: "南安普敦",
+	citySpell: "NANANPUDUN",
+	"code": "SOU",
+	"countryCode": "GB",
+	"countryName": "英国",
+	cityFirstLetter: "N"
+}, {
+	cityName: "内加热",
+	citySpell: "NEIJIARE",
+	"code": "GXG",
+	"countryCode": "AO",
+	"countryName": "安哥拉",
+	cityFirstLetter: "N"
+}, {
+	cityName: "尼泊尔根杰",
+	citySpell: "NIBOERGENJIE",
+	"code": "KEP",
+	"countryCode": "NP",
+	"countryName": "尼泊尔",
+	cityFirstLetter: "N"
+}, {
+	cityName: "纳图纳",
+	citySpell: "NATUNA",
+	"code": "NTX",
+	"countryCode": "ID",
+	"countryName": "印度尼西亚",
+	cityFirstLetter: "N"
+}, {
+	cityName: "纳尔维克",
+	citySpell: "NAERWEIKE",
+	"code": "NVK",
+	"countryCode": "NO",
+	"countryName": "挪威",
+	cityFirstLetter: "N"
+}, {
+	cityName: "尼亚拉",
+	citySpell: "NIYALA",
+	"code": "UYL",
+	"countryCode": "SD",
+	"countryName": "苏丹",
+	cityFirstLetter: "N"
+}, {
+	cityName: "诺曼堡",
+	citySpell: "NUOMANBAO",
+	"code": "ZFN",
+	"countryCode": "CA",
+	"countryName": "加拿大",
+	cityFirstLetter: "N"
+}, {
+	cityName: "尼桑岛",
+	citySpell: "NISANGDAO",
+	"code": "IIS",
+	"countryCode": "PG",
+	"countryName": "巴布亚新几内亚",
+	cityFirstLetter: "N"
+}, {
+	cityName: "纳皮尔",
+	citySpell: "NAPIER",
+	"code": "NPE",
+	"countryCode": "NZ",
+	"countryName": "新西兰",
+	cityFirstLetter: "N"
+}, {
+	cityName: "南克鲁赛罗",
+	citySpell: "NANKELUSAILUO",
+	"code": "CZS",
+	"countryCode": "BR",
+	"countryName": "巴西",
+	cityFirstLetter: "N"
+}, {
+	cityName: "纽卡斯尔",
+	citySpell: "NIUKASIER",
+	"code": "NCS",
+	"countryCode": "ZA",
+	"countryName": "南非",
+	cityFirstLetter: "N"
+}, {
+	cityName: "纳图啊希什",
+	citySpell: "NATUAXISHI",
+	"code": "YNP",
+	"countryCode": "CA",
+	"countryName": "加拿大",
+	cityFirstLetter: "N"
+}, {
+	cityName: "内瓦",
+	citySpell: "NEIWA",
+	"code": "NVA",
+	"countryCode": "CO",
+	"countryName": "哥伦比亚",
+	cityFirstLetter: "N"
+}, {
+	cityName: "内基兰",
+	citySpell: "NEIJILAN",
+	"code": "EAM",
+	"countryCode": "SA",
+	"countryName": "沙特阿垃伯",
+	cityFirstLetter: "N"
+}, {
+	cityName: "楠迪",
+	citySpell: "NANDI",
+	"code": "NAN",
+	"countryCode": "FJ",
+	"countryName": "斐济群岛",
+	cityFirstLetter: "N"
+}, {
+	cityName: "牛津",
+	citySpell: "NIUJIN",
+	"code": "OXC",
+	"countryCode": "US",
+	"countryName": "美国",
+	cityFirstLetter: "N"
+}, {
+	cityName: "瑙堡",
+	citySpell: "NAOBAO",
+	"code": "LQN",
+	"countryCode": "AF",
+	"countryName": "阿富汗",
+	cityFirstLetter: "N"
+}, {
+	cityName: "努美阿",
+	citySpell: "NUMEIA",
+	"code": "NOU",
+	"countryCode": "NC",
+	"countryName": "新喀里多尼亚（太平洋）",
+	cityFirstLetter: "N"
+}, {
+	cityName: "瑙沙赫尔",
+	citySpell: "NAOSHAHEER",
+	"code": "NSH",
+	"countryCode": "IR",
+	"countryName": "伊朗",
+	cityFirstLetter: "N"
+}, {
+	cityName: "纽伦堡",
+	citySpell: "NIULUNBAO",
+	"code": "NUE",
+	"countryCode": "DE",
+	"countryName": "德国",
+	cityFirstLetter: "N"
+}, {
+	cityName: "纳帕斯杰克",
+	citySpell: "NAPASIJIEKE",
+	"code": "PKA",
+	"countryCode": "US",
+	"countryName": "美国",
+	cityFirstLetter: "N"
+}, {
+	cityName: "楠普拉",
+	citySpell: "NANPULA",
+	"code": "APL",
+	"countryCode": "MZ",
+	"countryName": "莫桑比克",
+	cityFirstLetter: "N"
+}, {
+	cityName: "南本德",
+	citySpell: "NANBENDE",
+	"code": "SBN",
+	"countryCode": "US",
+	"countryName": "美国",
+	cityFirstLetter: "N"
+}, {
+	cityName: "尼姆",
+	citySpell: "NIMU",
+	"code": "FNI",
+	"countryCode": "FR",
+	"countryName": "法国",
+	cityFirstLetter: "N"
+}, {
+	cityName: "诺斯曼",
+	citySpell: "NUOSIMAN",
+	"code": "NSM",
+	"countryCode": "AU",
+	"countryName": "澳大利亚",
+	cityFirstLetter: "N"
+}, {
+	cityName: "南吉纳",
+	citySpell: "NANJINA",
+	"code": "NKN",
+	"countryCode": "PG",
+	"countryName": "巴布亚新几内亚",
+	cityFirstLetter: "N"
+}, {
+	cityName: "那空拍侬",
+	citySpell: "NAKONGPAINONG",
+	"code": "KOP",
+	"countryCode": "TH",
+	"countryName": "泰国",
+	cityFirstLetter: "N"
+}, {
+	cityName: "内维斯",
+	citySpell: "NEIWEISI",
+	"code": "NEV",
+	"countryCode": "KN",
+	"countryName": "圣基茨和尼维斯",
+	cityFirstLetter: "N"
+}, {
+	cityName: "努拉托",
+	citySpell: "NULATUO",
+	"code": "NUL",
+	"countryCode": "US",
+	"countryName": "美国",
+	cityFirstLetter: "N"
+}, {
+	cityName: "楠德德",
+	citySpell: "NANDEDE",
+	"code": "NDC",
+	"countryCode": "IN",
+	"countryName": "印度",
+	cityFirstLetter: "N"
+}, {
+	cityName: "南竿",
+	citySpell: "NANGAN",
+	"code": "LZN",
+	"countryCode": "TW",
+	"countryName": "中国台湾",
+	cityFirstLetter: "N"
+}, {
+	cityName: "那不勒斯",
+	citySpell: "NABULESI",
+	"code": "APF",
+	"countryCode": "US",
+	"countryName": "美国",
+	cityFirstLetter: "N"
+}, {
+	cityName: "诺夫哥罗德",
+	citySpell: "NUOFUGELUODE",
+	"code": "NVR",
+	"countryCode": "RU",
+	"countryName": "俄罗斯",
+	cityFirstLetter: "N"
+}, {
+	cityName: "诺维乌仍果",
+	citySpell: "NUOWEIWURENGGUO",
+	"code": "NUX",
+	"countryCode": "RU",
+	"countryName": "俄罗斯",
+	cityFirstLetter: "N"
+}, {
+	cityName: "那格浦尔",
+	citySpell: "NAGEPUER",
+	"code": "NAG",
+	"countryCode": "IN",
+	"countryName": "印度",
+	cityFirstLetter: "N"
+}, {
+	cityName: "纳米比",
+	citySpell: "NAMIBI",
+	"code": "MSZ",
+	"countryCode": "AO",
+	"countryName": "安哥拉",
+	cityFirstLetter: "N"
+}, {
+	cityName: "纳奇兹",
+	citySpell: "NAQIZI",
+	"code": "HEZ",
+	"countryCode": "US",
+	"countryName": "美国",
+	cityFirstLetter: "N"
+}, {
+	cityName: "内干博",
+	citySpell: "NEIGANBO",
+	"code": "GBF",
+	"countryCode": "PG",
+	"countryName": "巴布亚新几内亚",
+	cityFirstLetter: "N"
+}, {
+	cityName: "诺里尔斯克",
+	citySpell: "NUOLIERSIKE",
+	"code": "NSK",
+	"countryCode": "RU",
+	"countryName": "俄罗斯",
+	cityFirstLetter: "N"
+}, {
+	cityName: "诺嘉宾斯克",
+	citySpell: "NUOJIABINSIKE",
+	"code": "NOJ",
+	"countryCode": "RU",
+	"countryName": "俄罗斯",
+	cityFirstLetter: "N"
+}, {
+	cityName: "诺福克",
+	citySpell: "NUOFUKE",
+	"code": "ORF",
+	"countryCode": "US",
+	"countryName": "美国",
+	cityFirstLetter: "N"
+}, {
+	cityName: "纳姆索斯",
+	citySpell: "NAMUSUOSI",
+	"code": "OSY",
+	"countryCode": "NO",
+	"countryName": "挪威",
+	cityFirstLetter: "N"
+}, {
+	cityName: "南纳克内克",
+	citySpell: "NANNAKENEIKE",
+	"code": "WSN",
+	"countryCode": "US",
+	"countryName": "美国",
+	cityFirstLetter: "N"
+}, {
+	cityName: "楠罗勒",
+	citySpell: "NANLUOLE",
+	"code": "NRE",
+	"countryCode": "ID",
+	"countryName": "印度尼西亚",
+	cityFirstLetter: "N"
+}, {
+	cityName: "纳雄耐尔港",
+	citySpell: "NAXIONGNAIERGANG",
+	"code": "PNB",
+	"countryCode": "BR",
+	"countryName": "巴西",
+	cityFirstLetter: "N"
+}, {
+	cityName: "楠格德",
+	citySpell: "NANGEDE",
+	"code": "NND",
+	"countryCode": "MZ",
+	"countryName": "莫桑比克",
+	cityFirstLetter: "N"
+}, {
+	cityName: "诺丁汉",
+	citySpell: "NUODINGHAN",
+	"code": "NQT",
+	"countryCode": "GB",
+	"countryName": "英国",
+	cityFirstLetter: "N"
+}, {
+	cityName: "尼纳纳",
+	citySpell: "NINANA",
+	"code": "ENN",
+	"countryCode": "US",
+	"countryName": "美国",
+	cityFirstLetter: "N"
+}, {
+	cityName: "努库斯",
+	citySpell: "NUKUSI",
+	"code": "NCU",
+	"countryCode": "UZ",
+	"countryName": "乌兹别克斯坦",
+	cityFirstLetter: "N"
+}, {
+	cityName: "纳拉伯",
+	citySpell: "NALABO",
+	"code": "NUR",
+	"countryCode": "AU",
+	"countryName": "澳大利亚",
+	cityFirstLetter: "N"
+}, {
+	cityName: "尼奥基",
+	citySpell: "NIAOJI",
+	"code": "NIO",
+	"countryCode": "CD",
+	"countryName": "刚果民主共和国",
+	cityFirstLetter: "N"
+}, {
+	cityName: "内格里尔",
+	citySpell: "NEIGELIER",
+	"code": "NEG",
+	"countryCode": "JM",
+	"countryName": "牙买加",
+	cityFirstLetter: "N"
+}, {
+	cityName: "内罗毕",
+	citySpell: "NEILUOBI",
+	"code": "NBO",
+	"countryCode": "KE",
+	"countryName": "肯尼亚",
+	cityFirstLetter: "N"
+}, {
+	cityName: "尼奥尔",
+	citySpell: "NIAOER",
+	"code": "NIT",
+	"countryCode": "FR",
+	"countryName": "法国",
+	cityFirstLetter: "N"
+}, {
+	cityName: "纳尔逊堡",
+	citySpell: "NAERXUNBAO",
+	"code": "YYE",
+	"countryCode": "CA",
+	"countryName": "加拿大",
+	cityFirstLetter: "N"
+}, {
+	cityName: "纽曼",
+	citySpell: "NIUMAN",
+	"code": "ZNE",
+	"countryCode": "AU",
+	"countryName": "澳大利亚",
+	cityFirstLetter: "N"
+}, {
+	cityName: "纽黑文",
+	citySpell: "NIUHEIWEN",
+	"code": "HVN",
+	"countryCode": "US",
+	"countryName": "美国",
+	cityFirstLetter: "N"
+}, {
+	cityName: "尼奥",
+	citySpell: "NIAO",
+	"code": "NIU",
+	"countryCode": "PF",
+	"countryName": "法属波利尼西亚",
+	cityFirstLetter: "N"
+}, {
+	cityName: "纳赫沙克",
+	citySpell: "NAHESHAKE",
+	"code": "JNS",
+	"countryCode": "GL",
+	"countryName": "格陵兰岛",
+	cityFirstLetter: "N"
+}, {
+	cityName: "努纳",
+	citySpell: "NUNA",
+	"code": "XNU",
+	"countryCode": "BF",
+	"countryName": "布基纳法索",
+	cityFirstLetter: "N"
+}, {
+	cityName: "纳迪丹古",
+	citySpell: "NADIDANGU",
+	"code": "NAE",
+	"countryCode": "BJ",
+	"countryName": "贝宁",
+	cityFirstLetter: "N"
+}, {
+	cityName: "宁巴",
+	citySpell: "NINGBA",
+	"code": "NIA",
+	"countryCode": "LR",
+	"countryName": "利比里亚",
+	cityFirstLetter: "N"
+}, {
+	cityName: "尼什",
+	citySpell: "NISHI",
+	"code": "INI",
+	"countryCode": "RS",
+	"countryName": "塞尔维亚",
+	cityFirstLetter: "N"
+}, {
+	cityName: "诺德奈",
+	citySpell: "NUODENAI",
+	"code": "NRD",
+	"countryCode": "DE",
+	"countryName": "德国",
+	cityFirstLetter: "N"
+}, {
+	cityName: "那拉提瓦",
+	citySpell: "NALATIWA",
+	"code": "NAW",
+	"countryCode": "TH",
+	"countryName": "泰国",
+	cityFirstLetter: "N"
+}, {
+	cityName: "纳杰夫",
+	citySpell: "NAJIEFU",
+	"code": "NJF",
+	"countryCode": "IQ",
+	"countryName": "伊拉克",
+	cityFirstLetter: "N"
+}, {
+	cityName: "纳比雷",
+	citySpell: "NABILEI",
+	"code": "NBX",
+	"countryCode": "ID",
+	"countryName": "印度尼西亚",
+	cityFirstLetter: "N"
+}, {
+	cityName: "南邦",
+	citySpell: "NANBANG",
+	"code": "LPT",
+	"countryCode": "TH",
+	"countryName": "泰国",
+	cityFirstLetter: "N"
+}, {
+	cityName: "诺瓦塔",
+	citySpell: "NUOWATA",
+	"code": "NWT",
+	"countryCode": "PG",
+	"countryName": "巴布亚新几内亚",
+	cityFirstLetter: "N"
+}, {
+	cityName: "尼古拉",
+	citySpell: "NIGULA",
+	"code": "NIB",
+	"countryCode": "US",
+	"countryName": "美国",
+	cityFirstLetter: "N"
+}, {
+	cityName: "纳纽基",
+	citySpell: "NANIUJI",
+	"code": "NYK",
+	"countryCode": "KE",
+	"countryName": "肯尼亚",
+	cityFirstLetter: "N"
+}, {
+	cityName: "瑙拉",
+	citySpell: "NAOLA",
+	"code": "NOA",
+	"countryCode": "AU",
+	"countryName": "澳大利亚",
+	cityFirstLetter: "N"
+}, {
+	cityName: "诺索普",
+	citySpell: "NUOSUOPU",
+	"code": "NUS",
+	"countryCode": "VU",
+	"countryName": "瓦努阿图",
+	cityFirstLetter: "N"
+}, {
+	cityName: "努库尔",
+	citySpell: "NUKUER",
+	"code": "RPM",
+	"countryCode": "AU",
+	"countryName": "澳大利亚",
+	cityFirstLetter: "N"
+}, {
+	cityName: "Nanwalek",
+	citySpell: "NANWALEK",
+	"code": "KEB",
+	"countryCode": "US",
+	"countryName": "美国",
+	cityFirstLetter: "N"
+}, {
+	cityName: "纽尔巴",
+	citySpell: "NIUERBA",
+	"code": "NYR",
+	"countryCode": "RU",
+	"countryName": "俄罗斯",
+	cityFirstLetter: "N"
+}, {
+	cityName: "南萨哈林斯克",
+	citySpell: "NANSAHALINSIKE",
+	"code": "UUS",
+	"countryCode": "RU",
+	"countryName": "俄罗斯",
+	cityFirstLetter: "N"
+}, {
+	cityName: "南泰利耶",
+	citySpell: "NANTAILIYE",
+	"code": "JSO",
+	"countryCode": "SE",
+	"countryName": "瑞典",
+	cityFirstLetter: "N"
+}, {
+	cityName: "南特",
+	citySpell: "NANTE",
+	"code": "NTE",
+	"countryCode": "FR",
+	"countryName": "法国",
+	cityFirstLetter: "N"
+}, {
+	cityName: "纳韦甘蒂斯",
+	citySpell: "NAWEIGANDISI",
+	"code": "NVT",
+	"countryCode": "BR",
+	"countryName": "巴西",
+	cityFirstLetter: "N"
+}, {
+	cityName: "讷乔",
+	citySpell: "NEQIAO",
+	"code": "NEJ",
+	"countryCode": "ET",
+	"countryName": "埃塞俄比亚",
+	cityFirstLetter: "N"
+}, {
+	cityName: "诺姆",
+	citySpell: "NUOMU",
+	"code": "WTK",
+	"countryCode": "US",
+	"countryName": "美国",
+	cityFirstLetter: "N"
+}, {
+	cityName: "南榜市",
+	citySpell: "NANBANGSHI",
+	"code": "TKG",
+	"countryCode": "ID",
+	"countryName": "印度尼西亚",
+	cityFirstLetter: "N"
+}, {
+	cityName: "尼克安第亚",
+	citySpell: "NIKEANDIYA",
+	"code": "NQL",
+	"countryCode": "BR",
+	"countryName": "巴西",
+	cityFirstLetter: "N"
+}, {
+	cityName: "拿骚",
+	citySpell: "NASAO",
+	"code": "NAS",
+	"countryCode": "BS",
+	"countryName": "巴哈马",
+	cityFirstLetter: "N"
+}, {
+	cityName: "纳里安马尔",
+	citySpell: "NALIANMAER",
+	"code": "NNM",
+	"countryCode": "RU",
+	"countryName": "俄罗斯",
+	cityFirstLetter: "N"
+}, {
+	cityName: "诺福克岛",
+	citySpell: "NUOFUKEDAO",
+	"code": "NLK",
+	"countryCode": "NF",
+	"countryName": "诺福克岛",
+	cityFirstLetter: "N"
+}, {
+	cityName: "内必都",
+	citySpell: "NEIBIDOU",
+	"code": "NYT",
+	"countryCode": "MM",
+	"countryName": "缅甸",
+	cityFirstLetter: "N"
+}, {
+	cityName: "纳富拉",
+	citySpell: "NAFULA",
+	"code": "NFR",
+	"countryCode": "LY",
+	"countryName": "利比亚",
+	cityFirstLetter: "N"
+}, {
+	cityName: "纳沃伊",
+	citySpell: "NAWOYI",
+	"code": "NVI",
+	"countryCode": "UZ",
+	"countryName": "乌兹别克斯坦",
+	cityFirstLetter: "N"
+}, {
+	cityName: "努瓦迪布",
+	citySpell: "NUWADIBU",
+	"code": "NDB",
+	"countryCode": "MR",
+	"countryName": "毛里塔尼亚",
+	cityFirstLetter: "N"
+}, {
+	cityName: "内尤格里",
+	citySpell: "NEIYOUGELI",
+	"code": "NER",
+	"countryCode": "RU",
+	"countryName": "俄罗斯",
+	cityFirstLetter: "N"
+}, {
+	cityName: "诺曼顿",
+	citySpell: "NUOMANDUN",
+	"code": "NTN",
+	"countryCode": "AU",
+	"countryName": "澳大利亚",
+	cityFirstLetter: "N"
+}, {
+	cityName: "尼斯",
+	citySpell: "NISI",
+	"code": "NCE",
+	"countryCode": "FR",
+	"countryName": "法国",
+	cityFirstLetter: "N"
+}, {
+	cityName: "努库希瓦",
+	citySpell: "NUKUXIWA",
+	"code": "NHV",
+	"countryCode": "PF",
+	"countryName": "法属波利尼西亚",
+	cityFirstLetter: "N"
+}, {
+	cityName: "内韦尔",
+	citySpell: "NEIWEIER",
+	"code": "NVS",
+	"countryCode": "FR",
+	"countryName": "法国",
+	cityFirstLetter: "N"
+}, {
+	cityName: "纽罗",
+	citySpell: "NIULUO",
+	"code": "NIX",
+	"countryCode": "ML",
+	"countryName": "马里",
+	cityFirstLetter: "N"
+}, {
+	cityName: "钮特克",
+	citySpell: "NIUTEKE",
+	"code": "WWT",
+	"countryCode": "US",
+	"countryName": "美国",
+	cityFirstLetter: "N"
+}, {
+	cityName: "纽基",
+	citySpell: "NIUJI",
+	"code": "NQY",
+	"countryCode": "GB",
+	"countryName": "英国",
+	cityFirstLetter: "N"
+}, {
+	cityName: "诺尔峡",
+	citySpell: "NUOERXIA",
+	"code": "NOR",
+	"countryCode": "IS",
+	"countryName": "冰岛",
+	cityFirstLetter: "N"
+}, {
+	cityName: "纳库鲁",
+	citySpell: "NAKULU",
+	"code": "NUU",
+	"countryCode": "KE",
+	"countryName": "肯尼亚",
+	cityFirstLetter: "N"
+}, {
+	cityName: "努克",
+	citySpell: "NUKE",
+	"code": "GOH",
+	"countryCode": "GL",
+	"countryName": "格陵兰岛",
+	cityFirstLetter: "N"
+}, {
+	cityName: "奈特缪特",
+	citySpell: "NAITEMIAOTE",
+	"code": "NME",
+	"countryCode": "US",
+	"countryName": "美国",
+	cityFirstLetter: "N"
+}, {
+	cityName: "纳希切万",
+	citySpell: "NAXIQIEWAN",
+	"code": "NAJ",
+	"countryCode": "AZ",
+	"countryName": "阿塞拜疆",
+	cityFirstLetter: "N"
+}, {
+	cityName: "尼湖",
+	citySpell: "NIHU",
+	"code": "YKE",
+	"countryCode": "CA",
+	"countryName": "加拿大",
+	cityFirstLetter: "N"
+}, {
+	cityName: "纳什维尔",
+	citySpell: "NASHENWEIER",
+	"code": "BNA",
+	"countryCode": "US",
+	"countryName": "美国",
+	cityFirstLetter: "N"
+}, {
+	cityName: "纳努基",
+	citySpell: "NANUJI",
+	"code": "NNU",
+	"countryCode": "BR",
+	"countryName": "巴西",
+	cityFirstLetter: "N"
+}, {
+	cityName: "南纪白浜",
+	citySpell: "NANJIBAIBANG",
+	"code": "SHM",
+	"countryCode": "JP",
+	"countryName": "日本",
+	cityFirstLetter: "N"
+}, {
+	cityName: "诺诺乌蒂",
+	citySpell: "NUONUOWUDI",
+	"code": "NON",
+	"countryCode": "KI",
+	"countryName": "基里巴斯",
+	cityFirstLetter: "N"
+}, {
+	cityName: "诺克斯威尔",
+	citySpell: "NUOKESIWEIER",
+	"code": "TYS",
+	"countryCode": "US",
+	"countryName": "美国",
+	cityFirstLetter: "N"
+}, {
+	cityName: "诺伍德",
+	citySpell: "NUOWUDE",
+	"code": "OWD",
+	"countryCode": "US",
+	"countryName": "美国",
+	cityFirstLetter: "N"
+}, {
+	cityName: "南大东",
+	citySpell: "NANDADONG",
+	"code": "MMD",
+	"countryCode": "JP",
+	"countryName": "日本",
+	cityFirstLetter: "N"
+}, {
+	cityName: "努佐伊",
+	citySpell: "NUZUOYI",
+	"code": "NZO",
+	"countryCode": "KE",
+	"countryName": "肯尼亚",
+	cityFirstLetter: "N"
+}, {
+	cityName: "纳尔",
+	citySpell: "NAER",
+	"code": "NAR",
+	"countryCode": "CO",
+	"countryName": "哥伦比亚",
+	cityFirstLetter: "N"
+}, {
+	cityName: "尼耶里",
+	citySpell: "NIYELI",
+	"code": "NYE",
+	"countryCode": "KE",
+	"countryName": "肯尼亚",
+	cityFirstLetter: "N"
+}, {
+	cityName: "拿索斯",
+	citySpell: "NASUOSI",
+	"code": "JNX",
+	"countryCode": "GR",
+	"countryName": "希腊",
+	cityFirstLetter: "N"
+}, {
+	cityName: "南库里尔斯克",
+	citySpell: "NANKULIERSIKE",
+	"code": "DEE",
+	"countryCode": "RU",
+	"countryName": "俄罗斯",
+	cityFirstLetter: "N"
+}, {
+	cityName: "纳帕基亚克",
+	citySpell: "NAPAJIYAKE",
+	"code": "WNA",
+	"countryCode": "US",
+	"countryName": "美国",
+	cityFirstLetter: "N"
+}, {
+	cityName: "纳拉",
+	citySpell: "NALA",
+	"code": "NRM",
+	"countryCode": "ML",
+	"countryName": "马里",
+	cityFirstLetter: "N"
+}, {
+	cityName: "纽纳皮兹",
+	citySpell: "NIUNAPIZI",
+	"code": "NUP",
+	"countryCode": "US",
+	"countryName": "美国",
+	cityFirstLetter: "N"
+}, {
+	cityName: "尼阿姆陶郭",
+	citySpell: "NIAMUTAOGUO",
+	"code": "LRL",
+	"countryCode": "TG",
+	"countryName": "多哥",
+	cityFirstLetter: "N"
+}, {
+	cityName: "牛津屋",
+	citySpell: "NIUJINWU",
+	"code": "YOH",
+	"countryCode": "CA",
+	"countryName": "加拿大",
+	cityFirstLetter: "N"
+}, {
+	cityName: "诺伊克索特",
+	citySpell: "NUOYIKESUOTE",
+	"code": "NUI",
+	"countryCode": "US",
+	"countryName": "美国",
+	cityFirstLetter: "N"
+}, {
+	cityName: "讷瓦布沙阿",
+	citySpell: "NEWABUSHAA",
+	"code": "WNS",
+	"countryCode": "PK",
+	"countryName": "巴基斯坦",
+	cityFirstLetter: "N"
+}, {
+	cityName: "涅夫捷卡姆斯克",
+	citySpell: "NIEFUJIEKAMUSIKE",
+	"code": "NEF",
+	"countryCode": "RU",
+	"countryName": "俄罗斯",
+	cityFirstLetter: "N"
+}, {
+	cityName: "纳帕",
+	citySpell: "NAPA",
+	"code": "APC",
+	"countryCode": "US",
+	"countryName": "美国",
+	cityFirstLetter: "N"
+}, {
+	cityName: "诺姆",
+	citySpell: "NUOMU",
+	"code": "OME",
+	"countryCode": "US",
+	"countryName": "美国",
+	cityFirstLetter: "N"
+}, {
+	cityName: "尼古纳",
+	citySpell: "NIGUNA",
+	"code": "NIG",
+	"countryCode": "KI",
+	"countryName": "基里巴斯",
+	cityFirstLetter: "N"
+}, {
+	cityName: "诺瓦托",
+	citySpell: "NUOWATUO",
+	"code": "NOT",
+	"countryCode": "US",
+	"countryName": "美国",
+	cityFirstLetter: "N"
+}, {
+	cityName: "纳克内克",
+	citySpell: "NAKENEIKE",
+	"code": "NNK",
+	"countryCode": "US",
+	"countryName": "美国",
+	cityFirstLetter: "N"
+}, {
+	cityName: "欧库西",
+	citySpell: "OUKUXI",
+	"code": "OEC",
+	"countryCode": "TL",
+	"countryName": "东帝汶",
+	cityFirstLetter: "O"
+}, {
+	cityName: "欧文斯伯勒",
+	citySpell: "OUWENSIBOLE",
+	"code": "OWB",
+	"countryCode": "US",
+	"countryName": "美国",
+	cityFirstLetter: "O"
+}, {
+	cityName: "欧拉夫斯维克",
+	citySpell: "OULAFUSIWEIKE",
+	"code": "OLI",
+	"countryCode": "IS",
+	"countryName": "冰岛",
+	cityFirstLetter: "O"
+}, {
+	cityName: "欧扎克",
+	citySpell: "OUZHAKE",
+	"code": "OZR",
+	"countryCode": "US",
+	"countryName": "美国",
+	cityFirstLetter: "O"
+}, {
+	cityName: "欧登塞",
+	citySpell: "OUDENGSAI",
+	"code": "ODE",
+	"countryCode": "DK",
+	"countryName": "丹麦",
+	cityFirstLetter: "O"
+}, {
+	cityName: "欧申福尔斯",
+	citySpell: "OUSHENFUERSI",
+	"code": "ZOF",
+	"countryCode": "CA",
+	"countryName": "加拿大",
+	cityFirstLetter: "O"
+}, {
+	cityName: "欧文多",
+	citySpell: "OUWENDUO",
+	"code": "OWE",
+	"countryCode": "GA",
+	"countryName": "加蓬",
+	cityFirstLetter: "O"
+}, {
+	cityName: "欧布雷贡城",
+	citySpell: "OUBULEIGONGCHENG",
+	"code": "CEN",
+	"countryCode": "MX",
+	"countryName": "墨西哥",
+	cityFirstLetter: "O"
+}, {
+	cityName: "欧申里弗",
+	citySpell: "OUSHENLIFU",
+	"code": "OCA",
+	"countryCode": "US",
+	"countryName": "美国",
+	cityFirstLetter: "O"
+}, {
+	cityName: "欧里纽斯",
+	citySpell: "OULINIUSI",
+	"code": "OUS",
+	"countryCode": "BR",
+	"countryName": "巴西",
+	cityFirstLetter: "O"
+}, {
+	cityName: "欧里亚克",
+	citySpell: "OULIYAKE",
+	"code": "AUR",
+	"countryCode": "FR",
+	"countryName": "法国",
+	cityFirstLetter: "O"
+}, {
+	cityName: "欧布纳",
+	citySpell: "OUBUNA",
+	"code": "OBS",
+	"countryCode": "FR",
+	"countryName": "法国",
+	cityFirstLetter: "O"
+}, {
+	cityName: "欧拉夫峡",
+	citySpell: "OULAFUXIA",
+	"code": "OFJ",
+	"countryCode": "IS",
+	"countryName": "冰岛",
+	cityFirstLetter: "O"
+}, {
+	cityName: "欧克莱尔",
+	citySpell: "OUKELAIER",
+	"code": "EAU",
+	"countryCode": "US",
+	"countryName": "美国",
+	cityFirstLetter: "O"
+}, {
+	cityName: "欧克拉",
+	citySpell: "OUKELA",
+	"code": "EUC",
+	"countryCode": "AU",
+	"countryName": "澳大利亚",
+	cityFirstLetter: "O"
+}, {
+	cityName: "欧米加",
+	citySpell: "OUMIJIA",
+	"code": "OMG",
+	"countryCode": "NA",
+	"countryName": "纳米比亚",
+	cityFirstLetter: "O"
+}, {
+	cityName: "欧云",
+	citySpell: "OUYUN",
+	"code": "EUN",
+	"countryCode": "MA",
+	"countryName": "摩洛哥",
+	cityFirstLetter: "O"
+}, {
+	cityName: "欧塞奇海滩",
+	citySpell: "OUSAIQIHAITAN",
+	"code": "OSB",
+	"countryCode": "US",
+	"countryName": "美国",
+	cityFirstLetter: "O"
+}, {
+	cityName: "欧德萨",
+	citySpell: "OUDESA",
+	"code": "ODS",
+	"countryCode": "UA",
+	"countryName": "乌克兰",
+	cityFirstLetter: "O"
+}, {
+	cityName: "普吉岛",
+	citySpell: "PUJIDAO",
+	"code": "HKT",
+	"countryCode": "TH",
+	"countryName": "泰国",
+	cityFirstLetter: "P"
+}, {
+	cityName: "帕拉帕拉乌穆",
+	citySpell: "PALAPALAWUMU",
+	"code": "PPQ",
+	"countryCode": "NZ",
+	"countryName": "新西兰",
+	cityFirstLetter: "P"
+}, {
+	cityName: "帕尔杜",
+	citySpell: "PAERDU",
+	"code": "PRD",
+	"countryCode": "AU",
+	"countryName": "澳大利亚",
+	cityFirstLetter: "P"
+}, {
+	cityName: "皮科将军镇",
+	citySpell: "PIKEJIANGJUNZHEN",
+	"code": "GLP",
+	"countryCode": "PG",
+	"countryName": "巴布亚新几内亚",
+	cityFirstLetter: "P"
+}, {
+	cityName: "帕特森",
+	citySpell: "PATESEN",
+	"code": "PTN",
+	"countryCode": "US",
+	"countryName": "美国",
+	cityFirstLetter: "P"
+}, {
+	cityName: "潘提顿",
+	citySpell: "PANTIDUN",
+	"code": "YYF",
+	"countryCode": "CA",
+	"countryName": "加拿大",
+	cityFirstLetter: "P"
+}, {
+	cityName: "皮康吉坤",
+	citySpell: "PIKANGJIKUN",
+	"code": "YPM",
+	"countryCode": "CA",
+	"countryName": "加拿大",
+	cityFirstLetter: "P"
+}, {
+	cityName: "帕府",
+	citySpell: "PAFU",
+	"code": "PRH",
+	"countryCode": "TH",
+	"countryName": "泰国",
+	cityFirstLetter: "P"
+}, {
+	cityName: "潘迪潘迪",
+	citySpell: "PANDIPANDI",
+	"code": "PDE",
+	"countryCode": "AU",
+	"countryName": "澳大利亚",
+	cityFirstLetter: "P"
+}, {
+	cityName: "皮乌拉",
+	citySpell: "PIWULA",
+	"code": "PIU",
+	"countryCode": "PE",
+	"countryName": "秘鲁",
+	cityFirstLetter: "P"
+}, {
+	cityName: "帕斯托",
+	citySpell: "PASITUO",
+	"code": "PSO",
+	"countryCode": "CO",
+	"countryName": "哥伦比亚",
+	cityFirstLetter: "P"
+}, {
+	cityName: "帕加迪安",
+	citySpell: "PAJIADIAN",
+	"code": "PAG",
+	"countryCode": "PH",
+	"countryName": "菲律宾",
+	cityFirstLetter: "P"
+}, {
+	cityName: "帕尔马斯",
+	citySpell: "PAERMASI",
+	"code": "PMW",
+	"countryCode": "BR",
+	"countryName": "巴西",
+	cityFirstLetter: "P"
+}, {
+	cityName: "帕图布兰库",
+	citySpell: "PATUBULANKU",
+	"code": "PTO",
+	"countryCode": "BR",
+	"countryName": "巴西",
+	cityFirstLetter: "P"
+}, {
+	cityName: "帕斯夸谷镇",
+	citySpell: "PASIKUAGUZHEN",
+	"code": "VDP",
+	"countryCode": "VE",
+	"countryName": "委内瑞拉",
+	cityFirstLetter: "P"
+}, {
+	cityName: "帕迪尤卡",
+	citySpell: "PADIYOUKA",
+	"code": "PAH",
+	"countryCode": "US",
+	"countryName": "美国",
+	cityFirstLetter: "P"
+}, {
+	cityName: "佩得罗贝",
+	citySpell: "PEIDELUOBEI",
+	"code": "PDB",
+	"countryCode": "US",
+	"countryName": "美国",
+	cityFirstLetter: "P"
+}, {
+	cityName: "皮克将军城",
+	citySpell: "PIKEJIANGJUNCHENG",
+	"code": "GPO",
+	"countryCode": "AR",
+	"countryName": "阿根廷",
+	cityFirstLetter: "P"
+}, {
+	cityName: "帕姆群岛",
+	citySpell: "PAMUQUNDAO",
+	"code": "PMK",
+	"countryCode": "AU",
+	"countryName": "澳大利亚",
+	cityFirstLetter: "P"
+}, {
+	cityName: "普马尼",
+	citySpell: "PUMANI",
+	"code": "PMN",
+	"countryCode": "PG",
+	"countryName": "巴布亚新几内亚",
+	cityFirstLetter: "P"
+}, {
+	cityName: "皮奥里亚",
+	citySpell: "PIAOLIYA",
+	"code": "PIA",
+	"countryCode": "US",
+	"countryName": "美国",
+	cityFirstLetter: "P"
+}, {
+	cityName: "皮尔戈斯",
+	citySpell: "PIERGESI",
+	"code": "PYR",
+	"countryCode": "GR",
+	"countryName": "希腊",
+	cityFirstLetter: "P"
+}, {
+	cityName: "蓬塔格罗萨",
+	citySpell: "PENGTAGELUOSA",
+	"code": "PGZ",
+	"countryCode": "BR",
+	"countryName": "巴西",
+	cityFirstLetter: "P"
+}, {
+	cityName: "普特马约",
+	citySpell: "PUTEMAYUE",
+	"code": "PYO",
+	"countryCode": "EC",
+	"countryName": "厄瓜多尔",
+	cityFirstLetter: "P"
+}, {
+	cityName: "庞卡城",
+	citySpell: "PANGKACHENG",
+	"code": "PNC",
+	"countryCode": "US",
+	"countryName": "美国",
+	cityFirstLetter: "P"
+}, {
+	cityName: "皮图菲克",
+	citySpell: "PITUFEIKE",
+	"code": "THU",
+	"countryCode": "GL",
+	"countryName": "格陵兰岛",
+	cityFirstLetter: "P"
+}, {
+	cityName: "普雷斯科特",
+	citySpell: "PULEISIKETE",
+	"code": "PRC",
+	"countryCode": "US",
+	"countryName": "美国",
+	cityFirstLetter: "P"
+}, {
+	cityName: "普雷韦扎 莱夫卡斯",
+	citySpell: "PULEIWEIZHALAIFUKASI",
+	"code": "PVK",
+	"countryCode": "GR",
+	"countryName": "希腊",
+	cityFirstLetter: "P"
+}, {
+	cityName: "帕姆斯普林斯",
+	citySpell: "PAMUSIPULINSI",
+	"code": "PSP",
+	"countryCode": "US",
+	"countryName": "美国",
+	cityFirstLetter: "P"
+}, {
+	cityName: "珀尔克堡",
+	citySpell: "POERKEBAO",
+	"code": "POE",
+	"countryCode": "US",
+	"countryName": "美国",
+	cityFirstLetter: "P"
+}, {
+	cityName: "帕霍基",
+	citySpell: "PAHUOJI",
+	"code": "PHK",
+	"countryCode": "US",
+	"countryName": "美国",
+	cityFirstLetter: "P"
+}, {
+	cityName: "潘泰莱里亚",
+	citySpell: "PANTAILAILIYA",
+	"code": "PNL",
+	"countryCode": "IT",
+	"countryName": "意大利",
+	cityFirstLetter: "P"
+}, {
+	cityName: "普罗斯派克特克里克",
+	citySpell: "PULUOSIPAIKETEKELIKE",
+	"code": "PPC",
+	"countryCode": "US",
+	"countryName": "美国",
+	cityFirstLetter: "P"
+}, {
+	cityName: "帕斯科",
+	citySpell: "PASIKE",
+	"code": "PSC",
+	"countryCode": "US",
+	"countryName": "美国",
+	cityFirstLetter: "P"
+}, {
+	cityName: "彭林岛",
+	citySpell: "PENGLINDAO",
+	"code": "PYE",
+	"countryCode": "CK",
+	"countryName": "库克群岛",
+	cityFirstLetter: "P"
+}, {
+	cityName: "帕马",
+	citySpell: "PAMA",
+	"code": "XPA",
+	"countryCode": "BF",
+	"countryName": "布基纳法索",
+	cityFirstLetter: "P"
+}, {
+	cityName: "普拉茨堡",
+	citySpell: "PULACIBAO",
+	"code": "PBG",
+	"countryCode": "US",
+	"countryName": "美国",
+	cityFirstLetter: "P"
+}, {
+	cityName: "朋库卢",
+	citySpell: "PENGKULU",
+	"code": "BKS",
+	"countryCode": "ID",
+	"countryName": "印度尼西亚",
+	cityFirstLetter: "P"
+}, {
+	cityName: "普杰",
+	citySpell: "PUJIE",
+	"code": "BHJ",
+	"countryCode": "IN",
+	"countryName": "印度",
+	cityFirstLetter: "P"
+}, {
+	cityName: "蓬塔德尔加达",
+	citySpell: "PENGTADEERJIADA",
+	"code": "PDL",
+	"countryCode": "PT",
+	"countryName": "葡萄牙",
+	cityFirstLetter: "P"
+}, {
+	cityName: "皮奇斯普林斯",
+	citySpell: "PIQISIPULINSI",
+	"code": "PGS",
+	"countryCode": "US",
+	"countryName": "美国",
+	cityFirstLetter: "P"
+}, {
+	cityName: "彭赞斯",
+	citySpell: "PENGZANSI",
+	"code": "PZE",
+	"countryCode": "GB",
+	"countryName": "英国",
+	cityFirstLetter: "P"
+}, {
+	cityName: "佩皮梅纳提",
+	citySpell: "PEIPIMEINATI",
+	"code": "PEP",
+	"countryCode": "AU",
+	"countryName": "澳大利亚",
+	cityFirstLetter: "P"
+}, {
+	cityName: "匹兹堡",
+	citySpell: "PIZIBAO",
+	"code": "PIT",
+	"countryCode": "US",
+	"countryName": "美国",
+	cityFirstLetter: "P"
+}, {
+	cityName: "帕果帕果",
+	citySpell: "PAGUOPAGUO",
+	"code": "PPG",
+	"countryCode": "AS",
+	"countryName": "美属萨摩亚",
+	cityFirstLetter: "P"
+}, {
+	cityName: "普雷斯克岛",
+	citySpell: "PULEISIKEDAO",
+	"code": "PQI",
+	"countryCode": "US",
+	"countryName": "美国",
+	cityFirstLetter: "P"
+}, {
+	cityName: "帕挂史比",
+	citySpell: "PAGUASHIBI",
+	"code": "YIF",
+	"countryCode": "CA",
+	"countryName": "加拿大",
+	cityFirstLetter: "P"
+}, {
+	cityName: "帕本",
+	citySpell: "PABEN",
+	"code": "PPU",
+	"countryCode": "MM",
+	"countryName": "缅甸",
+	cityFirstLetter: "P"
+}, {
+	cityName: "潘特纳加尔",
+	citySpell: "PANTENAJIAER",
+	"code": "PGH",
+	"countryCode": "IN",
+	"countryName": "印度",
+	cityFirstLetter: "P"
+}, {
+	cityName: "佩雷拉",
+	citySpell: "PEILEILA",
+	"code": "PEI",
+	"countryCode": "CO",
+	"countryName": "哥伦比亚",
+	cityFirstLetter: "P"
+}, {
+	cityName: "普拉尔齐科",
+	citySpell: "PULAERQIKE",
+	"code": "PYC",
+	"countryCode": "PA",
+	"countryName": "巴拿马",
+	cityFirstLetter: "P"
+}, {
+	cityName: "派恩波因特",
+	citySpell: "PAIENBOYINTE",
+	"code": "YPP",
+	"countryCode": "CA",
+	"countryName": "加拿大",
+	cityFirstLetter: "P"
+}, {
+	cityName: "佩皮尼扬",
+	citySpell: "PEIPINIYANG",
+	"code": "PGF",
+	"countryCode": "FR",
+	"countryName": "法国",
+	cityFirstLetter: "P"
+}, {
+	cityName: "皮斯河",
+	citySpell: "PISIHE",
+	"code": "YPE",
+	"countryCode": "CA",
+	"countryName": "加拿大",
+	cityFirstLetter: "P"
+}, {
+	cityName: "佩巴内",
+	citySpell: "PEIBANEI",
+	"code": "PEB",
+	"countryCode": "MZ",
+	"countryName": "莫桑比克",
+	cityFirstLetter: "P"
+}, {
+	cityName: "帕古巴",
+	citySpell: "PAGUBA",
+	"code": "PAF",
+	"countryCode": "UG",
+	"countryName": "乌干达",
+	cityFirstLetter: "P"
+}, {
+	cityName: "帕克斯",
+	citySpell: "PAKESI",
+	"code": "PKE",
+	"countryCode": "AU",
+	"countryName": "澳大利亚",
+	cityFirstLetter: "P"
+}, {
+	cityName: "帕特泊恩",
+	citySpell: "PATEBOEN",
+	"code": "PAD",
+	"countryCode": "DE",
+	"countryName": "德国",
+	cityFirstLetter: "P"
+}, {
+	cityName: "普拉亚",
+	citySpell: "PULAYA",
+	"code": "RAI",
+	"countryCode": "CV",
+	"countryName": "佛得角",
+	cityFirstLetter: "P"
+}, {
+	cityName: "珀斯",
+	citySpell: "POSI",
+	"code": "PER",
+	"countryCode": "AU",
+	"countryName": "澳大利亚",
+	cityFirstLetter: "P"
+}, {
+	cityName: "帕罗斯",
+	citySpell: "PALUOSI",
+	"code": "PAS",
+	"countryCode": "GR",
+	"countryName": "希腊",
+	cityFirstLetter: "P"
+}, {
+	cityName: "蓬塔波朗",
+	citySpell: "PENGTABOLANG",
+	"code": "PMG",
+	"countryCode": "BR",
+	"countryName": "巴西",
+	cityFirstLetter: "P"
+}, {
+	cityName: "帕米优特",
+	citySpell: "PAMIYOUTE",
+	"code": "JFR",
+	"countryCode": "GL",
+	"countryName": "格陵兰岛",
+	cityFirstLetter: "P"
+}, {
+	cityName: "彭讷肖",
+	citySpell: "PENGNEXIAO",
+	"code": "PEA",
+	"countryCode": "AU",
+	"countryName": "澳大利亚",
+	cityFirstLetter: "P"
+}, {
+	cityName: "派勒特斯泰特",
+	citySpell: "PAILETESITAITE",
+	"code": "PQS",
+	"countryCode": "US",
+	"countryName": "美国",
+	cityFirstLetter: "P"
+}, {
+	cityName: "皮马加",
+	citySpell: "PIMAJIA",
+	"code": "PMP",
+	"countryCode": "PG",
+	"countryName": "巴布亚新几内亚",
+	cityFirstLetter: "P"
+}, {
+	cityName: "普罗温斯敦",
+	citySpell: "PULUOWENSIDUN",
+	"code": "PVC",
+	"countryCode": "US",
+	"countryName": "美国",
+	cityFirstLetter: "P"
+}, {
+	cityName: "普禾加多",
+	citySpell: "PUHEJIADUO",
+	"code": "PWL",
+	"countryCode": "ID",
+	"countryName": "印度尼西亚",
+	cityFirstLetter: "P"
+}, {
+	cityName: "普罗瑟派恩",
+	citySpell: "PULUOSEPAIEN",
+	"code": "PPP",
+	"countryCode": "AU",
+	"countryName": "澳大利亚",
+	cityFirstLetter: "P"
+}, {
+	cityName: "普里茅斯",
+	citySpell: "PULIMAOSI",
+	"code": "PLH",
+	"countryCode": "GB",
+	"countryName": "英国",
+	cityFirstLetter: "P"
+}, {
+	cityName: "普鲁登特总统城",
+	citySpell: "PULUDENGTEZONGTONGCHENG",
+	"code": "PPB",
+	"countryCode": "BR",
+	"countryName": "巴西",
+	cityFirstLetter: "P"
+}, {
+	cityName: "潘普洛纳",
+	citySpell: "PANPULUONA",
+	"code": "PNA",
+	"countryCode": "ES",
+	"countryName": "西班牙",
+	cityFirstLetter: "P"
+}, {
+	cityName: "蓬多珀",
+	citySpell: "PENGDUOPO",
+	"code": "PDO",
+	"countryCode": "ID",
+	"countryName": "印度尼西亚",
+	cityFirstLetter: "P"
+}, {
+	cityName: "平迪乌",
+	citySpell: "PINGDIWU",
+	"code": "PDI",
+	"countryCode": "PG",
+	"countryName": "巴布亚新几内亚",
+	cityFirstLetter: "P"
+}, {
+	cityName: "珀丁达",
+	citySpell: "PODINGDA",
+	"code": "BUP",
+	"countryCode": "IN",
+	"countryName": "印度",
+	cityFirstLetter: "P"
+}, {
+	cityName: "帕索罗布尔斯",
+	citySpell: "PASUOLUOBUERSI",
+	"code": "PRB",
+	"countryCode": "US",
+	"countryName": "美国",
+	cityFirstLetter: "P"
+}, {
+	cityName: "普卡塔瓦干",
+	citySpell: "PUKATAWAGAN",
+	"code": "XPK",
+	"countryCode": "CA",
+	"countryName": "加拿大",
+	cityFirstLetter: "P"
+}, {
+	cityName: "普拉",
+	citySpell: "PULA",
+	"code": "PUY",
+	"countryCode": "HR",
+	"countryName": "克罗地亚",
+	cityFirstLetter: "P"
+}, {
+	cityName: "庞蒂亚克",
+	citySpell: "PANGDIYAKE",
+	"code": "PTK",
+	"countryCode": "US",
+	"countryName": "美国",
+	cityFirstLetter: "P"
+}, {
+	cityName: "皮克顿",
+	citySpell: "PIKEDUN",
+	"code": "PCN",
+	"countryCode": "NZ",
+	"countryName": "新西兰",
+	cityFirstLetter: "P"
+}, {
+	cityName: "浦尼亚",
+	citySpell: "PUNIYA",
+	"code": "PUN",
+	"countryCode": "CD",
+	"countryName": "刚果民主共和国",
+	cityFirstLetter: "P"
+}, {
+	cityName: "佩斯卡拉",
+	citySpell: "PEISIKALA",
+	"code": "PSR",
+	"countryCode": "IT",
+	"countryName": "意大利",
+	cityFirstLetter: "P"
+}, {
+	cityName: "帕伦克",
+	citySpell: "PALUNKE",
+	"code": "PQM",
+	"countryCode": "MX",
+	"countryName": "墨西哥",
+	cityFirstLetter: "P"
+}, {
+	cityName: "派勒特波因特",
+	citySpell: "PAILETEBOYINTE",
+	"code": "PIP",
+	"countryCode": "US",
+	"countryName": "美国",
+	cityFirstLetter: "P"
+}, {
+	cityName: "彭萨科拉",
+	citySpell: "PENGSAKELA",
+	"code": "PNS",
+	"countryCode": "US",
+	"countryName": "美国",
+	cityFirstLetter: "P"
+}, {
+	cityName: "普拉亚萨马拉",
+	citySpell: "PULAYASAMALA",
+	"code": "PLD",
+	"countryCode": "CR",
+	"countryName": "哥斯达黎加",
+	cityFirstLetter: "P"
+}, {
+	cityName: "佩奇",
+	citySpell: "PEIQI",
+	"code": "PGA",
+	"countryCode": "US",
+	"countryName": "美国",
+	cityFirstLetter: "P"
+}, {
+	cityName: "皮耶什佳尼",
+	citySpell: "PIYESHIJIANI",
+	"code": "PZY",
+	"countryCode": "SK",
+	"countryName": "斯洛伐克",
+	cityFirstLetter: "P"
+}, {
+	cityName: "蓬塔戈尔达",
+	citySpell: "PENGTAGEERDA",
+	"code": "PGD",
+	"countryCode": "US",
+	"countryName": "美国",
+	cityFirstLetter: "P"
+}, {
+	cityName: "普罗夫迪夫",
+	citySpell: "PULUOFUDIFU",
+	"code": "PDV",
+	"countryCode": "BG",
+	"countryName": "保加利亚",
+	cityFirstLetter: "P"
+}, {
+	cityName: "皮涅鲁",
+	citySpell: "PINIELU",
+	"code": "PHI",
+	"countryCode": "BR",
+	"countryName": "巴西",
+	cityFirstLetter: "P"
+}, {
+	cityName: "普图西包",
+	citySpell: "PUTUXIBAO",
+	"code": "PSU",
+	"countryCode": "ID",
+	"countryName": "印度尼西亚",
+	cityFirstLetter: "P"
+}, {
+	cityName: "普莱瑟维尔",
+	citySpell: "PULAISEWEIER",
+	"code": "PVF",
+	"countryCode": "US",
+	"countryName": "美国",
+	cityFirstLetter: "P"
+}, {
+	cityName: "帕埃斯港",
+	citySpell: "PAAISIGANG",
+	"code": "PPZ",
+	"countryCode": "VE",
+	"countryName": "委内瑞拉",
+	cityFirstLetter: "P"
+}, {
+	cityName: "普赖斯",
+	citySpell: "PULAISI",
+	"code": "PUC",
+	"countryCode": "US",
+	"countryName": "美国",
+	cityFirstLetter: "P"
+}, {
+	cityName: "帕扬",
+	citySpell: "PAYANG",
+	"code": "PYN",
+	"countryCode": "CO",
+	"countryName": "哥伦比亚",
+	cityFirstLetter: "P"
+}, {
+	cityName: "普拉蒂纳姆",
+	citySpell: "PULADINAMU",
+	"code": "PTU",
+	"countryCode": "US",
+	"countryName": "美国",
+	cityFirstLetter: "P"
+}, {
+	cityName: "帕拉山",
+	citySpell: "PALASHAN",
+	"code": "PLF",
+	"countryCode": "TD",
+	"countryName": "乍得",
+	cityFirstLetter: "P"
+}, {
+	cityName: "派桑杜",
+	citySpell: "PAISANGDU",
+	"code": "PDU",
+	"countryCode": "UY",
+	"countryName": "乌拉圭",
+	cityFirstLetter: "P"
+}, {
+	cityName: "浦项",
+	citySpell: "PUXIANG",
+	"code": "KPO",
+	"countryCode": "KR",
+	"countryName": "韩国",
+	cityFirstLetter: "P"
+}, {
+	cityName: "普拉兰岛",
+	citySpell: "PULALANDAO",
+	"code": "PRI",
+	"countryCode": "SC",
+	"countryName": "塞舌尔",
+	cityFirstLetter: "P"
+}, {
+	cityName: "佩德纳莱斯",
+	citySpell: "PEIDENALAISI",
+	"code": "PDZ",
+	"countryCode": "VE",
+	"countryName": "委内瑞拉",
+	cityFirstLetter: "P"
+}, {
+	cityName: "帕西加特",
+	citySpell: "PAXIJIATE",
+	"code": "IXT",
+	"countryCode": "IN",
+	"countryName": "印度",
+	cityFirstLetter: "P"
+}, {
+	cityName: "普罗维登斯",
+	citySpell: "PULUOWEIDENGSI",
+	"code": "PVD",
+	"countryCode": "US",
+	"countryName": "美国",
+	cityFirstLetter: "P"
+}, {
+	cityName: "帕莫尔",
+	citySpell: "PAMOER",
+	"code": "PAY",
+	"countryCode": "MY",
+	"countryName": "马来西亚",
+	cityFirstLetter: "P"
+}, {
+	cityName: "帕福斯",
+	citySpell: "PAFUSI",
+	"code": "PFO",
+	"countryCode": "CY",
+	"countryName": "塞浦路斯",
+	cityFirstLetter: "P"
+}, {
+	cityName: "佩里托莫雷诺",
+	citySpell: "PEILITUOMOLEINUO",
+	"code": "PMQ",
+	"countryCode": "AR",
+	"countryName": "阿根廷",
+	cityFirstLetter: "P"
+}, {
+	cityName: "普阿斯",
+	citySpell: "PUASI",
+	"code": "PUA",
+	"countryCode": "PG",
+	"countryName": "巴布亚新几内亚",
+	cityFirstLetter: "P"
+}, {
+	cityName: "佩里格",
+	citySpell: "PEILIGE",
+	"code": "PGX",
+	"countryCode": "FR",
+	"countryName": "法国",
+	cityFirstLetter: "P"
+}, {
+	cityName: "普韦托",
+	citySpell: "PUWEITUO",
+	"code": "PWO",
+	"countryCode": "CD",
+	"countryName": "刚果民主共和国",
+	cityFirstLetter: "P"
+}, {
+	cityName: "帕伊拉瓦",
+	citySpell: "PAYILAWA",
+	"code": "BWA",
+	"countryCode": "NP",
+	"countryName": "尼泊尔",
+	cityFirstLetter: "P"
+}, {
+	cityName: "平壤",
+	citySpell: "PINGRANG",
+	"code": "FNJ",
+	"countryCode": "KP",
+	"countryName": "朝鲜",
+	cityFirstLetter: "P"
+}, {
+	cityName: "庞尼尔唐",
+	citySpell: "PANGNIERTANG",
+	"code": "YXP",
+	"countryCode": "CA",
+	"countryName": "加拿大",
+	cityFirstLetter: "P"
+}, {
+	cityName: "普埃布拉",
+	citySpell: "PUAIBULA",
+	"code": "PBC",
+	"countryCode": "MX",
+	"countryName": "墨西哥",
+	cityFirstLetter: "P"
+}, {
+	cityName: "帕拉马里博",
+	citySpell: "PALAMALIBO",
+	"code": "PBM",
+	"countryCode": "SR",
+	"countryName": "苏里南",
+	cityFirstLetter: "P"
+}, {
+	cityName: "皮拉尔",
+	citySpell: "PILAER",
+	"code": "PIL",
+	"countryCode": "PY",
+	"countryName": "巴拉圭",
+	cityFirstLetter: "P"
+}, {
+	cityName: "帕格尔布尔",
+	citySpell: "PAGEERBUER",
+	"code": "BDP",
+	"countryCode": "NP",
+	"countryName": "尼泊尔",
+	cityFirstLetter: "P"
+}, {
+	cityName: "帕皮堤",
+	citySpell: "PAPIDI",
+	"code": "PPT",
+	"countryCode": "PF",
+	"countryName": "法属波利尼西亚",
+	cityFirstLetter: "P"
+}, {
+	cityName: "佩里维尔",
+	citySpell: "PEILIWEIER",
+	"code": "KPV",
+	"countryCode": "US",
+	"countryName": "美国",
+	cityFirstLetter: "P"
+}, {
+	cityName: "普斯维尔",
+	citySpell: "PUSIWEIER",
+	"code": "YSO",
+	"countryCode": "CA",
+	"countryName": "加拿大",
+	cityFirstLetter: "P"
+}, {
+	cityName: "普雷图河畔圣若泽",
+	citySpell: "PULEITUHEPANSHENGRUOZE",
+	"code": "SJP",
+	"countryCode": "BR",
+	"countryName": "巴西",
+	cityFirstLetter: "P"
+}, {
+	cityName: "葡萄",
+	citySpell: "PUTAO",
+	"code": "PBU",
+	"countryCode": "MM",
+	"countryName": "缅甸",
+	cityFirstLetter: "P"
+}, {
+	cityName: "帕森斯",
+	citySpell: "PASENSI",
+	"code": "PPF",
+	"countryCode": "US",
+	"countryName": "美国",
+	cityFirstLetter: "P"
+}, {
+	cityName: "佩洛塔斯",
+	citySpell: "PEILUOTASI",
+	"code": "PET",
+	"countryCode": "BR",
+	"countryName": "巴西",
+	cityFirstLetter: "P"
+}, {
+	cityName: "帕尔马尔",
+	citySpell: "PAERMAER",
+	"code": "PMZ",
+	"countryCode": "CR",
+	"countryName": "哥斯达黎加",
+	cityFirstLetter: "P"
+}, {
+	cityName: "普卡鲁阿",
+	citySpell: "PUKALUA",
+	"code": "PUK",
+	"countryCode": "PF",
+	"countryName": "法属波利尼西亚",
+	cityFirstLetter: "P"
+}, {
+	cityName: "普罗维登西亚",
+	citySpell: "PULUOWEIDENGXIYA",
+	"code": "PVA",
+	"countryCode": "CO",
+	"countryName": "哥伦比亚",
+	cityFirstLetter: "P"
+}, {
+	cityName: "普里茅斯",
+	citySpell: "PULIMAOSI",
+	"code": "PYM",
+	"countryCode": "US",
+	"countryName": "美国",
+	cityFirstLetter: "P"
+}, {
+	cityName: "帕姆代尔",
+	citySpell: "PAMUDAIER",
+	"code": "PMD",
+	"countryCode": "US",
+	"countryName": "美国",
+	cityFirstLetter: "P"
+}, {
+	cityName: "普罗沃",
+	citySpell: "PULUOWO",
+	"code": "PVU",
+	"countryCode": "US",
+	"countryName": "美国",
+	cityFirstLetter: "P"
+}, {
+	cityName: "浦那",
+	citySpell: "PUNA",
+	"code": "PNQ",
+	"countryCode": "IN",
+	"countryName": "印度",
+	cityFirstLetter: "P"
+}, {
+	cityName: "普韦布洛",
+	citySpell: "PUWEIBULUO",
+	"code": "PUB",
+	"countryCode": "US",
+	"countryName": "美国",
+	cityFirstLetter: "P"
+}, {
+	cityName: "帕安",
+	citySpell: "PAAN",
+	"code": "PAA",
+	"countryCode": "MM",
+	"countryName": "缅甸",
+	cityFirstLetter: "P"
+}, {
+	cityName: "皮尔",
+	citySpell: "PIER",
+	"code": "PIR",
+	"countryCode": "US",
+	"countryName": "美国",
+	cityFirstLetter: "P"
+}, {
+	cityName: "帕威",
+	citySpell: "PAWEI",
+	"code": "PWI",
+	"countryCode": "ET",
+	"countryName": "埃塞俄比亚",
+	cityFirstLetter: "P"
+}, {
+	cityName: "帕拉布尔杜",
+	citySpell: "PALABUERDU",
+	"code": "PBO",
+	"countryCode": "AU",
+	"countryName": "澳大利亚",
+	cityFirstLetter: "P"
+}, {
+	cityName: "派恩布拉",
+	citySpell: "PAIENBULA",
+	"code": "PBF",
+	"countryCode": "US",
+	"countryName": "美国",
+	cityFirstLetter: "P"
+}, {
+	cityName: "普拉塔港",
+	citySpell: "PULATAGANG",
+	"code": "POP",
+	"countryCode": "DO",
+	"countryName": "多米尼加",
+	cityFirstLetter: "P"
+}, {
+	cityName: "帕帕韦斯特雷",
+	citySpell: "PAPAWEISITELEI",
+	"code": "PPW",
+	"countryCode": "GB",
+	"countryName": "英国",
+	cityFirstLetter: "P"
+}, {
+	cityName: "皮里港",
+	citySpell: "PILIGANG",
+	"code": "PPI",
+	"countryCode": "AU",
+	"countryName": "澳大利亚",
+	cityFirstLetter: "P"
+}, {
+	cityName: "皮塔利托",
+	citySpell: "PITALITUO",
+	"code": "PTX",
+	"countryCode": "CO",
+	"countryName": "哥伦比亚",
+	cityFirstLetter: "P"
+}, {
+	cityName: "帕洛波",
+	citySpell: "PALUOBO",
+	"code": "LLO",
+	"countryCode": "ID",
+	"countryName": "印度尼西亚",
+	cityFirstLetter: "P"
+}, {
+	cityName: "佩韦克",
+	citySpell: "PEIWEIKE",
+	"code": "PWE",
+	"countryCode": "RU",
+	"countryName": "俄罗斯",
+	cityFirstLetter: "P"
+}, {
+	cityName: "帕特雷",
+	citySpell: "PATELEI",
+	"code": "GPA",
+	"countryCode": "GR",
+	"countryName": "希腊",
+	cityFirstLetter: "P"
+}, {
+	cityName: "彭世洛",
+	citySpell: "PENGSHILUO",
+	"code": "PHS",
+	"countryCode": "TH",
+	"countryName": "泰国",
+	cityFirstLetter: "P"
+}, {
+	cityName: "帕里斯",
+	citySpell: "PALISI",
+	"code": "PRX",
+	"countryCode": "US",
+	"countryName": "美国",
+	cityFirstLetter: "P"
+}, {
+	cityName: "皮茨菲尔德",
+	citySpell: "PICIFEIERDE",
+	"code": "PSF",
+	"countryCode": "US",
+	"countryName": "美国",
+	cityFirstLetter: "P"
+}, {
+	cityName: "佩尔斯顿",
+	citySpell: "PEIERSIDUN",
+	"code": "PLN",
+	"countryCode": "US",
+	"countryName": "美国",
+	cityFirstLetter: "P"
+}, {
+	cityName: "帕特莱克斯菲厄泽",
+	citySpell: "PATELAIKESIFEIEZE",
+	"code": "PFJ",
+	"countryCode": "IS",
+	"countryName": "冰岛",
+	cityFirstLetter: "P"
+}, {
+	cityName: "皮沃那克",
+	citySpell: "PIWONAKE",
+	"code": "YPO",
+	"countryCode": "CA",
+	"countryName": "加拿大",
+	cityFirstLetter: "P"
+}, {
+	cityName: "普雷斯洛克挽萨恩兹佩纳",
+	citySpell: "PULEISILUOKEWANSAENZIPEINA",
+	"code": "PRQ",
+	"countryCode": "AR",
+	"countryName": "阿根廷",
+	cityFirstLetter: "P"
+}, {
+	cityName: "普利茅斯",
+	citySpell: "PULIMAOSI",
+	"code": "PLY",
+	"countryCode": "US",
+	"countryName": "美国",
+	cityFirstLetter: "P"
+}, {
+	cityName: "普拉斯通",
+	citySpell: "PULASITONG",
+	"code": "TLY",
+	"countryCode": "RU",
+	"countryName": "俄罗斯",
+	cityFirstLetter: "P"
+}, {
+	cityName: "珀勒德布尔",
+	citySpell: "POLEDEBUER",
+	"code": "BHR",
+	"countryCode": "NP",
+	"countryName": "尼泊尔",
+	cityFirstLetter: "P"
+}, {
+	cityName: "普莱藤贝格",
+	citySpell: "PULAITENGBEIGE",
+	"code": "PBZ",
+	"countryCode": "ZA",
+	"countryName": "南非",
+	cityFirstLetter: "P"
+}, {
+	cityName: "皮特尔角城",
+	citySpell: "PITEERJIAOCHENG",
+	"code": "PTP",
+	"countryCode": "GP",
+	"countryName": "瓜德罗普岛",
+	cityFirstLetter: "P"
+}, {
+	cityName: "皮克威托内",
+	citySpell: "PIKEWEITUONEI",
+	"code": "PIW",
+	"countryCode": "CA",
+	"countryName": "加拿大",
+	cityFirstLetter: "P"
+}, {
+	cityName: "普分妮托",
+	citySpell: "PUFENNITUO",
+	"code": "YPX",
+	"countryCode": "CA",
+	"countryName": "加拿大",
+	cityFirstLetter: "P"
+}, {
+	cityName: "佩瓦霍",
+	citySpell: "PEIWAHUO",
+	"code": "PEH",
+	"countryCode": "AR",
+	"countryName": "阿根廷",
+	cityFirstLetter: "P"
+}, {
+	cityName: "蓬塔卡纳",
+	citySpell: "PENGTAKANA",
+	"code": "PUJ",
+	"countryCode": "DO",
+	"countryName": "多米尼加",
+	cityFirstLetter: "P"
+}, {
+	cityName: "皮斯科",
+	citySpell: "PISIKE",
+	"code": "PIO",
+	"countryCode": "PE",
+	"countryName": "秘鲁",
+	cityFirstLetter: "P"
+}, {
+	cityName: "帕克福尔斯",
+	citySpell: "PAKEFUERSI",
+	"code": "PKF",
+	"countryCode": "US",
+	"countryName": "美国",
+	cityFirstLetter: "P"
+}, {
+	cityName: "普尔曼",
+	citySpell: "PUERMAN",
+	"code": "PUW",
+	"countryCode": "US",
+	"countryName": "美国",
+	cityFirstLetter: "P"
+}, {
+	cityName: "普林西比",
+	citySpell: "PULINXIBI",
+	"code": "PCP",
+	"countryCode": "ST",
+	"countryName": "圣多美和普林西比",
+	cityFirstLetter: "P"
+}, {
+	cityName: "普瓦捷",
+	citySpell: "PUWAJIE",
+	"code": "PIS",
+	"countryCode": "FR",
+	"countryName": "法国",
+	cityFirstLetter: "P"
+}, {
+	cityName: "派恩赫斯特",
+	citySpell: "PAIENHESITE",
+	"code": "SOP",
+	"countryCode": "US",
+	"countryName": "美国",
+	cityFirstLetter: "P"
+}, {
+	cityName: "彭巴",
+	citySpell: "PENGBA",
+	"code": "POL",
+	"countryCode": "MZ",
+	"countryName": "莫桑比克",
+	cityFirstLetter: "P"
+}, {
+	cityName: "普罗维登夏莱斯",
+	citySpell: "PULUOWEIDENGXIALAISI",
+	"code": "PLS",
+	"countryCode": "TC",
+	"countryName": "特克斯和凯科斯群岛",
+	cityFirstLetter: "P"
+}, {
+	cityName: "帕尔杜比采",
+	citySpell: "PAERDUBICAI",
+	"code": "PED",
+	"countryCode": "CZ",
+	"countryName": "捷克",
+	cityFirstLetter: "P"
+}, {
+	cityName: "帕苏丰杜",
+	citySpell: "PASUFENGDU",
+	"code": "PFB",
+	"countryCode": "BR",
+	"countryName": "巴西",
+	cityFirstLetter: "P"
+}, {
+	cityName: "普卡尔帕",
+	citySpell: "PUKAERPA",
+	"code": "PCL",
+	"countryCode": "PE",
+	"countryName": "秘鲁",
+	cityFirstLetter: "P"
+}, {
+	cityName: "帕克斯堡",
+	citySpell: "PAKESIBAO",
+	"code": "PKB",
+	"countryCode": "US",
+	"countryName": "美国",
+	cityFirstLetter: "P"
+}, {
+	cityName: "彭德尔顿",
+	citySpell: "PENGDEERDUN",
+	"code": "PDT",
+	"countryCode": "US",
+	"countryName": "美国",
+	cityFirstLetter: "P"
+}, {
+	cityName: "旁卡兰布翁",
+	citySpell: "PANGKALANBUWENG",
+	"code": "PKN",
+	"countryCode": "ID",
+	"countryName": "印度尼西亚",
+	cityFirstLetter: "P"
+}, {
+	cityName: "帕拉库",
+	citySpell: "PALAKU",
+	"code": "PKO",
+	"countryCode": "BJ",
+	"countryName": "贝宁",
+	cityFirstLetter: "P"
+}, {
+	cityName: "帕玛",
+	citySpell: "PAMA",
+	"code": "PBJ",
+	"countryCode": "VU",
+	"countryName": "瓦努阿图",
+	cityFirstLetter: "P"
+}, {
+	cityName: "普林斯顿",
+	citySpell: "PULINSIDUN",
+	"code": "PCT",
+	"countryCode": "US",
+	"countryName": "美国",
+	cityFirstLetter: "P"
+}, {
+	cityName: "佩拉嫩",
+	citySpell: "PEILANEN",
+	"code": "PEL",
+	"countryCode": "LS",
+	"countryName": "莱索托",
+	cityFirstLetter: "P"
+}, {
+	cityName: "帕苏斯",
+	citySpell: "PASUSI",
+	"code": "PSW",
+	"countryCode": "BR",
+	"countryName": "巴西",
+	cityFirstLetter: "P"
+}, {
+	cityName: "普罗普里亚诺",
+	citySpell: "PULUOPULIYANUO",
+	"code": "PRP",
+	"countryCode": "FR",
+	"countryName": "法国",
+	cityFirstLetter: "P"
+}, {
+	cityName: "皮克岛",
+	citySpell: "PIKEDAO",
+	"code": "PIX",
+	"countryCode": "PT",
+	"countryName": "葡萄牙",
+	cityFirstLetter: "P"
+}, {
+	cityName: "普斯科夫",
+	citySpell: "PUSIKEFU",
+	"code": "PKV",
+	"countryCode": "RU",
+	"countryName": "俄罗斯",
+	cityFirstLetter: "P"
+}, {
+	cityName: "普里什蒂纳",
+	citySpell: "PULISHENDINA",
+	"code": "PRN",
+	"countryCode": "RS",
+	"countryName": "塞尔维亚",
+	cityFirstLetter: "P"
+}, {
+	cityName: "庞德因莱特",
+	citySpell: "PANGDEYINLAITE",
+	"code": "YIO",
+	"countryCode": "CA",
+	"countryName": "加拿大",
+	cityFirstLetter: "P"
+}, {
+	cityName: "帕林廷斯",
+	citySpell: "PALINTINGSI",
+	"code": "PIN",
+	"countryCode": "BR",
+	"countryName": "巴西",
+	cityFirstLetter: "P"
+}, {
+	cityName: "珀鲁",
+	citySpell: "POLU",
+	"code": "VYS",
+	"countryCode": "US",
+	"countryName": "美国",
+	cityFirstLetter: "P"
+}, {
+	cityName: "帕拉博鲁瓦",
+	citySpell: "PALABOLUWA",
+	"code": "PHW",
+	"countryCode": "ZA",
+	"countryName": "南非",
+	cityFirstLetter: "P"
+}, {
+	cityName: "蓬塞",
+	citySpell: "PENGSAI",
+	"code": "PSE",
+	"countryCode": "PR",
+	"countryName": "波多黎各",
+	cityFirstLetter: "P"
+}, {
+	cityName: "帕拉迪斯里弗",
+	citySpell: "PALADISILIFU",
+	"code": "YDE",
+	"countryCode": "CA",
+	"countryName": "加拿大",
+	cityFirstLetter: "P"
+}, {
+	cityName: "帕尔马马洛卡",
+	citySpell: "PAERMAMALUOKA",
+	"code": "PMI",
+	"countryCode": "ES",
+	"countryName": "西班牙",
+	cityFirstLetter: "P"
+}, {
+	cityName: "潘帕",
+	citySpell: "PANPA",
+	"code": "PPA",
+	"countryCode": "US",
+	"countryName": "美国",
+	cityFirstLetter: "P"
+}, {
+	cityName: "帕塔亚",
+	citySpell: "PATAYA",
+	"code": "PYX",
+	"countryCode": "TH",
+	"countryName": "泰国",
+	cityFirstLetter: "P"
+}, {
+	cityName: "帕卢",
+	citySpell: "PALU",
+	"code": "PLW",
+	"countryCode": "ID",
+	"countryName": "印度尼西亚",
+	cityFirstLetter: "P"
+}, {
+	cityName: "普卡普卡",
+	citySpell: "PUKAPUKA",
+	"code": "PKP",
+	"countryCode": "PF",
+	"countryName": "法属波利尼西亚",
+	cityFirstLetter: "P"
+}, {
+	cityName: "皮丁加",
+	citySpell: "PIDINGJIA",
+	"code": "PIG",
+	"countryCode": "BR",
+	"countryName": "巴西",
+	cityFirstLetter: "P"
+}, {
+	cityName: "潘德纳",
+	citySpell: "PANDENA",
+	"code": "PDN",
+	"countryCode": "AU",
+	"countryName": "澳大利亚",
+	cityFirstLetter: "P"
+}, {
+	cityName: "帕奥尼亚",
+	citySpell: "PAAONIYA",
+	"code": "WPO",
+	"countryCode": "US",
+	"countryName": "美国",
+	cityFirstLetter: "P"
+}, {
+	cityName: "帕索德挽洛斯利布雷斯",
+	citySpell: "PASUODEWANLUOSILIBULEISI",
+	"code": "AOL",
+	"countryCode": "AR",
+	"countryName": "阿根廷",
+	cityFirstLetter: "P"
+}, {
+	cityName: "普林塞萨港",
+	citySpell: "PULINSAISAGANG",
+	"code": "PPS",
+	"countryCode": "PH",
+	"countryName": "菲律宾",
+	cityFirstLetter: "P"
+}, {
+	cityName: "帕罗",
+	citySpell: "PALUO",
+	"code": "PBH",
+	"countryCode": "BT",
+	"countryName": "不丹",
+	cityFirstLetter: "P"
+}, {
+	cityName: "佩鲁贾",
+	citySpell: "PEILUJIA",
+	"code": "PEG",
+	"countryCode": "IT",
+	"countryName": "意大利",
+	cityFirstLetter: "P"
+}, {
+	cityName: "帕朗卡巴亚",
+	citySpell: "PALANGKABAYA",
+	"code": "PKY",
+	"countryCode": "ID",
+	"countryName": "印度尼西亚",
+	cityFirstLetter: "P"
+}, {
+	cityName: "清迈",
+	citySpell: "QINGMAI",
+	"code": "CNX",
+	"countryCode": "TH",
+	"countryName": "泰国",
+	cityFirstLetter: "Q"
+}, {
+	cityName: "丘巴凯",
+	citySpell: "QIUBAKAI",
+	"code": "CCZ",
+	"countryCode": "BS",
+	"countryName": "巴哈马",
+	cityFirstLetter: "Q"
+}, {
+	cityName: "乔治",
+	citySpell: "QIAOZHI",
+	"code": "GRJ",
+	"countryCode": "ZA",
+	"countryName": "南非",
+	cityFirstLetter: "Q"
+}, {
+	cityName: "切福纳克",
+	citySpell: "QIEFUNAKE",
+	"code": "CYF",
+	"countryCode": "US",
+	"countryName": "美国",
+	cityFirstLetter: "Q"
+}, {
+	cityName: "乔巴山",
+	citySpell: "QIAOBASHAN",
+	"code": "COQ",
+	"countryCode": "MN",
+	"countryName": "蒙古",
+	cityFirstLetter: "Q"
+}, {
+	cityName: "屈塔希亚",
+	citySpell: "QUTAXIYA",
+	"code": "KZR",
+	"countryCode": "TR",
+	"countryName": "土耳其",
+	cityFirstLetter: "Q"
+}, {
+	cityName: "清化",
+	citySpell: "QINGHUA",
+	"code": "THD",
+	"countryCode": "VN",
+	"countryName": "越南",
+	cityFirstLetter: "Q"
+}, {
+	cityName: "奇平加",
+	citySpell: "QIPINGJIA",
+	"code": "CHJ",
+	"countryCode": "ZW",
+	"countryName": "津巴布韦",
+	cityFirstLetter: "Q"
+}, {
+	cityName: "乔治敦",
+	citySpell: "QIAOZHIDUN",
+	"code": "GTT",
+	"countryCode": "AU",
+	"countryName": "澳大利亚",
+	cityFirstLetter: "Q"
+}, {
+	cityName: "奇琴伊查",
+	citySpell: "QIQINYICHA",
+	"code": "CZA",
+	"countryCode": "MX",
+	"countryName": "墨西哥",
+	cityFirstLetter: "Q"
+}, {
+	cityName: "秋田",
+	citySpell: "QIUTIAN",
+	"code": "AXT",
+	"countryCode": "JP",
+	"countryName": "日本",
+	cityFirstLetter: "Q"
+}, {
+	cityName: "祺布嘎莫",
+	citySpell: "QIBUGAMO",
+	"code": "YMT",
+	"countryCode": "CA",
+	"countryName": "加拿大",
+	cityFirstLetter: "Q"
+}, {
+	cityName: "奇特雷",
+	citySpell: "QITELEI",
+	"code": "CTD",
+	"countryCode": "PA",
+	"countryName": "巴拿马",
+	cityFirstLetter: "Q"
+}, {
+	cityName: "切尔斯基",
+	citySpell: "QIEERSIJI",
+	"code": "CYX",
+	"countryCode": "RU",
+	"countryName": "俄罗斯",
+	cityFirstLetter: "Q"
+}, {
+	cityName: "切博克萨雷",
+	citySpell: "QIEBOKESALEI",
+	"code": "CSY",
+	"countryCode": "RU",
+	"countryName": "俄罗斯",
+	cityFirstLetter: "Q"
+}, {
+	cityName: "奇帕维安堡市",
+	citySpell: "QIPAWEIANBAOSHI",
+	"code": "YPY",
+	"countryCode": "CA",
+	"countryName": "加拿大",
+	cityFirstLetter: "Q"
+}, {
+	cityName: "钦戈拉",
+	citySpell: "QINGELA",
+	"code": "CGJ",
+	"countryCode": "ZM",
+	"countryName": "赞比亚",
+	cityFirstLetter: "Q"
+}, {
+	cityName: "奇卡帕",
+	citySpell: "QIKAPA",
+	"code": "TSH",
+	"countryCode": "CD",
+	"countryName": "刚果民主共和国",
+	cityFirstLetter: "Q"
+}, {
+	cityName: "奇科",
+	citySpell: "QIKE",
+	"code": "CIC",
+	"countryCode": "US",
+	"countryName": "美国",
+	cityFirstLetter: "Q"
+}, {
+	cityName: "奇拉戈",
+	citySpell: "QILAGE",
+	"code": "LLG",
+	"countryCode": "AU",
+	"countryName": "澳大利亚",
+	cityFirstLetter: "Q"
+}, {
+	cityName: "青年城",
+	citySpell: "QINGNIANCHENG",
+	"code": "KXK",
+	"countryCode": "RU",
+	"countryName": "俄罗斯",
+	cityFirstLetter: "Q"
+}, {
+	cityName: "庆良间群岛",
+	citySpell: "QINGLIANGJIANQUNDAO",
+	"code": "KJP",
+	"countryCode": "JP",
+	"countryName": "日本",
+	cityFirstLetter: "Q"
+}, {
+	cityName: "乔治敦",
+	citySpell: "QIAOZHIDUN",
+	"code": "OGL",
+	"countryCode": "GY",
+	"countryName": "圭亚那",
+	cityFirstLetter: "Q"
+}, {
+	cityName: "奇萨纳",
+	citySpell: "QISANA",
+	"code": "CZN",
+	"countryCode": "US",
+	"countryName": "美国",
+	cityFirstLetter: "Q"
+}, {
+	cityName: "奇穆肯特",
+	citySpell: "QIMUKENTE",
+	"code": "CIT",
+	"countryCode": "KZ",
+	"countryName": "哈萨克斯坦",
+	cityFirstLetter: "Q"
+}, {
+	cityName: "恰查斯",
+	citySpell: "QIACHASI",
+	"code": "UNE",
+	"countryCode": "LS",
+	"countryName": "莱索托",
+	cityFirstLetter: "Q"
+}, {
+	cityName: "奇克拉约",
+	citySpell: "QIKELAYUE",
+	"code": "CIX",
+	"countryCode": "PE",
+	"countryName": "秘鲁",
+	cityFirstLetter: "Q"
+}, {
+	cityName: "清莱",
+	citySpell: "QINGLAI",
+	"code": "CEI",
+	"countryCode": "TH",
+	"countryName": "泰国",
+	cityFirstLetter: "Q"
+}, {
+	cityName: "切图马尔",
+	citySpell: "QIETUMAER",
+	"code": "CTM",
+	"countryCode": "MX",
+	"countryName": "墨西哥",
+	cityFirstLetter: "Q"
+}, {
+	cityName: "切斯特菲尔德因莱特",
+	citySpell: "QIESITEFEIERDEYINLAITE",
+	"code": "YCS",
+	"countryCode": "CA",
+	"countryName": "加拿大",
+	cityFirstLetter: "Q"
+}, {
+	cityName: "七岛港",
+	citySpell: "QIDAOGANG",
+	"code": "YZV",
+	"countryCode": "CA",
+	"countryName": "加拿大",
+	cityFirstLetter: "Q"
+}, {
+	cityName: "奇黑黑",
+	citySpell: "QIHEIHEI",
+	"code": "KHX",
+	"countryCode": "UG",
+	"countryName": "乌干达",
+	cityFirstLetter: "Q"
+}, {
+	cityName: "乔普林",
+	citySpell: "QIAOPULIN",
+	"code": "JLN",
+	"countryCode": "US",
+	"countryName": "美国",
+	cityFirstLetter: "Q"
+}, {
+	cityName: "恰纳卡莱",
+	citySpell: "QIANAKALAI",
+	"code": "CKZ",
+	"countryCode": "TR",
+	"countryName": "土耳其",
+	cityFirstLetter: "Q"
+}, {
+	cityName: "青蓬",
+	citySpell: "QINGPENG",
+	"code": "CJM",
+	"countryCode": "TH",
+	"countryName": "泰国",
+	cityFirstLetter: "Q"
+}, {
+	cityName: "钦博特",
+	citySpell: "QINBOTE",
+	"code": "CHM",
+	"countryCode": "PE",
+	"countryName": "秘鲁",
+	cityFirstLetter: "Q"
+}, {
+	cityName: "切列波维茨",
+	citySpell: "QIELIEBOWEICI",
+	"code": "CEE",
+	"countryCode": "RU",
+	"countryName": "俄罗斯",
+	cityFirstLetter: "Q"
+}, {
+	cityName: "乔阿特巴芦克",
+	citySpell: "QIAOATEBALUKE",
+	"code": "CHU",
+	"countryCode": "US",
+	"countryName": "美国",
+	cityFirstLetter: "Q"
+}, {
+	cityName: "钦圭提",
+	citySpell: "QINGUITI",
+	"code": "CGT",
+	"countryCode": "MR",
+	"countryName": "毛里塔尼亚",
+	cityFirstLetter: "Q"
+}, {
+	cityName: "乔哈特",
+	citySpell: "QIAOHATE",
+	"code": "JRH",
+	"countryCode": "IN",
+	"countryName": "印度",
+	cityFirstLetter: "Q"
+}, {
+	cityName: "奇瓦瓦",
+	citySpell: "QIWAWA",
+	"code": "CUU",
+	"countryCode": "MX",
+	"countryName": "墨西哥",
+	cityFirstLetter: "Q"
+}, {
+	cityName: "恰耶挽恰佩尔",
+	citySpell: "QIAYEWANQIAPEIER",
+	"code": "CYC",
+	"countryCode": "BZ",
+	"countryName": "伯利兹",
+	cityFirstLetter: "Q"
+}, {
+	cityName: "恰赫巴哈尔",
+	citySpell: "QIAHEBAHAER",
+	"code": "ZBR",
+	"countryCode": "IR",
+	"countryName": "伊朗",
+	cityFirstLetter: "Q"
+}, {
+	cityName: "齐鲁阿努曼迪迪",
+	citySpell: "QILUANUMANDIDI",
+	"code": "WTS",
+	"countryCode": "MG",
+	"countryName": "马达加斯加",
+	cityFirstLetter: "Q"
+}, {
+	cityName: "奇斯泰兹",
+	citySpell: "QISITAIZI",
+	"code": "TED",
+	"countryCode": "DK",
+	"countryName": "丹麦",
+	cityFirstLetter: "Q"
+}, {
+	cityName: "秋明",
+	citySpell: "QIUMING",
+	"code": "TJM",
+	"countryCode": "RU",
+	"countryName": "俄罗斯",
+	cityFirstLetter: "Q"
+}, {
+	cityName: "乞力马",
+	citySpell: "QILIMA",
+	"code": "JRO",
+	"countryCode": "TZ",
+	"countryName": "坦桑尼亚",
+	cityFirstLetter: "Q"
+}, {
+	cityName: "切尔诺夫斯基",
+	citySpell: "QIEERNUOFUSIJI",
+	"code": "KCN",
+	"countryCode": "US",
+	"countryName": "美国",
+	cityFirstLetter: "Q"
+}, {
+	cityName: "奇恩",
+	citySpell: "QIEN",
+	"code": "THC",
+	"countryCode": "LR",
+	"countryName": "利比里亚",
+	cityFirstLetter: "Q"
+}, {
+	cityName: "青森",
+	citySpell: "QINGSEN",
+	"code": "AOJ",
+	"countryCode": "JP",
+	"countryName": "日本",
+	cityFirstLetter: "Q"
+}, {
+	cityName: "奇格罗多",
+	citySpell: "QIGELUODUO",
+	"code": "IGO",
+	"countryCode": "CO",
+	"countryName": "哥伦比亚",
+	cityFirstLetter: "Q"
+}, {
+	cityName: "全州",
+	citySpell: "QUANZHOU",
+	"code": "CHN",
+	"countryCode": "KR",
+	"countryName": "韩国",
+	cityFirstLetter: "Q"
+}, {
+	cityName: "奇金",
+	citySpell: "QIJIN",
+	"code": "CKX",
+	"countryCode": "US",
+	"countryName": "美国",
+	cityFirstLetter: "Q"
+}, {
+	cityName: "乔治敦",
+	citySpell: "QIAOZHIDUN",
+	"code": "GGT",
+	"countryCode": "BS",
+	"countryName": "巴哈马",
+	cityFirstLetter: "Q"
+}, {
+	cityName: "奇罗",
+	citySpell: "QILUO",
+	"code": "HCW",
+	"countryCode": "US",
+	"countryName": "美国",
+	cityFirstLetter: "Q"
+}, {
+	cityName: "乔姆森",
+	citySpell: "QIAOMUSEN",
+	"code": "JMO",
+	"countryCode": "NP",
+	"countryName": "尼泊尔",
+	cityFirstLetter: "Q"
+}, {
+	cityName: "丘吉尔",
+	citySpell: "QIUJIER",
+	"code": "YYQ",
+	"countryCode": "CA",
+	"countryName": "加拿大",
+	cityFirstLetter: "Q"
+}, {
+	cityName: "群山",
+	citySpell: "QUNSHAN",
+	"code": "KUV",
+	"countryCode": "KR",
+	"countryName": "韩国",
+	cityFirstLetter: "Q"
+}, {
+	cityName: "齐齐克塔胡亚克",
+	citySpell: "QIQIKETAHUYAKE",
+	"code": "YVM",
+	"countryCode": "CA",
+	"countryName": "加拿大",
+	cityFirstLetter: "Q"
+}, {
+	cityName: "奇帕塔",
+	citySpell: "QIPATA",
+	"code": "CIP",
+	"countryCode": "ZM",
+	"countryName": "赞比亚",
+	cityFirstLetter: "Q"
+}, {
+	cityName: "乔斯",
+	citySpell: "QIAOSI",
+	"code": "JOS",
+	"countryCode": "NG",
+	"countryName": "尼日利亚",
+	cityFirstLetter: "Q"
+}, {
+	cityName: "切斯特",
+	citySpell: "QIESITE",
+	"code": "CEG",
+	"countryCode": "GB",
+	"countryName": "英国",
+	cityFirstLetter: "Q"
+}, {
+	cityName: "芹苴",
+	citySpell: "QINJU",
+	"code": "VCA",
+	"countryCode": "VN",
+	"countryName": "越南",
+	cityFirstLetter: "Q"
+}, {
+	cityName: "清州",
+	citySpell: "QINGZHOU",
+	"code": "CJJ",
+	"countryCode": "KR",
+	"countryName": "韩国",
+	cityFirstLetter: "Q"
+}, {
+	cityName: "丘吉尔瀑布",
+	citySpell: "QIUJIERPUBU",
+	"code": "ZUM",
+	"countryCode": "CA",
+	"countryName": "加拿大",
+	cityFirstLetter: "Q"
+}, {
+	cityName: "切弗里",
+	citySpell: "QIEFULI",
+	"code": "YHR",
+	"countryCode": "CA",
+	"countryName": "加拿大",
+	cityFirstLetter: "Q"
+}, {
+	cityName: "乔治敦",
+	citySpell: "QIAOZHIDUN",
+	"code": "ASI",
+	"countryCode": "SH",
+	"countryName": "开罗群岛",
+	cityFirstLetter: "Q"
+}, {
+	cityName: "切尔诺夫策",
+	citySpell: "QIEERNUOFUCE",
+	"code": "CWC",
+	"countryCode": "UA",
+	"countryName": "乌克兰",
+	cityFirstLetter: "Q"
+}, {
+	cityName: "奇格尼克",
+	citySpell: "QIGENIKE",
+	"code": "KCL",
+	"countryCode": "US",
+	"countryName": "美国",
+	cityFirstLetter: "Q"
+}, {
+	cityName: "奇莱夫",
+	citySpell: "QILAIFU",
+	"code": "CFK",
+	"countryCode": "DZ",
+	"countryName": "阿尔及利亚",
+	cityFirstLetter: "Q"
+}, {
+	cityName: "乔治敦",
+	citySpell: "QIAOZHIDUN",
+	"code": "GEO",
+	"countryCode": "GY",
+	"countryName": "圭亚那",
+	cityFirstLetter: "Q"
+}, {
+	cityName: "奇皮瑟",
+	citySpell: "QIPISE",
+	"code": "TSD",
+	"countryCode": "ZA",
+	"countryName": "南非",
+	cityFirstLetter: "Q"
+}, {
+	cityName: "齐罗",
+	citySpell: "QILUO",
+	"code": "ZER",
+	"countryCode": "IN",
+	"countryName": "印度",
+	cityFirstLetter: "Q"
+}, {
+	cityName: "乔依绍尔湾",
+	citySpell: "QIAOYISHAOERWAN",
+	"code": "CHY",
+	"countryCode": "SB",
+	"countryName": "所罗门群岛",
+	cityFirstLetter: "Q"
+}, {
+	cityName: "恰赫恰兰",
+	citySpell: "QIAHEQIALAN",
+	"code": "CCN",
+	"countryCode": "AF",
+	"countryName": "阿富汗",
+	cityFirstLetter: "Q"
+}, {
+	cityName: "奇班加",
+	citySpell: "QIBANJIA",
+	"code": "TCH",
+	"countryCode": "GA",
+	"countryName": "加蓬",
+	cityFirstLetter: "Q"
+}, {
+	cityName: "切塞西比",
+	citySpell: "QIESAIXIBI",
+	"code": "YKU",
+	"countryCode": "CA",
+	"countryName": "加拿大",
+	cityFirstLetter: "Q"
+}, {
+	cityName: "乔治王子城",
+	citySpell: "QIAOZHIWANGZICHENG",
+	"code": "YXS",
+	"countryCode": "CA",
+	"countryName": "加拿大",
+	cityFirstLetter: "Q"
+}, {
+	cityName: "琼斯伯勒",
+	citySpell: "QIONGSIBOLE",
+	"code": "JBR",
+	"countryCode": "US",
+	"countryName": "美国",
+	cityFirstLetter: "Q"
+}, {
+	cityName: "琼达",
+	citySpell: "QIONGDA",
+	"code": "JUN",
+	"countryCode": "AU",
+	"countryName": "澳大利亚",
+	cityFirstLetter: "Q"
+}, {
+	cityName: "乔科达",
+	citySpell: "QIAOKEDA",
+	"code": "CKH",
+	"countryCode": "RU",
+	"countryName": "俄罗斯",
+	cityFirstLetter: "Q"
+}, {
+	cityName: "日内瓦",
+	citySpell: "RINEIWA",
+	"code": "GVA",
+	"countryCode": "CH",
+	"countryName": "瑞士",
+	cityFirstLetter: "R"
+}, {
+	cityName: "荣市",
+	citySpell: "RONGSHI",
+	"code": "VII",
+	"countryCode": "VN",
+	"countryName": "越南",
+	cityFirstLetter: "R"
+}, {
+	cityName: "让蒂尔港",
+	citySpell: "RANGDIERGANG",
+	"code": "POG",
+	"countryCode": "GA",
+	"countryName": "加蓬",
+	cityFirstLetter: "R"
+}, {
+	cityName: "日利纳",
+	citySpell: "RILINA",
+	"code": "ILZ",
+	"countryCode": "SK",
+	"countryName": "斯洛伐克",
+	cityFirstLetter: "R"
+}, {
+	cityName: "热基耶",
+	citySpell: "REJIYE",
+	"code": "JEQ",
+	"countryCode": "BR",
+	"countryName": "巴西",
+	cityFirstLetter: "R"
+}, {
+	cityName: "茹伊斯迪福拉",
+	citySpell: "RUYISIDIFULA",
+	"code": "JDF",
+	"countryCode": "BR",
+	"countryName": "巴西",
+	cityFirstLetter: "R"
+}, {
+	cityName: "日澳湖",
+	citySpell: "RIAOHU",
+	"code": "ZRJ",
+	"countryCode": "CA",
+	"countryName": "加拿大",
+	cityFirstLetter: "R"
+}, {
+	cityName: "茹科夫斯基",
+	citySpell: "RUKEFUSIJI",
+	"code": "ZIA",
+	"countryCode": "RU",
+	"countryName": "俄罗斯",
+	cityFirstLetter: "R"
+}, {
+	cityName: "荣彻平",
+	citySpell: "RONGZHEPING",
+	"code": "JKG",
+	"countryCode": "SE",
+	"countryName": "瑞典",
+	cityFirstLetter: "R"
+}, {
+	cityName: "热雷米",
+	citySpell: "RELEIMI",
+	"code": "JEE",
+	"countryCode": "HT",
+	"countryName": "海地",
+	cityFirstLetter: "R"
+}, {
+	cityName: "若昂佩索阿",
+	citySpell: "RUOANGPEISUOA",
+	"code": "JPA",
+	"countryCode": "BR",
+	"countryName": "巴西",
+	cityFirstLetter: "R"
+}, {
+	cityName: "任抹",
+	citySpell: "RENMO",
+	"code": "JBB",
+	"countryCode": "ID",
+	"countryName": "印度尼西亚",
+	cityFirstLetter: "R"
+}, {
+	cityName: "若阿萨巴",
+	citySpell: "RUOASABA",
+	"code": "JCB",
+	"countryCode": "BR",
+	"countryName": "巴西",
+	cityFirstLetter: "R"
+}, {
+	cityName: "日扎戈拉",
+	citySpell: "RIZHAGELA",
+	"code": "SZR",
+	"countryCode": "BG",
+	"countryName": "保加利亚",
+	cityFirstLetter: "R"
+}, {
+	cityName: "热那亚",
+	citySpell: "RENAYA",
+	"code": "GOA",
+	"countryCode": "IT",
+	"countryName": "意大利",
+	cityFirstLetter: "R"
+}, {
+	cityName: "日惹",
+	citySpell: "RIRE",
+	"code": "JOG",
+	"countryCode": "ID",
+	"countryName": "印度尼西亚",
+	cityFirstLetter: "R"
+}, {
+	cityName: "日甘斯克",
+	citySpell: "RIGANSIKE",
+	"code": "ZIX",
+	"countryCode": "RU",
+	"countryName": "俄罗斯",
+	cityFirstLetter: "R"
+}, {
+	cityName: "儒伊斯特",
+	citySpell: "RUYISITE",
+	"code": "JUI",
+	"countryCode": "DE",
+	"countryName": "德国",
+	cityFirstLetter: "R"
+}, {
+	cityName: "瑞山",
+	citySpell: "RUISHAN",
+	"code": "HMY",
+	"countryCode": "KR",
+	"countryName": "韩国",
+	cityFirstLetter: "R"
+}, {
+	cityName: "热舒夫",
+	citySpell: "RESHUFU",
+	"code": "RZE",
+	"countryCode": "PL",
+	"countryName": "波兰",
+	cityFirstLetter: "R"
+}, {
+	cityName: "儒万维尔",
+	citySpell: "RUWANWEIER",
+	"code": "JOI",
+	"countryCode": "BR",
+	"countryName": "巴西",
+	cityFirstLetter: "R"
+}, {
+	cityName: "首尔",
+	citySpell: "SHOUER",
+	"code": "SEL",
+	"countryCode": "KR",
+	"countryName": "韩国",
+	cityFirstLetter: "S"
+}, {
+	cityName: "斯德哥尔摩",
+	citySpell: "SIDEGEERMO",
+	"code": "STO",
+	"countryCode": "SE",
+	"countryName": "瑞典",
+	cityFirstLetter: "S"
+}, {
+	cityName: "塞班",
+	citySpell: "SAIBAN",
+	"code": "SPN",
+	"countryCode": "MP",
+	"countryName": "北马里亚纳群岛",
+	cityFirstLetter: "S"
+}, {
+	cityName: "塞维利亚",
+	citySpell: "SAIWEILIYA",
+	"code": "SVQ",
+	"countryCode": "ES",
+	"countryName": "西班牙",
+	cityFirstLetter: "S"
+}, {
+	cityName: "圣保罗",
+	citySpell: "SHENGBAOLUO",
+	"code": "SAO",
+	"countryCode": "BR",
+	"countryName": "巴西",
+	cityFirstLetter: "S"
+}, {
+	cityName: "苏黎世",
+	citySpell: "SULISHI",
+	"code": "ZRH",
+	"countryCode": "CH",
+	"countryName": "瑞士",
+	cityFirstLetter: "S"
+}, {
+	cityName: "苏梅岛",
+	citySpell: "SUMEIDAO",
+	"code": "USM",
+	"countryCode": "TH",
+	"countryName": "泰国",
+	cityFirstLetter: "S"
+}, {
+	cityName: "斯波坎",
+	citySpell: "SIBOKAN",
+	"code": "GEG",
+	"countryCode": "US",
+	"countryName": "美国",
+	cityFirstLetter: "S"
+}, {
+	cityName: "斯摩棱斯克",
+	citySpell: "SIMOLENGSIKE",
+	"code": "LNX",
+	"countryCode": "RU",
+	"countryName": "俄罗斯",
+	cityFirstLetter: "S"
+}, {
+	cityName: "斯卡都",
+	citySpell: "SIKADU",
+	"code": "KDU",
+	"countryCode": "PK",
+	"countryName": "巴基斯坦",
+	cityFirstLetter: "S"
+}, {
+	cityName: "桑布鲁",
+	citySpell: "SANGBULU",
+	"code": "UAS",
+	"countryCode": "KE",
+	"countryName": "肯尼亚",
+	cityFirstLetter: "S"
+}, {
+	cityName: "圣罗莎",
+	citySpell: "SHENGLUOSHA",
+	"code": "ETR",
+	"countryCode": "EC",
+	"countryName": "厄瓜多尔",
+	cityFirstLetter: "S"
+}, {
+	cityName: "斯基克达",
+	citySpell: "SIJIKEDA",
+	"code": "SKI",
+	"countryCode": "DZ",
+	"countryName": "阿尔及利亚",
+	cityFirstLetter: "S"
+}, {
+	cityName: "沙佩科",
+	citySpell: "SHAPEIKE",
+	"code": "XAP",
+	"countryCode": "BR",
+	"countryName": "巴西",
+	cityFirstLetter: "S"
+}, {
+	cityName: "萨万",
+	citySpell: "SAWAN",
+	"code": "RZS",
+	"countryCode": "PK",
+	"countryName": "巴基斯坦",
+	cityFirstLetter: "S"
+}, {
+	cityName: "圣塔巴巴拉",
+	citySpell: "SHENGTABABALA",
+	"code": "STB",
+	"countryCode": "VE",
+	"countryName": "委内瑞拉",
+	cityFirstLetter: "S"
+}, {
+	cityName: "圣约翰",
+	citySpell: "SHENGYUEHAN",
+	"code": "YSJ",
+	"countryCode": "CA",
+	"countryName": "加拿大",
+	cityFirstLetter: "S"
+}, {
+	cityName: "圣达菲",
+	citySpell: "SHENGDAFEI",
+	"code": "SAF",
+	"countryCode": "US",
+	"countryName": "美国",
+	cityFirstLetter: "S"
+}, {
+	cityName: "史凯威",
+	citySpell: "SHIKAIWEI",
+	"code": "SGY",
+	"countryCode": "US",
+	"countryName": "美国",
+	cityFirstLetter: "S"
+}, {
+	cityName: "萨莱诺",
+	citySpell: "SALAINUO",
+	"code": "QSR",
+	"countryCode": "IT",
+	"countryName": "意大利",
+	cityFirstLetter: "S"
+}, {
+	cityName: "斯普林菲尔德(马萨诸塞州)",
+	citySpell: "SIPULINFEIERDE",
+	"code": "SFY",
+	"countryCode": "US",
+	"countryName": "美国",
+	cityFirstLetter: "S"
+}, {
+	cityName: "圣港",
+	citySpell: "SHENGGANG",
+	"code": "PXO",
+	"countryCode": "PT",
+	"countryName": "葡萄牙",
+	cityFirstLetter: "S"
+}, {
+	cityName: "沙格鲁",
+	citySpell: "SHAGELU",
+	"code": "SHX",
+	"countryCode": "US",
+	"countryName": "美国",
+	cityFirstLetter: "S"
+}, {
+	cityName: "沙兰",
+	citySpell: "SHALAN",
+	"code": "OAS",
+	"countryCode": "AF",
+	"countryName": "阿富汗",
+	cityFirstLetter: "S"
+}, {
+	cityName: "沙赫乔尔斯克",
+	citySpell: "SHAHEQIAOERSIKE",
+	"code": "EKS",
+	"countryCode": "RU",
+	"countryName": "俄罗斯",
+	cityFirstLetter: "S"
+}, {
+	cityName: "瑟卡克斯",
+	citySpell: "SEKAKESI",
+	"code": "SKQ",
+	"countryCode": "LS",
+	"countryName": "莱索托",
+	cityFirstLetter: "S"
+}, {
+	cityName: "萨尔瓦多",
+	citySpell: "SAERWADUO",
+	"code": "SSA",
+	"countryCode": "BR",
+	"countryName": "巴西",
+	cityFirstLetter: "S"
+}, {
+	cityName: "瑟德港",
+	citySpell: "SEDEGANG",
+	"code": "SOO",
+	"countryCode": "SE",
+	"countryName": "瑞典",
+	cityFirstLetter: "S"
+}, {
+	cityName: "顺化",
+	citySpell: "SHUNHUA",
+	"code": "HUI",
+	"countryCode": "VN",
+	"countryName": "越南",
+	cityFirstLetter: "S"
+}, {
+	cityName: "苏拉特",
+	citySpell: "SULATE",
+	"code": "STV",
+	"countryCode": "IN",
+	"countryName": "印度",
+	cityFirstLetter: "S"
+}, {
+	cityName: "泗务",
+	citySpell: "SIWU",
+	"code": "SBW",
+	"countryCode": "MY",
+	"countryName": "马来西亚",
+	cityFirstLetter: "S"
+}, {
+	cityName: "斯沃鲁克奥",
+	citySpell: "SIWOLUKEAO",
+	"code": "YXL",
+	"countryCode": "CA",
+	"countryName": "加拿大",
+	cityFirstLetter: "S"
+}, {
+	cityName: "萨拉托夫",
+	citySpell: "SALATUOFU",
+	"code": "RTW",
+	"countryCode": "RU",
+	"countryName": "俄罗斯",
+	cityFirstLetter: "S"
+}, {
+	cityName: "什切青",
+	citySpell: "SHENQIEQING",
+	"code": "SZZ",
+	"countryCode": "PL",
+	"countryName": "波兰",
+	cityFirstLetter: "S"
+}, {
+	cityName: "三泽",
+	citySpell: "SANZE",
+	"code": "MSJ",
+	"countryCode": "JP",
+	"countryName": "日本",
+	cityFirstLetter: "S"
+}, {
+	cityName: "圣安东尼奥",
+	citySpell: "SHENGANDONGNIAO",
+	"code": "SAT",
+	"countryCode": "US",
+	"countryName": "美国",
+	cityFirstLetter: "S"
+}, {
+	cityName: "上维耶斯卡",
+	citySpell: "SHANGWEIYESIKA",
+	"code": "YLI",
+	"countryCode": "FI",
+	"countryName": "芬兰",
+	cityFirstLetter: "S"
+}, {
+	cityName: "盛冈",
+	citySpell: "SHENGGANG",
+	"code": "HNA",
+	"countryCode": "JP",
+	"countryName": "日本",
+	cityFirstLetter: "S"
+}, {
+	cityName: "使密得斯",
+	citySpell: "SHIMIDESI",
+	"code": "YYD",
+	"countryCode": "CA",
+	"countryName": "加拿大",
+	cityFirstLetter: "S"
+}, {
+	cityName: "塞尔多维亚",
+	citySpell: "SAIERDUOWEIYA",
+	"code": "SOV",
+	"countryCode": "US",
+	"countryName": "美国",
+	cityFirstLetter: "S"
+}, {
+	cityName: "松元",
+	citySpell: "SONGYUAN",
+	"code": "MMJ",
+	"countryCode": "JP",
+	"countryName": "日本",
+	cityFirstLetter: "S"
+}, {
+	cityName: "圣克拉拉",
+	citySpell: "SHENGKELALA",
+	"code": "SNU",
+	"countryCode": "CU",
+	"countryName": "古巴",
+	cityFirstLetter: "S"
+}, {
+	cityName: "萨拉纳克莱克",
+	citySpell: "SALANAKELAIKE",
+	"code": "SLK",
+	"countryCode": "US",
+	"countryName": "美国",
+	cityFirstLetter: "S"
+}, {
+	cityName: "斯克内克塔迪",
+	citySpell: "SIKENEIKETADI",
+	"code": "SCH",
+	"countryCode": "US",
+	"countryName": "美国",
+	cityFirstLetter: "S"
+}, {
+	cityName: "塞胡利",
+	citySpell: "SAIHULI",
+	"code": "SXH",
+	"countryCode": "PG",
+	"countryName": "巴布亚新几内亚",
+	cityFirstLetter: "S"
+}, {
+	cityName: "萨默塞特",
+	citySpell: "SAMOSAITE",
+	"code": "SME",
+	"countryCode": "US",
+	"countryName": "美国",
+	cityFirstLetter: "S"
+}, {
+	cityName: "桑坦德",
+	citySpell: "SANGTANDE",
+	"code": "SDR",
+	"countryCode": "ES",
+	"countryName": "西班牙",
+	cityFirstLetter: "S"
+}, {
+	cityName: "圣菲",
+	citySpell: "SHENGFEI",
+	"code": "SFN",
+	"countryCode": "AR",
+	"countryName": "阿根廷",
+	cityFirstLetter: "S"
+}, {
+	cityName: "萨阿梅里克",
+	citySpell: "SAAMEILIKE",
+	"code": "SOB",
+	"countryCode": "HU",
+	"countryName": "匈牙利",
+	cityFirstLetter: "S"
+}, {
+	cityName: "上法芬霍芬",
+	citySpell: "SHANGFAFENHUOFEN",
+	"code": "OBF",
+	"countryCode": "DE",
+	"countryName": "德国",
+	cityFirstLetter: "S"
+}, {
+	cityName: "圣艾蒂安",
+	citySpell: "SHENGAIDIAN",
+	"code": "EBU",
+	"countryCode": "FR",
+	"countryName": "法国",
+	cityFirstLetter: "S"
+}, {
+	cityName: "圣玛丽",
+	citySpell: "SHENGMALI",
+	"code": "SMS",
+	"countryCode": "MG",
+	"countryName": "马达加斯加",
+	cityFirstLetter: "S"
+}, {
+	cityName: "斯托克马克内斯",
+	citySpell: "SITUOKEMAKENEISI",
+	"code": "SKN",
+	"countryCode": "NO",
+	"countryName": "挪威",
+	cityFirstLetter: "S"
+}, {
+	cityName: "圣莫尼卡",
+	citySpell: "SHENGMONIKA",
+	"code": "SMO",
+	"countryCode": "US",
+	"countryName": "美国",
+	cityFirstLetter: "S"
+}, {
+	cityName: "三宝拢",
+	citySpell: "SANBAOLONG",
+	"code": "SRG",
+	"countryCode": "ID",
+	"countryName": "印度尼西亚",
+	cityFirstLetter: "S"
+}, {
+	cityName: "尚佩恩",
+	citySpell: "SHANGPEIEN",
+	"code": "CMI",
+	"countryCode": "US",
+	"countryName": "美国",
+	cityFirstLetter: "S"
+}, {
+	cityName: "沙德伦",
+	citySpell: "SHADELUN",
+	"code": "CDR",
+	"countryCode": "US",
+	"countryName": "美国",
+	cityFirstLetter: "S"
+}, {
+	cityName: "圣洛伦佐",
+	citySpell: "SHENGLUOLUNZUO",
+	"code": "SSO",
+	"countryCode": "BR",
+	"countryName": "巴西",
+	cityFirstLetter: "S"
+}, {
+	cityName: "圣迈克尔",
+	citySpell: "SHENGMAIKEER",
+	"code": "SMK",
+	"countryCode": "US",
+	"countryName": "美国",
+	cityFirstLetter: "S"
+}, {
+	cityName: "塞莱比挽皮奎",
+	citySpell: "SAILAIBIWANPIKUI",
+	"code": "PKW",
+	"countryCode": "BW",
+	"countryName": "博茨瓦纳",
+	cityFirstLetter: "S"
+}, {
+	cityName: "塞舒特斯",
+	citySpell: "SAISHUTESI",
+	"code": "SHZ",
+	"countryCode": "LS",
+	"countryName": "莱索托",
+	cityFirstLetter: "S"
+}, {
+	cityName: "设拉子",
+	citySpell: "SHELAZI",
+	"code": "SYZ",
+	"countryCode": "IR",
+	"countryName": "伊朗",
+	cityFirstLetter: "S"
+}, {
+	cityName: "守护神",
+	citySpell: "SHOUHUSHEN",
+	"code": "LRR",
+	"countryCode": "IR",
+	"countryName": "伊朗",
+	cityFirstLetter: "S"
+}, {
+	cityName: "索拉诺港",
+	citySpell: "SUOLANUOGANG",
+	"code": "BSC",
+	"countryCode": "CO",
+	"countryName": "哥伦比亚",
+	cityFirstLetter: "S"
+}, {
+	cityName: "斯基亚索斯",
+	citySpell: "SIJIYASUOSI",
+	"code": "JSI",
+	"countryCode": "GR",
+	"countryName": "希腊",
+	cityFirstLetter: "S"
+}, {
+	cityName: "死谷",
+	citySpell: "SIGU",
+	"code": "DTH",
+	"countryCode": "US",
+	"countryName": "美国",
+	cityFirstLetter: "S"
+}, {
+	cityName: "圣路易斯",
+	citySpell: "SHENGLUYISI",
+	"code": "SLZ",
+	"countryCode": "BR",
+	"countryName": "巴西",
+	cityFirstLetter: "S"
+}, {
+	cityName: "桑皮特",
+	citySpell: "SANGPITE",
+	"code": "SMQ",
+	"countryCode": "ID",
+	"countryName": "印度尼西亚",
+	cityFirstLetter: "S"
+}, {
+	cityName: "圣多米诺岛",
+	citySpell: "SHENGDUOMINUODAO",
+	"code": "TQR",
+	"countryCode": "IT",
+	"countryName": "意大利",
+	cityFirstLetter: "S"
+}, {
+	cityName: "圣安格鲁",
+	citySpell: "SHENGANGELU",
+	"code": "SJT",
+	"countryCode": "US",
+	"countryName": "美国",
+	cityFirstLetter: "S"
+}, {
+	cityName: "瑟囊加",
+	citySpell: "SENANGJIA",
+	"code": "SXG",
+	"countryCode": "ZM",
+	"countryName": "赞比亚",
+	cityFirstLetter: "S"
+}, {
+	cityName: "实武牙",
+	citySpell: "SHIWUYA",
+	"code": "FLZ",
+	"countryCode": "ID",
+	"countryName": "印度尼西亚",
+	cityFirstLetter: "S"
+}, {
+	cityName: "塞蒂夫",
+	citySpell: "SAIDIFU",
+	"code": "QSF",
+	"countryCode": "DZ",
+	"countryName": "阿尔及利亚",
+	cityFirstLetter: "S"
+}, {
+	cityName: "圣安德烈斯岛",
+	citySpell: "SHENGANDELIESIDAO",
+	"code": "ADZ",
+	"countryCode": "CO",
+	"countryName": "哥伦比亚",
+	cityFirstLetter: "S"
+}, {
+	cityName: "司马威",
+	citySpell: "SIMAWEI",
+	"code": "LSW",
+	"countryCode": "ID",
+	"countryName": "印度尼西亚",
+	cityFirstLetter: "S"
+}, {
+	cityName: "沙湾拿吉",
+	citySpell: "SHAWANNAJI",
+	"code": "ZVK",
+	"countryCode": "LA",
+	"countryName": "老挝",
+	cityFirstLetter: "S"
+}, {
+	cityName: "圣伊格纳西奥",
+	citySpell: "SHENGYIGENAXIAO",
+	"code": "SQS",
+	"countryCode": "BZ",
+	"countryName": "伯利兹",
+	cityFirstLetter: "S"
+}, {
+	cityName: "苏维埃茨基",
+	citySpell: "SUWEIAICIJI",
+	"code": "OVS",
+	"countryCode": "RU",
+	"countryName": "俄罗斯",
+	cityFirstLetter: "S"
+}, {
+	cityName: "圣米格尔",
+	citySpell: "SHENGMIGEER",
+	"code": "NMG",
+	"countryCode": "PA",
+	"countryName": "巴拿马",
+	cityFirstLetter: "S"
+}, {
+	cityName: "圣罗莎",
+	citySpell: "SHENGLUOSHA",
+	"code": "RSA",
+	"countryCode": "AR",
+	"countryName": "阿根廷",
+	cityFirstLetter: "S"
+}, {
+	cityName: "萨那",
+	citySpell: "SANA",
+	"code": "SAH",
+	"countryCode": "YE",
+	"countryName": "也门",
+	cityFirstLetter: "S"
+}, {
+	cityName: "萨凡纳",
+	citySpell: "SAFANNA",
+	"code": "SAV",
+	"countryCode": "US",
+	"countryName": "美国",
+	cityFirstLetter: "S"
+}, {
+	cityName: "赛克斯顿",
+	citySpell: "SAIKESIDUN",
+	"code": "SIK",
+	"countryCode": "US",
+	"countryName": "美国",
+	cityFirstLetter: "S"
+}, {
+	cityName: "圣莫里茨",
+	citySpell: "SHENGMOLICI",
+	"code": "SMV",
+	"countryCode": "CH",
+	"countryName": "瑞士",
+	cityFirstLetter: "S"
+}, {
+	cityName: "斯沃尔韦尔",
+	citySpell: "SIWOERWEIER",
+	"code": "SVJ",
+	"countryCode": "NO",
+	"countryName": "挪威",
+	cityFirstLetter: "S"
+}, {
+	cityName: "塞云",
+	citySpell: "SAIYUN",
+	"code": "GXF",
+	"countryCode": "YE",
+	"countryName": "也门",
+	cityFirstLetter: "S"
+}, {
+	cityName: "沙尼",
+	citySpell: "SHANI",
+	"code": "MKD",
+	"countryCode": "ET",
+	"countryName": "埃塞俄比亚",
+	cityFirstLetter: "S"
+}, {
+	cityName: "苏杜雷里",
+	citySpell: "SUDULEILI",
+	"code": "SUY",
+	"countryCode": "RU",
+	"countryName": "俄罗斯",
+	cityFirstLetter: "S"
+}, {
+	cityName: "圣何塞",
+	citySpell: "SHENGHESAI",
+	"code": "SJO",
+	"countryCode": "CR",
+	"countryName": "哥斯达黎加",
+	cityFirstLetter: "S"
+}, {
+	cityName: "圣彼得堡",
+	citySpell: "SHENGBIDEBAO",
+	"code": "LED",
+	"countryCode": "RU",
+	"countryName": "俄罗斯",
+	cityFirstLetter: "S"
+}, {
+	cityName: "圣路易斯-奥比斯波",
+	citySpell: "SHENGLUYISIAOBISIBO",
+	"code": "CSL",
+	"countryCode": "US",
+	"countryName": "美国",
+	cityFirstLetter: "S"
+}, {
+	cityName: "宿务",
+	citySpell: "SUWU",
+	"code": "CEB",
+	"countryCode": "PH",
+	"countryName": "菲律宾",
+	cityFirstLetter: "S"
+}, {
+	cityName: "沙嘴",
+	citySpell: "SHAZUI",
+	"code": "YZP",
+	"countryCode": "CA",
+	"countryName": "加拿大",
+	cityFirstLetter: "S"
+}, {
+	cityName: "萨拉戈萨",
+	citySpell: "SALAGESA",
+	"code": "ZAZ",
+	"countryCode": "ES",
+	"countryName": "西班牙",
+	cityFirstLetter: "S"
+}, {
+	cityName: "圣萨尔瓦多岛",
+	citySpell: "SHENGSAERWADUODAO",
+	"code": "ZSA",
+	"countryCode": "BS",
+	"countryName": "巴哈马",
+	cityFirstLetter: "S"
+}, {
+	cityName: "塞米力格",
+	citySpell: "SAIMILIGE",
+	"code": "SGG",
+	"countryCode": "GL",
+	"countryName": "格陵兰岛",
+	cityFirstLetter: "S"
+}, {
+	cityName: "圣路易斯",
+	citySpell: "SHENGLUYISI",
+	"code": "LUQ",
+	"countryCode": "AR",
+	"countryName": "阿根廷",
+	cityFirstLetter: "S"
+}, {
+	cityName: "圣马丁",
+	citySpell: "SHENGMADING",
+	"code": "SFG",
+	"countryCode": "MF",
+	"countryName": "法属圣马丁",
+	cityFirstLetter: "S"
+}, {
+	cityName: "萨南达",
+	citySpell: "SANANDA",
+	"code": "SDG",
+	"countryCode": "IR",
+	"countryName": "伊朗",
+	cityFirstLetter: "S"
+}, {
+	cityName: "斯蒂芬维尔",
+	citySpell: "SIDIFENWEIER",
+	"code": "YJT",
+	"countryCode": "CA",
+	"countryName": "加拿大",
+	cityFirstLetter: "S"
+}, {
+	cityName: "圣奥依斯坦图斯",
+	citySpell: "SHENGAOYISITANTUSI",
+	"code": "EUX",
+	"countryCode": "BQ",
+	"countryName": "荷兰加勒比区",
+	cityFirstLetter: "S"
+}, {
+	cityName: "桑托斯",
+	citySpell: "SANGTUOSI",
+	"code": "SSZ",
+	"countryCode": "BR",
+	"countryName": "巴西",
+	cityFirstLetter: "S"
+}, {
+	cityName: "萨菲",
+	citySpell: "SAFEI",
+	"code": "SFI",
+	"countryCode": "MA",
+	"countryName": "摩洛哥",
+	cityFirstLetter: "S"
+}, {
+	cityName: "萨菲亚",
+	citySpell: "SAFEIYA",
+	"code": "SFU",
+	"countryCode": "PG",
+	"countryName": "巴布亚新几内亚",
+	cityFirstLetter: "S"
+}, {
+	cityName: "沙马塔瓦",
+	citySpell: "SHAMATAWA",
+	"code": "ZTM",
+	"countryCode": "CA",
+	"countryName": "加拿大",
+	cityFirstLetter: "S"
+}, {
+	cityName: "死马镇",
+	citySpell: "SIMAZHEN",
+	"code": "SCC",
+	"countryCode": "US",
+	"countryName": "美国",
+	cityFirstLetter: "S"
+}, {
+	cityName: "瑟巴",
+	citySpell: "SEBA",
+	"code": "XSE",
+	"countryCode": "BF",
+	"countryName": "布基纳法索",
+	cityFirstLetter: "S"
+}, {
+	cityName: "苏克雷",
+	citySpell: "SUKELEI",
+	"code": "SRE",
+	"countryCode": "BO",
+	"countryName": "玻利维亚",
+	cityFirstLetter: "S"
+}, {
+	cityName: "圣多明戈",
+	citySpell: "SHENGDUOMINGGE",
+	"code": "SDQ",
+	"countryCode": "DO",
+	"countryName": "多米尼加",
+	cityFirstLetter: "S"
+}, {
+	cityName: "圣安娜岛",
+	citySpell: "SHENGANNADAO",
+	"code": "NNB",
+	"countryCode": "SB",
+	"countryName": "所罗门群岛",
+	cityFirstLetter: "S"
+}, {
+	cityName: "山打根",
+	citySpell: "SHANDAGEN",
+	"code": "SDK",
+	"countryCode": "MY",
+	"countryName": "马来西亚",
+	cityFirstLetter: "S"
+}, {
+	cityName: "圣迭戈",
+	citySpell: "SHENGDIEGE",
+	"code": "SAN",
+	"countryCode": "US",
+	"countryName": "美国",
+	cityFirstLetter: "S"
+}, {
+	cityName: "索哈杰",
+	citySpell: "SUOHAJIE",
+	"code": "HMB",
+	"countryCode": "EG",
+	"countryName": "埃及",
+	cityFirstLetter: "S"
+}, {
+	cityName: "斯武普斯克",
+	citySpell: "SIWUPUSIKE",
+	"code": "OSP",
+	"countryCode": "PL",
+	"countryName": "波兰",
+	cityFirstLetter: "S"
+}, {
+	cityName: "圣丹尼斯",
+	citySpell: "SHENGDANNISI",
+	"code": "RUN",
+	"countryCode": "RE",
+	"countryName": "留尼汪岛",
+	cityFirstLetter: "S"
+}, {
+	cityName: "沙巴",
+	citySpell: "SHABA",
+	"code": "SBV",
+	"countryCode": "PG",
+	"countryName": "巴布亚新几内亚",
+	cityFirstLetter: "S"
+}, {
+	cityName: "圣多明戈",
+	citySpell: "SHENGDUOMINGGE",
+	"code": "STD",
+	"countryCode": "VE",
+	"countryName": "委内瑞拉",
+	cityFirstLetter: "S"
+}, {
+	cityName: "圣地亚哥",
+	citySpell: "SHENGDIYAGE",
+	"code": "STI",
+	"countryCode": "DO",
+	"countryName": "多米尼加",
+	cityFirstLetter: "S"
+}, {
+	cityName: "苏圣玛丽",
+	citySpell: "SUSHENGMALI",
+	"code": "SSM",
+	"countryCode": "US",
+	"countryName": "美国",
+	cityFirstLetter: "S"
+}, {
+	cityName: "斯塔万格",
+	citySpell: "SITAWANGE",
+	"code": "SVG",
+	"countryCode": "NO",
+	"countryName": "挪威",
+	cityFirstLetter: "S"
+}, {
+	cityName: "瑟特纳",
+	citySpell: "SETENA",
+	"code": "TNI",
+	"countryCode": "IN",
+	"countryName": "印度",
+	cityFirstLetter: "S"
+}, {
+	cityName: "圣佩德罗苏拉",
+	citySpell: "SHENGPEIDELUOSULA",
+	"code": "SAP",
+	"countryCode": "HN",
+	"countryName": "洪都拉斯",
+	cityFirstLetter: "S"
+}, {
+	cityName: "萨米",
+	citySpell: "SAMI",
+	"code": "ZRM",
+	"countryCode": "ID",
+	"countryName": "印度尼西亚",
+	cityFirstLetter: "S"
+}, {
+	cityName: "圣何塞",
+	citySpell: "SHENGHESAI",
+	"code": "SIC",
+	"countryCode": "PA",
+	"countryName": "巴拿马",
+	cityFirstLetter: "S"
+}, {
+	cityName: "塞瓦",
+	citySpell: "SAIWA",
+	"code": "NRR",
+	"countryCode": "PR",
+	"countryName": "波多黎各",
+	cityFirstLetter: "S"
+}, {
+	cityName: "圣荷西",
+	citySpell: "SHENGHEXI",
+	"code": "SJD",
+	"countryCode": "MX",
+	"countryName": "墨西哥",
+	cityFirstLetter: "S"
+}, {
+	cityName: "圣萨尔瓦多",
+	citySpell: "SHENGSAERWADUO",
+	"code": "SAL",
+	"countryCode": "SV",
+	"countryName": "萨尔瓦多",
+	cityFirstLetter: "S"
+}, {
+	cityName: "萨格勒布",
+	citySpell: "SAGELEBU",
+	"code": "ZAG",
+	"countryCode": "HR",
+	"countryName": "克罗地亚",
+	cityFirstLetter: "S"
+}, {
+	cityName: "沙维什",
+	citySpell: "SHAWEISHI",
+	"code": "CHV",
+	"countryCode": "PT",
+	"countryName": "葡萄牙",
+	cityFirstLetter: "S"
+}, {
+	cityName: "撒尔",
+	citySpell: "SAER",
+	"code": "SID",
+	"countryCode": "CV",
+	"countryName": "佛得角",
+	cityFirstLetter: "S"
+}, {
+	cityName: "萨姆松",
+	citySpell: "SAMUSONG",
+	"code": "SSX",
+	"countryCode": "ZA",
+	"countryName": "南非",
+	cityFirstLetter: "S"
+}, {
+	cityName: "塞谢凯",
+	citySpell: "SAIXIEKAI",
+	"code": "SJQ",
+	"countryCode": "ZM",
+	"countryName": "赞比亚",
+	cityFirstLetter: "S"
+}, {
+	cityName: "萨姆诺阿",
+	citySpell: "SAMUNUOA",
+	"code": "NEU",
+	"countryCode": "LA",
+	"countryName": "老挝",
+	cityFirstLetter: "S"
+}, {
+	cityName: "尚贝里",
+	citySpell: "SHANGBEILI",
+	"code": "CMF",
+	"countryCode": "FR",
+	"countryName": "法国",
+	cityFirstLetter: "S"
+}, {
+	cityName: "桑给巴尔",
+	citySpell: "SANGJIBAER",
+	"code": "ZNZ",
+	"countryCode": "TZ",
+	"countryName": "坦桑尼亚",
+	cityFirstLetter: "S"
+}, {
+	cityName: "索非亚",
+	citySpell: "SUOFEIYA",
+	"code": "SOF",
+	"countryCode": "BG",
+	"countryName": "保加利亚",
+	cityFirstLetter: "S"
+}, {
+	cityName: "塞克雅尔",
+	citySpell: "SAIKEYAER",
+	"code": "SUK",
+	"countryCode": "RU",
+	"countryName": "俄罗斯",
+	cityFirstLetter: "S"
+}, {
+	cityName: "桑迪莱克",
+	citySpell: "SANGDILAIKE",
+	"code": "ZSJ",
+	"countryCode": "CA",
+	"countryName": "加拿大",
+	cityFirstLetter: "S"
+}, {
+	cityName: "史东尼河",
+	citySpell: "SHIDONGNIHE",
+	"code": "SRV",
+	"countryCode": "US",
+	"countryName": "美国",
+	cityFirstLetter: "S"
+}, {
+	cityName: "沙姆沙伊赫湾",
+	citySpell: "SHAMUSHAYIHEWAN",
+	"code": "SSH",
+	"countryCode": "EG",
+	"countryName": "埃及",
+	cityFirstLetter: "S"
+}, {
+	cityName: "圣安赫洛",
+	citySpell: "SHENGANHELUO",
+	"code": "GEL",
+	"countryCode": "BR",
+	"countryName": "巴西",
+	cityFirstLetter: "S"
+}, {
+	cityName: "塞多姆",
+	citySpell: "SAIDUOMU",
+	"code": "SED",
+	"countryCode": "IL",
+	"countryName": "以色列",
+	cityFirstLetter: "S"
+}, {
+	cityName: "萨尔布吕肯",
+	citySpell: "SAERBULVKEN",
+	"code": "SCN",
+	"countryCode": "DE",
+	"countryName": "德国",
+	cityFirstLetter: "S"
+}, {
+	cityName: "斯韦格",
+	citySpell: "SIWEIGE",
+	"code": "EVG",
+	"countryCode": "SE",
+	"countryName": "瑞典",
+	cityFirstLetter: "S"
+}, {
+	cityName: "斯皮尔菲什",
+	citySpell: "SIPIERFEISHI",
+	"code": "SPF",
+	"countryCode": "US",
+	"countryName": "美国",
+	cityFirstLetter: "S"
+}, {
+	cityName: "苏里高",
+	citySpell: "SULIGAO",
+	"code": "SUG",
+	"countryCode": "PH",
+	"countryName": "菲律宾",
+	cityFirstLetter: "S"
+}, {
+	cityName: "森城",
+	citySpell: "SENCHENG",
+	"code": "NTY",
+	"countryCode": "ZA",
+	"countryName": "南非",
+	cityFirstLetter: "S"
+}, {
+	cityName: "斯昂特纳",
+	citySpell: "SIANGTENA",
+	"code": "SKW",
+	"countryCode": "US",
+	"countryName": "美国",
+	cityFirstLetter: "S"
+}, {
+	cityName: "萨文加",
+	citySpell: "SAWENJIA",
+	"code": "SVA",
+	"countryCode": "US",
+	"countryName": "美国",
+	cityFirstLetter: "S"
+}, {
+	cityName: "松山",
+	citySpell: "SONGSHAN",
+	"code": "MYJ",
+	"countryCode": "JP",
+	"countryName": "日本",
+	cityFirstLetter: "S"
+}, {
+	cityName: "史蒂文斯波因特",
+	citySpell: "SHIDIWENSIBOYINTE",
+	"code": "STE",
+	"countryCode": "US",
+	"countryName": "美国",
+	cityFirstLetter: "S"
+}, {
+	cityName: "设得兰群岛",
+	citySpell: "SHEDELANQUNDAO",
+	"code": "SDZ",
+	"countryCode": "GB",
+	"countryName": "英国",
+	cityFirstLetter: "S"
+}, {
+	cityName: "索尔内湾",
+	citySpell: "SUOERNEIWAN",
+	"code": "KTB",
+	"countryCode": "US",
+	"countryName": "美国",
+	cityFirstLetter: "S"
+}, {
+	cityName: "圣塔安那",
+	citySpell: "SHENGTAANNA",
+	"code": "SNA",
+	"countryCode": "US",
+	"countryName": "美国",
+	cityFirstLetter: "S"
+}, {
+	cityName: "舍夫德",
+	citySpell: "SHEFUDE",
+	"code": "KVB",
+	"countryCode": "SE",
+	"countryName": "瑞典",
+	cityFirstLetter: "S"
+}, {
+	cityName: "圣贝纳迪诺",
+	citySpell: "SHENGBEINADINUO",
+	"code": "SBD",
+	"countryCode": "US",
+	"countryName": "美国",
+	cityFirstLetter: "S"
+}, {
+	cityName: "斯图加特",
+	citySpell: "SITUJIATE",
+	"code": "STR",
+	"countryCode": "DE",
+	"countryName": "德国",
+	cityFirstLetter: "S"
+}, {
+	cityName: "山形",
+	citySpell: "SHANXING",
+	"code": "GAJ",
+	"countryCode": "JP",
+	"countryName": "日本",
+	cityFirstLetter: "S"
+}, {
+	cityName: "圣约翰港",
+	citySpell: "SHENGYUEHANGANG",
+	"code": "JOH",
+	"countryCode": "ZA",
+	"countryName": "南非",
+	cityFirstLetter: "S"
+}, {
+	cityName: "圣塔伦",
+	citySpell: "SHENGTALUN",
+	"code": "STM",
+	"countryCode": "BR",
+	"countryName": "巴西",
+	cityFirstLetter: "S"
+}, {
+	cityName: "上里奥森格尔",
+	citySpell: "SHANGLIAOSENGEER",
+	"code": "ARR",
+	"countryCode": "AR",
+	"countryName": "阿根廷",
+	cityFirstLetter: "S"
+}, {
+	cityName: "圣诞岛",
+	citySpell: "SHENGDANDAO",
+	"code": "XCH",
+	"countryCode": "CX",
+	"countryName": "澳大利亚（圣诞岛）",
+	cityFirstLetter: "S"
+}, {
+	cityName: "萨拉索塔",
+	citySpell: "SALASUOTA",
+	"code": "SRQ",
+	"countryCode": "US",
+	"countryName": "美国",
+	cityFirstLetter: "S"
+}, {
+	cityName: "斯特拉斯堡",
+	citySpell: "SITELASIBAO",
+	"code": "SXB",
+	"countryCode": "FR",
+	"countryName": "法国",
+	cityFirstLetter: "S"
+}, {
+	cityName: "三宝颜",
+	citySpell: "SANBAOYAN",
+	"code": "ZAM",
+	"countryCode": "PH",
+	"countryName": "菲律宾",
+	cityFirstLetter: "S"
+}, {
+	cityName: "萨拉",
+	citySpell: "SALA",
+	"code": "SSR",
+	"countryCode": "VU",
+	"countryName": "瓦努阿图",
+	cityFirstLetter: "S"
+}, {
+	cityName: "圣巴泰勒米",
+	citySpell: "SHENGBATAILEMI",
+	"code": "SBH",
+	"countryCode": "BL",
+	"countryName": "圣巴泰勒米岛",
+	cityFirstLetter: "S"
+}, {
+	cityName: "圣多美岛",
+	citySpell: "SHENGDUOMEIDAO",
+	"code": "TMS",
+	"countryCode": "ST",
+	"countryName": "圣多美和普林西比",
+	cityFirstLetter: "S"
+}, {
+	cityName: "塞米伊",
+	citySpell: "SAIMIYI",
+	"code": "PLX",
+	"countryCode": "KZ",
+	"countryName": "哈萨克斯坦",
+	cityFirstLetter: "S"
+}, {
+	cityName: "圣埃斯皮里图岛",
+	citySpell: "SHENGAISIPILITUDAO",
+	"code": "SON",
+	"countryCode": "VU",
+	"countryName": "瓦努阿图",
+	cityFirstLetter: "S"
+}, {
+	cityName: "瑟克黑特",
+	citySpell: "SEKEHEITE",
+	"code": "SKH",
+	"countryCode": "NP",
+	"countryName": "尼泊尔",
+	cityFirstLetter: "S"
+}, {
+	cityName: "瑟堡",
+	citySpell: "SEBAO",
+	"code": "CER",
+	"countryCode": "FR",
+	"countryName": "法国",
+	cityFirstLetter: "S"
+}, {
+	cityName: "萨武萨武",
+	citySpell: "SAWUSAWU",
+	"code": "SVU",
+	"countryCode": "FJ",
+	"countryName": "斐济群岛",
+	cityFirstLetter: "S"
+}, {
+	cityName: "萨利纳",
+	citySpell: "SALINA",
+	"code": "SLN",
+	"countryCode": "US",
+	"countryName": "美国",
+	cityFirstLetter: "S"
+}, {
+	cityName: "萨莫斯",
+	citySpell: "SAMOSI",
+	"code": "SMI",
+	"countryCode": "GR",
+	"countryName": "希腊",
+	cityFirstLetter: "S"
+}, {
+	cityName: "圣纳泽",
+	citySpell: "SHENGNAZE",
+	"code": "SNR",
+	"countryCode": "FR",
+	"countryName": "法国",
+	cityFirstLetter: "S"
+}, {
+	cityName: "桑德波因特",
+	citySpell: "SANGDEBOYINTE",
+	"code": "SDP",
+	"countryCode": "US",
+	"countryName": "美国",
+	cityFirstLetter: "S"
+}, {
+	cityName: "圣巴巴拉巴",
+	citySpell: "SHENGBABALABA",
+	"code": "SBB",
+	"countryCode": "VE",
+	"countryName": "委内瑞拉",
+	cityFirstLetter: "S"
+}, {
+	cityName: "史密斯堡",
+	citySpell: "SHIMISIBAO",
+	"code": "FSM",
+	"countryCode": "US",
+	"countryName": "美国",
+	cityFirstLetter: "S"
+}, {
+	cityName: "塞布哈",
+	citySpell: "SAIBUHA",
+	"code": "SEB",
+	"countryCode": "LY",
+	"countryName": "利比亚",
+	cityFirstLetter: "S"
+}, {
+	cityName: "圣克里斯托瓦尔",
+	citySpell: "SHENGKELISITUOWAER",
+	"code": "SCY",
+	"countryCode": "EC",
+	"countryName": "厄瓜多尔",
+	cityFirstLetter: "S"
+}, {
+	cityName: "圣乔治",
+	citySpell: "SHENGQIAOZHI",
+	"code": "SGO",
+	"countryCode": "AU",
+	"countryName": "澳大利亚",
+	cityFirstLetter: "S"
+}, {
+	cityName: "苏克托彭",
+	citySpell: "SUKETUOPENG",
+	"code": "JSU",
+	"countryCode": "GL",
+	"countryName": "格陵兰岛",
+	cityFirstLetter: "S"
+}, {
+	cityName: "圣佩特罗",
+	citySpell: "SHENGPEITELUO",
+	"code": "SPR",
+	"countryCode": "BZ",
+	"countryName": "伯利兹",
+	cityFirstLetter: "S"
+}, {
+	cityName: "塞斯诺克",
+	citySpell: "SAISINUOKE",
+	"code": "CES",
+	"countryCode": "AU",
+	"countryName": "澳大利亚",
+	cityFirstLetter: "S"
+}, {
+	cityName: "萨斯卡通",
+	citySpell: "SASIKATONG",
+	"code": "YXE",
+	"countryCode": "CA",
+	"countryName": "加拿大",
+	cityFirstLetter: "S"
+}, {
+	cityName: "十月镇",
+	citySpell: "SHIYUEZHEN",
+	"code": "OKT",
+	"countryCode": "RU",
+	"countryName": "俄罗斯",
+	cityFirstLetter: "S"
+}, {
+	cityName: "三宅岛",
+	citySpell: "SANZHAIDAO",
+	"code": "MYE",
+	"countryCode": "JP",
+	"countryName": "日本",
+	cityFirstLetter: "S"
+}, {
+	cityName: "斯利那加",
+	citySpell: "SILINAJIA",
+	"code": "SXR",
+	"countryCode": "IN",
+	"countryName": "印度",
+	cityFirstLetter: "S"
+}, {
+	cityName: "斯普林菲尔德",
+	citySpell: "SIPULINFEIERDE",
+	"code": "SPI",
+	"countryCode": "US",
+	"countryName": "美国",
+	cityFirstLetter: "S"
+}, {
+	cityName: "索克约森",
+	citySpell: "SUOKEYUESEN",
+	"code": "SOJ",
+	"countryCode": "NO",
+	"countryName": "挪威",
+	cityFirstLetter: "S"
+}, {
+	cityName: "萨克拉门托",
+	citySpell: "SAKELAMENTUO",
+	"code": "SAC",
+	"countryCode": "US",
+	"countryName": "美国",
+	cityFirstLetter: "S"
+}, {
+	cityName: "萨武",
+	citySpell: "SAWU",
+	"code": "SAU",
+	"countryCode": "ID",
+	"countryName": "印度尼西亚",
+	cityFirstLetter: "S"
+}, {
+	cityName: "苏丹港",
+	citySpell: "SUDANGANG",
+	"code": "PZU",
+	"countryCode": "SD",
+	"countryName": "苏丹",
+	cityFirstLetter: "S"
+}, {
+	cityName: "塞尔玛",
+	citySpell: "SAIERMA",
+	"code": "SEM",
+	"countryCode": "US",
+	"countryName": "美国",
+	cityFirstLetter: "S"
+}, {
+	cityName: "圣马丽亚",
+	citySpell: "SHENGMALIYA",
+	"code": "SMX",
+	"countryCode": "US",
+	"countryName": "美国",
+	cityFirstLetter: "S"
+}, {
+	cityName: "塞给",
+	citySpell: "SAIGEI",
+	"code": "EGM",
+	"countryCode": "SB",
+	"countryName": "所罗门群岛",
+	cityFirstLetter: "S"
+}, {
+	cityName: "松树岛",
+	citySpell: "SONGSHUDAO",
+	"code": "ILP",
+	"countryCode": "NC",
+	"countryName": "新喀里多尼亚（太平洋）",
+	cityFirstLetter: "S"
+}, {
+	cityName: "索尔特岛",
+	citySpell: "SUOERTEDAO",
+	"code": "SLX",
+	"countryCode": "TC",
+	"countryName": "特克斯和凯科斯群岛",
+	cityFirstLetter: "S"
+}, {
+	cityName: "瑟克特夫卡尔",
+	citySpell: "SEKETEFUKAER",
+	"code": "SCW",
+	"countryCode": "RU",
+	"countryName": "俄罗斯",
+	cityFirstLetter: "S"
+}, {
+	cityName: "圣克劳德",
+	citySpell: "SHENGKELAODE",
+	"code": "STC",
+	"countryCode": "US",
+	"countryName": "美国",
+	cityFirstLetter: "S"
+}, {
+	cityName: "圣尼古拉",
+	citySpell: "SHENGNIGULA",
+	"code": "SNE",
+	"countryCode": "CV",
+	"countryName": "佛得角",
+	cityFirstLetter: "S"
+}, {
+	cityName: "圣马丁－德洛斯安第斯",
+	citySpell: "SHENGMADINGDELUOSIANDISI",
+	"code": "CPC",
+	"countryCode": "AR",
+	"countryName": "阿根廷",
+	cityFirstLetter: "S"
+}, {
+	cityName: "斯卡曼门湾",
+	citySpell: "SIKAMANMENWAN",
+	"code": "SCM",
+	"countryCode": "US",
+	"countryName": "美国",
+	cityFirstLetter: "S"
+}, {
+	cityName: "沙尔哈德",
+	citySpell: "SHAERHADE",
+	"code": "SLY",
+	"countryCode": "RU",
+	"countryName": "俄罗斯",
+	cityFirstLetter: "S"
+}, {
+	cityName: "苏莱曼尼亚",
+	citySpell: "SULAIMANNIYA",
+	"code": "ISU",
+	"countryCode": "IQ",
+	"countryName": "伊拉克",
+	cityFirstLetter: "S"
+}, {
+	cityName: "圣贝纳迪诺",
+	citySpell: "SHENGBEINADINUO",
+	"code": "SBT",
+	"countryCode": "RU",
+	"countryName": "俄罗斯",
+	cityFirstLetter: "S"
+}, {
+	cityName: "桑德罗斯",
+	citySpell: "SANGDELUOSI",
+	"code": "SAQ",
+	"countryCode": "BS",
+	"countryName": "巴哈马",
+	cityFirstLetter: "S"
+}, {
+	cityName: "萨杜马勒",
+	citySpell: "SADUMALE",
+	"code": "SUJ",
+	"countryCode": "RO",
+	"countryName": "罗马尼亚",
+	cityFirstLetter: "S"
+}, {
+	cityName: "桑托斯将军城",
+	citySpell: "SANGTUOSIJIANGJUNCHENG",
+	"code": "GES",
+	"countryCode": "PH",
+	"countryName": "菲律宾",
+	cityFirstLetter: "S"
+}, {
+	cityName: "斯普林菲尔德（密苏里州）",
+	citySpell: "SIPULINFEIERDE",
+	"code": "SGF",
+	"countryCode": "US",
+	"countryName": "美国",
+	cityFirstLetter: "S"
+}, {
+	cityName: "圣博尔哈",
+	citySpell: "SHENGBOERHA",
+	"code": "SRJ",
+	"countryCode": "BO",
+	"countryName": "玻利维亚",
+	cityFirstLetter: "S"
+}, {
+	cityName: "苏亚雷斯港",
+	citySpell: "SUYALEISIGANG",
+	"code": "PSZ",
+	"countryCode": "BO",
+	"countryName": "玻利维亚",
+	cityFirstLetter: "S"
+}, {
+	cityName: "苏比克湾",
+	citySpell: "SUBIKEWAN",
+	"code": "SFS",
+	"countryCode": "PH",
+	"countryName": "菲律宾",
+	cityFirstLetter: "S"
+}, {
+	cityName: "斯里巴加湾市",
+	citySpell: "SILIBAJIAWANSHI",
+	"code": "BWN",
+	"countryCode": "BN",
+	"countryName": "文莱",
+	cityFirstLetter: "S"
+}, {
+	cityName: "萨马拉",
+	citySpell: "SAMALA",
+	"code": "KUF",
+	"countryCode": "RU",
+	"countryName": "俄罗斯",
+	cityFirstLetter: "S"
+}, {
+	cityName: "宋卡",
+	citySpell: "SONGKA",
+	"code": "SGZ",
+	"countryCode": "TH",
+	"countryName": "泰国",
+	cityFirstLetter: "S"
+}, {
+	cityName: "斯蒂尔沃特",
+	citySpell: "SIDIERWOTE",
+	"code": "SWO",
+	"countryCode": "US",
+	"countryName": "美国",
+	cityFirstLetter: "S"
+}, {
+	cityName: "斯普林波因特",
+	citySpell: "SIPULINBOYINTE",
+	"code": "AXP",
+	"countryCode": "BS",
+	"countryName": "巴哈马",
+	cityFirstLetter: "S"
+}, {
+	cityName: "索萨利托",
+	citySpell: "SUOSALITUO",
+	"code": "JMC",
+	"countryCode": "US",
+	"countryName": "美国",
+	cityFirstLetter: "S"
+}, {
+	cityName: "上岛",
+	citySpell: "SHANGDAO",
+	"code": "LSS",
+	"countryCode": "GP",
+	"countryName": "瓜德罗普岛",
+	cityFirstLetter: "S"
+}, {
+	cityName: "松兹瓦尔",
+	citySpell: "SONGZIWAER",
+	"code": "SDL",
+	"countryCode": "SE",
+	"countryName": "瑞典",
+	cityFirstLetter: "S"
+}, {
+	cityName: "苏恰瓦",
+	citySpell: "SUQIAWA",
+	"code": "SCV",
+	"countryCode": "RO",
+	"countryName": "罗马尼亚",
+	cityFirstLetter: "S"
+}, {
+	cityName: "萨吉诺",
+	citySpell: "SAJINUO",
+	"code": "MBS",
+	"countryCode": "US",
+	"countryName": "美国",
+	cityFirstLetter: "S"
+}, {
+	cityName: "石垣",
+	citySpell: "SHIYUAN",
+	"code": "ISG",
+	"countryCode": "JP",
+	"countryName": "日本",
+	cityFirstLetter: "S"
+}, {
+	cityName: "石见",
+	citySpell: "SHIJIAN",
+	"code": "IWJ",
+	"countryCode": "JP",
+	"countryName": "日本",
+	cityFirstLetter: "S"
+}, {
+	cityName: "三马林达",
+	citySpell: "SANMALINDA",
+	"code": "SRI",
+	"countryCode": "ID",
+	"countryName": "印度尼西亚",
+	cityFirstLetter: "S"
+}, {
+	cityName: "萨德伯里",
+	citySpell: "SADEBOLI",
+	"code": "YSB",
+	"countryCode": "CA",
+	"countryName": "加拿大",
+	cityFirstLetter: "S"
+}, {
+	cityName: "沙鲁拉",
+	citySpell: "SHALULA",
+	"code": "SHW",
+	"countryCode": "SA",
+	"countryName": "沙特阿垃伯",
+	cityFirstLetter: "S"
+}, {
+	cityName: "瑟克尔豪特斯普林斯",
+	citySpell: "SEKEERHAOTESIPULINSI",
+	"code": "CHP",
+	"countryCode": "US",
+	"countryName": "美国",
+	cityFirstLetter: "S"
+}, {
+	cityName: "圣马丁约瑟",
+	citySpell: "SHENGMADINGYUESE",
+	"code": "JSM",
+	"countryCode": "AR",
+	"countryName": "阿根廷",
+	cityFirstLetter: "S"
+}, {
+	cityName: "斯克林角",
+	citySpell: "SIKELINJIAO",
+	"code": "CSK",
+	"countryCode": "SN",
+	"countryName": "塞内加尔",
+	cityFirstLetter: "S"
+}, {
+	cityName: "圣费尔南多",
+	citySpell: "SHENGFEIERNANDUO",
+	"code": "SFE",
+	"countryCode": "PH",
+	"countryName": "菲律宾",
+	cityFirstLetter: "S"
+}, {
+	cityName: "桑利乌法",
+	citySpell: "SANGLIWUFA",
+	"code": "SFQ",
+	"countryCode": "TR",
+	"countryName": "土耳其",
+	cityFirstLetter: "S"
+}, {
+	cityName: "圣安东尼",
+	citySpell: "SHENGANDONGNI",
+	"code": "YAY",
+	"countryCode": "CA",
+	"countryName": "加拿大",
+	cityFirstLetter: "S"
+}, {
+	cityName: "圣卢西亚",
+	citySpell: "SHENGLUXIYA",
+	"code": "SLU",
+	"countryCode": "LC",
+	"countryName": "圣卢西亚",
+	cityFirstLetter: "S"
+}, {
+	cityName: "森特拉尔",
+	citySpell: "SENTELAER",
+	"code": "CEM",
+	"countryCode": "US",
+	"countryName": "美国",
+	cityFirstLetter: "S"
+}, {
+	cityName: "赛多尔",
+	citySpell: "SAIDUOER",
+	"code": "SDI",
+	"countryCode": "PG",
+	"countryName": "巴布亚新几内亚",
+	cityFirstLetter: "S"
+}, {
+	cityName: "圣费利佩",
+	citySpell: "SHENGFEILIPEI",
+	"code": "SFL",
+	"countryCode": "CV",
+	"countryName": "佛得角",
+	cityFirstLetter: "S"
+}, {
+	cityName: "萨尔塔",
+	citySpell: "SAERTA",
+	"code": "SLA",
+	"countryCode": "AR",
+	"countryName": "阿根廷",
+	cityFirstLetter: "S"
+}, {
+	cityName: "双峰",
+	citySpell: "SHUANGFENG",
+	"code": "TWA",
+	"countryCode": "US",
+	"countryName": "美国",
+	cityFirstLetter: "S"
+}, {
+	cityName: "斯内克湖",
+	citySpell: "SINEIKEHU",
+	"code": "YFJ",
+	"countryCode": "CA",
+	"countryName": "加拿大",
+	cityFirstLetter: "S"
+}, {
+	cityName: "索根达尔",
+	citySpell: "SUOGENDAER",
+	"code": "SOG",
+	"countryCode": "NO",
+	"countryName": "挪威",
+	cityFirstLetter: "S"
+}, {
+	cityName: "沙耶武里",
+	citySpell: "SHAYEWULI",
+	"code": "ZBY",
+	"countryCode": "LA",
+	"countryName": "老挝",
+	cityFirstLetter: "S"
+}, {
+	cityName: "萨利达",
+	citySpell: "SALIDA",
+	"code": "SLT",
+	"countryCode": "US",
+	"countryName": "美国",
+	cityFirstLetter: "S"
+}, {
+	cityName: "圣乔治",
+	citySpell: "SHENGQIAOZHI",
+	"code": "SGU",
+	"countryCode": "US",
+	"countryName": "美国",
+	cityFirstLetter: "S"
+}, {
+	cityName: "瑟洪洪",
+	citySpell: "SEHONGHONG",
+	"code": "SHK",
+	"countryCode": "LS",
+	"countryName": "莱索托",
+	cityFirstLetter: "S"
+}, {
+	cityName: "萨翁林纳",
+	citySpell: "SAWENGLINNA",
+	"code": "SVL",
+	"countryCode": "FI",
+	"countryName": "芬兰",
+	cityFirstLetter: "S"
+}, {
+	cityName: "苏瓦",
+	citySpell: "SUWA",
+	"code": "SUV",
+	"countryCode": "FJ",
+	"countryName": "斐济群岛",
+	cityFirstLetter: "S"
+}, {
+	cityName: "索尔斯欧",
+	citySpell: "SUOERSIOU",
+	"code": "SMT",
+	"countryCode": "BR",
+	"countryName": "巴西",
+	cityFirstLetter: "S"
+}, {
+	cityName: "舍地",
+	citySpell: "SHEDI",
+	"code": "SAG",
+	"countryCode": "IN",
+	"countryName": "印度",
+	cityFirstLetter: "S"
+}, {
+	cityName: "塞多纳",
+	citySpell: "SAIDUONA",
+	"code": "SDX",
+	"countryCode": "US",
+	"countryName": "美国",
+	cityFirstLetter: "S"
+}, {
+	cityName: "斯特泽沃伊",
+	citySpell: "SITEZEWOYI",
+	"code": "SWT",
+	"countryCode": "RU",
+	"countryName": "俄罗斯",
+	cityFirstLetter: "S"
+}, {
+	cityName: "圣地亚哥",
+	citySpell: "SHENGDIYAGE",
+	"code": "SCL",
+	"countryCode": "CL",
+	"countryName": "智利",
+	cityFirstLetter: "S"
+}, {
+	cityName: "斯科茨布拉夫",
+	citySpell: "SIKECIBULAFU",
+	"code": "BFF",
+	"countryCode": "US",
+	"countryName": "美国",
+	cityFirstLetter: "S"
+}, {
+	cityName: "萨拉热窝",
+	citySpell: "SALAREWO",
+	"code": "SJJ",
+	"countryCode": "BA",
+	"countryName": "波斯尼亚和黑塞哥维那",
+	cityFirstLetter: "S"
+}, {
+	cityName: "萨卡特卡斯",
+	citySpell: "SAKATEKASI",
+	"code": "ZCL",
+	"countryCode": "MX",
+	"countryName": "墨西哥",
+	cityFirstLetter: "S"
+}, {
+	cityName: "萨拉曼卡",
+	citySpell: "SALAMANKA",
+	"code": "SLM",
+	"countryCode": "ES",
+	"countryName": "西班牙",
+	cityFirstLetter: "S"
+}, {
+	cityName: "桑代",
+	citySpell: "SANGDAI",
+	"code": "NDY",
+	"countryCode": "GB",
+	"countryName": "英国",
+	cityFirstLetter: "S"
+}, {
+	cityName: "斯库库扎",
+	citySpell: "SIKUKUZHA",
+	"code": "SZK",
+	"countryCode": "ZA",
+	"countryName": "南非",
+	cityFirstLetter: "S"
+}, {
+	cityName: "圣地亚哥德",
+	citySpell: "SHENGDIYAGEDE",
+	"code": "SCQ",
+	"countryCode": "ES",
+	"countryName": "西班牙",
+	cityFirstLetter: "S"
+}, {
+	cityName: "苏姆拉基",
+	citySpell: "SUMULAJI",
+	"code": "SXK",
+	"countryCode": "ID",
+	"countryName": "印度尼西亚",
+	cityFirstLetter: "S"
+}, {
+	cityName: "索绍弗恩",
+	citySpell: "SUOSHAOFUEN",
+	"code": "THO",
+	"countryCode": "IS",
+	"countryName": "冰岛",
+	cityFirstLetter: "S"
+}, {
+	cityName: "索普",
+	citySpell: "SUOPU",
+	"code": "SPH",
+	"countryCode": "PG",
+	"countryName": "巴布亚新几内亚",
+	cityFirstLetter: "S"
+}, {
+	cityName: "圣托马斯",
+	citySpell: "SHENGTUOMASI",
+	"code": "STT",
+	"countryCode": "VI",
+	"countryName": "维尔京群岛（美）",
+	cityFirstLetter: "S"
+}, {
+	cityName: "圣马丽斯",
+	citySpell: "SHENGMALISI",
+	"code": "KSM",
+	"countryCode": "US",
+	"countryName": "美国",
+	cityFirstLetter: "S"
+}, {
+	cityName: "桑巴瓦",
+	citySpell: "SANGBAWA",
+	"code": "SVB",
+	"countryCode": "MG",
+	"countryName": "马达加斯加",
+	cityFirstLetter: "S"
+}, {
+	cityName: "圣基茨",
+	citySpell: "SHENGJICI",
+	"code": "SKB",
+	"countryCode": "KN",
+	"countryName": "圣基茨和尼维斯",
+	cityFirstLetter: "S"
+}, {
+	cityName: "苏阿拉拉",
+	citySpell: "SUALALA",
+	"code": "DWB",
+	"countryCode": "MG",
+	"countryName": "马达加斯加",
+	cityFirstLetter: "S"
+}, {
+	cityName: "萨斯克拉赫",
+	citySpell: "SASIKELAHE",
+	"code": "SYS",
+	"countryCode": "RU",
+	"countryName": "俄罗斯",
+	cityFirstLetter: "S"
+}, {
+	cityName: "瑟克尔",
+	citySpell: "SEKEER",
+	"code": "IRC",
+	"countryCode": "US",
+	"countryName": "美国",
+	cityFirstLetter: "S"
+}, {
+	cityName: "水原",
+	citySpell: "SHUIYUAN",
+	"code": "SWU",
+	"countryCode": "KR",
+	"countryName": "韩国",
+	cityFirstLetter: "S"
+}, {
+	cityName: "索约",
+	citySpell: "SUOYUE",
+	"code": "SZA",
+	"countryCode": "AO",
+	"countryName": "安哥拉",
+	cityFirstLetter: "S"
+}, {
+	cityName: "圣克鲁斯岛",
+	citySpell: "SHENGKELUSIDAO",
+	"code": "STX",
+	"countryCode": "VI",
+	"countryName": "维尔京群岛（美）",
+	cityFirstLetter: "S"
+}, {
+	cityName: "索户韦齐",
+	citySpell: "SUOHUWEIQI",
+	"code": "SLI",
+	"countryCode": "ZM",
+	"countryName": "赞比亚",
+	cityFirstLetter: "S"
+}, {
+	cityName: "索拉",
+	citySpell: "SUOLA",
+	"code": "SLH",
+	"countryCode": "VU",
+	"countryName": "瓦努阿图",
+	cityFirstLetter: "S"
+}, {
+	cityName: "STORUMAN　",
+	citySpell: "STORUMAN　",
+	"code": "SQO",
+	"countryCode": "SE",
+	"countryName": "瑞典",
+	cityFirstLetter: "S"
+}, {
+	cityName: "赛义德布尔",
+	citySpell: "SAIYIDEBUER",
+	"code": "SPD",
+	"countryCode": "BD",
+	"countryName": "孟加拉国",
+	cityFirstLetter: "S"
+}, {
+	cityName: "珊瑚港",
+	citySpell: "SHANHUGANG",
+	"code": "YZS",
+	"countryCode": "CA",
+	"countryName": "加拿大",
+	cityFirstLetter: "S"
+}, {
+	cityName: "萨尔茨堡",
+	citySpell: "SAERCIBAO",
+	"code": "SZG",
+	"countryCode": "AT",
+	"countryName": "奥地利",
+	cityFirstLetter: "S"
+}, {
+	cityName: "舍尔纳克",
+	citySpell: "SHEERNAKE",
+	"code": "NKT",
+	"countryCode": "TR",
+	"countryName": "土耳其",
+	cityFirstLetter: "S"
+}, {
+	cityName: "萨桑德拉",
+	citySpell: "SASANGDELA",
+	"code": "ZSS",
+	"countryCode": "CI",
+	"countryName": "科特迪瓦",
+	cityFirstLetter: "S"
+}, {
+	cityName: "桑德贝",
+	citySpell: "SANGDEBEI",
+	"code": "YQT",
+	"countryCode": "CA",
+	"countryName": "加拿大",
+	cityFirstLetter: "S"
+}, {
+	cityName: "术古纳克",
+	citySpell: "SHUGUNAKE",
+	"code": "SHG",
+	"countryCode": "US",
+	"countryName": "美国",
+	cityFirstLetter: "S"
+}, {
+	cityName: "圣克鲁斯-德拉帕尔马",
+	citySpell: "SHENGKELUSIDELAPAERMA",
+	"code": "SPC",
+	"countryCode": "ES",
+	"countryName": "西班牙",
+	cityFirstLetter: "S"
+}, {
+	cityName: "索荣",
+	citySpell: "SUORONG",
+	"code": "SOQ",
+	"countryCode": "ID",
+	"countryName": "印度尼西亚",
+	cityFirstLetter: "S"
+}, {
+	cityName: "史蒂芬斯威里奇",
+	citySpell: "SHIDIFENSIWEILIQI",
+	"code": "SVS",
+	"countryCode": "US",
+	"countryName": "美国",
+	cityFirstLetter: "S"
+}, {
+	cityName: "苏圣玛丽",
+	citySpell: "SUSHENGMALI",
+	"code": "YAM",
+	"countryCode": "CA",
+	"countryName": "加拿大",
+	cityFirstLetter: "S"
+}, {
+	cityName: "萨尼亚",
+	citySpell: "SANIYA",
+	"code": "YZR",
+	"countryCode": "CA",
+	"countryName": "加拿大",
+	cityFirstLetter: "S"
+}, {
+	cityName: "三基鲁尔",
+	citySpell: "SANJILUER",
+	"code": "YSK",
+	"countryCode": "CA",
+	"countryName": "加拿大",
+	cityFirstLetter: "S"
+}, {
+	cityName: "圣泰雷斯角",
+	citySpell: "SHENGTAILEISIJIAO",
+	"code": "YST",
+	"countryCode": "CA",
+	"countryName": "加拿大",
+	cityFirstLetter: "S"
+}, {
+	cityName: "苏城",
+	citySpell: "SUCHENG",
+	"code": "SUX",
+	"countryCode": "US",
+	"countryName": "美国",
+	cityFirstLetter: "S"
+}, {
+	cityName: "索尔兹伯里",
+	citySpell: "SUOERZIBOLI",
+	"code": "SBY",
+	"countryCode": "US",
+	"countryName": "美国",
+	cityFirstLetter: "S"
+}, {
+	cityName: "塞古",
+	citySpell: "SAIGU",
+	"code": "SZU",
+	"countryCode": "ML",
+	"countryName": "马里",
+	cityFirstLetter: "S"
+}, {
+	cityName: "萨特瓦格",
+	citySpell: "SATEWAGE",
+	"code": "SWG",
+	"countryCode": "PG",
+	"countryName": "巴布亚新几内亚",
+	cityFirstLetter: "S"
+}, {
+	cityName: "素辇",
+	citySpell: "SUNIAN",
+	"code": "PXR",
+	"countryCode": "TH",
+	"countryName": "泰国",
+	cityFirstLetter: "S"
+}, {
+	cityName: "索洛维茨基",
+	citySpell: "SUOLUOWEICIJI",
+	"code": "CSH",
+	"countryCode": "RU",
+	"countryName": "俄罗斯",
+	cityFirstLetter: "S"
+}, {
+	cityName: "瑟伊藻克罗屈尔",
+	citySpell: "SEYIZAOKELUOQUER",
+	"code": "SAK",
+	"countryCode": "IS",
+	"countryName": "冰岛",
+	cityFirstLetter: "S"
+}, {
+	cityName: "圣塞瓦斯蒂安",
+	citySpell: "SHENGSAIWASIDIAN",
+	"code": "EAS",
+	"countryCode": "ES",
+	"countryName": "西班牙",
+	cityFirstLetter: "S"
+}, {
+	cityName: "什里夫波特",
+	citySpell: "SHENLIFUBOTE",
+	"code": "SHV",
+	"countryCode": "US",
+	"countryName": "美国",
+	cityFirstLetter: "S"
+}, {
+	cityName: "萨沃",
+	citySpell: "SAWO",
+	"code": "SVY",
+	"countryCode": "SB",
+	"countryName": "所罗门群岛",
+	cityFirstLetter: "S"
+}, {
+	cityName: "圣拉斐尔",
+	citySpell: "SHENGLAFEIER",
+	"code": "AFA",
+	"countryCode": "AR",
+	"countryName": "阿根廷",
+	cityFirstLetter: "S"
+}, {
+	cityName: "桑纳讷",
+	citySpell: "SANGNENE",
+	"code": "SDN",
+	"countryCode": "NO",
+	"countryName": "挪威",
+	cityFirstLetter: "S"
+}, {
+	cityName: "斯威特沃特",
+	citySpell: "SIWEITEWOTE",
+	"code": "SWW",
+	"countryCode": "US",
+	"countryName": "美国",
+	cityFirstLetter: "S"
+}, {
+	cityName: "圣布里厄",
+	citySpell: "SHENGBULIE",
+	"code": "SBK",
+	"countryCode": "FR",
+	"countryName": "法国",
+	cityFirstLetter: "S"
+}, {
+	cityName: "圣约翰堡",
+	citySpell: "SHENGYUEHANBAO",
+	"code": "YXJ",
+	"countryCode": "CA",
+	"countryName": "加拿大",
+	cityFirstLetter: "S"
+}, {
+	cityName: "沙功那空",
+	citySpell: "SHAGONGNAKONG",
+	"code": "SNO",
+	"countryCode": "TH",
+	"countryName": "泰国",
+	cityFirstLetter: "S"
+}, {
+	cityName: "萨戈达",
+	citySpell: "SAGEDA",
+	"code": "SGI",
+	"countryCode": "PK",
+	"countryName": "巴基斯坦",
+	cityFirstLetter: "S"
+}, {
+	cityName: "萨克斯港",
+	citySpell: "SAKESIGANG",
+	"code": "YSY",
+	"countryCode": "CA",
+	"countryName": "加拿大",
+	cityFirstLetter: "S"
+}, {
+	cityName: "塞勒姆",
+	citySpell: "SAILEMU",
+	"code": "SLE",
+	"countryCode": "US",
+	"countryName": "美国",
+	cityFirstLetter: "S"
+}, {
+	cityName: "斯昆",
+	citySpell: "SIKUN",
+	"code": "NSO",
+	"countryCode": "AU",
+	"countryName": "澳大利亚",
+	cityFirstLetter: "S"
+}, {
+	cityName: "圣地亚哥",
+	citySpell: "SHENGDIYAGE",
+	"code": "SCU",
+	"countryCode": "CU",
+	"countryName": "古巴",
+	cityFirstLetter: "S"
+}, {
+	cityName: "萨达",
+	citySpell: "SADA",
+	"code": "SYE",
+	"countryCode": "YE",
+	"countryName": "也门",
+	cityFirstLetter: "S"
+}, {
+	cityName: "圣马尔塔",
+	citySpell: "SHENGMAERTA",
+	"code": "SMR",
+	"countryCode": "CO",
+	"countryName": "哥伦比亚",
+	cityFirstLetter: "S"
+}, {
+	cityName: "圣乔治岛",
+	citySpell: "SHENGQIAOZHIDAO",
+	"code": "STG",
+	"countryCode": "US",
+	"countryName": "美国",
+	cityFirstLetter: "S"
+}, {
+	cityName: "实兑",
+	citySpell: "SHIDUI",
+	"code": "AKY",
+	"countryCode": "MM",
+	"countryName": "缅甸",
+	cityFirstLetter: "S"
+}, {
+	cityName: "苏尼亚尼",
+	citySpell: "SUNIYANI",
+	"code": "NYI",
+	"countryCode": "GH",
+	"countryName": "加纳",
+	cityFirstLetter: "S"
+}, {
+	cityName: "斯托",
+	citySpell: "SITUO",
+	"code": "MVL",
+	"countryCode": "US",
+	"countryName": "美国",
+	cityFirstLetter: "S"
+}, {
+	cityName: "瑟特",
+	citySpell: "SETE",
+	"code": "SRX",
+	"countryCode": "LY",
+	"countryName": "利比亚",
+	cityFirstLetter: "S"
+}, {
+	cityName: "圣约瑟德尔瓜",
+	citySpell: "SHENGYUESEDEERGUA",
+	"code": "SJE",
+	"countryCode": "CO",
+	"countryName": "哥伦比亚",
+	cityFirstLetter: "S"
+}, {
+	cityName: "圣马滕",
+	citySpell: "SHENGMATENG",
+	"code": "SXM",
+	"countryCode": "SX",
+	"countryName": "荷属圣马丁",
+	cityFirstLetter: "S"
+}, {
+	cityName: "斯图尔",
+	citySpell: "SITUER",
+	"code": "SRP",
+	"countryCode": "NO",
+	"countryName": "挪威",
+	cityFirstLetter: "S"
+}, {
+	cityName: "圣安唐",
+	citySpell: "SHENGANTANG",
+	"code": "NTO",
+	"countryCode": "CV",
+	"countryName": "佛得角",
+	cityFirstLetter: "S"
+}, {
+	cityName: "森巴瓦",
+	citySpell: "SENBAWA",
+	"code": "SWQ",
+	"countryCode": "ID",
+	"countryName": "印度尼西亚",
+	cityFirstLetter: "S"
+}, {
+	cityName: "圣克鲁斯",
+	citySpell: "SHENGKELUSI",
+	"code": "RZA",
+	"countryCode": "AR",
+	"countryName": "阿根廷",
+	cityFirstLetter: "S"
+}, {
+	cityName: "沙迦",
+	citySpell: "SHAJIA",
+	"code": "SHJ",
+	"countryCode": "AE",
+	"countryName": "阿联酋",
+	cityFirstLetter: "S"
+}, {
+	cityName: "萨卜泽瓦尔",
+	citySpell: "SABOZEWAER",
+	"code": "AFZ",
+	"countryCode": "IR",
+	"countryName": "伊朗",
+	cityFirstLetter: "S"
+}, {
+	cityName: "圣约格岛",
+	citySpell: "SHENGYUEGEDAO",
+	"code": "SJZ",
+	"countryCode": "PT",
+	"countryName": "葡萄牙",
+	cityFirstLetter: "S"
+}, {
+	cityName: "斯法克斯",
+	citySpell: "SIFAKESI",
+	"code": "SFA",
+	"countryCode": "TN",
+	"countryName": "突尼斯",
+	cityFirstLetter: "S"
+}, {
+	cityName: "瑟罗内拉",
+	citySpell: "SELUONEILA",
+	"code": "SEU",
+	"countryCode": "TZ",
+	"countryName": "坦桑尼亚",
+	cityFirstLetter: "S"
+}, {
+	cityName: "斯丽特木德",
+	citySpell: "SILITEMUDE",
+	"code": "SLQ",
+	"countryCode": "US",
+	"countryName": "美国",
+	cityFirstLetter: "S"
+}, {
+	cityName: "圣汤马",
+	citySpell: "SHENGTANGMA",
+	"code": "SOM",
+	"countryCode": "VE",
+	"countryName": "委内瑞拉",
+	cityFirstLetter: "S"
+}, {
+	cityName: "森讷堡",
+	citySpell: "SENNEBAO",
+	"code": "SGD",
+	"countryCode": "DK",
+	"countryName": "丹麦",
+	cityFirstLetter: "S"
+}, {
+	cityName: "圣诞岛",
+	citySpell: "SHENGDANDAO",
+	"code": "CXI",
+	"countryCode": "KI",
+	"countryName": "基里巴斯",
+	cityFirstLetter: "S"
+}, {
+	cityName: "沙璜",
+	citySpell: "SHAHUANG",
+	"code": "SBG",
+	"countryCode": "ID",
+	"countryName": "印度尼西亚",
+	cityFirstLetter: "S"
+}, {
+	cityName: "桑塔纳多挽阿拉瓜亚",
+	citySpell: "SANGTANADUOWANALAGUAYA",
+	"code": "CMP",
+	"countryCode": "BR",
+	"countryName": "巴西",
+	cityFirstLetter: "S"
+}, {
+	cityName: "飒赤各尔湖",
+	citySpell: "SACHIGEERHU",
+	"code": "ZPB",
+	"countryCode": "CA",
+	"countryName": "加拿大",
+	cityFirstLetter: "S"
+}, {
+	cityName: "萨马纳",
+	citySpell: "SAMANA",
+	"code": "AZS",
+	"countryCode": "DO",
+	"countryName": "多米尼加",
+	cityFirstLetter: "S"
+}, {
+	cityName: "圣巴巴拉",
+	citySpell: "SHENGBABALA",
+	"code": "SBA",
+	"countryCode": "US",
+	"countryName": "美国",
+	cityFirstLetter: "S"
+}, {
+	cityName: "圣马丽亚",
+	citySpell: "SHENGMALIYA",
+	"code": "RIA",
+	"countryCode": "BR",
+	"countryName": "巴西",
+	cityFirstLetter: "S"
+}, {
+	cityName: "赛申",
+	citySpell: "SAISHEN",
+	"code": "SIS",
+	"countryCode": "ZA",
+	"countryName": "南非",
+	cityFirstLetter: "S"
+}, {
+	cityName: "沙克突利",
+	citySpell: "SHAKETULI",
+	"code": "SKK",
+	"countryCode": "US",
+	"countryName": "美国",
+	cityFirstLetter: "S"
+}, {
+	cityName: "斯里亚克",
+	citySpell: "SILIYAKE",
+	"code": "SLD",
+	"countryCode": "SK",
+	"countryName": "斯洛伐克",
+	cityFirstLetter: "S"
+}, {
+	cityName: "圣塔玛利亚",
+	citySpell: "SHENGTAMALIYA",
+	"code": "SMA",
+	"countryCode": "PT",
+	"countryName": "葡萄牙",
+	cityFirstLetter: "S"
+}, {
+	cityName: "萨兰斯克",
+	citySpell: "SALANSIKE",
+	"code": "SKX",
+	"countryCode": "RU",
+	"countryName": "俄罗斯",
+	cityFirstLetter: "S"
+}, {
+	cityName: "萨斯敦",
+	citySpell: "SASIDUN",
+	"code": "SAZ",
+	"countryCode": "LR",
+	"countryName": "利比里亚",
+	cityFirstLetter: "S"
+}, {
+	cityName: "圣胡安",
+	citySpell: "SHENGHUAN",
+	"code": "UAQ",
+	"countryCode": "AR",
+	"countryName": "阿根廷",
+	cityFirstLetter: "S"
+}, {
+	cityName: "瑟梅拉",
+	citySpell: "SEMEILA",
+	"code": "SZE",
+	"countryCode": "ET",
+	"countryName": "埃塞俄比亚",
+	cityFirstLetter: "S"
+}, {
+	cityName: "圣维森特",
+	citySpell: "SHENGWEISENTE",
+	"code": "VXE",
+	"countryCode": "CV",
+	"countryName": "佛得角",
+	cityFirstLetter: "S"
+}, {
+	cityName: "萨姆特",
+	citySpell: "SAMUTE",
+	"code": "SSC",
+	"countryCode": "US",
+	"countryName": "美国",
+	cityFirstLetter: "S"
+}, {
+	cityName: "塞杜沙里夫",
+	citySpell: "SAIDUSHALIFU",
+	"code": "SDT",
+	"countryCode": "PK",
+	"countryName": "巴基斯坦",
+	cityFirstLetter: "S"
+}, {
+	cityName: "塞奥德乌赫尔",
+	citySpell: "SAIAODEWUHEER",
+	"code": "LEU",
+	"countryCode": "ES",
+	"countryName": "西班牙",
+	cityFirstLetter: "S"
+}, {
+	cityName: "斯泰特科利奇",
+	citySpell: "SITAITEKELIQI",
+	"code": "SCE",
+	"countryCode": "US",
+	"countryName": "美国",
+	cityFirstLetter: "S"
+}, {
+	cityName: "索里诺",
+	citySpell: "SUOLINUO",
+	"code": "VHC",
+	"countryCode": "AO",
+	"countryName": "安哥拉",
+	cityFirstLetter: "S"
+}, {
+	cityName: "施特累基湾",
+	citySpell: "SHITELEIJIWAN",
+	"code": "KBY",
+	"countryCode": "AU",
+	"countryName": "澳大利亚",
+	cityFirstLetter: "S"
+}, {
+	cityName: "圣路易斯波托西",
+	citySpell: "SHENGLUYISIBOTUOXI",
+	"code": "SLP",
+	"countryCode": "MX",
+	"countryName": "墨西哥",
+	cityFirstLetter: "S"
+}, {
+	cityName: "塞拉莱",
+	citySpell: "SAILALAI",
+	"code": "SLL",
+	"countryCode": "OM",
+	"countryName": "阿曼",
+	cityFirstLetter: "S"
+}, {
+	cityName: "斯普利特",
+	citySpell: "SIPULITE",
+	"code": "SPU",
+	"countryCode": "HR",
+	"countryName": "克罗地亚",
+	cityFirstLetter: "S"
+}, {
+	cityName: "圣瑟巴斯提安－德拉戈梅拉",
+	citySpell: "SHENGSEBASITIAN－DELAGEMEILA",
+	"code": "GMZ",
+	"countryCode": "ES",
+	"countryName": "西班牙",
+	cityFirstLetter: "S"
+}, {
+	cityName: "萨帕拉",
+	citySpell: "SAPALA",
+	"code": "APZ",
+	"countryCode": "AR",
+	"countryName": "阿根廷",
+	cityFirstLetter: "S"
+}, {
+	cityName: "莎巴",
+	citySpell: "SHABA",
+	"code": "SAB",
+	"countryCode": "BQ",
+	"countryName": "荷兰加勒比区",
+	cityFirstLetter: "S"
+}, {
+	cityName: "撒马尔干",
+	citySpell: "SAMAERGAN",
+	"code": "SKD",
+	"countryCode": "UZ",
+	"countryName": "乌兹别克斯坦",
+	cityFirstLetter: "S"
+}, {
+	cityName: "神马",
+	citySpell: "SHENMA",
+	"code": "SIF",
+	"countryCode": "NP",
+	"countryName": "尼泊尔",
+	cityFirstLetter: "S"
+}, {
+	cityName: "圣文森特",
+	citySpell: "SHENGWENSENTE",
+	"code": "SVD",
+	"countryCode": "VC",
+	"countryName": "圣文森特和格林纳丁斯",
+	cityFirstLetter: "S"
+}, {
+	cityName: "塞戈",
+	citySpell: "SAIGE",
+	"code": "ZEG",
+	"countryCode": "ID",
+	"countryName": "印度尼西亚",
+	cityFirstLetter: "S"
+}, {
+	cityName: "圣克鲁斯岛",
+	citySpell: "SHENGKELUSIDAO",
+	"code": "SCZ",
+	"countryCode": "SB",
+	"countryName": "所罗门群岛",
+	cityFirstLetter: "S"
+}, {
+	cityName: "圣琼斯",
+	citySpell: "SHENGQIONGSI",
+	"code": "SJI",
+	"countryCode": "PH",
+	"countryName": "菲律宾",
+	cityFirstLetter: "S"
+}, {
+	cityName: "圣皮埃尔（岛）",
+	citySpell: "SHENGPIAIERDAO",
+	"code": "FSP",
+	"countryCode": "PM",
+	"countryName": "圣皮埃尔和密克隆",
+	cityFirstLetter: "S"
+}, {
+	cityName: "圣罗莎",
+	citySpell: "SHENGLUOSHA",
+	"code": "STS",
+	"countryCode": "US",
+	"countryName": "美国",
+	cityFirstLetter: "S"
+}, {
+	cityName: "圣克鲁斯",
+	citySpell: "SHENGKELUSI",
+	"code": "SRZ",
+	"countryCode": "BO",
+	"countryName": "玻利维亚",
+	cityFirstLetter: "S"
+}, {
+	cityName: "圣卡洛斯.德巴里洛切",
+	citySpell: "SHENGKALUOSI.DEBALILUOQIE",
+	"code": "BRC",
+	"countryCode": "AR",
+	"countryName": "阿根廷",
+	cityFirstLetter: "S"
+}, {
+	cityName: "塞得港",
+	citySpell: "SAIDEGANG",
+	"code": "PSD",
+	"countryCode": "EG",
+	"countryName": "埃及",
+	cityFirstLetter: "S"
+}, {
+	cityName: "圣费尔南多",
+	citySpell: "SHENGFEIERNANDUO",
+	"code": "SFD",
+	"countryCode": "VE",
+	"countryName": "委内瑞拉",
+	cityFirstLetter: "S"
+}, {
+	cityName: "苏哈尔",
+	citySpell: "SUHAER",
+	"code": "OHS",
+	"countryCode": "OM",
+	"countryName": "阿曼",
+	cityFirstLetter: "S"
+}, {
+	cityName: "索科托",
+	citySpell: "SUOKETUO",
+	"code": "SKO",
+	"countryCode": "NG",
+	"countryName": "尼日利亚",
+	cityFirstLetter: "S"
+}, {
+	cityName: "斯基罗斯",
+	citySpell: "SIJILUOSI",
+	"code": "SKU",
+	"countryCode": "GR",
+	"countryName": "希腊",
+	cityFirstLetter: "S"
+}, {
+	cityName: "塞鲁伊",
+	citySpell: "SAILUYI",
+	"code": "ZRI",
+	"countryCode": "ID",
+	"countryName": "印度尼西亚",
+	cityFirstLetter: "S"
+}, {
+	cityName: "斯托诺韦",
+	citySpell: "SITUONUOWEI",
+	"code": "SYY",
+	"countryCode": "GB",
+	"countryName": "英国",
+	cityFirstLetter: "S"
+}, {
+	cityName: "塞厄勒姆",
+	citySpell: "SAIELEMU",
+	"code": "SXA",
+	"countryCode": "PG",
+	"countryName": "巴布亚新几内亚",
+	cityFirstLetter: "S"
+}, {
+	cityName: "圣地亚哥",
+	citySpell: "SHENGDIYAGE",
+	"code": "SDE",
+	"countryCode": "AR",
+	"countryName": "阿根廷",
+	cityFirstLetter: "S"
+}, {
+	cityName: "苏必利尔",
+	citySpell: "SUBILIER",
+	"code": "SUW",
+	"countryCode": "US",
+	"countryName": "美国",
+	cityFirstLetter: "S"
+}, {
+	cityName: "苏阿法瑙",
+	citySpell: "SUAFANAO",
+	"code": "VAO",
+	"countryCode": "SB",
+	"countryName": "所罗门群岛",
+	cityFirstLetter: "S"
+}, {
+	cityName: "圣奥古斯丁",
+	citySpell: "SHENGAOGUSIDING",
+	"code": "UST",
+	"countryCode": "US",
+	"countryName": "美国",
+	cityFirstLetter: "S"
+}, {
+	cityName: "圣约翰斯",
+	citySpell: "SHENGYUEHANSI",
+	"code": "YYT",
+	"countryCode": "CA",
+	"countryName": "加拿大",
+	cityFirstLetter: "S"
+}, {
+	cityName: "斯丹顿",
+	citySpell: "SIDANDUN",
+	"code": "SHD",
+	"countryCode": "US",
+	"countryName": "美国",
+	cityFirstLetter: "S"
+}, {
+	cityName: "绍拉布尔",
+	citySpell: "SHAOLABUER",
+	"code": "SSE",
+	"countryCode": "IN",
+	"countryName": "印度",
+	cityFirstLetter: "S"
+}, {
+	cityName: "圣罗萨莉亚",
+	citySpell: "SHENGLUOSALIYA",
+	"code": "SSL",
+	"countryCode": "CO",
+	"countryName": "哥伦比亚",
+	cityFirstLetter: "S"
+}, {
+	cityName: "泗水",
+	citySpell: "SISHUI",
+	"code": "SUB",
+	"countryCode": "ID",
+	"countryName": "印度尼西亚",
+	cityFirstLetter: "S"
+}, {
+	cityName: "沙丽",
+	citySpell: "SHALI",
+	"code": "SRY",
+	"countryCode": "IR",
+	"countryName": "伊朗",
+	cityFirstLetter: "S"
+}, {
+	cityName: "苏尔古特",
+	citySpell: "SUERGUTE",
+	"code": "SGC",
+	"countryCode": "RU",
+	"countryName": "俄罗斯",
+	cityFirstLetter: "S"
+}, {
+	cityName: "松盖阿",
+	citySpell: "SONGGAIA",
+	"code": "SGX",
+	"countryCode": "TZ",
+	"countryName": "坦桑尼亚",
+	cityFirstLetter: "S"
+}, {
+	cityName: "史密斯堡",
+	citySpell: "SHIMISIBAO",
+	"code": "YSM",
+	"countryCode": "CA",
+	"countryName": "加拿大",
+	cityFirstLetter: "S"
+}, {
+	cityName: "桑内舍恩",
+	citySpell: "SANGNEISHEEN",
+	"code": "SSJ",
+	"countryCode": "NO",
+	"countryName": "挪威",
+	cityFirstLetter: "S"
+}, {
+	cityName: "圣皮埃尔",
+	citySpell: "SHENGPIAIER",
+	"code": "ZSE",
+	"countryCode": "RE",
+	"countryName": "留尼汪岛",
+	cityFirstLetter: "S"
+}, {
+	cityName: "苏库尔",
+	citySpell: "SUKUER",
+	"code": "SKZ",
+	"countryCode": "PK",
+	"countryName": "巴基斯坦",
+	cityFirstLetter: "S"
+}, {
+	cityName: "塞萨洛尼基",
+	citySpell: "SAISALUONIJI",
+	"code": "SKG",
+	"countryCode": "GR",
+	"countryName": "希腊",
+	cityFirstLetter: "S"
+}, {
+	cityName: "斯特旺塞",
+	citySpell: "SITEWANGSAI",
+	"code": "SOY",
+	"countryCode": "GB",
+	"countryName": "英国",
+	cityFirstLetter: "S"
+}, {
+	cityName: "沙托鲁",
+	citySpell: "SHATUOLU",
+	"code": "CHR",
+	"countryCode": "FR",
+	"countryName": "法国",
+	cityFirstLetter: "S"
+}, {
+	cityName: "塞杜纳",
+	citySpell: "SAIDUNA",
+	"code": "CED",
+	"countryCode": "AU",
+	"countryName": "澳大利亚",
+	cityFirstLetter: "S"
+}, {
+	cityName: "圣何塞",
+	citySpell: "SHENGHESAI",
+	"code": "SJC",
+	"countryCode": "US",
+	"countryName": "美国",
+	cityFirstLetter: "S"
+}, {
+	cityName: "萨拉瓦内",
+	citySpell: "SALAWANEI",
+	"code": "RVE",
+	"countryCode": "CO",
+	"countryName": "哥伦比亚",
+	cityFirstLetter: "S"
+}, {
+	cityName: "圣佩特罗",
+	citySpell: "SHENGPEITELUO",
+	"code": "SPY",
+	"countryCode": "CI",
+	"countryName": "科特迪瓦",
+	cityFirstLetter: "S"
+}, {
+	cityName: "素可泰",
+	citySpell: "SUKETAI",
+	"code": "THS",
+	"countryCode": "TH",
+	"countryName": "泰国",
+	cityFirstLetter: "S"
+}, {
+	cityName: "圣胡安",
+	citySpell: "SHENGHUAN",
+	"code": "SJU",
+	"countryCode": "PR",
+	"countryName": "波多黎各",
+	cityFirstLetter: "S"
+}, {
+	cityName: "塞里斯",
+	citySpell: "SAILISI",
+	"code": "CRR",
+	"countryCode": "AR",
+	"countryName": "阿根廷",
+	cityFirstLetter: "S"
+}, {
+	cityName: "斯塔夫罗波尔",
+	citySpell: "SITAFULUOBOER",
+	"code": "STW",
+	"countryCode": "RU",
+	"countryName": "俄罗斯",
+	cityFirstLetter: "S"
+}, {
+	cityName: "萨尔蒂洛",
+	citySpell: "SAERDILUO",
+	"code": "SLW",
+	"countryCode": "MX",
+	"countryName": "墨西哥",
+	cityFirstLetter: "S"
+}, {
+	cityName: "苏姆贝",
+	citySpell: "SUMUBEI",
+	"code": "NDD",
+	"countryCode": "AO",
+	"countryName": "安哥拉",
+	cityFirstLetter: "S"
+}, {
+	cityName: "施沙木勒幅",
+	citySpell: "SHISHAMULEFU",
+	"code": "SHH",
+	"countryCode": "US",
+	"countryName": "美国",
+	cityFirstLetter: "S"
+}, {
+	cityName: "圣保罗岛",
+	citySpell: "SHENGBAOLUODAO",
+	"code": "SNP",
+	"countryCode": "US",
+	"countryName": "美国",
+	cityFirstLetter: "S"
+}, {
+	cityName: "萨姆松",
+	citySpell: "SAMUSONG",
+	"code": "SZF",
+	"countryCode": "TR",
+	"countryName": "土耳其",
+	cityFirstLetter: "S"
+}, {
+	cityName: "斯科普里",
+	citySpell: "SIKEPULI",
+	"code": "SKP",
+	"countryCode": "MK",
+	"countryName": "马其顿",
+	cityFirstLetter: "S"
+}, {
+	cityName: "萨利纳斯",
+	citySpell: "SALINASI",
+	"code": "SNC",
+	"countryCode": "EC",
+	"countryName": "厄瓜多尔",
+	cityFirstLetter: "S"
+}, {
+	cityName: "圣路易斯",
+	citySpell: "SHENGLUYISI",
+	"code": "STL",
+	"countryCode": "US",
+	"countryName": "美国",
+	cityFirstLetter: "S"
+}, {
+	cityName: "上克鲁斯",
+	citySpell: "SHANGKELUSI",
+	"code": "CZB",
+	"countryCode": "BR",
+	"countryName": "巴西",
+	cityFirstLetter: "S"
+}, {
+	cityName: "圣安娜",
+	citySpell: "SHENGANNA",
+	"code": "SBL",
+	"countryCode": "BO",
+	"countryName": "玻利维亚",
+	cityFirstLetter: "S"
+}, {
+	cityName: "苏福尔斯",
+	citySpell: "SUFUERSI",
+	"code": "FSD",
+	"countryCode": "US",
+	"countryName": "美国",
+	cityFirstLetter: "S"
+}, {
+	cityName: "梭罗",
+	citySpell: "SUOLUO",
+	"code": "SOC",
+	"countryCode": "ID",
+	"countryName": "印度尼西亚",
+	cityFirstLetter: "S"
+}, {
+	cityName: "索维拉",
+	citySpell: "SUOWEILA",
+	"code": "ESU",
+	"countryCode": "MA",
+	"countryName": "摩洛哥",
+	cityFirstLetter: "S"
+}, {
+	cityName: "塞古鲁港",
+	citySpell: "SAIGULUGANG",
+	"code": "BPS",
+	"countryCode": "BR",
+	"countryName": "巴西",
+	cityFirstLetter: "S"
+}, {
+	cityName: "台北",
+	citySpell: "TAIBEI",
+	"code": "TPE",
+	"countryCode": "TW",
+	"countryName": "中国台湾",
+	cityFirstLetter: "T"
+}, {
+	cityName: "塔皮尼",
+	citySpell: "TAPINI",
+	"code": "TPI",
+	"countryCode": "PG",
+	"countryName": "巴布亚新几内亚",
+	cityFirstLetter: "T"
+}, {
+	cityName: "塔里哈",
+	citySpell: "TALIHA",
+	"code": "TJA",
+	"countryCode": "BO",
+	"countryName": "玻利维亚",
+	cityFirstLetter: "T"
+}, {
+	cityName: "坦佩雷",
+	citySpell: "TANPEILEI",
+	"code": "TMP",
+	"countryCode": "FI",
+	"countryName": "芬兰",
+	cityFirstLetter: "T"
+}, {
+	cityName: "塔拉兹",
+	citySpell: "TALAZI",
+	"code": "DMB",
+	"countryCode": "KZ",
+	"countryName": "哈萨克斯坦",
+	cityFirstLetter: "T"
+}, {
+	cityName: "提普提尼",
+	citySpell: "TIPUTINI",
+	"code": "TPN",
+	"countryCode": "EC",
+	"countryName": "厄瓜多尔",
+	cityFirstLetter: "T"
+}, {
+	cityName: "提拉纳",
+	citySpell: "TILANA",
+	"code": "TIA",
+	"countryCode": "AL",
+	"countryName": "阿尔巴尼亚",
+	cityFirstLetter: "T"
+}, {
+	cityName: "塔比特阿",
+	citySpell: "TABITEA",
+	"code": "TBF",
+	"countryCode": "KI",
+	"countryName": "基里巴斯",
+	cityFirstLetter: "T"
+}, {
+	cityName: "塔里",
+	citySpell: "TALI",
+	"code": "TIZ",
+	"countryCode": "PG",
+	"countryName": "巴布亚新几内亚",
+	cityFirstLetter: "T"
+}, {
+	cityName: "图库曼",
+	citySpell: "TUKUMAN",
+	"code": "TUC",
+	"countryCode": "AR",
+	"countryName": "阿根廷",
+	cityFirstLetter: "T"
+}, {
+	cityName: "土格加劳",
+	citySpell: "TUGEJIALAO",
+	"code": "TUG",
+	"countryCode": "PH",
+	"countryName": "菲律宾",
+	cityFirstLetter: "T"
+}, {
+	cityName: "太平",
+	citySpell: "TAIPING",
+	"code": "TPG",
+	"countryCode": "MY",
+	"countryName": "马来西亚",
+	cityFirstLetter: "T"
+}, {
+	cityName: "托鲁",
+	citySpell: "TUOLU",
+	"code": "TLU",
+	"countryCode": "CO",
+	"countryName": "哥伦比亚",
+	cityFirstLetter: "T"
+}, {
+	cityName: "塔巴尔",
+	citySpell: "TABAER",
+	"code": "TBV",
+	"countryCode": "MH",
+	"countryName": "马绍尔群岛",
+	cityFirstLetter: "T"
+}, {
+	cityName: "泰基尔达",
+	citySpell: "TAIJIERDA",
+	"code": "TEQ",
+	"countryCode": "TR",
+	"countryName": "土耳其",
+	cityFirstLetter: "T"
+}, {
+	cityName: "托雷翁",
+	citySpell: "TUOLEIWENG",
+	"code": "TRC",
+	"countryCode": "MX",
+	"countryName": "墨西哥",
+	cityFirstLetter: "T"
+}, {
+	cityName: "塔塔里纳",
+	citySpell: "TATALINA",
+	"code": "TLJ",
+	"countryCode": "US",
+	"countryName": "美国",
+	cityFirstLetter: "T"
+}, {
+	cityName: "太子港",
+	citySpell: "TAIZIGANG",
+	"code": "PAP",
+	"countryCode": "HT",
+	"countryName": "海地",
+	cityFirstLetter: "T"
+}, {
+	cityName: "图鲁汉斯克",
+	citySpell: "TULUHANSIKE",
+	"code": "THX",
+	"countryCode": "RU",
+	"countryName": "俄罗斯",
+	cityFirstLetter: "T"
+}, {
+	cityName: "图文巴",
+	citySpell: "TUWENBA",
+	"code": "TWB",
+	"countryCode": "AU",
+	"countryName": "澳大利亚",
+	cityFirstLetter: "T"
+}, {
+	cityName: "塔罗勒湖",
+	citySpell: "TALUOLEHU",
+	"code": "XTL",
+	"countryCode": "CA",
+	"countryName": "加拿大",
+	cityFirstLetter: "T"
+}, {
+	cityName: "通布图",
+	citySpell: "TONGBUTU",
+	"code": "TOM",
+	"countryCode": "ML",
+	"countryName": "马里",
+	cityFirstLetter: "T"
+}, {
+	cityName: "坦坦",
+	citySpell: "TANTAN",
+	"code": "TTA",
+	"countryCode": "MA",
+	"countryName": "摩洛哥",
+	cityFirstLetter: "T"
+}, {
+	cityName: "塔塔科托",
+	citySpell: "TATAKETUO",
+	"code": "TKV",
+	"countryCode": "PF",
+	"countryName": "法属波利尼西亚",
+	cityFirstLetter: "T"
+}, {
+	cityName: "塔斯库尔",
+	citySpell: "TASIKUER",
+	"code": "TSK",
+	"countryCode": "PG",
+	"countryName": "巴布亚新几内亚",
+	cityFirstLetter: "T"
+}, {
+	cityName: "塔拉瓦",
+	citySpell: "TALAWA",
+	"code": "TRW",
+	"countryCode": "KI",
+	"countryName": "基里巴斯",
+	cityFirstLetter: "T"
+}, {
+	cityName: "特雷尔",
+	citySpell: "TELEIER",
+	"code": "YZZ",
+	"countryCode": "CA",
+	"countryName": "加拿大",
+	cityFirstLetter: "T"
+}, {
+	cityName: "亭可马里",
+	citySpell: "TINGKEMALI",
+	"code": "TRR",
+	"countryCode": "LK",
+	"countryName": "斯里兰卡",
+	cityFirstLetter: "T"
+}, {
+	cityName: "图雷拉",
+	citySpell: "TULEILA",
+	"code": "ZTA",
+	"countryCode": "PF",
+	"countryName": "法属波利尼西亚",
+	cityFirstLetter: "T"
+}, {
+	cityName: "托特内斯",
+	citySpell: "TUOTENEISI",
+	"code": "TOT",
+	"countryCode": "SR",
+	"countryName": "苏里南",
+	cityFirstLetter: "T"
+}, {
+	cityName: "塔马拉岛",
+	citySpell: "TAMALADAO",
+	"code": "TMN",
+	"countryCode": "KI",
+	"countryName": "基里巴斯",
+	cityFirstLetter: "T"
+}, {
+	cityName: "特鲁希略",
+	citySpell: "TELUXILUE",
+	"code": "TRU",
+	"countryCode": "PE",
+	"countryName": "秘鲁",
+	cityFirstLetter: "T"
+}, {
+	cityName: "塔克纳",
+	citySpell: "TAKENA",
+	"code": "TCQ",
+	"countryCode": "PE",
+	"countryName": "秘鲁",
+	cityFirstLetter: "T"
+}, {
+	cityName: "泰赫拉德弗雷塔斯",
+	citySpell: "TAIHELADEFULEITASI",
+	"code": "TXF",
+	"countryCode": "BR",
+	"countryName": "巴西",
+	cityFirstLetter: "T"
+}, {
+	cityName: "托泽尔",
+	citySpell: "TUOZEER",
+	"code": "TOE",
+	"countryCode": "TN",
+	"countryName": "突尼斯",
+	cityFirstLetter: "T"
+}, {
+	cityName: "特拉布宗",
+	citySpell: "TELABUZONG",
+	"code": "TZX",
+	"countryCode": "TR",
+	"countryName": "土耳其",
+	cityFirstLetter: "T"
+}, {
+	cityName: "太平港",
+	citySpell: "TAIPINGGANG",
+	"code": "PHR",
+	"countryCode": "FJ",
+	"countryName": "斐济群岛",
+	cityFirstLetter: "T"
+}, {
+	cityName: "塔木吉",
+	citySpell: "TAMUJI",
+	"code": "IKU",
+	"countryCode": "KG",
+	"countryName": "吉尔吉斯斯坦",
+	cityFirstLetter: "T"
+}, {
+	cityName: "托尔托拉岛",
+	citySpell: "TUOERTUOLADAO",
+	"code": "TOV",
+	"countryCode": "VG",
+	"countryName": "维尔京群岛（英）",
+	cityFirstLetter: "T"
+}, {
+	cityName: "提林库特",
+	citySpell: "TILINKUTE",
+	"code": "TII",
+	"countryCode": "AF",
+	"countryName": "阿富汗",
+	cityFirstLetter: "T"
+}, {
+	cityName: "提科",
+	citySpell: "TIKE",
+	"code": "TKC",
+	"countryCode": "CM",
+	"countryName": "喀麦隆",
+	cityFirstLetter: "T"
+}, {
+	cityName: "提鲁帕提",
+	citySpell: "TILUPATI",
+	"code": "TIR",
+	"countryCode": "IN",
+	"countryName": "印度",
+	cityFirstLetter: "T"
+}, {
+	cityName: "图森",
+	citySpell: "TUSEN",
+	"code": "TUS",
+	"countryCode": "US",
+	"countryName": "美国",
+	cityFirstLetter: "T"
+}, {
+	cityName: "塔巴廷加",
+	citySpell: "TABATINGJIA",
+	"code": "TBT",
+	"countryCode": "BR",
+	"countryName": "巴西",
+	cityFirstLetter: "T"
+}, {
+	cityName: "特拉帕尼",
+	citySpell: "TELAPANI",
+	"code": "TPS",
+	"countryCode": "IT",
+	"countryName": "意大利",
+	cityFirstLetter: "T"
+}, {
+	cityName: "特雷苏尔凯",
+	citySpell: "TELEISUERKAI",
+	"code": "TCB",
+	"countryCode": "BS",
+	"countryName": "巴哈马",
+	cityFirstLetter: "T"
+}, {
+	cityName: "图斯特拉-古铁雷斯",
+	citySpell: "TUSITELAGUTIELEISI",
+	"code": "TGZ",
+	"countryCode": "MX",
+	"countryName": "墨西哥",
+	cityFirstLetter: "T"
+}, {
+	cityName: "塔尔图",
+	citySpell: "TAERTU",
+	"code": "TAY",
+	"countryCode": "EE",
+	"countryName": "爱沙尼亚",
+	cityFirstLetter: "T"
+}, {
+	cityName: "图菲",
+	citySpell: "TUFEI",
+	"code": "TFI",
+	"countryCode": "PG",
+	"countryName": "巴布亚新几内亚",
+	cityFirstLetter: "T"
+}, {
+	cityName: "特鲁埃尔",
+	citySpell: "TELUAIER",
+	"code": "TEV",
+	"countryCode": "ES",
+	"countryName": "西班牙",
+	cityFirstLetter: "T"
+}, {
+	cityName: "图尔伯德",
+	citySpell: "TUERBODE",
+	"code": "TUK",
+	"countryCode": "PK",
+	"countryName": "巴基斯坦",
+	cityFirstLetter: "T"
+}, {
+	cityName: "特雷斯拉瓜斯",
+	citySpell: "TELEISILAGUASI",
+	"code": "TJL",
+	"countryCode": "BR",
+	"countryName": "巴西",
+	cityFirstLetter: "T"
+}, {
+	cityName: "塔克岛",
+	citySpell: "TAKEDAO",
+	"code": "TKK",
+	"countryCode": "FM",
+	"countryName": "密克罗尼西亚",
+	cityFirstLetter: "T"
+}, {
+	cityName: "塔贝尔巴亚",
+	citySpell: "TABEIERBAYA",
+	"code": "TEE",
+	"countryCode": "DZ",
+	"countryName": "阿尔及利亚",
+	cityFirstLetter: "T"
+}, {
+	cityName: "托尔图格罗",
+	citySpell: "TUOERTUGELUO",
+	"code": "TTQ",
+	"countryCode": "CR",
+	"countryName": "哥斯达黎加",
+	cityFirstLetter: "T"
+}, {
+	cityName: "图勒",
+	citySpell: "TULE",
+	"code": "NAQ",
+	"countryCode": "GL",
+	"countryName": "格陵兰岛",
+	cityFirstLetter: "T"
+}, {
+	cityName: "塔科拉迪",
+	citySpell: "TAKELADI",
+	"code": "TKD",
+	"countryCode": "GH",
+	"countryName": "加纳",
+	cityFirstLetter: "T"
+}, {
+	cityName: "突出山",
+	citySpell: "TUCHUSHAN",
+	"code": "PXH",
+	"countryCode": "AU",
+	"countryName": "澳大利亚",
+	cityFirstLetter: "T"
+}, {
+	cityName: "特雷西纳",
+	citySpell: "TELEIXINA",
+	"code": "THE",
+	"countryCode": "BR",
+	"countryName": "巴西",
+	cityFirstLetter: "T"
+}, {
+	cityName: "土古尔",
+	citySpell: "TUGUER",
+	"code": "TGR",
+	"countryCode": "DZ",
+	"countryName": "阿尔及利亚",
+	cityFirstLetter: "T"
+}, {
+	cityName: "特柳莱德",
+	citySpell: "TELIULAIDE",
+	"code": "TEX",
+	"countryCode": "US",
+	"countryName": "美国",
+	cityFirstLetter: "T"
+}, {
+	cityName: "汤普森",
+	citySpell: "TANGPUSEN",
+	"code": "YTH",
+	"countryCode": "CA",
+	"countryName": "加拿大",
+	cityFirstLetter: "T"
+}, {
+	cityName: "塔姆沃恩",
+	citySpell: "TAMUWOEN",
+	"code": "TMW",
+	"countryCode": "AU",
+	"countryName": "澳大利亚",
+	cityFirstLetter: "T"
+}, {
+	cityName: "托利托利",
+	citySpell: "TUOLITUOLI",
+	"code": "TLI",
+	"countryCode": "ID",
+	"countryName": "印度尼西亚",
+	cityFirstLetter: "T"
+}, {
+	cityName: "特拉弗斯城",
+	citySpell: "TELAFUSICHENG",
+	"code": "TVC",
+	"countryCode": "US",
+	"countryName": "美国",
+	cityFirstLetter: "T"
+}, {
+	cityName: "塔拿那利佛",
+	citySpell: "TANANALIFO",
+	"code": "TNR",
+	"countryCode": "MG",
+	"countryName": "马达加斯加",
+	cityFirstLetter: "T"
+}, {
+	cityName: "廷伯克里克",
+	citySpell: "TINGBOKELIKE",
+	"code": "TBK",
+	"countryCode": "AU",
+	"countryName": "澳大利亚",
+	cityFirstLetter: "T"
+}, {
+	cityName: "塔佩塔",
+	citySpell: "TAPEITA",
+	"code": "TPT",
+	"countryCode": "LR",
+	"countryName": "利比里亚",
+	cityFirstLetter: "T"
+}, {
+	cityName: "塔尔迪库尔干",
+	citySpell: "TAERDIKUERGAN",
+	"code": "TDK",
+	"countryCode": "KZ",
+	"countryName": "哈萨克斯坦",
+	cityFirstLetter: "T"
+}, {
+	cityName: "陶拉梅纳",
+	citySpell: "TAOLAMEINA",
+	"code": "TAU",
+	"countryCode": "CO",
+	"countryName": "哥伦比亚",
+	cityFirstLetter: "T"
+}, {
+	cityName: "台拉登",
+	citySpell: "TAILADENG",
+	"code": "DED",
+	"countryCode": "IN",
+	"countryName": "印度",
+	cityFirstLetter: "T"
+}, {
+	cityName: "塔曼拉塞特",
+	citySpell: "TAMANLASAITE",
+	"code": "TMR",
+	"countryCode": "DZ",
+	"countryName": "阿尔及利亚",
+	cityFirstLetter: "T"
+}, {
+	cityName: "托芒贡",
+	citySpell: "TUOMANGGONG",
+	"code": "TMG",
+	"countryCode": "MY",
+	"countryName": "马来西亚",
+	cityFirstLetter: "T"
+}, {
+	cityName: "提克豪环礁",
+	citySpell: "TIKEHAOHUANJIAO",
+	"code": "TIH",
+	"countryCode": "PF",
+	"countryName": "法属波利尼西亚",
+	cityFirstLetter: "T"
+}, {
+	cityName: "陶朗阿加",
+	citySpell: "TAOLANGAJIA",
+	"code": "TRG",
+	"countryCode": "NZ",
+	"countryName": "新西兰",
+	cityFirstLetter: "T"
+}, {
+	cityName: "图尔库",
+	citySpell: "TUERKU",
+	"code": "TKU",
+	"countryCode": "FI",
+	"countryName": "芬兰",
+	cityFirstLetter: "T"
+}, {
+	cityName: "塔巴卡",
+	citySpell: "TABAKA",
+	"code": "TBJ",
+	"countryCode": "TN",
+	"countryName": "突尼斯",
+	cityFirstLetter: "T"
+}, {
+	cityName: "托特格杰岛",
+	citySpell: "TUOTEGEJIEDAO",
+	"code": "GMR",
+	"countryCode": "PF",
+	"countryName": "法属波利尼西亚",
+	cityFirstLetter: "T"
+}, {
+	cityName: "图卢兹",
+	citySpell: "TULUZI",
+	"code": "TLS",
+	"countryCode": "FR",
+	"countryName": "法国",
+	cityFirstLetter: "T"
+}, {
+	cityName: "塔拉拉",
+	citySpell: "TALALA",
+	"code": "TYL",
+	"countryCode": "PE",
+	"countryName": "秘鲁",
+	cityFirstLetter: "T"
+}, {
+	cityName: "塔伊兹",
+	citySpell: "TAYIZI",
+	"code": "TAI",
+	"countryCode": "YE",
+	"countryName": "也门",
+	cityFirstLetter: "T"
+}, {
+	cityName: "特雷斯阿罗约斯",
+	citySpell: "TELEISIALUOYUESI",
+	"code": "OYO",
+	"countryCode": "AR",
+	"countryName": "阿根廷",
+	cityFirstLetter: "T"
+}, {
+	cityName: "提斯普尔",
+	citySpell: "TISIPUER",
+	"code": "TEZ",
+	"countryCode": "IN",
+	"countryName": "印度",
+	cityFirstLetter: "T"
+}, {
+	cityName: "图莱夫",
+	citySpell: "TULAIFU",
+	"code": "TUI",
+	"countryCode": "SA",
+	"countryName": "沙特阿垃伯",
+	cityFirstLetter: "T"
+}, {
+	cityName: "塔布科",
+	citySpell: "TABUKE",
+	"code": "TUU",
+	"countryCode": "SA",
+	"countryName": "沙特阿垃伯",
+	cityFirstLetter: "T"
+}, {
+	cityName: "塔肯刚",
+	citySpell: "TAKENGANG",
+	"code": "TXE",
+	"countryCode": "ID",
+	"countryName": "印度尼西亚",
+	cityFirstLetter: "T"
+}, {
+	cityName: "图克托亚图克",
+	citySpell: "TUKETUOYATUKE",
+	"code": "YUB",
+	"countryCode": "CA",
+	"countryName": "加拿大",
+	cityFirstLetter: "T"
+}, {
+	cityName: "特温福尔斯",
+	citySpell: "TEWENFUERSI",
+	"code": "TWF",
+	"countryCode": "US",
+	"countryName": "美国",
+	cityFirstLetter: "T"
+}, {
+	cityName: "塔拉哈西",
+	citySpell: "TALAHAXI",
+	"code": "TLH",
+	"countryCode": "US",
+	"countryName": "美国",
+	cityFirstLetter: "T"
+}, {
+	cityName: "托雷斯",
+	citySpell: "TUOLEISI",
+	"code": "TOH",
+	"countryCode": "VU",
+	"countryName": "瓦努阿图",
+	cityFirstLetter: "T"
+}, {
+	cityName: "塔郭敏达",
+	citySpell: "TAGUOMINDA",
+	"code": "XTG",
+	"countryCode": "AU",
+	"countryName": "澳大利亚",
+	cityFirstLetter: "T"
+}, {
+	cityName: "特尔纳特（德那地）",
+	citySpell: "TEERNATE",
+	"code": "TTE",
+	"countryCode": "ID",
+	"countryName": "印度尼西亚",
+	cityFirstLetter: "T"
+}, {
+	cityName: "塔波拉",
+	citySpell: "TABOLA",
+	"code": "TBO",
+	"countryCode": "TZ",
+	"countryName": "坦桑尼亚",
+	cityFirstLetter: "T"
+}, {
+	cityName: "唐克斯特",
+	citySpell: "TANGKESITE",
+	"code": "DSA",
+	"countryCode": "GB",
+	"countryName": "英国",
+	cityFirstLetter: "T"
+}, {
+	cityName: "天草",
+	citySpell: "TIANCAO",
+	"code": "AXJ",
+	"countryCode": "JP",
+	"countryName": "日本",
+	cityFirstLetter: "T"
+}, {
+	cityName: "坦帕",
+	citySpell: "TANPA",
+	"code": "TPA",
+	"countryCode": "US",
+	"countryName": "美国",
+	cityFirstLetter: "T"
+}, {
+	cityName: "铁尔梅兹",
+	citySpell: "TIEERMEIZI",
+	"code": "TMJ",
+	"countryCode": "UZ",
+	"countryName": "乌兹别克斯坦",
+	cityFirstLetter: "T"
+}, {
+	cityName: "图卜鲁格",
+	citySpell: "TUBOLUGE",
+	"code": "TOB",
+	"countryCode": "LY",
+	"countryName": "利比亚",
+	cityFirstLetter: "T"
+}, {
+	cityName: "塔克洛班",
+	citySpell: "TAKELUOBAN",
+	"code": "TAC",
+	"countryCode": "PH",
+	"countryName": "菲律宾",
+	cityFirstLetter: "T"
+}, {
+	cityName: "特古西加尔巴",
+	citySpell: "TEGUXIJIAERBA",
+	"code": "TGU",
+	"countryCode": "HN",
+	"countryName": "洪都拉斯",
+	cityFirstLetter: "T"
+}, {
+	cityName: "特立尼达",
+	citySpell: "TELINIDA",
+	"code": "TDD",
+	"countryCode": "BO",
+	"countryName": "玻利维亚",
+	cityFirstLetter: "T"
+}, {
+	cityName: "塔拉坎",
+	citySpell: "TALAKAN",
+	"code": "TLK",
+	"countryCode": "RU",
+	"countryName": "俄罗斯",
+	cityFirstLetter: "T"
+}, {
+	cityName: "滕格里",
+	citySpell: "TENGGELI",
+	"code": "DHI",
+	"countryCode": "NP",
+	"countryName": "尼泊尔",
+	cityFirstLetter: "T"
+}, {
+	cityName: "塔胡纳",
+	citySpell: "TAHUNA",
+	"code": "NAH",
+	"countryCode": "ID",
+	"countryName": "印度尼西亚",
+	cityFirstLetter: "T"
+}, {
+	cityName: "塔帕丘拉",
+	citySpell: "TAPAQIULA",
+	"code": "TAP",
+	"countryCode": "MX",
+	"countryName": "墨西哥",
+	cityFirstLetter: "T"
+}, {
+	cityName: "塔韦马尼岛",
+	citySpell: "TAWEIMANIDAO",
+	"code": "TVU",
+	"countryCode": "FJ",
+	"countryName": "斐济群岛",
+	cityFirstLetter: "T"
+}, {
+	cityName: "托斯比",
+	citySpell: "TUOSIBI",
+	"code": "TYF",
+	"countryCode": "SE",
+	"countryName": "瑞典",
+	cityFirstLetter: "T"
+}, {
+	cityName: "特罗姆瑟",
+	citySpell: "TELUOMUSE",
+	"code": "TOS",
+	"countryCode": "NO",
+	"countryName": "挪威",
+	cityFirstLetter: "T"
+}, {
+	cityName: "特费",
+	citySpell: "TEFEI",
+	"code": "TFF",
+	"countryCode": "BR",
+	"countryName": "巴西",
+	cityFirstLetter: "T"
+}, {
+	cityName: "特木科",
+	citySpell: "TEMUKE",
+	"code": "ZCO",
+	"countryCode": "CL",
+	"countryName": "智利",
+	cityFirstLetter: "T"
+}, {
+	cityName: "土库曼阿巴德",
+	citySpell: "TUKUMANABADE",
+	"code": "CRZ",
+	"countryCode": "TM",
+	"countryName": "土库曼斯坦",
+	cityFirstLetter: "T"
+}, {
+	cityName: "托伍德",
+	citySpell: "TUOWUDE",
+	"code": "TWP",
+	"countryCode": "AU",
+	"countryName": "澳大利亚",
+	cityFirstLetter: "T"
+}, {
+	cityName: "托连森",
+	citySpell: "TUOLIANSEN",
+	"code": "TLM",
+	"countryCode": "DZ",
+	"countryName": "阿尔及利亚",
+	cityFirstLetter: "T"
+}, {
+	cityName: "特提阿洛阿岛",
+	citySpell: "TETIALUOADAO",
+	"code": "TTI",
+	"countryCode": "PF",
+	"countryName": "法属波利尼西亚",
+	cityFirstLetter: "T"
+}, {
+	cityName: "图鲁克萨克",
+	citySpell: "TULUKESAKE",
+	"code": "TLT",
+	"countryCode": "US",
+	"countryName": "美国",
+	cityFirstLetter: "T"
+}, {
+	cityName: "图奥",
+	citySpell: "TUAO",
+	"code": "TOU",
+	"countryCode": "NC",
+	"countryName": "新喀里多尼亚（太平洋）",
+	cityFirstLetter: "T"
+}, {
+	cityName: "特尔佛",
+	citySpell: "TEERFO",
+	"code": "TEF",
+	"countryCode": "AU",
+	"countryName": "澳大利亚",
+	cityFirstLetter: "T"
+}, {
+	cityName: "提布",
+	citySpell: "TIBU",
+	"code": "TIB",
+	"countryCode": "CO",
+	"countryName": "哥伦比亚",
+	cityFirstLetter: "T"
+}, {
+	cityName: "塔伊夫",
+	citySpell: "TAYIFU",
+	"code": "TIF",
+	"countryCode": "SA",
+	"countryName": "沙特阿垃伯",
+	cityFirstLetter: "T"
+}, {
+	cityName: "特瑟内",
+	citySpell: "TESENEI",
+	"code": "TES",
+	"countryCode": "ER",
+	"countryName": "厄立特里亚",
+	cityFirstLetter: "T"
+}, {
+	cityName: "泰勒",
+	citySpell: "TAILE",
+	"code": "TLA",
+	"countryCode": "US",
+	"countryName": "美国",
+	cityFirstLetter: "T"
+}, {
+	cityName: "特雷霍特",
+	citySpell: "TELEIHUOTE",
+	"code": "HUF",
+	"countryCode": "US",
+	"countryName": "美国",
+	cityFirstLetter: "T"
+}, {
+	cityName: "提米蒙",
+	citySpell: "TIMIMENG",
+	"code": "TMX",
+	"countryCode": "DZ",
+	"countryName": "阿尔及利亚",
+	cityFirstLetter: "T"
+}, {
+	cityName: "特纳基斯斯普林",
+	citySpell: "TENAJISISIPULIN",
+	"code": "TKE",
+	"countryCode": "US",
+	"countryName": "美国",
+	cityFirstLetter: "T"
+}, {
+	cityName: "泰塔拉巴莱讷",
+	citySpell: "TAITALABALAINE",
+	"code": "ZTB",
+	"countryCode": "CA",
+	"countryName": "加拿大",
+	cityFirstLetter: "T"
+}, {
+	cityName: "塔那那",
+	citySpell: "TANANA",
+	"code": "TAL",
+	"countryCode": "US",
+	"countryName": "美国",
+	cityFirstLetter: "T"
+}, {
+	cityName: "台中",
+	citySpell: "TAIZHONG",
+	"code": "RMQ",
+	"countryCode": "TW",
+	"countryName": "中国台湾",
+	cityFirstLetter: "T"
+}, {
+	cityName: "廷戈玛丽亚",
+	citySpell: "TINGGEMALIYA",
+	"code": "TGI",
+	"countryCode": "PE",
+	"countryName": "秘鲁",
+	cityFirstLetter: "T"
+}, {
+	cityName: "塔里",
+	citySpell: "TALI",
+	"code": "TRO",
+	"countryCode": "AU",
+	"countryName": "澳大利亚",
+	cityFirstLetter: "T"
+}, {
+	cityName: "塔梅",
+	citySpell: "TAMEI",
+	"code": "TME",
+	"countryCode": "CO",
+	"countryName": "哥伦比亚",
+	cityFirstLetter: "T"
+}, {
+	cityName: "塔克特纳",
+	citySpell: "TAKETENA",
+	"code": "TCT",
+	"countryCode": "US",
+	"countryName": "美国",
+	cityFirstLetter: "T"
+}, {
+	cityName: "塔什干",
+	citySpell: "TASHENGAN",
+	"code": "TAS",
+	"countryCode": "UZ",
+	"countryName": "乌兹别克斯坦",
+	cityFirstLetter: "T"
+}, {
+	cityName: "特雷利乌",
+	citySpell: "TELEILIWU",
+	"code": "REL",
+	"countryCode": "AR",
+	"countryName": "阿根廷",
+	cityFirstLetter: "T"
+}, {
+	cityName: "塔马拉",
+	citySpell: "TAMALA",
+	"code": "TML",
+	"countryCode": "GH",
+	"countryName": "加纳",
+	cityFirstLetter: "T"
+}, {
+	cityName: "滕南特克里克",
+	citySpell: "TENGNANTEKELIKE",
+	"code": "TCA",
+	"countryCode": "AU",
+	"countryName": "澳大利亚",
+	cityFirstLetter: "T"
+}, {
+	cityName: "塔岁朱奥",
+	citySpell: "TASUIZHUAO",
+	"code": "YTQ",
+	"countryCode": "CA",
+	"countryName": "加拿大",
+	cityFirstLetter: "T"
+}, {
+	cityName: "塔威塔威",
+	citySpell: "TAWEITAWEI",
+	"code": "TWT",
+	"countryCode": "PH",
+	"countryName": "菲律宾",
+	cityFirstLetter: "T"
+}, {
+	cityName: "通贝斯",
+	citySpell: "TONGBEISI",
+	"code": "TBP",
+	"countryCode": "PE",
+	"countryName": "秘鲁",
+	cityFirstLetter: "T"
+}, {
+	cityName: "塔布比尔",
+	citySpell: "TABUBIER",
+	"code": "TBG",
+	"countryCode": "PG",
+	"countryName": "巴布亚新几内亚",
+	cityFirstLetter: "T"
+}, {
+	cityName: "坦波夫",
+	citySpell: "TANBOFU",
+	"code": "TBW",
+	"countryCode": "RU",
+	"countryName": "俄罗斯",
+	cityFirstLetter: "T"
+}, {
+	cityName: "特拉维夫",
+	citySpell: "TELAWEIFU",
+	"code": "TLV",
+	"countryCode": "IL",
+	"countryName": "以色列",
+	cityFirstLetter: "T"
+}, {
+	cityName: "托卡特",
+	citySpell: "TUOKATE",
+	"code": "TJK",
+	"countryCode": "TR",
+	"countryName": "土耳其",
+	cityFirstLetter: "T"
+}, {
+	cityName: "塔布拉斯",
+	citySpell: "TABULASI",
+	"code": "TBH",
+	"countryCode": "PH",
+	"countryName": "菲律宾",
+	cityFirstLetter: "T"
+}, {
+	cityName: "塔夫坦",
+	citySpell: "TAFUTAN",
+	"code": "TFT",
+	"countryCode": "PK",
+	"countryName": "巴基斯坦",
+	cityFirstLetter: "T"
+}, {
+	cityName: "坦博尔",
+	citySpell: "TANBOER",
+	"code": "TMU",
+	"countryCode": "CR",
+	"countryName": "哥斯达黎加",
+	cityFirstLetter: "T"
+}, {
+	cityName: "汤斯维尔",
+	citySpell: "TANGSIWEIER",
+	"code": "TSV",
+	"countryCode": "AU",
+	"countryName": "澳大利亚",
+	cityFirstLetter: "T"
+}, {
+	cityName: "坦噶",
+	citySpell: "TANGA",
+	"code": "TGT",
+	"countryCode": "TZ",
+	"countryName": "坦桑尼亚",
+	cityFirstLetter: "T"
+}, {
+	cityName: "泰里岛 因纳赫布里德斯",
+	citySpell: "TAILIDAO YINNAHEBULIDESI",
+	"code": "TRE",
+	"countryCode": "GB",
+	"countryName": "英国",
+	cityFirstLetter: "T"
+}, {
+	cityName: "特尔古穆列什",
+	citySpell: "TEERGUMULIESHI",
+	"code": "TGM",
+	"countryCode": "RO",
+	"countryName": "罗马尼亚",
+	cityFirstLetter: "T"
+}, {
+	cityName: "泰德包罗",
+	citySpell: "TAIDEBAOLUO",
+	"code": "TEB",
+	"countryCode": "US",
+	"countryName": "美国",
+	cityFirstLetter: "T"
+}, {
+	cityName: "特尔赛拉岛",
+	citySpell: "TEERSAILADAO",
+	"code": "TER",
+	"countryCode": "PT",
+	"countryName": "葡萄牙",
+	cityFirstLetter: "T"
+}, {
+	cityName: "土姆林塔尔",
+	citySpell: "TUMULINTAER",
+	"code": "TMI",
+	"countryCode": "NP",
+	"countryName": "尼泊尔",
+	cityFirstLetter: "T"
+}, {
+	cityName: "托莱多",
+	citySpell: "TUOLAIDUO",
+	"code": "TOL",
+	"countryCode": "US",
+	"countryName": "美国",
+	cityFirstLetter: "T"
+}, {
+	cityName: "滕达河",
+	citySpell: "TENGDAHE",
+	"code": "TYD",
+	"countryCode": "RU",
+	"countryName": "俄罗斯",
+	cityFirstLetter: "T"
+}, {
+	cityName: "图马科",
+	citySpell: "TUMAKE",
+	"code": "TCO",
+	"countryCode": "CO",
+	"countryName": "哥伦比亚",
+	cityFirstLetter: "T"
+}, {
+	cityName: "托霍延杜",
+	citySpell: "TUOHUOYANDU",
+	"code": "THY",
+	"countryCode": "ZA",
+	"countryName": "南非",
+	cityFirstLetter: "T"
+}, {
+	cityName: "塔马塔夫",
+	citySpell: "TAMATAFU",
+	"code": "TMM",
+	"countryCode": "MG",
+	"countryName": "马达加斯加",
+	cityFirstLetter: "T"
+}, {
+	cityName: "泰勒",
+	citySpell: "TAILE",
+	"code": "TYR",
+	"countryCode": "US",
+	"countryName": "美国",
+	cityFirstLetter: "T"
+}, {
+	cityName: "塔希拉克",
+	citySpell: "TAXILAKE",
+	"code": "AGM",
+	"countryCode": "GL",
+	"countryName": "格陵兰岛",
+	cityFirstLetter: "T"
+}, {
+	cityName: "通图图里阿克",
+	citySpell: "TONGTUTULIAKE",
+	"code": "WTL",
+	"countryCode": "US",
+	"countryName": "美国",
+	cityFirstLetter: "T"
+}, {
+	cityName: "塔凯克",
+	citySpell: "TAKAIKE",
+	"code": "THK",
+	"countryCode": "LA",
+	"countryName": "老挝",
+	cityFirstLetter: "T"
+}, {
+	cityName: "托克苏克",
+	citySpell: "TUOKESUKE",
+	"code": "OOK",
+	"countryCode": "US",
+	"countryName": "美国",
+	cityFirstLetter: "T"
+}, {
+	cityName: "吐丕洛",
+	citySpell: "TUPILUO",
+	"code": "TUP",
+	"countryCode": "US",
+	"countryName": "美国",
+	cityFirstLetter: "T"
+}, {
+	cityName: "塔林",
+	citySpell: "TALIN",
+	"code": "TLL",
+	"countryCode": "EE",
+	"countryName": "爱沙尼亚",
+	cityFirstLetter: "T"
+}, {
+	cityName: "塔马林德",
+	citySpell: "TAMALINDE",
+	"code": "TNO",
+	"countryCode": "CR",
+	"countryName": "哥斯达黎加",
+	cityFirstLetter: "T"
+}, {
+	cityName: "特罗尔海坦",
+	citySpell: "TELUOERHAITAN",
+	"code": "THN",
+	"countryCode": "SE",
+	"countryName": "瑞典",
+	cityFirstLetter: "T"
+}, {
+	cityName: "太特",
+	citySpell: "TAITE",
+	"code": "TET",
+	"countryCode": "MZ",
+	"countryName": "莫桑比克",
+	cityFirstLetter: "T"
+}, {
+	cityName: "土布艾群岛",
+	citySpell: "TUBUAIQUNDAO",
+	"code": "TUB",
+	"countryCode": "PF",
+	"countryName": "法属波利尼西亚",
+	cityFirstLetter: "T"
+}, {
+	cityName: "太阳谷",
+	citySpell: "TAIYANGGU",
+	"code": "SUN",
+	"countryCode": "US",
+	"countryName": "美国",
+	cityFirstLetter: "T"
+}, {
+	cityName: "塔卡罗阿环礁",
+	citySpell: "TAKALUOAHUANJIAO",
+	"code": "TKX",
+	"countryCode": "PF",
+	"countryName": "法属波利尼西亚",
+	cityFirstLetter: "T"
+}, {
+	cityName: "土库曼巴希",
+	citySpell: "TUKUMANBAXI",
+	"code": "KRW",
+	"countryCode": "TM",
+	"countryName": "土库曼斯坦",
+	cityFirstLetter: "T"
+}, {
+	cityName: "特隆赫姆",
+	citySpell: "TELONGHEMU",
+	"code": "TRD",
+	"countryCode": "NO",
+	"countryName": "挪威",
+	cityFirstLetter: "T"
+}, {
+	cityName: "托木斯克",
+	citySpell: "TUOMUSIKE",
+	"code": "TOF",
+	"countryCode": "RU",
+	"countryName": "俄罗斯",
+	cityFirstLetter: "T"
+}, {
+	cityName: "托贾克",
+	citySpell: "TUOJIAKE",
+	"code": "TOG",
+	"countryCode": "US",
+	"countryName": "美国",
+	cityFirstLetter: "T"
+}, {
+	cityName: "塔尔萨",
+	citySpell: "TAERSA",
+	"code": "TUL",
+	"countryCode": "US",
+	"countryName": "美国",
+	cityFirstLetter: "T"
+}, {
+	cityName: "廷杜夫",
+	citySpell: "TINGDUFU",
+	"code": "TIN",
+	"countryCode": "DZ",
+	"countryName": "阿尔及利亚",
+	cityFirstLetter: "T"
+}, {
+	cityName: "陶波",
+	citySpell: "TAOBO",
+	"code": "TUO",
+	"countryCode": "NZ",
+	"countryName": "新西兰",
+	cityFirstLetter: "T"
+}, {
+	cityName: "提亚雷特",
+	citySpell: "TIYALEITE",
+	"code": "TID",
+	"countryCode": "DZ",
+	"countryName": "阿尔及利亚",
+	cityFirstLetter: "T"
+}, {
+	cityName: "提皮",
+	citySpell: "TIPI",
+	"code": "TIE",
+	"countryCode": "ET",
+	"countryName": "埃塞俄比亚",
+	cityFirstLetter: "T"
+}, {
+	cityName: "塔卡卡",
+	citySpell: "TAKAKA",
+	"code": "KTF",
+	"countryCode": "NZ",
+	"countryName": "新西兰",
+	cityFirstLetter: "T"
+}, {
+	cityName: "坦达图拉",
+	citySpell: "TANDATULA",
+	"code": "TDT",
+	"countryCode": "ZA",
+	"countryName": "南非",
+	cityFirstLetter: "T"
+}, {
+	cityName: "特克萨卡纳",
+	citySpell: "TEKESAKANA",
+	"code": "TXK",
+	"countryCode": "US",
+	"countryName": "美国",
+	cityFirstLetter: "T"
+}, {
+	cityName: "图尔斯",
+	citySpell: "TUERSI",
+	"code": "TUF",
+	"countryCode": "FR",
+	"countryName": "法国",
+	cityFirstLetter: "T"
+}, {
+	cityName: "图兹拉",
+	citySpell: "TUZILA",
+	"code": "TZL",
+	"countryCode": "BA",
+	"countryName": "波斯尼亚和黑塞哥维那",
+	cityFirstLetter: "T"
+}, {
+	cityName: "塔比拉兰",
+	citySpell: "TABILALAN",
+	"code": "TAG",
+	"countryCode": "PH",
+	"countryName": "菲律宾",
+	cityFirstLetter: "T"
+}, {
+	cityName: "塔纳岛",
+	citySpell: "TANADAO",
+	"code": "TAH",
+	"countryCode": "VU",
+	"countryName": "瓦努阿图",
+	cityFirstLetter: "T"
+}, {
+	cityName: "台南",
+	citySpell: "TAINAN",
+	"code": "TNN",
+	"countryCode": "TW",
+	"countryName": "中国台湾",
+	cityFirstLetter: "T"
+}, {
+	cityName: "泰西勒",
+	citySpell: "TAIXILE",
+	"code": "TSI",
+	"countryCode": "PG",
+	"countryName": "巴布亚新几内亚",
+	cityFirstLetter: "T"
+}, {
+	cityName: "托科阿",
+	citySpell: "TUOKEA",
+	"code": "TOC",
+	"countryCode": "US",
+	"countryName": "美国",
+	cityFirstLetter: "T"
+}, {
+	cityName: "塔古拉",
+	citySpell: "TAGULA",
+	"code": "TGL",
+	"countryCode": "PG",
+	"countryName": "巴布亚新几内亚",
+	cityFirstLetter: "T"
+}, {
+	cityName: "坦皮科",
+	citySpell: "TANPIKE",
+	"code": "TAM",
+	"countryCode": "MX",
+	"countryName": "墨西哥",
+	cityFirstLetter: "T"
+}, {
+	cityName: "提布博拉",
+	citySpell: "TIBUBOLA",
+	"code": "TYB",
+	"countryCode": "AU",
+	"countryName": "澳大利亚",
+	cityFirstLetter: "T"
+}, {
+	cityName: "突尼斯",
+	citySpell: "TUNISI",
+	"code": "TUN",
+	"countryCode": "TN",
+	"countryName": "突尼斯",
+	cityFirstLetter: "T"
+}, {
+	cityName: "台东",
+	citySpell: "TAIDONG",
+	"code": "TTT",
+	"countryCode": "TW",
+	"countryName": "中国台湾",
+	cityFirstLetter: "T"
+}, {
+	cityName: "特内里费",
+	citySpell: "TENEILIFEI",
+	"code": "TCI",
+	"countryCode": "ES",
+	"countryName": "西班牙",
+	cityFirstLetter: "T"
+}, {
+	cityName: "托皮卡",
+	citySpell: "TUOPIKA",
+	"code": "TOP",
+	"countryCode": "US",
+	"countryName": "美国",
+	cityFirstLetter: "T"
+}, {
+	cityName: "塔库梅",
+	citySpell: "TAKUMEI",
+	"code": "TJN",
+	"countryCode": "PF",
+	"countryName": "法属波利尼西亚",
+	cityFirstLetter: "T"
+}, {
+	cityName: "塔格比塔",
+	citySpell: "TAGEBITA",
+	"code": "TGB",
+	"countryCode": "PH",
+	"countryName": "菲律宾",
+	cityFirstLetter: "T"
+}, {
+	cityName: "提鲁瓦南萨普拉姆",
+	citySpell: "TILUWANANSAPULAMU",
+	"code": "TRV",
+	"countryCode": "IN",
+	"countryName": "印度",
+	cityFirstLetter: "T"
+}, {
+	cityName: "土伦",
+	citySpell: "TULUN",
+	"code": "TLN",
+	"countryCode": "FR",
+	"countryName": "法国",
+	cityFirstLetter: "T"
+}, {
+	cityName: "特普特普",
+	citySpell: "TEPUTEPU",
+	"code": "TEP",
+	"countryCode": "PG",
+	"countryName": "巴布亚新几内亚",
+	cityFirstLetter: "T"
+}, {
+	cityName: "桐艾府",
+	citySpell: "TONGAIFU",
+	"code": "TDX",
+	"countryCode": "TH",
+	"countryName": "泰国",
+	cityFirstLetter: "T"
+}, {
+	cityName: "图努纳克",
+	citySpell: "TUNUNAKE",
+	"code": "TNK",
+	"countryCode": "US",
+	"countryName": "美国",
+	cityFirstLetter: "T"
+}, {
+	cityName: "坦博拉卡",
+	citySpell: "TANBOLAKA",
+	"code": "TMC",
+	"countryCode": "ID",
+	"countryName": "印度尼西亚",
+	cityFirstLetter: "T"
+}, {
+	cityName: "塔罗尤克",
+	citySpell: "TALUOYOUKE",
+	"code": "YYH",
+	"countryCode": "CA",
+	"countryName": "加拿大",
+	cityFirstLetter: "T"
+}, {
+	cityName: "图尔西奈城",
+	citySpell: "TUERXINAICHENG",
+	"code": "ELT",
+	"countryCode": "EG",
+	"countryName": "埃及",
+	cityFirstLetter: "T"
+}, {
+	cityName: "特莫拉",
+	citySpell: "TEMOLA",
+	"code": "TEM",
+	"countryCode": "AU",
+	"countryName": "澳大利亚",
+	cityFirstLetter: "T"
+}, {
+	cityName: "土瓦",
+	citySpell: "TUWA",
+	"code": "TVY",
+	"countryCode": "MM",
+	"countryName": "缅甸",
+	cityFirstLetter: "T"
+}, {
+	cityName: "特皮克",
+	citySpell: "TEPIKE",
+	"code": "TPQ",
+	"countryCode": "MX",
+	"countryName": "墨西哥",
+	cityFirstLetter: "T"
+}, {
+	cityName: "温哥华",
+	citySpell: "WENGEHUA",
+	"code": "YVR",
+	"countryCode": "CA",
+	"countryName": "加拿大",
+	cityFirstLetter: "W"
+}, {
+	cityName: "维也纳",
+	citySpell: "WEIYENA",
+	"code": "VIE",
+	"countryCode": "AT",
+	"countryName": "奥地利",
+	cityFirstLetter: "W"
+}, {
+	cityName: "威尼斯",
+	citySpell: "WEINISI",
+	"code": "VCE",
+	"countryCode": "IT",
+	"countryName": "意大利",
+	cityFirstLetter: "W"
+}, {
+	cityName: "渥太华",
+	citySpell: "WOTAIHUA",
+	"code": "YOW",
+	"countryCode": "CA",
+	"countryName": "加拿大",
+	cityFirstLetter: "W"
+}, {
+	cityName: "维斯比",
+	citySpell: "WEISIBI",
+	"code": "VBY",
+	"countryCode": "SE",
+	"countryName": "瑞典",
+	cityFirstLetter: "W"
+}, {
+	cityName: "乌布鲁布－伊利安爪哇",
+	citySpell: "WUBULUBU－YILIANZHUAWA",
+	"code": "UBR",
+	"countryCode": "ID",
+	"countryName": "印度尼西亚",
+	cityFirstLetter: "W"
+}, {
+	cityName: "乌尔贾尔",
+	citySpell: "WUERJIAER",
+	"code": "UZR",
+	"countryCode": "KZ",
+	"countryName": "哈萨克斯坦",
+	cityFirstLetter: "W"
+}, {
+	cityName: "沃洛涅日",
+	citySpell: "WOLUONIERI",
+	"code": "VOZ",
+	"countryCode": "RU",
+	"countryName": "俄罗斯",
+	cityFirstLetter: "W"
+}, {
+	cityName: "乌赫塔",
+	citySpell: "WUHETA",
+	"code": "UCT",
+	"countryCode": "RU",
+	"countryName": "俄罗斯",
+	cityFirstLetter: "W"
+}, {
+	cityName: "维多利亚",
+	citySpell: "WEIDUOLIYA",
+	"code": "YYJ",
+	"countryCode": "CA",
+	"countryName": "加拿大",
+	cityFirstLetter: "W"
+}, {
+	cityName: "温莎",
+	citySpell: "WENSHA",
+	"code": "YQG",
+	"countryCode": "CA",
+	"countryName": "加拿大",
+	cityFirstLetter: "W"
+}, {
+	cityName: "维杰亚瓦达",
+	citySpell: "WEIJIEYAWADA",
+	"code": "VGA",
+	"countryCode": "IN",
+	"countryName": "印度",
+	cityFirstLetter: "W"
+}, {
+	cityName: "乌拉尔斯克",
+	citySpell: "WULAERSIKE",
+	"code": "URA",
+	"countryCode": "KZ",
+	"countryName": "哈萨克斯坦",
+	cityFirstLetter: "W"
+}, {
+	cityName: "娃吉尼亚",
+	citySpell: "WAJINIYA",
+	"code": "VAG",
+	"countryCode": "BR",
+	"countryName": "巴西",
+	cityFirstLetter: "W"
+}, {
+	cityName: "乌里韦",
+	citySpell: "WULIWEI",
+	"code": "URI",
+	"countryCode": "CO",
+	"countryName": "哥伦比亚",
+	cityFirstLetter: "W"
+}, {
+	cityName: "维勒加斯将军城",
+	citySpell: "WEILEJIASIJIANGJUNCHENG",
+	"code": "VGS",
+	"countryCode": "AR",
+	"countryName": "阿根廷",
+	cityFirstLetter: "W"
+}, {
+	cityName: "乌多姆塞",
+	citySpell: "WUDUOMUSAI",
+	"code": "ODY",
+	"countryCode": "LA",
+	"countryName": "老挝",
+	cityFirstLetter: "W"
+}, {
+	cityName: "乌雷",
+	citySpell: "WULEI",
+	"code": "ULB",
+	"countryCode": "VU",
+	"countryName": "瓦努阿图",
+	cityFirstLetter: "W"
+}, {
+	cityName: "乌戎潘当",
+	citySpell: "WURONGPANDANG",
+	"code": "UPG",
+	"countryCode": "ID",
+	"countryName": "印度尼西亚",
+	cityFirstLetter: "W"
+}, {
+	cityName: "乌阿胡卡",
+	citySpell: "WUAHUKA",
+	"code": "UAH",
+	"countryCode": "PF",
+	"countryName": "法属波利尼西亚",
+	cityFirstLetter: "W"
+}, {
+	cityName: "乌纳拉克里",
+	citySpell: "WUNALAKELI",
+	"code": "UNK",
+	"countryCode": "US",
+	"countryName": "美国",
+	cityFirstLetter: "W"
+}, {
+	cityName: "沃兰",
+	citySpell: "WOLAN",
+	"code": "WRL",
+	"countryCode": "US",
+	"countryName": "美国",
+	cityFirstLetter: "W"
+}, {
+	cityName: "沃尔夫波因特",
+	citySpell: "WOERFUBOYINTE",
+	"code": "OLF",
+	"countryCode": "US",
+	"countryName": "美国",
+	cityFirstLetter: "W"
+}, {
+	cityName: "乌代布尔",
+	citySpell: "WUDAIBUER",
+	"code": "UDR",
+	"countryCode": "IN",
+	"countryName": "印度",
+	cityFirstLetter: "W"
+}, {
+	cityName: "维克奥夫福赫尔",
+	citySpell: "WEIKEAOFUFUHEER",
+	"code": "OHR",
+	"countryCode": "DE",
+	"countryName": "德国",
+	cityFirstLetter: "W"
+}, {
+	cityName: "乌姆塔塔",
+	citySpell: "WUMUTATA",
+	"code": "UTT",
+	"countryCode": "ZA",
+	"countryName": "南非",
+	cityFirstLetter: "W"
+}, {
+	cityName: "乌斯内拉",
+	citySpell: "WUSINEILA",
+	"code": "USR",
+	"countryCode": "RU",
+	"countryName": "俄罗斯",
+	cityFirstLetter: "W"
+}, {
+	cityName: "维代利亚",
+	citySpell: "WEIDAILIYA",
+	"code": "VDI",
+	"countryCode": "US",
+	"countryName": "美国",
+	cityFirstLetter: "W"
+}, {
+	cityName: "维多利亚",
+	citySpell: "WEIDUOLIYA",
+	"code": "VIX",
+	"countryCode": "BR",
+	"countryName": "巴西",
+	cityFirstLetter: "W"
+}, {
+	cityName: "乌登",
+	citySpell: "WUDENG",
+	"code": "UDE",
+	"countryCode": "NL",
+	"countryName": "荷兰",
+	cityFirstLetter: "W"
+}, {
+	cityName: "维塞利亚",
+	citySpell: "WEISAILIYA",
+	"code": "VIS",
+	"countryCode": "US",
+	"countryName": "美国",
+	cityFirstLetter: "W"
+}, {
+	cityName: "乌斯季库伊加",
+	citySpell: "WUSIJIKUYIJIA",
+	"code": "UKG",
+	"countryCode": "RU",
+	"countryName": "俄罗斯",
+	cityFirstLetter: "W"
+}, {
+	cityName: "乌兰巴托",
+	citySpell: "WULANBATUO",
+	"code": "ULN",
+	"countryCode": "MN",
+	"countryName": "蒙古",
+	cityFirstLetter: "W"
+}, {
+	cityName: "乌佛尔",
+	citySpell: "WUFOER",
+	"code": "UVO",
+	"countryCode": "PG",
+	"countryName": "巴布亚新几内亚",
+	cityFirstLetter: "W"
+}, {
+	cityName: "武里南",
+	citySpell: "WULINAN",
+	"code": "BFV",
+	"countryCode": "TH",
+	"countryName": "泰国",
+	cityFirstLetter: "W"
+}, {
+	cityName: "韦恩斯堡",
+	citySpell: "WEIENSIBAO",
+	"code": "WAY",
+	"countryCode": "US",
+	"countryName": "美国",
+	cityFirstLetter: "W"
+}, {
+	cityName: "乌拉奥",
+	citySpell: "WULAAO",
+	"code": "URR",
+	"countryCode": "CO",
+	"countryName": "哥伦比亚",
+	cityFirstLetter: "W"
+}, {
+	cityName: "瓦尔纳",
+	citySpell: "WAERNA",
+	"code": "VAR",
+	"countryCode": "BG",
+	"countryName": "保加利亚",
+	cityFirstLetter: "W"
+}, {
+	cityName: "乌山",
+	citySpell: "WUSHAN",
+	"code": "OSN",
+	"countryCode": "KR",
+	"countryName": "韩国",
+	cityFirstLetter: "W"
+}, {
+	cityName: "温德和克",
+	citySpell: "WENDEHEKE",
+	"code": "WDH",
+	"countryCode": "NA",
+	"countryName": "纳米比亚",
+	cityFirstLetter: "W"
+}, {
+	cityName: "维哥",
+	citySpell: "WEIGE",
+	"code": "VGO",
+	"countryCode": "ES",
+	"countryName": "西班牙",
+	cityFirstLetter: "W"
+}, {
+	cityName: "乌乌鲁岛",
+	citySpell: "WUWULUDAO",
+	"code": "WUV",
+	"countryCode": "PG",
+	"countryName": "巴布亚新几内亚",
+	cityFirstLetter: "W"
+}, {
+	cityName: "沃特敦（纽约州）",
+	citySpell: "WOTEDUN",
+	"code": "ART",
+	"countryCode": "US",
+	"countryName": "美国",
+	cityFirstLetter: "W"
+}, {
+	cityName: "温顿",
+	citySpell: "WENDUN",
+	"code": "WIN",
+	"countryCode": "AU",
+	"countryName": "澳大利亚",
+	cityFirstLetter: "W"
+}, {
+	cityName: "瓦勒斯迪尔",
+	citySpell: "WALESIDIER",
+	"code": "VLS",
+	"countryCode": "VU",
+	"countryName": "瓦努阿图",
+	cityFirstLetter: "W"
+}, {
+	cityName: "乌兰乌德",
+	citySpell: "WULANWUDE",
+	"code": "UUD",
+	"countryCode": "RU",
+	"countryName": "俄罗斯",
+	cityFirstLetter: "W"
+}, {
+	cityName: "瓦努科",
+	citySpell: "WANUKE",
+	"code": "HUU",
+	"countryCode": "PE",
+	"countryName": "秘鲁",
+	cityFirstLetter: "W"
+}, {
+	cityName: "纹别",
+	citySpell: "WENBIE",
+	"code": "MBE",
+	"countryCode": "JP",
+	"countryName": "日本",
+	cityFirstLetter: "W"
+}, {
+	cityName: "万鲁克",
+	citySpell: "WANLUKE",
+	"code": "VNR",
+	"countryCode": "AU",
+	"countryName": "澳大利亚",
+	cityFirstLetter: "W"
+}, {
+	cityName: "温泉城（阿肯色州）",
+	citySpell: "WENQUAN",
+	"code": "HOT",
+	"countryCode": "US",
+	"countryName": "美国",
+	cityFirstLetter: "W"
+}, {
+	cityName: "威尔士",
+	citySpell: "WEIERSHI",
+	"code": "WAA",
+	"countryCode": "US",
+	"countryName": "美国",
+	cityFirstLetter: "W"
+}, {
+	cityName: "沃图波兰加",
+	citySpell: "WOTUBOLANJIA",
+	"code": "VOT",
+	"countryCode": "BR",
+	"countryName": "巴西",
+	cityFirstLetter: "W"
+}, {
+	cityName: "瓦南布尔",
+	citySpell: "WANANBUER",
+	"code": "WMB",
+	"countryCode": "AU",
+	"countryName": "澳大利亚",
+	cityFirstLetter: "W"
+}, {
+	cityName: "乌奇萨",
+	citySpell: "WUQISA",
+	"code": "UCZ",
+	"countryCode": "PE",
+	"countryName": "秘鲁",
+	cityFirstLetter: "W"
+}, {
+	cityName: "万盖国家公园",
+	citySpell: "WANGAIGUOJIAGONGYUAN",
+	"code": "HWN",
+	"countryCode": "ZW",
+	"countryName": "津巴布韦",
+	cityFirstLetter: "W"
+}, {
+	cityName: "威皮姆",
+	citySpell: "WEIPIMU",
+	"code": "WPM",
+	"countryCode": "PG",
+	"countryName": "巴布亚新几内亚",
+	cityFirstLetter: "W"
+}, {
+	cityName: "维多利亚",
+	citySpell: "WEIDUOLIYA",
+	"code": "VCT",
+	"countryCode": "US",
+	"countryName": "美国",
+	cityFirstLetter: "W"
+}, {
+	cityName: "韦科",
+	citySpell: "WEIKE",
+	"code": "ACT",
+	"countryCode": "US",
+	"countryName": "美国",
+	cityFirstLetter: "W"
+}, {
+	cityName: "万象",
+	citySpell: "WANXIANG",
+	"code": "VTE",
+	"countryCode": "LA",
+	"countryName": "老挝",
+	cityFirstLetter: "W"
+}, {
+	cityName: "乌辛斯克",
+	citySpell: "WUXINSIKE",
+	"code": "USK",
+	"countryCode": "RU",
+	"countryName": "俄罗斯",
+	cityFirstLetter: "W"
+}, {
+	cityName: "瓦埃勒",
+	citySpell: "WAAILE",
+	"code": "VEJ",
+	"countryCode": "DK",
+	"countryName": "丹麦",
+	cityFirstLetter: "W"
+}, {
+	cityName: "沃托",
+	citySpell: "WOTUO",
+	"code": "WTO",
+	"countryCode": "MH",
+	"countryName": "马绍尔群岛",
+	cityFirstLetter: "W"
+}, {
+	cityName: "沃赫马",
+	citySpell: "WOHEMA",
+	"code": "VOH",
+	"countryCode": "MG",
+	"countryName": "马达加斯加",
+	cityFirstLetter: "W"
+}, {
+	cityName: "维罗纳",
+	citySpell: "WEILUONA",
+	"code": "VRN",
+	"countryCode": "IT",
+	"countryName": "意大利",
+	cityFirstLetter: "W"
+}, {
+	cityName: "文尼察",
+	citySpell: "WENNICHA",
+	"code": "VIN",
+	"countryCode": "UA",
+	"countryName": "乌克兰",
+	cityFirstLetter: "W"
+}, {
+	cityName: "瓦格尼",
+	citySpell: "WAGENI",
+	"code": "WGY",
+	"countryCode": "GA",
+	"countryName": "加蓬",
+	cityFirstLetter: "W"
+}, {
+	cityName: "维多利亚-达孔基斯塔",
+	citySpell: "WEIDUOLIYADAKONGJISITA",
+	"code": "VDC",
+	"countryCode": "BR",
+	"countryName": "巴西",
+	cityFirstLetter: "W"
+}, {
+	cityName: "瓦尔格拉",
+	citySpell: "WAERGELA",
+	"code": "OGX",
+	"countryCode": "DZ",
+	"countryName": "阿尔及利亚",
+	cityFirstLetter: "W"
+}, {
+	cityName: "威奇托市",
+	citySpell: "WEIQITUOSHI",
+	"code": "ICT",
+	"countryCode": "US",
+	"countryName": "美国",
+	cityFirstLetter: "W"
+}, {
+	cityName: "乌德纳达塔",
+	citySpell: "WUDENADATA",
+	"code": "ODD",
+	"countryCode": "AU",
+	"countryName": "澳大利亚",
+	cityFirstLetter: "W"
+}, {
+	cityName: "沃特福德",
+	citySpell: "WOTEFUDE",
+	"code": "WAT",
+	"countryCode": "IE",
+	"countryName": "爱尔兰",
+	cityFirstLetter: "W"
+}, {
+	cityName: "乌鲁萨巴",
+	citySpell: "WULUSABA",
+	"code": "ULX",
+	"countryCode": "ZA",
+	"countryName": "南非",
+	cityFirstLetter: "W"
+}, {
+	cityName: "乌穆阿拉马",
+	citySpell: "WUMUALAMA",
+	"code": "UMU",
+	"countryCode": "BR",
+	"countryName": "巴西",
+	cityFirstLetter: "W"
+}, {
+	cityName: "乌法",
+	citySpell: "WUFA",
+	"code": "UFA",
+	"countryCode": "RU",
+	"countryName": "俄罗斯",
+	cityFirstLetter: "W"
+}, {
+	cityName: "万鸦老",
+	citySpell: "WANYALAO",
+	"code": "MDC",
+	"countryCode": "ID",
+	"countryName": "印度尼西亚",
+	cityFirstLetter: "W"
+}, {
+	cityName: "维多利亚城",
+	citySpell: "WEIDUOLIYACHENG",
+	"code": "CVM",
+	"countryCode": "MX",
+	"countryName": "墨西哥",
+	cityFirstLetter: "W"
+}, {
+	cityName: "瓦尔多",
+	citySpell: "WAERDUO",
+	"code": "VAW",
+	"countryCode": "NO",
+	"countryName": "挪威",
+	cityFirstLetter: "W"
+}, {
+	cityName: "乌斯季卡缅诺戈尔斯克",
+	citySpell: "WUSIJIKAMIANNUOGEERSIKE",
+	"code": "UKK",
+	"countryCode": "KZ",
+	"countryName": "哈萨克斯坦",
+	cityFirstLetter: "W"
+}, {
+	cityName: "瓦苏",
+	citySpell: "WASU",
+	"code": "WSU",
+	"countryCode": "PG",
+	"countryName": "巴布亚新几内亚",
+	cityFirstLetter: "W"
+}, {
+	cityName: "瓦拉达里斯州长",
+	citySpell: "WALADALISIZHOUZHANG",
+	"code": "GVR",
+	"countryCode": "BR",
+	"countryName": "巴西",
+	cityFirstLetter: "W"
+}, {
+	cityName: "乌斯季库特",
+	citySpell: "WUSIJIKUTE",
+	"code": "UKX",
+	"countryCode": "RU",
+	"countryName": "俄罗斯",
+	cityFirstLetter: "W"
+}, {
+	cityName: "瓦尼莫",
+	citySpell: "WANIMO",
+	"code": "VAI",
+	"countryCode": "PG",
+	"countryName": "巴布亚新几内亚",
+	cityFirstLetter: "W"
+}, {
+	cityName: "维塞乌",
+	citySpell: "WEISAIWU",
+	"code": "VSE",
+	"countryCode": "PT",
+	"countryName": "葡萄牙",
+	cityFirstLetter: "W"
+}, {
+	cityName: "沃特敦",
+	citySpell: "WOTEDUN",
+	"code": "ATY",
+	"countryCode": "US",
+	"countryName": "美国",
+	cityFirstLetter: "W"
+}, {
+	cityName: "瓦卡",
+	citySpell: "WAKA",
+	"code": "WAC",
+	"countryCode": "ET",
+	"countryName": "埃塞俄比亚",
+	cityFirstLetter: "W"
+}, {
+	cityName: "温多拉",
+	citySpell: "WENDUOLA",
+	"code": "WNR",
+	"countryCode": "AU",
+	"countryName": "澳大利亚",
+	cityFirstLetter: "W"
+}, {
+	cityName: "旺杜拉",
+	citySpell: "WANGDULA",
+	"code": "WON",
+	"countryCode": "AU",
+	"countryName": "澳大利亚",
+	cityFirstLetter: "W"
+}, {
+	cityName: "威尔明顿（特拉华州）",
+	citySpell: "WEIERMINGDUN",
+	"code": "ILG",
+	"countryCode": "US",
+	"countryName": "美国",
+	cityFirstLetter: "W"
+}, {
+	cityName: "危地马拉城",
+	citySpell: "WEIDIMALACHENG",
+	"code": "GUA",
+	"countryCode": "GT",
+	"countryName": "危地马拉",
+	cityFirstLetter: "W"
+}, {
+	cityName: "维平格",
+	citySpell: "WEIPINGGE",
+	"code": "VPG",
+	"countryCode": "KE",
+	"countryName": "肯尼亚",
+	cityFirstLetter: "W"
+}, {
+	cityName: "温德姆",
+	citySpell: "WENDEMU",
+	"code": "WYN",
+	"countryCode": "AU",
+	"countryName": "澳大利亚",
+	cityFirstLetter: "W"
+}, {
+	cityName: "万博",
+	citySpell: "WANBO",
+	"code": "NOV",
+	"countryCode": "AO",
+	"countryName": "安哥拉",
+	cityFirstLetter: "W"
+}, {
+	cityName: "乌苗奥",
+	citySpell: "WUMIAOAO",
+	"code": "YUD",
+	"countryCode": "CA",
+	"countryName": "加拿大",
+	cityFirstLetter: "W"
+}, {
+	cityName: "维柳伊斯克",
+	citySpell: "WEILIUYISIKE",
+	"code": "VYI",
+	"countryCode": "RU",
+	"countryName": "俄罗斯",
+	cityFirstLetter: "W"
+}, {
+	cityName: "乌约",
+	citySpell: "WUYUE",
+	"code": "QUO",
+	"countryCode": "NG",
+	"countryName": "尼日利亚",
+	cityFirstLetter: "W"
+}, {
+	cityName: "威瓦克",
+	citySpell: "WEIWAKE",
+	"code": "WWK",
+	"countryCode": "PG",
+	"countryName": "巴布亚新几内亚",
+	cityFirstLetter: "W"
+}, {
+	cityName: "沃索",
+	citySpell: "WOSUO",
+	"code": "AUW",
+	"countryCode": "US",
+	"countryName": "美国",
+	cityFirstLetter: "W"
+}, {
+	cityName: "韦夫希尔",
+	citySpell: "WEIFUXIER",
+	"code": "WAV",
+	"countryCode": "AU",
+	"countryName": "澳大利亚",
+	cityFirstLetter: "W"
+}, {
+	cityName: "乌托邦",
+	citySpell: "WUTUOBANG",
+	"code": "UTO",
+	"countryCode": "US",
+	"countryName": "美国",
+	cityFirstLetter: "W"
+}, {
+	cityName: "乌迪乌迪",
+	citySpell: "WUDIWUDI",
+	"code": "WWI",
+	"countryCode": "AU",
+	"countryName": "澳大利亚",
+	cityFirstLetter: "W"
+}, {
+	cityName: "瓦萨",
+	citySpell: "WASA",
+	"code": "VAA",
+	"countryCode": "FI",
+	"countryName": "芬兰",
+	cityFirstLetter: "W"
+}, {
+	cityName: "维敏吉",
+	citySpell: "WEIMINJI",
+	"code": "YNC",
+	"countryCode": "CA",
+	"countryName": "加拿大",
+	cityFirstLetter: "W"
+}, {
+	cityName: "瓦蒂埃恩",
+	citySpell: "WADIAIEN",
+	"code": "WDA",
+	"countryCode": "YE",
+	"countryName": "也门",
+	cityFirstLetter: "W"
+}, {
+	cityName: "瓦巴格",
+	citySpell: "WABAGE",
+	"code": "WAB",
+	"countryCode": "PG",
+	"countryName": "巴布亚新几内亚",
+	cityFirstLetter: "W"
+}, {
+	cityName: "瓦斯帕姆",
+	citySpell: "WASIPAMU",
+	"code": "WSP",
+	"countryCode": "NI",
+	"countryName": "尼加拉瓜",
+	cityFirstLetter: "W"
+}, {
+	cityName: "瓦代兹",
+	citySpell: "WADAIZI",
+	"code": "VDZ",
+	"countryCode": "US",
+	"countryName": "美国",
+	cityFirstLetter: "W"
+}, {
+	cityName: "维尔湾",
+	citySpell: "WEIERWAN",
+	"code": "YXN",
+	"countryCode": "CA",
+	"countryName": "加拿大",
+	cityFirstLetter: "W"
+}, {
+	cityName: "瓦尔考斯",
+	citySpell: "WAERKAOSI",
+	"code": "VRK",
+	"countryCode": "FI",
+	"countryName": "芬兰",
+	cityFirstLetter: "W"
+}, {
+	cityName: "瓦加杜古",
+	citySpell: "WAJIADUGU",
+	"code": "OUA",
+	"countryCode": "BF",
+	"countryName": "布基纳法索",
+	cityFirstLetter: "W"
+}, {
+	cityName: "韦尔",
+	citySpell: "WEIER",
+	"code": "EGE",
+	"countryCode": "US",
+	"countryName": "美国",
+	cityFirstLetter: "W"
+}, {
+	cityName: "维洛海滩",
+	citySpell: "WEILUOHAITAN",
+	"code": "VRB",
+	"countryCode": "US",
+	"countryName": "美国",
+	cityFirstLetter: "W"
+}, {
+	cityName: "瓦迪哈勒法",
+	citySpell: "WADIHALEFA",
+	"code": "WHF",
+	"countryCode": "SD",
+	"countryName": "苏丹",
+	cityFirstLetter: "W"
+}, {
+	cityName: "沃科普",
+	citySpell: "WOKEPU",
+	"code": "WAU",
+	"countryCode": "AU",
+	"countryName": "澳大利亚",
+	cityFirstLetter: "W"
+}, {
+	cityName: "乌昆达",
+	citySpell: "WUKUNDA",
+	"code": "UKA",
+	"countryCode": "KE",
+	"countryName": "肯尼亚",
+	cityFirstLetter: "W"
+}, {
+	cityName: "瓦吉尔",
+	citySpell: "WAJIER",
+	"code": "WJR",
+	"countryCode": "KE",
+	"countryName": "肯尼亚",
+	cityFirstLetter: "W"
+}, {
+	cityName: "维尔纽斯",
+	citySpell: "WEIERNIUSI",
+	"code": "VNO",
+	"countryCode": "LT",
+	"countryName": "立陶宛",
+	cityFirstLetter: "W"
+}, {
+	cityName: "万盖",
+	citySpell: "WANGAI",
+	"code": "WKI",
+	"countryCode": "ZW",
+	"countryName": "津巴布韦",
+	cityFirstLetter: "W"
+}, {
+	cityName: "乌拉基",
+	citySpell: "WULAJI",
+	"code": "URJ",
+	"countryCode": "RU",
+	"countryName": "俄罗斯",
+	cityFirstLetter: "W"
+}, {
+	cityName: "旺阿努伊",
+	citySpell: "WANGANUYI",
+	"code": "WAG",
+	"countryCode": "NZ",
+	"countryName": "新西兰",
+	cityFirstLetter: "W"
+}, {
+	cityName: "威尔克斯 巴里",
+	citySpell: "WEIERKESIBALI",
+	"code": "AVP",
+	"countryCode": "US",
+	"countryName": "美国",
+	cityFirstLetter: "W"
+}, {
+	cityName: "乌维亚",
+	citySpell: "WUWEIYA",
+	"code": "UVE",
+	"countryCode": "NC",
+	"countryName": "新喀里多尼亚（太平洋）",
+	cityFirstLetter: "W"
+}, {
+	cityName: "乌迪内",
+	citySpell: "WUDINEI",
+	"code": "UDN",
+	"countryCode": "IT",
+	"countryName": "意大利",
+	cityFirstLetter: "W"
+}, {
+	cityName: "瓦乌",
+	citySpell: "WAWU",
+	"code": "WUU",
+	"countryCode": "SS",
+	"countryName": "南苏丹共和国",
+	cityFirstLetter: "W"
+}, {
+	cityName: "沃因贾马",
+	citySpell: "WOYINJIAMA",
+	"code": "VOI",
+	"countryCode": "LR",
+	"countryName": "利比里亚",
+	cityFirstLetter: "W"
+}, {
+	cityName: "务安",
+	citySpell: "WUAN",
+	"code": "MWX",
+	"countryCode": "KR",
+	"countryName": "韩国",
+	cityFirstLetter: "W"
+}, {
+	cityName: "韦萨",
+	citySpell: "WEISA",
+	"code": "OUE",
+	"countryCode": "CG",
+	"countryName": "刚果",
+	cityFirstLetter: "W"
+}, {
+	cityName: "乌斯齐马",
+	citySpell: "WUSIQIMA",
+	"code": "UTS",
+	"countryCode": "RU",
+	"countryName": "俄罗斯",
+	cityFirstLetter: "W"
+}, {
+	cityName: "韦吉",
+	citySpell: "WEIJI",
+	"code": "EJH",
+	"countryCode": "SA",
+	"countryName": "沙特阿垃伯",
+	cityFirstLetter: "W"
+}, {
+	cityName: "武端",
+	citySpell: "WUDUAN",
+	"code": "BXU",
+	"countryCode": "PH",
+	"countryName": "菲律宾",
+	cityFirstLetter: "W"
+}, {
+	cityName: "温尼伯",
+	citySpell: "WENNIBO",
+	"code": "YWG",
+	"countryCode": "CA",
+	"countryName": "加拿大",
+	cityFirstLetter: "W"
+}, {
+	cityName: "瓦卡塔尼",
+	citySpell: "WAKATANI",
+	"code": "WHK",
+	"countryCode": "NZ",
+	"countryName": "新西兰",
+	cityFirstLetter: "W"
+}, {
+	cityName: "瓦抵达达瓦思尔",
+	citySpell: "WADIDADAWASIER",
+	"code": "WAE",
+	"countryCode": "SA",
+	"countryName": "沙特阿垃伯",
+	cityFirstLetter: "W"
+}, {
+	cityName: "威利斯顿",
+	citySpell: "WEILISIDUN",
+	"code": "ISN",
+	"countryCode": "US",
+	"countryName": "美国",
+	cityFirstLetter: "W"
+}, {
+	cityName: "维尔克恩维柳伊斯克",
+	citySpell: "WEIERKEENWEILIUYISIKE",
+	"code": "VHV",
+	"countryCode": "RU",
+	"countryName": "俄罗斯",
+	cityFirstLetter: "W"
+}, {
+	cityName: "乌汶",
+	citySpell: "WUWEN",
+	"code": "UBP",
+	"countryCode": "TH",
+	"countryName": "泰国",
+	cityFirstLetter: "W"
+}, {
+	cityName: "瓦德瑟",
+	citySpell: "WADESE",
+	"code": "VDS",
+	"countryCode": "NO",
+	"countryName": "挪威",
+	cityFirstLetter: "W"
+}, {
+	cityName: "威斯康星拉皮兹",
+	citySpell: "WEISIKANGXINGLAPIZI",
+	"code": "ISW",
+	"countryCode": "US",
+	"countryName": "美国",
+	cityFirstLetter: "W"
+}, {
+	cityName: "瓦波",
+	citySpell: "WABO",
+	"code": "WAO",
+	"countryCode": "PG",
+	"countryName": "巴布亚新几内亚",
+	cityFirstLetter: "W"
+}, {
+	cityName: "维维加尼",
+	citySpell: "WEIWEIJIANI",
+	"code": "VIV",
+	"countryCode": "PG",
+	"countryName": "巴布亚新几内亚",
+	cityFirstLetter: "W"
+}, {
+	cityName: "维多利亚大瀑布",
+	citySpell: "WEIDUOLIYADABAOBU",
+	"code": "VFA",
+	"countryCode": "ZW",
+	"countryName": "津巴布韦",
+	cityFirstLetter: "W"
+}, {
+	cityName: "瓦卡亚岛",
+	citySpell: "WAKAYADAO",
+	"code": "KAY",
+	"countryCode": "FJ",
+	"countryName": "斐济群岛",
+	cityFirstLetter: "W"
+}, {
+	cityName: "沃尔库塔",
+	citySpell: "WOERKUTA",
+	"code": "VKT",
+	"countryCode": "RU",
+	"countryName": "俄罗斯",
+	cityFirstLetter: "W"
+}, {
+	cityName: "乌尔基特",
+	citySpell: "WUERJITE",
+	"code": "ULG",
+	"countryCode": "MN",
+	"countryName": "蒙古",
+	cityFirstLetter: "W"
+}, {
+	cityName: "伍斯特",
+	citySpell: "WUSITE",
+	"code": "ORH",
+	"countryCode": "US",
+	"countryName": "美国",
+	cityFirstLetter: "W"
+}, {
+	cityName: "威廉敏娜",
+	citySpell: "WEILIANMINNA",
+	"code": "VHM",
+	"countryCode": "SE",
+	"countryName": "瑞典",
+	cityFirstLetter: "W"
+}, {
+	cityName: "乌日采",
+	citySpell: "WURICAI",
+	"code": "UZC",
+	"countryCode": "RS",
+	"countryName": "塞尔维亚",
+	cityFirstLetter: "W"
+}, {
+	cityName: "蔚珍",
+	citySpell: "WEIZHEN",
+	"code": "UJN",
+	"countryCode": "KR",
+	"countryName": "韩国",
+	cityFirstLetter: "W"
+}, {
+	cityName: "乌杰达",
+	citySpell: "WUJIEDA",
+	"code": "OUD",
+	"countryCode": "MA",
+	"countryName": "摩洛哥",
+	cityFirstLetter: "W"
+}, {
+	cityName: "乌贝拉巴",
+	citySpell: "WUBEILABA",
+	"code": "UBA",
+	"countryCode": "BR",
+	"countryName": "巴西",
+	cityFirstLetter: "W"
+}, {
+	cityName: "乌姆哈杰尔",
+	citySpell: "WUMUHAJIEER",
+	"code": "OUM",
+	"countryCode": "TD",
+	"countryName": "乍得",
+	cityFirstLetter: "W"
+}, {
+	cityName: "维泰勒",
+	citySpell: "WEITAILE",
+	"code": "VTL",
+	"countryCode": "FR",
+	"countryName": "法国",
+	cityFirstLetter: "W"
+}, {
+	cityName: "维拉加佐恩",
+	citySpell: "WEILAJIAZUOEN",
+	"code": "VGZ",
+	"countryCode": "CO",
+	"countryName": "哥伦比亚",
+	cityFirstLetter: "W"
+}, {
+	cityName: "翁布埃",
+	citySpell: "WENGBUAI",
+	"code": "OMB",
+	"countryCode": "GA",
+	"countryName": "加蓬",
+	cityFirstLetter: "W"
+}, {
+	cityName: "乌尔根齐",
+	citySpell: "WUERGENQI",
+	"code": "UGC",
+	"countryCode": "UZ",
+	"countryName": "乌兹别克斯坦",
+	cityFirstLetter: "W"
+}, {
+	cityName: "文茨皮尔斯",
+	citySpell: "WENCIPIERSI",
+	"code": "VNT",
+	"countryCode": "LV",
+	"countryName": "拉托维亚",
+	cityFirstLetter: "W"
+}, {
+	cityName: "翁旦格瓦",
+	citySpell: "WENGDANGEWA",
+	"code": "OND",
+	"countryCode": "NA",
+	"countryName": "纳米比亚",
+	cityFirstLetter: "W"
+}, {
+	cityName: "旺阿雷",
+	citySpell: "WANGALEI",
+	"code": "WRE",
+	"countryCode": "NZ",
+	"countryName": "新西兰",
+	cityFirstLetter: "W"
+}, {
+	cityName: "维斯特切斯特郡",
+	citySpell: "WEISITEQIESITEJUN",
+	"code": "HPN",
+	"countryCode": "US",
+	"countryName": "美国",
+	cityFirstLetter: "W"
+}, {
+	cityName: "乌兰固",
+	citySpell: "WULANGU",
+	"code": "ULO",
+	"countryCode": "MN",
+	"countryName": "蒙古",
+	cityFirstLetter: "W"
+}, {
+	cityName: "乌姆巴",
+	citySpell: "WUMUBA",
+	"code": "UMC",
+	"countryCode": "PG",
+	"countryName": "巴布亚新几内亚",
+	cityFirstLetter: "W"
+}, {
+	cityName: "乌佩纳维克",
+	citySpell: "WUPEINAWEIKE",
+	"code": "JUV",
+	"countryCode": "GL",
+	"countryName": "格陵兰岛",
+	cityFirstLetter: "W"
+}, {
+	cityName: "威尼泰",
+	citySpell: "WEINITAI",
+	"code": "VEE",
+	"countryCode": "US",
+	"countryName": "美国",
+	cityFirstLetter: "W"
+}, {
+	cityName: "沃格特",
+	citySpell: "WOGETE",
+	"code": "WGE",
+	"countryCode": "AU",
+	"countryName": "澳大利亚",
+	cityFirstLetter: "W"
+}, {
+	cityName: "温泉城（弗吉尼亚州）",
+	citySpell: "WENQUANCHENG",
+	"code": "HSP",
+	"countryCode": "US",
+	"countryName": "美国",
+	cityFirstLetter: "W"
+}, {
+	cityName: "瓦珀纳曼达",
+	citySpell: "WAPONAMANDA",
+	"code": "WBM",
+	"countryCode": "PG",
+	"countryName": "巴布亚新几内亚",
+	cityFirstLetter: "W"
+}, {
+	cityName: "韦路纳",
+	citySpell: "WEILUNA",
+	"code": "WUN",
+	"countryCode": "AU",
+	"countryName": "澳大利亚",
+	cityFirstLetter: "W"
+}, {
+	cityName: "乌贝蓝迪亚",
+	citySpell: "WUBEILANDIYA",
+	"code": "UDI",
+	"countryCode": "BR",
+	"countryName": "巴西",
+	cityFirstLetter: "W"
+}, {
+	cityName: "外赛",
+	citySpell: "WAISAI",
+	"code": "RJM",
+	"countryCode": "ID",
+	"countryName": "印度尼西亚",
+	cityFirstLetter: "W"
+}, {
+	cityName: "维拉洛索",
+	citySpell: "WEILALUOSUO",
+	"code": "SPP",
+	"countryCode": "AO",
+	"countryName": "安哥拉",
+	cityFirstLetter: "W"
+}, {
+	cityName: "乌伦迪",
+	citySpell: "WULUNDI",
+	"code": "ULD",
+	"countryCode": "ZA",
+	"countryName": "南非",
+	cityFirstLetter: "W"
+}, {
+	cityName: "外南梦",
+	citySpell: "WAINANMENG",
+	"code": "BWX",
+	"countryCode": "ID",
+	"countryName": "印度尼西亚",
+	cityFirstLetter: "W"
+}, {
+	cityName: "乌马考",
+	citySpell: "WUMAKAO",
+	"code": "HUC",
+	"countryCode": "PR",
+	"countryName": "波多黎各",
+	cityFirstLetter: "W"
+}, {
+	cityName: "瓦拉德",
+	citySpell: "WALADE",
+	"code": "VRA",
+	"countryCode": "CU",
+	"countryName": "古巴",
+	cityFirstLetter: "W"
+}, {
+	cityName: "乌斯马雅",
+	citySpell: "WUSIMAYA",
+	"code": "UMS",
+	"countryCode": "RU",
+	"countryName": "俄罗斯",
+	cityFirstLetter: "W"
+}, {
+	cityName: "沃加沃加",
+	citySpell: "WOJIAWOJIA",
+	"code": "WGA",
+	"countryCode": "AU",
+	"countryName": "澳大利亚",
+	cityFirstLetter: "W"
+}, {
+	cityName: "屋久岛",
+	citySpell: "WUJIUDAO",
+	"code": "KUM",
+	"countryCode": "JP",
+	"countryName": "日本",
+	cityFirstLetter: "W"
+}, {
+	cityName: "万隆",
+	citySpell: "WANLONG",
+	"code": "BDO",
+	"countryCode": "ID",
+	"countryName": "印度尼西亚",
+	cityFirstLetter: "W"
+}, {
+	cityName: "威特努姆",
+	citySpell: "WEITENUMU",
+	"code": "WIT",
+	"countryCode": "AU",
+	"countryName": "澳大利亚",
+	cityFirstLetter: "W"
+}, {
+	cityName: "瓦希塔希",
+	citySpell: "WAXITAXI",
+	"code": "VHZ",
+	"countryCode": "PF",
+	"countryName": "法属波利尼西亚",
+	cityFirstLetter: "W"
+}, {
+	cityName: "乌鲁瓜亚纳",
+	citySpell: "WULUGUAYANA",
+	"code": "URG",
+	"countryCode": "BR",
+	"countryName": "巴西",
+	cityFirstLetter: "W"
+}, {
+	cityName: "韦恩赖特",
+	citySpell: "WEIENLAITE",
+	"code": "AIN",
+	"countryCode": "US",
+	"countryName": "美国",
+	cityFirstLetter: "W"
+}, {
+	cityName: "威廉斯波特",
+	citySpell: "WEILIANSIBOTE",
+	"code": "IPT",
+	"countryCode": "US",
+	"countryName": "美国",
+	cityFirstLetter: "W"
+}, {
+	cityName: "维尔科姆",
+	citySpell: "WEIERKEMU",
+	"code": "WEL",
+	"countryCode": "ZA",
+	"countryName": "南非",
+	cityFirstLetter: "W"
+}, {
+	cityName: "瓦普岛",
+	citySpell: "WAPUDAO",
+	"code": "UAP",
+	"countryCode": "PF",
+	"countryName": "法属波利尼西亚",
+	cityFirstLetter: "W"
+}, {
+	cityName: "沃利斯",
+	citySpell: "WOLISI",
+	"code": "WLS",
+	"countryCode": "WF",
+	"countryName": "瓦利斯和富图纳",
+	cityFirstLetter: "W"
+}, {
+	cityName: "乌里希卡罗莱恩群岛",
+	citySpell: "WULIXIKALUOLAIENQUNDAO",
+	"code": "ULI",
+	"countryCode": "FM",
+	"countryName": "密克罗尼西亚",
+	cityFirstLetter: "W"
+}, {
+	cityName: "沃辛顿",
+	citySpell: "WOXINDUN",
+	"code": "OTG",
+	"countryCode": "US",
+	"countryName": "美国",
+	cityFirstLetter: "W"
+}, {
+	cityName: "乌隆",
+	citySpell: "WULONG",
+	"code": "UTH",
+	"countryCode": "TH",
+	"countryName": "泰国",
+	cityFirstLetter: "W"
+}, {
+	cityName: "威斯巴登",
+	citySpell: "WEISIBADENG",
+	"code": "WIE",
+	"countryCode": "DE",
+	"countryName": "德国",
+	cityFirstLetter: "W"
+}, {
+	cityName: "韦瑟福德",
+	citySpell: "WEISEFUDE",
+	"code": "WEA",
+	"countryCode": "US",
+	"countryName": "美国",
+	cityFirstLetter: "W"
+}, {
+	cityName: "瓦西古亚",
+	citySpell: "WAXIGUYA",
+	"code": "OUG",
+	"countryCode": "BF",
+	"countryName": "布基纳法索",
+	cityFirstLetter: "W"
+}, {
+	cityName: "威廉斯港",
+	citySpell: "WEILIANSIGANG",
+	"code": "WPU",
+	"countryCode": "CL",
+	"countryName": "智利",
+	cityFirstLetter: "W"
+}, {
+	cityName: "维萨卡帕特南",
+	citySpell: "WEISAKAPATENAN",
+	"code": "VTZ",
+	"countryCode": "IN",
+	"countryName": "印度",
+	cityFirstLetter: "W"
+}, {
+	cityName: "维京果岛",
+	citySpell: "WEIJINGGUODAO",
+	"code": "VIJ",
+	"countryCode": "VG",
+	"countryName": "维尔京群岛（英）",
+	cityFirstLetter: "W"
+}, {
+	cityName: "哇嵋纳",
+	citySpell: "WAMEINA",
+	"code": "WMX",
+	"countryCode": "ID",
+	"countryName": "印度尼西亚",
+	cityFirstLetter: "W"
+}, {
+	cityName: "温斯德雷赫特",
+	citySpell: "WENSIDELEIHETE",
+	"code": "WOE",
+	"countryCode": "NL",
+	"countryName": "荷兰",
+	cityFirstLetter: "W"
+}, {
+	cityName: "瓦伦萨",
+	citySpell: "WALUNSA",
+	"code": "VAL",
+	"countryCode": "BR",
+	"countryName": "巴西",
+	cityFirstLetter: "W"
+}, {
+	cityName: "乌里扬诺夫斯克",
+	citySpell: "WULIYANGNUOFUSIKE",
+	"code": "ULY",
+	"countryCode": "RU",
+	"countryName": "俄罗斯",
+	cityFirstLetter: "W"
+}, {
+	cityName: "威诺纳",
+	citySpell: "WEINUONA",
+	"code": "ONA",
+	"countryCode": "US",
+	"countryName": "美国",
+	cityFirstLetter: "W"
+}, {
+	cityName: "瓦尔扎扎特",
+	citySpell: "WAERZHAZHATE",
+	"code": "OZZ",
+	"countryCode": "MA",
+	"countryName": "摩洛哥",
+	cityFirstLetter: "W"
+}, {
+	cityName: "乌比杜斯",
+	citySpell: "WUBIDUSI",
+	"code": "OBI",
+	"countryCode": "BR",
+	"countryName": "巴西",
+	cityFirstLetter: "W"
+}, {
+	cityName: "韦克舍",
+	citySpell: "WEIKESHE",
+	"code": "VXO",
+	"countryCode": "SE",
+	"countryName": "瑞典",
+	cityFirstLetter: "W"
+}, {
+	cityName: "瓦多达拉",
+	citySpell: "WADUODALA",
+	"code": "BDQ",
+	"countryCode": "IN",
+	"countryName": "印度",
+	cityFirstLetter: "W"
+}, {
+	cityName: "蔚山",
+	citySpell: "WEISHAN",
+	"code": "USN",
+	"countryCode": "KR",
+	"countryName": "韩国",
+	cityFirstLetter: "W"
+}, {
+	cityName: "瓦布希",
+	citySpell: "WABUXI",
+	"code": "YWK",
+	"countryCode": "CA",
+	"countryName": "加拿大",
+	cityFirstLetter: "W"
+}, {
+	cityName: "瓦努阿巴拉乌",
+	citySpell: "WANUABALAWU",
+	"code": "VBV",
+	"countryCode": "FJ",
+	"countryName": "斐济群岛",
+	cityFirstLetter: "W"
+}, {
+	cityName: "五指半岛",
+	citySpell: "WUZHIBANDAO",
+	"code": "FIV",
+	"countryCode": "US",
+	"countryName": "美国",
+	cityFirstLetter: "W"
+}, {
+	cityName: "瓦哈克通",
+	citySpell: "WAHAKETONG",
+	"code": "UAX",
+	"countryCode": "GT",
+	"countryName": "危地马拉",
+	cityFirstLetter: "W"
+}, {
+	cityName: "威斯洛",
+	citySpell: "WEISILUO",
+	"code": "INW",
+	"countryCode": "US",
+	"countryName": "美国",
+	cityFirstLetter: "W"
+}, {
+	cityName: "韦斯特兰",
+	citySpell: "WEISITELAN",
+	"code": "GWT",
+	"countryCode": "DE",
+	"countryName": "德国",
+	cityFirstLetter: "W"
+}, {
+	cityName: "乌鲁阿潘",
+	citySpell: "WULUAPAN",
+	"code": "UPN",
+	"countryCode": "MX",
+	"countryName": "墨西哥",
+	cityFirstLetter: "W"
+}, {
+	cityName: "维克克",
+	citySpell: "WEIKEKE",
+	"code": "VIQ",
+	"countryCode": "TL",
+	"countryName": "东帝汶",
+	cityFirstLetter: "W"
+}, {
+	cityName: "维拉港",
+	citySpell: "WEILAGANG",
+	"code": "VLI",
+	"countryCode": "VU",
+	"countryName": "瓦努阿图",
+	cityFirstLetter: "W"
+}, {
+	cityName: "瓦拉哈",
+	citySpell: "WALAHA",
+	"code": "WLH",
+	"countryCode": "VU",
+	"countryName": "瓦努阿图",
+	cityFirstLetter: "W"
+}, {
+	cityName: "瓦多尔",
+	citySpell: "WADUOER",
+	"code": "YVO",
+	"countryCode": "CA",
+	"countryName": "加拿大",
+	cityFirstLetter: "W"
+}, {
+	cityName: "瓦努马",
+	citySpell: "WANUMA",
+	"code": "WNU",
+	"countryCode": "PG",
+	"countryName": "巴布亚新几内亚",
+	cityFirstLetter: "W"
+}, {
+	cityName: "翁吉瓦",
+	citySpell: "WENGJIWA",
+	"code": "VPE",
+	"countryCode": "AO",
+	"countryName": "安哥拉",
+	cityFirstLetter: "W"
+}, {
+	cityName: "维托里亚",
+	citySpell: "WEITUOLIYA",
+	"code": "VIT",
+	"countryCode": "ES",
+	"countryName": "西班牙",
+	cityFirstLetter: "W"
+}, {
+	cityName: "乌斯怀亚",
+	citySpell: "WUSIHUAIYA",
+	"code": "USH",
+	"countryCode": "AR",
+	"countryName": "阿根廷",
+	cityFirstLetter: "W"
+}, {
+	cityName: "沃特福尔",
+	citySpell: "WOTEFUER",
+	"code": "KWF",
+	"countryCode": "US",
+	"countryName": "美国",
+	cityFirstLetter: "W"
+}, {
+	cityName: "瓦科孔戈",
+	citySpell: "WAKEKONGGE",
+	"code": "CEO",
+	"countryCode": "AO",
+	"countryName": "安哥拉",
+	cityFirstLetter: "W"
+}, {
+	cityName: "瓦哈卡",
+	citySpell: "WAHAKA",
+	"code": "OAX",
+	"countryCode": "MX",
+	"countryName": "墨西哥",
+	cityFirstLetter: "W"
+}, {
+	cityName: "威斯顿挽塞勒姆",
+	citySpell: "WEISIDUNWANSAILEMU",
+	"code": "INT",
+	"countryCode": "US",
+	"countryName": "美国",
+	cityFirstLetter: "W"
+}, {
+	cityName: "威克",
+	citySpell: "WEIKE",
+	"code": "WIC",
+	"countryCode": "GB",
+	"countryName": "英国",
+	cityFirstLetter: "W"
+}, {
+	cityName: "韦斯特雷",
+	citySpell: "WEISITELEI",
+	"code": "WRY",
+	"countryCode": "GB",
+	"countryName": "英国",
+	cityFirstLetter: "W"
+}, {
+	cityName: "瓦利",
+	citySpell: "WALI",
+	"code": "QRW",
+	"countryCode": "NG",
+	"countryName": "尼日利亚",
+	cityFirstLetter: "W"
+}, {
+	cityName: "韦恩堡",
+	citySpell: "WEIENBAO",
+	"code": "FWA",
+	"countryCode": "US",
+	"countryName": "美国",
+	cityFirstLetter: "W"
+}, {
+	cityName: "威奇托福尔斯",
+	citySpell: "WEIQITUOFUERSI",
+	"code": "SPS",
+	"countryCode": "US",
+	"countryName": "美国",
+	cityFirstLetter: "W"
+}, {
+	cityName: "瓦图尔科",
+	citySpell: "WATUERKE",
+	"code": "HUX",
+	"countryCode": "MX",
+	"countryName": "墨西哥",
+	cityFirstLetter: "W"
+}, {
+	cityName: "瓦尔迪维亚",
+	citySpell: "WAERDIWEIYA",
+	"code": "ZAL",
+	"countryCode": "CL",
+	"countryName": "智利",
+	cityFirstLetter: "W"
+}, {
+	cityName: "乌赫斯克－拉迪斯特",
+	citySpell: "WUHESIKE－LADISITE",
+	"code": "UHE",
+	"countryCode": "CZ",
+	"countryName": "捷克",
+	cityFirstLetter: "W"
+}, {
+	cityName: "维帖布斯克",
+	citySpell: "WEITIEBUSIKE",
+	"code": "VTB",
+	"countryCode": "BY",
+	"countryName": "白俄罗斯",
+	cityFirstLetter: "W"
+}, {
+	cityName: "维列纳",
+	citySpell: "WEILIENA",
+	"code": "BVH",
+	"countryCode": "BR",
+	"countryName": "巴西",
+	cityFirstLetter: "W"
+}, {
+	cityName: "威尔明顿（北卡罗莱纳州）",
+	citySpell: "WEIERMINGDUN",
+	"code": "ILM",
+	"countryCode": "US",
+	"countryName": "美国",
+	cityFirstLetter: "W"
+}, {
+	cityName: "乌蒂拉",
+	citySpell: "WUDILA",
+	"code": "UII",
+	"countryCode": "HN",
+	"countryName": "洪都拉斯",
+	cityFirstLetter: "W"
+}, {
+	cityName: "瓦图曼德里",
+	citySpell: "WATUMANDELI",
+	"code": "VAT",
+	"countryCode": "MG",
+	"countryName": "马达加斯加",
+	cityFirstLetter: "W"
+}, {
+	cityName: "沃拉沃拉",
+	citySpell: "WOLAWOLA",
+	"code": "ALW",
+	"countryCode": "US",
+	"countryName": "美国",
+	cityFirstLetter: "W"
+}, {
+	cityName: "威廉斯莱克",
+	citySpell: "WEILIANSILAIKE",
+	"code": "YWL",
+	"countryCode": "CA",
+	"countryName": "加拿大",
+	cityFirstLetter: "W"
+}, {
+	cityName: "乌尔米耶",
+	citySpell: "WUERMIYE",
+	"code": "OMH",
+	"countryCode": "IR",
+	"countryName": "伊朗",
+	cityFirstLetter: "W"
+}, {
+	cityName: "威图",
+	citySpell: "WEITU",
+	"code": "WIU",
+	"countryCode": "PG",
+	"countryName": "巴布亚新几内亚",
+	cityFirstLetter: "W"
+}, {
+	cityName: "韦达屋",
+	citySpell: "WEIDAWU",
+	"code": "WED",
+	"countryCode": "PG",
+	"countryName": "巴布亚新几内亚",
+	cityFirstLetter: "W"
+}, {
+	cityName: "瓦库奈",
+	citySpell: "WAKUNAI",
+	"code": "WKN",
+	"countryCode": "PG",
+	"countryName": "巴布亚新几内亚",
+	cityFirstLetter: "W"
+}, {
+	cityName: "乌尤尼",
+	citySpell: "WUYOUNI",
+	"code": "UYU",
+	"countryCode": "BO",
+	"countryName": "玻利维亚",
+	cityFirstLetter: "W"
+}, {
+	cityName: "万伦",
+	citySpell: "WANLUN",
+	"code": "URT",
+	"countryCode": "TH",
+	"countryName": "泰国",
+	cityFirstLetter: "W"
+}, {
+	cityName: "韦拉克鲁斯",
+	citySpell: "WEILAKELUSI",
+	"code": "VER",
+	"countryCode": "MX",
+	"countryName": "墨西哥",
+	cityFirstLetter: "W"
+}, {
+	cityName: "文纳奇",
+	citySpell: "WENNAQI",
+	"code": "EAT",
+	"countryCode": "US",
+	"countryName": "美国",
+	cityFirstLetter: "W"
+}, {
+	cityName: "瓦丘卡堡希拉维斯达",
+	citySpell: "WAQIUKABAOXILAWEISIDA",
+	"code": "FHU",
+	"countryCode": "US",
+	"countryName": "美国",
+	cityFirstLetter: "W"
+}, {
+	cityName: "瓦伦西亚",
+	citySpell: "WALUNXIYA",
+	"code": "VLC",
+	"countryCode": "ES",
+	"countryName": "西班牙",
+	cityFirstLetter: "W"
+}, {
+	cityName: "乌里雅苏台",
+	citySpell: "WULIYASUTAI",
+	"code": "ULZ",
+	"countryCode": "MN",
+	"countryName": "蒙古",
+	cityFirstLetter: "W"
+}, {
+	cityName: "维兰库卢什",
+	citySpell: "WEILANKULUSHI",
+	"code": "VNX",
+	"countryCode": "MZ",
+	"countryName": "莫桑比克",
+	cityFirstLetter: "W"
+}, {
+	cityName: "瓦苏阿",
+	citySpell: "WASUA",
+	"code": "WSA",
+	"countryCode": "PG",
+	"countryName": "巴布亚新几内亚",
+	cityFirstLetter: "W"
+}, {
+	cityName: "瓦达",
+	citySpell: "WADA",
+	"code": "ODA",
+	"countryCode": "CF",
+	"countryName": "中非",
+	cityFirstLetter: "W"
+}, {
+	cityName: "沃加",
+	citySpell: "WOJIA",
+	"code": "WJA",
+	"countryCode": "MH",
+	"countryName": "马绍尔群岛",
+	cityFirstLetter: "W"
+}, {
+	cityName: "瓦英阿普",
+	citySpell: "WAYINGAPU",
+	"code": "WGP",
+	"countryCode": "ID",
+	"countryName": "印度尼西亚",
+	cityFirstLetter: "W"
+}, {
+	cityName: "韦帕",
+	citySpell: "WEIPA",
+	"code": "WEI",
+	"countryCode": "AU",
+	"countryName": "澳大利亚",
+	cityFirstLetter: "W"
+}, {
+	cityName: "香港",
+	citySpell: "XIANGGANG",
+	"code": "HKG",
+	"countryCode": "HK",
+	"countryName": "中国香港",
+	cityFirstLetter: "X"
+}, {
+	cityName: "新加坡",
+	citySpell: "XINJIAPO",
+	"code": "SIN",
+	"countryCode": "SG",
+	"countryName": "新加坡",
+	cityFirstLetter: "X"
+}, {
+	cityName: "悉尼",
+	citySpell: "XINI",
+	"code": "SYD",
+	"countryCode": "AU",
+	"countryName": "澳大利亚",
+	cityFirstLetter: "X"
+}, {
+	cityName: "新德里",
+	citySpell: "XINDELI",
+	"code": "DEL",
+	"countryCode": "IN",
+	"countryName": "印度",
+	cityFirstLetter: "X"
+}, {
+	cityName: "休斯敦",
+	citySpell: "XIUSIDUN",
+	"code": "HOU",
+	"countryCode": "US",
+	"countryName": "美国",
+	cityFirstLetter: "X"
+}, {
+	cityName: "西雅图",
+	citySpell: "XIYATU",
+	"code": "SEA",
+	"countryCode": "US",
+	"countryName": "美国",
+	cityFirstLetter: "X"
+}, {
+	cityName: "新奥尔良",
+	citySpell: "XINAOERLIANG",
+	"code": "MSY",
+	"countryCode": "US",
+	"countryName": "美国",
+	cityFirstLetter: "X"
+}, {
+	cityName: "新泻",
+	citySpell: "XINXIE",
+	"code": "KIJ",
+	"countryCode": "JP",
+	"countryName": "日本",
+	cityFirstLetter: "X"
+}, {
+	cityName: "仙台",
+	citySpell: "XIANTAI",
+	"code": "SDJ",
+	"countryCode": "JP",
+	"countryName": "日本",
+	cityFirstLetter: "X"
+}, {
+	cityName: "新贝德福德",
+	citySpell: "XINBEIDEFUDE",
+	"code": "EWB",
+	"countryCode": "US",
+	"countryName": "美国",
+	cityFirstLetter: "X"
+}, {
+	cityName: "西昂",
+	citySpell: "XIANG",
+	"code": "SIR",
+	"countryCode": "CH",
+	"countryName": "瑞士",
+	cityFirstLetter: "X"
+}, {
+	cityName: "西德尼",
+	citySpell: "XIDENI",
+	"code": "SDY",
+	"countryCode": "US",
+	"countryName": "美国",
+	cityFirstLetter: "X"
+}, {
+	cityName: "锡比乌",
+	citySpell: "XIBIWU",
+	"code": "SBZ",
+	"countryCode": "RO",
+	"countryName": "罗马尼亚",
+	cityFirstLetter: "X"
+}, {
+	cityName: "锡瓦斯",
+	citySpell: "XIWASI",
+	"code": "VAS",
+	"countryCode": "TR",
+	"countryName": "土耳其",
+	cityFirstLetter: "X"
+}, {
+	cityName: "锡达拉皮兹",
+	citySpell: "XIDALAPIZI",
+	"code": "CID",
+	"countryCode": "US",
+	"countryName": "美国",
+	cityFirstLetter: "X"
+}, {
+	cityName: "新当",
+	citySpell: "XINDANG",
+	"code": "SQG",
+	"countryCode": "ID",
+	"countryName": "印度尼西亚",
+	cityFirstLetter: "X"
+}, {
+	cityName: "谢莱夫特奥",
+	citySpell: "XIELAIFUTEAO",
+	"code": "SFT",
+	"countryCode": "SE",
+	"countryName": "瑞典",
+	cityFirstLetter: "X"
+}, {
+	cityName: "锡尔杰尔",
+	citySpell: "XIERJIEER",
+	"code": "IXS",
+	"countryCode": "IN",
+	"countryName": "印度",
+	cityFirstLetter: "X"
+}, {
+	cityName: "夏洛茨维尔",
+	citySpell: "XIALUOCIWEIER",
+	"code": "CHO",
+	"countryCode": "US",
+	"countryName": "美国",
+	cityFirstLetter: "X"
+}, {
+	cityName: "下拉布安",
+	citySpell: "XIALABUAN",
+	"code": "LBJ",
+	"countryCode": "ID",
+	"countryName": "印度尼西亚",
+	cityFirstLetter: "X"
+}, {
+	cityName: "西班牙港",
+	citySpell: "XIBANYAGANG",
+	"code": "POS",
+	"countryCode": "TT",
+	"countryName": "特尼达和多巴哥",
+	cityFirstLetter: "X"
+}, {
+	cityName: "锡达城",
+	citySpell: "XIDACHENG",
+	"code": "CDC",
+	"countryCode": "US",
+	"countryName": "美国",
+	cityFirstLetter: "X"
+}, {
+	cityName: "新伦敦",
+	citySpell: "XINLUNDUN",
+	"code": "GON",
+	"countryCode": "US",
+	"countryName": "美国",
+	cityFirstLetter: "X"
+}, {
+	cityName: "锡尔特",
+	citySpell: "XIERTE",
+	"code": "SXZ",
+	"countryCode": "TR",
+	"countryName": "土耳其",
+	cityFirstLetter: "X"
+}, {
+	cityName: "希皮哈帕",
+	citySpell: "XIPIHAPA",
+	"code": "JIP",
+	"countryCode": "EC",
+	"countryName": "厄瓜多尔",
+	cityFirstLetter: "X"
+}, {
+	cityName: "新居滨",
+	citySpell: "XINJUBIN",
+	"code": "IHA",
+	"countryCode": "JP",
+	"countryName": "日本",
+	cityFirstLetter: "X"
+}, {
+	cityName: "熊本",
+	citySpell: "XIONGBEN",
+	"code": "KMJ",
+	"countryCode": "JP",
+	"countryName": "日本",
+	cityFirstLetter: "X"
+}, {
+	cityName: "夏基索",
+	citySpell: "XIAJISUO",
+	"code": "SKR",
+	"countryCode": "ET",
+	"countryName": "埃塞俄比亚",
+	cityFirstLetter: "X"
+}, {
+	cityName: "新普利茅茨",
+	citySpell: "XINPULIMAOCI",
+	"code": "NPL",
+	"countryCode": "NZ",
+	"countryName": "新西兰",
+	cityFirstLetter: "X"
+}, {
+	cityName: "许温凯",
+	citySpell: "XUWENKAI",
+	"code": "HYV",
+	"countryCode": "FI",
+	"countryName": "芬兰",
+	cityFirstLetter: "X"
+}, {
+	cityName: "休斯",
+	citySpell: "XIUSI",
+	"code": "HUS",
+	"countryCode": "US",
+	"countryName": "美国",
+	cityFirstLetter: "X"
+}, {
+	cityName: "襄阳",
+	citySpell: "XIANGYANG",
+	"code": "YNY",
+	"countryCode": "KR",
+	"countryName": "韩国",
+	cityFirstLetter: "X"
+}, {
+	cityName: "西圣安东尼奥",
+	citySpell: "XISHENGANDONGNIAO",
+	"code": "OES",
+	"countryCode": "AR",
+	"countryName": "阿根廷",
+	cityFirstLetter: "X"
+}, {
+	cityName: "新西伯利亚",
+	citySpell: "XINXIBOLIYA",
+	"code": "OVB",
+	"countryCode": "RU",
+	"countryName": "俄罗斯",
+	cityFirstLetter: "X"
+}, {
+	cityName: "希米科特",
+	citySpell: "XIMIKETE",
+	"code": "IMK",
+	"countryCode": "NP",
+	"countryName": "尼泊尔",
+	cityFirstLetter: "X"
+}, {
+	cityName: "新伯尔尼",
+	citySpell: "XINBOERNI",
+	"code": "EWN",
+	"countryCode": "US",
+	"countryName": "美国",
+	cityFirstLetter: "X"
+}, {
+	cityName: "辛辛那提",
+	citySpell: "XINXINNATI",
+	"code": "CVG",
+	"countryCode": "US",
+	"countryName": "美国",
+	cityFirstLetter: "X"
+}, {
+	cityName: "新山",
+	citySpell: "XINSHAN",
+	"code": "JHB",
+	"countryCode": "MY",
+	"countryName": "马来西亚",
+	cityFirstLetter: "X"
+}, {
+	cityName: "西宾",
+	citySpell: "XIBIN",
+	"code": "HIB",
+	"countryCode": "US",
+	"countryName": "美国",
+	cityFirstLetter: "X"
+}, {
+	cityName: "小开曼岛",
+	citySpell: "XIAOKAIMANDAO",
+	"code": "LYB",
+	"countryCode": "KY",
+	"countryName": "开曼群岛",
+	cityFirstLetter: "X"
+}, {
+	cityName: "悉尼",
+	citySpell: "XINI",
+	"code": "YQY",
+	"countryCode": "CA",
+	"countryName": "加拿大",
+	cityFirstLetter: "X"
+}, {
+	cityName: "小松",
+	citySpell: "XIAOSONG",
+	"code": "KMQ",
+	"countryCode": "JP",
+	"countryName": "日本",
+	cityFirstLetter: "X"
+}, {
+	cityName: "西港",
+	citySpell: "XIGANG",
+	"code": "WSZ",
+	"countryCode": "NZ",
+	"countryName": "新西兰",
+	cityFirstLetter: "X"
+}, {
+	cityName: "西恩富戈斯",
+	citySpell: "XIENFUGESI",
+	"code": "CFG",
+	"countryCode": "CU",
+	"countryName": "古巴",
+	cityFirstLetter: "X"
+}, {
+	cityName: "肖拉帕卢克",
+	citySpell: "XIAOLAPALUKE",
+	"code": "SRK",
+	"countryCode": "GL",
+	"countryName": "格陵兰岛",
+	cityFirstLetter: "X"
+}, {
+	cityName: "旭川",
+	citySpell: "XUCHUAN",
+	"code": "AKJ",
+	"countryCode": "JP",
+	"countryName": "日本",
+	cityFirstLetter: "X"
+}, {
+	cityName: "锡吉里亚",
+	citySpell: "XIJILIYA",
+	"code": "GIU",
+	"countryCode": "LK",
+	"countryName": "斯里兰卡",
+	cityFirstLetter: "X"
+}, {
+	cityName: "希尔顿黑德",
+	citySpell: "XIERDUNHEIDE",
+	"code": "HHH",
+	"countryCode": "US",
+	"countryName": "美国",
+	cityFirstLetter: "X"
+}, {
+	cityName: "辛代尔",
+	citySpell: "XINDAIER",
+	"code": "CNL",
+	"countryCode": "DK",
+	"countryName": "丹麦",
+	cityFirstLetter: "X"
+}, {
+	cityName: "锡尔赫特",
+	citySpell: "XIERHETE",
+	"code": "ZYL",
+	"countryCode": "BD",
+	"countryName": "孟加拉国",
+	cityFirstLetter: "X"
+}, {
+	cityName: "锡夫里弗福尔斯",
+	citySpell: "XIFULIFUFUERSI",
+	"code": "TVF",
+	"countryCode": "US",
+	"countryName": "美国",
+	cityFirstLetter: "X"
+}, {
+	cityName: "新彻讷加",
+	citySpell: "XINCHENEJIA",
+	"code": "NCN",
+	"countryCode": "US",
+	"countryName": "美国",
+	cityFirstLetter: "X"
+}, {
+	cityName: "希洛",
+	citySpell: "XILUO",
+	"code": "ITO",
+	"countryCode": "US",
+	"countryName": "美国",
+	cityFirstLetter: "X"
+}, {
+	cityName: "希科里",
+	citySpell: "XIKELI",
+	"code": "HKY",
+	"countryCode": "US",
+	"countryName": "美国",
+	cityFirstLetter: "X"
+}, {
+	cityName: "西黄石",
+	citySpell: "XIHUANGSHI",
+	"code": "WYS",
+	"countryCode": "US",
+	"countryName": "美国",
+	cityFirstLetter: "X"
+}, {
+	cityName: "希拉多特",
+	citySpell: "XILADUOTE",
+	"code": "GIR",
+	"countryCode": "CO",
+	"countryName": "哥伦比亚",
+	cityFirstLetter: "X"
+}, {
+	cityName: "新尼克里",
+	citySpell: "XINNIKELI",
+	"code": "ICK",
+	"countryCode": "SR",
+	"countryName": "苏里南",
+	cityFirstLetter: "X"
+}, {
+	cityName: "辛普森堡",
+	citySpell: "XINPUSENBAO",
+	"code": "YFS",
+	"countryCode": "CA",
+	"countryName": "加拿大",
+	cityFirstLetter: "X"
+}, {
+	cityName: "喜界岛",
+	citySpell: "XIJIEDAO",
+	"code": "KKX",
+	"countryCode": "JP",
+	"countryName": "日本",
+	cityFirstLetter: "X"
+}, {
+	cityName: "新库兹涅茨克",
+	citySpell: "XINKUZINIECIKE",
+	"code": "NOZ",
+	"countryCode": "RU",
+	"countryName": "俄罗斯",
+	cityFirstLetter: "X"
+}, {
+	cityName: "西海大峡谷",
+	citySpell: "XIHAIDAXIAGU",
+	"code": "GCW",
+	"countryCode": "US",
+	"countryName": "美国",
+	cityFirstLetter: "X"
+}, {
+	cityName: "希库埃鲁",
+	citySpell: "XIKUAILU",
+	"code": "HHZ",
+	"countryCode": "PF",
+	"countryName": "法属波利尼西亚",
+	cityFirstLetter: "X"
+}, {
+	cityName: "希塔多",
+	citySpell: "XITADUO",
+	"code": "PGI",
+	"countryCode": "AO",
+	"countryName": "安哥拉",
+	cityFirstLetter: "X"
+}, {
+	cityName: "夏延",
+	citySpell: "XIAYAN",
+	"code": "CYS",
+	"countryCode": "US",
+	"countryName": "美国",
+	cityFirstLetter: "X"
+}, {
+	cityName: "锡吉里",
+	citySpell: "XIJILI",
+	"code": "GII",
+	"countryCode": "GN",
+	"countryName": "几内亚",
+	cityFirstLetter: "X"
+}, {
+	cityName: "西隆",
+	citySpell: "XILONG",
+	"code": "SHL",
+	"countryCode": "IN",
+	"countryName": "印度",
+	cityFirstLetter: "X"
+}, {
+	cityName: "希俄斯",
+	citySpell: "XIESI",
+	"code": "JKH",
+	"countryCode": "GR",
+	"countryName": "希腊",
+	cityFirstLetter: "X"
+}, {
+	cityName: "锡尔弗克里克",
+	citySpell: "XIERFUKELIKE",
+	"code": "SVK",
+	"countryCode": "BZ",
+	"countryName": "伯利兹",
+	cityFirstLetter: "X"
+}, {
+	cityName: "宣化",
+	citySpell: "XUANHUA",
+	"code": "TBB",
+	"countryCode": "VN",
+	"countryName": "越南",
+	cityFirstLetter: "X"
+}, {
+	cityName: "谢尔登波因特",
+	citySpell: "XIEERDENGBOYINTE",
+	"code": "SXP",
+	"countryCode": "US",
+	"countryName": "美国",
+	cityFirstLetter: "X"
+}, {
+	cityName: "新斯图亚霍克",
+	citySpell: "XINSITUYAHUOKE",
+	"code": "KNW",
+	"countryCode": "US",
+	"countryName": "美国",
+	cityFirstLetter: "X"
+}, {
+	cityName: "下岛",
+	citySpell: "XIADAO",
+	"code": "HTB",
+	"countryCode": "GP",
+	"countryName": "瓜德罗普岛",
+	cityFirstLetter: "X"
+}, {
+	cityName: "新卡尔达斯",
+	citySpell: "XINKAERDASI",
+	"code": "CLV",
+	"countryCode": "BR",
+	"countryName": "巴西",
+	cityFirstLetter: "X"
+}, {
+	cityName: "锡罗斯岛",
+	citySpell: "XILUOSIDAO",
+	"code": "JSY",
+	"countryCode": "GR",
+	"countryName": "希腊",
+	cityFirstLetter: "X"
+}, {
+	cityName: "锡卡索",
+	citySpell: "XIKASUO",
+	"code": "KSS",
+	"countryCode": "ML",
+	"countryName": "马里",
+	cityFirstLetter: "X"
+}, {
+	cityName: "锡拉丘兹",
+	citySpell: "XILAQIUZI",
+	"code": "SYR",
+	"countryCode": "US",
+	"countryName": "美国",
+	cityFirstLetter: "X"
+}, {
+	cityName: "希吉曼尼",
+	citySpell: "XIJIMANNI",
+	"code": "SZY",
+	"countryCode": "PL",
+	"countryName": "波兰",
+	cityFirstLetter: "X"
+}, {
+	cityName: "星期五港",
+	citySpell: "XINGQIWUGANG",
+	"code": "FRD",
+	"countryCode": "US",
+	"countryName": "美国",
+	cityFirstLetter: "X"
+}, {
+	cityName: "锡特卡",
+	citySpell: "XITEKA",
+	"code": "SIT",
+	"countryCode": "US",
+	"countryName": "美国",
+	cityFirstLetter: "X"
+}, {
+	cityName: "西西亚",
+	citySpell: "XIXIYA",
+	"code": "ICI",
+	"countryCode": "FJ",
+	"countryName": "斐济群岛",
+	cityFirstLetter: "X"
+}, {
+	cityName: "下地岛",
+	citySpell: "XIADIDAO",
+	"code": "SHI",
+	"countryCode": "JP",
+	"countryName": "日本",
+	cityFirstLetter: "X"
+}, {
+	cityName: "下瓦尔托夫斯克",
+	citySpell: "XIAWAERTUOFUSIKE",
+	"code": "NJC",
+	"countryCode": "RU",
+	"countryName": "俄罗斯",
+	cityFirstLetter: "X"
+}, {
+	cityName: "新拉莱多",
+	citySpell: "XINLALAIDUO",
+	"code": "NLD",
+	"countryCode": "MX",
+	"countryName": "墨西哥",
+	cityFirstLetter: "X"
+}, {
+	cityName: "希尔克内斯",
+	citySpell: "XIERKENEISI",
+	"code": "KKN",
+	"countryCode": "NO",
+	"countryName": "挪威",
+	cityFirstLetter: "X"
+}, {
+	cityName: "休伦",
+	citySpell: "XIULUN",
+	"code": "HON",
+	"countryCode": "US",
+	"countryName": "美国",
+	cityFirstLetter: "X"
+}, {
+	cityName: "希律恩多",
+	citySpell: "XILVENDUO",
+	"code": "KRE",
+	"countryCode": "BI",
+	"countryName": "布隆迪",
+	cityFirstLetter: "X"
+}, {
+	cityName: "夏洛特敦",
+	citySpell: "XIALUOTEDUN",
+	"code": "YYG",
+	"countryCode": "CA",
+	"countryName": "加拿大",
+	cityFirstLetter: "X"
+}, {
+	cityName: "希卡尔珀尔",
+	citySpell: "XIKAERPOER",
+	"code": "SWV",
+	"countryCode": "RU",
+	"countryName": "俄罗斯",
+	cityFirstLetter: "X"
+}, {
+	cityName: "欣钦布鲁克",
+	citySpell: "XINQINBULUKE",
+	"code": "HNK",
+	"countryCode": "AU",
+	"countryName": "澳大利亚",
+	cityFirstLetter: "X"
+}, {
+	cityName: "休恩登",
+	citySpell: "XIUENDENG",
+	"code": "HGD",
+	"countryCode": "AU",
+	"countryName": "澳大利亚",
+	cityFirstLetter: "X"
+}, {
+	cityName: "锡亚尔科特",
+	citySpell: "XIYAERKETE",
+	"code": "SKT",
+	"countryCode": "PK",
+	"countryName": "巴基斯坦",
+	cityFirstLetter: "X"
+}, {
+	cityName: "希诺普",
+	citySpell: "XINUOPU",
+	"code": "NOP",
+	"countryCode": "TR",
+	"countryName": "土耳其",
+	cityFirstLetter: "X"
+}, {
+	cityName: "西乌纳",
+	citySpell: "XIWUNA",
+	"code": "SIU",
+	"countryCode": "NI",
+	"countryName": "尼加拉瓜",
+	cityFirstLetter: "X"
+}, {
+	cityName: "锡利群岛",
+	citySpell: "XILIQUNDAO",
+	"code": "ISC",
+	"countryCode": "GB",
+	"countryName": "英国",
+	cityFirstLetter: "X"
+}, {
+	cityName: "肖罗",
+	citySpell: "XIAOLUO",
+	"code": "SOW",
+	"countryCode": "US",
+	"countryName": "美国",
+	cityFirstLetter: "X"
+}, {
+	cityName: "锡诺普",
+	citySpell: "XINUOPU",
+	"code": "OPS",
+	"countryCode": "BR",
+	"countryName": "巴西",
+	cityFirstLetter: "X"
+}, {
+	cityName: "西安普敦",
+	citySpell: "XIANPUDUN",
+	"code": "FOK",
+	"countryCode": "US",
+	"countryName": "美国",
+	cityFirstLetter: "X"
+}, {
+	cityName: "岘港",
+	citySpell: "XIANGANG",
+	"code": "DAD",
+	"countryCode": "VN",
+	"countryName": "越南",
+	cityFirstLetter: "X"
+}, {
+	cityName: "锡代利亚",
+	citySpell: "XIDAILIYA",
+	"code": "DMO",
+	"countryCode": "US",
+	"countryName": "美国",
+	cityFirstLetter: "X"
+}, {
+	cityName: "辛菲罗波尔",
+	citySpell: "XINFEILUOBOER",
+	"code": "SIP",
+	"countryCode": "UA",
+	"countryName": "乌克兰",
+	cityFirstLetter: "X"
+}, {
+	cityName: "西哈努克城",
+	citySpell: "XIHANUKECHENG",
+	"code": "KOS",
+	"countryCode": "KH",
+	"countryName": "柬埔寨",
+	cityFirstLetter: "X"
+}, {
+	cityName: "锡博龙博龙",
+	citySpell: "XIBOLONGBOLONG",
+	"code": "DTB",
+	"countryCode": "ID",
+	"countryName": "印度尼西亚",
+	cityFirstLetter: "X"
+}, {
+	cityName: "西棕榈滩",
+	citySpell: "XIZONGLVTAN",
+	"code": "PBI",
+	"countryCode": "US",
+	"countryName": "美国",
+	cityFirstLetter: "X"
+}, {
+	cityName: "西南海岸",
+	citySpell: "XINANHAIAN",
+	"code": "SWJ",
+	"countryCode": "VU",
+	"countryName": "瓦努阿图",
+	cityFirstLetter: "X"
+}, {
+	cityName: "希莫尤",
+	citySpell: "XIMOYOU",
+	"code": "VPY",
+	"countryCode": "MZ",
+	"countryName": "莫桑比克",
+	cityFirstLetter: "X"
+}, {
+	cityName: "西姆拉",
+	citySpell: "XIMULA",
+	"code": "SLV",
+	"countryCode": "IN",
+	"countryName": "印度",
+	cityFirstLetter: "X"
+}, {
+	cityName: "西安吉拉斯",
+	citySpell: "XIANJILASI",
+	"code": "WLP",
+	"countryCode": "AU",
+	"countryName": "澳大利亚",
+	cityFirstLetter: "X"
+}, {
+	cityName: "小石城",
+	citySpell: "XIAOSHICHENG",
+	"code": "LIT",
+	"countryCode": "US",
+	"countryName": "美国",
+	cityFirstLetter: "X"
+}, {
+	cityName: "西米塔拉",
+	citySpell: "XIMITALA",
+	"code": "CIM",
+	"countryCode": "CO",
+	"countryName": "哥伦比亚",
+	cityFirstLetter: "X"
+}, {
+	cityName: "锡蒂亚",
+	citySpell: "XIDIYA",
+	"code": "JSH",
+	"countryCode": "GR",
+	"countryName": "希腊",
+	cityFirstLetter: "X"
+}, {
+	cityName: "谢尔曼挽丹尼逊",
+	citySpell: "XIEERMANWANDANNIXUN",
+	"code": "PNX",
+	"countryCode": "US",
+	"countryName": "美国",
+	cityFirstLetter: "X"
+}, {
+	cityName: "谢弗维尔",
+	citySpell: "XIEFUWEIER",
+	"code": "YKL",
+	"countryCode": "CA",
+	"countryName": "加拿大",
+	cityFirstLetter: "X"
+}, {
+	cityName: "谢戈德阿维拉",
+	citySpell: "XIEGEDEAWEILA",
+	"code": "AVI",
+	"countryCode": "CU",
+	"countryName": "古巴",
+	cityFirstLetter: "X"
+}, {
+	cityName: "新阿尔姆",
+	citySpell: "XINAERMU",
+	"code": "ULM",
+	"countryCode": "US",
+	"countryName": "美国",
+	cityFirstLetter: "X"
+}, {
+	cityName: "夏洛特",
+	citySpell: "XIALUOTE",
+	"code": "CLT",
+	"countryCode": "US",
+	"countryName": "美国",
+	cityFirstLetter: "X"
+}, {
+	cityName: "新赫罗纳",
+	citySpell: "XINHELUONA",
+	"code": "GER",
+	"countryCode": "CU",
+	"countryName": "古巴",
+	cityFirstLetter: "X"
+}, {
+	cityName: "锡拉",
+	citySpell: "XILA",
+	"code": "JTR",
+	"countryCode": "GR",
+	"countryName": "希腊",
+	cityFirstLetter: "X"
+}, {
+	cityName: "新哈勒法",
+	citySpell: "XINHALEFA",
+	"code": "NHF",
+	"countryCode": "SD",
+	"countryName": "苏丹",
+	cityFirstLetter: "X"
+}, {
+	cityName: "希利赖克",
+	citySpell: "XILILAIKE",
+	"code": "HKB",
+	"countryCode": "US",
+	"countryName": "美国",
+	cityFirstLetter: "X"
+}, {
+	cityName: "香农",
+	citySpell: "XIANGNONG",
+	"code": "SNN",
+	"countryCode": "IE",
+	"countryName": "爱尔兰",
+	cityFirstLetter: "X"
+}, {
+	cityName: "暹粒",
+	citySpell: "XIANLI",
+	"code": "REP",
+	"countryCode": "KH",
+	"countryName": "柬埔寨",
+	cityFirstLetter: "X"
+}, {
+	cityName: "下诺夫哥罗德",
+	citySpell: "XIANUOFUGELUODE",
+	"code": "GOJ",
+	"countryCode": "RU",
+	"countryName": "俄罗斯",
+	cityFirstLetter: "X"
+}, {
+	cityName: "小洛希尼",
+	citySpell: "XIAOLUOXINI",
+	"code": "LSZ",
+	"countryCode": "HR",
+	"countryName": "克罗地亚",
+	cityFirstLetter: "X"
+}, {
+	cityName: "雅加达",
+	citySpell: "YAJIADA",
+	"code": "JKT",
+	"countryCode": "ID",
+	"countryName": "印度尼西亚",
+	cityFirstLetter: "Y"
+}, {
+	cityName: "雅典",
+	citySpell: "YADIAN",
+	"code": "ATH",
+	"countryCode": "GR",
+	"countryName": "希腊",
+	cityFirstLetter: "Y"
+}, {
+	cityName: "亚特兰大",
+	citySpell: "YATELANDA",
+	"code": "ATL",
+	"countryCode": "US",
+	"countryName": "美国",
+	cityFirstLetter: "Y"
+}, {
+	cityName: "伊斯兰堡",
+	citySpell: "YISILANBAO",
+	"code": "ISB",
+	"countryCode": "PK",
+	"countryName": "巴基斯坦",
+	cityFirstLetter: "Y"
+}, {
+	cityName: "仰光",
+	citySpell: "YANGGUANG",
+	"code": "RGN",
+	"countryCode": "MM",
+	"countryName": "缅甸",
+	cityFirstLetter: "Y"
+}, {
+	cityName: "伊斯坦布尔",
+	citySpell: "YISITANBUER",
+	"code": "IST",
+	"countryCode": "TR",
+	"countryName": "土耳其",
+	cityFirstLetter: "Y"
+}, {
+	cityName: "盐湖城",
+	citySpell: "YANHUCHENG",
+	"code": "SLC",
+	"countryCode": "US",
+	"countryName": "美国",
+	cityFirstLetter: "Y"
+}, {
+	cityName: "伊西斯福德",
+	citySpell: "YIXISIFUDE",
+	"code": "ISI",
+	"countryCode": "AU",
+	"countryName": "澳大利亚",
+	cityFirstLetter: "Y"
+}, {
+	cityName: "英厄姆",
+	citySpell: "YINGEMU",
+	"code": "IGH",
+	"countryCode": "AU",
+	"countryName": "澳大利亚",
+	cityFirstLetter: "Y"
+}, {
+	cityName: "伊洛",
+	citySpell: "YILUO",
+	"code": "ILQ",
+	"countryCode": "PE",
+	"countryName": "秘鲁",
+	cityFirstLetter: "Y"
+}, {
+	cityName: "伊尼希尔岛",
+	citySpell: "YINIXIERDAO",
+	"code": "INQ",
+	"countryCode": "IE",
+	"countryName": "爱尔兰",
+	cityFirstLetter: "Y"
+}, {
+	cityName: "尤里卡",
+	citySpell: "YOULIKA",
+	"code": "EUE",
+	"countryCode": "US",
+	"countryName": "美国",
+	cityFirstLetter: "Y"
+}, {
+	cityName: "因那明卡",
+	citySpell: "YINNAMINGKA",
+	"code": "INM",
+	"countryCode": "AU",
+	"countryName": "澳大利亚",
+	cityFirstLetter: "Y"
+}, {
+	cityName: "伊尼什莫尔岛",
+	citySpell: "YINISHIMOERDAO",
+	"code": "IOR",
+	"countryCode": "IE",
+	"countryName": "爱尔兰",
+	cityFirstLetter: "Y"
+}, {
+	cityName: "英帕尔",
+	citySpell: "YINGPAER",
+	"code": "IMF",
+	"countryCode": "IN",
+	"countryName": "印度",
+	cityFirstLetter: "Y"
+}, {
+	cityName: "伊曼内",
+	citySpell: "YIMANNEI",
+	"code": "IMN",
+	"countryCode": "PG",
+	"countryName": "巴布亚新几内亚",
+	cityFirstLetter: "Y"
+}, {
+	cityName: "伊塔布纳",
+	citySpell: "YITABUNA",
+	"code": "ITN",
+	"countryCode": "BR",
+	"countryName": "巴西",
+	cityFirstLetter: "Y"
+}, {
+	cityName: "耶恩基斯",
+	citySpell: "YEENJISI",
+	"code": "YEQ",
+	"countryCode": "PG",
+	"countryName": "巴布亚新几内亚",
+	cityFirstLetter: "Y"
+}, {
+	cityName: "岩国",
+	citySpell: "YANGUO",
+	"code": "IWK",
+	"countryCode": "JP",
+	"countryName": "日本",
+	cityFirstLetter: "Y"
+}, {
+	cityName: "亚美利加河",
+	citySpell: "YAMEILIJIAHE",
+	"code": "RCN",
+	"countryCode": "AU",
+	"countryName": "澳大利亚",
+	cityFirstLetter: "Y"
+}, {
+	cityName: "伊莫",
+	citySpell: "YIMO",
+	"code": "EMO",
+	"countryCode": "PG",
+	"countryName": "巴布亚新几内亚",
+	cityFirstLetter: "Y"
+}, {
+	cityName: "伊利甘",
+	citySpell: "YILIGAN",
+	"code": "IGN",
+	"countryCode": "PH",
+	"countryName": "菲律宾",
+	cityFirstLetter: "Y"
+}, {
+	cityName: "伊瓜苏",
+	citySpell: "YIGUASU",
+	"code": "IGR",
+	"countryCode": "AR",
+	"countryName": "阿根廷",
+	cityFirstLetter: "Y"
+}, {
+	cityName: "伊比萨",
+	citySpell: "YIBISA",
+	"code": "IBZ",
+	"countryCode": "ES",
+	"countryName": "西班牙",
+	cityFirstLetter: "Y"
+}, {
+	cityName: "亚历山德里亚贝",
+	citySpell: "YALISHANDELIYABEI",
+	"code": "ALJ",
+	"countryCode": "ZA",
+	"countryName": "南非",
+	cityFirstLetter: "Y"
+}, {
+	cityName: "怡保",
+	citySpell: "YIBAO",
+	"code": "IPH",
+	"countryCode": "MY",
+	"countryName": "马来西亚",
+	cityFirstLetter: "Y"
+}, {
+	cityName: "壹歧",
+	citySpell: "YIQI",
+	"code": "IKI",
+	"countryCode": "JP",
+	"countryName": "日本",
+	cityFirstLetter: "Y"
+}, {
+	cityName: "耶夫勒",
+	citySpell: "YEFULE",
+	"code": "GVX",
+	"countryCode": "SE",
+	"countryName": "瑞典",
+	cityFirstLetter: "Y"
+}, {
+	cityName: "尤莱",
+	citySpell: "YOULAI",
+	"code": "RKU",
+	"countryCode": "PG",
+	"countryName": "巴布亚新几内亚",
+	cityFirstLetter: "Y"
+}, {
+	cityName: "雅胡基摩",
+	citySpell: "YAHUJIMO",
+	"code": "DEX",
+	"countryCode": "ID",
+	"countryName": "印度尼西亚",
+	cityFirstLetter: "Y"
+}, {
+	cityName: "亚努阿里亚",
+	citySpell: "YANUALIYA",
+	"code": "JNA",
+	"countryCode": "BR",
+	"countryName": "巴西",
+	cityFirstLetter: "Y"
+}, {
+	cityName: "亚松森",
+	citySpell: "YASONGSEN",
+	"code": "ASU",
+	"countryCode": "PY",
+	"countryName": "巴拉圭",
+	cityFirstLetter: "Y"
+}, {
+	cityName: "因雅提",
+	citySpell: "YINYATI",
+	"code": "INY",
+	"countryCode": "ZA",
+	"countryName": "南非",
+	cityFirstLetter: "Y"
+}, {
+	cityName: "因佩拉特里斯",
+	citySpell: "YINPEILATELISI",
+	"code": "IMP",
+	"countryCode": "BR",
+	"countryName": "巴西",
+	cityFirstLetter: "Y"
+}, {
+	cityName: "怡皮阿尔斯",
+	citySpell: "YIPIAERSI",
+	"code": "IPI",
+	"countryCode": "CO",
+	"countryName": "哥伦比亚",
+	cityFirstLetter: "Y"
+}, {
+	cityName: "约阿港",
+	citySpell: "YUEAGANG",
+	"code": "YHK",
+	"countryCode": "CA",
+	"countryName": "加拿大",
+	cityFirstLetter: "Y"
+}, {
+	cityName: "亚丁",
+	citySpell: "YADING",
+	"code": "ADE",
+	"countryCode": "YE",
+	"countryName": "也门",
+	cityFirstLetter: "Y"
+}, {
+	cityName: "伊克",
+	citySpell: "YIKE",
+	"code": "EEK",
+	"countryCode": "US",
+	"countryName": "美国",
+	cityFirstLetter: "Y"
+}, {
+	cityName: "雅浦群岛",
+	citySpell: "YAPUQUNDAO",
+	"code": "YAP",
+	"countryCode": "FM",
+	"countryName": "密克罗尼西亚",
+	cityFirstLetter: "Y"
+}, {
+	cityName: "尤瓦尔迪",
+	citySpell: "YOUWAERDI",
+	"code": "UVA",
+	"countryCode": "US",
+	"countryName": "美国",
+	cityFirstLetter: "Y"
+}, {
+	cityName: "伊德勒",
+	citySpell: "YIDELE",
+	"code": "IDB",
+	"countryCode": "SE",
+	"countryName": "瑞典",
+	cityFirstLetter: "Y"
+}, {
+	cityName: "伊丽莎白港",
+	citySpell: "YILISHABAIGANG",
+	"code": "PLZ",
+	"countryCode": "ZA",
+	"countryName": "南非",
+	cityFirstLetter: "Y"
+}, {
+	cityName: "伊蒙达",
+	citySpell: "YIMENGDA",
+	"code": "IMD",
+	"countryCode": "PG",
+	"countryName": "巴布亚新几内亚",
+	cityFirstLetter: "Y"
+}, {
+	cityName: "伊卢利萨特",
+	citySpell: "YILULISATE",
+	"code": "JAV",
+	"countryCode": "GL",
+	"countryName": "格陵兰岛",
+	cityFirstLetter: "Y"
+}, {
+	cityName: "印多尔",
+	citySpell: "YINDUOER",
+	"code": "IDR",
+	"countryCode": "IN",
+	"countryName": "印度",
+	cityFirstLetter: "Y"
+}, {
+	cityName: "约拉",
+	citySpell: "YUELA",
+	"code": "YOL",
+	"countryCode": "NG",
+	"countryName": "尼日利亚",
+	cityFirstLetter: "Y"
+}, {
+	cityName: "伊丽莎白敦",
+	citySpell: "YILISHABAIDUN",
+	"code": "EKX",
+	"countryCode": "US",
+	"countryName": "美国",
+	cityFirstLetter: "Y"
+}, {
+	cityName: "伊特丹纳",
+	citySpell: "YITEDANNA",
+	"code": "ETD",
+	"countryCode": "AU",
+	"countryName": "澳大利亚",
+	cityFirstLetter: "Y"
+}, {
+	cityName: "伊雷塞",
+	citySpell: "YILEISAI",
+	"code": "IRE",
+	"countryCode": "BR",
+	"countryName": "巴西",
+	cityFirstLetter: "Y"
+}, {
+	cityName: "亚萨瓦岛",
+	citySpell: "YASAWADAO",
+	"code": "YAS",
+	"countryCode": "FJ",
+	"countryName": "斐济群岛",
+	cityFirstLetter: "Y"
+}, {
+	cityName: "亚历山德鲁波利斯",
+	citySpell: "YALISHANDELUBOLISI",
+	"code": "AXD",
+	"countryCode": "GR",
+	"countryName": "希腊",
+	cityFirstLetter: "Y"
+}, {
+	cityName: "伊尔福德",
+	citySpell: "YIERFUDE",
+	"code": "ILF",
+	"countryCode": "CA",
+	"countryName": "加拿大",
+	cityFirstLetter: "Y"
+}, {
+	cityName: "伊万诺沃",
+	citySpell: "YIWANNUOWO",
+	"code": "IWA",
+	"countryCode": "RU",
+	"countryName": "俄罗斯",
+	cityFirstLetter: "Y"
+}, {
+	cityName: "因拜马代",
+	citySpell: "YINBAIMADAI",
+	"code": "IMB",
+	"countryCode": "GY",
+	"countryName": "圭亚那",
+	cityFirstLetter: "Y"
+}, {
+	cityName: "英德",
+	citySpell: "YINGDE",
+	"code": "ENE",
+	"countryCode": "ID",
+	"countryName": "印度尼西亚",
+	cityFirstLetter: "Y"
+}, {
+	cityName: "伊卡瓦鲁",
+	citySpell: "YIKAWALU",
+	"code": "ICA",
+	"countryCode": "VE",
+	"countryName": "委内瑞拉",
+	cityFirstLetter: "Y"
+}, {
+	cityName: "因萨拉",
+	citySpell: "YINSALA",
+	"code": "INZ",
+	"countryCode": "DZ",
+	"countryName": "阿尔及利亚",
+	cityFirstLetter: "Y"
+}, {
+	cityName: "亚兹德",
+	citySpell: "YAZIDE",
+	"code": "AZD",
+	"countryCode": "IR",
+	"countryName": "伊朗",
+	cityFirstLetter: "Y"
+}, {
+	cityName: "雅克巴西工程师镇",
+	citySpell: "YAKEBAXIGONGCHENGSHIZHEN",
+	"code": "IGB",
+	"countryCode": "AR",
+	"countryName": "阿根廷",
+	cityFirstLetter: "Y"
+}, {
+	cityName: "约什卡尔奥拉",
+	citySpell: "YUESHIKAERAOLA",
+	"code": "JOK",
+	"countryCode": "RU",
+	"countryName": "俄罗斯",
+	cityFirstLetter: "Y"
+}, {
+	cityName: "伊格鲁利克",
+	citySpell: "YIGELULIKE",
+	"code": "YGT",
+	"countryCode": "CA",
+	"countryName": "加拿大",
+	cityFirstLetter: "Y"
+}, {
+	cityName: "伊热夫斯克",
+	citySpell: "YIREFUSIKE",
+	"code": "IJK",
+	"countryCode": "RU",
+	"countryName": "俄罗斯",
+	cityFirstLetter: "Y"
+}, {
+	cityName: "伊杰吉克",
+	citySpell: "YIJIEJIKE",
+	"code": "EGX",
+	"countryCode": "US",
+	"countryName": "美国",
+	cityFirstLetter: "Y"
+}, {
+	cityName: "伊胡",
+	citySpell: "YIHU",
+	"code": "IHU",
+	"countryCode": "PG",
+	"countryName": "巴布亚新几内亚",
+	cityFirstLetter: "Y"
+}, {
+	cityName: "亚穆苏克罗",
+	citySpell: "YAMUSUKELUO",
+	"code": "ASK",
+	"countryCode": "CI",
+	"countryName": "科特迪瓦",
+	cityFirstLetter: "Y"
+}, {
+	cityName: "伊迪奥法",
+	citySpell: "YIDIAOFA",
+	"code": "IDF",
+	"countryCode": "CD",
+	"countryName": "刚果民主共和国",
+	cityFirstLetter: "Y"
+}, {
+	cityName: "伊格尔里弗",
+	citySpell: "YIGEERLIFU",
+	"code": "EGV",
+	"countryCode": "US",
+	"countryName": "美国",
+	cityFirstLetter: "Y"
+}, {
+	cityName: "尤宁群岛",
+	citySpell: "YOUNINGQUNDAO",
+	"code": "UNI",
+	"countryCode": "VC",
+	"countryName": "圣文森特和格林纳丁斯",
+	cityFirstLetter: "Y"
+}, {
+	cityName: "伊林加",
+	citySpell: "YILINJIA",
+	"code": "IRI",
+	"countryCode": "TZ",
+	"countryName": "坦桑尼亚",
+	cityFirstLetter: "Y"
+}, {
+	cityName: "尤福拉",
+	citySpell: "YOUFULA",
+	"code": "EUF",
+	"countryCode": "US",
+	"countryName": "美国",
+	cityFirstLetter: "Y"
+}, {
+	cityName: "伊舒尔",
+	citySpell: "YISHUER",
+	"code": "IRD",
+	"countryCode": "BD",
+	"countryName": "孟加拉国",
+	cityFirstLetter: "Y"
+}, {
+	cityName: "约克",
+	citySpell: "YUEKE",
+	"code": "ZAC",
+	"countryCode": "CA",
+	"countryName": "加拿大",
+	cityFirstLetter: "Y"
+}, {
+	cityName: "伊茹伊",
+	citySpell: "YIRUYI",
+	"code": "IJU",
+	"countryCode": "BR",
+	"countryName": "巴西",
+	cityFirstLetter: "Y"
+}, {
+	cityName: "伊久吉格",
+	citySpell: "YIJIUJIGE",
+	"code": "IGG",
+	"countryCode": "US",
+	"countryName": "美国",
+	cityFirstLetter: "Y"
+}, {
+	cityName: "伊瓜苏福尔斯",
+	citySpell: "YIGUASUFUERSI",
+	"code": "IGU",
+	"countryCode": "BR",
+	"countryName": "巴西",
+	cityFirstLetter: "Y"
+}, {
+	cityName: "扬斯敦",
+	citySpell: "YANGSIDUN",
+	"code": "YNG",
+	"countryCode": "US",
+	"countryName": "美国",
+	cityFirstLetter: "Y"
+}, {
+	cityName: "英克曼",
+	citySpell: "YINGKEMAN",
+	"code": "IKP",
+	"countryCode": "AU",
+	"countryName": "澳大利亚",
+	cityFirstLetter: "Y"
+}, {
+	cityName: "雅马勒勒",
+	citySpell: "YAMALELE",
+	"code": "IMA",
+	"countryCode": "PG",
+	"countryName": "巴布亚新几内亚",
+	cityFirstLetter: "Y"
+}, {
+	cityName: "伊胡西",
+	citySpell: "YIHUXI",
+	"code": "IHO",
+	"countryCode": "MG",
+	"countryName": "马达加斯加",
+	cityFirstLetter: "Y"
+}, {
+	cityName: "亚瓜拉",
+	citySpell: "YAGUALA",
+	"code": "AYG",
+	"countryCode": "CO",
+	"countryName": "哥伦比亚",
+	cityFirstLetter: "Y"
+}, {
+	cityName: "亚库塔特",
+	citySpell: "YAKUTATE",
+	"code": "YAK",
+	"countryCode": "US",
+	"countryName": "美国",
+	cityFirstLetter: "Y"
+}, {
+	cityName: "伊托卡马",
+	citySpell: "YITUOKAMA",
+	"code": "ITK",
+	"countryCode": "PG",
+	"countryName": "巴布亚新几内亚",
+	cityFirstLetter: "Y"
+}, {
+	cityName: "亚喀巴",
+	citySpell: "YAKABA",
+	"code": "AQJ",
+	"countryCode": "JO",
+	"countryName": "约旦",
+	cityFirstLetter: "Y"
+}, {
+	cityName: "因佛雷尔",
+	citySpell: "YINFOLEIER",
+	"code": "IVR",
+	"countryCode": "AU",
+	"countryName": "澳大利亚",
+	cityFirstLetter: "Y"
+}, {
+	cityName: "伊江岛",
+	citySpell: "YIJIANGDAO",
+	"code": "IEJ",
+	"countryCode": "JP",
+	"countryName": "日本",
+	cityFirstLetter: "Y"
+}, {
+	cityName: "伊西罗",
+	citySpell: "YIXILUO",
+	"code": "IRP",
+	"countryCode": "CD",
+	"countryName": "刚果民主共和国",
+	cityFirstLetter: "Y"
+}, {
+	cityName: "伊利(宾西法尼亚州)",
+	citySpell: "YILI",
+	"code": "ERI",
+	"countryCode": "US",
+	"countryName": "美国",
+	cityFirstLetter: "Y"
+}, {
+	cityName: "约克岛",
+	citySpell: "YUEKEDAO",
+	"code": "OKR",
+	"countryCode": "AU",
+	"countryName": "澳大利亚",
+	cityFirstLetter: "Y"
+}, {
+	cityName: "约马",
+	citySpell: "YUEMA",
+	"code": "IOP",
+	"countryCode": "PG",
+	"countryName": "巴布亚新几内亚",
+	cityFirstLetter: "Y"
+}, {
+	cityName: "尤娜",
+	citySpell: "YOUNA",
+	"code": "UNA",
+	"countryCode": "BR",
+	"countryName": "巴西",
+	cityFirstLetter: "Y"
+}, {
+	cityName: "伊利(内华达州)",
+	citySpell: "YILI",
+	"code": "ELY",
+	"countryCode": "US",
+	"countryName": "美国",
+	cityFirstLetter: "Y"
+}, {
+	cityName: "尤利安娜霍布",
+	citySpell: "YOULIANNAHUOBU",
+	"code": "JJU",
+	"countryCode": "GL",
+	"countryName": "格陵兰岛",
+	cityFirstLetter: "Y"
+}, {
+	cityName: "伊娃当斯",
+	citySpell: "YIWADANGSI",
+	"code": "EVD",
+	"countryCode": "AU",
+	"countryName": "澳大利亚",
+	cityFirstLetter: "Y"
+}, {
+	cityName: "伊奥拉",
+	citySpell: "YIAOLA",
+	"code": "IAU",
+	"countryCode": "PG",
+	"countryName": "巴布亚新几内亚",
+	cityFirstLetter: "Y"
+}, {
+	cityName: "因夫吉克",
+	citySpell: "YINFUJIKE",
+	"code": "YIK",
+	"countryCode": "CA",
+	"countryName": "加拿大",
+	cityFirstLetter: "Y"
+}, {
+	cityName: "约翰内斯堡",
+	citySpell: "YUEHANNEISIBAO",
+	"code": "JNB",
+	"countryCode": "ZA",
+	"countryName": "南非",
+	cityFirstLetter: "Y"
+}, {
+	cityName: "伊兹密尔",
+	citySpell: "YIZIMIER",
+	"code": "IZM",
+	"countryCode": "TR",
+	"countryName": "土耳其",
+	cityFirstLetter: "Y"
+}, {
+	cityName: "因普丰多",
+	citySpell: "YINPUFENGDUO",
+	"code": "ION",
+	"countryCode": "CG",
+	"countryName": "刚果",
+	cityFirstLetter: "Y"
+}, {
+	cityName: "伊泰图巴",
+	citySpell: "YITAITUBA",
+	"code": "ITB",
+	"countryCode": "BR",
+	"countryName": "巴西",
+	cityFirstLetter: "Y"
+}, {
+	cityName: "伊内岛",
+	citySpell: "YINEIDAO",
+	"code": "IMI",
+	"countryCode": "MH",
+	"countryName": "马绍尔群岛",
+	cityFirstLetter: "Y"
+}, {
+	cityName: "亚的斯亚贝巴",
+	citySpell: "YADESIYABEIBA",
+	"code": "ADD",
+	"countryCode": "ET",
+	"countryName": "埃塞俄比亚",
+	cityFirstLetter: "Y"
+}, {
+	cityName: "伊伐洛",
+	citySpell: "YIFALUO",
+	"code": "IVL",
+	"countryCode": "FI",
+	"countryName": "芬兰",
+	cityFirstLetter: "Y"
+}, {
+	cityName: "伊斯法罕",
+	citySpell: "YISIFAHAN",
+	"code": "IFN",
+	"countryCode": "IR",
+	"countryName": "伊朗",
+	cityFirstLetter: "Y"
+}, {
+	cityName: "英达根",
+	citySpell: "YINGDAGEN",
+	"code": "IDN",
+	"countryCode": "PG",
+	"countryName": "巴布亚新几内亚",
+	cityFirstLetter: "Y"
+}, {
+	cityName: "奄美大岛",
+	citySpell: "YANMEIDADAO",
+	"code": "ASJ",
+	"countryCode": "JP",
+	"countryName": "日本",
+	cityFirstLetter: "Y"
+}, {
+	cityName: "伊凯拉",
+	citySpell: "YIKAILA",
+	"code": "IKL",
+	"countryCode": "CD",
+	"countryName": "刚果民主共和国",
+	cityFirstLetter: "Y"
+}, {
+	cityName: "伊丘卡",
+	citySpell: "YIQIUKA",
+	"code": "ECH",
+	"countryCode": "AU",
+	"countryName": "澳大利亚",
+	cityFirstLetter: "Y"
+}, {
+	cityName: "芽庄",
+	citySpell: "YAZHUANG",
+	"code": "NHA",
+	"countryCode": "VN",
+	"countryName": "越南",
+	cityFirstLetter: "Y"
+}, {
+	cityName: "延杜穆",
+	citySpell: "YANDUMU",
+	"code": "YUE",
+	"countryCode": "AU",
+	"countryName": "澳大利亚",
+	cityFirstLetter: "Y"
+}, {
+	cityName: "亚奎瓦",
+	citySpell: "YAKUIWA",
+	"code": "BYC",
+	"countryCode": "BO",
+	"countryName": "玻利维亚",
+	cityFirstLetter: "Y"
+}, {
+	cityName: "因约肯",
+	citySpell: "YINYUEKEN",
+	"code": "IYK",
+	"countryCode": "US",
+	"countryName": "美国",
+	cityFirstLetter: "Y"
+}, {
+	cityName: "伊万诺-弗兰科夫斯克",
+	citySpell: "YIWANNUO-FULANKEFUSIKE",
+	"code": "IFO",
+	"countryCode": "UA",
+	"countryName": "乌克兰",
+	cityFirstLetter: "Y"
+}, {
+	cityName: "伊尼里达港",
+	citySpell: "YINILIDAGANG",
+	"code": "PDA",
+	"countryCode": "CO",
+	"countryName": "哥伦比亚",
+	cityFirstLetter: "Y"
+}, {
+	cityName: "约帕尔",
+	citySpell: "YUEPAER",
+	"code": "EYP",
+	"countryCode": "CO",
+	"countryName": "哥伦比亚",
+	cityFirstLetter: "Y"
+}, {
+	cityName: "尤凯亚",
+	citySpell: "YOUKAIYA",
+	"code": "UKI",
+	"countryCode": "US",
+	"countryName": "美国",
+	cityFirstLetter: "Y"
+}, {
+	cityName: "约阿尼纳",
+	citySpell: "YUEANINA",
+	"code": "IOA",
+	"countryCode": "GR",
+	"countryName": "希腊",
+	cityFirstLetter: "Y"
+}, {
+	cityName: "雅西",
+	citySpell: "YAXI",
+	"code": "IAS",
+	"countryCode": "RO",
+	"countryName": "罗马尼亚",
+	cityFirstLetter: "Y"
+}, {
+	cityName: "亚维侬",
+	citySpell: "YAWEINONG",
+	"code": "AVN",
+	"countryCode": "FR",
+	"countryName": "法国",
+	cityFirstLetter: "Y"
+}, {
+	cityName: "因准",
+	citySpell: "YINZHUN",
+	"code": "INJ",
+	"countryCode": "AU",
+	"countryName": "澳大利亚",
+	cityFirstLetter: "Y"
+}, {
+	cityName: "因佛卡吉尔",
+	citySpell: "YINFOKAJIER",
+	"code": "IVC",
+	"countryCode": "NZ",
+	"countryName": "新西兰",
+	cityFirstLetter: "Y"
+}, {
+	cityName: "伊瓦格",
+	citySpell: "YIWAGE",
+	"code": "IBE",
+	"countryCode": "CO",
+	"countryName": "哥伦比亚",
+	cityFirstLetter: "Y"
+}, {
+	cityName: "扬",
+	citySpell: "YANG",
+	"code": "NGA",
+	"countryCode": "AU",
+	"countryName": "澳大利亚",
+	cityFirstLetter: "Y"
+}, {
+	cityName: "伊拉姆",
+	citySpell: "YILAMU",
+	"code": "IIL",
+	"countryCode": "IR",
+	"countryName": "伊朗",
+	cityFirstLetter: "Y"
+}, {
+	cityName: "亚特毛特卢阿克",
+	citySpell: "YATEMAOTELUAKE",
+	"code": "ATT",
+	"countryCode": "US",
+	"countryName": "美国",
+	cityFirstLetter: "Y"
+}, {
+	cityName: "因弗韦",
+	citySpell: "YINFUWEI",
+	"code": "IVW",
+	"countryCode": "AU",
+	"countryName": "澳大利亚",
+	cityFirstLetter: "Y"
+}, {
+	cityName: "伊皮兰加",
+	citySpell: "YIPILANJIA",
+	"code": "IPG",
+	"countryCode": "BR",
+	"countryName": "巴西",
+	cityFirstLetter: "Y"
+}, {
+	cityName: "伊博",
+	citySpell: "YIBO",
+	"code": "IBO",
+	"countryCode": "MZ",
+	"countryName": "莫桑比克",
+	cityFirstLetter: "Y"
+}, {
+	cityName: "耶路撒冷",
+	citySpell: "YELUSALENG",
+	"code": "JRS",
+	"countryCode": "IL",
+	"countryName": "以色列",
+	cityFirstLetter: "Y"
+}, {
+	cityName: "伊莱博",
+	citySpell: "YILAIBO",
+	"code": "PFR",
+	"countryCode": "CD",
+	"countryName": "刚果民主共和国",
+	cityFirstLetter: "Y"
+}, {
+	cityName: "育空堡",
+	citySpell: "YUKONGBAO",
+	"code": "FYU",
+	"countryCode": "US",
+	"countryName": "美国",
+	cityFirstLetter: "Y"
+}, {
+	cityName: "因塔",
+	citySpell: "YINTA",
+	"code": "INA",
+	"countryCode": "RU",
+	"countryName": "俄罗斯",
+	cityFirstLetter: "Y"
+}, {
+	cityName: "因盖扎姆",
+	citySpell: "YINGAIZHAMU",
+	"code": "INF",
+	"countryCode": "DZ",
+	"countryName": "阿尔及利亚",
+	cityFirstLetter: "Y"
+}, {
+	cityName: "耶洛奈夫",
+	citySpell: "YELUONAIFU",
+	"code": "YZF",
+	"countryCode": "CA",
+	"countryName": "加拿大",
+	cityFirstLetter: "Y"
+}, {
+	cityName: "伊尼扬巴内",
+	citySpell: "YINIYANGBANEI",
+	"code": "INH",
+	"countryCode": "MZ",
+	"countryName": "莫桑比克",
+	cityFirstLetter: "Y"
+}, {
+	cityName: "约罗",
+	citySpell: "YUELUO",
+	"code": "ORO",
+	"countryCode": "HN",
+	"countryName": "洪都拉斯",
+	cityFirstLetter: "Y"
+}, {
+	cityName: "伊斯特佩克",
+	citySpell: "YISITEPEIKE",
+	"code": "IZT",
+	"countryCode": "MX",
+	"countryName": "墨西哥",
+	cityFirstLetter: "Y"
+}, {
+	cityName: "耶利瓦勒",
+	citySpell: "YELIWALE",
+	"code": "GEV",
+	"countryCode": "SE",
+	"countryName": "瑞典",
+	cityFirstLetter: "Y"
+}, {
+	cityName: "雅瓜鲁纳",
+	citySpell: "YAGUALUNA",
+	"code": "JJG",
+	"countryCode": "BR",
+	"countryName": "巴西",
+	cityFirstLetter: "Y"
+}, {
+	cityName: "雅罗斯拉夫",
+	citySpell: "YALUOSILAFU",
+	"code": "IAR",
+	"countryCode": "RU",
+	"countryName": "俄罗斯",
+	cityFirstLetter: "Y"
+}, {
+	cityName: "亚历山大港",
+	citySpell: "YALISHANDAGANG",
+	"code": "PTD",
+	"countryCode": "US",
+	"countryName": "美国",
+	cityFirstLetter: "Y"
+}, {
+	cityName: "伊塔奎尔",
+	citySpell: "YITAKUIER",
+	"code": "ITQ",
+	"countryCode": "BR",
+	"countryName": "巴西",
+	cityFirstLetter: "Y"
+}, {
+	cityName: "夜丰颂",
+	citySpell: "YEFENGSONG",
+	"code": "HGN",
+	"countryCode": "TH",
+	"countryName": "泰国",
+	cityFirstLetter: "Y"
+}, {
+	cityName: "耶岛",
+	citySpell: "YEDAO",
+	"code": "IDY",
+	"countryCode": "FR",
+	"countryName": "法国",
+	cityFirstLetter: "Y"
+}, {
+	cityName: "耶格帕",
+	citySpell: "YEGEPA",
+	"code": "PGE",
+	"countryCode": "PG",
+	"countryName": "巴布亚新几内亚",
+	cityFirstLetter: "Y"
+}, {
+	cityName: "伊基克",
+	citySpell: "YIJIKE",
+	"code": "IQQ",
+	"countryCode": "CL",
+	"countryName": "智利",
+	cityFirstLetter: "Y"
+}, {
+	cityName: "雅维扎",
+	citySpell: "YAWEIZHA",
+	"code": "PYV",
+	"countryCode": "PA",
+	"countryName": "巴拿马",
+	cityFirstLetter: "Y"
+}, {
+	cityName: "亚拉拉特",
+	citySpell: "YALALATE",
+	"code": "ARY",
+	"countryCode": "AU",
+	"countryName": "澳大利亚",
+	cityFirstLetter: "Y"
+}, {
+	cityName: "伊拉卡",
+	citySpell: "YILAKA",
+	"code": "ILK",
+	"countryCode": "MG",
+	"countryName": "马达加斯加",
+	cityFirstLetter: "Y"
+}, {
+	cityName: "叶凯莱库",
+	citySpell: "YEKAILAIKU",
+	"code": "EKE",
+	"countryCode": "GY",
+	"countryName": "圭亚那",
+	cityFirstLetter: "Y"
+}, {
+	cityName: "亚库茨克",
+	citySpell: "YAKUCIKE",
+	"code": "YKS",
+	"countryCode": "RU",
+	"countryName": "俄罗斯",
+	cityFirstLetter: "Y"
+}, {
+	cityName: "伊格里姆",
+	citySpell: "YIGELIMU",
+	"code": "IRM",
+	"countryCode": "RU",
+	"countryName": "俄罗斯",
+	cityFirstLetter: "Y"
+}, {
+	cityName: "伊努克爪克",
+	citySpell: "YINUKEZHUAKE",
+	"code": "YPH",
+	"countryCode": "CA",
+	"countryName": "加拿大",
+	cityFirstLetter: "Y"
+}, {
+	cityName: "叶卡捷琳堡",
+	citySpell: "YEKAJIELINBAO",
+	"code": "SVX",
+	"countryCode": "RU",
+	"countryName": "俄罗斯",
+	cityFirstLetter: "Y"
+}, {
+	cityName: "扬克顿",
+	citySpell: "YANGKEDUN",
+	"code": "YKN",
+	"countryCode": "US",
+	"countryName": "美国",
+	cityFirstLetter: "Y"
+}, {
+	cityName: "伊莫卡利",
+	citySpell: "YIMOKALI",
+	"code": "IMM",
+	"countryCode": "US",
+	"countryName": "美国",
+	cityFirstLetter: "Y"
+}, {
+	cityName: "因阿迈纳斯",
+	citySpell: "YINAMAINASI",
+	"code": "IAM",
+	"countryCode": "DZ",
+	"countryName": "阿尔及利亚",
+	cityFirstLetter: "Y"
+}, {
+	cityName: "原州",
+	citySpell: "YUANZHOU",
+	"code": "WJU",
+	"countryCode": "KR",
+	"countryName": "韩国",
+	cityFirstLetter: "Y"
+}, {
+	cityName: "尤沃",
+	citySpell: "YOUWO",
+	"code": "EWO",
+	"countryCode": "CG",
+	"countryName": "刚果",
+	cityFirstLetter: "Y"
+}, {
+	cityName: "雅克梅勒",
+	citySpell: "YAKEMEILE",
+	"code": "JAK",
+	"countryCode": "HT",
+	"countryName": "海地",
+	cityFirstLetter: "Y"
+}, {
+	cityName: "耶奥维尔登",
+	citySpell: "YEAOWEIERDENG",
+	"code": "YEO",
+	"countryCode": "GB",
+	"countryName": "英国",
+	cityFirstLetter: "Y"
+}, {
+	cityName: "伊利齐",
+	citySpell: "YILIQI",
+	"code": "VVZ",
+	"countryCode": "DZ",
+	"countryName": "阿尔及利亚",
+	cityFirstLetter: "Y"
+}, {
+	cityName: "雅温得",
+	citySpell: "YAWENDE",
+	"code": "YAO",
+	"countryCode": "CM",
+	"countryName": "喀麦隆",
+	cityFirstLetter: "Y"
+}, {
+	cityName: "衣潘廷加",
+	citySpell: "YIPANTINGJIA",
+	"code": "IPN",
+	"countryCode": "BR",
+	"countryName": "巴西",
+	cityFirstLetter: "Y"
+}, {
+	cityName: "英纳加",
+	citySpell: "YINGNAJIA",
+	"code": "IGA",
+	"countryCode": "BS",
+	"countryName": "巴哈马",
+	cityFirstLetter: "Y"
+}, {
+	cityName: "伊斯顿",
+	citySpell: "YISIDUN",
+	"code": "ESN",
+	"countryCode": "US",
+	"countryName": "美国",
+	cityFirstLetter: "Y"
+}, {
+	cityName: "雅索吉",
+	citySpell: "YASUOJI",
+	"code": "YES",
+	"countryCode": "IR",
+	"countryName": "伊朗",
+	cityFirstLetter: "Y"
+}, {
+	cityName: "伊托考托米特",
+	citySpell: "YITUOKAOTUOMITE",
+	"code": "OBY",
+	"countryCode": "GL",
+	"countryName": "格陵兰岛",
+	cityFirstLetter: "Y"
+}, {
+	cityName: "银城",
+	citySpell: "YINCHENG",
+	"code": "SVC",
+	"countryCode": "US",
+	"countryName": "美国",
+	cityFirstLetter: "Y"
+}, {
+	cityName: "伊格尔",
+	citySpell: "YIGEER",
+	"code": "EAA",
+	"countryCode": "US",
+	"countryName": "美国",
+	cityFirstLetter: "Y"
+}, {
+	cityName: "伊萨菲约杜尔",
+	citySpell: "YISAFEIYUEDUER",
+	"code": "IFJ",
+	"countryCode": "IS",
+	"countryName": "冰岛",
+	cityFirstLetter: "Y"
+}, {
+	cityName: "延布",
+	citySpell: "YANBU",
+	"code": "YNB",
+	"countryCode": "SA",
+	"countryName": "沙特阿垃伯",
+	cityFirstLetter: "Y"
+}, {
+	cityName: "因尼斯费尔",
+	citySpell: "YINNISIFEIER",
+	"code": "IFL",
+	"countryCode": "AU",
+	"countryName": "澳大利亚",
+	cityFirstLetter: "Y"
+}, {
+	cityName: "印第安纳",
+	citySpell: "YINDIANNA",
+	"code": "IDI",
+	"countryCode": "US",
+	"countryName": "美国",
+	cityFirstLetter: "Y"
+}, {
+	cityName: "伊里奥纳",
+	citySpell: "YILIAONA",
+	"code": "IRN",
+	"countryCode": "HN",
+	"countryName": "洪都拉斯",
+	cityFirstLetter: "Y"
+}, {
+	cityName: "伊农戈",
+	citySpell: "YINONGGE",
+	"code": "INO",
+	"countryCode": "CD",
+	"countryName": "刚果民主共和国",
+	cityFirstLetter: "Y"
+}, {
+	cityName: "舆论岛",
+	citySpell: "YULUNDAO",
+	"code": "RNJ",
+	"countryCode": "JP",
+	"countryName": "日本",
+	cityFirstLetter: "Y"
+}, {
+	cityName: "尤加希克",
+	citySpell: "YOUJIAXIKE",
+	"code": "UGS",
+	"countryCode": "US",
+	"countryName": "美国",
+	cityFirstLetter: "Y"
+}, {
+	cityName: "雅格比纳",
+	citySpell: "YAGEBINA",
+	"code": "JCM",
+	"countryCode": "BR",
+	"countryName": "巴西",
+	cityFirstLetter: "Y"
+}, {
+	cityName: "于默奥",
+	citySpell: "YUMOAO",
+	"code": "UME",
+	"countryCode": "SE",
+	"countryName": "瑞典",
+	cityFirstLetter: "Y"
+}, {
+	cityName: "亚果阿",
+	citySpell: "YAGUOA",
+	"code": "GXX",
+	"countryCode": "CM",
+	"countryName": "喀麦隆",
+	cityFirstLetter: "Y"
+}, {
+	cityName: "伊尼什曼",
+	citySpell: "YINISHIMAN",
+	"code": "IIA",
+	"countryCode": "IE",
+	"countryName": "爱尔兰",
+	cityFirstLetter: "Y"
+}, {
+	cityName: "耶卢",
+	citySpell: "YELU",
+	"code": "DLD",
+	"countryCode": "NO",
+	"countryName": "挪威",
+	cityFirstLetter: "Y"
+}, {
+	cityName: "约特瓦塔",
+	citySpell: "YUETEWATA",
+	"code": "YOT",
+	"countryCode": "IL",
+	"countryName": "以色列",
+	cityFirstLetter: "Y"
+}, {
+	cityName: "亚罗士打",
+	citySpell: "YALUOSHIDA",
+	"code": "AOR",
+	"countryCode": "MY",
+	"countryName": "马来西亚",
+	cityFirstLetter: "Y"
+}, {
+	cityName: "伊洛伊洛",
+	citySpell: "YILUOYILUO",
+	"code": "ILO",
+	"countryCode": "PH",
+	"countryName": "菲律宾",
+	cityFirstLetter: "Y"
+}, {
+	cityName: "怡波岛",
+	citySpell: "YIBODAO",
+	"code": "IPA",
+	"countryCode": "VU",
+	"countryName": "瓦努阿图",
+	cityFirstLetter: "Y"
+}, {
+	cityName: "伊利亚姆纳",
+	citySpell: "YILIYAMUNA",
+	"code": "ILI",
+	"countryCode": "US",
+	"countryName": "美国",
+	cityFirstLetter: "Y"
+}, {
+	cityName: "伊尔库茨克",
+	citySpell: "YIERKUCIKE",
+	"code": "IKT",
+	"countryCode": "RU",
+	"countryName": "俄罗斯",
+	cityFirstLetter: "Y"
+}, {
+	cityName: "伊努维克",
+	citySpell: "YINUWEIKE",
+	"code": "YEV",
+	"countryCode": "CA",
+	"countryName": "加拿大",
+	cityFirstLetter: "Y"
+}, {
+	cityName: "伊皮尔",
+	citySpell: "YIPIER",
+	"code": "IPE",
+	"countryCode": "PH",
+	"countryName": "菲律宾",
+	cityFirstLetter: "Y"
+}, {
+	cityName: "伊洛林",
+	citySpell: "YILUOLIN",
+	"code": "ILR",
+	"countryCode": "NG",
+	"countryName": "尼日利亚",
+	cityFirstLetter: "Y"
+}, {
+	cityName: "尤金",
+	citySpell: "YOUJIN",
+	"code": "EUG",
+	"countryCode": "US",
+	"countryName": "美国",
+	cityFirstLetter: "Y"
+}, {
+	cityName: "伊瑚鲁",
+	citySpell: "YIHULU",
+	"code": "IFU",
+	"countryCode": "MV",
+	"countryName": "马尔代夫",
+	cityFirstLetter: "Y"
+}, {
+	cityName: "伊利乌斯",
+	citySpell: "YILIWUSI",
+	"code": "IOS",
+	"countryCode": "BR",
+	"countryName": "巴西",
+	cityFirstLetter: "Y"
+}, {
+	cityName: "亚历山德里亚（路易斯安那州）",
+	citySpell: "YALISHANDELIYA",
+	"code": "AEX",
+	"countryCode": "US",
+	"countryName": "美国",
+	cityFirstLetter: "Y"
+}, {
+	cityName: "印坦巴",
+	citySpell: "YINTANBA",
+	"code": "ZIH",
+	"countryCode": "MX",
+	"countryName": "墨西哥",
+	cityFirstLetter: "Y"
+}, {
+	cityName: "雅各布阿巴德",
+	citySpell: "YAGEBUABADE",
+	"code": "JAG",
+	"countryCode": "PK",
+	"countryName": "巴基斯坦",
+	cityFirstLetter: "Y"
+}, {
+	cityName: "伊加尔卡",
+	citySpell: "YIJIAERKA",
+	"code": "IAA",
+	"countryCode": "RU",
+	"countryName": "俄罗斯",
+	cityFirstLetter: "Y"
+}, {
+	cityName: "耶利马内",
+	citySpell: "YELIMANEI",
+	"code": "EYL",
+	"countryCode": "ML",
+	"countryName": "马里",
+	cityFirstLetter: "Y"
+}, {
+	cityName: "尤瓦尔",
+	citySpell: "YOUWAER",
+	"code": "EWE",
+	"countryCode": "ID",
+	"countryName": "印度尼西亚",
+	cityFirstLetter: "Y"
+}, {
+	cityName: "约瑟夫斯塔尔",
+	citySpell: "YUESEFUSITAER",
+	"code": "JOP",
+	"countryCode": "PG",
+	"countryName": "巴布亚新几内亚",
+	cityFirstLetter: "Y"
+}, {
+	cityName: "因斯布鲁克",
+	citySpell: "YINSIBULUKE",
+	"code": "INN",
+	"countryCode": "AT",
+	"countryName": "奥地利",
+	cityFirstLetter: "Y"
+}, {
+	cityName: "亚历山德拉",
+	citySpell: "YALISHANDELA",
+	"code": "ALR",
+	"countryCode": "NZ",
+	"countryName": "新西兰",
+	cityFirstLetter: "Y"
+}, {
+	cityName: "与那国",
+	citySpell: "YUNAGUO",
+	"code": "OGN",
+	"countryCode": "JP",
+	"countryName": "日本",
+	cityFirstLetter: "Y"
+}, {
+	cityName: "亚基马",
+	citySpell: "YAJIMA",
+	"code": "YKM",
+	"countryCode": "US",
+	"countryName": "美国",
+	cityFirstLetter: "Y"
+}, {
+	cityName: "约翰斯顿",
+	citySpell: "YUEHANSIDUN",
+	"code": "JST",
+	"countryCode": "US",
+	"countryName": "美国",
+	cityFirstLetter: "Y"
+}, {
+	cityName: "叶尔博加琼",
+	citySpell: "YEERBOJIAQIONG",
+	"code": "ERG",
+	"countryCode": "RU",
+	"countryName": "俄罗斯",
+	cityFirstLetter: "Y"
+}, {
+	cityName: "尤马",
+	citySpell: "YOUMA",
+	"code": "YUM",
+	"countryCode": "US",
+	"countryName": "美国",
+	cityFirstLetter: "Y"
+}, {
+	cityName: "伊塔佩鲁纳",
+	citySpell: "YITAPEILUNA",
+	"code": "ITP",
+	"countryCode": "BR",
+	"countryName": "巴西",
+	cityFirstLetter: "Y"
+}, {
+	cityName: "伊斯特梅恩",
+	citySpell: "YISITEMEIEN",
+	"code": "ZEM",
+	"countryCode": "CA",
+	"countryName": "加拿大",
+	cityFirstLetter: "Y"
+}, {
+	cityName: "伊塔姆巴丘利",
+	citySpell: "YITAMUBAQIULI",
+	"code": "ITI",
+	"countryCode": "BR",
+	"countryName": "巴西",
+	cityFirstLetter: "Y"
+}, {
+	cityName: "印度尔卡纳",
+	citySpell: "YINDUERKANA",
+	"code": "IDK",
+	"countryCode": "AU",
+	"countryName": "澳大利亚",
+	cityFirstLetter: "Y"
+}, {
+	cityName: "伊登顿",
+	citySpell: "YIDENGDUN",
+	"code": "EDE",
+	"countryCode": "US",
+	"countryName": "美国",
+	cityFirstLetter: "Y"
+}, {
+	cityName: "亚历山德里亚贝(纽约州)",
+	citySpell: "YALISHANDELIYABEI",
+	"code": "AXB",
+	"countryCode": "US",
+	"countryName": "美国",
+	cityFirstLetter: "Y"
+}, {
+	cityName: "伊塔夸抵亚拉",
+	citySpell: "YITAKUADIYALA",
+	"code": "ITA",
+	"countryCode": "BR",
+	"countryName": "巴西",
+	cityFirstLetter: "Y"
+}, {
+	cityName: "宇部",
+	citySpell: "YUBU",
+	"code": "UBJ",
+	"countryCode": "JP",
+	"countryName": "日本",
+	cityFirstLetter: "Y"
+}, {
+	cityName: "伊萨卡",
+	citySpell: "YISAKA",
+	"code": "ITH",
+	"countryCode": "US",
+	"countryName": "美国",
+	cityFirstLetter: "Y"
+}, {
+	cityName: "约夫",
+	citySpell: "YUEFU",
+	"code": "AJF",
+	"countryCode": "SA",
+	"countryName": "沙特阿垃伯",
+	cityFirstLetter: "Y"
+}, {
+	cityName: "于伐斯居拉",
+	citySpell: "YUFASIJULA",
+	"code": "JYV",
+	"countryCode": "FI",
+	"countryName": "芬兰",
+	cityFirstLetter: "Y"
+}, {
+	cityName: "约恩苏",
+	citySpell: "YUEENSU",
+	"code": "JOE",
+	"countryCode": "FI",
+	"countryName": "芬兰",
+	cityFirstLetter: "Y"
+}, {
+	cityName: "伊巴丹",
+	citySpell: "YIBADAN",
+	"code": "IBA",
+	"countryCode": "NG",
+	"countryName": "尼日利亚",
+	cityFirstLetter: "Y"
+}, {
+	cityName: "隐岐",
+	citySpell: "YINQI",
+	"code": "OKI",
+	"countryCode": "JP",
+	"countryName": "日本",
+	cityFirstLetter: "Y"
+}, {
+	cityName: "伊丽莎白城",
+	citySpell: "YILISHABAICHENG",
+	"code": "ECG",
+	"countryCode": "US",
+	"countryName": "美国",
+	cityFirstLetter: "Y"
+}, {
+	cityName: "伊卡里亚岛",
+	citySpell: "YIKALIYADAO",
+	"code": "JIK",
+	"countryCode": "GR",
+	"countryName": "希腊",
+	cityFirstLetter: "Y"
+}, {
+	cityName: "伊弗雷",
+	citySpell: "YIFULEI",
+	"code": "IFF",
+	"countryCode": "AU",
+	"countryName": "澳大利亚",
+	cityFirstLetter: "Y"
+}, {
+	cityName: "亚马逊湾",
+	citySpell: "YAMAXUNWAN",
+	"code": "AZB",
+	"countryCode": "PG",
+	"countryName": "巴布亚新几内亚",
+	cityFirstLetter: "Y"
+}, {
+	cityName: "印第安纳波利斯",
+	citySpell: "YINDIANNABOLISI",
+	"code": "IND",
+	"countryCode": "US",
+	"countryName": "美国",
+	cityFirstLetter: "Y"
+}, {
+	cityName: "亚罗麦特",
+	citySpell: "YALUOMAITE",
+	"code": "KYX",
+	"countryCode": "PG",
+	"countryName": "巴布亚新几内亚",
+	cityFirstLetter: "Y"
+}, {
+	cityName: "亚历山大",
+	citySpell: "YALISHANDA",
+	"code": "ALY",
+	"countryCode": "EG",
+	"countryName": "埃及",
+	cityFirstLetter: "Y"
+}, {
+	cityName: "因佛内斯",
+	citySpell: "YINFONEISI",
+	"code": "INV",
+	"countryCode": "GB",
+	"countryName": "英国",
+	cityFirstLetter: "Y"
+}, {
+	cityName: "因皮里尔",
+	citySpell: "YINPILIER",
+	"code": "IPL",
+	"countryCode": "US",
+	"countryName": "美国",
+	cityFirstLetter: "Y"
+}, {
+	cityName: "约基亚",
+	citySpell: "YUEJIYA",
+	"code": "IOK",
+	"countryCode": "PG",
+	"countryName": "巴布亚新几内亚",
+	cityFirstLetter: "Y"
+}, {
+	cityName: "伊魁特",
+	citySpell: "YIKUITE",
+	"code": "YFB",
+	"countryCode": "CA",
+	"countryName": "加拿大",
+	cityFirstLetter: "Y"
+}, {
+	cityName: "伊基托斯",
+	citySpell: "YIJITUOSI",
+	"code": "IQT",
+	"countryCode": "PE",
+	"countryName": "秘鲁",
+	cityFirstLetter: "Y"
+}, {
+	cityName: "阳光海岸",
+	citySpell: "YANGGUANGHAIAN",
+	"code": "MCY",
+	"countryCode": "AU",
+	"countryName": "澳大利亚",
+	cityFirstLetter: "Y"
+}, {
+	cityName: "芝加哥",
+	citySpell: "ZHIJIAGE",
+	"code": "CHI",
+	"countryCode": "US",
+	"countryName": "美国",
+	cityFirstLetter: "Z"
+}, {
+	cityName: "佐贺",
+	citySpell: "ZUOHE",
+	"code": "HSG",
+	"countryCode": "JP",
+	"countryName": "日本",
+	cityFirstLetter: "Z"
+}, {
+	cityName: "稚内",
+	citySpell: "ZHINEI",
+	"code": "WKJ",
+	"countryCode": "JP",
+	"countryName": "日本",
+	cityFirstLetter: "Z"
+}, {
+	cityName: "札幌",
+	citySpell: "ZHAHUANG",
+	"code": "SPK",
+	"countryCode": "JP",
+	"countryName": "日本",
+	cityFirstLetter: "Z"
+}, {
+	cityName: "詹姆斯敦(纽约州)",
+	citySpell: "ZHANMUSIDUN",
+	"code": "JHW",
+	"countryCode": "US",
+	"countryName": "美国",
+	cityFirstLetter: "Z"
+}, {
+	cityName: "朱利亚河",
+	citySpell: "ZHULIYAHE",
+	"code": "JCK",
+	"countryCode": "AU",
+	"countryName": "澳大利亚",
+	cityFirstLetter: "Z"
+}, {
+	cityName: "詹姆斯敦（北达科他州）",
+	citySpell: "ZHANMUSIDUN",
+	"code": "JMS",
+	"countryCode": "US",
+	"countryName": "美国",
+	cityFirstLetter: "Z"
+}, {
+	cityName: "赞比西河下游奈特公园",
+	citySpell: "ZANBIXIHEXIAYOUNAITEGONGYUAN",
+	"code": "RYL",
+	"countryCode": "ZM",
+	"countryName": "赞比亚",
+	cityFirstLetter: "Z"
+}, {
+	cityName: "赞詹",
+	citySpell: "ZANZHAN",
+	"code": "JWN",
+	"countryCode": "IR",
+	"countryName": "伊朗",
+	cityFirstLetter: "Z"
+}, {
+	cityName: "朱皮佛格尔",
+	citySpell: "ZHUPIFOGEER",
+	"code": "DJU",
+	"countryCode": "IS",
+	"countryName": "冰岛",
+	cityFirstLetter: "Z"
+}, {
+	cityName: "中标津",
+	citySpell: "ZHONGBIAOJIN",
+	"code": "SHB",
+	"countryCode": "JP",
+	"countryName": "日本",
+	cityFirstLetter: "Z"
+}, {
+	cityName: "朱古",
+	citySpell: "ZHUGU",
+	"code": "DJA",
+	"countryCode": "BJ",
+	"countryName": "贝宁",
+	cityFirstLetter: "Z"
+}, {
+	cityName: "扎古拉棉",
+	citySpell: "ZHAGULAMIAN",
+	"code": "OZG",
+	"countryCode": "MA",
+	"countryName": "摩洛哥",
+	cityFirstLetter: "Z"
+}, {
+	cityName: "佐渡",
+	citySpell: "ZUODU",
+	"code": "SDS",
+	"countryCode": "JP",
+	"countryName": "日本",
+	cityFirstLetter: "Z"
+}, {
+	cityName: "哲居尔",
+	citySpell: "ZHEJUER",
+	"code": "GJR",
+	"countryCode": "IS",
+	"countryName": "冰岛",
+	cityFirstLetter: "Z"
+}, {
+	cityName: "扎拉",
+	citySpell: "ZHALA",
+	"code": "DHL",
+	"countryCode": "YE",
+	"countryName": "也门",
+	cityFirstLetter: "Z"
+}, {
+	cityName: "占碑",
+	citySpell: "ZHANBEI",
+	"code": "DJB",
+	"countryCode": "ID",
+	"countryName": "印度尼西亚",
+	cityFirstLetter: "Z"
+}, {
+	cityName: "扎博勒",
+	citySpell: "ZHABOLE",
+	"code": "ACZ",
+	"countryCode": "IR",
+	"countryName": "伊朗",
+	cityFirstLetter: "Z"
+}, {
+	cityName: "泽米奥",
+	citySpell: "ZEMIAO",
+	"code": "IMO",
+	"countryCode": "CF",
+	"countryName": "中非",
+	cityFirstLetter: "Z"
+}, {
+	cityName: "朱里恩湾",
+	citySpell: "ZHULIENWAN",
+	"code": "JUR",
+	"countryCode": "AU",
+	"countryName": "澳大利亚",
+	cityFirstLetter: "Z"
+}, {
+	cityName: "宰桑",
+	citySpell: "ZAISANG",
+	"code": "SZI",
+	"countryCode": "KZ",
+	"countryName": "哈萨克斯坦",
+	cityFirstLetter: "Z"
+}, {
+	cityName: "扎纳加",
+	citySpell: "ZHANAJIA",
+	"code": "ANJ",
+	"countryCode": "CG",
+	"countryName": "刚果",
+	cityFirstLetter: "Z"
+}, {
+	cityName: "中科雷姆斯克",
+	citySpell: "ZHONGKELEIMUSIKE",
+	"code": "SEK",
+	"countryCode": "RU",
+	"countryName": "俄罗斯",
+	cityFirstLetter: "Z"
+}, {
+	cityName: "扎里亚",
+	citySpell: "ZHALIYA",
+	"code": "ZAR",
+	"countryCode": "NG",
+	"countryName": "尼日利亚",
+	cityFirstLetter: "Z"
+}, {
+	cityName: "祖埃拉特",
+	citySpell: "ZUAILATE",
+	"code": "OUZ",
+	"countryCode": "MR",
+	"countryName": "毛里塔尼亚",
+	cityFirstLetter: "Z"
+}, {
+	cityName: "扎兰季",
+	citySpell: "ZHALANJI",
+	"code": "ZAJ",
+	"countryCode": "AF",
+	"countryName": "阿富汗",
+	cityFirstLetter: "Z"
+}, {
+	cityName: "中凯科斯",
+	citySpell: "ZHONGKAIKESI",
+	"code": "MDS",
+	"countryCode": "TC",
+	"countryName": "特克斯和凯科斯群岛",
+	cityFirstLetter: "Z"
+}, {
+	cityName: "朱瓦能",
+	citySpell: "ZHUWANENG",
+	"code": "JWA",
+	"countryCode": "BW",
+	"countryName": "博茨瓦纳",
+	cityFirstLetter: "Z"
+}, {
+	cityName: "镇海",
+	citySpell: "ZHENHAI",
+	"code": "CHF",
+	"countryCode": "KR",
+	"countryName": "韩国",
+	cityFirstLetter: "Z"
+}, {
+	cityName: "朱巴",
+	citySpell: "ZHUBA",
+	"code": "JUB",
+	"countryCode": "SS",
+	"countryName": "南苏丹共和国",
+	cityFirstLetter: "Z"
+}, {
+	cityName: "占贾",
+	citySpell: "ZHANJIA",
+	"code": "KVD",
+	"countryCode": "AZ",
+	"countryName": "阿塞拜疆",
+	cityFirstLetter: "Z"
+}, {
+	cityName: "朱诺",
+	citySpell: "ZHUNUO",
+	"code": "JNU",
+	"countryCode": "US",
+	"countryName": "美国",
+	cityFirstLetter: "Z"
+}, {
+	cityName: "扎黑丹",
+	citySpell: "ZHAHEIDAN",
+	"code": "ZAH",
+	"countryCode": "IR",
+	"countryName": "伊朗",
+	cityFirstLetter: "Z"
+}, {
+	cityName: "泽纳格",
+	citySpell: "ZENAGE",
+	"code": "ZEN",
+	"countryCode": "PG",
+	"countryName": "巴布亚新几内亚",
+	cityFirstLetter: "Z"
+}, {
+	cityName: "扎金索斯",
+	citySpell: "ZHAJINSUOSI",
+	"code": "ZTH",
+	"countryCode": "GR",
+	"countryName": "希腊",
+	cityFirstLetter: "Z"
+}, {
+	cityName: "直布罗陀",
+	citySpell: "ZHIBULUOTUO",
+	"code": "GIB",
+	"countryCode": "GI",
+	"countryName": "直布罗陀",
+	cityFirstLetter: "Z"
+}, {
+	cityName: "宗古尔达克",
+	citySpell: "ZONGGUERDAKE",
+	"code": "ONQ",
+	"countryCode": "TR",
+	"countryName": "土耳其",
+	cityFirstLetter: "Z"
+}, {
+	cityName: "忠州",
+	citySpell: "ZHONGZHOU",
+	"code": "JWO",
+	"countryCode": "KR",
+	"countryName": "韩国",
+	cityFirstLetter: "Z"
+}, {
+	cityName: "庄内",
+	citySpell: "ZHUANGNEI",
+	"code": "SYO",
+	"countryCode": "JP",
+	"countryName": "日本",
+	cityFirstLetter: "Z"
+}, {
+	cityName: "种子岛",
+	citySpell: "ZHONGZIDAO",
+	"code": "TNE",
+	"countryCode": "JP",
+	"countryName": "日本",
+	cityFirstLetter: "Z"
+}, {
+	cityName: "詹姆斯敦",
+	citySpell: "ZHANMUSIDUN",
+	"code": "HLE",
+	"countryCode": "SH",
+	"countryName": "开罗群岛",
+	cityFirstLetter: "Z"
+}, {
+	cityName: "扎波罗热",
+	citySpell: "ZHABOLUORE",
+	"code": "OZH",
+	"countryCode": "UA",
+	"countryName": "乌克兰",
+	cityFirstLetter: "Z"
+}, {
+	cityName: "祖埃努拉",
+	citySpell: "ZUAINULA",
+	"code": "ZUE",
+	"countryCode": "CI",
+	"countryName": "科特迪瓦",
+	cityFirstLetter: "Z"
+}, {
+	cityName: "择捉岛",
+	citySpell: "ZEZHUODAO",
+	"code": "ITU",
+	"countryCode": "RU",
+	"countryName": "俄罗斯",
+	cityFirstLetter: "Z"
+}, {
+	cityName: "藻德济",
+	citySpell: "ZAODEJI",
+	"code": "DZA",
+	"countryCode": "YT",
+	"countryName": "马约特岛",
+	cityFirstLetter: "Z"
+}, {
+	cityName: "兹霍布",
+	citySpell: "ZIHUOBU",
+	"code": "PZH",
+	"countryCode": "PK",
+	"countryName": "巴基斯坦",
+	cityFirstLetter: "Z"
+}, {
+	cityName: "宰赫兰",
+	citySpell: "ZAIHELAN",
+	"code": "DHA",
+	"countryCode": "SA",
+	"countryName": "沙特阿垃伯",
+	cityFirstLetter: "Z"
+}, {
+	cityName: "朱穆苏里南",
+	citySpell: "ZHUMUSULINAN",
+	"code": "DOE",
+	"countryCode": "SR",
+	"countryName": "苏里南",
+	cityFirstLetter: "Z"
+}, {
+	cityName: "斋普尔",
+	citySpell: "ZHAIPUER",
+	"code": "JAI",
+	"countryCode": "IN",
+	"countryName": "印度",
+	cityFirstLetter: "Z"
+}, {
+	cityName: "扎达尔",
+	citySpell: "ZHADAER",
+	"code": "ZAD",
+	"countryCode": "HR",
+	"countryName": "克罗地亚",
+	cityFirstLetter: "Z"
+}, {
+	cityName: "泽西",
+	citySpell: "ZEXI",
+	"code": "JER",
+	"countryCode": "GB",
+	"countryName": "英国",
+	cityFirstLetter: "Z"
+}]
+export default foreignCityData

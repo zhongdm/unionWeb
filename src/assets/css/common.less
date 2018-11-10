@@ -1,0 +1,68 @@
+@green: green;
+
+html, body,
+div, section, p {
+    margin: 0;
+    padding: 0;
+    -webkit-tap-highlight-color: transparent;
+}
+
+.inner-container {
+    // padding: 1rem;
+    text-align: left
+}
+a {
+    color: rgb(18, 126, 255);
+    text-decoration: none;
+}
+.mint-button--primary {
+    background-color: @green;
+}
+.checkbox {
+    position: relative;
+    height: 62px;
+}
+input[type=checkbox] {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    margin: 0;
+    outline: 0;
+    width: 20px;
+    height: 20px;
+    position: absolute;
+    margin-top: 5px;
+}
+.checkbox label {
+  vertical-align: super;
+}
+.checkbox label a {
+    margin: 0 4px;
+  }
+.checkbox input[type=checkbox] + i {
+    width: 20px;
+    height: 20px;
+    display: inline-block;
+    background: url('../img/gou_gray.png') no-repeat;
+    background-size: cover;
+    margin-top: 5px;
+}
+.checkbox input[type=checkbox]:checked + i {
+    width: 20px;
+    height: 20px;
+    display: inline-block;
+    background: url('../img/gou_light2.png') no-repeat;
+    background-size: cover;
+    margin-top: 5px;
+}
+
+input[type=checkbox] {
+    background-color: transparent!important;
+}
+.error-msg {
+    color: red;
+    font-weight: bold
+}
+.error{
+    border: 2px solid red;
+}

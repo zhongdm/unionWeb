@@ -1,0 +1,1922 @@
+const internalData = [{
+	cityName: "阿拉善右旗",
+	citySpell: "ALASHANYOUQI",
+	"short": "ALSYQ",
+	"code": "RHT",
+	"countryCode": "CN",
+	"countryName": "中国",
+	cityFirstLetter: "A"
+}, {
+	cityName: "安庆",
+	citySpell: "ANQING",
+	"short": "AQ",
+	"code": "AQG",
+	"countryCode": "CN",
+	"countryName": "中国",
+	cityFirstLetter: "A"
+}, {
+	cityName: "阿拉善左旗",
+	citySpell: "ALASHANZUOQI",
+	"short": "ALSZQ",
+	"code": "AXF",
+	"countryCode": "CN",
+	"countryName": "中国",
+	cityFirstLetter: "A"
+}, {
+	cityName: "阿尔山",
+	citySpell: "AERSHAN",
+	"short": "AES",
+	"code": "YIE",
+	"countryCode": "CN",
+	"countryName": "中国",
+	cityFirstLetter: "A"
+}, {
+	cityName: "阿勒泰",
+	citySpell: "ALETAI",
+	"short": "ALT",
+	"code": "AAT",
+	"countryCode": "CN",
+	"countryName": "中国",
+	cityFirstLetter: "A"
+}, {
+	cityName: "安康",
+	citySpell: "ANKANG",
+	"short": "AK",
+	"code": "AKA",
+	"countryCode": "CN",
+	"countryName": "中国",
+	cityFirstLetter: "A"
+}, {
+	cityName: "阿里",
+	citySpell: "ALI",
+	"short": "AL",
+	"code": "NGQ",
+	"countryCode": "CN",
+	"countryName": "中国",
+	cityFirstLetter: "A"
+}, {
+	cityName: "阿克苏",
+	citySpell: "AKESU",
+	"short": "AKS",
+	"code": "AKU",
+	"countryCode": "CN",
+	"countryName": "中国",
+	cityFirstLetter: "A"
+}, {
+	cityName: "安顺",
+	citySpell: "ANSHUN",
+	"short": "AS",
+	"code": "AVA",
+	"countryCode": "CN",
+	"countryName": "中国",
+	cityFirstLetter: "A"
+}, {
+	cityName: "鞍山",
+	citySpell: "ANSHAN",
+	"short": "AS",
+	"code": "AOG",
+	"countryCode": "CN",
+	"countryName": "中国",
+	cityFirstLetter: "A"
+}, {
+	cityName: "北京",
+	citySpell: "BEIJING",
+	"short": "BJ",
+	"code": "PEK",
+	"countryCode": "CN",
+	"countryName": "中国",
+	cityFirstLetter: "B"
+}, {
+	cityName: "北京南苑",
+	citySpell: "BEIJINGNANYUAN",
+	"short": "BJNY",
+	"code": "NAY",
+	"countryCode": "CN",
+	"countryName": "中国",
+	cityFirstLetter: "B"
+}, {
+	cityName: "北京首都",
+	citySpell: "BEIJINGSHOUDU",
+	"short": "BJSD",
+	"code": "PEK",
+	"countryCode": "CN",
+	"countryName": "中国",
+	cityFirstLetter: "B"
+}, {
+	cityName: "毕节",
+	citySpell: "BIJIE",
+	"short": "BJ",
+	"code": "BFJ",
+	"countryCode": "CN",
+	"countryName": "中国",
+	cityFirstLetter: "B"
+}, {
+	cityName: "白城",
+	citySpell: "BAICHENG",
+	"short": "BC",
+	"code": "DBC",
+	"countryCode": "CN",
+	"countryName": "中国",
+	cityFirstLetter: "B"
+}, {
+	cityName: "巴彦淖尔",
+	citySpell: "BAYANNAOER",
+	"short": "BYNE",
+	"code": "RLK",
+	"countryCode": "CN",
+	"countryName": "中国",
+	cityFirstLetter: "B"
+}, {
+	cityName: "包头",
+	citySpell: "BAOTOU",
+	"short": "BT",
+	"code": "BAV",
+	"countryCode": "CN",
+	"countryName": "中国",
+	cityFirstLetter: "B"
+}, {
+	cityName: "百色",
+	citySpell: "BAISE",
+	"short": "BS",
+	"code": "AEB",
+	"countryCode": "CN",
+	"countryName": "中国",
+	cityFirstLetter: "B"
+}, {
+	cityName: "博乐",
+	citySpell: "BOLE",
+	"short": "BL",
+	"code": "BPL",
+	"countryCode": "CN",
+	"countryName": "中国",
+	cityFirstLetter: "B"
+}, {
+	cityName: "博鳌",
+	citySpell: "BOAO",
+	"short": "BA",
+	"code": "BAR",
+	"countryCode": "CN",
+	"countryName": "中国",
+	cityFirstLetter: "B"
+}, {
+	cityName: "保山",
+	citySpell: "BAOSHAN",
+	"short": "BS",
+	"code": "BSD",
+	"countryCode": "CN",
+	"countryName": "中国",
+	cityFirstLetter: "B"
+}, {
+	cityName: "北海",
+	citySpell: "BEIHAI",
+	"short": "BH",
+	"code": "BHY",
+	"countryCode": "CN",
+	"countryName": "中国",
+	cityFirstLetter: "B"
+}, {
+	cityName: "成都",
+	citySpell: "CHENGDU",
+	"short": "CD",
+	"code": "CTU",
+	"countryCode": "CN",
+	"countryName": "中国",
+	cityFirstLetter: "C"
+}, {
+	cityName: "长沙",
+	citySpell: "CHANGSHA",
+	"short": "CS",
+	"code": "CSX",
+	"countryCode": "CN",
+	"countryName": "中国",
+	cityFirstLetter: "C"
+}, {
+	cityName: "重庆",
+	citySpell: "CHONGQING",
+	"short": "CQ",
+	"code": "CKG",
+	"countryCode": "CN",
+	"countryName": "中国",
+	cityFirstLetter: "C"
+}, {
+	cityName: "承德",
+	citySpell: "CHENGDE",
+	"short": "CD",
+	"code": "CDE",
+	"countryCode": "CN",
+	"countryName": "中国",
+	cityFirstLetter: "C"
+}, {
+	cityName: "承德",
+	citySpell: "CHENGDE",
+	"short": "CD",
+	"code": "CDE",
+	"countryCode": "CN",
+	"countryName": "中国",
+	cityFirstLetter: "C"
+}, {
+	cityName: "沧源",
+	citySpell: "CANGYUAN",
+	"short": "CY",
+	"code": "CWJ",
+	"countryCode": "CN",
+	"countryName": "中国",
+	cityFirstLetter: "C"
+}, {
+	cityName: "池州",
+	citySpell: "CHIZHOU",
+	"short": "CZ",
+	"code": "JUH",
+	"countryCode": "CN",
+	"countryName": "中国",
+	cityFirstLetter: "C"
+}, {
+	cityName: "赤峰",
+	citySpell: "CHIFENG",
+	"short": "CF",
+	"code": "CIF",
+	"countryCode": "CN",
+	"countryName": "中国",
+	cityFirstLetter: "C"
+}, {
+	cityName: "长海",
+	citySpell: "CHANGHAI",
+	"short": "CH",
+	"code": "CNI",
+	"countryCode": "CN",
+	"countryName": "中国",
+	cityFirstLetter: "C"
+}, {
+	cityName: "长治",
+	citySpell: "CHANGZHI",
+	"short": "CZ",
+	"code": "CIH",
+	"countryCode": "CN",
+	"countryName": "中国",
+	cityFirstLetter: "C"
+}, {
+	cityName: "长白山",
+	citySpell: "CHANGBAISHAN",
+	"short": "CBS",
+	"code": "NBS",
+	"countryCode": "CN",
+	"countryName": "中国",
+	cityFirstLetter: "C"
+}, {
+	cityName: "昌都",
+	citySpell: "CHANGDU",
+	"short": "CD",
+	"code": "BPX",
+	"countryCode": "CN",
+	"countryName": "中国",
+	cityFirstLetter: "C"
+}, {
+	cityName: "常德",
+	citySpell: "CHANGDE",
+	"short": "CD",
+	"code": "CGD",
+	"countryCode": "CN",
+	"countryName": "中国",
+	cityFirstLetter: "C"
+}, {
+	cityName: "朝阳",
+	citySpell: "CHAOYANG",
+	"short": "CY",
+	"code": "CHG",
+	"countryCode": "CN",
+	"countryName": "中国",
+	cityFirstLetter: "C"
+}, {
+	cityName: "长春",
+	citySpell: "CHANGCHUN",
+	"short": "CC",
+	"code": "CGQ",
+	"countryCode": "CN",
+	"countryName": "中国",
+	cityFirstLetter: "C"
+}, {
+	cityName: "常州",
+	citySpell: "CHANGZHOU",
+	"short": "CZ",
+	"code": "CZX",
+	"countryCode": "CN",
+	"countryName": "中国",
+	cityFirstLetter: "C"
+}, {
+	cityName: "大连",
+	citySpell: "DALIAN",
+	"short": "DL",
+	"code": "DLC",
+	"countryCode": "CN",
+	"countryName": "中国",
+	cityFirstLetter: "D"
+}, {
+	cityName: "丹东",
+	citySpell: "DANDONG",
+	"short": "DD",
+	"code": "DDG",
+	"countryCode": "CN",
+	"countryName": "中国",
+	cityFirstLetter: "D"
+}, {
+	cityName: "东营",
+	citySpell: "DONGYING",
+	"short": "DY",
+	"code": "DOY",
+	"countryCode": "CN",
+	"countryName": "中国",
+	cityFirstLetter: "D"
+}, {
+	cityName: "敦煌",
+	citySpell: "DUNHUANG",
+	"short": "DH",
+	"code": "DNH",
+	"countryCode": "CN",
+	"countryName": "中国",
+	cityFirstLetter: "D"
+}, {
+	cityName: "稻城",
+	citySpell: "DAOCHENG",
+	"short": "DC",
+	"code": "DCY",
+	"countryCode": "CN",
+	"countryName": "中国",
+	cityFirstLetter: "D"
+}, {
+	cityName: "迪庆",
+	citySpell: "DIQING",
+	"short": "DQ",
+	"code": "DIG",
+	"countryCode": "CN",
+	"countryName": "中国",
+	cityFirstLetter: "D"
+}, {
+	cityName: "德令哈",
+	citySpell: "DELINGHA",
+	"short": "DLH",
+	"code": "HXD",
+	"countryCode": "CN",
+	"countryName": "中国",
+	cityFirstLetter: "D"
+}, {
+	cityName: "大同",
+	citySpell: "DATONG",
+	"short": "DT",
+	"code": "DAT",
+	"countryCode": "CN",
+	"countryName": "中国",
+	cityFirstLetter: "D"
+}, {
+	cityName: "达州",
+	citySpell: "DAZHOU",
+	"short": "DZ",
+	"code": "DAX",
+	"countryCode": "CN",
+	"countryName": "中国",
+	cityFirstLetter: "D"
+}, {
+	cityName: "大庆",
+	citySpell: "DAQING",
+	"short": "DQ",
+	"code": "DQA",
+	"countryCode": "CN",
+	"countryName": "中国",
+	cityFirstLetter: "D"
+}, {
+	cityName: "大理",
+	citySpell: "DALI",
+	"short": "DL",
+	"code": "DLU",
+	"countryCode": "CN",
+	"countryName": "中国",
+	cityFirstLetter: "D"
+}, {
+	cityName: "鄂尔多斯",
+	citySpell: "EERDUOSI",
+	"short": "EEDS",
+	"code": "DSN",
+	"countryCode": "CN",
+	"countryName": "中国",
+	cityFirstLetter: "E"
+}, {
+	cityName: "额济纳",
+	citySpell: "EJINA",
+	"short": "EJN",
+	"code": "EJN",
+	"countryCode": "CN",
+	"countryName": "中国",
+	cityFirstLetter: "E"
+}, {
+	cityName: "二连浩特",
+	citySpell: "ERLIANHAOTE",
+	"short": "ELHT",
+	"code": "ERL",
+	"countryCode": "CN",
+	"countryName": "中国",
+	cityFirstLetter: "E"
+}, {
+	cityName: "恩施",
+	citySpell: "ENSHI",
+	"short": "ES",
+	"code": "ENH",
+	"countryCode": "CN",
+	"countryName": "中国",
+	cityFirstLetter: "E"
+}, {
+	cityName: "佛山",
+	citySpell: "FOSHAN",
+	"short": "FS",
+	"code": "FUO",
+	"countryCode": "CN",
+	"countryName": "中国",
+	cityFirstLetter: "F"
+}, {
+	cityName: "福州",
+	citySpell: "FUZHOU",
+	"short": "FZ",
+	"code": "FOC",
+	"countryCode": "CN",
+	"countryName": "中国",
+	cityFirstLetter: "F"
+}, {
+	cityName: "阜阳",
+	citySpell: "FUYANG",
+	"short": "FY",
+	"code": "FUG",
+	"countryCode": "CN",
+	"countryName": "中国",
+	cityFirstLetter: "F"
+}, {
+	cityName: "抚远",
+	citySpell: "FUYUAN",
+	"short": "FY",
+	"code": "FYJ",
+	"countryCode": "CN",
+	"countryName": "中国",
+	cityFirstLetter: "F"
+}, {
+	cityName: "富蕴",
+	citySpell: "FUYUN",
+	"short": "FY",
+	"code": "FYN",
+	"countryCode": "CN",
+	"countryName": "中国",
+	cityFirstLetter: "F"
+}, {
+	cityName: "广州",
+	citySpell: "GUANGZHOU",
+	"short": "GZ",
+	"code": "CAN",
+	"countryCode": "CN",
+	"countryName": "中国",
+	cityFirstLetter: "G"
+}, {
+	cityName: "贵阳",
+	citySpell: "GUIYANG",
+	"short": "GY",
+	"code": "KWE",
+	"countryCode": "CN",
+	"countryName": "中国",
+	cityFirstLetter: "G"
+}, {
+	cityName: "固原",
+	citySpell: "GUYUAN",
+	"short": "GY",
+	"code": "GYU",
+	"countryCode": "CN",
+	"countryName": "中国",
+	cityFirstLetter: "G"
+}, {
+	cityName: "格尔木",
+	citySpell: "GRERMU",
+	"short": "GEM",
+	"code": "GOQ",
+	"countryCode": "CN",
+	"countryName": "中国",
+	cityFirstLetter: "G"
+}, {
+	cityName: "广元",
+	citySpell: "GUANGYUAN",
+	"short": "GY",
+	"code": "GYS",
+	"countryCode": "CN",
+	"countryName": "中国",
+	cityFirstLetter: "G"
+}, {
+	cityName: "桂林",
+	citySpell: "GUILIN",
+	"short": "GL",
+	"code": "KWL",
+	"countryCode": "CN",
+	"countryName": "中国",
+	cityFirstLetter: "G"
+}, {
+	cityName: "赣州",
+	citySpell: "GANZHOU",
+	"short": "GZ",
+	"code": "KOW",
+	"countryCode": "CN",
+	"countryName": "中国",
+	cityFirstLetter: "G"
+}, {
+	cityName: "果洛",
+	citySpell: "GUOLUO",
+	"short": "GL",
+	"code": "GMQ",
+	"countryCode": "CN",
+	"countryName": "中国",
+	cityFirstLetter: "G"
+}, {
+	cityName: "杭州",
+	citySpell: "HANGZHOU",
+	"short": "HZ",
+	"code": "HGH",
+	"countryCode": "CN",
+	"countryName": "中国",
+	cityFirstLetter: "H"
+}, {
+	cityName: "哈尔滨",
+	citySpell: "HAERBIN",
+	"short": "HEB",
+	"code": "HRB",
+	"countryCode": "CN",
+	"countryName": "中国",
+	cityFirstLetter: "H"
+}, {
+	cityName: "呼和浩特",
+	citySpell: "HUHEHAOTE",
+	"short": "HHHT",
+	"code": "HET",
+	"countryCode": "CN",
+	"countryName": "中国",
+	cityFirstLetter: "H"
+}, {
+	cityName: "红原",
+	citySpell: "HONGYUAN",
+	"short": "HY",
+	"code": "AHJ",
+	"countryCode": "CN",
+	"countryName": "中国",
+	cityFirstLetter: "H"
+}, {
+	cityName: "合肥",
+	citySpell: "HEFEI",
+	"short": "HF",
+	"code": "HFE",
+	"countryCode": "CN",
+	"countryName": "中国",
+	cityFirstLetter: "H"
+}, {
+	cityName: "黄山",
+	citySpell: "HUANGSHAN",
+	"short": "HS",
+	"code": "TXN",
+	"countryCode": "CN",
+	"countryName": "中国",
+	cityFirstLetter: "H"
+}, {
+	cityName: "惠州",
+	citySpell: "HUIZHOU",
+	"short": "HZ",
+	"code": "HUZ",
+	"countryCode": "CN",
+	"countryName": "中国",
+	cityFirstLetter: "H"
+}, {
+	cityName: "黄岩",
+	citySpell: "HUANGYAN",
+	"short": "HY",
+	"code": "HYN",
+	"countryCode": "CN",
+	"countryName": "中国",
+	cityFirstLetter: "H"
+}, {
+	cityName: "海拉尔",
+	citySpell: "HAILAER",
+	"short": "HLE",
+	"code": "HLD",
+	"countryCode": "CN",
+	"countryName": "中国",
+	cityFirstLetter: "H"
+}, {
+	cityName: "汉中",
+	citySpell: "HANZHONG",
+	"short": "HZ",
+	"code": "HZG",
+	"countryCode": "CN",
+	"countryName": "中国",
+	cityFirstLetter: "H"
+}, {
+	cityName: "海口",
+	citySpell: "HAIKOU",
+	"short": "HK",
+	"code": "HAK",
+	"countryCode": "CN",
+	"countryName": "中国",
+	cityFirstLetter: "H"
+}, {
+	cityName: "哈密",
+	citySpell: "HAMI",
+	"short": "HM",
+	"code": "HMI",
+	"countryCode": "CN",
+	"countryName": "中国",
+	cityFirstLetter: "H"
+}, {
+	cityName: "和田",
+	citySpell: "HETIAN",
+	"short": "HT",
+	"code": "HTN",
+	"countryCode": "CN",
+	"countryName": "中国",
+	cityFirstLetter: "H"
+}, {
+	cityName: "河池",
+	citySpell: "HECHI",
+	"short": "HC",
+	"code": "HCJ",
+	"countryCode": "CN",
+	"countryName": "中国",
+	cityFirstLetter: "H"
+}, {
+	cityName: "黑河",
+	citySpell: "HEIHE",
+	"short": "HH",
+	"code": "HEK",
+	"countryCode": "CN",
+	"countryName": "中国",
+	cityFirstLetter: "H"
+}, {
+	cityName: "邯郸",
+	citySpell: "HANDAN",
+	"short": "HD",
+	"code": "HDG",
+	"countryCode": "CN",
+	"countryName": "中国",
+	cityFirstLetter: "H"
+}, {
+	cityName: "衡阳",
+	citySpell: "HENGYANG",
+	"short": "HY",
+	"code": "HNY",
+	"countryCode": "CN",
+	"countryName": "中国",
+	cityFirstLetter: "H"
+}, {
+	cityName: "怀化",
+	citySpell: "HUAIHUA",
+	"short": "HH",
+	"code": "HJJ",
+	"countryCode": "CN",
+	"countryName": "中国",
+	cityFirstLetter: "H"
+}, {
+	cityName: "淮安",
+	citySpell: "HUAIAN",
+	"short": "HA",
+	"code": "HIA",
+	"countryCode": "CN",
+	"countryName": "中国",
+	cityFirstLetter: "H"
+}, {
+	cityName: "花土沟",
+	citySpell: "HUATUGOU",
+	"short": "HTG",
+	"code": "HTT",
+	"countryCode": "CN",
+	"countryName": "中国",
+	cityFirstLetter: "H"
+}, {
+	cityName: "霍林郭勒",
+	citySpell: "HUOLINGUOLE",
+	"short": "HLGL",
+	"code": "HUO",
+	"countryCode": "CN",
+	"countryName": "中国",
+	cityFirstLetter: "H"
+}, {
+	cityName: "晋江",
+	citySpell: "JINJIANG",
+	"short": "JJ",
+	"code": "JJN",
+	"countryCode": "CN",
+	"countryName": "中国",
+	cityFirstLetter: "J"
+}, {
+	cityName: "荆州",
+	citySpell: "JINGZHOU",
+	"short": "JZ",
+	"code": "SHS",
+	"countryCode": "CN",
+	"countryName": "中国",
+	cityFirstLetter: "J"
+}, {
+	cityName: "锦州",
+	citySpell: "JINZHOU",
+	"short": "JZ",
+	"code": "JNZ",
+	"countryCode": "CN",
+	"countryName": "中国",
+	cityFirstLetter: "J"
+}, {
+	cityName: "济宁",
+	citySpell: "JINING",
+	"short": "JN",
+	"code": "JNG",
+	"countryCode": "CN",
+	"countryName": "中国",
+	cityFirstLetter: "J"
+}, {
+	cityName: "揭阳",
+	citySpell: "JIEYANG",
+	"short": "JY",
+	"code": "SWA",
+	"countryCode": "CN",
+	"countryName": "中国",
+	cityFirstLetter: "J"
+}, {
+	cityName: "嘉峪关",
+	citySpell: "JIAYUGUAN",
+	"short": "JYG",
+	"code": "JGN",
+	"countryCode": "CN",
+	"countryName": "中国",
+	cityFirstLetter: "J"
+}, {
+	cityName: "金昌",
+	citySpell: "JINCHANG",
+	"short": "JC",
+	"code": "JIC",
+	"countryCode": "CN",
+	"countryName": "中国",
+	cityFirstLetter: "J"
+}, {
+	cityName: "建三江",
+	citySpell: "JIANSANJIANG",
+	"short": "JSJ",
+	"code": "JSJ",
+	"countryCode": "CN",
+	"countryName": "中国",
+	cityFirstLetter: "J"
+}, {
+	cityName: "井冈山",
+	citySpell: "JINGGANGSHAN",
+	"short": "JGS",
+	"code": "JGS",
+	"countryCode": "CN",
+	"countryName": "中国",
+	cityFirstLetter: "J"
+}, {
+	cityName: "加格达奇",
+	citySpell: "JIAGEDAQI",
+	"short": "JGDQ",
+	"code": "JGD",
+	"countryCode": "CN",
+	"countryName": "中国",
+	cityFirstLetter: "J"
+}, {
+	cityName: "九寨沟",
+	citySpell: "JIUZHAIGOU",
+	"short": "JZG",
+	"code": "JZH",
+	"countryCode": "CN",
+	"countryName": "中国",
+	cityFirstLetter: "J"
+}, {
+	cityName: "鸡西",
+	citySpell: "JIXI",
+	"short": "JX",
+	"code": "JXA",
+	"countryCode": "CN",
+	"countryName": "中国",
+	cityFirstLetter: "J"
+}, {
+	cityName: "佳木斯",
+	citySpell: "JIAMUSI",
+	"short": "JMS",
+	"code": "JMU",
+	"countryCode": "CN",
+	"countryName": "中国",
+	cityFirstLetter: "J"
+}, {
+	cityName: "景德镇",
+	citySpell: "JINGDEZHEN",
+	"short": "JDZ",
+	"code": "JDZ",
+	"countryCode": "CN",
+	"countryName": "中国",
+	cityFirstLetter: "J"
+}, {
+	cityName: "九江",
+	citySpell: "JIUJIANG",
+	"short": "JJ",
+	"code": "JIU",
+	"countryCode": "CN",
+	"countryName": "中国",
+	cityFirstLetter: "J"
+}, {
+	cityName: "济南",
+	citySpell: "JINAN",
+	"short": "JN",
+	"code": "TNA",
+	"countryCode": "CN",
+	"countryName": "中国",
+	cityFirstLetter: "J"
+}, {
+	cityName: "昆明",
+	citySpell: "KUNMING",
+	"short": "KM",
+	"code": "KMG",
+	"countryCode": "CN",
+	"countryName": "中国",
+	cityFirstLetter: "K"
+}, {
+	cityName: "凯里",
+	citySpell: "KAILI",
+	"short": "KL",
+	"code": "KJH",
+	"countryCode": "CN",
+	"countryName": "中国",
+	cityFirstLetter: "K"
+}, {
+	cityName: "库车",
+	citySpell: "KUCHE",
+	"short": "KC",
+	"code": "KCA",
+	"countryCode": "CN",
+	"countryName": "中国",
+	cityFirstLetter: "K"
+}, {
+	cityName: "库尔勒",
+	citySpell: "KUERLE",
+	"short": "KEL",
+	"code": "KRL",
+	"countryCode": "CN",
+	"countryName": "中国",
+	cityFirstLetter: "K"
+}, {
+	cityName: "喀纳斯",
+	citySpell: "KANASI",
+	"short": "KNS",
+	"code": "KJI",
+	"countryCode": "CN",
+	"countryName": "中国",
+	cityFirstLetter: "K"
+}, {
+	cityName: "康定",
+	citySpell: "KANGDING",
+	"short": "KD",
+	"code": "KGT",
+	"countryCode": "CN",
+	"countryName": "中国",
+	cityFirstLetter: "K"
+}, {
+	cityName: "喀什",
+	citySpell: "KASHI",
+	"short": "KS",
+	"code": "KHG",
+	"countryCode": "CN",
+	"countryName": "中国",
+	cityFirstLetter: "K"
+}, {
+	cityName: "克拉玛依",
+	citySpell: "KELAMAYI",
+	"short": "KLMY",
+	"code": "KRY",
+	"countryCode": "CN",
+	"countryName": "中国",
+	cityFirstLetter: "K"
+}, {
+	cityName: "龙岩",
+	citySpell: "LONGYAN",
+	"short": "LY",
+	"code": "LCX",
+	"countryCode": "CN",
+	"countryName": "中国",
+	cityFirstLetter: "L"
+}, {
+	cityName: "临沂",
+	citySpell: "LINYI",
+	"short": "LY",
+	"code": "LYI",
+	"countryCode": "CN",
+	"countryName": "中国",
+	cityFirstLetter: "L"
+}, {
+	cityName: "兰州",
+	citySpell: "LANZHOU",
+	"short": "LZ",
+	"code": "LHW",
+	"countryCode": "CN",
+	"countryName": "中国",
+	cityFirstLetter: "L"
+}, {
+	cityName: "澜沧",
+	citySpell: "LANCANG",
+	"short": "LC",
+	"code": "JMJ",
+	"countryCode": "CN",
+	"countryName": "中国",
+	cityFirstLetter: "L"
+}, {
+	cityName: "临汾",
+	citySpell: "LINFEN",
+	"short": "LF",
+	"code": "LFQ",
+	"countryCode": "CN",
+	"countryName": "中国",
+	cityFirstLetter: "L"
+}, {
+	cityName: "陇南",
+	citySpell: "LONGNAN",
+	"short": "LN",
+	"code": "LNL",
+	"countryCode": "CN",
+	"countryName": "中国",
+	cityFirstLetter: "L"
+}, {
+	cityName: "荔波",
+	citySpell: "LIBO",
+	"short": "LB",
+	"code": "LLB",
+	"countryCode": "CN",
+	"countryName": "中国",
+	cityFirstLetter: "L"
+}, {
+	cityName: "丽江",
+	citySpell: "LIJIANG",
+	"short": "LJ",
+	"code": "LJG",
+	"countryCode": "CN",
+	"countryName": "中国",
+	cityFirstLetter: "L"
+}, {
+	cityName: "临沧",
+	citySpell: "LINCANG",
+	"short": "LC",
+	"code": "LNJ",
+	"countryCode": "CN",
+	"countryName": "中国",
+	cityFirstLetter: "L"
+}, {
+	cityName: "吕梁",
+	citySpell: "LVLIANG",
+	"short": "LL",
+	"code": "LLV",
+	"countryCode": "CN",
+	"countryName": "中国",
+	cityFirstLetter: "L"
+}, {
+	cityName: "泸州",
+	citySpell: "LUZHOU",
+	"short": "LZ",
+	"code": "LZO",
+	"countryCode": "CN",
+	"countryName": "中国",
+	cityFirstLetter: "L"
+}, {
+	cityName: "六盘水",
+	citySpell: "LIUPANSHUI",
+	"short": "LPS",
+	"code": "LPF",
+	"countryCode": "CN",
+	"countryName": "中国",
+	cityFirstLetter: "L"
+}, {
+	cityName: "黎平",
+	citySpell: "LIPING",
+	"short": "LP",
+	"code": "HZH",
+	"countryCode": "CN",
+	"countryName": "中国",
+	cityFirstLetter: "L"
+}, {
+	cityName: "洛阳",
+	citySpell: "LUOYANG",
+	"short": "LY",
+	"code": "LYA",
+	"countryCode": "CN",
+	"countryName": "中国",
+	cityFirstLetter: "L"
+}, {
+	cityName: "拉萨",
+	citySpell: "LASA",
+	"short": "LS",
+	"code": "LXA",
+	"countryCode": "CN",
+	"countryName": "中国",
+	cityFirstLetter: "L"
+}, {
+	cityName: "林芝",
+	citySpell: "LINZHI",
+	"short": "LZ",
+	"code": "LZY",
+	"countryCode": "CN",
+	"countryName": "中国",
+	cityFirstLetter: "L"
+}, {
+	cityName: "柳州",
+	citySpell: "LIUZHOU",
+	"short": "LZ",
+	"code": "LZH",
+	"countryCode": "CN",
+	"countryName": "中国",
+	cityFirstLetter: "L"
+}, {
+	cityName: "庐山",
+	citySpell: "LUSHAN",
+	"short": "LS",
+	"code": "JIU",
+	"countryCode": "CN",
+	"countryName": "中国",
+	cityFirstLetter: "L"
+}, {
+	cityName: "连云港",
+	citySpell: "LIANYUNGANG",
+	"short": "LYG",
+	"code": "LYG",
+	"countryCode": "CN",
+	"countryName": "中国",
+	cityFirstLetter: "L"
+}, {
+	cityName: "满洲里",
+	citySpell: "MANZHOULI",
+	"short": "MZL",
+	"code": "NZH",
+	"countryCode": "CN",
+	"countryName": "中国",
+	cityFirstLetter: "M"
+}, {
+	cityName: "梅县",
+	citySpell: "MEIXIAN",
+	"short": "MX",
+	"code": "MXZ",
+	"countryCode": "CN",
+	"countryName": "中国",
+	cityFirstLetter: "M"
+}, {
+	cityName: "芒市",
+	citySpell: "MANGSHI",
+	"short": "MS",
+	"code": "LUM",
+	"countryCode": "CN",
+	"countryName": "中国",
+	cityFirstLetter: "M"
+}, {
+	cityName: "绵阳",
+	citySpell: "MIANYANG",
+	"short": "MY",
+	"code": "MIG",
+	"countryCode": "CN",
+	"countryName": "中国",
+	cityFirstLetter: "M"
+}, {
+	cityName: "漠河",
+	citySpell: "MOHE",
+	"short": "MH",
+	"code": "OHE",
+	"countryCode": "CN",
+	"countryName": "中国",
+	cityFirstLetter: "M"
+}, {
+	cityName: "牡丹江",
+	citySpell: "MUDANJIANG",
+	"short": "MDJ",
+	"code": "MDG",
+	"countryCode": "CN",
+	"countryName": "中国",
+	cityFirstLetter: "M"
+}, {
+	cityName: "南京",
+	citySpell: "NANJING",
+	"short": "NJ",
+	"code": "NKG",
+	"countryCode": "CN",
+	"countryName": "中国",
+	cityFirstLetter: "N"
+}, {
+	cityName: "宁波",
+	citySpell: "NINGBO",
+	"short": "NB",
+	"code": "NGB",
+	"countryCode": "CN",
+	"countryName": "中国",
+	cityFirstLetter: "N"
+}, {
+	cityName: "宁蒗",
+	citySpell: "NINGLANG",
+	"short": "NL",
+	"code": "NLH",
+	"countryCode": "CN",
+	"countryName": "中国",
+	cityFirstLetter: "N"
+}, {
+	cityName: "南充",
+	citySpell: "NANCHONG",
+	"short": "NC",
+	"code": "NAO",
+	"countryCode": "CN",
+	"countryName": "中国",
+	cityFirstLetter: "N"
+}, {
+	cityName: "南阳",
+	citySpell: "NANYANG",
+	"short": "NY",
+	"code": "NNY",
+	"countryCode": "CN",
+	"countryName": "中国",
+	cityFirstLetter: "N"
+}, {
+	cityName: "新源",
+	citySpell: "NALATI",
+	"short": "NLT",
+	"code": "NLT",
+	"countryCode": "CN",
+	"countryName": "中国",
+	cityFirstLetter: "N"
+}, {
+	cityName: "南宁",
+	citySpell: "NANNING",
+	"short": "NN",
+	"code": "NNG",
+	"countryCode": "CN",
+	"countryName": "中国",
+	cityFirstLetter: "N"
+}, {
+	cityName: "南通",
+	citySpell: "NANTONG",
+	"short": "NT",
+	"code": "NTG",
+	"countryCode": "CN",
+	"countryName": "中国",
+	cityFirstLetter: "N"
+}, {
+	cityName: "南昌",
+	citySpell: "NANCHANG",
+	"short": "NC",
+	"code": "KHN",
+	"countryCode": "CN",
+	"countryName": "中国",
+	cityFirstLetter: "N"
+}, {
+	cityName: "普洱",
+	citySpell: "PUER",
+	"short": "PE",
+	"code": "SYM",
+	"countryCode": "CN",
+	"countryName": "中国",
+	cityFirstLetter: "P"
+}, {
+	cityName: "攀枝花",
+	citySpell: "PANZHIHUA",
+	"short": "PZH",
+	"code": "PZI",
+	"countryCode": "CN",
+	"countryName": "中国",
+	cityFirstLetter: "P"
+}, {
+	cityName: "青岛",
+	citySpell: "QINGDAO",
+	"short": "QD",
+	"code": "TAO",
+	"countryCode": "CN",
+	"countryName": "中国",
+	cityFirstLetter: "Q"
+}, {
+	cityName: "泉州",
+	citySpell: "QUANZHOU",
+	"short": "QZ",
+	"code": "JJN",
+	"countryCode": "CN",
+	"countryName": "中国",
+	cityFirstLetter: "Q"
+}, {
+	cityName: "庆阳",
+	citySpell: "QINGYANG",
+	"short": "QY",
+	"code": "IQN",
+	"countryCode": "CN",
+	"countryName": "中国",
+	cityFirstLetter: "Q"
+}, {
+	cityName: "且末",
+	citySpell: "QIEMO",
+	"short": "QM",
+	"code": "IQM",
+	"countryCode": "CN",
+	"countryName": "中国",
+	cityFirstLetter: "Q"
+}, {
+	cityName: "衢州",
+	citySpell: "QUZHOU",
+	"short": "QZ",
+	"code": "JUZ",
+	"countryCode": "CN",
+	"countryName": "中国",
+	cityFirstLetter: "Q"
+}, {
+	cityName: "黔江",
+	citySpell: "QIANJIANG",
+	"short": "QJ",
+	"code": "JIQ",
+	"countryCode": "CN",
+	"countryName": "中国",
+	cityFirstLetter: "Q"
+}, {
+	cityName: "齐齐哈尔",
+	citySpell: "QIQIHAER",
+	"short": "QQHE",
+	"code": "NDG",
+	"countryCode": "CN",
+	"countryName": "中国",
+	cityFirstLetter: "Q"
+}, {
+	cityName: "秦皇岛",
+	citySpell: "QINHUANGDAO",
+	"short": "QHDBDH",
+	"code": "BPE",
+	"countryCode": "CN",
+	"countryName": "中国",
+	cityFirstLetter: "Q"
+}, {
+	cityName: "若羌",
+	citySpell: "RUOQIANG",
+	"short": "RQ",
+	"code": "RQA",
+	"countryCode": "CN",
+	"countryName": "中国",
+	cityFirstLetter: "R"
+}, {
+	cityName: "日照",
+	citySpell: "RIZHAO",
+	"short": "RZ",
+	"code": "RIZ",
+	"countryCode": "CN",
+	"countryName": "中国",
+	cityFirstLetter: "R"
+}, {
+	cityName: "日喀则",
+	citySpell: "RIKAZE",
+	"short": "RKZ",
+	"code": "RKZ",
+	"countryCode": "CN",
+	"countryName": "中国",
+	cityFirstLetter: "R"
+}, {
+	cityName: "上海",
+	citySpell: "SHANGHAI",
+	"short": "SH",
+	"code": "SHA",
+	"countryCode": "CN",
+	"countryName": "中国",
+	cityFirstLetter: "S"
+}, {
+	cityName: "深圳",
+	citySpell: "SHENZHEN",
+	"short": "SZ",
+	"code": "SZX",
+	"countryCode": "CN",
+	"countryName": "中国",
+	cityFirstLetter: "S"
+}, {
+	cityName: "三亚",
+	citySpell: "SANYA",
+	"short": "SY",
+	"code": "SYX",
+	"countryCode": "CN",
+	"countryName": "中国",
+	cityFirstLetter: "S"
+}, {
+	cityName: "上海虹桥",
+	citySpell: "SHANGHAIHONGQIAO",
+	"short": "SHHQ",
+	"code": "SHA",
+	"countryCode": "CN",
+	"countryName": "中国",
+	cityFirstLetter: "S"
+}, {
+	cityName: "上海浦东",
+	citySpell: "SHANGHAIPUDONG",
+	"short": "SHPD",
+	"code": "PVG",
+	"countryCode": "CN",
+	"countryName": "中国",
+	cityFirstLetter: "S"
+}, {
+	cityName: "沈阳",
+	citySpell: "SHENYANG",
+	"short": "SY",
+	"code": "SHE",
+	"countryCode": "CN",
+	"countryName": "中国",
+	cityFirstLetter: "S"
+}, {
+	cityName: "上饶",
+	citySpell: "SHANGRAO",
+	"short": "SR",
+	"code": "SQD",
+	"countryCode": "CN",
+	"countryName": "中国",
+	cityFirstLetter: "S"
+}, {
+	cityName: "石河子",
+	citySpell: "SHIHEZI",
+	"short": "SHZ",
+	"code": "SHF",
+	"countryCode": "CN",
+	"countryName": "中国",
+	cityFirstLetter: "S"
+}, {
+	cityName: "石家庄",
+	citySpell: "SHIJIAZHUANG",
+	"short": "SJZ",
+	"code": "SJW",
+	"countryCode": "CN",
+	"countryName": "中国",
+	cityFirstLetter: "S"
+}, {
+	cityName: "神农架",
+	citySpell: "SHENNONGJIA",
+	"short": "SNJ",
+	"code": "HPG",
+	"countryCode": "CN",
+	"countryName": "中国",
+	cityFirstLetter: "S"
+}, {
+	cityName: "邵阳",
+	citySpell: "SHAOYANG",
+	"short": "SY",
+	"code": "WGN",
+	"countryCode": "CN",
+	"countryName": "中国",
+	cityFirstLetter: "S"
+}, {
+	cityName: "十堰",
+	citySpell: "SHIYAN",
+	"short": "SY",
+	"code": "WDS",
+	"countryCode": "CN",
+	"countryName": "中国",
+	cityFirstLetter: "S"
+}, {
+	cityName: "三明",
+	citySpell: "SANMING",
+	"short": "SM",
+	"code": "SQJ",
+	"countryCode": "CN",
+	"countryName": "中国",
+	cityFirstLetter: "S"
+}, {
+	cityName: "莎车",
+	citySpell: "SHACHE",
+	"short": "SC",
+	"code": "QSZ",
+	"countryCode": "CN",
+	"countryName": "中国",
+	cityFirstLetter: "S"
+}, {
+	cityName: "松原",
+	citySpell: "SONGYUAN",
+	"short": "SY",
+	"code": "YSQ",
+	"countryCode": "CN",
+	"countryName": "中国",
+	cityFirstLetter: "S"
+}, {
+	cityName: "天津",
+	citySpell: "TIANJIN",
+	"short": "TJ",
+	"code": "TSN",
+	"countryCode": "CN",
+	"countryName": "中国",
+	cityFirstLetter: "T"
+}, {
+	cityName: "太原",
+	citySpell: "TAIYUAN",
+	"short": "TY",
+	"code": "TYN",
+	"countryCode": "CN",
+	"countryName": "中国",
+	cityFirstLetter: "T"
+}, {
+	cityName: "通辽",
+	citySpell: "TONGLIAO",
+	"short": "TL",
+	"code": "TGO",
+	"countryCode": "CN",
+	"countryName": "中国",
+	cityFirstLetter: "T"
+}, {
+	cityName: "天水",
+	citySpell: "TIANSHUI",
+	"short": "TS",
+	"code": "THQ",
+	"countryCode": "CN",
+	"countryName": "中国",
+	cityFirstLetter: "T"
+}, {
+	cityName: "台州",
+	citySpell: "TAIZHOU",
+	"short": "TZ",
+	"code": "HYN",
+	"countryCode": "CN",
+	"countryName": "中国",
+	cityFirstLetter: "T"
+}, {
+	cityName: "腾冲",
+	citySpell: "TENGCHONG",
+	"short": "TC",
+	"code": "TCZ",
+	"countryCode": "CN",
+	"countryName": "中国",
+	cityFirstLetter: "T"
+}, {
+	cityName: "塔城",
+	citySpell: "TACHENG",
+	"short": "TC",
+	"code": "TCG",
+	"countryCode": "CN",
+	"countryName": "中国",
+	cityFirstLetter: "T"
+}, {
+	cityName: "铜仁",
+	citySpell: "TONGREN",
+	"short": "TR",
+	"code": "TEN",
+	"countryCode": "CN",
+	"countryName": "中国",
+	cityFirstLetter: "T"
+}, {
+	cityName: "唐山",
+	citySpell: "TANGSHAN",
+	"short": "TS",
+	"code": "TVS",
+	"countryCode": "CN",
+	"countryName": "中国",
+	cityFirstLetter: "T"
+}, {
+	cityName: "吐鲁番",
+	citySpell: "TULUFAN",
+	"short": "TLF",
+	"code": "TLQ",
+	"countryCode": "CN",
+	"countryName": "中国",
+	cityFirstLetter: "T"
+}, {
+	cityName: "泰州",
+	citySpell: "TAIZHOU",
+	"short": "TZ",
+	"code": "YTY",
+	"countryCode": "CN",
+	"countryName": "中国",
+	cityFirstLetter: "T"
+}, {
+	cityName: "通化",
+	citySpell: "TONGHUA",
+	"short": "TH",
+	"code": "TNH",
+	"countryCode": "CN",
+	"countryName": "中国",
+	cityFirstLetter: "T"
+}, {
+	cityName: "武汉",
+	citySpell: "WUHAN",
+	"short": "WH",
+	"code": "WUH",
+	"countryCode": "CN",
+	"countryName": "中国",
+	cityFirstLetter: "W"
+}, {
+	cityName: "温州",
+	citySpell: "WENZHOU",
+	"short": "WZ",
+	"code": "WNZ",
+	"countryCode": "CN",
+	"countryName": "中国",
+	cityFirstLetter: "W"
+}, {
+	cityName: "乌兰察布",
+	citySpell: "WULANCHABU",
+	"short": "WLCB",
+	"code": "UCB",
+	"countryCode": "CN",
+	"countryName": "中国",
+	cityFirstLetter: "W"
+}, {
+	cityName: "威海",
+	citySpell: "WEIHAI",
+	"short": "WH",
+	"code": "WEH",
+	"countryCode": "CN",
+	"countryName": "中国",
+	cityFirstLetter: "W"
+}, {
+	cityName: "乌海",
+	citySpell: "WUHAI",
+	"short": "WH",
+	"code": "WUA",
+	"countryCode": "CN",
+	"countryName": "中国",
+	cityFirstLetter: "W"
+}, {
+	cityName: "乌兰浩特",
+	citySpell: "WULANHAOTE",
+	"short": "WLHT",
+	"code": "HLH",
+	"countryCode": "CN",
+	"countryName": "中国",
+	cityFirstLetter: "W"
+}, {
+	cityName: "文山",
+	citySpell: "WENSHAN",
+	"short": "WS",
+	"code": "WNH",
+	"countryCode": "CN",
+	"countryName": "中国",
+	cityFirstLetter: "W"
+}, {
+	cityName: "潍坊",
+	citySpell: "WEIFANG",
+	"short": "WF",
+	"code": "WEF",
+	"countryCode": "CN",
+	"countryName": "中国",
+	cityFirstLetter: "W"
+}, {
+	cityName: "万州",
+	citySpell: "WANZHOU",
+	"short": "WZ",
+	"code": "WXN",
+	"countryCode": "CN",
+	"countryName": "中国",
+	cityFirstLetter: "W"
+}, {
+	cityName: "武夷山",
+	citySpell: "WUYISHAN",
+	"short": "WYS",
+	"code": "WUS",
+	"countryCode": "CN",
+	"countryName": "中国",
+	cityFirstLetter: "W"
+}, {
+	cityName: "乌鲁木齐",
+	citySpell: "WULUMUQI",
+	"short": "WLMQ",
+	"code": "URC",
+	"countryCode": "CN",
+	"countryName": "中国",
+	cityFirstLetter: "W"
+}, {
+	cityName: "梧州",
+	citySpell: "WUZHOU",
+	"short": "WZ",
+	"code": "WUZ",
+	"countryCode": "CN",
+	"countryName": "中国",
+	cityFirstLetter: "W"
+}, {
+	cityName: "无锡",
+	citySpell: "WUXI",
+	"short": "WX",
+	"code": "WUX",
+	"countryCode": "CN",
+	"countryName": "中国",
+	cityFirstLetter: "W"
+}, {
+	cityName: "五大连池",
+	citySpell: "WUDALIANCHI",
+	"short": "W",
+	"code": "DTU",
+	"countryCode": "CN",
+	"countryName": "中国",
+	cityFirstLetter: "W"
+}, {
+	cityName: "西安",
+	citySpell: "XIAN",
+	"short": "XA",
+	"code": "XIY",
+	"countryCode": "CN",
+	"countryName": "中国",
+	cityFirstLetter: "X"
+}, {
+	cityName: "厦门",
+	citySpell: "XIAMEN",
+	"short": "XM",
+	"code": "XMN",
+	"countryCode": "CN",
+	"countryName": "中国",
+	cityFirstLetter: "X"
+}, {
+	cityName: "夏河",
+	citySpell: "XIAHE",
+	"short": "XH",
+	"code": "GXH",
+	"countryCode": "CN",
+	"countryName": "中国",
+	cityFirstLetter: "X"
+}, {
+	cityName: "西宁",
+	citySpell: "XINING",
+	"short": "XN",
+	"code": "XNN",
+	"countryCode": "CN",
+	"countryName": "中国",
+	cityFirstLetter: "X"
+}, {
+	cityName: "兴义",
+	citySpell: "XINGYI",
+	"short": "XY",
+	"code": "ACX",
+	"countryCode": "CN",
+	"countryName": "中国",
+	cityFirstLetter: "X"
+}, {
+	cityName: "锡林浩特",
+	citySpell: "XILINHAOTE",
+	"short": "XLHT",
+	"code": "XIL",
+	"countryCode": "CN",
+	"countryName": "中国",
+	cityFirstLetter: "X"
+}, {
+	cityName: "西双版纳",
+	citySpell: "XISHUANGBANNA",
+	"short": "XSBN",
+	"code": "JHG",
+	"countryCode": "CN",
+	"countryName": "中国",
+	cityFirstLetter: "X"
+}, {
+	cityName: "忻州",
+	citySpell: "XINZHOU",
+	"short": "XZ",
+	"code": "WUT",
+	"countryCode": "CN",
+	"countryName": "中国",
+	cityFirstLetter: "X"
+}, {
+	cityName: "西昌",
+	citySpell: "XICHANG",
+	"short": "XC",
+	"code": "XIC",
+	"countryCode": "CN",
+	"countryName": "中国",
+	cityFirstLetter: "X"
+}, {
+	cityName: "襄阳",
+	citySpell: "XIANGYANG",
+	"short": "XY",
+	"code": "XFN",
+	"countryCode": "CN",
+	"countryName": "中国",
+	cityFirstLetter: "X"
+}, {
+	cityName: "徐州",
+	citySpell: "XUZHOU",
+	"short": "XZ",
+	"code": "XUZ",
+	"countryCode": "CN",
+	"countryName": "中国",
+	cityFirstLetter: "X"
+}, {
+	cityName: "营口",
+	citySpell: "YINGKOU",
+	"short": "YK",
+	"code": "YKH",
+	"countryCode": "CN",
+	"countryName": "中国",
+	cityFirstLetter: "Y"
+}, {
+	cityName: "银川",
+	citySpell: "YINCHUAN",
+	"short": "YC",
+	"code": "INC",
+	"countryCode": "CN",
+	"countryName": "中国",
+	cityFirstLetter: "Y"
+}, {
+	cityName: "玉树",
+	citySpell: "YUSHU",
+	"short": "YS",
+	"code": "YUS",
+	"countryCode": "CN",
+	"countryName": "中国",
+	cityFirstLetter: "Y"
+}, {
+	cityName: "延吉",
+	citySpell: "YANJI",
+	"short": "YJ",
+	"code": "YNJ",
+	"countryCode": "CN",
+	"countryName": "中国",
+	cityFirstLetter: "Y"
+}, {
+	cityName: "烟台",
+	citySpell: "YANTAI",
+	"short": "YT",
+	"code": "YNT",
+	"countryCode": "CN",
+	"countryName": "中国",
+	cityFirstLetter: "Y"
+}, {
+	cityName: "伊宁",
+	citySpell: "YINING",
+	"short": "YN",
+	"code": "YIN",
+	"countryCode": "CN",
+	"countryName": "中国",
+	cityFirstLetter: "Y"
+}, {
+	cityName: "运城",
+	citySpell: "YUNCHENG",
+	"short": "YC",
+	"code": "YCU",
+	"countryCode": "CN",
+	"countryName": "中国",
+	cityFirstLetter: "Y"
+}, {
+	cityName: "义乌",
+	citySpell: "YIWU",
+	"short": "YW",
+	"code": "YIW",
+	"countryCode": "CN",
+	"countryName": "中国",
+	cityFirstLetter: "Y"
+}, {
+	cityName: "宜宾",
+	citySpell: "YIBIN",
+	"short": "YB",
+	"code": "YBP",
+	"countryCode": "CN",
+	"countryName": "中国",
+	cityFirstLetter: "Y"
+}, {
+	cityName: "伊春",
+	citySpell: "YICHUN",
+	"short": "YC",
+	"code": "LDS",
+	"countryCode": "CN",
+	"countryName": "中国",
+	cityFirstLetter: "Y"
+}, {
+	cityName: "延安",
+	citySpell: "YANAN",
+	"short": "YA",
+	"code": "ENY",
+	"countryCode": "CN",
+	"countryName": "中国",
+	cityFirstLetter: "Y"
+}, {
+	cityName: "榆林",
+	citySpell: "YULIN",
+	"short": "YL",
+	"code": "UYN",
+	"countryCode": "CN",
+	"countryName": "中国",
+	cityFirstLetter: "Y"
+}, {
+	cityName: "宜昌",
+	citySpell: "YICHANG",
+	"short": "YC",
+	"code": "YIH",
+	"countryCode": "CN",
+	"countryName": "中国",
+	cityFirstLetter: "Y"
+}, {
+	cityName: "盐城",
+	citySpell: "YANCHENG",
+	"short": "YC",
+	"code": "YNZ",
+	"countryCode": "CN",
+	"countryName": "中国",
+	cityFirstLetter: "Y"
+}, {
+	cityName: "扬州",
+	citySpell: "YANGZHOU",
+	"short": "YZ",
+	"code": "YTY",
+	"countryCode": "CN",
+	"countryName": "中国",
+	cityFirstLetter: "Y"
+}, {
+	cityName: "宜春",
+	citySpell: "YICHUN",
+	"short": "YC",
+	"code": "YIC",
+	"countryCode": "CN",
+	"countryName": "中国",
+	cityFirstLetter: "Y"
+}, {
+	cityName: "永州",
+	citySpell: "YONGZHOU",
+	"short": "YZ",
+	"code": "LLF",
+	"countryCode": "CN",
+	"countryName": "中国",
+	cityFirstLetter: "Y"
+}, {
+	cityName: "张掖",
+	citySpell: "ZHANGYE",
+	"short": "ZY",
+	"code": "YZY",
+	"countryCode": "CN",
+	"countryName": "中国",
+	cityFirstLetter: "Z"
+}, {
+	cityName: "湛江",
+	citySpell: "ZHANJIANG",
+	"short": "ZJ",
+	"code": "ZHA",
+	"countryCode": "CN",
+	"countryName": "中国",
+	cityFirstLetter: "Z"
+}, {
+	cityName: "珠海",
+	citySpell: "ZHUHAI",
+	"short": "ZH",
+	"code": "ZUH",
+	"countryCode": "CN",
+	"countryName": "中国",
+	cityFirstLetter: "Z"
+}, {
+	cityName: "舟山",
+	citySpell: "ZHOUSHAN",
+	"short": "ZS",
+	"code": "HSN",
+	"countryCode": "CN",
+	"countryName": "中国",
+	cityFirstLetter: "Z"
+}, {
+	cityName: "昭通",
+	citySpell: "ZHAOTONG",
+	"short": "ZT",
+	"code": "ZAT",
+	"countryCode": "CN",
+	"countryName": "中国",
+	cityFirstLetter: "Z"
+}, {
+	cityName: "中卫",
+	citySpell: "ZHONGWEI",
+	"short": "ZW",
+	"code": "ZHY",
+	"countryCode": "CN",
+	"countryName": "中国",
+	cityFirstLetter: "Z"
+}, {
+	cityName: "遵义新舟",
+	citySpell: "ZUNYI",
+	"short": "ZY",
+	"code": "ZYI",
+	"countryCode": "CN",
+	"countryName": "中国",
+	cityFirstLetter: "Z"
+}, {
+	cityName: "张家口",
+	citySpell: "ZHANGJIAKOU",
+	"short": "ZJK",
+	"code": "ZQZ",
+	"countryCode": "CN",
+	"countryName": "中国",
+	cityFirstLetter: "Z"
+}, {
+	cityName: "郑州",
+	citySpell: "ZHENGZHOU",
+	"short": "ZZ",
+	"code": "CGO",
+	"countryCode": "CN",
+	"countryName": "中国",
+	cityFirstLetter: "Z"
+}, {
+	cityName: "芷江",
+	citySpell: "ZHIJIANG",
+	"short": "ZJ",
+	"code": "HJJ",
+	"countryCode": "CN",
+	"countryName": "中国",
+	cityFirstLetter: "Z"
+}, {
+	cityName: "张家界",
+	citySpell: "ZHANGJIAJIE",
+	"short": "ZJJ",
+	"code": "DYG",
+	"countryCode": "CN",
+	"countryName": "中国",
+	cityFirstLetter: "Z"
+}, {
+	cityName: "扎兰屯",
+	citySpell: "ZHALANTUN",
+	"short": "ZLT",
+	"code": "NZL",
+	"countryCode": "CN",
+	"countryName": "中国",
+	cityFirstLetter: "Z"
+}, {
+	cityName: "遵义茅台",
+	citySpell: "ZUNYIMAOTAI",
+	"short": "ZYMT",
+	"code": "WMT",
+	"countryCode": "CN",
+	"countryName": "中国",
+	cityFirstLetter: "Z"
+}]
+export default internalData
