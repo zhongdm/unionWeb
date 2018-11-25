@@ -29,3 +29,7 @@ For a detailed explanation on how things work, check out the [guide](http://vuej
 
 ### 城市插件-- 国内和国外城市
 GlobalCity
+
+
+## Tips
+修改身份证验证的bug：身份证不全是数字，还有末位是以X或x结尾的，需要特别注意一下
