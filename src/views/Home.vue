@@ -9,7 +9,7 @@
                     <p class="error-msg"></p>
                     <mt-field label="姓名" :disabled="isExceed ? true : false" placeholder="姓名" v-model="formData.username" @blur.native.capture="validateForm(2)" class="username"></mt-field>
                     <p class="error-msg"></p>
-                    <mt-field label="身份证号" type="number" :disabled="isExceed ? true : false" placeholder="身份证号" v-model="formData.idNo" @blur.native.capture="validateForm(3)" class="IDNo"></mt-field>
+                    <mt-field label="身份证号" :disabled="isExceed ? true : false" placeholder="身份证号" v-model="formData.idNo" @blur.native.capture="validateForm(3)" class="IDNo"></mt-field>
                     <p class="error-msg"></p>
                     <mt-field label="手机号" type="number" :disabled="isExceed ? true : false" placeholder="手机号" v-model="formData.mobile" @blur.native.capture="validateForm(4)" class="mobile"></mt-field>
                     <p class="error-msg"></p>
@@ -105,7 +105,7 @@
                 <ul>
                     <li><p>权益领取时间：即日起至2019年3月31日</p></li>
                     <li><p>权益对象：江苏地区62开头的银联高端信用卡持卡人</p></li>
-                    <li><p>权益生效：在活动页面1元领取“航班延误险”权益，权益生效领取即生效，保险正式生效时间为领取权益页面登记的航班起飞时间。如1月1日支付成功领取权益，登记的航班起飞时间为1月20日，则保险起期为1月20日00:00</p></li>
+                    <li><p>权益生效：在活动页面支付1元领取“航班延误险”权益（仅能为即刻起24小时后起飞的航班投保），登记航班起飞时间及其他信息并完支付，权益正式生效，保险起期为航班预计起飞时间。</p></li>
                     <li><p>权益售后：保险售后请拨打中银保险7*24小时服务热线：<a href='javascript:void(0)' style="color:orange;font-weight:bold;display:inline-block;" @click="callPhone('95566')">95566-4</a></p></li>
                 </ul>
                 <p>注：该权益仅限航班出发地为江苏的银联高端信用卡持卡人享受，活动期内权益限量9000份，先到先得，领完为止；该活动权益每位持卡人限领取不超过2次。</p>
