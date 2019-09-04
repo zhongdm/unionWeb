@@ -762,6 +762,13 @@ const foreignCityData = [{
 	"countryName": "加拿大",
 	cityFirstLetter: "W"
 }, {
+	cityName: "香港",
+	citySpell: "XIANGGANG",
+	"code": "HKG",
+	"countryCode": "HK",
+	"countryName": "中国香港",
+	cityFirstLetter: "X"
+}, {
 	cityName: "新加坡",
 	citySpell: "XINJIAPO",
 	"code": "SIN",
